@@ -71,6 +71,11 @@ cp 某篇.html papers/ && python3 build.py && git add papers data sw.js && git c
 `id="tldr"` 一句話結論），`build.py` 就能正確抓出索引欄位；版型微調不會讓建索引失敗，
 只是抓不到的欄位會留白。
 
+**標籤有分工**：`class="tag"`（不帶 `t2`／`t3`）的那一個是**論文類別**，首頁的篩選晶片只用它
+（例如 直腸癌手術與腫瘤學、微創／機器人手術技術、良性疾病與功能性疾患、周術期照護與併發症）；
+`t2`／`t3` 留給證據等級、授權方式之類的副標籤，只顯示在卡片上、不進晶片列。
+每篇請固定給一個類別標籤。
+
 ## 同一個 origin 上的其他 PWA
 
 `jeremyl861225.github.io` 上還有 Clinical-Tools 等站。本站 Service Worker 的
