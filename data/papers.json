@@ -1,7 +1,30 @@
 {
- "count": 1,
- "latest": "2026-07-29",
+ "count": 2,
+ "latest": "2026-07-30",
  "papers": [
+  {
+   "id": "pubmed-periop-2026-07-30",
+   "file": "papers/pubmed-periop-2026-07-30.html",
+   "date": "2026-07-30",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 002",
+   "title": "直腸吻合採用單一釘合技術 vs. 雙重釘合技術：吻合處滲漏之系統性回顧與統合分析",
+   "title_en": "Single-stapling versus double-stapling technique for rectal anastomosis—meta-analysis",
+   "journal": "BJS Open 2026;10(4):zrag078",
+   "authors": "Kehagias D, Lampropoulos C, Kehagias I, Jayne D, Tiernan J John Goligher Colorectal Unit, Leeds, UK",
+   "design": "系統性回顧＋隨機效應統合分析 14 studies / 3046 patients（2 RCT ＋ 12 觀察性）",
+   "doi": "10.1093/bjsopen/zrag078",
+   "category": "周術期照護與併發症",
+   "tags": [
+    "周術期照護與併發症",
+    "吻合處滲漏 Anastomotic leak",
+    "TTSS / TaTME",
+    "GRADE：低確定性",
+    "Open Access"
+   ],
+   "tldr": "在 14 篇研究、3046 位直腸吻合病人中，單一釘合技術（SST）的吻合處滲漏風險比雙重釘合技術（DST）低約 39%（RR 0.61；95% CI 0.42–0.90；p = 0.012），但這個好處幾乎完全來自經肛門橫斷的 TTSS／TaTME 次群組（RR 0.37；95% CI 0.25–0.57）；若是腹腔內置放荷包縫合的傳統 SST，與 DST 並無差異（RR 0.92；95% CI 0.57–1.47），且整體證據確定性僅為「低」，因此適用情境應限縮在低位／超低位直腸吻合。",
+   "bytes": 84953
+  },
   {
    "id": "pubmed-crs-2026-07-29",
    "file": "papers/pubmed-crs-2026-07-29.html",
