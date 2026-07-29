@@ -14,7 +14,7 @@
   var refreshEl = document.getElementById('refresh');
 
   var papers = [];
-  var activeTag = '';
+  var activeCat = '';        // 篩選只認「論文類別」，證據等級、授權那類副標籤不進晶片列
 
   /* ── 工具 ───────────────────────────────────── */
   function esc(s) {
@@ -55,7 +55,7 @@
     var lowered = needles.map(function (n) { return n.toLowerCase(); });
 
     var shown = papers.filter(function (p) {
-      if (activeTag && (p.tags || []).indexOf(activeTag) === -1) return false;
+      if (activeCat && p.category !== activeCat) return false;
       if (!lowered.length) return true;
       var hay = p._hay;
       return lowered.every(function (n) { return hay.indexOf(n) !== -1; });
@@ -85,10 +85,10 @@
     emptyEl.hidden = !noHit;
     if (noHit) {
       emptyEl.textContent = papers.length
-        ? '沒有符合「' + raw + (activeTag ? ' · ' + activeTag : '') + '」的文獻。'
+        ? '沒有符合「' + (raw || activeCat) + (raw && activeCat ? ' · ' + activeCat : '') + '」的文獻。'
         : '還沒有任何文獻。明天早上的第一篇會自動出現在這裡。';
     }
-    if (raw || activeTag) {
+    if (raw || activeCat) {
       statEl.innerHTML = '符合 ' + shown.length + ' 篇 / 共 ' + papers.length + ' 篇';
     } else {
       updateStat();
@@ -105,28 +105,30 @@
   function buildChips() {
     var count = {};
     papers.forEach(function (p) {
-      (p.tags || []).forEach(function (t) { count[t] = (count[t] || 0) + 1; });
+      if (p.category) count[p.category] = (count[p.category] || 0) + 1;
     });
-    var top = Object.keys(count).sort(function (a, b) {
-      return count[b] - count[a] || a.localeCompare(b);
-    }).slice(0, 10);
-    if (!top.length) { chipsEl.hidden = true; return; }
+    // 類別數量有限，全部列出；篇數多的排前面，同數依筆劃／字母序
+    var cats = Object.keys(count).sort(function (a, b) {
+      return count[b] - count[a] || a.localeCompare(b, 'zh-Hant');
+    });
+    if (!cats.length) { chipsEl.hidden = true; return; }
+    chipsEl.hidden = false;
 
-    chipsEl.innerHTML = ['<button type="button" class="chip" data-tag="" aria-pressed="true">全部</button>']
-      .concat(top.map(function (t) {
-        return '<button type="button" class="chip" data-tag="' + esc(t) +
-          '" aria-pressed="false">' + esc(t) + '</button>';
+    chipsEl.innerHTML = ['<button type="button" class="chip" data-cat="" aria-pressed="true">全部</button>']
+      .concat(cats.map(function (c) {
+        return '<button type="button" class="chip" data-cat="' + esc(c) +
+          '" aria-pressed="false">' + esc(c) + '<span class="n">' + count[c] + '</span></button>';
       })).join('');
 
-    chipsEl.addEventListener('click', function (e) {
+    chipsEl.onclick = function (e) {
       var btn = e.target.closest('.chip');
       if (!btn) return;
-      activeTag = btn.dataset.tag === activeTag ? '' : btn.dataset.tag;
+      activeCat = btn.dataset.cat === activeCat ? '' : btn.dataset.cat;
       Array.prototype.forEach.call(chipsEl.children, function (c) {
-        c.setAttribute('aria-pressed', String(c.dataset.tag === activeTag));
+        c.setAttribute('aria-pressed', String(c.dataset.cat === activeCat));
       });
       render();
-    });
+    };
   }
 
   /* ── 載入資料 ───────────────────────────────── */

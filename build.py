@@ -128,8 +128,14 @@ def parse_paper(path):
     vol = next((p for p in kicker_parts if p.lower().startswith('vol')), '')
 
     meta = parse_meta_grid(source)
-    tags = [text_of(t) for t in re.findall(r'<span[^>]*class="[^"]*\btag\b[^"]*"[^>]*>(.*?)</span>',
-                                           source, re.I | re.S)]
+
+    # 論文頁的標籤：class 只有 tag 的是「論文類別」，帶 t2／t3 的是證據等級、授權之類的副標籤。
+    # 首頁的篩選晶片只用類別，其餘照樣顯示在卡片上。
+    tagged = re.findall(r'<span[^>]*class="([^"]*\btag\b[^"]*)"[^>]*>(.*?)</span>', source, re.I | re.S)
+    tags = [text_of(t) for _, t in tagged]
+    category = next((text_of(t) for cls, t in tagged if cls.split() == ['tag'] and text_of(t)), '')
+    if not category and tags:
+        category = tags[0]
 
     return {
         'id': os.path.splitext(name)[0],
@@ -143,6 +149,7 @@ def parse_paper(path):
         'authors': pick(meta, '作者', 'Author'),
         'design': pick(meta, '研究設計', '設計', 'Design'),
         'doi': pick(meta, 'DOI'),
+        'category': category,
         'tags': [t for t in tags if t],
         'tldr': parse_tldr(source)[:400],
         'bytes': os.path.getsize(path),

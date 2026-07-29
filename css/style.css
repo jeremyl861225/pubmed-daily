@@ -61,6 +61,8 @@ body{
 .chip{flex:0 0 auto; font-size:12.5px; padding:4px 12px; border-radius:20px; cursor:pointer;
   border:1px solid var(--line); background:var(--card); color:var(--ink-2); white-space:nowrap;}
 .chip[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff;}
+.chip .n{margin-left:6px; font-size:11px; color:var(--ink-3); font-variant-numeric:tabular-nums;}
+.chip[aria-pressed="true"] .n{color:rgba(255,255,255,.72);}
 
 /* ── 論文卡 ─────────────────────────────────────── */
 .wrap{max-width:880px; margin:0 auto; padding:22px 22px 60px;}
