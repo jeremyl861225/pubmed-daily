@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 安裝：cp 這個檔到 ~/Library/LaunchAgents/ 後
+     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.jeremy.pubmed-daily-import.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jeremy.pubmed-daily-import</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/jeremy/Desktop/Claude code/pubmed-daily/scripts/import-from-cowork.sh</string>
+  </array>
+
+  <!-- cowork 資料夾一有變動就跑 -->
+  <key>WatchPaths</key>
+  <array>
+    <string>/Users/jeremy/Desktop/claude cowork/PubMed 每日文獻</string>
+  </array>
+
+  <!-- 每小時補跑一次：關機期間累積的檔案、或推失敗的重試 -->
+  <key>StartInterval</key>
+  <integer>3600</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/jeremy/Desktop/Claude code/pubmed-daily/.import-err.log</string>
+</dict>
+</plist>

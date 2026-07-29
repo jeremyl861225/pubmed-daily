@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>每日文獻 · Daily Literature</title>
+<meta name="description" content="每日一篇外科文獻導讀，可離線閱讀、可全文檢索。">
+<meta name="theme-color" content="#faf9f6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="每日文獻">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-inner">
+    <div class="kicker">
+      <span class="dot"></span><span>每日文獻</span>
+      <span class="sep">/</span><span>Daily Literature</span>
+    </div>
+    <h1>每日文獻導讀</h1>
+    <p class="lede">每天早上自動送進來的一篇文獻精讀，離線也讀得到。</p>
+    <div class="stat" id="stat" aria-live="polite">載入中…</div>
+  </div>
+</header>
+
+<div class="searchbar">
+  <div class="searchbar-inner">
+    <label class="field">
+      <span class="ico" aria-hidden="true">&#9906;</span>
+      <input id="q" type="search" inputmode="search" autocomplete="off" autocorrect="off"
+             spellcheck="false" placeholder="查詢標題、期刊、關鍵字…" aria-label="查詢論文">
+      <button type="button" id="clear" class="clear" aria-label="清除查詢" hidden>&#10005;</button>
+    </label>
+    <button type="button" id="refresh" class="refresh" aria-label="更新">&#8635;</button>
+  </div>
+  <div class="chips" id="chips"></div>
+</div>
+
+<main class="wrap">
+  <ul class="cards" id="list"></ul>
+  <p class="empty" id="empty" hidden></p>
+</main>
+
+<footer class="foot">
+  <p id="foot-note">每日文獻 · 內容由 PubMed 公開書目資料整理而成，摘要逐字引用歸原作者與期刊所有。</p>
+  <p class="tiny">© 2026 jeremyl861225 · 僅供個人學習使用，非醫療建議。</p>
+</footer>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

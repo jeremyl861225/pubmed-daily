@@ -1,0 +1,39 @@
+name: 建索引
+
+# 只要 papers/ 多了一篇論文（不論是誰、用什麼方式推上來），就重建索引與離線快取清單。
+# 用 GITHUB_TOKEN 推的 commit 不會再觸發 workflow，因此不會無限循環。
+on:
+  push:
+    paths:
+      - 'papers/**'
+  schedule:
+    - cron: '30 0 * * *'      # UTC 00:30 = 台北 08:30，補跑當天可能漏掉的匯入
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 產生 data/papers.json、注入返回鍵、更新 sw.js 預快取
+        run: python3 build.py
+
+      - name: 有變動就 commit 並 push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers data sw.js
+          if git diff --cached --quiet; then
+            echo "索引沒有變動，不需要 commit"
+          else
+            git commit -m "建索引：$(python3 -c "import json;d=json.load(open('data/papers.json'));print(f\"{d['count']} 篇 · 最新 {d['latest']}\")")"
+            git push
+          fi

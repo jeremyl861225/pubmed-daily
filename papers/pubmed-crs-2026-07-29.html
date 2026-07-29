@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大腸直腸外科文獻 · 2026-07-29</title>
+<style>
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 7 月 29 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 001</span>
+  </div>
+  <h1 class="title">局部切除合併放射治療 vs. 全直腸繫膜切除術治療直腸癌：術後與腫瘤學結果之系統性回顧與統合分析</h1>
+  <p class="title-en">Systematic review and meta-analysis comparing postoperative and oncological outcomes between local excision plus radiotherapy versus total mesorectal excision for rectal cancer</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">World J Surg Oncol<br><span style="color:#6b7079;font-size:13px">2026;24:203</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola F, Giménez M, Oda T, Marescaux J</div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-04-02</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v">系統性回顧＋統合分析<br><span style="color:#6b7079;font-size:13px">6 studies / 679 patients</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1186/s12957-026-04304-8">10.1186/s12957-026-04304-8</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=10.1186%2Fs12957-026-04304-8">以 DOI 查詢 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">直腸癌手術與腫瘤學</span>
+    <span class="tag t2">器官保留 Organ preservation</span>
+    <span class="tag t3">Level 1a 證據</span>
+    <span class="tag t3">Open Access · CC BY</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">Table 1 研究特徵</a><a href="#results">主要結果＋森林圖</a><a href="#onco">腫瘤學結果</a>
+  <a href="#surv">存活率圖</a><a href="#stage">Table 2 分期</a><a href="#clin">臨床意涵</a>
+  <a href="#limit">研究限制</a><a href="#gloss">名詞對照</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在<strong>經篩選</strong>的直腸癌病人（cT1–cT3 或新輔助治療後反應良好者），<strong>局部切除＋放射治療（LE + RT）</strong>相較於標準的 <strong>TME</strong>，手術時間更短、整體併發症降低超過一半（RR 0.46），住院天數更短，而<strong>整體存活與無病存活無顯著差異</strong>；但局部復發率有<strong>偏高的趨勢</strong>，且證據受樣本數小與高度異質性限制。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Total mesorectal excision (TME) is the standard treatment for middle to lower rectal cancer. However, it is associated with significant postoperative complications and functional impairments. Local excision (LE) combined with neoadjuvant radiotherapy (RT) has emerged as a less invasive alternative and has shown potential for organ preservation. This study aimed to compare the short-term and long-term outcomes of LE + RT versus TME in selected patients with rectal cancer.</p>
+    <h4>Materials and methods</h4>
+    <p>This systematic review and meta-analysis were conducted following a comprehensive literature search of human studies published in English, completed by April 2025. Inclusion criteria consisted of rectal cancer up to cT3 disease and/or showed a favorable response to neoadjuvant therapy. Postoperative outcomes assessed included operative time, blood loss, morbidity, length of hospital stay, and permanent stoma rate. Oncological and survival outcomes were also evaluated.</p>
+    <h4>Results</h4>
+    <p>A total of six studies were included. They consisted of five randomized controlled trials and one prospective clinical trial, with a total of 679 patients. Of these, 366 were treated with LE + RT and 313 with TME. Pooled analysis showed that the LE + RT group was associated with a significantly shorter operative time, a lower overall morbidity, and a shorter postoperative hospital stay. No significant differences were observed between the groups in oncological or survival outcomes.</p>
+    <h4>Conclusions</h4>
+    <p>This study suggests that, in selected rectal cancer patients, LE + RT may represent a less invasive alternative with comparable oncological outcomes to TME. LE + RT may subsequently be a viable treatment option, especially in patients seeking organ preservation or in patients unfit for TME.</p>
+    <p class="note">原文摘要引自 <em>World Journal of Surgical Oncology</em>（Open Access, CC BY）。本頁所有圖表均為依原文 Table 1–3 與 Results 內文數據<strong>重新繪製</strong>，非原圖翻拍；原文 Fig. 1–5 請見 DOI 連結。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>Fig. 1 <span class="zh">／ 文獻篩選流程（PRISMA flow diagram）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      資料庫檢索取得文獻　<span class="n">3,001</span> 篇<br>
+      <span style="color:#6b7079;font-size:12.5px">PubMed 2,149　·　Embase 590　·　Cochrane Library 262</span>
+    </div></div><div class="pr-ex">移除重複<br><span class="n">852</span> 篇</div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Screening 篩選</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">去重後文獻　<span class="n">2,149</span> 篇</div></div>
+      <div class="pr-ex">排除：非臨床試驗<br><span class="n">1,895</span> 篇</div></div>
+    <div class="pr-arrow"></div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">標題／摘要篩選　<span class="n">254</span> 篇</div></div>
+      <div class="pr-ex">排除：主題不相關<br><span class="n">240</span> 篇</div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Eligibility 全文評估</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">全文評估　<span class="n">14</span> 篇</div></div>
+      <div class="pr-ex">排除：研究計畫書 <span class="n">5</span> 篇<br>已納入研究之延伸／追蹤報告 <span class="n">3</span> 篇</div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box final">
+      最終納入　<span class="n">6</span> 篇研究　/　<span class="n">679</span> 位病人<br>
+      <span style="color:#6b7079;font-size:12.5px">5 篇隨機對照試驗（RCT）＋ 1 篇前瞻性臨床試驗　·　LE + RT 366 人　vs.　TME 313 人</span>
+    </div></div></div>
+    <div style="font-size:12.5px;color:#6b7079;margin-top:16px;padding-top:11px;border-top:1px solid #f0eeea">
+      偏差風險評估：5 篇 RCT 以 <b>RoB 2</b> 評估、1 篇前瞻性研究以 <b>ROBINS-I</b> 評估；<b>5 篇 RCT 中有 2 篇被評為高偏差風險（high risk of bias）</b>，主因為外科介入無法盲化。
+    </div>
+  </div>
+</section>
+
+<section id="tbl1">
+  <h2>Table 1 <span class="zh">／ 納入研究之特徵與介入細節</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr>
+      <th>研究（國家）</th><th>設計（中心數）</th><th>人數<br>LE+RT vs TME</th><th>納入條件</th>
+      <th>放療方案</th><th>局部切除術式</th><th>中位追蹤</th>
+    </tr></thead>
+    <tbody>
+      <tr><td><strong>Bach 2021</strong><br><span style="color:#6b7079;font-size:12.5px">TREC（英國）</span></td>
+        <td>RCT＋前瞻性登錄<br>(21)</td><td class="num">RCT 27 vs 28<br>前瞻 61 vs 7<br><strong>合計 88 vs 35</strong></td>
+        <td>T1–2 N0<br>腫瘤 ≤3 cm</td><td><strong>SCRT 25 Gy</strong><br>（短程放療）</td><td>TEM</td><td class="num">RCT 51.4 月<br>前瞻 48.8 月</td></tr>
+      <tr><td><strong>Lezoche 2008</strong><br><span style="color:#6b7079;font-size:12.5px">義大利</span></td>
+        <td>RCT (2)</td><td class="num">35 vs 35</td>
+        <td>T2 N0；grade 1–2<br>&lt;3 cm；距肛緣 ≤6 cm</td><td>CRT 50.4 Gy</td><td>TEM</td><td class="num">84 月</td></tr>
+      <tr><td><strong>Lezoche 2012</strong><br><span style="color:#6b7079;font-size:12.5px">義大利</span></td>
+        <td>RCT (2)</td><td class="num">50 vs 50</td>
+        <td>T2 N0；grade 1–2<br>&lt;3 cm；距肛緣 ≤6 cm</td><td>CRT 50.4 Gy</td><td>TEM</td><td class="num">115.2 月</td></tr>
+      <tr><td><strong>Qiu 2025</strong><br><span style="color:#6b7079;font-size:12.5px">MONT-R（中國）</span></td>
+        <td>前瞻性 (6)</td><td class="num">38 vs 41</td>
+        <td>T3–4 N0 或 Tany N+<br>距肛緣 ≤10 cm<br><strong>cCR 或 near-cCR</strong></td><td>CRT 45–50 Gy</td><td>TEM</td><td class="num">60 月</td></tr>
+      <tr><td><strong>Rullier 2017/2020</strong><br><span style="color:#6b7079;font-size:12.5px">GRECCAR 2（法國）</span></td>
+        <td>RCT (15)</td><td class="num">74 vs 71</td>
+        <td>T2–3 N0–1<br>距肛緣 ≤8 cm；≤4 cm<br>治療後殘存 ≤2 cm</td><td>CRT 50 Gy<br>（TME 組 50.4 Gy）</td><td>LE（未指定平台）</td><td class="num">36 月</td></tr>
+      <tr><td><strong>Serra-Aracil 2023/2025</strong><br><span style="color:#6b7079;font-size:12.5px">TAU-TEM（西班牙）</span></td>
+        <td>RCT (17)</td><td class="num">81 vs 81</td>
+        <td>T2–3 N0<br>距肛緣 ≤10 cm；≤4 cm</td><td>CRT 50.4 Gy</td><td>TEM</td><td class="num">63 月</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call teal">
+    <div class="h">讀 Table 1 要注意的三件事</div>
+    ① <strong>只有 TREC 用短程放療（SCRT 25 Gy）</strong>，其餘五篇皆為長程化放療（long-course CRT ~50 Gy）— 這是異質性的重要來源。<br>
+    ② <strong>Qiu 2025（MONT-R）是唯一納入 cT3–4／N+ 但要求 cCR/near-cCR 的研究</strong>，族群性質與其他篇明顯不同。<br>
+    ③ 六篇皆使用 TEM（Rullier 未指定平台），<strong>沒有任何一篇使用 TAMIS</strong>；追蹤時間從 36 個月到 115 個月，差距近 3 倍。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Fig. 3&#8211;5 <span class="zh">／ 主要合併結果（森林圖重繪）</span></h2>
+
+  <div class="fig">
+    <svg viewBox="0 0 664 206" width="100%" role="img" aria-label="圖 1｜原文已公布之合併比值型效果值（LE + RT vs TME）" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="664" height="206" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 1｜原文已公布之合併比值型效果值（LE + RT vs TME）</text>
+<text x="170" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">研究 / 結果</text>
+<text x="310" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">效果值 (95% CI)</text>
+<line x1="320" y1="152" x2="650" y2="152" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="152" x2="320.0" y2="156" stroke="#e3e0da"/>
+<text x="320.0" y="168" font-size="9.5" text-anchor="middle" fill="#6b7079">0.2</text>
+<line x1="431.7" y1="152" x2="431.7" y2="156" stroke="#e3e0da"/>
+<text x="431.7" y="168" font-size="9.5" text-anchor="middle" fill="#6b7079">0.5</text>
+<line x1="516.1" y1="152" x2="516.1" y2="156" stroke="#e3e0da"/>
+<text x="516.1" y="168" font-size="9.5" text-anchor="middle" fill="#6b7079">1</text>
+<line x1="600.6" y1="152" x2="600.6" y2="156" stroke="#e3e0da"/>
+<text x="600.6" y="168" font-size="9.5" text-anchor="middle" fill="#6b7079">2</text>
+<line x1="650.0" y1="152" x2="650.0" y2="156" stroke="#e3e0da"/>
+<text x="650.0" y="168" font-size="9.5" text-anchor="middle" fill="#6b7079">3</text>
+<line x1="516.1" y1="44" x2="516.1" y2="152" stroke="#6b7079" stroke-dasharray="3 3" stroke-width="1" opacity=".55"/>
+<text x="508.1" y="183" font-size="10" text-anchor="end" fill="#6b7079">&#8592; 偏好 LE + RT</text>
+<text x="524.1" y="183" font-size="10" fill="#6b7079">偏好 TME &#8594;</text>
+<text x="170" y="66.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="700">整體併發症</text>
+<text x="170" y="77.0" font-size="9.5" text-anchor="end" fill="#6b7079">Overall morbidity (RR)</text>
+<text x="310" y="66.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="700">0.46 (0.26–0.81)</text>
+<polygon points="352.0,64.0 421.5,58.0 490.4,64.0 421.5,70.0" fill="#8a4a3d" opacity=".9"/>
+<text x="170" y="96.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="700">整體存活</text>
+<text x="170" y="107.0" font-size="9.5" text-anchor="end" fill="#6b7079">Overall survival (HR)</text>
+<text x="310" y="96.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="700">0.93 (0.57–1.52)</text>
+<polygon points="447.6,94.0 507.3,88.0 567.1,94.0 507.3,100.0" fill="#8a4a3d" opacity=".9"/>
+<text x="170" y="126.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="700">無病存活</text>
+<text x="170" y="137.0" font-size="9.5" text-anchor="end" fill="#6b7079">Disease-free survival (HR)</text>
+<text x="310" y="126.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="700">1.02 (0.52–2.00)</text>
+<polygon points="436.4,124.0 518.5,118.0 600.6,124.0 518.5,130.0" fill="#8a4a3d" opacity=".9"/>
+</svg>
+    <div class="cap"><b>圖 1｜比值型結果。</b>依原文 Results 內文所載之合併效果值重繪。整體併發症 RR 0.46（0.26–0.81, p = 0.03, I² = 0%）為全篇異質性最低、方向最一致的發現；整體存活 HR 0.93（0.57–1.52, p = 0.66, I² = 0%）與無病存活 HR 1.02（0.52–2.00, p = 0.92, I² = 0%）皆跨越無效線 1，屬「未偵測到差異」而非「已證實等效」。</div>
+  </div>
+
+  <div class="fig">
+    <svg viewBox="0 0 784 150" width="100%" role="img" aria-label="圖 2A｜手術時間合併平均差（I² = 96%）" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="784" height="150" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 2A｜手術時間合併平均差（I² = 96%）</text>
+<text x="320" y="42" font-size="10.5" text-anchor="end" fill="#6b7079">MD (95% CI)</text>
+<line x1="330" y1="96" x2="770" y2="96" stroke="#e3e0da"/>
+<line x1="330.0" y1="96" x2="330.0" y2="100" stroke="#e3e0da"/>
+<text x="330.0" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−240</text>
+<line x1="424.3" y1="96" x2="424.3" y2="100" stroke="#e3e0da"/>
+<text x="424.3" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−180</text>
+<line x1="518.6" y1="96" x2="518.6" y2="100" stroke="#e3e0da"/>
+<text x="518.6" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−120</text>
+<line x1="612.9" y1="96" x2="612.9" y2="100" stroke="#e3e0da"/>
+<text x="612.9" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−60</text>
+<line x1="707.1" y1="96" x2="707.1" y2="100" stroke="#e3e0da"/>
+<text x="707.1" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">0</text>
+<line x1="770.0" y1="96" x2="770.0" y2="100" stroke="#e3e0da"/>
+<text x="770.0" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">40</text>
+<line x1="707.1" y1="44" x2="707.1" y2="96" stroke="#6b7079" stroke-dasharray="3 3" opacity=".55"/>
+<text x="330" y="127" font-size="10" fill="#6b7079">&#8592; 偏好 LE + RT</text>
+<text x="770" y="127" font-size="10" text-anchor="end" fill="#6b7079">偏好 TME &#8594;</text>
+<text x="550.0" y="127" font-size="10" text-anchor="middle" fill="#6b7079">分鐘 minutes</text>
+<text x="142" y="68.0" font-size="12" text-anchor="end" fill="#1b1c1e" font-weight="700">手術時間</text>
+<text x="142" y="80.0" font-size="9.5" text-anchor="end" fill="#6b7079">Operative time (分鐘)</text>
+<text x="320" y="68.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="700">−112.33 (−223.06 至 −1.61)</text>
+<line x1="356.6" y1="66.0" x2="704.6" y2="66.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<line x1="356.6" y1="61.0" x2="356.6" y2="71.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<line x1="704.6" y1="61.0" x2="704.6" y2="71.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<polygon points="524.6,66.0 530.6,60.0 536.6,66.0 530.6,72.0" fill="#8a4a3d"/>
+</svg>
+    <div style="height:6px"></div>
+    <svg viewBox="0 0 784 150" width="100%" role="img" aria-label="圖 2B｜術後住院天數合併平均差（I² = 93%）" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="784" height="150" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 2B｜術後住院天數合併平均差（I² = 93%）</text>
+<text x="320" y="42" font-size="10.5" text-anchor="end" fill="#6b7079">MD (95% CI)</text>
+<line x1="330" y1="96" x2="770" y2="96" stroke="#e3e0da"/>
+<line x1="330.0" y1="96" x2="330.0" y2="100" stroke="#e3e0da"/>
+<text x="330.0" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−10</text>
+<line x1="403.3" y1="96" x2="403.3" y2="100" stroke="#e3e0da"/>
+<text x="403.3" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−8</text>
+<line x1="476.7" y1="96" x2="476.7" y2="100" stroke="#e3e0da"/>
+<text x="476.7" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−6</text>
+<line x1="550.0" y1="96" x2="550.0" y2="100" stroke="#e3e0da"/>
+<text x="550.0" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−4</text>
+<line x1="623.3" y1="96" x2="623.3" y2="100" stroke="#e3e0da"/>
+<text x="623.3" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">−2</text>
+<line x1="696.7" y1="96" x2="696.7" y2="100" stroke="#e3e0da"/>
+<text x="696.7" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">0</text>
+<line x1="770.0" y1="96" x2="770.0" y2="100" stroke="#e3e0da"/>
+<text x="770.0" y="112" font-size="9.5" text-anchor="middle" fill="#6b7079">2</text>
+<line x1="696.7" y1="44" x2="696.7" y2="96" stroke="#6b7079" stroke-dasharray="3 3" opacity=".55"/>
+<text x="330" y="127" font-size="10" fill="#6b7079">&#8592; 偏好 LE + RT</text>
+<text x="770" y="127" font-size="10" text-anchor="end" fill="#6b7079">偏好 TME &#8594;</text>
+<text x="550.0" y="127" font-size="10" text-anchor="middle" fill="#6b7079">天 days</text>
+<text x="142" y="68.0" font-size="12" text-anchor="end" fill="#1b1c1e" font-weight="700">住院天數</text>
+<text x="142" y="80.0" font-size="9.5" text-anchor="end" fill="#6b7079">Length of stay (天)</text>
+<text x="320" y="68.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="700">−4.95 (−9.34 至 −0.56)</text>
+<line x1="354.2" y1="66.0" x2="676.1" y2="66.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<line x1="354.2" y1="61.0" x2="354.2" y2="71.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<line x1="676.1" y1="61.0" x2="676.1" y2="71.0" stroke="#8a4a3d" stroke-width="1.6" opacity=".85"/>
+<polygon points="509.2,66.0 515.2,60.0 521.2,66.0 515.2,72.0" fill="#8a4a3d"/>
+</svg>
+    <div class="cap"><b>圖 2｜連續型結果的合併平均差（mean difference, MD）。</b>手術時間 MD −112.33 分鐘（−223.06 至 −1.61, p = 0.05）；術後住院天數 MD −4.95 天（−9.34 至 −0.56, p = 0.04）。兩者方向都對 LE + RT 有利，但 <span style="color:#8a6a1f"><b>I² 分別高達 96% 與 93%</b></span>，代表各研究之間差異極大（TME 是開腹或腹腔鏡、放療是短程或長程），合併值僅供參考，不宜當成可套用到個別病人的預期值。手術時間的信賴區間上限僅 −1.61 分鐘，幾乎貼到無效線。</div>
+  </div>
+
+  <h3>全部 11 個森林圖面板的結果總覽</h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>原文面板</th><th>結果指標</th><th>合併效果值（95% CI）</th><th>p</th><th>I²</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td class="num">Fig. 3A</td><td><strong>手術時間</strong><br><span style="font-size:12.5px;color:#6b7079">Operative time</span></td><td class="num sig">MD −112.33 分鐘<br>(−223.06 至 −1.61)</td><td class="num">0.05</td><td class="num" style="color:#8a6a1f">96%</td><td><span class="win">LE + RT 勝</span></td></tr>
+      <tr><td class="num">Fig. 3B</td><td><strong>術中失血</strong><br><span style="font-size:12.5px;color:#6b7079">Blood loss</span></td><td class="ns">無顯著差異（原文未列數值）</td><td class="num">—</td><td class="num">—</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td class="num">Fig. 3C</td><td><strong>整體併發症</strong><br><span style="font-size:12.5px;color:#6b7079">Overall morbidity（所有 Clavien–Dindo 級別）</span></td><td class="num sig">RR 0.46<br>(0.26 – 0.81)</td><td class="num">0.03</td><td class="num sig">0%</td><td><span class="win">LE + RT 勝</span></td></tr>
+      <tr><td class="num">Fig. 3D</td><td><strong>嚴重併發症</strong><br><span style="font-size:12.5px;color:#6b7079">Clavien–Dindo ≥ III</span></td><td class="ns">無顯著差異（原文未列數值）</td><td class="num">—</td><td class="num">—</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td class="num">Fig. 3E</td><td><strong>術後住院天數</strong><br><span style="font-size:12.5px;color:#6b7079">Length of stay</span></td><td class="num sig">MD −4.95 天<br>(−9.34 至 −0.56)</td><td class="num">0.04</td><td class="num" style="color:#8a6a1f">93%</td><td><span class="win">LE + RT 勝</span></td></tr>
+      <tr><td class="num">Fig. 3F</td><td><strong>永久性造口</strong><br><span style="font-size:12.5px;color:#6b7079">Permanent stoma</span></td><td class="ns">無顯著差異（原文未列數值）</td><td class="num">—</td><td class="num">—</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td class="num">Fig. 4A</td><td><strong>切緣陽性</strong><br><span style="font-size:12.5px;color:#6b7079">Positive surgical margin</span></td><td class="ns">LE + RT 有偏高趨勢，未達顯著</td><td class="num">—</td><td class="num">—</td><td><span class="win caution">需留意</span></td></tr>
+      <tr><td class="num">Fig. 4B</td><td><strong>局部復發</strong><br><span style="font-size:12.5px;color:#6b7079">Local recurrence</span></td><td class="ns">LE + RT 有偏高趨勢，未達顯著</td><td class="num">—</td><td class="num">無明顯異質性</td><td><span class="win caution">需留意</span></td></tr>
+      <tr><td class="num">Fig. 4C</td><td><strong>整體復發</strong><br><span style="font-size:12.5px;color:#6b7079">Overall recurrence（含遠端轉移）</span></td><td class="ns">無顯著差異</td><td class="num">—</td><td class="num">無明顯異質性</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td class="num">Fig. 5A</td><td><strong>整體存活</strong><br><span style="font-size:12.5px;color:#6b7079">Overall survival</span></td><td class="num ns">HR 0.93<br>(0.57 – 1.52)</td><td class="num">0.66</td><td class="num sig">0%</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td class="num">Fig. 5B</td><td><strong>無病存活</strong><br><span style="font-size:12.5px;color:#6b7079">Disease-free survival</span></td><td class="num ns">HR 1.02<br>(0.52 – 2.00)</td><td class="num">0.92</td><td class="num sig">0%</td><td><span class="win neutral">相當</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:13px;color:#6b7079;margin-top:12px">原文另有 <strong>Fig. 2</strong>（偏差風險評估：A = RoB 2、B = ROBINS-I）。標示「原文未列數值」者，該面板的合併效果值僅以文字敘述呈現，數值只存在於圖檔內，無法逐字取得 — 本頁不臆測。</p>
+</section>
+
+<section id="onco">
+  <h2>Table 3 <span class="zh">／ 各研究腫瘤學結果（原始事件數）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>研究</th><th>切緣陽性</th><th>局部復發</th><th>遠端復發</th><th>5 年 OS (%)</th><th>5 年 DFS (%)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Bach 2021</strong> (TREC)</td><td class="num">5 (6%) vs 2 (6%)</td><td class="num">9 (10%) vs <strong>0</strong></td><td class="num">9 (10%) vs 2 (6%)</td><td class="num">88 vs 93</td><td class="num">76 vs 85</td></tr>
+      <tr><td><strong>Lezoche 2008</strong></td><td class="num ns">未報告</td><td class="num">2 (6%) vs 1 (3%)</td><td class="num">1 (3%) vs 1 (3%)</td><td class="num ns">未報告</td><td class="num ns">未報告</td></tr>
+      <tr><td><strong>Lezoche 2012</strong></td><td class="num">0 vs 0</td><td class="num">4 (8%) vs 3 (6%)</td><td class="num">2 (4%) vs 2 (4%)</td><td class="num ns">未報告</td><td class="num ns">未報告</td></tr>
+      <tr><td><strong>Qiu 2025</strong> (MONT-R)</td><td class="num">3 (8%) vs <strong>0</strong></td><td class="num">2 (5%) vs <strong>0</strong></td><td class="num">8 (21%) vs 7 (17%)</td><td class="num">93.2 vs 88.2</td><td class="num">75.6 vs 80.9</td></tr>
+      <tr><td><strong>Rullier 2020</strong> (GRECCAR 2)</td><td class="num ns">未報告</td><td class="num">5 (7%) vs 5 (7%)</td><td class="num">13 (18%) vs 13 (19%)</td><td class="num">66 vs 53</td><td class="num">54 vs 49</td></tr>
+      <tr><td><strong>Serra-Aracil 2025</strong> (TAU-TEM)</td><td class="num">4 (5%) vs 2 (2%)</td><td class="num">6 (7%) vs 5 (6%)</td><td class="num">10 (12%) vs 14 (17%)</td><td class="num">82.7 vs 85.2</td><td class="num">88.9 vs 88.9</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:13px;color:#6b7079;margin-top:10px">格式：LE + RT vs TME。所有百分比均已與 Table 1 之分母交叉驗算相符。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 664 296" width="100%" role="img" aria-label="圖 3｜局部復發 Local recurrence（本頁依 Table 3 原始事件數自行計算，未合併）" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="664" height="296" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 3｜局部復發 Local recurrence（本頁依 Table 3 原始事件數自行計算，未合併）</text>
+<text x="170" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">研究 / 結果</text>
+<text x="310" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">RR (95% CI)</text>
+<line x1="320" y1="242" x2="650" y2="242" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="242" x2="320.0" y2="246" stroke="#e3e0da"/>
+<text x="320.0" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.1</text>
+<line x1="363.2" y1="242" x2="363.2" y2="246" stroke="#e3e0da"/>
+<text x="363.2" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.2</text>
+<line x1="420.2" y1="242" x2="420.2" y2="246" stroke="#e3e0da"/>
+<text x="420.2" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.5</text>
+<line x1="463.4" y1="242" x2="463.4" y2="246" stroke="#e3e0da"/>
+<text x="463.4" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">1</text>
+<line x1="506.6" y1="242" x2="506.6" y2="246" stroke="#e3e0da"/>
+<text x="506.6" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">2</text>
+<line x1="563.7" y1="242" x2="563.7" y2="246" stroke="#e3e0da"/>
+<text x="563.7" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">5</text>
+<line x1="606.8" y1="242" x2="606.8" y2="246" stroke="#e3e0da"/>
+<text x="606.8" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">10</text>
+<line x1="650.0" y1="242" x2="650.0" y2="246" stroke="#e3e0da"/>
+<text x="650.0" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">20</text>
+<line x1="463.4" y1="44" x2="463.4" y2="242" stroke="#6b7079" stroke-dasharray="3 3" stroke-width="1" opacity=".55"/>
+<text x="455.4" y="273" font-size="10" text-anchor="end" fill="#6b7079">&#8592; 偏好 LE + RT</text>
+<text x="471.4" y="273" font-size="10" fill="#6b7079">偏好 TME &#8594;</text>
+<text x="170" y="66.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Bach 2021 (TREC)</text>
+<text x="170" y="77.0" font-size="9.5" text-anchor="end" fill="#6b7079">9/88 vs 0/35</text>
+<text x="310" y="66.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">7.69 (0.46–128.60)</text>
+<line x1="415.0" y1="64.0" x2="650.0" y2="64.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="415.0" y1="60.0" x2="415.0" y2="68.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<polygon points="650.0,60.0 656.0,64.0 650.0,68.0" fill="#43464d" opacity=".85"/>
+<rect x="586.3" y="59.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="96.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Lezoche 2008</text>
+<text x="170" y="107.0" font-size="9.5" text-anchor="end" fill="#6b7079">2/35 vs 1/35</text>
+<text x="310" y="96.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">2.00 (0.19–21.06)</text>
+<line x1="360.0" y1="94.0" x2="650.0" y2="94.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="360.0" y1="90.0" x2="360.0" y2="98.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<polygon points="650.0,90.0 656.0,94.0 650.0,98.0" fill="#43464d" opacity=".85"/>
+<rect x="502.4" y="89.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="126.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Lezoche 2012</text>
+<text x="170" y="137.0" font-size="9.5" text-anchor="end" fill="#6b7079">4/50 vs 3/50</text>
+<text x="310" y="126.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.33 (0.31–5.65)</text>
+<line x1="390.5" y1="124.0" x2="571.3" y2="124.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="390.5" y1="120.0" x2="390.5" y2="128.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="571.3" y1="120.0" x2="571.3" y2="128.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="477.0" y="119.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="156.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Qiu 2025 (MONT-R)</text>
+<text x="170" y="167.0" font-size="9.5" text-anchor="end" fill="#6b7079">2/38 vs 0/41</text>
+<text x="310" y="156.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">5.38 (0.27–108.69)</text>
+<line x1="381.9" y1="154.0" x2="650.0" y2="154.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="381.9" y1="150.0" x2="381.9" y2="158.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<polygon points="650.0,150.0 656.0,154.0 650.0,158.0" fill="#43464d" opacity=".85"/>
+<rect x="564.0" y="149.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="186.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Rullier 2020 (GRECCAR 2)</text>
+<text x="170" y="197.0" font-size="9.5" text-anchor="end" fill="#6b7079">5/74 vs 5/71</text>
+<text x="310" y="186.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">0.96 (0.29–3.17)</text>
+<line x1="386.3" y1="184.0" x2="535.3" y2="184.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="386.3" y1="180.0" x2="386.3" y2="188.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="535.3" y1="180.0" x2="535.3" y2="188.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="456.7" y="179.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="216.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Serra-Aracil 2025 (TAU-TEM)</text>
+<text x="170" y="227.0" font-size="9.5" text-anchor="end" fill="#6b7079">6/81 vs 5/81</text>
+<text x="310" y="216.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.20 (0.38–3.78)</text>
+<line x1="403.1" y1="214.0" x2="546.2" y2="214.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="403.1" y1="210.0" x2="403.1" y2="218.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="546.2" y1="210.0" x2="546.2" y2="218.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="470.6" y="209.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+</svg>
+    <div class="cap"><b>圖 3｜局部復發（本頁自行計算）。</b>原文 Fig. 4B 的每篇研究效果值僅存在於圖檔中，無法取得；此圖係由上方 Table 3 的原始事件數與 Table 1 分母重新計算之風險比（risk ratio, RR），零事件格採 0.5 連續性校正（continuity correction）。<b>刻意不呈現合併菱形</b>，以免與原文未公布的合併值混淆。可見趨勢：早期小型研究（TREC、MONT-R）因 TME 組零復發而 RR 極高但信賴區間極寬；兩篇最大型的近期 RCT（GRECCAR 2、TAU-TEM）則幾乎落在無效線上。</div>
+  </div>
+
+  <div class="fig">
+    <svg viewBox="0 0 664 296" width="100%" role="img" aria-label="圖 4｜遠端復發 Distant recurrence（本頁自行計算，未合併）" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="664" height="296" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 4｜遠端復發 Distant recurrence（本頁自行計算，未合併）</text>
+<text x="170" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">研究 / 結果</text>
+<text x="310" y="42" font-size="10.5" text-anchor="end" fill="#6b7079" letter-spacing=".06em">RR (95% CI)</text>
+<line x1="320" y1="242" x2="650" y2="242" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="242" x2="320.0" y2="246" stroke="#e3e0da"/>
+<text x="320.0" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.05</text>
+<line x1="358.2" y1="242" x2="358.2" y2="246" stroke="#e3e0da"/>
+<text x="358.2" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.1</text>
+<line x1="446.8" y1="242" x2="446.8" y2="246" stroke="#e3e0da"/>
+<text x="446.8" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">0.5</text>
+<line x1="485.0" y1="242" x2="485.0" y2="246" stroke="#e3e0da"/>
+<text x="485.0" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">1</text>
+<line x1="523.2" y1="242" x2="523.2" y2="246" stroke="#e3e0da"/>
+<text x="523.2" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">2</text>
+<line x1="573.6" y1="242" x2="573.6" y2="246" stroke="#e3e0da"/>
+<text x="573.6" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">5</text>
+<line x1="650.0" y1="242" x2="650.0" y2="246" stroke="#e3e0da"/>
+<text x="650.0" y="258" font-size="9.5" text-anchor="middle" fill="#6b7079">20</text>
+<line x1="485.0" y1="44" x2="485.0" y2="242" stroke="#6b7079" stroke-dasharray="3 3" stroke-width="1" opacity=".55"/>
+<text x="477.0" y="273" font-size="10" text-anchor="end" fill="#6b7079">&#8592; 偏好 LE + RT</text>
+<text x="493.0" y="273" font-size="10" fill="#6b7079">偏好 TME &#8594;</text>
+<text x="170" y="66.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Bach 2021 (TREC)</text>
+<text x="170" y="77.0" font-size="9.5" text-anchor="end" fill="#6b7079">9/88 vs 2/35</text>
+<text x="310" y="66.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.79 (0.41–7.87)</text>
+<line x1="435.9" y1="64.0" x2="598.6" y2="64.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="435.9" y1="60.0" x2="435.9" y2="68.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="598.6" y1="60.0" x2="598.6" y2="68.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="512.9" y="59.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="96.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Lezoche 2008</text>
+<text x="170" y="107.0" font-size="9.5" text-anchor="end" fill="#6b7079">1/35 vs 1/35</text>
+<text x="310" y="96.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.00 (0.07–15.36)</text>
+<line x1="338.5" y1="94.0" x2="635.5" y2="94.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="338.5" y1="90.0" x2="338.5" y2="98.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="635.5" y1="90.0" x2="635.5" y2="98.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="480.8" y="89.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="126.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Lezoche 2012</text>
+<text x="170" y="137.0" font-size="9.5" text-anchor="end" fill="#6b7079">2/50 vs 2/50</text>
+<text x="310" y="126.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.00 (0.15–6.82)</text>
+<line x1="380.5" y1="124.0" x2="590.7" y2="124.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="380.5" y1="120.0" x2="380.5" y2="128.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="590.7" y1="120.0" x2="590.7" y2="128.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="480.8" y="119.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="156.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Qiu 2025 (MONT-R)</text>
+<text x="170" y="167.0" font-size="9.5" text-anchor="end" fill="#6b7079">8/38 vs 7/41</text>
+<text x="310" y="156.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">1.23 (0.49–3.07)</text>
+<line x1="445.7" y1="154.0" x2="546.8" y2="154.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="445.7" y1="150.0" x2="445.7" y2="158.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="546.8" y1="150.0" x2="546.8" y2="158.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="492.2" y="149.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="186.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Rullier 2020 (GRECCAR 2)</text>
+<text x="170" y="197.0" font-size="9.5" text-anchor="end" fill="#6b7079">13/74 vs 13/71</text>
+<text x="310" y="186.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">0.96 (0.48–1.93)</text>
+<line x1="444.6" y1="184.0" x2="521.2" y2="184.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="444.6" y1="180.0" x2="444.6" y2="188.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="521.2" y1="180.0" x2="521.2" y2="188.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="478.6" y="179.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+<text x="170" y="216.0" font-size="11.5" text-anchor="end" fill="#1b1c1e" font-weight="500">Serra-Aracil 2025 (TAU-TEM)</text>
+<text x="170" y="227.0" font-size="9.5" text-anchor="end" fill="#6b7079">10/81 vs 14/81</text>
+<text x="310" y="216.0" font-size="11" text-anchor="end" fill="#43464d" font-variant-numeric="tabular-nums" font-weight="500">0.71 (0.34–1.51)</text>
+<line x1="425.6" y1="214.0" x2="507.7" y2="214.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="425.6" y1="210.0" x2="425.6" y2="218.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<line x1="507.7" y1="210.0" x2="507.7" y2="218.0" stroke="#43464d" stroke-width="1.4" opacity=".85"/>
+<rect x="461.9" y="209.8" width="8.4" height="8.4" fill="#43464d" opacity=".9"/>
+</svg>
+    <div class="cap"><b>圖 4｜遠端復發（本頁自行計算）。</b>同上計算方式。六篇研究的點估計值皆貼近無效線 1，方向一致，與原文「整體復發無顯著差異」的敘述相符。</div>
+  </div>
+</section>
+
+<section id="surv">
+  <h2>Survival <span class="zh">／ 5 年存活率（四篇有報告之研究）</span></h2>
+  <div class="fig"><svg viewBox="0 0 700 290" width="100%" role="img" aria-label="圖 5A｜5 年整體存活率 5-year overall survival (%)" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="700" height="290" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 5A｜5 年整體存活率 5-year overall survival (%)</text>
+<line x1="44" y1="226.0" x2="688" y2="226.0" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="229.5" font-size="9.5" text-anchor="end" fill="#6b7079">0</text>
+<line x1="44" y1="189.2" x2="688" y2="189.2" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="192.7" font-size="9.5" text-anchor="end" fill="#6b7079">20</text>
+<line x1="44" y1="152.4" x2="688" y2="152.4" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="155.9" font-size="9.5" text-anchor="end" fill="#6b7079">40</text>
+<line x1="44" y1="115.6" x2="688" y2="115.6" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="119.1" font-size="9.5" text-anchor="end" fill="#6b7079">60</text>
+<line x1="44" y1="78.8" x2="688" y2="78.8" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="82.3" font-size="9.5" text-anchor="end" fill="#6b7079">80</text>
+<line x1="44" y1="42.0" x2="688" y2="42.0" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="45.5" font-size="9.5" text-anchor="end" fill="#6b7079">100</text>
+<rect x="91.5" y="64.1" width="30.0" height="161.9" fill="#8a4a3d" rx="2"/>
+<text x="106.5" y="59.1" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">88</text>
+<rect x="127.5" y="54.9" width="30.0" height="171.1" fill="#2f6b62" rx="2"/>
+<text x="142.5" y="49.9" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">93</text>
+<text x="124.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Bach 2021</text>
+<rect x="252.5" y="54.5" width="30.0" height="171.5" fill="#8a4a3d" rx="2"/>
+<text x="267.5" y="49.5" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">93.2</text>
+<rect x="288.5" y="63.7" width="30.0" height="162.3" fill="#2f6b62" rx="2"/>
+<text x="303.5" y="58.7" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">88.2</text>
+<text x="285.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Qiu 2025</text>
+<rect x="413.5" y="104.6" width="30.0" height="121.4" fill="#8a4a3d" rx="2"/>
+<text x="428.5" y="99.6" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">66</text>
+<rect x="449.5" y="128.5" width="30.0" height="97.5" fill="#2f6b62" rx="2"/>
+<text x="464.5" y="123.5" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">53</text>
+<text x="446.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Rullier 2020</text>
+<rect x="574.5" y="73.8" width="30.0" height="152.2" fill="#8a4a3d" rx="2"/>
+<text x="589.5" y="68.8" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">82.7</text>
+<rect x="610.5" y="69.2" width="30.0" height="156.8" fill="#2f6b62" rx="2"/>
+<text x="625.5" y="64.2" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">85.2</text>
+<text x="607.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Serra-Aracil 2025</text>
+<line x1="44" y1="226" x2="688" y2="226" stroke="#6b7079" stroke-width="1"/>
+<text x="36" y="34" font-size="9.5" text-anchor="end" fill="#6b7079">%</text>
+<rect x="44" y="259" width="11" height="11" fill="#8a4a3d" rx="2"/>
+<text x="60" y="268" font-size="10.5" fill="#43464d">LE + RT</text>
+<rect x="133.8" y="259" width="11" height="11" fill="#2f6b62" rx="2"/>
+<text x="149.8" y="268" font-size="10.5" fill="#43464d">TME</text>
+</svg>
+    <div class="cap"><b>圖 5A｜5 年整體存活率。</b>依 Table 3 數據重繪。注意 GRECCAR 2（Rullier 2020）兩組的絕對數值皆明顯偏低（66% vs 53%），因其納入族群為 cT2–3 N0–1，期別較其他研究進展；Lezoche 兩篇未報告 5 年存活率。</div></div>
+  <div class="fig"><svg viewBox="0 0 700 290" width="100%" role="img" aria-label="圖 5B｜5 年無病存活率 5-year disease-free survival (%)" font-family="-apple-system,'PingFang TC',sans-serif">
+<rect width="700" height="290" fill="#fff"/>
+<text x="0" y="18" font-size="12.5" font-weight="700" fill="#8a4a3d">圖 5B｜5 年無病存活率 5-year disease-free survival (%)</text>
+<line x1="44" y1="226.0" x2="688" y2="226.0" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="229.5" font-size="9.5" text-anchor="end" fill="#6b7079">0</text>
+<line x1="44" y1="189.2" x2="688" y2="189.2" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="192.7" font-size="9.5" text-anchor="end" fill="#6b7079">20</text>
+<line x1="44" y1="152.4" x2="688" y2="152.4" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="155.9" font-size="9.5" text-anchor="end" fill="#6b7079">40</text>
+<line x1="44" y1="115.6" x2="688" y2="115.6" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="119.1" font-size="9.5" text-anchor="end" fill="#6b7079">60</text>
+<line x1="44" y1="78.8" x2="688" y2="78.8" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="82.3" font-size="9.5" text-anchor="end" fill="#6b7079">80</text>
+<line x1="44" y1="42.0" x2="688" y2="42.0" stroke="#e3e0da" stroke-width="1" opacity=".8"/>
+<text x="36" y="45.5" font-size="9.5" text-anchor="end" fill="#6b7079">100</text>
+<rect x="91.5" y="86.2" width="30.0" height="139.8" fill="#8a4a3d" rx="2"/>
+<text x="106.5" y="81.2" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">76</text>
+<rect x="127.5" y="69.6" width="30.0" height="156.4" fill="#2f6b62" rx="2"/>
+<text x="142.5" y="64.6" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">85</text>
+<text x="124.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Bach 2021</text>
+<rect x="252.5" y="86.9" width="30.0" height="139.1" fill="#8a4a3d" rx="2"/>
+<text x="267.5" y="81.9" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">75.6</text>
+<rect x="288.5" y="77.1" width="30.0" height="148.9" fill="#2f6b62" rx="2"/>
+<text x="303.5" y="72.1" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">80.9</text>
+<text x="285.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Qiu 2025</text>
+<rect x="413.5" y="126.6" width="30.0" height="99.4" fill="#8a4a3d" rx="2"/>
+<text x="428.5" y="121.6" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">54</text>
+<rect x="449.5" y="135.8" width="30.0" height="90.2" fill="#2f6b62" rx="2"/>
+<text x="464.5" y="130.8" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">49</text>
+<text x="446.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Rullier 2020</text>
+<rect x="574.5" y="62.4" width="30.0" height="163.6" fill="#8a4a3d" rx="2"/>
+<text x="589.5" y="57.4" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">88.9</text>
+<rect x="610.5" y="62.4" width="30.0" height="163.6" fill="#2f6b62" rx="2"/>
+<text x="625.5" y="57.4" font-size="9.5" text-anchor="middle" fill="#43464d" font-variant-numeric="tabular-nums">88.9</text>
+<text x="607.5" y="242" font-size="10.5" text-anchor="middle" fill="#1b1c1e">Serra-Aracil 2025</text>
+<line x1="44" y1="226" x2="688" y2="226" stroke="#6b7079" stroke-width="1"/>
+<text x="36" y="34" font-size="9.5" text-anchor="end" fill="#6b7079">%</text>
+<rect x="44" y="259" width="11" height="11" fill="#8a4a3d" rx="2"/>
+<text x="60" y="268" font-size="10.5" fill="#43464d">LE + RT</text>
+<rect x="133.8" y="259" width="11" height="11" fill="#2f6b62" rx="2"/>
+<text x="149.8" y="268" font-size="10.5" fill="#43464d">TME</text>
+</svg>
+    <div class="cap"><b>圖 5B｜5 年無病存活率。</b>TAU-TEM 兩組完全相同（88.9% vs 88.9%）；四篇研究中 LE + RT 兩勝兩負，無一致方向 — 與合併 HR 1.02（0.52–2.00）相符。</div></div>
+</section>
+
+<section id="stage">
+  <h2>Table 2 <span class="zh">／ 臨床與病理分期（重點摘錄）</span></h2>
+  <p style="font-size:14.5px">最值得注意的是 <strong>ypT0（病理完全緩解，pathological complete response）比例</strong> — 這正是器官保留策略成立與否的關鍵指標。</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>研究</th><th>臨床分期（LE+RT vs TME）</th><th>ypT0 / pT0<br>（病理完全緩解）</th><th>ypT2 以上</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Bach 2021</strong></td><td>cT1N0 20 (23%) vs 5 (14%)<br>cT2N0 61 (69%) vs 28 (80%)</td><td class="num sig">27 (31%) vs 0</td><td class="num">ypT2 20 (23%) vs 19 (54%)<br>ypT3 9 (10%) vs 1 (3%)</td></tr>
+      <tr><td><strong>Lezoche 2008</strong></td><td>cT2N0 35 (100%) vs 35 (100%)</td><td class="num">11 (32%) vs 10 (29%)</td><td class="num">ypT2 18 (51%) vs 18 (51%)</td></tr>
+      <tr><td><strong>Lezoche 2012</strong></td><td>cT2N0 50 (100%) vs 50 (100%)</td><td class="num">14 (28%) vs 13 (26%)</td><td class="num">ypT2 24 (48%) vs 25 (50%)</td></tr>
+      <tr><td><strong>Qiu 2025</strong></td><td>cT3 30 (79%) vs 33 (80%)<br>cN+ 22 (58%) vs 26 (63%)</td><td class="num sig">22 (58%) vs 21 (51%)</td><td class="num">ypT2 10 (26%) vs 13 (32%)<br>ypT3 1 (3%) vs 2 (5%)</td></tr>
+      <tr><td><strong>Rullier 2017/2020</strong></td><td>cT2 41 (55%) vs 36 (51%)<br>cT3 33 (45%) vs 35 (49%)<br>cN1 32 (43%) vs 23 (32%)</td><td class="num">兩組合計 57 (40%)<br><span style="color:#6b7079;font-size:12.5px">原文未分組呈現</span></td><td class="num">兩組合計 ypT2 44 (31%)<br>ypT3 12 (9%)</td></tr>
+      <tr><td><strong>Serra-Aracil 2023/2025</strong></td><td>兩組合計：cT2N0 113 (70%)<br>cT3N0 49 (30%)</td><td class="num sig">35 (44%) vs 0</td><td class="num">ypT2 20 (25%) vs 53 (65%)<br>ypT3 6 (8%) vs 18 (22%)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">解讀陷阱：TME 組的 pT0 = 0 是假象</div>
+    Bach 2021 與 Serra-Aracil 兩篇的 TME 組 pT0 皆為 0，並非因為療效差，而是因為這兩篇的 <strong>TME 組是「直接手術（upfront TME）」沒有接受術前放療</strong>，自然不會有病理完全緩解。比較 ypT0 比例時務必先確認兩組是否都接受了新輔助治療。
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵</span></h2>
+  <ul class="clean">
+    <li><strong>誰適合？</strong>cT1–cT2（尤其中低位，距肛緣 ≤10 cm、腫瘤 ≤3–4 cm）、或 cT2–cT3 經新輔助化放療後呈臨床完全／近完全反應（cCR／near-cCR）者；以及高手術風險、無法承受 TME 的病人。</li>
+    <li><strong>換來什麼？</strong>手術時間平均少約 1.9 小時、整體併發症風險降低超過一半（RR 0.46）、住院天數少約 5 天，並避開 TME 帶來的功能損害 — 泌尿生殖功能障礙與低前位切除症候群（low anterior resection syndrome, LARS）。原文引用之研究顯示 LE 組的 Wexner score 與 LARS score 顯著較佳。</li>
+    <li><strong>代價是什麼？</strong>切緣陽性與局部復發率皆有偏高趨勢。因此 LE + RT 必須綁定<strong>嚴密的追蹤監測</strong>（regular endoscopy＋MRI），並確保<strong>挽救性 TME（salvage TME）</strong>的可行性 — 這是整個策略能否成立的前提。<span style="color:#8a6a1f">（原文並未報告挽救手術率、器官保留成功率或放療毒性，這是本文的重要缺口。）</span></li>
+    <li><strong>知情同意怎麼談？</strong>應明確告知這是「以可能較高的局部復發風險，換取器官保留與較低併發症」的取捨，而非在所有面向都更優的選項。</li>
+    <li><strong>目前定位：</strong>尚未取代 TME 成為標準治療，但對於<strong>主動尋求器官保留</strong>或不適合 TME 的病人，本文提供了統合層級（level 1a）的支持證據。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <div class="call amber">
+    <div class="h">閱讀時請打折的地方</div>
+    <ol class="num" style="margin-top:8px">
+      <li><strong>異質性極高</strong> — 手術時間 I² = 96%、住院天數 I² = 93%。這兩項「顯著」結果的合併估計值本身穩定性存疑（TME 是開腹或腹腔鏡、放療是 SCRT 或長程 CRT，六篇差異巨大）。</li>
+      <li><strong>偏差風險</strong> — 5 篇 RCT 中有 2 篇被評為高偏差風險（RoB 2, high risk），主因是外科介入無法盲化。</li>
+      <li><strong>樣本數偏小</strong> — 總計僅 679 人，對存活結果檢定力不足；HR 信賴區間寬（OS 0.57–1.52），<strong>「無顯著差異」不等於「等效」</strong>。</li>
+      <li><strong>對照組不一致</strong> — TREC 與 TAU-TEM 的 TME 組為直接手術（未放療），其餘四篇兩組皆接受放療。這使得「LE + RT vs TME」實際上混合了兩種不同的比較問題。</li>
+      <li><strong>組間跨越（crossover）</strong> — 部分 RCT 中 LE 組因病理結果不佳而轉行 TME，會稀釋兩組差異，使 LE + RT 看起來比實際更安全。</li>
+      <li><strong>功能與生活品質無法合併分析</strong> — 各研究評估工具差異太大，而這恰恰是 LE 最重要的宣稱優勢，只能以敘述方式呈現。</li>
+      <li><strong>追蹤時間落差近 3 倍</strong> — 從 GRECCAR 2 的 36 個月到 Lezoche 2012 的 115 個月；短追蹤會低估局部復發。</li>
+      <li><strong>納入研究橫跨 2008–2025</strong> — 早期研究的影像分期（MRI）、新輔助治療方案與現今標準（如全程新輔助治療 total neoadjuvant therapy, TNT）已有明顯落差。</li>
+    </ol>
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>全直腸繫膜切除術 <span class="en">total mesorectal excision, TME</span></dt><dd>沿直腸繫膜筋膜平面完整切除直腸及其繫膜，為中低位直腸癌的標準術式。</dd></div>
+      <div class="gl-row"><dt>局部切除 <span class="en">local excision, LE</span></dt><dd>僅切除腫瘤及周邊部分腸壁，不做淋巴結廓清，多經肛門途徑完成。</dd></div>
+      <div class="gl-row"><dt>經肛門內視鏡微創手術 <span class="en">transanal endoscopic microsurgery, TEM</span></dt><dd>以特殊直腸鏡平台完成的高精度局部切除術式；相近技術為 TAMIS（本文六篇研究均未使用）。</dd></div>
+      <div class="gl-row"><dt>新輔助治療 <span class="en">neoadjuvant therapy</span></dt><dd>手術前給予的放療／化放療，用以縮小腫瘤、提高完整切除率。</dd></div>
+      <div class="gl-row"><dt>短程放射治療 <span class="en">short-course radiotherapy, SCRT</span></dt><dd>5 × 5 Gy 共 25 Gy 一週療程，相對於長程化放療（long-course CRT, ~50 Gy／5–6 週）。</dd></div>
+      <div class="gl-row"><dt>全程新輔助治療 <span class="en">total neoadjuvant therapy, TNT</span></dt><dd>將全部化療與放療移至手術前完成的現代策略。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>器官保留 <span class="en">organ preservation</span></dt><dd>在腫瘤控制可接受的前提下保留直腸，避免造口與功能損害。</dd></div>
+      <div class="gl-row"><dt>低前位切除症候群 <span class="en">low anterior resection syndrome, LARS</span></dt><dd>直腸切除吻合後的排便功能障礙群：頻便、急迫感、片段排便、失禁。</dd></div>
+      <div class="gl-row"><dt>臨床完全反應 <span class="en">clinical complete response, cCR</span></dt><dd>新輔助治療後臨床、內視鏡與影像上均查不到殘存腫瘤。</dd></div>
+      <div class="gl-row"><dt>病理完全緩解 <span class="en">pathological complete response, ypT0</span></dt><dd>切除標本病理檢查中找不到殘存癌細胞。</dd></div>
+      <div class="gl-row"><dt>挽救性手術 <span class="en">salvage surgery</span></dt><dd>局部切除後發現病理不良或復發時，補行的根治性 TME。</dd></div>
+      <div class="gl-row"><dt>Clavien–Dindo 分級 <span class="en">Clavien–Dindo classification</span></dt><dd>術後併發症嚴重度分級；≥ III 級代表需手術／內視鏡／放射介入處置。</dd></div>
+      <div class="gl-row"><dt>異質性 <span class="en">heterogeneity, I²</span></dt><dd>統合分析中各研究結果差異程度；I² &gt; 75% 通常視為高度異質，合併結果須謹慎解讀。</dd></div>
+      <div class="gl-row"><dt>相對風險／風險比 <span class="en">RR / HR / MD</span></dt><dd>RR = risk ratio；HR = hazard ratio；MD = mean difference。RR、HR 的 95% CI 跨越 1，或 MD 跨越 0，即未達統計顯著。</dd></div>
+      <div class="gl-row"><dt>偏差風險評估工具 <span class="en">RoB 2 / ROBINS-I</span></dt><dd>Cochrane 用於隨機試驗（RoB 2）與非隨機介入研究（ROBINS-I）的偏差風險評估工具。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <strong>來源</strong>：Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola F, Giménez M, Oda T, Marescaux J. <em>Systematic review and meta-analysis comparing postoperative and oncological outcomes between local excision plus radiotherapy versus total mesorectal excision for rectal cancer.</em> World J Surg Oncol. 2026;24:203. doi:<a href="https://doi.org/10.1186/s12957-026-04304-8">10.1186/s12957-026-04304-8</a>（Open Access, CC BY 4.0）<br><br>
+  <strong>圖表說明</strong>：本頁 PRISMA 流程圖、Table 1–3 及所有森林圖／長條圖，均由 Claude 依原文公開之表格數據與 Results 內文<strong>重新繪製</strong>，非原圖重製。圖 3、圖 4 之每篇研究風險比為<strong>本頁自行計算</strong>（原文僅以圖檔呈現，數值不可逐字取得），零事件格採 0.5 連續性校正。原文 Fig. 1–5 原圖請見上方 DOI 連結。<br><br>
+  英文摘要為原文逐字引用；中文為摘要式整理。臨床決策請以原文全文及院內指引為準。<br>
+  每日大腸直腸外科文獻 · 為 Jeremy 製作 · 2026-07-29
+</footer>
+
+</div>
+<!-- daily-lit-backlink -->
+<style>
+  .dl-back{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom));
+    z-index:9999;display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:22px;
+    background:rgba(27,28,30,.9);color:#fff;font:600 14px/1 -apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif;
+    text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+  .dl-back:active{opacity:.75;}
+  @media print{.dl-back{display:none;}}
+</style>
+<a class="dl-back" href="../index.html">&#8592; 文獻列表</a>
+</body>
+</html>

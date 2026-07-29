@@ -1,0 +1,27 @@
+{
+ "count": 1,
+ "latest": "2026-07-29",
+ "papers": [
+  {
+   "id": "pubmed-crs-2026-07-29",
+   "file": "papers/pubmed-crs-2026-07-29.html",
+   "date": "2026-07-29",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 001",
+   "title": "局部切除合併放射治療 vs. 全直腸繫膜切除術治療直腸癌：術後與腫瘤學結果之系統性回顧與統合分析",
+   "title_en": "Systematic review and meta-analysis comparing postoperative and oncological outcomes between local excision plus radiotherapy versus total mesorectal excision for rectal cancer",
+   "journal": "World J Surg Oncol 2026;24:203",
+   "authors": "Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola F, Giménez M, Oda T, Marescaux J",
+   "design": "系統性回顧＋統合分析 6 studies / 679 patients",
+   "doi": "10.1186/s12957-026-04304-8",
+   "tags": [
+    "直腸癌手術與腫瘤學",
+    "器官保留 Organ preservation",
+    "Level 1a 證據",
+    "Open Access · CC BY"
+   ],
+   "tldr": "在經篩選的直腸癌病人（cT1–cT3 或新輔助治療後反應良好者），局部切除＋放射治療（LE + RT）相較於標準的 TME，手術時間更短、整體併發症降低超過一半（RR 0.46），住院天數更短，而整體存活與無病存活無顯著差異；但局部復發率有偏高的趨勢，且證據受樣本數小與高度異質性限制。",
+   "bytes": 68343
+  }
+ ]
+}
