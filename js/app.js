@@ -68,7 +68,7 @@
       return '<li class="card"><a href="' + esc(p.file) + '">' +
         '<div class="head"><span class="date">' + esc(fmtDate(p.date)) + '</span>' +
         (p.series ? '<span>' + esc(p.series) + '</span>' : '') +
-        (p.vol ? '<span>' + esc(p.vol) + '</span>' : '') + '</div>' +
+        (p.vol ? '<span class="vol">' + esc(p.vol) + '</span>' : '') + '</div>' +
         '<h2>' + mark(p.title, needles) + '</h2>' +
         (p.title_en ? '<p class="en">' + mark(p.title_en, needles) + '</p>' : '') +
         (p.journal || p.design
@@ -111,7 +111,7 @@
     var cats = Object.keys(count).sort(function (a, b) {
       return count[b] - count[a] || a.localeCompare(b, 'zh-Hant');
     });
-    if (!cats.length) { chipsEl.hidden = true; return; }
+    if (!cats.length) { chipsEl.hidden = true; barEl.classList.remove('has-more'); return; }
     chipsEl.hidden = false;
 
     chipsEl.innerHTML = ['<button type="button" class="chip" data-cat="" aria-pressed="true">全部</button>']
@@ -119,6 +119,8 @@
         return '<button type="button" class="chip" data-cat="' + esc(c) +
           '" aria-pressed="false">' + esc(c) + '<span class="n">' + count[c] + '</span></button>';
       })).join('');
+
+    markChipOverflow();
 
     chipsEl.onclick = function (e) {
       var btn = e.target.closest('.chip');
@@ -129,6 +131,36 @@
       });
       render();
     };
+  }
+
+  /* ── 手機上的捲動細節 ───────────────────────── */
+  var barEl = document.querySelector('.searchbar');
+
+  // 類別放不下時，右緣加一道淡出提示可以橫向捲。
+  // 量太早會量到還沒排版完的寬度（實測 rAF 那次會漏），所以字體就緒與稍後各再量一次。
+  function markChipOverflow() {
+    function check() {
+      barEl.classList.toggle('has-more', chipsEl.scrollWidth > chipsEl.clientWidth + 4);
+    }
+    requestAnimationFrame(check);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(check);
+    setTimeout(check, 400);
+  }
+  window.addEventListener('resize', markChipOverflow);
+
+  // 查詢列吸頂後補一道陰影，跟下方卡片分開
+  function syncStuck() { barEl.classList.toggle('stuck', window.pageYOffset > 4); }
+  window.addEventListener('scroll', syncStuck, { passive: true });
+
+  // 點進論文再返回時回到原位：清單是 JS 畫的，瀏覽器自己還原會落在還沒繪好的頁面上
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  listEl.addEventListener('click', function (e) {
+    if (e.target.closest('a')) sessionStorage.setItem('dl-scroll', String(window.pageYOffset));
+  });
+  function restoreScroll() {
+    var y = sessionStorage.getItem('dl-scroll');
+    sessionStorage.removeItem('dl-scroll');    // 只還原這一次，隔天重新開啟仍從頂端開始
+    if (y) { window.scrollTo(0, +y); syncStuck(); }   // 程式捲動不一定會派送 scroll，陰影自己補
   }
 
   /* ── 載入資料 ───────────────────────────────── */
@@ -259,7 +291,7 @@
   })();
 
   /* ── 啟動 ───────────────────────────────────── */
-  load();
+  load().then(restoreScroll);
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('./sw.js');
