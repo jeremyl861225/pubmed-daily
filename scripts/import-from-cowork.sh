@@ -9,11 +9,22 @@ set -uo pipefail
 
 SRC="/Users/jeremy/Desktop/claude cowork/PubMed 每日文獻"
 REPO="/Users/jeremy/Desktop/Claude code/pubmed-daily"
-LOG="$REPO/.import.log"
+# 紀錄寫在 Application Support：桌面受 macOS 隱私權保護，背景程式在取得
+# 「完全取用磁碟」之前連寫 log 都會被擋，log 寫在這裡才看得到失敗原因。
+LOG="$HOME/Library/Application Support/pubmed-daily/import.log"
+mkdir -p "$(dirname "$LOG")"
 
 log() { printf '%s  %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*" >> "$LOG"; }
 
-[ -d "$SRC" ]  || { log "找不到來源資料夾：$SRC"; exit 0; }
+[ -d "$SRC" ] || { log "找不到來源資料夾：$SRC"; exit 0; }
+
+# 受保護目錄的 stat 會過、readdir 才被擋，所以要真的列一次才知道有沒有權限。
+# 由 launchd 執行時若未授予「完全取用磁碟」，這裡會擋下來並留下明確訊息，
+# 不會誤以為「今天沒有新論文」。
+ls "$SRC" >/dev/null 2>&1 || {
+  log "讀不到 $SRC —— 請到 系統設定 › 隱私權與安全性 › 完全取用磁碟 加入 /bin/bash"
+  exit 0
+}
 [ -d "$REPO" ] || { log "找不到 repo：$REPO"; exit 1; }
 cd "$REPO" || exit 1
 

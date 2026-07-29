@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!-- 安裝：cp 這個檔到 ~/Library/LaunchAgents/ 後
-     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.jeremy.pubmed-daily-import.plist -->
+<!-- 安裝步驟見 README。腳本本體放在 Application Support，不放桌面：
+     桌面受隱私權保護，背景程式連讀取腳本檔本身都會被擋（exit 126）。 -->
 <plist version="1.0">
 <dict>
   <key>Label</key>
@@ -10,7 +10,7 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>/Users/jeremy/Desktop/Claude code/pubmed-daily/scripts/import-from-cowork.sh</string>
+    <string>/Users/jeremy/Library/Application Support/pubmed-daily/import.sh</string>
   </array>
 
   <!-- cowork 資料夾一有變動就跑 -->
@@ -27,6 +27,6 @@
   <true/>
 
   <key>StandardErrorPath</key>
-  <string>/Users/jeremy/Desktop/Claude code/pubmed-daily/.import-err.log</string>
+  <string>/Users/jeremy/Library/Application Support/pubmed-daily/err.log</string>
 </dict>
 </plist>

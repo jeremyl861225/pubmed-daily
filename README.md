@@ -22,9 +22,22 @@ cowork 每天早上產生 pubmed-*.html
                      手機開啟／下拉更新 → 全站離線可讀
 ```
 
-備援：`scripts/import-from-cowork.sh` 由 launchd 監看本機 cowork 資料夾，
-Mac 開著時若發現雲端那條沒推成功，會自動補推。兩條路徑重複匯入同一篇不會出問題
-（檔名相同就覆蓋，索引重建後結果一樣）。
+備援：`scripts/import-from-cowork.sh` 由 launchd（`com.jeremy.pubmed-daily-import`）
+監看本機 cowork 資料夾，Mac 開著時若發現雲端那條沒推成功，會自動補推。
+兩條路徑重複匯入同一篇不會出問題（檔名相同就覆蓋，索引重建後結果一樣）。
+
+**這支備援需要一次性授權才會生效**：桌面受 macOS 隱私權保護，背景程式讀不到。
+到 系統設定 › 隱私權與安全性 › 完全取用磁碟，按 `+` 加入 `/bin/bash`
+（Finder 按 ⇧⌘G 輸入 `/bin` 找得到）。未授權時它只會在紀錄裡留一行提醒，不會誤判成「今天沒有新論文」。
+
+安裝／檢查：
+
+```bash
+cp scripts/import-from-cowork.sh "$HOME/Library/Application Support/pubmed-daily/import.sh"
+cp scripts/com.jeremy.pubmed-daily-import.plist ~/Library/LaunchAgents/   # 內含的路徑指向上面那份
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.jeremy.pubmed-daily-import.plist
+tail -5 "$HOME/Library/Application Support/pubmed-daily/import.log"       # 看它做了什麼
+```
 
 ## 檔案
 
