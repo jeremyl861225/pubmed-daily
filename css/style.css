@@ -105,7 +105,11 @@ mark{background:#fdf3c9; color:inherit; border-radius:2px; padding:0 1px;}
 #ptr span{transition:transform .2s; display:block; line-height:1;}
 #ptr.loading span{animation:spin .8s linear infinite;}
 
+/* 手機上一張卡就快占滿整屏，篇數多了很難掃；結論收成兩行、標籤只留前三個 */
 @media (max-width:430px){
   .mast h1{font-size:25px;}
   .card h2{font-size:17.5px;}
+  .card .en{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+  .card .tldr{-webkit-line-clamp:2;}
+  .card .tag:nth-child(n+4){display:none;}
 }

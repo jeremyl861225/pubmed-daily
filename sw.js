@@ -11,7 +11,7 @@
  */
 const CACHE_PREFIX = 'pubmed-daily-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1';
-const BUILD = 'fbf7facd5249';
+const BUILD = '8f836c3f9d0c';
 
 const PRECACHE_URLS = [
   './',
