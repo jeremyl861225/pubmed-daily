@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日一般外科文獻 · 2026-07-30</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:660px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+  .selfcalc{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);white-space:nowrap;}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 7 月 30 日 · 週四</span>
+    <span style="opacity:.4">/</span><span>Vol. 001</span>
+  </div>
+  <h1 class="title">高齡病人接受機器人輔助 vs. 開腹胰頭十二指腸切除術：周術期結果之系統性回顧與統合分析</h1>
+  <p class="title-en">Robotic versus open pancreaticoduodenectomy in elderly patients: a meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Frontiers in Oncology<br><span style="color:#6b7079;font-size:13px">2026;16:1868703</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Zeng C, Xie L, Zhang J, Tang G, Zhou R<br><span style="color:#6b7079;font-size:13px">West China Hospital, Sichuan University, 成都</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-07-14</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v">系統性回顧＋統合分析<br><span style="color:#6b7079;font-size:13px">6 studies / 2965 patients（全為回溯性世代研究）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.3389/fonc.2026.1868703">10.3389/fonc.2026.1868703</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42523640/">PMID 42523640 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">內分泌外科</span>
+    <span class="tag t2">胰臟手術 Pancreatic surgery</span>
+    <span class="tag t2">機器人手術 Robotic surgery</span>
+    <span class="tag t3">全為回溯性資料</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl2">研究特徵表</a><a href="#results">主要結果＋森林圖</a><a href="#crude">自行計算對照圖</a>
+  <a href="#rate">粗略事件率</a><a href="#cont">連續型結果</a><a href="#sens">敏感性分析</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在 6 篇<strong>全為回溯性</strong>世代研究、2965 位 70 歲以上接受胰頭十二指腸切除術（Whipple 手術）的病人中，<strong>機器人手術（RPD）</strong>相較開腹（OPD）有較少的主要併發症（OR 0.68；95% CI 0.49–0.94）、較低輸血率（OR 0.50；0.34–0.72）、較少出血（&#8722;119 mL）與較短住院（&#8722;1.63 天），而<strong>死亡率、胰液漏、再次手術則無差異</strong>；但最亮眼的「整體併發症降低 55%」只來自 <strong>2 篇、136 位病人（占全體 4.6%）</strong>，主要併發症的顯著性在排除單一大型研究後即消失，且<strong>胃排空延遲有不利 RPD 的趨勢</strong>，因此這是「在有經驗的中心、對經篩選的高齡病人可以考慮」等級的證據，不是改變標準做法的依據。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Objective</h4>
+    <p>With the aging population and increasing indications for pancreatic surgery, more elderly patients are being considered for pancreaticoduodenectomy (PD). Robotic pancreaticoduodenectomy (RPD) has been increasingly adopted; however, its safety and efficacy in elderly patients remain controversial. This systematic review and meta-analysis aimed to compare the perioperative outcomes of RPD versus open pancreaticoduodenectomy (OPD) in elderly patients.</p>
+    <h4>Methods</h4>
+    <p>A systematic review and meta-analysis was conducted in accordance with PRISMA guidelines and registered in PROSPERO. PubMed, Cochrane Library, Scopus, EMBASE, and Web of Science were searched from inception to February 18, 2026. Studies comparing RPD and OPD in elderly patients were included. Odds ratios (ORs) and mean differences (MDs) with 95% confidence intervals (CIs) were calculated.</p>
+    <h4>Results</h4>
+    <p>A total of 6 studies including 2,965 patients (RPD group: 482 patients; OPD group: 2,483 patients) were included. Compared with the OPD group, the RPD group had lower overall morbidity (OR, 0.45; 95% CI, 0.22&#8211;0.92), fewer major complications (OR, 0.68; 95% CI, 0.49&#8211;0.94), less intraoperative blood loss (MD, -119.25 mL; 95% CI, -141.36 to -97.14), lower blood transfusion rates (OR, 0.50; 95% CI, 0.34&#8211;0.72), and shorter hospital stay (MD, -1.63 days; 95% CI, -2.88 to -0.38). No significant differences were observed between the groups in mortality (OR, 0.99; 95% CI, 0.54&#8211;1.82), operative time (MD, 100.76 min; 95% CI, -57.92 to 259.43), postoperative pancreatic fistula (OR, 0.69; 95% CI, 0.48&#8211;1.00), delayed gastric emptying (OR, 1.42; 95% CI, 0.99&#8211;2.02), or reoperation rates (OR, 1.24; 95% CI, 0.72&#8211;2.13).</p>
+    <h4>Conclusions</h4>
+    <p>This study suggests that RPD is a safe and feasible approach for elderly patients, with perioperative outcomes comparable to those of OPD. Additionally, RPD may be associated with reduced postoperative morbidity, less intraoperative blood loss, lower transfusion requirements, and shorter hospital stay. High-quality randomized controlled trials are warranted to validate these findings and further assess long-term outcomes.</p>
+    <p class="note">原文摘要逐字引自 <em>Frontiers in Oncology</em>（Open Access）。PROSPERO 註冊編號 CRD420261444617。高齡定義為 <b>≥ 70 歲</b>。本頁所有圖表均為依原文 Table 1–3 與 Results 內文數據<strong>重新繪製</strong>，未嵌入或翻拍原文 Fig. 1–5；原圖請見 DOI 連結。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>Fig. 1 <span class="zh">／ 文獻篩選流程（PRISMA flow diagram）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      資料庫檢索取得紀錄　<span class="n">331</span> 筆<br>
+      <span style="color:#6b7079;font-size:12.5px">Scopus 111　·　Embase 104　·　Web of Science 80　·　PubMed 31　·　Cochrane Library Trials 4<br>
+      五庫加總 <b>330</b> 筆（本頁自行計算）＋ 其他來源 1 筆　·　自建庫起至 2026-02-18</span>
+    </div></div><div class="pr-ex">移除重複<br><span class="n">67</span> 筆</div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Screening 標題／摘要篩選</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      去重後　<span class="n">264</span> 筆<br>
+      <span style="color:#6b7079;font-size:12.5px">331 &#8722; 67，本頁自行計算；由兩位審閱者（C.Z.、L.X.）獨立進行</span>
+    </div></div><div class="pr-ex">排除<br><span class="n">249</span> 筆</div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Eligibility 全文評估</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">全文評估　<span class="n">15</span> 篇</div></div>
+      <div class="pr-ex">排除　<span class="n">9</span> 篇<br>
+      <span style="font-size:11.5px">對照組不適當、族群不符、主題不符<br>（原文未列各理由的細項篇數）</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box final">
+      最終納入　<span class="n">6</span> 篇研究　/　<span class="n">2965</span> 位病人<br>
+      <span style="color:#6b7079;font-size:12.5px"><b>6 篇全為回溯性世代研究，0 篇 RCT</b>　·　RPD <b>482</b> 人　vs.　OPD <b>2483</b> 人　·　發表年代 2021&#8211;2026　·　國家：義大利、中國、美國 &#215;3、法國</span>
+    </div></div></div>
+    <div style="font-size:12.5px;color:#6b7079;margin-top:16px;padding-top:11px;border-top:1px solid #f0eeea">
+      品質評估：以 <b>Newcastle&#8722;Ottawa Scale（NOS）</b> 評分，6 篇皆 &gt; 6 分（範圍 6&#8211;8 分），原文均判定為高品質。<b>原文未使用 GRADE 架構評估證據確定性</b>，亦未使用 ROBINS-I；統計以 Review Manager 5.3 執行，I&#178; &gt; 50% 時採隨機效應模型、否則採固定效應模型。
+    </div>
+    <div style="font-size:12.5px;color:#6b7079;line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid #f0eeea">
+      <b>圖說：</b>依原文 Results 3.1 節文字、Fig. 1 圖說與 Table 1 各資料庫筆數重繪。<b>資料來源：</b>331、67、249、15、9、6 六個數字均為原文明列。<b>本頁自行計算：</b>264（＝331 &#8722; 67）與五資料庫加總 330。<b>怎麼讀：</b>331 &#8722; 67 &#8722; 249 = 15 &#8594; &#8722; 9 = 6，全鏈可對帳，內部一致。<b>陷阱：</b>原文內文寫「331 studies were identified from five databases」，但 Table 1 五庫加總只有 <b>330</b>，Fig. 1 圖說則寫「330 records from databases and 1 from other sources」—— 也就是內文把 1 筆其他來源誤併入資料庫計數。這是<b>不影響結論的小筆誤</b>，但提醒讀者：檢索式極窄（僅 robot* × elder* × Whipple 相關詞），且未限制語言與地區，最後只剩 6 篇，代表這個題目的可用證據本來就非常薄。
+    </div>
+  </div>
+</section>
+
+<section id="tbl2">
+  <h2>Table 2 <span class="zh">／ 6 篇納入研究之特徵</span></h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th>研究</th><th>國家</th><th>研究期間</th><th>適應症</th><th>設計</th>
+        <th>RPD n</th><th>OPD n</th><th>男性 RPD/OPD</th><th>年齡 RPD<br>／ OPD</th><th>NOS</th>
+      </tr></thead>
+      <tbody>
+<tr><td>Paolini 2021</td><td>義大利</td><td>2014–2020</td><td>惡性胰臟或壺腹周圍病灶</td><td>回溯性世代</td><td class="num">29</td><td class="num">38</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">原文未列<br><span style="color:#6b7079">原文未列</span></td><td class="num">6/9</td></tr>
+<tr><td>Liu 2022</td><td>中國</td><td>2011–2020</td><td>可切除之胰頭／壺腹周圍／十二指腸良性、惡性或邊緣可切除腫瘤</td><td>回溯性世代</td><td class="num">165</td><td class="num">133</td><td class="num">86 / 72</td><td class="num">76.9 (2.0)<br><span style="color:#6b7079">76.5 (1.8)</span></td><td class="num">7/9</td></tr>
+<tr><td>Mederos 2022</td><td>美國</td><td>2015–2018</td><td>壺腹周圍腺癌</td><td>回溯性世代＋傾向分數配對</td><td class="num">122</td><td class="num">603</td><td class="num">62 / 313</td><td class="num">78 (76–82)<br><span style="color:#6b7079">79 (76–82)</span></td><td class="num">8/9</td></tr>
+<tr><td>Ross 2024</td><td>美國</td><td>2012–2023</td><td>壺腹周圍腫瘤</td><td>回溯性世代</td><td class="num">42</td><td class="num">27</td><td class="num">24 / 19</td><td class="num">84 (2.7)<br><span style="color:#6b7079">83 (2.6)</span></td><td class="num">7/9</td></tr>
+<tr><td>Abreu 2025</td><td>美國</td><td>2015–2021</td><td>胰臟腺癌</td><td>回溯性世代</td><td class="num">95</td><td class="num">1625</td><td class="num">52 / 855</td><td class="num">原文未列<br><span style="color:#6b7079">原文未列</span></td><td class="num">6/9</td></tr>
+<tr><td>Wasielewski 2026</td><td>法國</td><td>2019–2025</td><td>良性或惡性疾病</td><td>回溯性世代</td><td class="num">29</td><td class="num">57</td><td class="num">14 / 25</td><td class="num">77.64 (75.98–79.14)<br><span style="color:#6b7079">77.7 (76.45–79.69)</span></td><td class="num">8/9</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="fig" style="margin-top:0;border-top:none;border-radius:0 0 6px 6px;padding-top:12px">
+    <div class="cap" style="margin-top:0;padding-top:0;border-top:none">
+      <b>資料來源：</b>原文 Table 2。<b>交叉驗算：</b>RPD 各研究人數加總 = 482、OPD = 2483、合計 2965，與摘要完全相符（本頁已逐筆核算）。<b>陷阱：</b>兩篇研究（Paolini 2021、Abreu 2025）<b>未報告年齡</b>，恰好也是 NOS 分數最低（6/9）的兩篇；而高齡的定義在各研究間不一致 —— Ross 2024 的平均年齡已達 <b>84 歲</b>（八十歲以上族群），Liu 2022 與 Wasielewski 2026 則在 <b>77 歲</b>上下。原文明言因報告不足而<b>無法</b>做年齡分層次群組分析。
+    </div>
+  </div>
+  <div class="svgbox" style="border:1px solid var(--line);border-radius:6px;background:#fff;padding:14px 16px;margin-top:18px">
+<svg viewBox="0 0 860 274" width="100%" role="img" aria-label="各研究收案人數" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif;display:block">
+<rect width="860" height="274" fill="#ffffff"/>
+<text x="10" y="24" font-size="11.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">研究 STUDY</text>
+<text x="383" y="24" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">收案人數（人）</text>
+<text x="850" y="24" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="end" letter-spacing="0.08em">NOS 品質分數</text>
+<line x1="10" y1="32" x2="850" y2="32" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="168.0" y1="40" x2="168.0" y2="228" stroke="#f0eeea" stroke-width="1"/>
+<text x="168.0" y="243" font-size="10" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="269.2" y1="40" x2="269.2" y2="228" stroke="#f0eeea" stroke-width="1"/>
+<text x="269.2" y="243" font-size="10" fill="#6b7079" text-anchor="middle">400</text>
+<line x1="370.4" y1="40" x2="370.4" y2="228" stroke="#f0eeea" stroke-width="1"/>
+<text x="370.4" y="243" font-size="10" fill="#6b7079" text-anchor="middle">800</text>
+<line x1="471.5" y1="40" x2="471.5" y2="228" stroke="#f0eeea" stroke-width="1"/>
+<text x="471.5" y="243" font-size="10" fill="#6b7079" text-anchor="middle">1200</text>
+<line x1="572.7" y1="40" x2="572.7" y2="228" stroke="#f0eeea" stroke-width="1"/>
+<text x="572.7" y="243" font-size="10" fill="#6b7079" text-anchor="middle">1600</text>
+<text x="10" y="58" font-size="11" fill="#1b1c1e">Paolini 2021</text>
+<text x="10" y="70" font-size="9.5" fill="#6b7079">義大利　2014–2020</text>
+<rect x="168" y="49.0" width="7.3" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="60.0" width="9.6" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="180.3" y="57.0" font-size="9.5" fill="#2f6b62">29</text>
+<text x="182.6" y="68.0" font-size="9.5" fill="#8a4a3d">38</text>
+<rect x="769.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="54.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="54.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="54.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="54.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="62.0" font-size="10.5" fill="#43464d" text-anchor="end">6/9</text>
+<text x="10" y="88" font-size="11" fill="#1b1c1e">Liu 2022</text>
+<text x="10" y="100" font-size="9.5" fill="#6b7079">中國　2011–2020</text>
+<rect x="168" y="79.0" width="41.7" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="90.0" width="33.6" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="214.7" y="87.0" font-size="9.5" fill="#2f6b62">165</text>
+<text x="206.6" y="98.0" font-size="9.5" fill="#8a4a3d">133</text>
+<rect x="769.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="84.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="84.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="84.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="92.0" font-size="10.5" fill="#43464d" text-anchor="end">7/9</text>
+<text x="10" y="118" font-size="11" fill="#1b1c1e">Mederos 2022</text>
+<text x="10" y="130" font-size="9.5" fill="#6b7079">美國　2015–2018</text>
+<rect x="168" y="109.0" width="30.9" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="120.0" width="152.5" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="203.9" y="117.0" font-size="9.5" fill="#2f6b62">122</text>
+<text x="325.5" y="128.0" font-size="9.5" fill="#8a4a3d">603</text>
+<rect x="769.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="114.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="114.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="122.0" font-size="10.5" fill="#43464d" text-anchor="end">8/9</text>
+<text x="10" y="148" font-size="11" fill="#1b1c1e">Ross 2024</text>
+<text x="10" y="160" font-size="9.5" fill="#6b7079">美國　2012–2023</text>
+<rect x="168" y="139.0" width="10.6" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="150.0" width="6.8" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="183.6" y="147.0" font-size="9.5" fill="#2f6b62">42</text>
+<text x="179.8" y="158.0" font-size="9.5" fill="#8a4a3d">27</text>
+<rect x="769.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="144.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="144.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="144.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="152.0" font-size="10.5" fill="#43464d" text-anchor="end">7/9</text>
+<text x="10" y="178" font-size="11" fill="#1b1c1e">Abreu 2025</text>
+<text x="10" y="190" font-size="9.5" fill="#6b7079">美國　2015–2021</text>
+<rect x="168" y="169.0" width="24.0" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="180.0" width="411.0" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="197.0" y="177.0" font-size="9.5" fill="#2f6b62">95</text>
+<text x="584.0" y="188.0" font-size="9.5" fill="#8a4a3d">1625</text>
+<rect x="769.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="174.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="174.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="174.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="174.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="182.0" font-size="10.5" fill="#43464d" text-anchor="end">6/9</text>
+<text x="10" y="208" font-size="11" fill="#1b1c1e">Wasielewski 2026</text>
+<text x="10" y="220" font-size="9.5" fill="#6b7079">法國　2019–2025</text>
+<rect x="168" y="199.0" width="7.3" height="8" fill="#2f6b62" opacity="0.88"/>
+<rect x="168" y="210.0" width="14.4" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="180.3" y="207.0" font-size="9.5" fill="#2f6b62">29</text>
+<text x="187.4" y="218.0" font-size="9.5" fill="#8a4a3d">57</text>
+<rect x="769.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="778.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="787.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="796.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="805.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="814.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="823.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="832.0" y="204.0" width="7" height="9" fill="#8a6a1f" stroke="#e3e0da" stroke-width="0.8"/>
+<rect x="841.0" y="204.0" width="7" height="9" fill="#ffffff" stroke="#e3e0da" stroke-width="0.8"/>
+<text x="763" y="212.0" font-size="10.5" fill="#43464d" text-anchor="end">8/9</text>
+<line x1="10" y1="228" x2="850" y2="228" stroke="#e3e0da" stroke-width="1"/>
+<rect x="10" y="250" width="11" height="8" fill="#2f6b62" opacity="0.88"/>
+<text x="26" y="258" font-size="10.5" fill="#43464d">RPD 合計 482 人</text>
+<rect x="150" y="250" width="11" height="8" fill="#8a4a3d" opacity="0.88"/>
+<text x="166" y="258" font-size="10.5" fill="#43464d">OPD 合計 2483 人</text>
+<text x="850" y="258" font-size="10.5" fill="#6b7079" text-anchor="end">Abreu 2025 一篇即占 OPD 組 65.4%（本頁自行計算）</text>
+</svg>
+  </div>
+  <div style="font-size:12.5px;color:#6b7079;line-height:1.6;margin-top:10px">
+    <b>圖說（Fig. 2）：</b><b>資料來源</b>原文 Table 2 逐筆數值。<b>怎麼讀：</b>每列上方青綠長條＝RPD 人數，下方赭紅＝OPD 人數；右側橘色方格為 NOS 品質分數（滿分 9）。<b>陷阱：</b>Abreu 2025 一篇即占 OPD 組 <b>1625/2483 = 65.4%</b>（本頁自行計算），而它的 RPD 組只有 95 人 —— 這種<b>極度不對稱</b>的結構，正是「主要併發症」的顯著性在排除該篇後消失的原因（見敏感性分析）。另請注意 RPD:OPD 人數比整體約 <b>1 : 5.2</b>，機器人組樣本量本身就偏小。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Fig. 3 <span class="zh">／ 主要結果：原文合併勝算比森林圖（對數刻度）</span></h2>
+  <div class="fig">
+    <div class="svgbox">
+<svg viewBox="0 0 860 372" width="100%" role="img" aria-label="原文合併勝算比森林圖" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif;display:block">
+<rect width="860" height="372" fill="#ffffff"/>
+<text x="10" y="26" font-size="11.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">結果指標 OUTCOME</text>
+<text x="272" y="26" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">篇數</text>
+<text x="324" y="26" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">I&#178;</text>
+<text x="509" y="26" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">勝算比 OR（95% CI）· 對數刻度</text>
+<text x="850" y="26" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="end" letter-spacing="0.08em">OR (95% CI)</text>
+<line x1="10" y1="34" x2="850" y2="34" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="398.3" y1="46" x2="398.3" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="398.3" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">0.2</text>
+<line x1="461.7" y1="46" x2="461.7" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="461.7" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">0.4</text>
+<line x1="512.9" y1="46" x2="512.9" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="512.9" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">0.7</text>
+<line x1="545.5" y1="46" x2="545.5" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="545.5" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">1</text>
+<line x1="582.6" y1="46" x2="582.6" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="582.6" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">1.5</text>
+<line x1="617.6" y1="46" x2="617.6" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="617.6" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">2.2</text>
+<line x1="646.0" y1="46" x2="646.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="646.0" y="333" font-size="10.5" fill="#6b7079" text-anchor="middle">3</text>
+<line x1="545.5" y1="46" x2="545.5" y2="318" stroke="#43464d" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="545.5" y="40" font-size="10.5" fill="#43464d" text-anchor="middle" font-weight="700">無效線 1.0</text>
+<text x="370" y="349" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="600">&#8592; 有利機器人 RPD</text>
+<text x="648" y="349" font-size="10.5" fill="#8a4a3d" text-anchor="end" font-weight="600">有利開腹 OPD &#8594;</text>
+<text x="10" y="79" font-size="12.5" fill="#1b1c1e" font-weight="600">整體併發症</text>
+<text x="10" y="92" font-size="10" fill="#6b7079">Overall complications　·　25/71 vs 38/65</text>
+<text x="272" y="84" font-size="12" fill="#43464d" text-anchor="middle">2</text>
+<text x="324" y="84" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="407.0" y1="80.0" x2="537.9" y2="80.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="407.0" y1="75.5" x2="407.0" y2="84.5" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="537.9" y1="75.5" x2="537.9" y2="84.5" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="465.5,80.0 472.5,75.0 479.5,80.0 472.5,85.0" fill="#2f6b62"/>
+<text x="850" y="79" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">0.45 (0.22&#8211;0.92)</text>
+<text x="850" y="92" font-size="10" fill="#6b7079" text-anchor="end">p = 0.03</text>
+<text x="10" y="115" font-size="12.5" fill="#1b1c1e" font-weight="600">主要併發症 (Clavien–Dindo ≥ III)</text>
+<text x="10" y="128" font-size="10" fill="#6b7079">Major complications　·　70/318 vs 741/1853</text>
+<text x="272" y="120" font-size="12" fill="#43464d" text-anchor="middle">4</text>
+<text x="324" y="120" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="480.3" y1="116.0" x2="539.9" y2="116.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="480.3" y1="111.5" x2="480.3" y2="120.5" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="539.9" y1="111.5" x2="539.9" y2="120.5" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="503.2,116.0 510.2,111.0 517.2,116.0 510.2,121.0" fill="#2f6b62"/>
+<text x="850" y="115" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">0.68 (0.49&#8211;0.94)</text>
+<text x="850" y="128" font-size="10" fill="#6b7079" text-anchor="end">p = 0.02</text>
+<text x="10" y="151" font-size="12.5" fill="#1b1c1e" font-weight="600">輸血</text>
+<text x="10" y="164" font-size="10" fill="#6b7079">Blood transfusion　·　40/440 vs 496/2456</text>
+<text x="272" y="156" font-size="12" fill="#43464d" text-anchor="middle">5</text>
+<text x="324" y="156" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="446.8" y1="152.0" x2="515.5" y2="152.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="446.8" y1="147.5" x2="446.8" y2="156.5" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="515.5" y1="147.5" x2="515.5" y2="156.5" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="475.1,152.0 482.1,147.0 489.1,152.0 482.1,157.0" fill="#2f6b62"/>
+<text x="850" y="151" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">0.50 (0.34&#8211;0.72)</text>
+<text x="850" y="164" font-size="10" fill="#6b7079" text-anchor="end">p = 0.0002</text>
+<text x="10" y="187" font-size="12.5" fill="#1b1c1e" font-weight="600">術後胰液漏 POPF</text>
+<text x="10" y="200" font-size="10" fill="#6b7079">Postoperative pancreatic fistula　·　45/411 vs 346/2399</text>
+<text x="272" y="192" font-size="12" fill="#43464d" text-anchor="middle">4</text>
+<text x="324" y="192" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="478.4" y1="188.0" x2="545.5" y2="188.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="478.4" y1="183.5" x2="478.4" y2="192.5" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="545.5" y1="183.5" x2="545.5" y2="192.5" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="504.6,188.0 511.6,183.0 518.6,188.0 511.6,193.0" fill="#6b7079"/>
+<text x="850" y="187" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">0.69 (0.48&#8211;1.00)</text>
+<text x="850" y="200" font-size="10" fill="#6b7079" text-anchor="end">p = 0.05</text>
+<text x="10" y="223" font-size="12.5" fill="#1b1c1e" font-weight="600">死亡率</text>
+<text x="10" y="236" font-size="10" fill="#6b7079">Mortality　·　17/453 vs 71/2426</text>
+<text x="272" y="228" font-size="12" fill="#43464d" text-anchor="middle">5</text>
+<text x="324" y="228" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="489.2" y1="224.0" x2="600.3" y2="224.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="489.2" y1="219.5" x2="489.2" y2="228.5" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="600.3" y1="219.5" x2="600.3" y2="228.5" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="537.6,224.0 544.6,219.0 551.6,224.0 544.6,229.0" fill="#6b7079"/>
+<text x="850" y="223" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">0.99 (0.54&#8211;1.82)</text>
+<text x="850" y="236" font-size="10" fill="#6b7079" text-anchor="end">p = 0.97</text>
+<text x="10" y="259" font-size="12.5" fill="#1b1c1e" font-weight="600">再次手術</text>
+<text x="10" y="272" font-size="10" fill="#6b7079">Reoperation　·　21/318 vs 111/1853</text>
+<text x="272" y="264" font-size="12" fill="#43464d" text-anchor="middle">4</text>
+<text x="324" y="264" font-size="12" fill="#43464d" text-anchor="middle">0%</text>
+<line x1="515.5" y1="260.0" x2="614.7" y2="260.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="515.5" y1="255.5" x2="515.5" y2="264.5" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="614.7" y1="255.5" x2="614.7" y2="264.5" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="558.2,260.0 565.2,255.0 572.2,260.0 565.2,265.0" fill="#6b7079"/>
+<text x="850" y="259" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">1.24 (0.72&#8211;2.13)</text>
+<text x="850" y="272" font-size="10" fill="#6b7079" text-anchor="end">p = 0.44</text>
+<text x="10" y="295" font-size="12.5" fill="#1b1c1e" font-weight="600">胃排空延遲 DGE</text>
+<text x="10" y="308" font-size="10" fill="#6b7079">Delayed gastric emptying　·　63/345 vs 141/831</text>
+<text x="272" y="300" font-size="12" fill="#43464d" text-anchor="middle">4</text>
+<text x="324" y="300" font-size="12" fill="#43464d" text-anchor="middle">25%</text>
+<line x1="544.6" y1="296.0" x2="609.8" y2="296.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="544.6" y1="291.5" x2="544.6" y2="300.5" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="609.8" y1="291.5" x2="609.8" y2="300.5" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="570.6,296.0 577.6,291.0 584.6,296.0 577.6,301.0" fill="#6b7079"/>
+<text x="850" y="295" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">1.42 (0.99&#8211;2.02)</text>
+<text x="850" y="308" font-size="10" fill="#6b7079" text-anchor="end">p = 0.05</text>
+<line x1="10" y1="318" x2="850" y2="318" stroke="#e3e0da" stroke-width="1"/>
+</svg>
+    </div>
+    <div class="cap">
+      <b>資料來源：</b>原文 Table 3 之合併估計值與事件數（對應原文 Fig. 2–4 之森林圖）。<b>怎麼讀：</b>菱形＝原文合併勝算比，橫線＝95% CI，垂直虛線 1.0＝無效線。青綠＝CI 完全落在 1 左側（有利 RPD），赭紅＝完全落在右側（有利 OPD），灰色＝跨過無效線。<b>陷阱：</b>三個「看起來很像有差」的結果其實都在邊界上 —— <b>POPF 上界剛好 1.00</b>、<b>DGE 下界剛好 0.99</b>、兩者 p 皆為 0.05。這種邊緣值在只有 4 篇研究時極不穩定，敏感性分析一動就翻邊（見下方 Table 4）。另外請注意每列的「篇數」與事件分母差異極大：整體併發症只有 2 篇 136 人，死亡率卻有 5 篇 2879 人 —— <b>同一張圖裡的各列證據強度完全不對等</b>。
+    </div>
+  </div>
+  <div class="call amber">
+    <div class="h">最需要留意的一句話</div>
+    摘要把「lower overall morbidity（OR 0.45）」放在第一句，但這個數字只來自 <b>2 篇研究、136 位病人</b>，占全體 2965 人的 <b>4.6%</b>（本頁自行計算）。真正有較厚資料支撐的是<b>輸血</b>（5 篇、涵蓋 97.7%）與<b>死亡率</b>（5 篇、涵蓋 97.1%）—— 而死亡率是<b>沒有差異</b>的。
+  </div>
+
+  <h3>全部結果總覽（原文數值 ＋ 本頁自行計算欄）</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th>結果指標</th><th>篇數／涵蓋率</th><th>RPD 事件／n</th><th>OPD 事件／n</th><th>原文效果值<br>95% CI</th>
+        <th>p</th><th>I&#178;</th><th>風險差<span class="selfcalc">自算</span></th>
+        <th>粗略 OR<span class="selfcalc">自算</span></th><th>判定</th>
+      </tr></thead>
+      <tbody>
+<tr><td><b>整體併發症</b><br><span style="color:#6b7079;font-size:12.5px">Overall complications</span></td><td class="num">2 篇<br><span style="color:#6b7079">涵蓋 5%</span></td><td class="num">25/71<br><span style="color:#2f6b62">35.2%</span></td><td class="num">38/65<br><span style="color:#8a4a3d">58.5%</span></td><td class="num">OR 0.45<br><span style="color:#6b7079">0.22&#8211;0.92</span></td><td class="num">0.03</td><td class="num">0%</td><td class="num">−23.3 pp<br><span style="color:#6b7079">NNT 4</span></td><td class="num">0.39<br><span style="color:#6b7079">0.19&#8211;0.77</span></td><td><span class="win">RPD 較佳</span></td></tr>
+<tr><td><b>主要併發症 (Clavien–Dindo ≥ III)</b><br><span style="color:#6b7079;font-size:12.5px">Major complications</span></td><td class="num">4 篇<br><span style="color:#6b7079">涵蓋 73%</span></td><td class="num">70/318<br><span style="color:#2f6b62">22.0%</span></td><td class="num">741/1853<br><span style="color:#8a4a3d">40.0%</span></td><td class="num">OR 0.68<br><span style="color:#6b7079">0.49&#8211;0.94</span></td><td class="num">0.02</td><td class="num">0%</td><td class="num">−18.0 pp<br><span style="color:#6b7079">NNT 6</span></td><td class="num">0.42<br><span style="color:#6b7079">0.32&#8211;0.56</span></td><td><span class="win">RPD 較佳</span></td></tr>
+<tr><td><b>輸血</b><br><span style="color:#6b7079;font-size:12.5px">Blood transfusion</span></td><td class="num">5 篇<br><span style="color:#6b7079">涵蓋 98%</span></td><td class="num">40/440<br><span style="color:#2f6b62">9.1%</span></td><td class="num">496/2456<br><span style="color:#8a4a3d">20.2%</span></td><td class="num">OR 0.50<br><span style="color:#6b7079">0.34&#8211;0.72</span></td><td class="num">0.0002</td><td class="num">0%</td><td class="num">−11.1 pp<br><span style="color:#6b7079">NNT 9</span></td><td class="num">0.40<br><span style="color:#6b7079">0.28&#8211;0.55</span></td><td><span class="win">RPD 較佳</span></td></tr>
+<tr><td><b>術後胰液漏 POPF</b><br><span style="color:#6b7079;font-size:12.5px">Postoperative pancreatic fistula</span></td><td class="num">4 篇<br><span style="color:#6b7079">涵蓋 95%</span></td><td class="num">45/411<br><span style="color:#2f6b62">10.9%</span></td><td class="num">346/2399<br><span style="color:#8a4a3d">14.4%</span></td><td class="num">OR 0.69<br><span style="color:#6b7079">0.48&#8211;1.00</span></td><td class="num">0.05</td><td class="num">0%</td><td class="num">−3.5 pp<br><span style="color:#6b7079">NNT 29</span></td><td class="num">0.73<br><span style="color:#6b7079">0.52&#8211;1.01</span></td><td><span class="win caution">邊緣／未達顯著</span></td></tr>
+<tr><td><b>死亡率</b><br><span style="color:#6b7079;font-size:12.5px">Mortality</span></td><td class="num">5 篇<br><span style="color:#6b7079">涵蓋 97%</span></td><td class="num">17/453<br><span style="color:#2f6b62">3.8%</span></td><td class="num">71/2426<br><span style="color:#8a4a3d">2.9%</span></td><td class="num">OR 0.99<br><span style="color:#6b7079">0.54&#8211;1.82</span></td><td class="num">0.97</td><td class="num">0%</td><td class="num">+0.8 pp<br><span style="color:#6b7079">NNT 121</span></td><td class="num">1.29<br><span style="color:#6b7079">0.75&#8211;2.22</span></td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td><b>再次手術</b><br><span style="color:#6b7079;font-size:12.5px">Reoperation</span></td><td class="num">4 篇<br><span style="color:#6b7079">涵蓋 73%</span></td><td class="num">21/318<br><span style="color:#2f6b62">6.6%</span></td><td class="num">111/1853<br><span style="color:#8a4a3d">6.0%</span></td><td class="num">OR 1.24<br><span style="color:#6b7079">0.72&#8211;2.13</span></td><td class="num">0.44</td><td class="num">0%</td><td class="num">+0.6 pp<br><span style="color:#6b7079">NNT 163</span></td><td class="num">1.11<br><span style="color:#6b7079">0.69&#8211;1.80</span></td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td><b>胃排空延遲 DGE</b><br><span style="color:#6b7079;font-size:12.5px">Delayed gastric emptying</span></td><td class="num">4 篇<br><span style="color:#6b7079">涵蓋 40%</span></td><td class="num">63/345<br><span style="color:#2f6b62">18.3%</span></td><td class="num">141/831<br><span style="color:#8a4a3d">17.0%</span></td><td class="num">OR 1.42<br><span style="color:#6b7079">0.99&#8211;2.02</span></td><td class="num">0.05</td><td class="num">25%</td><td class="num">+1.3 pp<br><span style="color:#6b7079">NNT 77</span></td><td class="num">1.09<br><span style="color:#6b7079">0.79&#8211;1.52</span></td><td><span class="win caution">邊緣／未達顯著</span></td></tr>
+<tr><td><b>住院天數</b><br><span style="color:#6b7079;font-size:12.5px">Hospital stay</span></td><td class="num">6 篇</td><td colspan="2" class="na">連續型變項，原文未列事件數</td><td class="num">MD −1.63<br><span style="color:#6b7079">−2.88 至 −0.38</span></td><td class="num">0.01</td><td class="num">67%</td><td class="na">不適用</td><td class="na">不適用</td><td><span class="win">RPD 較佳</span></td></tr>
+<tr><td><b>術中出血量</b><br><span style="color:#6b7079;font-size:12.5px">Blood loss</span></td><td class="num">2 篇</td><td colspan="2" class="na">連續型變項，原文未列事件數</td><td class="num">MD −119.25<br><span style="color:#6b7079">−141.36 至 −97.14</span></td><td class="num">< 0.00001</td><td class="num">39%</td><td class="na">不適用</td><td class="na">不適用</td><td><span class="win">RPD 較佳</span></td></tr>
+<tr><td><b>手術時間</b><br><span style="color:#6b7079;font-size:12.5px">Operative time</span></td><td class="num">3 篇</td><td colspan="2" class="na">連續型變項，原文未列事件數</td><td class="num">MD +100.76<br><span style="color:#6b7079">−57.92 至 259.43</span></td><td class="num">0.21</td><td class="num">100%</td><td class="na">不適用</td><td class="na">不適用</td><td><span class="win caution">I&#178; = 100%，合併值不可用</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px">
+    「事件／n」與百分率下方的青綠（RPD）、赭紅（OPD）數字為<b>本頁依原文 Table 3 事件數計算</b>之粗略事件率。<b>風險差</b>＝RPD 事件率 &#8722; OPD 事件率（百分點 pp），NNT＝100 ÷ |風險差|。<b>粗略 OR</b>＝把各研究事件數直接合併成單一 2&#215;2 表計算（naive pooling，Woolf 法 95% CI）。<b>涵蓋率</b>＝該結果分析人數 ÷ 2965。以上四欄皆為本頁自行計算，<b>不是原文提供的數值</b>，僅供交叉檢核與量級感受；正式結論一律以原文的加權合併值為準。「p」欄採原文 Table 3 的效果 p 值（注意原文 3.3.1 節文中的 P = 0.88 是<b>異質性</b> p 值，非效果 p 值）。
+  </p>
+</section>
+
+<section id="crude">
+  <h2>Fig. 4 <span class="zh">／ 本頁自行計算：粗略合併 OR 與原文合併值的落差</span></h2>
+  <p>把原文 Table 3 的事件數直接合併成單一 2&#215;2 表重算一次，可以看出「加權」在這份統合分析裡到底做了多少事。這不是要質疑原文 —— 恰恰相反，落差最大的幾列正好說明<b>為什麼不能用粗略加總來看非隨機資料</b>。</p>
+  <div class="fig">
+    <div class="svgbox">
+<svg viewBox="0 0 860 356" width="100%" role="img" aria-label="本頁自行計算之粗略勝算比" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif;display:block">
+<rect width="860" height="356" fill="#ffffff"/>
+<text x="10" y="22" font-size="11.5" font-weight="700" fill="#8a6a1f" letter-spacing="0.06em">本頁自行計算 · 粗略合併（naive pooling）· 不呈現合併菱形</text>
+<text x="10" y="38" font-size="10.5" fill="#6b7079">依原文 Table 3 的事件數直接合併 2&#215;2 表，以 Woolf 法估 95% CI；<tspan font-weight="700">忽略研究層級結構</tspan>，僅作為對照，不可取代原文的加權合併值。</text>
+<line x1="10" y1="48" x2="850" y2="48" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="10" y="66" font-size="11" font-weight="700" fill="#6b7079" letter-spacing="0.08em">結果指標</text>
+<text x="485" y="66" font-size="11" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">粗略 OR（95% CI）· 對數刻度</text>
+<text x="850" y="66" font-size="11" font-weight="700" fill="#6b7079" text-anchor="end" letter-spacing="0.08em">粗略 OR ／ 原文 OR</text>
+<line x1="359.8" y1="64" x2="359.8" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="359.8" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">0.2</text>
+<line x1="431.5" y1="64" x2="431.5" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="431.5" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">0.4</text>
+<line x1="489.4" y1="64" x2="489.4" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="489.4" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">0.7</text>
+<line x1="526.3" y1="64" x2="526.3" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="526.3" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">1</text>
+<line x1="568.3" y1="64" x2="568.3" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="568.3" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">1.5</text>
+<line x1="607.9" y1="64" x2="607.9" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="607.9" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">2.2</text>
+<line x1="640.0" y1="64" x2="640.0" y2="302" stroke="#f0eeea" stroke-width="1"/>
+<text x="640.0" y="317" font-size="10.5" fill="#6b7079" text-anchor="middle">3</text>
+<line x1="526.3" y1="64" x2="526.3" y2="302" stroke="#43464d" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="10" y="94" font-size="11.5" fill="#1b1c1e">整體併發症</text>
+<line x1="356.1" y1="90.0" x2="499.6" y2="90.0" stroke="#2f6b62" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="356.1" y1="86.0" x2="356.1" y2="94.0" stroke="#2f6b62" stroke-width="1.5"/>
+<line x1="499.6" y1="86.0" x2="499.6" y2="94.0" stroke="#2f6b62" stroke-width="1.5"/>
+<rect x="423.3" y="85.4" width="9.2" height="9.2" fill="none" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="443.7,83.5 439.7,79.0 447.7,79.0" fill="#6b7079"/>
+<text x="850" y="94" font-size="11.5" fill="#1b1c1e" text-anchor="end">0.39 (0.19&#8211;0.77)　<tspan fill="#6b7079">／ 0.45</tspan></text>
+<text x="10" y="126" font-size="11.5" fill="#1b1c1e">主要併發症 (Clavien–Dindo ≥ III)</text>
+<line x1="408.3" y1="122.0" x2="466.5" y2="122.0" stroke="#2f6b62" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="408.3" y1="118.0" x2="408.3" y2="126.0" stroke="#2f6b62" stroke-width="1.5"/>
+<line x1="466.5" y1="118.0" x2="466.5" y2="126.0" stroke="#2f6b62" stroke-width="1.5"/>
+<rect x="432.8" y="117.4" width="9.2" height="9.2" fill="none" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="486.4,115.5 482.4,111.0 490.4,111.0" fill="#6b7079"/>
+<text x="850" y="126" font-size="11.5" fill="#1b1c1e" text-anchor="end">0.42 (0.32&#8211;0.56)　<tspan fill="#6b7079">／ 0.68</tspan></text>
+<text x="10" y="158" font-size="11.5" fill="#1b1c1e">輸血</text>
+<line x1="395.1" y1="154.0" x2="465.4" y2="154.0" stroke="#2f6b62" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="395.1" y1="150.0" x2="395.1" y2="158.0" stroke="#2f6b62" stroke-width="1.5"/>
+<line x1="465.4" y1="150.0" x2="465.4" y2="158.0" stroke="#2f6b62" stroke-width="1.5"/>
+<rect x="425.6" y="149.4" width="9.2" height="9.2" fill="none" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="454.6,147.5 450.6,143.0 458.6,143.0" fill="#6b7079"/>
+<text x="850" y="158" font-size="11.5" fill="#1b1c1e" text-anchor="end">0.40 (0.28&#8211;0.55)　<tspan fill="#6b7079">／ 0.50</tspan></text>
+<text x="10" y="190" font-size="11.5" fill="#1b1c1e">術後胰液漏 POPF</text>
+<line x1="459.5" y1="186.0" x2="527.8" y2="186.0" stroke="#6b7079" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="459.5" y1="182.0" x2="459.5" y2="190.0" stroke="#6b7079" stroke-width="1.5"/>
+<line x1="527.8" y1="182.0" x2="527.8" y2="190.0" stroke="#6b7079" stroke-width="1.5"/>
+<rect x="489.1" y="181.4" width="9.2" height="9.2" fill="none" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="487.9,179.5 483.9,175.0 491.9,175.0" fill="#6b7079"/>
+<text x="850" y="190" font-size="11.5" fill="#1b1c1e" text-anchor="end">0.73 (0.52&#8211;1.01)　<tspan fill="#6b7079">／ 0.69</tspan></text>
+<text x="10" y="222" font-size="11.5" fill="#1b1c1e">死亡率</text>
+<line x1="497.2" y1="218.0" x2="608.7" y2="218.0" stroke="#6b7079" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="497.2" y1="214.0" x2="497.2" y2="222.0" stroke="#6b7079" stroke-width="1.5"/>
+<line x1="608.7" y1="214.0" x2="608.7" y2="222.0" stroke="#6b7079" stroke-width="1.5"/>
+<rect x="548.3" y="213.4" width="9.2" height="9.2" fill="none" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="525.3,211.5 521.3,207.0 529.3,207.0" fill="#6b7079"/>
+<text x="850" y="222" font-size="11.5" fill="#1b1c1e" text-anchor="end">1.29 (0.75&#8211;2.22)　<tspan fill="#6b7079">／ 0.99</tspan></text>
+<text x="10" y="254" font-size="11.5" fill="#1b1c1e">再次手術</text>
+<line x1="487.2" y1="250.0" x2="587.0" y2="250.0" stroke="#6b7079" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="487.2" y1="246.0" x2="487.2" y2="254.0" stroke="#6b7079" stroke-width="1.5"/>
+<line x1="587.0" y1="246.0" x2="587.0" y2="254.0" stroke="#6b7079" stroke-width="1.5"/>
+<rect x="532.5" y="245.4" width="9.2" height="9.2" fill="none" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="548.6,243.5 544.6,239.0 552.6,239.0" fill="#6b7079"/>
+<text x="850" y="254" font-size="11.5" fill="#1b1c1e" text-anchor="end">1.11 (0.69&#8211;1.80)　<tspan fill="#6b7079">／ 1.24</tspan></text>
+<text x="10" y="286" font-size="11.5" fill="#1b1c1e">胃排空延遲 DGE</text>
+<line x1="501.6" y1="282.0" x2="569.5" y2="282.0" stroke="#6b7079" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="501.6" y1="278.0" x2="501.6" y2="286.0" stroke="#6b7079" stroke-width="1.5"/>
+<line x1="569.5" y1="278.0" x2="569.5" y2="286.0" stroke="#6b7079" stroke-width="1.5"/>
+<rect x="530.9" y="277.4" width="9.2" height="9.2" fill="none" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="562.6,275.5 558.6,271.0 566.6,271.0" fill="#6b7079"/>
+<text x="850" y="286" font-size="11.5" fill="#1b1c1e" text-anchor="end">1.09 (0.79&#8211;1.52)　<tspan fill="#6b7079">／ 1.42</tspan></text>
+<line x1="10" y1="302" x2="850" y2="302" stroke="#e3e0da" stroke-width="1"/>
+<rect x="10" y="330" width="9" height="9" fill="none" stroke="#43464d" stroke-width="1.6"/>
+<text x="25" y="338" font-size="10.5" fill="#43464d">空心方塊＋虛線＝本頁自行計算之粗略 OR 與 95% CI</text>
+<polygon points="300,330 296,338 304,338" fill="#6b7079"/>
+<text x="312" y="338" font-size="10.5" fill="#43464d">灰色三角＝原文合併 OR 的位置（供對照）</text>
+</svg>
+    </div>
+    <div class="cap">
+      <b>資料來源：</b>事件數取自原文 Table 3；<b>OR 與 95% CI 由本頁自行計算</b>（naive pooling，Woolf 法）。依規定<b>不呈現合併菱形</b>。<b>怎麼讀：</b>空心方塊＋虛線＝本頁自行計算的粗略 OR 與區間；灰色小三角＝原文合併 OR 的位置。兩者距離越遠，代表該結果越受研究層級結構（各研究基線風險與 RPD:OPD 人數比）影響。<b>陷阱與重點：</b>
+      <br>&#9679;&nbsp;<b>死亡率方向相反</b>：原文合併 OR 0.99（無差異），粗略合併卻是 OR 1.29（0.75&#8211;2.22，看起來不利 RPD）。這是典型的<b>辛普森悖論（Simpson&#8217;s paradox）</b>：RPD 病人集中在少數中心、且各研究死亡率基線差異大，直接加總會被人數最多的那一篇拖走。<b>此處以原文的加權估計為準。</b>
+      <br>&#9679;&nbsp;<b>DGE 也相反</b>：原文 OR 1.42（趨勢不利 RPD），粗略只有 1.09。
+      <br>&#9679;&nbsp;<b>主要併發症落差最大</b>：粗略 OR 0.42 遠比原文 0.68 「漂亮」，因為 Abreu 2025 的 OPD 組（1625 人）主要併發症率高，naive pooling 會誇大差距。這反過來印證：原文 0.68 已經是相對保守的估計，而它在排除 Abreu 後就不顯著了。
+      <br>結論：<b>粗略合併只能當作對帳工具，不能當證據。</b>
+    </div>
+  </div>
+</section>
+
+<section id="rate">
+  <h2>Fig. 5 <span class="zh">／ 本頁自行計算：粗略事件率與絕對風險差</span></h2>
+  <div class="fig">
+    <div class="svgbox">
+<svg viewBox="0 0 860 350" width="100%" role="img" aria-label="粗略事件率分組長條圖" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif;display:block">
+<rect width="860" height="350" fill="#ffffff"/>
+<line x1="54" y1="274.0" x2="684.0" y2="274.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="278.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text>
+<line x1="54" y1="234.0" x2="684.0" y2="234.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="238.0" font-size="10.5" fill="#6b7079" text-anchor="end">10</text>
+<line x1="54" y1="194.0" x2="684.0" y2="194.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="198.0" font-size="10.5" fill="#6b7079" text-anchor="end">20</text>
+<line x1="54" y1="154.0" x2="684.0" y2="154.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="158.0" font-size="10.5" fill="#6b7079" text-anchor="end">30</text>
+<line x1="54" y1="114.0" x2="684.0" y2="114.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="118.0" font-size="10.5" fill="#6b7079" text-anchor="end">40</text>
+<line x1="54" y1="74.0" x2="684.0" y2="74.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="78.0" font-size="10.5" fill="#6b7079" text-anchor="end">50</text>
+<line x1="54" y1="34.0" x2="684.0" y2="34.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">60</text>
+<text x="12" y="20" font-size="10.5" fill="#6b7079">事件率 %</text>
+<line x1="54" y1="274.0" x2="684.0" y2="274.0" stroke="#e3e0da" stroke-width="1.3"/>
+<rect x="77.0" y="133.2" width="20.0" height="140.8" fill="#2f6b62" opacity="0.88"/>
+<rect x="101.0" y="40.2" width="20.0" height="233.8" fill="#8a4a3d" opacity="0.88"/>
+<text x="87.0" y="128.2" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">35.2</text>
+<text x="111.0" y="35.2" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">58.5</text>
+<text x="99.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">整體併發症</text>
+<text x="99.0" y="305.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">−23.3 pp</text>
+<text x="99.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 5%</text>
+<rect x="167.0" y="185.9" width="20.0" height="88.1" fill="#2f6b62" opacity="0.88"/>
+<rect x="191.0" y="114.0" width="20.0" height="160.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="177.0" y="180.9" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">22.0</text>
+<text x="201.0" y="109.0" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">40.0</text>
+<text x="189.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">主要併發症</text>
+<text x="189.0" y="305.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">−18.0 pp</text>
+<text x="189.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 73%</text>
+<rect x="257.0" y="237.6" width="20.0" height="36.4" fill="#2f6b62" opacity="0.88"/>
+<rect x="281.0" y="193.2" width="20.0" height="80.8" fill="#8a4a3d" opacity="0.88"/>
+<text x="267.0" y="232.6" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">9.1</text>
+<text x="291.0" y="188.2" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">20.2</text>
+<text x="279.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">輸血</text>
+<text x="279.0" y="305.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">−11.1 pp</text>
+<text x="279.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 98%</text>
+<rect x="347.0" y="230.2" width="20.0" height="43.8" fill="#2f6b62" opacity="0.88"/>
+<rect x="371.0" y="216.3" width="20.0" height="57.7" fill="#8a4a3d" opacity="0.88"/>
+<text x="357.0" y="225.2" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">10.9</text>
+<text x="381.0" y="211.3" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">14.4</text>
+<text x="369.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">POPF</text>
+<text x="369.0" y="305.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">−3.5 pp</text>
+<text x="369.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 95%</text>
+<rect x="437.0" y="259.0" width="20.0" height="15.0" fill="#2f6b62" opacity="0.88"/>
+<rect x="461.0" y="262.3" width="20.0" height="11.7" fill="#8a4a3d" opacity="0.88"/>
+<text x="447.0" y="254.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">3.8</text>
+<text x="471.0" y="257.3" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">2.9</text>
+<text x="459.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">死亡率</text>
+<text x="459.0" y="305.0" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">+0.8 pp</text>
+<text x="459.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 97%</text>
+<rect x="527.0" y="247.6" width="20.0" height="26.4" fill="#2f6b62" opacity="0.88"/>
+<rect x="551.0" y="250.0" width="20.0" height="24.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="537.0" y="242.6" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">6.6</text>
+<text x="561.0" y="245.0" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">6.0</text>
+<text x="549.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">再次手術</text>
+<text x="549.0" y="305.0" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">+0.6 pp</text>
+<text x="549.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 73%</text>
+<rect x="617.0" y="201.0" width="20.0" height="73.0" fill="#2f6b62" opacity="0.88"/>
+<rect x="641.0" y="206.1" width="20.0" height="67.9" fill="#8a4a3d" opacity="0.88"/>
+<text x="627.0" y="196.0" font-size="9.5" fill="#2f6b62" text-anchor="middle" font-weight="700">18.3</text>
+<text x="651.0" y="201.1" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">17.0</text>
+<text x="639.0" y="290.0" font-size="10.5" fill="#43464d" text-anchor="middle">DGE</text>
+<text x="639.0" y="305.0" font-size="9.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">+1.3 pp</text>
+<text x="639.0" y="318.0" font-size="9" fill="#6b7079" text-anchor="middle">涵蓋 40%</text>
+<rect x="704" y="38" width="13" height="13" fill="#2f6b62" opacity="0.88"/>
+<text x="723" y="49" font-size="11.5" fill="#1b1c1e">RPD 機器人</text>
+<rect x="704" y="60" width="13" height="13" fill="#8a4a3d" opacity="0.88"/>
+<text x="723" y="71" font-size="11.5" fill="#1b1c1e">OPD 開腹</text>
+<text x="704" y="96" font-size="10.5" fill="#6b7079" font-weight="400">柱下 pp＝風險差</text>
+<text x="704" y="111" font-size="10.5" fill="#6b7079" font-weight="400">（RPD − OPD，百分點）</text>
+<text x="704" y="126" font-size="10.5" fill="#6b7079" font-weight="400">「涵蓋」＝該結果的分析</text>
+<text x="704" y="141" font-size="10.5" fill="#6b7079" font-weight="400">人數占 2965 人的比例</text>
+<text x="704" y="156" font-size="10.5" fill="#8a6a1f" font-weight="700">以上皆本頁自行計算</text>
+</svg>
+    </div>
+    <div class="cap">
+      <b>資料來源：</b>事件數取自原文 Table 3；<b>百分率、風險差與涵蓋率均為本頁自行計算</b>，原文只給勝算比（相對值），未提供任何絕對風險數字。<b>怎麼讀：</b>青綠＝RPD 粗略事件率，赭紅＝OPD；柱下 pp 為風險差（RPD &#8722; OPD），負值代表 RPD 較少；最下一行「涵蓋」為該結果的分析人數占 2965 人的比例。<b>怎麼用：</b>絕對值比勝算比更容易向病人說明 —— 例如主要併發症粗略 22% vs 40%、輸血 9% vs 20%。<b>陷阱（很重要）：</b>這些是把不同中心、不同年代、不同適應症的病人直接加總的<b>粗略率</b>，兩組病人在術前狀況上本來就不可比（RPD 病人多經篩選），因此<b>絕不可</b>把這裡的百分比或 NNT 當成個別病人的風險承諾；死亡率、再次手術、DGE 三項的風險差方向甚至<b>不利 RPD</b>，但都未達統計顯著。整體併發症那一柱的差距（−23.3 pp）看似驚人，但只建立在 136 人上。
+    </div>
+  </div>
+</section>
+
+<section id="cont">
+  <h2>Fig. 6 <span class="zh">／ 連續型結果：平均差圖</span></h2>
+  <div class="fig">
+    <div class="svgbox">
+<svg viewBox="0 0 860 294" width="100%" role="img" aria-label="連續型結果平均差圖" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif;display:block">
+<rect width="860" height="294" fill="#ffffff"/>
+<text x="10" y="24" font-size="11.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">結果指標 OUTCOME</text>
+<text x="480" y="24" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="middle" letter-spacing="0.08em">平均差（每列各自刻度，垂直虛線＝0）</text>
+<text x="850" y="24" font-size="11.5" font-weight="700" fill="#6b7079" text-anchor="end" letter-spacing="0.08em">效果值（95% CI）</text>
+<line x1="10" y1="32" x2="850" y2="32" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="10" y="60" font-size="12.5" font-weight="600" fill="#1b1c1e">住院天數 Hospital stay</text>
+<text x="10" y="75" font-size="10.5" fill="#6b7079">6 篇研究</text>
+<text x="10" y="90" font-size="10.5" fill="#6b7079">I&#178; = 67%　·　p = 0.01</text>
+<line x1="320" y1="88" x2="640" y2="88" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="88" x2="320.0" y2="92" stroke="#e3e0da" stroke-width="1"/>
+<text x="320.0" y="104" font-size="10" fill="#6b7079" text-anchor="middle">−4.0</text>
+<line x1="400.0" y1="88" x2="400.0" y2="92" stroke="#e3e0da" stroke-width="1"/>
+<text x="400.0" y="104" font-size="10" fill="#6b7079" text-anchor="middle">−2.0</text>
+<line x1="480.0" y1="88" x2="480.0" y2="92" stroke="#e3e0da" stroke-width="1"/>
+<text x="480.0" y="104" font-size="10" fill="#6b7079" text-anchor="middle">0.0</text>
+<line x1="560.0" y1="88" x2="560.0" y2="92" stroke="#e3e0da" stroke-width="1"/>
+<text x="560.0" y="104" font-size="10" fill="#6b7079" text-anchor="middle">2.0</text>
+<line x1="640.0" y1="88" x2="640.0" y2="92" stroke="#e3e0da" stroke-width="1"/>
+<text x="640.0" y="104" font-size="10" fill="#6b7079" text-anchor="middle">4.0</text>
+<text x="674" y="104" font-size="10" fill="#6b7079">天 days</text>
+<line x1="480.0" y1="58" x2="480.0" y2="88" stroke="#43464d" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="364.8" y1="72.0" x2="464.8" y2="72.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="364.8" y1="67.5" x2="364.8" y2="76.5" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="464.8" y1="67.5" x2="464.8" y2="76.5" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="408.2,72.0 414.8,67.2 421.4,72.0 414.8,76.8" fill="#2f6b62"/>
+<text x="850" y="64" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">MD −1.63</text>
+<text x="850" y="80" font-size="11" fill="#43464d" text-anchor="end">(−2.88 至 −0.38)</text>
+<line x1="10" y1="112" x2="850" y2="112" stroke="#f0eeea" stroke-width="1"/>
+<text x="10" y="138" font-size="12.5" font-weight="600" fill="#1b1c1e">術中出血量 Blood loss</text>
+<text x="10" y="153" font-size="10.5" fill="#6b7079">2 篇研究</text>
+<text x="10" y="168" font-size="10.5" fill="#6b7079">I&#178; = 39%　·　p &lt; 0.00001</text>
+<line x1="320" y1="166" x2="640" y2="166" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="166" x2="320.0" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<text x="320.0" y="182" font-size="10" fill="#6b7079" text-anchor="middle">−200</text>
+<line x1="400.0" y1="166" x2="400.0" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<text x="400.0" y="182" font-size="10" fill="#6b7079" text-anchor="middle">−100</text>
+<line x1="480.0" y1="166" x2="480.0" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<text x="480.0" y="182" font-size="10" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="560.0" y1="166" x2="560.0" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<text x="560.0" y="182" font-size="10" fill="#6b7079" text-anchor="middle">100</text>
+<line x1="640.0" y1="166" x2="640.0" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<text x="640.0" y="182" font-size="10" fill="#6b7079" text-anchor="middle">200</text>
+<text x="674" y="182" font-size="10" fill="#6b7079">毫升 mL</text>
+<line x1="480.0" y1="136" x2="480.0" y2="166" stroke="#43464d" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="366.9" y1="150.0" x2="402.3" y2="150.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="366.9" y1="145.5" x2="366.9" y2="154.5" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="402.3" y1="145.5" x2="402.3" y2="154.5" stroke="#2f6b62" stroke-width="1.6"/>
+<polygon points="378.0,150.0 384.6,145.2 391.2,150.0 384.6,154.8" fill="#2f6b62"/>
+<text x="850" y="142" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">MD −119.25</text>
+<text x="850" y="158" font-size="11" fill="#43464d" text-anchor="end">(−141.36 至 −97.14)</text>
+<line x1="10" y1="190" x2="850" y2="190" stroke="#f0eeea" stroke-width="1"/>
+<text x="10" y="216" font-size="12.5" font-weight="600" fill="#1b1c1e">手術時間 Operative time</text>
+<text x="10" y="231" font-size="10.5" fill="#6b7079">3 篇研究</text>
+<text x="10" y="246" font-size="10.5" fill="#8a4a3d">I&#178; = 100%　·　p = 0.21</text>
+<line x1="320" y1="244" x2="640" y2="244" stroke="#e3e0da" stroke-width="1"/>
+<line x1="320.0" y1="244" x2="320.0" y2="248" stroke="#e3e0da" stroke-width="1"/>
+<text x="320.0" y="260" font-size="10" fill="#6b7079" text-anchor="middle">−300</text>
+<line x1="400.0" y1="244" x2="400.0" y2="248" stroke="#e3e0da" stroke-width="1"/>
+<text x="400.0" y="260" font-size="10" fill="#6b7079" text-anchor="middle">−150</text>
+<line x1="480.0" y1="244" x2="480.0" y2="248" stroke="#e3e0da" stroke-width="1"/>
+<text x="480.0" y="260" font-size="10" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="560.0" y1="244" x2="560.0" y2="248" stroke="#e3e0da" stroke-width="1"/>
+<text x="560.0" y="260" font-size="10" fill="#6b7079" text-anchor="middle">150</text>
+<line x1="640.0" y1="244" x2="640.0" y2="248" stroke="#e3e0da" stroke-width="1"/>
+<text x="640.0" y="260" font-size="10" fill="#6b7079" text-anchor="middle">300</text>
+<text x="674" y="260" font-size="10" fill="#6b7079">分鐘 min</text>
+<line x1="480.0" y1="214" x2="480.0" y2="244" stroke="#43464d" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="449.1" y1="228.0" x2="618.4" y2="228.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="449.1" y1="223.5" x2="449.1" y2="232.5" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="618.4" y1="223.5" x2="618.4" y2="232.5" stroke="#6b7079" stroke-width="1.6"/>
+<polygon points="527.1,228.0 533.7,223.2 540.3,228.0 533.7,232.8" fill="#6b7079"/>
+<text x="850" y="220" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600">MD +100.76</text>
+<text x="850" y="236" font-size="11" fill="#43464d" text-anchor="end">(−57.92 至 259.43)</text>
+</svg>
+    </div>
+    <div class="cap">
+      <b>資料來源：</b>原文 Table 3 與 Results 3.3.2、3.3.4、3.3.5 節。<b>怎麼讀：</b>三列<b>各自使用獨立刻度</b>（單位不同，不可互相比長度）；菱形＝合併平均差，垂直虛線＝0。<b>陷阱：</b>
+      (1) <b>手術時間 I&#178; = 100%</b> —— 這不是「異質性偏高」，而是研究間差異幾乎完全無法用隨機誤差解釋，此時的合併值（+100.76 分鐘，95% CI &#8722;57.92 至 259.43）<b>在方法上不應被引用</b>；原文自己也寫「should not be regarded as definitive evidence of equivalent procedural efficiency」。實務上請假設 RPD 手術時間較長，只是幅度因中心而異。
+      (2) <b>住院天數</b>縮短 1.63 天，但 I&#178; = 67%，且排除 Liu 2022 後縮小為 &#8722;1.00 天（I&#178; 降為 0%）—— 真實幅度大概是<b>一天</b>而非近兩天。住院天數也受出院政策與併發症率影響，是間接指標。
+      (3) <b>出血量</b>減少 119 mL 看似漂亮，但只有 <b>2 篇</b>研究、且都是同一類情境；119 mL 對一台 Whipple 手術而言臨床意義有限，真正有意義的是連帶下降的<b>輸血率</b>。
+    </div>
+  </div>
+</section>
+
+<section id="sens">
+  <h2>Table 4 <span class="zh">／ 敏感性分析：哪些結論是脆弱的</span></h2>
+  <p>原文採<b>逐一排除（leave-one-out）</b>檢查每個合併值是否被單一研究支撐。這一節是本篇最有價值的部分，因為它直接告訴你哪些數字不能拿去改變做法。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>結果指標</th><th>原始合併值</th><th>排除哪一篇</th><th>排除後</th><th>結論的變化</th></tr></thead>
+      <tbody>
+<tr><td>主要併發症</td><td class="num">OR 0.68（0.49&#8211;0.94）</td><td>排除 Abreu 2025</td><td class="num">OR 0.79（0.49&#8211;1.25）；I&#178; = 0%</td><td><span class="win caution">顯著性消失</span></td></tr>
+<tr><td>胃排空延遲 DGE</td><td class="num">OR 1.42（0.99&#8211;2.02）</td><td>排除 Paolini 2021</td><td class="num">OR 1.45（1.01&#8211;2.07）；I&#178; = 44%</td><td><span class="win caution">變成顯著不利 RPD</span></td></tr>
+<tr><td>術後胰液漏 POPF</td><td class="num">OR 0.69（0.48&#8211;1.00）</td><td>排除 Paolini 2021</td><td class="num">OR 0.66（0.45&#8211;0.98）；I&#178; = 16%</td><td><span class="win">變成顯著有利 RPD</span></td></tr>
+<tr><td>術後胰液漏 POPF</td><td class="num">OR 0.69（0.48&#8211;1.00）</td><td>排除 Liu 2022</td><td class="num">OR 0.61（0.40&#8211;0.94）；I&#178; = 0%</td><td><span class="win">變成顯著有利 RPD</span></td></tr>
+<tr><td>住院天數</td><td class="num">MD &#8722;1.63（&#8722;2.88 至 &#8722;0.38）天</td><td>排除 Liu 2022</td><td class="num">MD &#8722;1.00（&#8722;1.61 至 &#8722;0.39）天；I&#178; 由 67% 降為 0%</td><td><span class="win">方向不變、異質性大減</span></td></tr>
+<tr><td>死亡率、住院天數、手術時間、再次手術、輸血</td><td class="num">見上表</td><td>逐一排除（leave-one-out）</td><td class="num">合併效果值均未受單一研究左右</td><td><span class="win neutral">穩健</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="call amber">
+    <div class="h">兩個必須記住的反轉</div>
+    <b>(1) 主要併發症的顯著性是脆弱的。</b>排除占 OPD 組 65.4% 的 Abreu 2025 後，OR 由 0.68（0.49–0.94）變成 0.79（0.49–1.25）—— 跨過無效線。<br>
+    <b>(2) DGE 的不利訊號是實質的。</b>原始 OR 1.42（0.99–2.02）雖未達顯著，但排除 Paolini 2021（最小的一篇，RPD 29 / OPD 38）後變成 OR 1.45（1.01–2.07），<b>統計顯著且不利 RPD</b>。也就是說，RPD 可能以「較多胃排空延遲」換取「較少主要併發症」。原文摘要並未提及這個反轉，只寫 DGE「no significant difference」。
+  </div>
+  <p style="font-size:12.5px;color:#6b7079">
+    發表偏差：因納入研究過少，原文僅對<b>住院天數</b>一項做漏斗圖與 Egger 檢定（p = 0.285），未顯示明顯發表偏差；其餘結果<b>未評估發表偏差</b>。
+  </p>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：這篇該怎麼用</span></h2>
+
+  <h3>誰適合</h3>
+  <ul class="clean">
+    <li><b>最可能受益：</b>年齡 ≥ 70–75 歲、<b>生理狀態相對良好</b>（衰弱程度低、共病少）、腫瘤未侵犯主要血管、不需血管重建的胰頭或壺腹周圍病灶病人，<b>且在已建立成熟機器人胰臟手術團隊的高量能中心</b>。原文明言其結論「may be most applicable to experienced centers with established robotic programs and well-defined patient selection protocols」。</li>
+    <li><b>要特別小心的族群：</b>八十歲以上。納入研究中僅 Ross 2024（平均 84 歲，RPD 42 / OPD 27）真正代表這個族群，樣本極小；原文因報告不足<b>無法</b>做年齡分層分析，所以「70 歲以上」的結論不能直接外推到「85 歲以上」。</li>
+    <li><b>本研究無法回答：</b>需要血管切除重建的邊緣可切除病灶、新輔助治療後的病人、以及腫瘤學長期結果（切除邊緣、淋巴結收穫、復發、存活）—— 這些完全不在分析範圍內。</li>
+  </ul>
+
+  <h3>換來什麼</h3>
+  <div class="kv">
+    <div class="c teal"><div class="lab">主要併發症（CD ≥ III）</div><div class="big">OR 0.68</div><div class="sub">95% CI 0.49–0.94；4 篇、涵蓋 73%。粗略事件率 22% vs 40%，風險差 −18.0 pp（本頁自行計算）<br><b>但排除 Abreu 後即不顯著</b></div></div>
+    <div class="c teal"><div class="lab">輸血率</div><div class="big">OR 0.50</div><div class="sub">95% CI 0.34–0.72；5 篇、涵蓋 98%，是本篇<b>最穩固</b>的發現。粗略 9% vs 20%，NNT 約 9（本頁自行計算）</div></div>
+    <div class="c teal"><div class="lab">住院天數</div><div class="big">&#8722;1.63 天</div><div class="sub">95% CI &#8722;2.88 至 &#8722;0.38；排除 Liu 2022 後為 &#8722;1.00 天。實務上以<b>約一天</b>來預期較誠實</div></div>
+    <div class="c"><div class="lab">死亡率</div><div class="big">無差異</div><div class="sub">OR 0.99（0.54–1.82）；5 篇、涵蓋 97%。<b>不要宣稱機器人更安全</b></div></div>
+  </div>
+
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>胃排空延遲可能較多：</b>OR 1.42（0.99–2.02），排除最小的一篇後變成顯著（1.45；1.01–2.07）。臨床上意味著鼻胃管留置與恢復飲食時間可能延長 —— 對高齡病人的營養與復健是實質負擔。</li>
+    <li><b>手術時間很可能較長，但幅度不明：</b>合併值 +100.76 分鐘，然而 I&#178; = 100%，數字不可引用。應以「本院自己的資料」估算，而非援引這個數字。麻醉時間延長對高齡病人本身就是風險。</li>
+    <li><b>胰液漏沒有明確改善：</b>OR 0.69（0.48–1.00），邊緣。POPF 是 Whipple 手術最關鍵的併發症，機器人在此<b>沒有給出明確答案</b>。</li>
+    <li><b>成本完全未知：</b>原文明確指出納入研究均無成本效益資料，無法評估臨床效益與醫療支出的平衡。</li>
+    <li><b>學習曲線與中心依賴性：</b>原文將學習曲線列為異質性的主要來源。在剛起步的機器人團隊，這些好處可能完全不存在，甚至反轉。</li>
+    <li><b>最根本的代價：證據等級。</b>6 篇全為回溯性、僅 1 篇做傾向分數配對、無任何 RCT、原文未做 GRADE。<span class="grade">無 RCT · 全回溯性資料</span></li>
+  </ul>
+
+  <h3>知情同意怎麼談</h3>
+  <div class="call amber">
+    <div class="h">建議說法（可改寫成同意書口語版）</div>
+    「您要接受的是胰頭十二指腸切除手術，也就是俗稱的 Whipple 手術，是腹部手術裡最大的一種，要切掉胰臟頭部、十二指腸和膽道下段，再把三條管路重新接起來。以您的年紀，這台手術本身的併發症機會大約在三到五成，這跟開腹或機器人沒有關係，是手術本身的性質。<br><br>
+    關於用機器人做還是傳統開腹做：<b>目前的研究顯示</b>，機器人這一組比較不需要輸血、出血少一些、住院可能短一天左右，比較嚴重的併發症也可能少一些。<b>但我必須誠實告訴您三件事</b>：第一，<b>死亡風險兩種做法沒有差別</b>，機器人並不會讓這台手術變成小手術。第二，這些研究<b>全部都是回頭看病歷的研究，沒有一個是隨機分派的試驗</b>，而且過去願意用機器人開的病人，本來就傾向是身體狀況比較好的那一群，所以看起來的好處有一部分可能是「病人挑得比較好」而不是「機器比較好」。第三，機器人組<b>胃排空變慢的比例可能反而高一些</b>，代表鼻胃管可能拔得比較慢、恢復吃東西的時間可能比較久，手術時間也可能比較長。<br><br>
+    我們會依您的血管有沒有被腫瘤侵犯、身體的整體狀況，以及本院團隊的經驗，來決定哪一種方式對您最安全。」
+  </div>
+  <ul class="clean">
+    <li>不要承諾的三件事：<b>存活率或腫瘤學結果會更好</b>（本研究完全未評估）、<b>死亡率會下降</b>（無差異）、<b>費用相當</b>（無資料）。</li>
+    <li>對高齡病人，更該談的其實不是路徑選擇，而是<b>術前衰弱評估、營養支持與復健計畫</b> —— 原文明確指出這些老年變項在既有研究中「inconsistently reported and rarely incorporated into adjusted analyses」，是目前最大的知識缺口。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>全部 6 篇皆為回溯性研究，選擇偏差是核心問題。</b>RPD 多在高量能、機器人經驗豐富的中心進行，且在技術導入早期，術者傾向把機器人手術留給<b>衰弱程度低、共病少、解剖條件好</b>的高齡病人。原文自己承認這種偏好性選擇「may have contributed to the observed reductions in postoperative complications and length of hospital stay」。6 篇中僅 Mederos 2022 做了傾向分數配對。</li>
+    <li><b>「整體併發症」的證據極薄。</b>摘要第一句的 OR 0.45 只來自 2 篇、136 人（占全體 4.6%，本頁自行計算）。</li>
+    <li><b>主要併發症的顯著性由單一研究支撐。</b>排除 Abreu 2025（占 OPD 組 65.4%）後 OR 由 0.68 變 0.79（0.49–1.25），跨過無效線。</li>
+    <li><b>DGE 的反轉未被摘要反映。</b>排除 Paolini 2021 後 OR 1.45（1.01–2.07）達顯著且不利 RPD，但摘要僅寫「no significant differences」。這是讀者最容易漏掉的訊號。</li>
+    <li><b>手術時間 I&#178; = 100%。</b>合併值在方法上不可用。原文歸因於學習曲線、中心量能、病例複雜度、機器人平台與流程差異。</li>
+    <li><b>高齡定義不一致。</b>納入標準為 ≥ 70 歲，但多數研究以 75 歲為界，另有專攻八十歲以上者（Ross 2024 平均 84 歲）。生理儲備、衰弱與手術風險在 75 歲與 85 歲間差異巨大，卻因報告不足<b>無法</b>做年齡分層。</li>
+    <li><b>老年關鍵變項幾乎沒有資料。</b>衰弱、營養狀態、功能能力、共病負擔皆報告不一致且極少納入校正分析，導致無法做風險分層，也可能干擾觀察到的關聯。</li>
+    <li><b>樣本結構極度不對稱。</b>RPD 482 人 vs OPD 2483 人（約 1:5.2），且 Abreu 一篇即占 OPD 組近三分之二。</li>
+    <li><b>無長期結果。</b>無腫瘤學終點（切除邊緣、淋巴結收穫、復發型態、總存活），也無長期追蹤。考慮到術後併發症與胰癌長期預後的既知關聯，短期優勢是否轉化為長期效益<b>仍屬未知</b>。</li>
+    <li><b>無成本效益資料。</b>機器人手術的經濟影響無法評估。</li>
+    <li><b>未使用 GRADE。</b>原文僅以 NOS 評個別研究品質（6 篇皆 &gt; 6 分），<b>未對整體證據體系做確定性分級</b>。以本頁判斷，若套用 GRADE，觀察性設計＋嚴重選擇偏差＋部分結果高度異質，確定性應屬<b>低至極低</b>（此為本頁的評估，非原文結論）。</li>
+    <li><b>發表偏差僅評估一項。</b>因研究數過少，只對住院天數做漏斗圖與 Egger 檢定（p = 0.285）。</li>
+    <li><b>納入適應症混雜。</b>從純胰臟腺癌（Abreu 2025）到良惡性混合（Wasielewski 2026、Liu 2022）都有，而不同適應症的胰腺質地與胰管口徑差異會直接影響 POPF 風險。</li>
+  </ol>
+  <div class="call teal">
+    <div class="h">一句話定位</div>
+    這是<b>第一篇</b>專門針對高齡族群比較 RPD 與 OPD 的統合分析，填補了一個真實的知識缺口，方向也與混齡族群的既有證據一致。但它的體質是「六篇回溯性研究的整理」，適合用來<b>支持在有經驗的中心對經篩選病人繼續使用並前瞻登錄</b>，不適合用來<b>說服醫院採購機器人</b>或<b>向病人承諾更安全</b>。原文結語也明確要求高品質前瞻性 RCT。
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss"><dl>
+<div class="gl-row"><dt>胰頭十二指腸切除術（Whipple 手術）　<span class="en">pancreaticoduodenectomy, PD</span></dt><dd>切除胰頭、十二指腸、部分胃或幽門、膽囊與膽道下段，再重建胰腸、膽腸與胃腸吻合。是胰頭癌與壺腹周圍疾病的核心手術，技術要求高、術後併發症率高。</dd></div>
+<div class="gl-row"><dt>機器人輔助胰頭十二指腸切除術　<span class="en">robotic pancreaticoduodenectomy, RPD</span></dt><dd>以機器人平台執行 PD。相較傳統腹腔鏡，提供三維高解析視野、關節式器械與抖動過濾，理論上有利於精細解剖與吻合縫合。</dd></div>
+<div class="gl-row"><dt>開腹胰頭十二指腸切除術　<span class="en">open pancreaticoduodenectomy, OPD</span></dt><dd>傳統開腹路徑，目前仍為多數中心的標準做法，也是本研究的對照組。</dd></div>
+<div class="gl-row"><dt>術後胰液漏　<span class="en">postoperative pancreatic fistula, POPF</span></dt><dd>胰腸吻合處胰液外漏，是 PD 後最關鍵的併發症，可導致腹腔感染、出血與死亡。本研究中兩組差異為邊緣顯著（p = 0.05）。</dd></div>
+<div class="gl-row"><dt>胃排空延遲　<span class="en">delayed gastric emptying, DGE</span></dt><dd>術後胃無法正常排空，需延長鼻胃管留置或延後進食。本研究中<b>唯一方向不利 RPD 的結果</b>（OR 1.42），且在敏感性分析中變成統計顯著。</dd></div>
+<div class="gl-row"><dt>Clavien&#8722;Dindo 分級　<span class="en">Clavien&#8722;Dindo classification</span></dt><dd>依所需處置強度將術後併發症分為 I–V 級。≥ III 級（需手術、內視鏡或放射介入處置）通常定義為「主要併發症」。</dd></div>
+<div class="gl-row"><dt>紐卡索&#8722;渥太華量表　<span class="en">Newcastle&#8722;Ottawa Scale, NOS</span></dt><dd>評估觀察性研究品質的工具，涵蓋選樣、可比較性、結果評估三個面向，滿分 9 分；本研究以 > 6 分視為高品質，6 篇均達標（6–8 分）。</dd></div>
+<div class="gl-row"><dt>傾向分數配對　<span class="en">propensity score matching, PSM</span></dt><dd>以統計方式讓兩組的基線特徵盡量相近，用來降低非隨機研究的選擇偏差。本研究 6 篇中僅 Mederos 2022 採用。</dd></div>
+<div class="gl-row"><dt>勝算比　<span class="en">odds ratio, OR</span></dt><dd>兩組事件勝算之比。OR &lt; 1 表示 RPD 組事件較少；95% 信賴區間若跨過 1 即未達統計顯著。</dd></div>
+<div class="gl-row"><dt>平均差　<span class="en">mean difference, MD</span></dt><dd>兩組連續型變項平均值之差，保留原始單位（天、毫升、分鐘），可直接解讀臨床意義。</dd></div>
+<div class="gl-row"><dt>異質性統計量　<span class="en">I&#178; statistic</span></dt><dd>研究間變異占總變異的比例。本研究手術時間 I&#178; = 100%，代表各研究間差異幾乎完全無法用隨機誤差解釋，合併值不具意義。</dd></div>
+<div class="gl-row"><dt>需治療人數　<span class="en">number needed to treat, NNT</span></dt><dd>為避免一次事件所需治療的人數＝1 ÷ 絕對風險差。本頁的 NNT 由粗略事件率自行計算，來自非隨機資料，僅供量級感受，不可當作個別病人的風險承諾。</dd></div>
+<div class="gl-row"><dt>粗略合併／樸素合併　<span class="en">naive pooling</span></dt><dd>把各研究事件數直接加總成一個 2&#215;2 表再算 OR，<b>忽略研究層級結構</b>。當各研究基線風險與組別人數比例差異很大時，會產生與正規加權合併相反的結果（辛普森悖論 Simpson&#8217;s paradox）。本頁僅用它作為對照與教學，正規結論一律以原文加權合併值為準。</dd></div>
+<div class="gl-row"><dt>逐一排除敏感性分析　<span class="en">leave-one-out sensitivity analysis</span></dt><dd>依序排除單一研究後重算合併值，用來檢查結論是否被某一篇研究單獨支撐。</dd></div>
+<div class="gl-row"><dt>學習曲線　<span class="en">learning curve</span></dt><dd>術者累積經驗過程中手術效率與結果的改善軌跡。原文將其列為手術時間 I&#178; = 100% 與整體異質性的主要來源之一。</dd></div>
+<div class="gl-row"><dt>衰弱　<span class="en">frailty</span></dt><dd>生理儲備下降、對壓力事件耐受性變差的老年症候群。原文明確指出納入研究普遍未報告衰弱、營養與功能狀態，是無法校正的重要干擾。</dd></div>
+  </dl></div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; Attribution <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p style="font-size:14.5px">
+    Zeng C, Xie L, Zhang J, Tang G, Zhou R.
+    <b>Robotic versus open pancreaticoduodenectomy in elderly patients: a meta-analysis.</b>
+    <em>Front Oncol</em>. 2026;16:1868703.
+    DOI：<a href="https://doi.org/10.3389/fonc.2026.1868703">10.3389/fonc.2026.1868703</a>　·
+    PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42523640/">PMID 42523640</a>　·
+    PROSPERO：CRD420261444617
+  </p>
+  <ul class="clean" style="font-size:13.5px">
+    <li>文獻檢索與全文取得經由 <b>PubMed</b>／PubMed Central（PMC13407270）。本頁內容係依 PubMed 檢索所得之文獻撰寫。</li>
+    <li><b>圖表重繪聲明：</b>本頁 Fig. 1（PRISMA）、Fig. 2（收案人數與 NOS）、Fig. 3（原文合併森林圖）、Fig. 4（自行計算粗略 OR 對照圖）、Fig. 5（粗略事件率）、Fig. 6（平均差圖）與所有表格，均為依原文 Table 1–3 之數值及 Results 內文敘述<b>重新繪製之 inline SVG／HTML</b>，未嵌入、未連結、亦未翻拍原文任何圖片。原文 Fig. 1–5 之影像請逕至 DOI 連結檢視。</li>
+    <li><b>數據誠信聲明：</b>本頁所有原文數字均可回溯至原文 Table 1–3 與 Results 內文；原文未提供之數值一律標示「<b>原文未列數值</b>」，不做任何推估或填補。凡由原文數字經計算得出者 —— 粗略事件率、絕對風險差、NNT、粗略合併 OR 與其 95% CI（Woolf 法）、涵蓋率、PRISMA 的 264 筆與五庫加總 330、Abreu 占 OPD 組 65.4% —— 均已就地標註「<b>本頁自行計算</b>」或標上「自算」徽章。粗略合併 OR 依規<b>不呈現合併菱形</b>，且已明確說明其方法學地位低於原文加權合併值。</li>
+    <li><b>交叉驗算紀錄：</b>RPD 482 ＋ OPD 2483 = 2965，與原文一致；PRISMA 鏈 331 &#8722; 67 &#8722; 249 = 15 &#8594; &#8722; 9 = 6，與原文一致。唯一發現的原文內部不一致為「五資料庫加總 330 筆 vs 內文所述 331 筆」（差額為 1 筆其他來源），已於 Fig. 1 圖說中揭露。</li>
+    <li><b>次專科歸類說明：</b>本篇依科內慣例歸入<b>內分泌外科（甲狀腺、胰臟）</b>類別；就術式而言亦屬肝膽胰（HPB）／消化外科範疇。</li>
+  </ul>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 001 · 2026 年 7 月 30 日　|　次專科輪替：內分泌外科（胰臟）（gs-endo）<br>
+  本頁為文獻導讀，非臨床指引；所有臨床決策請回歸原文與病人個別情況判斷。
+</footer>
+
+</div>
+</body>
+</html>
