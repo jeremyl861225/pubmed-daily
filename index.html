@@ -28,6 +28,7 @@
 </header>
 
 <div class="searchbar">
+  <div class="tabs" id="tabs" role="tablist"></div>
   <div class="searchbar-inner">
     <label class="field">
       <span class="ico" aria-hidden="true">&#9906;</span>
@@ -38,13 +39,15 @@
     </label>
     <button type="button" id="refresh" class="refresh" aria-label="更新">&#8635;</button>
   </div>
-  <div class="chips" id="chips"></div>
 </div>
 
 <main class="wrap">
+  <div class="chipwrap" id="chipwrap"><div class="chips" id="chips"></div></div>
   <ul class="cards" id="list"></ul>
   <p class="empty" id="empty" hidden></p>
 </main>
+
+<button type="button" id="totop" class="totop" aria-label="回到最上面" hidden>&#8593;</button>
 
 <footer class="foot">
   <p id="foot-note">每日文獻 · 內容由 PubMed 公開書目資料整理而成，摘要逐字引用歸原作者與期刊所有。</p>

@@ -1,6 +1,9 @@
 /* 每日文獻 — 首頁邏輯
  * 資料只有一份 data/papers.json（由 build.py 依 papers/ 內的檔案產生），
  * 全部載進記憶體做即時過濾；離線時 Service Worker 會直接回快取，行為與線上一致。
+ *
+ * 三層篩選由上而下：科別分頁（大腸直腸／一般外科／精選）→ 類別晶片 → 查詢字串。
+ * 精選存在 localStorage 的 dl-favs，論文頁裡注入的工具列讀寫同一份。
  */
 (function () {
   'use strict';
@@ -8,13 +11,24 @@
   var listEl = document.getElementById('list');
   var emptyEl = document.getElementById('empty');
   var statEl = document.getElementById('stat');
+  var tabsEl = document.getElementById('tabs');
   var chipsEl = document.getElementById('chips');
+  var chipWrapEl = document.getElementById('chipwrap');
   var qEl = document.getElementById('q');
   var clearEl = document.getElementById('clear');
   var refreshEl = document.getElementById('refresh');
+  var topEl = document.getElementById('totop');
+  var barEl = document.querySelector('.searchbar');
+
+  var FAV_KEY = 'dl-favs';
+  var FAV_TAB = '__fav__';
+  // 固定先列這兩個科別，即使今天還沒有該科的論文也留著位子
+  var BASE_TABS = [{ key: 'crs', label: '大腸直腸' }, { key: 'gs', label: '一般外科' }];
 
   var papers = [];
-  var activeCat = '';        // 篩選只認「論文類別」，證據等級、授權那類副標籤不進晶片列
+  var favs = readFavs();
+  var activeTab = sessionStorage.getItem('dl-tab') || BASE_TABS[0].key;
+  var activeCat = '';
 
   /* ── 工具 ───────────────────────────────────── */
   function esc(s) {
@@ -48,13 +62,111 @@
             p.series, p.tldr, (p.tags || []).join(' ')].join(' ').toLowerCase();
   }
 
+  /* ── 精選 ───────────────────────────────────── */
+  function readFavs() {
+    try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch (e) { return []; }
+  }
+  function writeFavs() {
+    try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {}
+  }
+  function isFav(id) { return favs.indexOf(id) !== -1; }
+  function toggleFav(id) {
+    var i = favs.indexOf(id);
+    if (i === -1) { favs.push(id); } else { favs.splice(i, 1); }
+    writeFavs();
+  }
+
+  /* ── 分頁 ───────────────────────────────────── */
+  // 固定的兩個科別 + 資料裡出現過的其他科別（不讓任何一篇無處可去）
+  function tabList() {
+    var seen = {}, extra = [];
+    papers.forEach(function (p) {
+      var k = p.stream || 'other';
+      if (seen[k]) return;
+      seen[k] = true;
+      if (!BASE_TABS.some(function (t) { return t.key === k; })) {
+        extra.push({ key: k, label: p.stream_label || k });
+      }
+    });
+    return BASE_TABS.concat(extra);
+  }
+
+  function inTab(p) {
+    return activeTab === FAV_TAB ? isFav(p.id) : (p.stream || 'other') === activeTab;
+  }
+
+  function buildTabs() {
+    var tabs = tabList();
+    var html = tabs.map(function (t) {
+      var n = papers.filter(function (p) { return (p.stream || 'other') === t.key; }).length;
+      return '<button type="button" class="tab" role="tab" data-tab="' + esc(t.key) +
+        '" aria-selected="' + (activeTab === t.key) + '">' + esc(t.label) +
+        '<span class="n">' + n + '</span></button>';
+    });
+    html.push('<button type="button" class="tab fav" role="tab" data-tab="' + FAV_TAB +
+      '" aria-selected="' + (activeTab === FAV_TAB) + '" aria-label="精選">' +
+      (activeTab === FAV_TAB ? '★' : '☆') +
+      '<span class="n">' + favs.length + '</span></button>');
+    tabsEl.innerHTML = html.join('');
+  }
+
+  tabsEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tab');
+    if (!btn || btn.dataset.tab === activeTab) return;
+    activeTab = btn.dataset.tab;
+    activeCat = '';                       // 換科別時類別重來，免得留著上一頁的類別得到空清單
+    sessionStorage.setItem('dl-tab', activeTab);
+    buildTabs();
+    buildChips();
+    render();
+    window.scrollTo(0, 0);
+  });
+
+  /* ── 類別晶片（只看目前分頁裡的論文）──────────── */
+  function buildChips() {
+    var count = {};
+    papers.forEach(function (p) {
+      if (inTab(p) && p.category) count[p.category] = (count[p.category] || 0) + 1;
+    });
+    var cats = Object.keys(count).sort(function (a, b) {
+      return count[b] - count[a] || a.localeCompare(b, 'zh-Hant');
+    });
+    // 只有一種類別時篩選沒有意義，整列收起來
+    if (cats.length < 2) {
+      chipWrapEl.hidden = true;
+      chipWrapEl.classList.remove('has-more');
+      return;
+    }
+    chipWrapEl.hidden = false;
+
+    chipsEl.innerHTML = ['<button type="button" class="chip" data-cat="" aria-pressed="' +
+      (activeCat === '') + '">全部</button>']
+      .concat(cats.map(function (c) {
+        return '<button type="button" class="chip" data-cat="' + esc(c) +
+          '" aria-pressed="' + (activeCat === c) + '">' + esc(c) +
+          '<span class="n">' + count[c] + '</span></button>';
+      })).join('');
+    markChipOverflow();
+  }
+
+  chipsEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.chip');
+    if (!btn) return;
+    activeCat = btn.dataset.cat === activeCat ? '' : btn.dataset.cat;
+    Array.prototype.forEach.call(chipsEl.children, function (c) {
+      c.setAttribute('aria-pressed', String(c.dataset.cat === activeCat));
+    });
+    render();
+  });
+
   /* ── 繪製 ───────────────────────────────────── */
   function render() {
     var raw = qEl.value.trim();
     var needles = raw ? raw.split(/\s+/) : [];
     var lowered = needles.map(function (n) { return n.toLowerCase(); });
 
-    var shown = papers.filter(function (p) {
+    var pool = papers.filter(inTab);
+    var shown = pool.filter(function (p) {
       if (activeCat && p.category !== activeCat) return false;
       if (!lowered.length) return true;
       var hay = p._hay;
@@ -65,9 +177,14 @@
       var tags = (p.tags || []).slice(0, 4).map(function (t) {
         return '<span class="tag">' + esc(t) + '</span>';
       }).join('');
-      return '<li class="card"><a href="' + esc(p.file) + '">' +
+      var on = isFav(p.id);
+      return '<li class="card">' +
+        '<a href="' + esc(p.file) + '">' +
         '<div class="head"><span class="date">' + esc(fmtDate(p.date)) + '</span>' +
-        (p.series ? '<span>' + esc(p.series) + '</span>' : '') +
+        // 精選分頁混著兩科，改標科別；平時標系列名
+        (activeTab === FAV_TAB
+          ? '<span>' + esc(p.stream_label || p.series) + '</span>'
+          : (p.series ? '<span>' + esc(p.series) + '</span>' : '')) +
         (p.vol ? '<span class="vol">' + esc(p.vol) + '</span>' : '') + '</div>' +
         '<h2>' + mark(p.title, needles) + '</h2>' +
         (p.title_en ? '<p class="en">' + mark(p.title_en, needles) + '</p>' : '') +
@@ -77,70 +194,73 @@
           : '') +
         (p.tldr ? '<p class="tldr">' + mark(p.tldr, needles) + '</p>' : '') +
         (tags ? '<div class="tags">' + tags + '</div>' : '') +
-        '</a></li>';
+        '</a>' +
+        '<button type="button" class="star" data-id="' + esc(p.id) + '" aria-pressed="' + on +
+        '" aria-label="' + (on ? '取消精選' : '加入精選') + '">' +
+        (on ? '★' : '☆') + '</button>' +
+        '</li>';
     }).join('');
 
     clearEl.hidden = !raw;
-    var noHit = shown.length === 0;
-    emptyEl.hidden = !noHit;
-    if (noHit) {
-      emptyEl.textContent = papers.length
-        ? '沒有符合「' + (raw || activeCat) + (raw && activeCat ? ' · ' + activeCat : '') + '」的文獻。'
-        : '還沒有任何文獻。明天早上的第一篇會自動出現在這裡。';
-    }
+    emptyEl.hidden = shown.length !== 0;
+    if (!shown.length) emptyEl.innerHTML = emptyText(raw, pool.length);
+    updateStat(shown.length, pool.length, raw);
+  }
+
+  function emptyText(raw, poolSize) {
     if (raw || activeCat) {
-      statEl.innerHTML = '符合 ' + shown.length + ' 篇 / 共 ' + papers.length + ' 篇';
-    } else {
-      updateStat();
+      return '沒有符合「' + esc(raw || activeCat) +
+        (raw && activeCat ? ' · ' + esc(activeCat) : '') + '」的文獻。';
     }
+    if (activeTab === FAV_TAB) {
+      return '還沒有精選的文獻。<br>點卡片右上角的 ☆ 就會收進這裡。';
+    }
+    if (!papers.length) return '還沒有任何文獻。<br>明天早上的第一篇會自動出現在這裡。';
+    if (!poolSize) return '這個分頁還沒有文獻。<br>之後每天早上會自動送進來。';
+    return '沒有符合的文獻。';
   }
 
-  function updateStat() {
-    var latest = papers.length ? fmtDate(papers[0].date) : '—';
-    var offline = navigator.onLine === false
-      ? ' · <span class="off">離線閱讀中</span>' : '';
-    statEl.innerHTML = '共 ' + papers.length + ' 篇 · 最新 ' + latest + offline;
+  function updateStat(shownCount, poolSize, raw) {
+    var offline = navigator.onLine === false ? ' · <span class="off">離線閱讀中</span>' : '';
+    if (raw || activeCat) {
+      statEl.innerHTML = '符合 ' + shownCount + ' 篇 / 本頁 ' + poolSize + ' 篇' + offline;
+      return;
+    }
+    if (activeTab === FAV_TAB) {
+      statEl.innerHTML = '精選 ' + poolSize + ' 篇' + offline;
+      return;
+    }
+    var latest = poolSize ? fmtDate(papers.filter(inTab)[0].date) : '—';
+    statEl.innerHTML = '本頁 ' + poolSize + ' 篇 · 共 ' + papers.length + ' 篇 · 最新 ' +
+      latest + offline;
   }
 
-  function buildChips() {
-    var count = {};
-    papers.forEach(function (p) {
-      if (p.category) count[p.category] = (count[p.category] || 0) + 1;
-    });
-    // 類別數量有限，全部列出；篇數多的排前面，同數依筆劃／字母序
-    var cats = Object.keys(count).sort(function (a, b) {
-      return count[b] - count[a] || a.localeCompare(b, 'zh-Hant');
-    });
-    if (!cats.length) { chipsEl.hidden = true; barEl.classList.remove('has-more'); return; }
-    chipsEl.hidden = false;
+  // 星號在卡片連結之外，但仍在 li 內；用委派並擋掉預設行為，避免點星號時開啟論文
+  listEl.addEventListener('click', function (e) {
+    var star = e.target.closest('.star');
+    if (star) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFav(star.dataset.id);
+      buildTabs();
+      if (activeTab === FAV_TAB) { buildChips(); render(); }   // 精選頁要即時把取消的那篇移掉
+      else {
+        var on = isFav(star.dataset.id);
+        star.setAttribute('aria-pressed', String(on));
+        star.setAttribute('aria-label', on ? '取消精選' : '加入精選');
+        star.innerHTML = on ? '★' : '☆';
+      }
+      return;
+    }
+    if (e.target.closest('a')) sessionStorage.setItem('dl-scroll', String(window.pageYOffset));
+  });
 
-    chipsEl.innerHTML = ['<button type="button" class="chip" data-cat="" aria-pressed="true">全部</button>']
-      .concat(cats.map(function (c) {
-        return '<button type="button" class="chip" data-cat="' + esc(c) +
-          '" aria-pressed="false">' + esc(c) + '<span class="n">' + count[c] + '</span></button>';
-      })).join('');
-
-    markChipOverflow();
-
-    chipsEl.onclick = function (e) {
-      var btn = e.target.closest('.chip');
-      if (!btn) return;
-      activeCat = btn.dataset.cat === activeCat ? '' : btn.dataset.cat;
-      Array.prototype.forEach.call(chipsEl.children, function (c) {
-        c.setAttribute('aria-pressed', String(c.dataset.cat === activeCat));
-      });
-      render();
-    };
-  }
-
-  /* ── 手機上的捲動細節 ───────────────────────── */
-  var barEl = document.querySelector('.searchbar');
-
+  /* ── 捲動相關 ───────────────────────────────── */
   // 類別放不下時，右緣加一道淡出提示可以橫向捲。
   // 量太早會量到還沒排版完的寬度（實測 rAF 那次會漏），所以字體就緒與稍後各再量一次。
   function markChipOverflow() {
     function check() {
-      barEl.classList.toggle('has-more', chipsEl.scrollWidth > chipsEl.clientWidth + 4);
+      chipWrapEl.classList.toggle('has-more', chipsEl.scrollWidth > chipsEl.clientWidth + 4);
     }
     requestAnimationFrame(check);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(check);
@@ -148,19 +268,23 @@
   }
   window.addEventListener('resize', markChipOverflow);
 
-  // 查詢列吸頂後補一道陰影，跟下方卡片分開
-  function syncStuck() { barEl.classList.toggle('stuck', window.pageYOffset > 4); }
-  window.addEventListener('scroll', syncStuck, { passive: true });
+  function syncScrollUI() {
+    var y = window.pageYOffset;
+    barEl.classList.toggle('stuck', y > 4);      // 吸頂後補一道陰影，跟卡片分開
+    topEl.hidden = y < 400;                      // 捲過一屏才出現回到頂端
+  }
+  window.addEventListener('scroll', syncScrollUI, { passive: true });
+  topEl.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // 點進論文再返回時回到原位：清單是 JS 畫的，瀏覽器自己還原會落在還沒繪好的頁面上
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  listEl.addEventListener('click', function (e) {
-    if (e.target.closest('a')) sessionStorage.setItem('dl-scroll', String(window.pageYOffset));
-  });
   function restoreScroll() {
     var y = sessionStorage.getItem('dl-scroll');
     sessionStorage.removeItem('dl-scroll');    // 只還原這一次，隔天重新開啟仍從頂端開始
-    if (y) { window.scrollTo(0, +y); syncStuck(); }   // 程式捲動不一定會派送 scroll，陰影自己補
+    if (y) window.scrollTo(0, +y);
+    syncScrollUI();                            // 程式捲動不一定會派送 scroll，狀態自己補
   }
 
   /* ── 載入資料 ───────────────────────────────── */
@@ -172,6 +296,13 @@
           p._hay = haystack(p);
           return p;
         });
+        // 精選裡若有已被刪掉的論文，順手清掉，數字才不會對不上
+        var ids = {};
+        papers.forEach(function (p) { ids[p.id] = true; });
+        var kept = favs.filter(function (id) { return ids[id]; });
+        if (kept.length !== favs.length) { favs = kept; writeFavs(); }
+
+        buildTabs();
         buildChips();
         render();
       })
@@ -199,15 +330,15 @@
   });
   qEl.value = sessionStorage.getItem('dl-q') || '';
 
-  window.addEventListener('online', updateStat);
-  window.addEventListener('offline', updateStat);
+  window.addEventListener('online', render);
+  window.addEventListener('offline', render);
 
   /* ── 主動更新：先請 SW 重抓全站，再重載 ─────── */
   var refreshing = false;
   function forceRefresh(spinEl) {
     if (refreshing) return;
     refreshing = true;
-    if (spinEl) spinEl.classList.add('spin', 'loading');
+    if (spinEl) spinEl.classList.add('spin');
     var sw = navigator.serviceWorker && navigator.serviceWorker.controller;
     var done = false;
     function finish() { if (!done) { done = true; location.reload(); } }

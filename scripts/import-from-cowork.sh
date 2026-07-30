@@ -34,11 +34,10 @@ shopt -s nullglob
 for f in "$SRC"/*.html; do
   base=$(basename "$f")
   if [ ! -f "papers/$base" ] || ! cmp -s "$f" "papers/$base"; then
-    # papers/ 裡的檔案被 build.py 注入過返回鍵，內容本來就會與來源不同，
-    # 因此只在「檔案不存在」或「去掉注入區塊後仍不同」時才覆蓋。
+    # papers/ 裡的檔案被 build.py 注入過工具列，內容本來就會與來源不同，
+    # 因此只在「檔案不存在」或「拆掉注入區塊後仍不同」時才覆蓋。
     if [ -f "papers/$base" ] && \
-       diff -q <(sed '/<!-- daily-lit-backlink -->/,/<\/style>/d; /class="dl-back"/d' "papers/$base") \
-               <(cat "$f") >/dev/null 2>&1; then
+       python3 build.py --strip "papers/$base" 2>/dev/null | cmp -s - "$f"; then
       continue
     fi
     cp "$f" "papers/$base" && chmod 644 "papers/$base" && copied=$((copied + 1))

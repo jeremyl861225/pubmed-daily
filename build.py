@@ -3,7 +3,7 @@
 
 做三件事：
   1. 掃 papers/*.html，解析出標題、期刊、標籤等欄位 → data/papers.json（首頁與搜尋的資料來源）
-  2. 在每篇論文頁尾注入一顆「回文獻列表」的浮動按鈕（可重複執行，不會重覆注入）
+  2. 在每篇論文頁尾注入浮動工具列：回文獻列表／加入精選／回到最上面（可重複執行，會就地換成最新版）
   3. 依實際檔案改寫 sw.js 的預快取清單，讓新論文一併可離線閱讀
 
 只用標準函式庫；GitHub Actions 上不必安裝任何套件。
@@ -40,6 +40,13 @@ STATIC_ASSETS = [
 
 TAG_RE = re.compile(r'<[^>]+>')
 WS_RE = re.compile(r'\s+')
+
+# 科別分頁：先看檔名中段代碼（pubmed-crs-2026-07-29 → crs），抓不到再看刊頭系列名。
+# 日後多一個科別，這裡多一行即可；沒對到的會自成一個分頁，不會憑空消失。
+STREAMS = [
+    ('crs', '大腸直腸', ('crs', 'colorectal', 'cr'), ('大腸', '直腸', 'Colorectal')),
+    ('gs', '一般外科', ('gs', 'general'), ('一般外科', 'General surg')),
+]
 
 
 def text_of(fragment):
@@ -110,6 +117,21 @@ def parse_tldr(source):
     return ''
 
 
+def parse_stream(name, series):
+    """判定科別分頁。回傳 (代碼, 顯示名)。"""
+    token = ''
+    m = re.match(r'(?:pubmed|paper)[-_]([a-z]+)', os.path.splitext(name)[0], re.I)
+    if m:
+        token = m.group(1).lower()
+    for key, label, codes, words in STREAMS:
+        if token and token in codes:
+            return key, label
+        if series and any(w in series for w in words):
+            return key, label
+    # 沒對到就用系列名自成一個分頁；連系列名都沒有才歸「其他」
+    return (token or 'other'), (series or '其他')
+
+
 def parse_paper(path):
     name = os.path.basename(path)
     with open(path, encoding='utf-8') as fh:
@@ -137,11 +159,16 @@ def parse_paper(path):
     if not category and tags:
         category = tags[0]
 
+    series = series or re.split(r'\s*[·|]\s*', doc_title)[0]
+    stream, stream_label = parse_stream(name, series)
+
     return {
         'id': os.path.splitext(name)[0],
         'file': 'papers/' + name,
         'date': parse_date(name, source, path),
-        'series': series or re.split(r'\s*[·|]\s*', doc_title)[0],
+        'stream': stream,
+        'stream_label': stream_label,
+        'series': series,
         'vol': vol,
         'title': title,
         'title_en': text_of(first(r'<p[^>]*class="[^"]*title-en[^"]*"[^>]*>(.*?)</p>', source)),
@@ -156,29 +183,97 @@ def parse_paper(path):
     }
 
 
-BACKLINK_MARK = '<!-- daily-lit-backlink -->'
-BACKLINK = BACKLINK_MARK + """
+TOOLBAR_MARK = '<!-- daily-lit-toolbar -->'
+OLD_MARKS = (TOOLBAR_MARK, '<!-- daily-lit-backlink -->')
+
+# 閱讀時的浮動工具列：回列表、加入精選、回到最上面。
+# 論文頁是獨立 HTML，樣式與行為都得內嵌；精選存在 localStorage，與首頁共用同一份 dl-favs。
+TOOLBAR = TOOLBAR_MARK + """
 <style>
-  .dl-back{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom));
-    z-index:9999;display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:22px;
-    background:rgba(27,28,30,.9);color:#fff;font:600 14px/1 -apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif;
-    text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
-  .dl-back:active{opacity:.75;}
-  @media print{.dl-back{display:none;}}
+  /* left:50% 的固定定位元素可用寬度只剩一半視窗，不給 width:max-content 按鈕文字會被折行 */
+  .dl-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));
+    z-index:9999;display:flex;align-items:center;gap:8px;
+    width:max-content;max-width:calc(100vw - 24px);}
+  .dl-bar .dl-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:40px;
+    border:0;border-radius:20px;background:rgba(27,28,30,.9);color:#fff;cursor:pointer;
+    font:600 14px/1 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;
+    text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.22);
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+  .dl-bar .dl-back{padding:0 18px;}
+  .dl-bar .dl-fav,.dl-bar .dl-top{width:40px;font-size:17px;padding:0;}
+  .dl-bar .dl-fav[aria-pressed="true"]{background:#8a4a3d;}
+  .dl-bar .dl-btn:active{opacity:.75;}
+  .dl-bar .dl-top[hidden]{display:none;}
+  @media print{.dl-bar{display:none;}}
 </style>
-<a class="dl-back" href="../index.html">&#8592; 文獻列表</a>
+<div class="dl-bar" data-paper-id="__ID__">
+  <a class="dl-btn dl-back" href="../index.html">&#8592; 文獻列表</a>
+  <button type="button" class="dl-btn dl-fav" aria-pressed="false" aria-label="加入精選">&#9734;</button>
+  <button type="button" class="dl-btn dl-top" aria-label="回到最上面" hidden>&#8593;</button>
+</div>
+<script>
+(function () {
+  var bar = document.currentScript.previousElementSibling;
+  var id = bar.getAttribute('data-paper-id');
+  var fav = bar.querySelector('.dl-fav');
+  var top = bar.querySelector('.dl-top');
+
+  function read() {
+    try { return JSON.parse(localStorage.getItem('dl-favs')) || []; } catch (e) { return []; }
+  }
+  function paint(list) {
+    var on = list.indexOf(id) !== -1;
+    fav.setAttribute('aria-pressed', String(on));
+    fav.innerHTML = on ? '&#9733;' : '&#9734;';
+    fav.setAttribute('aria-label', on ? '取消精選' : '加入精選');
+  }
+  paint(read());
+
+  fav.addEventListener('click', function () {
+    var list = read();
+    var i = list.indexOf(id);
+    if (i === -1) { list.push(id); } else { list.splice(i, 1); }
+    try { localStorage.setItem('dl-favs', JSON.stringify(list)); } catch (e) {}
+    paint(list);
+  });
+
+  top.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  // 捲過一屏才出現，免得一開頁就擋住內文
+  window.addEventListener('scroll', function () {
+    top.hidden = window.pageYOffset < 400;
+  }, { passive: true });
+})();
+</script>
+<!-- /daily-lit-toolbar -->
 """
 
 
-def inject_backlink(path):
-    """在論文頁面尾端加一顆回列表的按鈕；已注入過就跳過。"""
+def strip_injected(source):
+    """把注入過的工具列（含舊版只有返回鍵的那版）拆掉，還原成 cowork 的原始內容。"""
+    for mark in OLD_MARKS:
+        i = source.find(mark)
+        if i != -1 and '</body>' in source:
+            return source[:i] + source[source.rindex('</body>'):]
+    return source
+
+
+def inject_toolbar(path):
+    """重寫論文頁尾端的工具列。已是最新版就不動檔案，避免每次建索引都產生差異。"""
     with open(path, encoding='utf-8') as fh:
         source = fh.read()
-    if BACKLINK_MARK in source or '</body>' not in source:
+    if '</body>' not in source:
         return False
-    head, _, tail = source.rpartition('</body>')
+
+    base = strip_injected(source)
+    head, _, tail = base.rpartition('</body>')
+    block = TOOLBAR.replace('__ID__', os.path.splitext(os.path.basename(path))[0])
+    updated = head + block + '</body>' + tail
+    if updated == source:
+        return False
     with open(path, 'w', encoding='utf-8') as fh:
-        fh.write(head + BACKLINK + '</body>' + tail)
+        fh.write(updated)
     return True
 
 
@@ -214,6 +309,12 @@ def update_sw(paper_files):
 
 
 def main():
+    # 給 import 腳本用：印出「拆掉注入內容後」的檔案，好跟 cowork 的原始檔比對
+    if len(sys.argv) == 3 and sys.argv[1] == '--strip':
+        with open(sys.argv[2], encoding='utf-8') as fh:
+            sys.stdout.write(strip_injected(fh.read()))
+        return 0
+
     if not os.path.isdir(PAPERS_DIR):
         print('找不到 papers/，先建立資料夾再放論文 HTML', file=sys.stderr)
         return 1
@@ -221,7 +322,7 @@ def main():
     files = sorted(os.path.join(PAPERS_DIR, n) for n in os.listdir(PAPERS_DIR)
                    if n.lower().endswith('.html') and not n.startswith('.'))
 
-    injected = sum(1 for f in files if inject_backlink(f))
+    injected = sum(1 for f in files if inject_toolbar(f))
     papers = [parse_paper(f) for f in files]
     papers.sort(key=lambda p: (p['date'], p['id']), reverse=True)
 
@@ -236,7 +337,7 @@ def main():
         fh.write('\n')
 
     cached, stamp = update_sw(files)
-    print('論文 %d 篇（新注入返回鍵 %d）· 預快取 %d 檔 · build %s'
+    print('論文 %d 篇（工具列更新 %d）· 預快取 %d 檔 · build %s'
           % (len(papers), injected, cached, stamp))
     for p in papers[:5]:
         print('  %s  %s' % (p['date'], p['title'][:42]))
