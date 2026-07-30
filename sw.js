@@ -11,7 +11,7 @@
  */
 const CACHE_PREFIX = 'pubmed-daily-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1';
-const BUILD = '43cd990fb8ed';
+const BUILD = '2fe6cc3d5d3f';
 
 const PRECACHE_URLS = [
   './',
@@ -25,6 +25,7 @@ const PRECACHE_URLS = [
   './icons/maskable-512.png',
   './icons/apple-touch-icon.png',
   './papers/pubmed-crs-2026-07-29.html',
+  './papers/pubmed-gs-endo-2026-07-30.html',
   './papers/pubmed-periop-2026-07-30.html',
 ];
 

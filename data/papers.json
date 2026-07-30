@@ -1,5 +1,5 @@
 {
- "count": 2,
+ "count": 3,
  "latest": "2026-07-30",
  "papers": [
   {
@@ -24,6 +24,29 @@
    ],
    "tldr": "在 14 篇研究、3046 位直腸吻合病人中，單一釘合技術（SST）的吻合處滲漏風險比雙重釘合技術（DST）低約 39%（RR 0.61；95% CI 0.42–0.90；p = 0.012），但這個好處幾乎完全來自經肛門橫斷的 TTSS／TaTME 次群組（RR 0.37；95% CI 0.25–0.57）；若是腹腔內置放荷包縫合的傳統 SST，與 DST 並無差異（RR 0.92；95% CI 0.57–1.47），且整體證據確定性僅為「低」，因此適用情境應限縮在低位／超低位直腸吻合。",
    "bytes": 84953
+  },
+  {
+   "id": "pubmed-gs-endo-2026-07-30",
+   "file": "papers/pubmed-gs-endo-2026-07-30.html",
+   "date": "2026-07-30",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 001",
+   "title": "高齡病人接受機器人輔助 vs. 開腹胰頭十二指腸切除術：周術期結果之系統性回顧與統合分析",
+   "title_en": "Robotic versus open pancreaticoduodenectomy in elderly patients: a meta-analysis",
+   "journal": "Frontiers in Oncology 2026;16:1868703",
+   "authors": "Zeng C, Xie L, Zhang J, Tang G, Zhou R West China Hospital, Sichuan University, 成都",
+   "design": "系統性回顧＋統合分析 6 studies / 2965 patients（全為回溯性世代研究）",
+   "doi": "10.3389/fonc.2026.1868703",
+   "category": "內分泌外科",
+   "tags": [
+    "內分泌外科",
+    "胰臟手術 Pancreatic surgery",
+    "機器人手術 Robotic surgery",
+    "全為回溯性資料",
+    "Open Access"
+   ],
+   "tldr": "在 6 篇全為回溯性世代研究、2965 位 70 歲以上接受胰頭十二指腸切除術（Whipple 手術）的病人中，機器人手術（RPD）相較開腹（OPD）有較少的主要併發症（OR 0.68；95% CI 0.49–0.94）、較低輸血率（OR 0.50；0.34–0.72）、較少出血（−119 mL）與較短住院（−1.63 天），而死亡率、胰液漏、再次手術則無差異；但最亮眼的「整體併發症降低 55%」只來自 2 篇、136 位病人（占全體 4.6%），主要併發症的顯著性在排除單一大型研究後即消失，且胃排空延遲有不利 RPD 的趨勢，因此這是「在有經驗的中心、對經篩選的高齡病人可以考慮」等級的證據，不是改變標準做法的依據。",
+   "bytes": 98577
   },
   {
    "id": "pubmed-crs-2026-07-29",
