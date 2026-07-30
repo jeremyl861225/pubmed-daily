@@ -44,7 +44,7 @@ WS_RE = re.compile(r'\s+')
 # 科別分頁：先看檔名中段代碼（pubmed-crs-2026-07-29 → crs），抓不到再看刊頭系列名。
 # 日後多一個科別，這裡多一行即可；沒對到的會自成一個分頁，不會憑空消失。
 STREAMS = [
-    ('crs', '大腸直腸', ('crs', 'colorectal', 'cr'), ('大腸', '直腸', 'Colorectal')),
+    ('crs', '大腸直腸', ('crs', 'colorectal'), ('大腸', '直腸', 'Colorectal')),
     ('gs', '一般外科', ('gs', 'general'), ('一般外科', 'General surg')),
 ]
 

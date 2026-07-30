@@ -65,9 +65,10 @@ cp 某篇.html papers/ && python3 build.py && git add papers data sw.js && git c
 把下面這段接在原本「產生每日論文 HTML」的指令後面：
 
 > 產生完 HTML 後，用 GitHub connector 把檔案提交到 repo `jeremyl861225/pubmed-daily`
-> 的 `main` 分支，路徑固定為 `papers/<檔名>.html`。**檔名的科別代碼決定它落在哪個分頁**：
-> 大腸直腸用 `pubmed-crs-<YYYY-MM-DD>.html`、一般外科用 `pubmed-gs-<YYYY-MM-DD>.html`
-> （例如 `papers/pubmed-gs-2026-07-30.html`）。兩篇分成兩次 commit 或一次都可以，
+> 的 `main` 分支，路徑固定為 `papers/<檔名>.html`（`pubmed-<主題>-<YYYY-MM-DD>.html`）。
+> **分頁是看刊頭的系列名**：大腸直腸那篇寫「每日大腸直腸外科文獻」、一般外科那篇寫
+> 「每日一般外科文獻」，這兩個名稱請固定不要改寫。檔名開頭若用 `pubmed-crs-`／`pubmed-gs-`
+> 會優先採信檔名，但不是必要。兩篇分成兩次 commit 或一次都可以，
 > commit 訊息寫「新增論文：<日期> <中文標題>」。只需提交論文檔案，其餘索引檔
 > （`data/papers.json`、`sw.js`）由 repo 內的 GitHub Actions 自動重建，不要自行修改。
 > 若同名檔案已存在就覆蓋。
