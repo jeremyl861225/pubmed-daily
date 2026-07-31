@@ -1,7 +1,57 @@
 {
- "count": 3,
- "latest": "2026-07-30",
+ "count": 5,
+ "latest": "2026-07-31",
  "papers": [
+  {
+   "id": "pubmed-mis-2026-07-31",
+   "file": "papers/pubmed-mis-2026-07-31.html",
+   "date": "2026-07-31",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 003",
+   "title": "機器人 vs. 腹腔鏡全直腸繫膜切除術治療中低位直腸癌：切除品質與腫瘤學結果之隨機試驗統合分析",
+   "title_en": "Resection quality and oncologic outcomes after robotic versus laparoscopic total mesorectal excision for mid and low rectal cancer: a systematic review and meta-analysis of randomised trials",
+   "journal": "Journal of Robotic Surgery 2026;20(1)（文章編號原文未列）",
+   "authors": "Gosavi R, Smith B, Mealy A, Iftekher W, Bell S, McMurrick P, Nguyen TC, Teoh W, Narasimhan V Cabrini Health／Monash Health／Alfred Health・Monash University, Melbourne, Australia",
+   "design": "系統性回顧＋隨機效應統合分析（僅納入 RCT） 4 RCTs / 1952 patients（機器人 977 vs 腹腔鏡 975）",
+   "doi": "10.1007/s11701-026-03541-z",
+   "category": "微創／機器人手術技術",
+   "tags": [
+    "微創／機器人手術技術",
+    "機器人 TME Robotic TME",
+    "CRM／繫膜完整度",
+    "GRADE：主要結果高確定性",
+    "Open Access"
+   ],
+   "tldr": "在僅納入 4 篇 RCT、1,952 位距肛門 ≤ 10 cm 的中低位直腸腺癌病人中，機器人 TME 相較腹腔鏡 TME 顯著降低環狀切緣（CRM）陽性率（OR 0.58；95% CI 0.38–0.87）、提高完整繫膜切除率（OR 1.55；1.14–2.12）、並減少轉開腹（OR 0.41；0.21–0.79），三項皆為 GRADE 高確定性；但換算成絕對值其實很小（CRM 6.6% → 3.9%、轉開腹 3.1% → 1.3%），而三年局部復發（OR 0.43）與無病存活（HR 0.78）的好處只來自 2 篇試驗、事件數極少，總存活並無差異（HR 0.79；0.57–1.11）——所以機器人的價值比較像是「在困難骨盆把手術做得穩定」，而不是「換一台機器就多活幾年」。",
+   "bytes": 80846
+  },
+  {
+   "id": "pubmed-gs-gi-2026-07-31",
+   "file": "papers/pubmed-gs-gi-2026-07-31.html",
+   "date": "2026-07-31",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 002",
+   "title": "壞死性胰臟炎清創術式的三方比較：內視鏡經胃 vs. 微創手術 vs. 開腹壞死組織清除術之網絡統合分析",
+   "title_en": "Comparative Outcomes of Endoscopic, Minimally Invasive Surgical, and Open Necrosectomy in Necrotizing Pancreatitis: Evidence From a Network Meta-Analysis",
+   "journal": "World Journal of Surgery 2026;50(7):1875–1890",
+   "authors": "Abdelsamad A, Alqedra J, Khalil I, Mohammed MK, Selim OEM, Elserafy A, Ahmed OA, Mohsen M, Elsherif A, Gebauer F, Mohamed KA University of Witten/Herdecke, Germany；Cairo University, Egypt 等",
+   "design": "系統性回顧＋頻率學派隨機效應網絡統合分析（netmeta）＋單臂比例統合分析 33 studies / 1786 patients（9 篇比較性研究，含 4 篇 RCT；24 篇單臂研究）",
+   "doi": "10.1002/wjs.70406",
+   "category": "消化外科",
+   "tags": [
+    "消化外科",
+    "壞死性胰臟炎 Necrotizing pancreatitis",
+    "Step-up approach",
+    "CINeMA：9 項中 7 項為低確信度",
+    "Open Access"
+   ],
+   "tldr": "在 33 篇研究、1,786 位需要清創的壞死性胰臟炎病人中，以開腹清創（ON）為參考，內視鏡經胃清創（EN）在死亡率（OR 0.23；95% CI 0.06–0.91）、整體併發症（OR 0.11；0.03–0.40）、新發生多重器官衰竭（OR 0.05；0.01–0.19）、新入加護病房、胰臟外分泌功能不全全面勝出，微創手術清創（MIN）同樣優於 ON；但出血、再介入、新發糖尿病三項在三種術式間並無差異，而 EN 與 MIN 在 24 篇單臂資料的死亡率（6.6% vs 7.7%）與臨床成功率（89.9% vs 88.9%）幾乎相同——換句話說，真正該被淘汰的是「一開始就開腹」，而不是「該不該做手術」；EN 與 MIN 是依壞死位置（中央／後胃 vs 側方／腰肋）互補而非互斥的兩條路。",
+   "bytes": 109324
+  },
   {
    "id": "pubmed-periop-2026-07-30",
    "file": "papers/pubmed-periop-2026-07-30.html",
