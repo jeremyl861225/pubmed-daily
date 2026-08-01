@@ -1,7 +1,57 @@
 {
- "count": 5,
- "latest": "2026-07-31",
+ "count": 7,
+ "latest": "2026-08-01",
  "papers": [
+  {
+   "id": "pubmed-gs-breast-2026-08-01",
+   "file": "papers/pubmed-gs-breast-2026-08-01.html",
+   "date": "2026-08-01",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 003",
+   "title": "碳（木炭）刺青定位切片證實轉移之腋下淋巴結，用於乳癌前導性治療後的目標腋下廓清：系統性回顧與單臂統合分析",
+   "title_en": "Carbon (charcoal) tattoo localization of biopsy-proven metastatic axillary lymph nodes for targeted axillary dissection after neoadjuvant therapy in breast cancer: a systematic review and single-arm meta-analysis",
+   "journal": "World Journal of Surgical Oncology 2026;24(1)（Open Access）",
+   "authors": "Mirza W, Khan A, Iqbal H, Khan ME, Khan HM, Moeen-Ud-Din MB Shifa Tameer-e-Millat University／Shifa International Hospital（巴基斯坦伊斯蘭瑪巴德）；Kulsum International Hospital；University of Cincinnati（美國）",
+   "design": "系統性回顧 ＋ 單臂隨機效應統合分析（GLMM 比例合併／反變異數法連續變項） 9 篇研究 / 729 人（本頁自行加總）；PROSPERO CRD420261307110；預設留一法敏感度分析、次群組分析與 GRADE 評級",
+   "doi": "10.1186/s12957-026-04430-3",
+   "category": "乳房外科",
+   "tags": [
+    "乳房外科",
+    "目標腋下廓清 Targeted axillary dissection",
+    "腋下手術降階 De-escalation",
+    "GRADE：全部結果皆為「極低」確信度",
+    "Open Access"
+   ],
+   "tldr": "在 9 篇研究、729 位初始腋下淋巴結陽性、接受前導性全身治療的乳癌病人中，用碳（木炭）刺青在治療前標記那顆已被切片證實轉移的淋巴結，術中合併辨識率高達 94.0%（95% CI 88.0–97.1），而在有完成腋下淋巴結廓清（ALND）作為病理參考的世代中，偽陰性率僅 6.8%（4.2–10.8）且 I² ＝ 0%——這兩個數字支持碳刺青是一條免輻射、低成本、可規模化的目標腋下手術路徑；但真正該記住的是另外兩個數字：刺青節點與前哨節點的一致率只有 55.4%（代表 TLN 與 SLNB 不能互相取代，必須「兩個都拿」），以及 GRADE 對每一個結果都評為「極低確信度」——因此本文只能支持「在有標準化流程與稽核的中心謹慎採用」，不足以支持在流程尚未標準化的環境中放心地降階腋下手術。",
+   "bytes": 79835
+  },
+  {
+   "id": "pubmed-benign-2026-08-01",
+   "file": "papers/pubmed-benign-2026-08-01.html",
+   "date": "2026-08-01",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 004",
+   "title": "雷射閉合術（SiLaC）vs. 內視鏡藏毛竇治療（EPSiT）處理藏毛竇疾病：29 篇研究的系統性回顧與單臂統合分析",
+   "title_en": "A systematic review and meta-analysis of sinus laser associated closure (SiLaC) versus endoscopic pilonidal sinus treatment (EPSiT) in the management of pilonidal sinus disease",
+   "journal": "Langenbeck's Archives of Surgery 2026;411(1):文章編號未列於索引",
+   "authors": "Li Z, Jin L, Ouali M, de Parades V, Wang Z, Wu J, Ambe PC 上海中醫藥大學附屬岳陽中西醫結合醫院肛腸科（中國）；Université de Sfax（突尼西亞）；Hôpital Paris Saint-Joseph（法國）；Witten/Herdecke 大學（德國）",
+   "design": "系統性回顧 ＋ 兩組各自獨立的單臂比例統合分析（間接比較） 29 篇研究（雷射 19 篇／內視鏡 10 篇），合計 2,696 人（本頁自行加總）；PROSPERO CRD420251274562；無任何直接比較兩術式的研究",
+   "doi": "10.1007/s00423-026-04026-1",
+   "category": "良性疾病與功能性疾患",
+   "tags": [
+    "良性疾病與功能性疾患",
+    "藏毛竇疾病 Pilonidal sinus disease",
+    "微創術式 SiLaC / EPSiT",
+    "證據等級：單臂合併＋間接比較（低）",
+    "Open Access"
+   ],
+   "tldr": "這篇統合分析把 29 篇研究、2,696 位藏毛竇病人分成兩堆各自合併，結果顯示雷射閉合（SiLaC）與內視鏡治療（EPSiT）的治癒率（86% vs 88%）、復發率（11% vs 9%）、併發症率（10% vs 7%）、完全癒合時間（30.1 天 vs 26.6 天）幾乎沒有差別，唯一明顯不同的是手術時間（18.0 分 vs 30.1 分）；但最關鍵的一句話寫在方法學裡——文獻中沒有任何一篇研究直接把兩種術式擺在一起比較，本文是把兩堆單臂數據放在同一張表上「對看」，所有結果的 I² 都在 74.6–99.4% 之間（幾乎全部異質性極高），因此正確的臨床解讀不是「兩者一樣好」，而是「目前的證據還沒有能力分辨兩者的差別」，術式選擇應回歸設備可及性、術者熟練度與病人偏好。",
+   "bytes": 79098
+  },
   {
    "id": "pubmed-mis-2026-07-31",
    "file": "papers/pubmed-mis-2026-07-31.html",
