@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-02</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 2 日 · 週日</span>
+    <span style="opacity:.4">/</span><span>Vol. 005</span>
+  </div>
+  <h1 class="title">右側惡性大腸阻塞的初始處置：立即手術 vs. 支架／減壓造口／減壓管作為橋接手術——18 篇研究、7,205 人的貝氏網絡統合分析</h1>
+  <p class="title-en">Initial management strategies for right-sided malignant colonic obstruction: a systematic review and bayesian network meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">World Journal of Surgical Oncology<br><span style="color:#6b7079;font-size:13px">2026;24(1)（Open Access, CC BY）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola Schulze F, Dox I, Giménez M, Oda T, Marescaux J<br><span style="color:#6b7079;font-size:13px">IRCAD France（法國史特拉斯堡）；University of Tsukuba（日本筑波）；Fondazione Policlinico Universitario A. Gemelli IRCCS（義大利羅馬）</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-04-02</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v">系統性回顧 ＋ <b>貝氏隨機效應網絡統合分析</b>（PRISMA-NMA）<br><span style="color:#6b7079;font-size:13px">18 篇<b>全部為回溯性非隨機</b>世代研究 / 7,205 人；未納入任何 RCT；PROSPERO CRD420251234425；SUCRA 排序＋node-splitting 一致性檢定；ROBINS-I 偏誤評估</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1186/s12957-026-04303-9">10.1186/s12957-026-04303-9</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/41928284/">PMID 41928284 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">大腸直腸癌手術與腫瘤學</span>
+    <span class="tag t2">急診大腸直腸外科 Emergency colorectal surgery</span>
+    <span class="tag t2">橋接手術 Bridge to surgery</span>
+    <span class="tag t3">證據等級：18/18 為回溯性研究，14 篇 ROBINS-I 為 serious</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#net">網絡幾何</a><a href="#tbl1">研究特徵表</a><a href="#results">主要結果＋森林圖</a>
+  <a href="#raw">絕對風險與自行計算</a><a href="#clin">臨床意涵</a>
+  <a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在 <strong>18 篇回溯性研究、7,205 位</strong>「可治癒性」右側惡性大腸阻塞（RMCO）病人中，<strong>整體術後併發症率 28.6%、術後死亡率 5.1%</strong>，而<strong>幾乎所有死亡都發生在立即手術組</strong>；貝氏網絡統合分析顯示<strong>支架作為橋接手術（stent as BTS）相較立即手術可降低術後死亡率（RR 0.33，95% CrI 0.10–0.75；6.6% → 0.9%）與切除後造口率（RR 0.41，0.21–0.78；11.8% → 2.3%）</strong>，但<strong>整體併發症與總體存活率則三組皆無差異</strong>；真正要記住的兩件事是——<strong>本研究沒有任何一篇隨機試驗、14/18 篇偏誤風險為 serious</strong>，因此這是「值得在高死亡風險病人身上認真考慮」的假說級證據，而<strong>不是</strong>可以取代右側阻塞標準處置的定論；且<strong>減壓造口在右側阻塞完全看不到左側阻塞那樣的好處</strong>，反而在造口率排名墊底。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Right-sided malignant colonic obstruction (RMCO) remains challenging, as the evidence is more limited than for left-sided disease. Although primary resection is the standard approach, emergency surgery carries higher perioperative risks, increasing interest in bridge-to-surgery (BTS) strategies. However, their optimal role remains uncertain. We conducted a systematic review and Bayesian network meta-analysis to compare initial management strategies for RMCO and evaluate short- and long-term outcomes.</p>
+    <h4>Methods</h4>
+    <p>A comprehensive search of PubMed, Embase, and the Cochrane Library was performed, with a last update in October 2025. Comparative studies including patients with potentially curable RMCO who underwent either immediate surgery or a BTS approach (stent, decompression stoma, or decompression tube) were eligible. A Bayesian random-effects network meta-analysis was conducted. The primary outcome was overall postoperative morbidity; secondary outcomes included postoperative mortality, stoma formation after resection, and overall survival (OS) rate.</p>
+    <h4>Results</h4>
+    <p>A total of 18 retrospective non-randomized cohort studies including 7,205 patients met the inclusion criteria. Stenting was associated with a significantly lower postoperative mortality as compared to immediate surgery (6.6 vs. 0.9%; RR: 0.33; 95% CrI: 0.10–0.75) and with a significantly lower rate of stoma formation after resection (11.8 vs. 2.3%; RR: 0.41; 95% CrI: 0.21–0.78). No significant differences were observed among treatment strategies in overall postoperative morbidity or OS rate.</p>
+    <h4>Conclusions</h4>
+    <p>Stenting as a bridge to surgery (BTS) was associated with a lower postoperative mortality and a lower rate of stoma formation as compared to immediate surgery. These findings suggest that stenting may serve as a viable alternative for patients at high risk of postoperative mortality.</p>
+    <p class="note">以上為 PubMed／PMC 之作者原文摘要逐字引用（含原文中「6.6 vs. 0.9%」的敘述順序）。中文翻譯與所有解讀為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程（依原文 Fig. 1 數字重繪）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">792</span> 筆資料庫檢索紀錄<br>
+        <span style="color:#6b7079;font-size:12.5px">PubMed 235 ／ Embase 505 ／ Cochrane Library 52（本頁自行加總：235＋505＋52 ＝ 792 ✓）；最後更新 2025 年 10 月</span></div></div>
+      <div class="pr-ex">扣除重複 <span class="n">261</span> 筆</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Screening 篩選</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">531</span> 筆去重後紀錄</div></div>
+      <div class="pr-ex">排除會議摘要 <span class="n">248</span> 筆<br>排除非英文 <span class="n">29</span> 筆</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">254</span> 筆進入標題／摘要篩選<br>
+        <span style="color:#6b7079;font-size:12.5px">本頁自行驗算：531 − 248 − 29 ＝ 254 ✓</span></div></div>
+      <div class="pr-ex">排除研究設計不符 <span class="n">179</span> 筆<br>排除綜論 <span class="n">22</span> 筆</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">53</span> 篇全文評讀<br>
+        <span style="color:#6b7079;font-size:12.5px">本頁自行驗算：254 − 179 − 22 ＝ 53 ✓</span></div></div>
+      <div class="pr-ex">排除研究設計不符 <span class="n">33</span> 篇<br>排除非治癒性設定 <span class="n">1</span> 篇<br>排除世代重複 <span class="n">1</span> 篇</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">18</span> 篇回溯性非隨機世代研究，<span class="n">7,205</span> 人<br>
+        <span style="color:#6b7079;font-size:12.5px">本頁自行驗算：53 − 33 − 1 − 1 ＝ 18 ✓；<b>未找到任何隨機對照試驗（RCT）</b></span></div></div>
+      <div class="pr-ex">6 篇單中心 ／ 12 篇多中心<br>亞洲 12 篇（日 5、韓 4、中 3）<br>歐洲 6 篇（荷 5、瑞典 1）</div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:14px;line-height:1.7"><b>怎麼讀：</b>每一階段的「排除數」都必須讓上一格減下來剛好等於下一格——本頁三處驗算全部吻合，代表原文流程圖沒有數字漏洞。<b>陷阱：</b>248 筆會議摘要被整批排除，這是常見但代價不小的做法——右側阻塞的支架研究樣本小、常先以摘要形式發表，整批排除可能讓「未發表的負面經驗」被系統性地擋在門外，加重發表偏誤（publication bias）。</p>
+</section>
+
+<section id="net">
+  <h2>Network Geometry <span class="zh">／ 網絡幾何：這張網有多不平衡</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 400" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif" role="img"><line x1="235" y1="165" x2="555" y2="88" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="7.8" stroke-linecap="round"/><rect x="382" y="118" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="395" y="130" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">11</text><line x1="235" y1="165" x2="555" y2="252" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="2.9" stroke-linecap="round"/><rect x="382" y="200" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="395" y="212" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">3</text><line x1="235" y1="165" x2="735" y2="170" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="1.6" stroke-linecap="round"/><rect x="472" y="158" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="485" y="170" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">1</text><line x1="235" y1="165" x2="282" y2="330" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round"/><rect x="254" y="268" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="267" y="280" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">2</text><line x1="555" y1="88" x2="555" y2="252" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round"/><rect x="542" y="161" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="555" y="173" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">2</text><line x1="555" y1="88" x2="735" y2="170" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round"/><rect x="632" y="120" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="645" y="132" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">2</text><line x1="555" y1="252" x2="735" y2="170" stroke="#2f6b62" stroke-opacity="0.42" stroke-width="1.6" stroke-linecap="round"/><rect x="632" y="202" width="26" height="17" rx="8" fill="#ffffff" stroke="#e3e0da" stroke-width="1"/><text x="645" y="214" font-size="10.5" font-weight="700" fill="#2f6b62" text-anchor="middle">1</text><circle cx="235" cy="165" r="40.0" fill="#8a4a3d" fill-opacity="0.16" stroke="#8a4a3d" stroke-width="1.6"/><text x="235" y="220" font-size="12" font-weight="700" fill="#1b1c1e" text-anchor="middle">立即手術 IS</text><text x="235" y="234" font-size="11" fill="#6b7079" text-anchor="middle">5,053 人</text><circle cx="555" cy="88" r="27.3" fill="#8a4a3d" fill-opacity="0.16" stroke="#8a4a3d" stroke-width="1.6"/><text x="555" y="130" font-size="12" font-weight="700" fill="#1b1c1e" text-anchor="middle">支架 Stent</text><text x="555" y="144" font-size="11" fill="#6b7079" text-anchor="middle">1,903 人</text><circle cx="555" cy="252" r="12.6" fill="#8a4a3d" fill-opacity="0.16" stroke="#8a4a3d" stroke-width="1.6"/><text x="555" y="280" font-size="12" font-weight="700" fill="#1b1c1e" text-anchor="middle">減壓造口 Stoma</text><text x="555" y="294" font-size="11" fill="#6b7079" text-anchor="middle">144 人</text><circle cx="735" cy="170" r="10.2" fill="#8a4a3d" fill-opacity="0.16" stroke="#8a4a3d" stroke-width="1.6"/><text x="735" y="195" font-size="12" font-weight="700" fill="#1b1c1e" text-anchor="middle">減壓管 Tube</text><text x="735" y="209" font-size="11" fill="#6b7079" text-anchor="middle">49 人</text><circle cx="282" cy="330" r="10.5" fill="#8a4a3d" fill-opacity="0.16" stroke="#8a4a3d" stroke-width="1.6"/><text x="282" y="355" font-size="12" font-weight="700" fill="#1b1c1e" text-anchor="middle">未指明 BTS</text><text x="282" y="369" font-size="11" fill="#6b7079" text-anchor="middle">56 人</text><text x="10" y="18" font-size="11" fill="#6b7079">圓面積 ∝ 該節點病人數；連線粗細與方框數字 ＝ 提供該直接比較的研究篇數</text></svg></div>
+    <div class="cap"><b>數據來源：</b>節點人數取自原文 Results 段（IS 5,053／Stent 1,903／Stoma 144／Tube 49／Any-BTS 56，本頁自行加總 ＝ 7,205 ✓）；連線上的研究篇數由本頁自行從原文 Table 1 的「Comparison」欄逐篇歸戶計算（<b>本頁自行計算</b>，原文未以表格列出各邊篇數）。
+    <b>如何解讀：</b>網絡統合分析的可信度取決於「每條邊有多少直接證據」。這張網真正粗的只有一條——支架 vs. 立即手術（11 篇）；其餘每條邊只有 1–3 篇。
+    <b>有何陷阱：</b>減壓管（Tube）只有 49 人、且<b>三篇全部來自日本</b>，它與立即手術之間只靠 Hotta 2012 一篇（8 人 vs. 28 人）連接——凡是牽涉 Tube 的間接比較，實質上都建立在一篇單中心小型研究上。同理，Sakamoto 2020 一篇就貢獻了支架組 1,500 人（佔支架組 79%），整個「支架」節點幾乎等於一個日本全國資料庫的傾向分數配對世代。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif" role="img"><line x1="58" y1="214.0" x2="862" y2="214.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="218.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text><line x1="58" y1="178.0" x2="862" y2="178.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="182.0" font-size="10.5" fill="#6b7079" text-anchor="end">1,100</text><line x1="58" y1="142.0" x2="862" y2="142.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="146.0" font-size="10.5" fill="#6b7079" text-anchor="end">2,200</text><line x1="58" y1="106.0" x2="862" y2="106.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="110.0" font-size="10.5" fill="#6b7079" text-anchor="end">3,300</text><line x1="58" y1="70.0" x2="862" y2="70.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="74.0" font-size="10.5" fill="#6b7079" text-anchor="end">4,400</text><line x1="58" y1="34.0" x2="862" y2="34.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">5,500</text><text x="14" y="20" font-size="11" fill="#6b7079">人數</text><rect x="119.4" y="48.6" width="38.0" height="165.4" fill="#8a4a3d" rx="2"/><text x="138.4" y="42.6" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">5,053</text><text x="138.4" y="232.0" font-size="11.5" fill="#43464d" text-anchor="middle">立即手術</text><text x="138.4" y="246.0" font-size="11.5" fill="#43464d" text-anchor="middle">IS</text><rect x="280.2" y="151.7" width="38.0" height="62.3" fill="#8a4a3d" rx="2"/><text x="299.2" y="145.7" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">1,903</text><text x="299.2" y="232.0" font-size="11.5" fill="#43464d" text-anchor="middle">支架</text><text x="299.2" y="246.0" font-size="11.5" fill="#43464d" text-anchor="middle">Stent</text><rect x="441.0" y="209.3" width="38.0" height="4.7" fill="#8a4a3d" rx="2"/><text x="460.0" y="203.3" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">144</text><text x="460.0" y="232.0" font-size="11.5" fill="#43464d" text-anchor="middle">減壓造口</text><text x="460.0" y="246.0" font-size="11.5" fill="#43464d" text-anchor="middle">Stoma</text><rect x="601.8" y="212.4" width="38.0" height="1.6" fill="#8a4a3d" rx="2"/><text x="620.8" y="206.4" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">49</text><text x="620.8" y="232.0" font-size="11.5" fill="#43464d" text-anchor="middle">減壓管</text><text x="620.8" y="246.0" font-size="11.5" fill="#43464d" text-anchor="middle">Tube</text><rect x="762.6" y="212.2" width="38.0" height="1.8" fill="#8a4a3d" rx="2"/><text x="781.6" y="206.2" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">56</text><text x="781.6" y="232.0" font-size="11.5" fill="#43464d" text-anchor="middle">未指明 BTS</text><text x="781.6" y="246.0" font-size="11.5" fill="#43464d" text-anchor="middle">Any-BTS</text><rect x="58" y="259" width="11" height="11" fill="#8a4a3d" rx="2"/><text x="74" y="268" font-size="11.5" fill="#43464d">各治療節點納入人數</text><line x1="58" y1="214" x2="862" y2="214" stroke="#6b7079" stroke-width="1"/></svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 段各治療節點人數。<b>如何解讀：</b>立即手術組佔 <b>70.1%</b>（5,053/7,205，本頁自行計算），支架 26.4%，其餘三組合計不到 4%。<b>有何陷阱：</b>樣本數極端不平衡時，貝氏網絡的隨機效應模型會把小節點的估計「借力」到大節點上（borrowing of strength），造成 Stoma／Tube 的可信區間看起來沒有想像中寬——但那不代表我們真的知道它們的效果。</div>
+  </div>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵表（原文 Table 1 全部 18 篇）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:1240px">
+      <thead><tr><th>研究／年份</th><th>國家</th><th>設計</th><th>中心數</th><th>比較組別</th><th>樣本數</th><th>臨床成功率</th><th>BTS 相關併發症</th><th>追蹤（中位月）</th></tr></thead>
+      <tbody><tr><td class="num"><b>Amelung 2016</b></td><td class="num">荷蘭</td><td class="num">回溯性</td><td class="num">全國資料庫</td><td class="num">支架 vs. 造口 vs. 立即手術</td><td class="num">44 / 42 / 1,774</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">不適用</td></tr><tr><td class="num"><b>Amelung 2017</b></td><td class="num">荷蘭</td><td class="num">PSM</td><td class="num">全國資料庫</td><td class="num">支架 vs. 立即手術</td><td class="num">22 / 88</td><td class="num">19/22（86%）</td><td class="num">0/22（0%）</td><td class="num">不適用</td></tr><tr><td class="num"><b>Boeding 2023</b></td><td class="num">荷蘭</td><td class="num">回溯性</td><td class="num">全國資料庫</td><td class="num">任一 BTS vs. 立即手術</td><td class="num">26 / 463</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">67.2</td></tr><tr><td class="num"><b>Hotta 2012</b></td><td class="num">日本</td><td class="num">多變項校正</td><td class="num">單中心</td><td class="num">造口 vs. 減壓管 vs. 立即手術</td><td class="num">2 / 8 / 28</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">60</td></tr><tr><td class="num"><b>Huang 2024</b></td><td class="num">中國</td><td class="num">回溯性</td><td class="num">單中心</td><td class="num">支架 vs. 立即手術</td><td class="num">35 / 60</td><td class="num">31/35（89%）</td><td class="num">2/35（6%）</td><td class="num">44.5</td></tr><tr><td class="num"><b>Ji 2017</b></td><td class="num">韓國</td><td class="num">回溯性</td><td class="num">3 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">14 / 25</td><td class="num">14/16（88%）</td><td class="num">0/16（0%）</td><td class="num">17</td></tr><tr><td class="num"><b>Kim 2023</b></td><td class="num">韓國</td><td class="num">回溯性</td><td class="num">4 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">17 / 28</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">53.4</td></tr><tr><td class="num"><b>Kye 2016</b></td><td class="num">韓國</td><td class="num">回溯性</td><td class="num">7 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">25 / 49</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">40.8</td></tr><tr><td class="num"><b>Li 2020</b></td><td class="num">中國</td><td class="num">回溯性</td><td class="num">單中心</td><td class="num">支架 vs. 立即手術</td><td class="num">35 / 72</td><td class="num">34/35（97%）</td><td class="num">0/35（0%）</td><td class="num">35</td></tr><tr><td class="num"><b>Lockhorst 2025</b></td><td class="num">荷蘭</td><td class="num">回溯性</td><td class="num">單中心</td><td class="num">任一 BTS vs. 立即手術</td><td class="num">30 / 32</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">19</td></tr><tr><td class="num"><b>Morita 2019</b></td><td class="num">日本</td><td class="num">回溯性</td><td class="num">19 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">28 / 40</td><td class="num">27/28（96%）</td><td class="num">0/28（0%）</td><td class="num">不適用</td></tr><tr><td class="num"><b>Park 2023</b></td><td class="num">韓國</td><td class="num">回溯性</td><td class="num">6 中心</td><td class="num">支架 vs. 造口</td><td class="num">42 / 30</td><td class="num">40/42（95%）</td><td class="num">2/42（5%）</td><td class="num">32</td></tr><tr><td class="num"><b>Rosander 2021</b></td><td class="num">瑞典</td><td class="num">多變項校正</td><td class="num">全國資料庫</td><td class="num">造口 vs. 立即手術</td><td class="num">70 / 681</td><td class="num">不適用</td><td class="num">原文未列</td><td class="num">18.6</td></tr><tr><td class="num"><b>Sakamoto 2020</b></td><td class="num">日本</td><td class="num">PSM</td><td class="num">全國資料庫</td><td class="num">支架 vs. 立即手術</td><td class="num">1,500 / 1,500</td><td class="num">原文未列</td><td class="num">原文未列</td><td class="num">不適用</td></tr><tr><td class="num"><b>Suzuki 2019</b></td><td class="num">日本</td><td class="num">多變項校正</td><td class="num">單中心</td><td class="num">支架 vs. 減壓管</td><td class="num">19 / 21</td><td class="num">17/19（90%）／18/21（86%）</td><td class="num">2/19（11%）／3/21（14%）</td><td class="num">36.2</td></tr><tr><td class="num"><b>Takahashi 2024</b></td><td class="num">日本</td><td class="num">回溯性</td><td class="num">單中心</td><td class="num">支架 vs. 減壓管</td><td class="num">8 / 20</td><td class="num">原文未列</td><td class="num">0/8（0%）／0/20（0%）</td><td class="num">31.9</td></tr><tr><td class="num"><b>van den Berg 2014</b></td><td class="num">荷蘭</td><td class="num">回溯性</td><td class="num">2 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">16 / 17</td><td class="num">13/16（81%）</td><td class="num">0/16（0%）</td><td class="num">不適用</td></tr><tr><td class="num"><b>Zeng 2021</b></td><td class="num">中國</td><td class="num">PSM</td><td class="num">3 中心</td><td class="num">支架 vs. 立即手術</td><td class="num">98 / 196</td><td class="num">93/98（95%）</td><td class="num">1/98（1%）</td><td class="num">49</td></tr></tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7">
+  PSM ＝ 傾向分數配對（propensity score matching）；多變項校正 ＝ multivariable analysis（MVA）；BTS ＝ 橋接手術（bridge to surgery）。<b>本頁自行加總驗算：</b>支架組 44＋22＋35＋14＋17＋25＋35＋28＋42＋1,500＋19＋8＋16＋98 ＝ <b>1,903 ✓</b>；造口組 42＋2＋30＋70 ＝ <b>144 ✓</b>；減壓管組 8＋21＋20 ＝ <b>49 ✓</b>；未指明 BTS 26＋30 ＝ <b>56 ✓</b>；立即手術組 ＝ <b>5,053 ✓</b>；五組總和 ＝ <b>7,205 ✓</b>，與原文一致。
+  <b>注意一處原文內部不一致：</b>Ji 2017 在 Table 1 的樣本數欄為「支架 14 人」，但臨床成功率欄卻寫「14/16（88%）」，分母 16 大於樣本數 14——原文未說明差異來源（可能是「嘗試置放 16 例、成功納入分析 14 例」）。本頁如實呈現、<b>不做推估</b>。</p>
+</section>
+
+<section id="results">
+  <h2>Primary Results <span class="zh">／ 主要結果與森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c"><div class="lab">整體術後併發症（主要結果）</div><div class="big">28.6%</div><div class="sub">1,911 / 6,678；各組間<b>無</b>顯著差異</div></div>
+    <div class="c amber"><div class="lab">術後死亡率（合併）</div><div class="big">5.1%</div><div class="sub">368 / 7,205；死亡幾乎全部集中在立即手術組</div></div>
+    <div class="c teal"><div class="lab">支架 vs. 立即手術 死亡率</div><div class="big">RR 0.33</div><div class="sub">95% CrI 0.10–0.75；6.6% → 0.9%</div></div>
+    <div class="c teal"><div class="lab">支架 vs. 立即手術 造口率</div><div class="big">RR 0.41</div><div class="sub">95% CrI 0.21–0.78；11.8% → 2.3%</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 219" width="100%" height="219" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif" role="img"><text x="10" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">結果／來源綜論</text><text x="632" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">效果值（95% CI）</text><line x1="518.3" y1="24" x2="518.3" y2="179" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/><text x="4" y="46" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">術後死亡率 Postoperative mortality（次要結果）</text><text x="10" y="76.5" font-size="12.5" fill="#43464d">支架橋接 vs. 立即手術</text><line x1="365.9" y1="72.5" x2="499.2" y2="72.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="365.9" y1="68.5" x2="365.9" y2="76.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="499.2" y1="68.5" x2="499.2" y2="76.5" stroke="#2f6b62" stroke-width="1.6"/><path d="M444.9,65.5 L455.9,72.5 L444.9,79.5 L433.9,72.5 Z" fill="#8a4a3d" stroke="#8a4a3d"/><text x="632" y="76.5" font-size="12" fill="#43464d" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif">RR 0.33（0.10–0.75）</text><text x="4" y="103" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">切除後造口形成 Stoma formation after resection（次要結果）</text><text x="10" y="133.5" font-size="12.5" fill="#43464d">支架橋接 vs. 立即手術（主分析）</text><line x1="415.0" y1="129.5" x2="501.8" y2="129.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="415.0" y1="125.5" x2="415.0" y2="133.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="501.8" y1="125.5" x2="501.8" y2="133.5" stroke="#2f6b62" stroke-width="1.6"/><path d="M459.3,122.5 L470.3,129.5 L459.3,136.5 L448.3,129.5 Z" fill="#8a4a3d" stroke="#8a4a3d"/><text x="632" y="133.5" font-size="12" fill="#43464d" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif">RR 0.41（0.21–0.78）</text><text x="10" y="162.5" font-size="12.5" fill="#43464d">支架橋接 vs. 立即手術（敏感度：排除減壓管組）</text><line x1="423.8" y1="158.5" x2="505.9" y2="158.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="423.8" y1="154.5" x2="423.8" y2="162.5" stroke="#2f6b62" stroke-width="1.6"/><line x1="505.9" y1="154.5" x2="505.9" y2="162.5" stroke="#2f6b62" stroke-width="1.6"/><path d="M460.8,151.5 L471.8,158.5 L460.8,165.5 L449.8,158.5 Z" fill="#8a4a3d" stroke="#8a4a3d"/><text x="632" y="162.5" font-size="12" fill="#43464d" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif">RR 0.42（0.24–0.83）</text><line x1="320" y1="179" x2="610" y2="179" stroke="#6b7079" stroke-width="1"/><line x1="320.0" y1="179" x2="320.0" y2="184" stroke="#6b7079" stroke-width="1"/><text x="320.0" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">0.05</text><line x1="365.9" y1="179" x2="365.9" y2="184" stroke="#6b7079" stroke-width="1"/><text x="365.9" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">0.1</text><line x1="426.5" y1="179" x2="426.5" y2="184" stroke="#6b7079" stroke-width="1"/><text x="426.5" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">0.25</text><line x1="472.4" y1="179" x2="472.4" y2="184" stroke="#6b7079" stroke-width="1"/><text x="472.4" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">0.5</text><line x1="518.3" y1="179" x2="518.3" y2="184" stroke="#6b7079" stroke-width="1"/><text x="518.3" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">1</text><line x1="564.1" y1="179" x2="564.1" y2="184" stroke="#6b7079" stroke-width="1"/><text x="564.1" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">2</text><line x1="610.0" y1="179" x2="610.0" y2="184" stroke="#6b7079" stroke-width="1"/><text x="610.0" y="197" font-size="10.5" fill="#6b7079" text-anchor="middle">4</text><text x="465.0" y="212" font-size="11" fill="#6b7079" text-anchor="middle">風險比 RR（＜1 favours 支架橋接）（對數刻度）</text></svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 段中「明確以數字列出」的三個效果值（Fig. 4B、4C 與 Supplementary Fig. 1C2 的敏感度分析）。<b>如何解讀：</b>橫軸為對數刻度、垂直虛線是無效線 RR ＝ 1；三條區間都完全落在 1 的左側，代表支架橋接組的事件率顯著較低。菱形代表網絡統合分析的合併估計值（貝氏可信區間 credible interval, CrI，非傳統信賴區間）。<b>有何陷阱：</b>本圖只有三列，<b>不是因為只做了三個比較</b>，而是因為原文正文只把「有統計顯著」的配對比較寫成數字；其餘（整體併發症、嚴重併發症、總體存活率，以及支架 vs. 造口、支架 vs. 減壓管等所有配對）<b>原文僅以「無統計顯著差異」帶過，效果值與可信區間僅呈現在圖片中而未列於文字或表格</b>。本頁<b>不做推估</b>、不呈現合併菱形以外的任何虛構數值。</div>
+  </div>
+
+  <h3>全部結果總覽</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:900px">
+      <thead><tr><th>結果</th><th>比較</th><th>效果值（95% CrI）</th><th>絕對事件率</th><th>異質性／一致性</th><th>判定</th></tr></thead>
+      <tbody>
+        <tr><td class="num">整體術後併發症<br><span style="color:#6b7079;font-size:12.5px">主要結果</span></td><td class="num">所有配對比較</td><td class="num na">原文未列數值</td><td class="num">合併 28.6%（1,911/6,678）</td><td>—</td><td><span class="win neutral">無顯著差異</span></td></tr>
+        <tr><td class="num">嚴重術後併發症<br><span style="color:#6b7079;font-size:12.5px">Clavien–Dindo ≥ III</span></td><td class="num">所有配對比較</td><td class="num na">原文未列數值</td><td class="num na">原文未列</td><td>—</td><td><span class="win neutral">無顯著差異</span></td></tr>
+        <tr><td class="num"><b>術後死亡率</b></td><td class="num"><b>支架 vs. 立即手術</b></td><td class="num sig">RR 0.33（0.10–0.75）</td><td class="num">0.9% vs. 6.6%</td><td>減壓管組因零事件被排除出此網絡</td><td><span class="win">支架較佳</span></td></tr>
+        <tr><td class="num">術後死亡率</td><td class="num">其餘配對比較</td><td class="num na">原文未列數值</td><td class="num">合併 5.1%（368/7,205）</td><td>死亡定義不一：30 天 8 篇、90 天 3 篇、住院期間 3 篇、未指明 4 篇</td><td><span class="win neutral">無顯著差異</span></td></tr>
+        <tr><td class="num"><b>切除後造口形成</b></td><td class="num"><b>支架 vs. 立即手術</b></td><td class="num sig">RR 0.41（0.21–0.78）</td><td class="num">2.3% vs. 11.8%</td><td>主分析<b>檢出顯著不一致性</b>（node-splitting）</td><td><span class="win">支架較佳</span></td></tr>
+        <tr><td class="num">切除後造口形成<br><span style="color:#6b7079;font-size:12.5px">敏感度分析（排除減壓管組）</span></td><td class="num">支架 vs. 立即手術</td><td class="num sig">RR 0.42（0.24–0.83）</td><td class="num na">原文未列</td><td>不一致性消失</td><td><span class="win">支架較佳（穩健）</span></td></tr>
+        <tr><td class="num">總體存活率 OS</td><td class="num">所有配對比較</td><td class="num na">原文未列數值</td><td class="num na">原文未列</td><td>以「最長追蹤時間點的存活率」合併，非 time-to-event</td><td><span class="win neutral">無顯著差異</span></td></tr>
+        <tr><td class="num">術後復發</td><td class="num">—</td><td class="num na">資料不足，原文未進行分析</td><td class="num na">—</td><td>—</td><td><span class="win caution">未評估</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7">CrI ＝ 貝氏可信區間（credible interval）。SUCRA 排序（原文 Supplementary Table 5，數值未於正文列出）：整體併發症、術後死亡率與 OS 三項，<b>所有 BTS 策略的 SUCRA 值皆高於立即手術</b>；切除後造口率則以<b>支架組排名第一</b>。</p>
+</section>
+
+<section id="raw">
+  <h2>Absolute Numbers <span class="zh">／ 絕對風險、橋接處置成效與本頁自行計算</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 300" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif" role="img"><line x1="58" y1="234.0" x2="862" y2="234.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="238.0" font-size="10.5" fill="#6b7079" text-anchor="end">0%</text><line x1="58" y1="194.0" x2="862" y2="194.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="198.0" font-size="10.5" fill="#6b7079" text-anchor="end">2.8%</text><line x1="58" y1="154.0" x2="862" y2="154.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="158.0" font-size="10.5" fill="#6b7079" text-anchor="end">5.6%</text><line x1="58" y1="114.0" x2="862" y2="114.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="118.0" font-size="10.5" fill="#6b7079" text-anchor="end">8.4%</text><line x1="58" y1="74.0" x2="862" y2="74.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="78.0" font-size="10.5" fill="#6b7079" text-anchor="end">11.2%</text><line x1="58" y1="34.0" x2="862" y2="34.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">14%</text><text x="14" y="20" font-size="11" fill="#6b7079">％（原文列出之絕對事件率）</text><rect x="218.0" y="221.1" width="38.0" height="12.9" fill="#2f6b62" rx="2"/><text x="237.0" y="215.1" font-size="11" font-weight="700" fill="#2f6b62" text-anchor="middle">0.9%</text><rect x="262.0" y="139.7" width="38.0" height="94.3" fill="#8a4a3d" rx="2"/><text x="281.0" y="133.7" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">6.6%</text><text x="259.0" y="252.0" font-size="11.5" fill="#43464d" text-anchor="middle">術後死亡率</text><text x="259.0" y="266.0" font-size="11.5" fill="#43464d" text-anchor="middle">Postoperative mortality</text><rect x="620.0" y="201.1" width="38.0" height="32.9" fill="#2f6b62" rx="2"/><text x="639.0" y="195.1" font-size="11" font-weight="700" fill="#2f6b62" text-anchor="middle">2.3%</text><rect x="664.0" y="65.4" width="38.0" height="168.6" fill="#8a4a3d" rx="2"/><text x="683.0" y="59.4" font-size="11" font-weight="700" fill="#8a4a3d" text-anchor="middle">11.8%</text><text x="661.0" y="252.0" font-size="11.5" fill="#43464d" text-anchor="middle">切除後造口率</text><text x="661.0" y="266.0" font-size="11.5" fill="#43464d" text-anchor="middle">Stoma after resection</text><rect x="58" y="279" width="11" height="11" fill="#2f6b62" rx="2"/><text x="74" y="288" font-size="11.5" fill="#43464d">支架作為橋接手術（Stent as BTS）</text><rect x="322" y="279" width="11" height="11" fill="#8a4a3d" rx="2"/><text x="338" y="288" font-size="11.5" fill="#43464d">立即手術（Immediate surgery）</text><line x1="58" y1="234" x2="862" y2="234" stroke="#6b7079" stroke-width="1"/></svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 段逐字列出的絕對事件率（死亡率 0.9% vs. 6.6%；造口率 2.3% vs. 11.8%）。<b>如何解讀：</b>相對風險比（RR 0.33）聽起來像「降低三分之二」，但真正決定臨床價值的是絕對差。<b>本頁自行計算：</b>術後死亡的絕對風險差 ARR ＝ 6.6 − 0.9 ＝ <b>5.7 個百分點</b>，需治療人數 NNT ＝ 100 ÷ 5.7 ≈ <b>18 人</b>（每 18 位改以支架橋接，可避免 1 例術後死亡）；切除後造口 ARR ＝ 11.8 − 2.3 ＝ <b>9.5 個百分點</b>，NNT ≈ <b>11 人</b>。<b>有何陷阱：</b>這兩個 NNT 建立在<b>回溯性、非隨機</b>資料上，最可能的偏誤方向是「適應症混淆」（confounding by indication）——臨床上會被送去置放支架的，通常是血行動力學穩定、盲腸還沒瀕臨穿孔、有內視鏡人力可調度的病人；真正的高危險病人反而被直接推進開刀房。因此這 5.7 個百分點裡有多少是支架的功勞、有多少是病人本來就比較好，這篇研究無法區分。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 300" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif" role="img"><line x1="58" y1="234.0" x2="862" y2="234.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="238.0" font-size="10.5" fill="#6b7079" text-anchor="end">0.0%</text><line x1="58" y1="194.0" x2="862" y2="194.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="198.0" font-size="10.5" fill="#6b7079" text-anchor="end">20.0%</text><line x1="58" y1="154.0" x2="862" y2="154.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="158.0" font-size="10.5" fill="#6b7079" text-anchor="end">40.0%</text><line x1="58" y1="114.0" x2="862" y2="114.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="118.0" font-size="10.5" fill="#6b7079" text-anchor="end">60.0%</text><line x1="58" y1="74.0" x2="862" y2="74.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="78.0" font-size="10.5" fill="#6b7079" text-anchor="end">80.0%</text><line x1="58" y1="34.0" x2="862" y2="34.0" stroke="#e3e0da" stroke-width="1"/><text x="50" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">100.0%</text><text x="14" y="20" font-size="11" fill="#6b7079">％（本頁自行由原始事件數計算）</text><rect x="218.0" y="48.8" width="38.0" height="185.2" fill="#2f6b62" rx="2"/><text x="237.0" y="42.8" font-size="11" font-weight="700" fill="#2f6b62" text-anchor="middle">92.6%</text><rect x="262.0" y="62.6" width="38.0" height="171.4" fill="#8a6a1f" rx="2"/><text x="281.0" y="56.6" font-size="11" font-weight="700" fill="#8a6a1f" text-anchor="middle">85.7%</text><text x="259.0" y="252.0" font-size="11.5" fill="#43464d" text-anchor="middle">臨床成功率</text><text x="259.0" y="266.0" font-size="11.5" fill="#43464d" text-anchor="middle">（24–48 小時內解除阻塞）</text><rect x="620.0" y="229.6" width="38.0" height="4.4" fill="#2f6b62" rx="2"/><text x="639.0" y="223.6" font-size="11" font-weight="700" fill="#2f6b62" text-anchor="middle">2.2%</text><rect x="664.0" y="219.4" width="38.0" height="14.6" fill="#8a6a1f" rx="2"/><text x="683.0" y="213.4" font-size="11" font-weight="700" fill="#8a6a1f" text-anchor="middle">7.3%</text><text x="661.0" y="252.0" font-size="11.5" fill="#43464d" text-anchor="middle">橋接處置相關併發症</text><text x="661.0" y="266.0" font-size="11.5" fill="#43464d" text-anchor="middle">（穿孔、位移）</text><rect x="58" y="279" width="11" height="11" fill="#2f6b62" rx="2"/><text x="74" y="288" font-size="11.5" fill="#43464d">支架 Stent</text><rect x="168" y="279" width="11" height="11" fill="#8a6a1f" rx="2"/><text x="184" y="288" font-size="11.5" fill="#43464d">減壓管 Tube</text><line x1="58" y1="234" x2="862" y2="234" stroke="#6b7079" stroke-width="1"/></svg></div>
+    <div class="cap"><b>數據來源：</b>原文提供的原始事件數——支架臨床成功 288/311、減壓管 18/21；橋接相關併發症（穿孔、位移）支架 7/319、減壓管 3/41。<b>本頁自行計算</b>百分比：288/311 ＝ 92.6%、18/21 ＝ 85.7%、7/319 ＝ 2.2%、3/41 ＝ 7.3%（原文取整為 93%、86%、2%、7%）。臨床成功定義為「置放後 24–48 小時內解除阻塞症狀」。<b>如何解讀：</b>支架在右側阻塞的技術成功率其實相當高，而 2.2% 的併發症率<b>遠低於</b>文獻中左側阻塞常見的約 10%。<b>有何陷阱：</b>原文自己就直言這個 2.2% 「可能被低估」——所有研究都是回溯性的，失敗的、穿孔的、當場轉開刀的病例最容易從回溯性病歷收案中消失。另外請注意分母：臨床成功率與併發症率的分母不同（311 vs. 319），因為並非所有研究都同時報告這兩項。</div>
+  </div>
+
+  <div class="call amber">
+    <div class="h">三個「本頁自行計算」的驗算，全部通過</div>
+    <ul class="clean" style="margin-top:8px">
+      <li>合併併發症率 1,911 ÷ 6,678 ＝ 28.62%，與原文 28.6% 相符 ✓（分母 6,678 ＜ 7,205，代表有 527 人所在的研究未報告併發症）</li>
+      <li>合併死亡率 368 ÷ 7,205 ＝ 5.11%，與原文 5.1% 相符 ✓</li>
+      <li>五個治療節點人數加總 5,053＋1,903＋144＋49＋56 ＝ 7,205 ✓；18 篇研究的國別加總 12（亞洲）＋6（歐洲）＝ 18 ✓；偏誤評估 14（serious）＋4（moderate）＝ 18 ✓</li>
+    </ul>
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：這篇文獻該怎麼用在台灣的急診刀</span></h2>
+
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>最適合的族群：術後死亡風險高的可治癒性右側阻塞病人。</b>原文的核心訊息不是「支架比較好」，而是「右側阻塞立即手術的術後死亡率超過 5%，而這些死亡幾乎全部發生在立即手術組」。因此真正該重新思考的，是高齡（尤其 ≥ 80 歲）、ASA III–IV、合併嚴重心肺或腎功能不全、營養不良或急性腎損傷尚未矯正的病人——這群人「先減壓、把生理狀態調整好、再排擇期右半結腸切除」的邏輯，和左側阻塞是一樣的。</li>
+    <li><b>次要族群：想避免造口的病人。</b>右側阻塞病人被迫做造口的比例在立即手術組高達 11.8%（迴腸造口或末端迴腸造口）。對於在意生活品質、或社會支持薄弱難以照顧造口的病人，2.3% vs. 11.8% 是一個可以拿到門診談的數字。</li>
+    <li><b>不適合的族群：</b>已經有腹膜炎徵象、影像上盲腸嚴重擴張（一般以 &gt; 9–12 公分為警訊）、疑似穿孔或缺血、血行動力學不穩定者——這些人沒有等待減壓的時間本錢，本研究的族群（「potentially curable」、可等待的擇期化路徑）也不包含他們。此外，姑息性（palliative）病人被原文明確排除，本文結論不能外推到不打算切除的族群。</li>
+  </ul>
+
+  <h3>換來什麼？付出什麼代價？</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:760px">
+      <thead><tr><th>面向</th><th>換來的好處</th><th>付出的代價／不確定性</th></tr></thead>
+      <tbody>
+        <tr><td>術後死亡</td><td>絕對風險由 6.6% 降至 0.9%（NNT ≈ 18，本頁自行計算）</td><td>估計來自回溯性資料，適應症混淆無法排除；可信區間上界 0.75 已相當接近 1</td></tr>
+        <tr><td>造口</td><td>切除後造口率由 11.8% 降至 2.3%（NNT ≈ 11，本頁自行計算）</td><td>主分析的 node-splitting 檢出顯著不一致性，須靠排除減壓管組才消失</td></tr>
+        <tr><td>整體併發症</td><td><b>沒有好處</b>——各組皆無差異，合併 28.6%</td><td>先支架再手術＝多一次侵入性處置，併發症總量並未下降</td></tr>
+        <tr><td>腫瘤學結果</td><td><b>沒有差異</b>——總體存活率各組相當</td><td>復發率資料不足無法分析；OS 以「最長追蹤時間點的存活率」合併，追蹤長度不一，本身就會扭曲比較</td></tr>
+        <tr><td>技術風險</td><td>右側支架臨床成功率 92.6%，併發症僅 2.2%（本頁自行計算）</td><td>回溯性收案很可能低估併發症；右側支架技術門檻高（距離長、彎曲、盲腸壁薄）</td></tr>
+        <tr><td>資源</td><td>可把急診刀轉成擇期刀，人力與麻醉條件都較好</td><td>需要 24 小時可調度、有右側支架經驗的內視鏡醫師；不是每家醫院半夜都做得到</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>知情同意怎麼談</h3>
+  <div class="call teal">
+    <div class="h">一段可以直接改寫成同意書口語的說法</div>
+    <p style="margin:0">「您右邊的大腸被腫瘤塞住了。傳統做法是現在就開刀把腫瘤連同阻塞一起切掉，這是標準做法，也是絕大多數人採用的方式。但因為現在是急診手術、腸子腫脹、您的身體狀況還沒調整好，這種情況下的手術死亡風險，文獻上大約是每 100 人有 5 到 7 人，而且大約每 8 到 9 人會有 1 人需要暫時做人工肛門。另一個選擇是先用內視鏡放一支金屬支架把腸子撐開、讓您先排便退腫，一到兩週後再排正式手術。目前的研究看起來，這樣做的手術死亡率和人工肛門比例都比較低——不過我必須誠實告訴您，<b>這些研究全部是回顧過去病歷的比較，沒有任何一個是隨機分派的正式試驗</b>，所以有可能是因為醫師本來就挑身體狀況比較好的病人去放支架。另外，放支架本身有大約 2% 的機會發生腸穿孔或支架滑脫，那樣反而會變成更緊急的手術。整體來說，先放支架<b>並不會減少總併發症，也不會延長存活</b>，它換到的是『把急診刀變成擇期刀』的機會，以及少做人工肛門的機會。」</p>
+  </div>
+  <ul class="clean" style="margin-top:16px">
+    <li><b>務必說清楚「沒有變好的部分」：</b>整體併發症與存活率完全沒有差異。若病人以為「放支架比較不會死於癌症」，那是誤解。</li>
+    <li><b>務必說清楚右側支架的技術現實：</b>本文的高成功率來自於有經驗的中心；若貴院半夜無法調度到熟悉右側支架的內視鏡醫師，那麼「立即手術」仍然是對這位病人最負責任的選擇——原文自己在討論中也是這樣寫的。</li>
+    <li><b>減壓造口在右側請保守：</b>左側阻塞的全國性配對研究（Veld 等）顯示減壓造口可降低死亡率並改善存活，但 Rosander 等在右側找不到同樣的效果；本統合分析中減壓造口在「切除後造口率」的 SUCRA 排名<b>敬陪末座</b>——這很合理，因為造完口的人本來就更可能留著造口。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>零篇隨機試驗，14/18 篇偏誤風險為 serious。</b>18 篇全部是回溯性非隨機設計；其中 12 篇既未做傾向分數配對也未做多變項校正，被 ROBINS-I 判定為「因干擾因素導致 serious 風險」；另有 6 篇單中心研究被判定為「選樣 serious 風險」。最終只有 4 篇是 moderate。這是本文<b>最重要的一句話</b>：所有效果值都應被當成假說，而不是結論。</li>
+    <li><b>「支架組」實質上是一個日本資料庫。</b>Sakamoto 2020 一篇就貢獻 1,500 名支架病人（佔支架組 78.8%，本頁自行計算），因此支架的估計值幾乎由單一國家、單一醫療體系的傾向分數配對資料主導，外推到台灣時要留意內視鏡可近性與人力配置的差異。</li>
+    <li><b>結果定義不一致。</b>術後死亡率在 18 篇中有 8 篇用 30 天、3 篇用 90 天、3 篇用住院期間、4 篇根本沒定義。把這些混在一起合併成一個 RR，本身就是異質性的來源。</li>
+    <li><b>存活率不是用 hazard ratio 合併的。</b>因為多數研究未報告 time-to-event 資料，原文改用「最長追蹤時間點的存活率」。各研究追蹤中位數從 17 個月到 67.2 個月不等（平均 38.8 個月），這種情況下的「存活率無差異」很可能只是追蹤長度差異造成的假象，<b>不能解讀為腫瘤學上的等效</b>。</li>
+    <li><b>造口率分析檢出顯著不一致性。</b>主分析的 node-splitting 顯示直接證據與間接證據衝突；必須排除含減壓管組的研究後，不一致性才消失。雖然效果值幾乎沒變（0.41 → 0.42），但這代表網絡本身的傳遞性（transitivity）假設在此結果上並不穩固。</li>
+    <li><b>減壓管組的零事件被「結構性」排除。</b>因為減壓管組沒有任何術後死亡，會造成貝氏模型無法收斂，原文直接把該節點移出死亡率網絡。這是合理的統計處理，但意味著<b>我們對減壓管的死亡率一無所知</b>——不是「它很安全」，而是「49 個人太少，看不出來」。</li>
+    <li><b>復發率完全沒有評估。</b>報告復發的研究太少。對於一個要決定「先減壓 1–2 週再切」的策略而言，腫瘤在支架壓迫下是否會增加局部散播（left-sided 支架文獻中一直有的疑慮），本文<b>無法回答</b>。</li>
+    <li><b>發表偏誤未評估。</b>本文未報告漏斗圖或 Egger 檢定；加上整批排除 248 筆會議摘要與 29 筆非英文文獻，正向結果被優先發表的可能性無法排除。</li>
+  </ol>
+  <div class="call amber" style="margin-top:18px">
+    <div class="h">最關鍵的一個警訊</div>
+    <p style="margin:0">若只能記住一件事：<b>「RR 0.33」不是隨機分派下的因果效應，而是「臨床醫師挑誰去放支架」這個決策本身的鏡像。</b>右側阻塞在多數醫院仍以立即手術為預設，願意先放支架的多半是狀況相對穩定、有時間等的病人。除非未來出現前瞻性登錄或隨機試驗，否則這個 3 倍的死亡率差距，最誠實的說法是「不排除大部分來自病人選擇」。</p>
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>右側惡性大腸阻塞 <span class="en">Right-sided malignant colonic obstruction, RMCO</span></dt><dd>腫瘤造成的盲腸至橫結腸近端阻塞，約佔阻塞型大腸直腸癌的 20–30%；因盲腸壁薄且順應性高，穿孔風險高於左側。</dd></div>
+      <div class="gl-row"><dt>橋接手術 <span class="en">Bridge to surgery, BTS</span></dt><dd>先以非切除方式解除阻塞（支架、減壓造口、減壓管），讓病人恢復生理狀態後再施行擇期根治性切除。</dd></div>
+      <div class="gl-row"><dt>自膨式金屬支架 <span class="en">Self-expandable metallic stent, SEMS</span></dt><dd>經內視鏡置放於腫瘤狹窄處撐開腸道的金屬網管；主要併發症為穿孔與位移。</dd></div>
+      <div class="gl-row"><dt>減壓造口 <span class="en">Decompression stoma</span></dt><dd>不做切除、僅將近端腸道拉出腹壁形成暫時性造口以解除阻塞。</dd></div>
+      <div class="gl-row"><dt>減壓管 <span class="en">Decompression tube</span></dt><dd>經鼻或經肛門置入的長導管，以引流方式減壓；本文中三篇相關研究全部來自日本。</dd></div>
+      <div class="gl-row"><dt>網絡統合分析 <span class="en">Network meta-analysis, NMA</span></dt><dd>同時比較三種以上治療的統合分析方法，可整合直接與間接證據；成立前提是各研究族群可互換（傳遞性）。</dd></div>
+      <div class="gl-row"><dt>貝氏可信區間 <span class="en">Credible interval, CrI</span></dt><dd>貝氏統計下參數落在該區間的機率為 95%；與頻率學派的信賴區間（confidence interval, CI）概念不同，兩者不可混用。</dd></div>
+      <div class="gl-row"><dt>SUCRA <span class="en">Surface under the cumulative ranking curve</span></dt><dd>治療排序指標，介於 0–100%，數值愈高代表該治療在該結果上排名愈前；但 SUCRA 高不等於有統計顯著差異。</dd></div>
+      <div class="gl-row"><dt>節點分割法 <span class="en">Node-splitting</span></dt><dd>檢驗網絡中直接證據與間接證據是否一致的方法；p &lt; 0.05 代表存在不一致性。</dd></div>
+      <div class="gl-row"><dt>傳遞性 <span class="en">Transitivity</span></dt><dd>網絡統合分析的核心假設：各比較之間的族群與效果修飾因子分布須相似，否則間接比較無效。</dd></div>
+      <div class="gl-row"><dt>傾向分數配對 <span class="en">Propensity score matching, PSM</span></dt><dd>依據接受某治療的預測機率配對兩組病人，以降低可測量干擾因素的影響；無法處理未測量的干擾。</dd></div>
+      <div class="gl-row"><dt>ROBINS-I</dt><dd>非隨機介入性研究的偏誤風險評估工具，分為 low／moderate／serious／critical 四級。</dd></div>
+      <div class="gl-row"><dt>適應症混淆 <span class="en">Confounding by indication</span></dt><dd>醫師依病情嚴重度選擇治療，導致治療與預後之間出現虛假關聯；是回溯性外科研究最主要的偏誤來源。</dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>為避免 1 例不良事件所需治療的人數，等於絕對風險差的倒數。</dd></div>
+      <div class="gl-row"><dt>Clavien–Dindo 分級</dt><dd>術後併發症的嚴重度分級，≥ III 級代表需要手術、內視鏡或放射介入處理。</dd></div>
+      <div class="gl-row"><dt>臨床成功 <span class="en">Clinical success</span></dt><dd>本文定義為支架或減壓管置放後 24–48 小時內阻塞症狀解除。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; Disclosure <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola Schulze F, Dox I, Giménez M, Oda T, Marescaux J. Initial management strategies for right-sided malignant colonic obstruction: a systematic review and bayesian network meta-analysis. <i>World J Surg Oncol</i>. 2026;24(1). DOI: <a href="https://doi.org/10.1186/s12957-026-04303-9">10.1186/s12957-026-04303-9</a>；PMID <a href="https://pubmed.ncbi.nlm.nih.gov/41928284/">41928284</a>（PMC13169969，Open Access）。</p>
+  <p><b>資料擷取方式：</b>本頁所有數字均取自 PubMed 摘要與 PubMed Central 全文（含 Results 段落、Table 1 研究特徵表與 PRISMA 流程敘述）。原文的森林圖（Fig. 4）、網絡圖（Fig. 3）、偏誤評估圖（Fig. 2）與補充資料（Supplementary Fig. 1–2、Supplementary Table 1–5）之<b>圖內數值未於文字或表格中列出者，本頁一律標示「原文未列數值」，不做任何推估或反推</b>。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文數字重新繪製的 inline SVG／HTML</b>，未複製、未嵌入出版社的任何圖檔。其中：PRISMA 流程圖依原文 Results 之「Study selection」段落數字重繪；網絡圖的節點人數取自原文，<b>各連線的研究篇數為本頁自行由 Table 1 逐篇歸戶計算</b>；森林圖僅呈現原文以文字明確列出的三個效果值；絕對風險圖、橋接成效圖與所有百分比、絕對風險差（ARR）、需治療人數（NNT）與加總驗算，凡由原文數字四則運算得出者，均已於圖說或內文就地標註「<b>本頁自行計算</b>」。</p>
+  <p><b>免責：</b>本頁為個人閱讀筆記與教學用途之重點整理，不構成臨床指引或醫療建議；實際臨床決策請回歸原始文獻全文、當地資源條件與病人個別狀況。</p>
+</section>
+
+<footer>
+  每日大腸直腸外科文獻 · Vol. 005 · 2026 年 8 月 2 日 ｜ 資料來源：PubMed / PubMed Central ｜ 本頁為單一自足 HTML，無外部資源、無腳本、無追蹤。
+</footer>
+
+</div>
+</body>
+</html>
