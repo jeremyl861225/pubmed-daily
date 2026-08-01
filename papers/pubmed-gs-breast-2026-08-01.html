@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-01</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 1 日 · 週六</span>
+    <span style="opacity:.4">/</span><span>Vol. 003</span>
+  </div>
+  <h1 class="title">碳（木炭）刺青定位切片證實轉移之腋下淋巴結，用於乳癌前導性治療後的目標腋下廓清：系統性回顧與單臂統合分析</h1>
+  <p class="title-en">Carbon (charcoal) tattoo localization of biopsy-proven metastatic axillary lymph nodes for targeted axillary dissection after neoadjuvant therapy in breast cancer: a systematic review and single-arm meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">World Journal of Surgical Oncology<br><span style="color:#6b7079;font-size:13px">2026;24(1)（Open Access）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Mirza W, Khan A, Iqbal H, Khan ME, Khan HM, Moeen-Ud-Din MB<br><span style="color:#6b7079;font-size:13px">Shifa Tameer-e-Millat University／Shifa International Hospital（巴基斯坦伊斯蘭瑪巴德）；Kulsum International Hospital；University of Cincinnati（美國）</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-05-23</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v">系統性回顧 ＋ <b>單臂隨機效應統合分析</b>（GLMM 比例合併／反變異數法連續變項）<br><span style="color:#6b7079;font-size:13px">9 篇研究 / 729 人（本頁自行加總）；PROSPERO CRD420261307110；預設留一法敏感度分析、次群組分析與 GRADE 評級</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1186/s12957-026-04430-3">10.1186/s12957-026-04430-3</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42177471/">PMID 42177471 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">乳房外科</span>
+    <span class="tag t2">目標腋下廓清 Targeted axillary dissection</span>
+    <span class="tag t2">腋下手術降階 De-escalation</span>
+    <span class="tag t3">GRADE：全部結果皆為「極低」確信度</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果＋森林圖</a><a href="#raw">各研究原始數據</a>
+  <a href="#sens">敏感度與次群組</a><a href="#cont">連續型結果</a><a href="#clin">臨床意涵</a>
+  <a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在 <strong>9 篇研究、729 位</strong>初始腋下淋巴結陽性、接受前導性全身治療的乳癌病人中，用<strong>碳（木炭）刺青</strong>在治療前標記那顆已被切片證實轉移的淋巴結，術中<strong>合併辨識率高達 94.0%（95% CI 88.0–97.1）</strong>，而在有完成腋下淋巴結廓清（ALND）作為病理參考的世代中，<strong>偽陰性率僅 6.8%（4.2–10.8）且 I² ＝ 0%</strong>——這兩個數字支持碳刺青是一條免輻射、低成本、可規模化的目標腋下手術路徑；但真正該記住的是另外兩個數字：<strong>刺青節點與前哨節點的一致率只有 55.4%</strong>（代表 TLN 與 SLNB <strong>不能互相取代</strong>，必須「兩個都拿」），以及 <strong>GRADE 對每一個結果都評為「極低確信度」</strong>——因此本文只能支持「在有標準化流程與稽核的中心謹慎採用」，<strong>不足以支持在流程尚未標準化的環境中放心地降階腋下手術</strong>。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Targeted axillary dissection (TAD) using carbon tattooing aims to localize and excise biopsy-proven metastatic axillary nodes after neoadjuvant systemic therapy (NAST), potentially improving post-NAST axillary staging while enabling the de-escalation of axillary surgery.</p>
+    <h4>Methods</h4>
+    <p>We systematically searched Scopus, Embase, PubMed, Web of Science, Cochrane CENTRAL, and ClinicalTrials.gov, supplemented by screening reference lists. Prospective and retrospective clinical studies evaluating carbon tattooing-guided targeted tattooed lymph node (TLN) excision in initially node-positive breast cancer patients treated with NAST were included. Random-effects generalized linear mixed models (GLMM) were used to pool the proportions of dichotomous outcomes. Continuous outcomes were pooled using a random-effects inverse variance model. The risk of bias was assessed using the ROBINS-I tool. Leave-one-out sensitivity analyses and a pre-specified clinical subgroup analysis (completion-ALND verification cohort vs. feasibility/no-mandatory-ALND cohort) were also performed.</p>
+    <h4>Results</h4>
+    <p>Nine studies were included in this review. The pooled TLN identification rate was 0.94 (95% CI: 0.88–0.97). The pooled sentinel lymph node (SLN) identification rate was 0.754 (95% CI 0.541–0.888), with substantial heterogeneity between studies. TLN–SLN concordance was 0.554 (95% CI 0.333–0.755), indicating a moderate overlap between the tattooed node and SLN. In the completion-ALND verification cohorts, the pooled false-negative rate (FNR) of the targeted procedure versus ALND for residual nodal disease was 0.068 (95% CI 0.042–0.108). The pooled mean number of retrieved nodes was 3.25 (95% CI 2.54–3.96), and the pooled tattoo-to-surgery interval was 153.0 days (95% CI 131.9–174.2). Sensitivity analyses showed that no single study unduly influenced pooled estimates.</p>
+    <h4>Conclusions</h4>
+    <p>Carbon tattooing-guided targeted axillary procedures after NAST demonstrated high TLN retrieval and low verification-cohort FNR, supporting procedural feasibility for post-NAST axillary staging in initially node-positive breast cancer patients. However, variable SLN identification, moderate TLN–SLN concordance, and heterogeneity in technique and reporting support implementation within standardized multidisciplinary workflows with local audits. Further prospective comparative studies are required.</p>
+    <p class="note">原文摘要逐字引自 <em>World Journal of Surgical Oncology</em> 2026;24(1)（Open Access, CC BY）。PROSPERO 註冊編號 CRD420261307110。本頁所有圖表均為依原文 Results 內文、Table 1–3 之數據<strong>重新繪製</strong>，未嵌入或翻拍原文 Figure 1–7 與補充圖表；原圖請見 DOI 連結。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>Fig. 1 <span class="zh">／ 文獻篩選流程（PRISMA 2020 flow diagram）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      資料庫與試驗登錄平台取得　<span class="n">166</span> 筆　＋　引文追蹤另得　<span class="n">6</span> 筆　＝　<span class="n">172</span> 筆<br>
+      <span style="color:#6b7079;font-size:12.5px">PubMed/MEDLINE · Embase · Scopus · Web of Science Core Collection · Cochrane CENTRAL · ClinicalTrials.gov　·　自建庫起至 <b>2026 年 2 月 11 日</b>　·　紀錄以 Covidence 管理</span>
+    </div></div><div class="pr-ex">移除重複<br><span class="n">54</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Screening 標題／摘要篩選</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      篩選標題／摘要　<span class="n">118</span> 筆<br>
+      <span style="color:#6b7079;font-size:12.5px">兩位審閱者（W.M.、M.E.K.）獨立於 Covidence 中執行，歧異由第三作者（M.B.M.D.）裁決</span>
+    </div></div><div class="pr-ex">排除<br><span class="n">106</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Eligibility 全文評估</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">全文評估　<span class="n">12</span> 篇（<b>無任何一篇無法取得全文</b>）<br>
+      <span style="color:#6b7079;font-size:12.5px">納入：基線經切片證實腋下淋巴結轉移；於 NST 前或期間以碳／木炭／奈米碳懸浮液刺青標記目標節點；手術時嘗試取出該節點（TLNB／TAD ± SLNB，有做 ALND 者作為參考標準）</span></div></div>
+      <div class="pr-ex">排除 <span class="n">3</span> 篇<br><span style="font-size:11.5px">結果不符 1／對照不符 1／設計不符 1</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box final">
+      最終納入　<span class="n">9</span> 篇研究　/　<span class="n">729</span> 人（本頁自行加總）<br>
+      <span style="color:#6b7079;font-size:12.5px">
+      <b>A 組（完成 ALND 驗證）</b>：Boniface 2022、Chen 2025、Hartmann 2021、Khallaf 2023　4 篇 / <b>533</b> 人<br>
+      <b>B 組（未強制 ALND／可行性）</b>：Goyal 2021、Li 2025、Park 2018、Porpiglia 2023、Natsiopoulos 2019　5 篇 / <b>196</b> 人<br>
+      橫跨歐洲與亞洲　·　單一研究人數 20–254 人　·　<b>僅 1 篇提供目標術式與單純 SLNB 的直接對照架構</b></span>
+    </div></div></div>
+    <div style="font-size:12.5px;color:#6b7079;margin-top:16px;padding-top:11px;border-top:1px solid #f0eeea">
+      <b>加總驗算（本頁自行計算）：</b>166 ＋ 6 ＝ 172；172 − 54 ＝ <b>118</b>（與原文一致）；118 − 106 ＝ <b>12</b>（一致）；12 − 3 ＝ <b>9</b>（一致）。<b>流程數字完全自洽。</b><br>
+      人數方面，依原文 Table 1「Experimental (carbon/charcoal cohort)」欄逐列加總得 <b>729</b> 人；<b>但 Khallaf 2023 在 Table 1 記為 20 人、在 Table 2 記為 40 人（Group A TAD 20 ＋ Group B SLNB 20）</b>，若採 40 人則總數為 749 人。原文未報告總人數，故兩者皆無從對照。詳見「研究限制與警訊」第 3 點。
+    </div>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Methods 全段與 Results 第一段。<b>怎麼讀：</b>這是本頁兩篇文獻中流程數字最完整、且四步驟加減完全自洽的一份 PRISMA，值得肯定。<b>陷阱：</b>172 筆的初始檢索量對一個橫跨六個資料庫的主題而言<b>偏低</b>，且排除條件明訂「僅用 clip／seed／wire 而無碳者」與「碳資料無法單獨拆分的混合世代」一律排除——這使得本文<b>無法回答「碳刺青 vs 其他定位方式孰優」</b>，只能描述碳刺青自己的成績。
+  </div>
+</section>
+
+<section id="tbl1">
+  <h2>Table 1 <span class="zh">／ 9 篇納入研究之特徵（對應原文 Table 1、Table 2）</span></h2>
+  <div class="tbl-wrap"><table><thead><tr><th>研究（年）</th><th>國家</th><th class="num">碳刺青世代人數</th><th>參考標準策略</th><th>主要終點</th><th>TLN 辨識（原文列出者）</th><th>SLN 辨識</th><th>刺青→手術間隔</th></tr></thead><tbody>
+<tr><td><b>Boniface 2022</b></td><td>瑞典／德國</td><td class="num">149</td><td><span class="win">A 組·ALND 驗證</span></td><td style="font-size:12.5px">TLN 辨識率</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td></tr>
+<tr><td><b>Chen 2025</b></td><td>中國</td><td class="num">254</td><td><span class="win">A 組·ALND 驗證</span></td><td style="font-size:12.5px">TAD／SLNB／TLNB 偵測率、FNR／NPV</td><td class="num">246 / 254（96.8%）</td><td class="num">222 / 254（87.4%）</td><td class="num">167 天（155–181）</td></tr>
+<tr><td><b>Goyal 2021</b></td><td>英國</td><td class="num">22</td><td><span class="win caution">B 組·未強制 ALND</span></td><td style="font-size:12.5px">刺青淋巴結辨識率</td><td class="num">14 / 22（64%）</td><td class="num">原文未列數值</td><td class="num">199 天（77–280）</td></tr>
+<tr><td><b>Hartmann 2021</b></td><td>瑞典／德國</td><td class="num">110</td><td><span class="win">A 組·ALND 驗證</span></td><td style="font-size:12.5px">TLN 辨識率</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td></tr>
+<tr><td><b>Li 2025</b></td><td>中國</td><td class="num">30</td><td><span class="win caution">B 組·未強制 ALND</span></td><td style="font-size:12.5px">NST 後 TLN 辨識率</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td><td class="num">133 天（128–140）</td></tr>
+<tr><td><b>Park 2018</b></td><td>南韓</td><td class="num">20</td><td><span class="win caution">B 組·未強制 ALND</span></td><td style="font-size:12.5px">「改良式 SLNB」診斷效能</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td></tr>
+<tr><td><b>Porpiglia 2023</b></td><td>義大利</td><td class="num">49</td><td><span class="win caution">B 組·未強制 ALND</span></td><td style="font-size:12.5px">NACT 後 TLN 辨識率</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td></tr>
+<tr><td><b>Khallaf 2023</b></td><td>埃及</td><td class="num">20</td><td><span class="win">A 組·ALND 驗證</span></td><td style="font-size:12.5px">TAD 之偽陰性率</td><td class="num">19 / 20（95.0%）</td><td class="num">原文未列數值</td><td class="num">原文未列數值</td></tr>
+<tr><td><b>Natsiopoulos 2019</b></td><td>希臘</td><td class="num">75</td><td><span class="win caution">B 組·未強制 ALND</span></td><td style="font-size:12.5px">標記淋巴結辨識率</td><td class="num">71 / 75（94.6%）</td><td class="num">70 / 75（93.3%）</td><td class="num">141 天（90–231）</td></tr>
+<tr><td colspan="2"><b>合計（本頁自行加總）</b></td><td class="num"><b>729</b></td><td colspan="5" style="font-size:12.5px">A 組 4 篇 ＝ 149＋254＋110＋20 ＝ <b>533</b> 人；B 組 5 篇 ＝ 22＋30＋20＋49＋75 ＝ <b>196</b> 人；533 ＋ 196 ＝ <b>729</b> 人。<b>原文從未報告總人數。</b></td></tr>
+</tbody></table></div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 1（研究特徵）與 Table 2（病人人口學與臨床特徵）。<b>怎麼讀：</b>「參考標準策略」是本文最關鍵的分層變項——A 組所有病人都做了完成性 ALND，因此偽陰性率算得出來；B 組沒有強制 ALND，只能報告「找不找得到」而<b>無法驗證「找到的對不對」</b>。<b>陷阱：</b>（1）本表右三欄大量出現「原文未列數值」，代表 9 篇中只有 4 篇讓讀者能驗算 TLN 辨識率；（2）Chen 2025 一篇就佔全部人數的 <b>34.8%</b>（254/729，本頁自行計算），是整個合併值的支配性來源；（3）Chen 2025 的 SLN 定位只用<b>單一藍染</b>（single blue dye），這是已知會壓低 SLN 辨識率的作法，而它正好是 SLN 辨識率異質性的最大來源（見 Fig. 4）。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Fig. 2 <span class="zh">／ 主要與次要結果：合併比例森林圖</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 246" width="100%" height="246" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 2　主要與次要結果之單臂合併比例森林圖（隨機效應 GLMM）">
+<rect x="0" y="0" width="920" height="246" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 2　主要與次要結果之單臂合併比例森林圖（隨機效應 GLMM）</text>
+<line x1="300.0" y1="50" x2="300.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="300.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">0%</text>
+<line x1="386.0" y1="50" x2="386.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="386.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">20%</text>
+<line x1="472.0" y1="50" x2="472.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="472.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">40%</text>
+<line x1="558.0" y1="50" x2="558.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="558.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">60%</text>
+<line x1="644.0" y1="50" x2="644.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="644.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">80%</text>
+<line x1="730.0" y1="50" x2="730.0" y2="194" stroke="#f0eeea" stroke-width="1"/>
+<text x="730.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">100%</text>
+<line x1="300" y1="194" x2="730" y2="194" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="73.0" font-size="12" font-weight="600" fill="#23241f">刺青／目標淋巴結辨識率 TLN identification</text>
+<text x="0" y="86.0" font-size="10.5" fill="#6b7079">9 篇研究（主要結果）</text>
+<line x1="678.4" y1="75.0" x2="717.5" y2="75.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="678.4" y1="70.0" x2="678.4" y2="80.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="717.5" y1="70.0" x2="717.5" y2="80.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="699.2" y="70.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="742" y="73.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.940 (0.880–0.971)</text>
+<text x="742" y="86.0" font-size="10.5" fill="#6b7079">I² = 75%（實質異質）</text>
+<text x="0" y="107.0" font-size="12" font-weight="600" fill="#23241f">前哨淋巴結辨識率 SLN identification</text>
+<text x="0" y="120.0" font-size="10.5" fill="#6b7079">有做 SLNB 之研究</text>
+<line x1="532.6" y1="109.0" x2="681.8" y2="109.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="532.6" y1="104.0" x2="532.6" y2="114.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="681.8" y1="104.0" x2="681.8" y2="114.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="619.2" y="104.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="107.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.754 (0.541–0.888)</text>
+<text x="742" y="120.0" font-size="10.5" fill="#6b7079">I² = 91%（極高異質）</text>
+<text x="0" y="141.0" font-size="12" font-weight="600" fill="#23241f">TLN 與 SLN 一致率 TLN–SLN concordance</text>
+<text x="0" y="154.0" font-size="10.5" fill="#6b7079">刺青節點是否就是前哨節點</text>
+<line x1="443.2" y1="143.0" x2="624.6" y2="143.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="443.2" y1="138.0" x2="443.2" y2="148.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="624.6" y1="138.0" x2="624.6" y2="148.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="533.2" y="138.0" width="10" height="10" fill="#8a6a1f"/>
+<text x="742" y="141.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.554 (0.333–0.755)</text>
+<text x="742" y="154.0" font-size="10.5" fill="#6b7079">I² = 82%（極高異質）</text>
+<text x="0" y="175.0" font-size="12" font-weight="600" fill="#23241f">偽陰性率 FNR（對照病理參考標準）</text>
+<text x="0" y="188.0" font-size="10.5" fill="#6b7079">僅限有殘存腋下病灶可驗證之世代</text>
+<line x1="318.1" y1="177.0" x2="346.4" y2="177.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="318.1" y1="172.0" x2="318.1" y2="182.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="346.4" y1="172.0" x2="346.4" y2="182.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="324.2" y="172.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="175.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.068 (0.042–0.108)</text>
+<text x="742" y="188.0" font-size="10.5" fill="#6b7079">I² = 0%（完全一致）</text>
+<text x="0" y="232" font-size="10.5" fill="#6b7079">※ 單臂合併比例，沒有無效線；FNR 的分母是「經病理驗證確有殘存腋下病灶者」，不是全體病人。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Results「Primary outcome」與「Secondary outcomes」段落（對應原文 Figure 2–5）。<b>怎麼讀：</b>四條線各自獨立，代表四件不同的事：（1）<b>找得到嗎</b>（TLN 94.0%）；（2）<b>前哨找得到嗎</b>（SLN 75.4%）；（3）<b>找到的是不是同一顆</b>（一致率 55.4%）；（4）<b>找到之後會不會漏掉殘存病灶</b>（FNR 6.8%）。第 3 條線是本文最有臨床份量的發現——<b>只有約一半的刺青節點就是前哨節點</b>，這代表 TLN 提供的是<b>與 SLNB 不重複</b>的分期資訊，兩者必須併行而非二擇一。<b>陷阱：</b>FNR 的 I² ＝ 0% 看起來漂亮，但那是因為<b>只有 4 篇 A 組研究、事件數又少</b>——I² 在研究數少、事件稀疏時本來就傾向被估為 0，「沒有異質性」在這裡幾乎沒有資訊量。更重要的是：原文明白承認，各研究<b>並未一致區分「殘存病灶是靠碳刺青導引才被找到」還是「同時併用的藍染／放射性同位素前哨定位也找得到」</b>——因此本文<b>無法證明碳刺青本身有獨立的增益價值</b>。
+  </div></div>
+
+  <h3>全部結果總覽表</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>結果</th><th>合併值（95% CI）</th><th class="num">I²</th><th>GRADE 確信度</th><th>本頁判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>TLN 辨識率</b>（主要結果）</td><td class="num">0.940（0.880–0.971）</td><td class="num">75%</td><td><span class="grade">極低</span></td><td><span class="win">高可行性，點估計穩健</span></td></tr>
+      <tr><td><b>SLN 辨識率</b></td><td class="num">0.754（0.541–0.888）</td><td class="num">91%</td><td><span class="grade">極低</span></td><td><span class="win caution">區間過寬（54–89%），實用價值低</span></td></tr>
+      <tr><td><b>TLN–SLN 一致率</b></td><td class="num">0.554（0.333–0.755）</td><td class="num">82%</td><td><span class="grade">極低</span></td><td><span class="win caution">兩者不可互相取代</span></td></tr>
+      <tr><td><b>偽陰性率 FNR</b></td><td class="num">0.068（0.042–0.108）</td><td class="num">0%</td><td><span class="grade">極低</span></td><td><span class="win">符合 &lt; 10% 的臨床可接受門檻</span></td></tr>
+      <tr><td><b>擷取淋巴結顆數</b></td><td class="num">3.250 顆（2.536–3.964）</td><td class="num">95%</td><td><span class="grade">極低</span></td><td><span class="win caution">定義不一（僅目標節點 vs 目標＋其他）</span></td></tr>
+      <tr><td><b>刺青至手術間隔</b></td><td class="num">153.0 天（131.9–174.2）</td><td class="num">100%</td><td><span class="grade">極低</span></td><td><span class="win caution">I² 100%，僅描述分布而非典型值</span></td></tr>
+      <tr><td><b>與其他定位方式（clip／seed／wire）之比較</b></td><td colspan="2" class="num"><b>原文未評估</b>（設計上已被排除條件排除）</td><td>—</td><td><span class="win caution">本頁不做推估</span></td></tr>
+      <tr><td><b>長期腫瘤學結果（腋下復發、無病存活）</b></td><td colspan="2" class="num"><b>原文未評估</b></td><td>—</td><td><span class="win caution">降階安全性尚未被驗證</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">
+    <b>怎麼讀：</b>GRADE 欄位全部是「極低」——原文自己在 Discussion 寫得非常清楚：「the GRADE assessment, predominantly of very low certainty, should be framed as <b>a caution against overconfident de-escalation in low-standardization environments</b>」。<b>陷阱：</b>最後兩列是本表最重要的兩列。本文<b>既沒有比較碳刺青與其他定位技術，也沒有任何腋下復發或存活資料</b>——「可行」（feasibility）與「腫瘤學上安全」（oncologic safety）是兩件事，本文只證明了前者。
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Fig. 3 <span class="zh">／ 各研究原始數據：可驗算的 TLN 辨識率</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 374" width="100%" height="374" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 3　各研究個別的 TLN 辨識率（分子／分母皆由原文 Table 2 取得者）（單位：%）">
+<rect x="0" y="0" width="920" height="374" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 3　各研究個別的 TLN 辨識率（分子／分母皆由原文 Table 2 取得者）（單位：%）</text>
+<line x1="250.0" y1="50" x2="250.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="360.0" y1="50" x2="360.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="360.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">20</text>
+<line x1="470.0" y1="50" x2="470.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="470.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">40</text>
+<line x1="580.0" y1="50" x2="580.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="580.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">60</text>
+<line x1="690.0" y1="50" x2="690.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="690.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">80</text>
+<line x1="800.0" y1="50" x2="800.0" y2="318" stroke="#f0eeea" stroke-width="1"/>
+<text x="800.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">100</text>
+<text x="0" y="73.0" font-size="11" fill="#4a4c46">Chen 2025（246/254）</text>
+<rect x="250" y="62.0" width="532.7" height="17" fill="#8a4a3d" opacity="0.85"/>
+<text x="788.7" y="73.0" font-size="10.5" fill="#6b7079">96.9%</text>
+<text x="0" y="99.0" font-size="11" fill="#4a4c46">Khallaf 2023（19/20）</text>
+<rect x="250" y="88.0" width="522.5" height="17" fill="#8a4a3d" opacity="0.85"/>
+<text x="778.5" y="99.0" font-size="10.5" fill="#6b7079">95.0%</text>
+<text x="0" y="125.0" font-size="11" fill="#4a4c46">Natsiopoulos 2019（71/75）</text>
+<rect x="250" y="114.0" width="520.7" height="17" fill="#8a4a3d" opacity="0.85"/>
+<text x="776.7" y="125.0" font-size="10.5" fill="#6b7079">94.7%</text>
+<text x="0" y="151.0" font-size="11" fill="#4a4c46">Goyal 2021（14/22）</text>
+<rect x="250" y="140.0" width="350.0" height="17" fill="#8a6a1f" opacity="0.85"/>
+<text x="606.0" y="151.0" font-size="10.5" fill="#6b7079">63.6%</text>
+<text x="0" y="177.0" font-size="11" fill="#4a4c46">Boniface 2022　原文未列數值</text>
+<rect x="250" y="166.0" width="1.0" height="17" fill="#e4e0d9" opacity="0.85"/>
+<text x="256.0" y="177.0" font-size="10.5" fill="#6b7079">原文未列數值</text>
+<text x="0" y="203.0" font-size="11" fill="#4a4c46">Hartmann 2021　原文未列數值</text>
+<rect x="250" y="192.0" width="1.0" height="17" fill="#e4e0d9" opacity="0.85"/>
+<text x="256.0" y="203.0" font-size="10.5" fill="#6b7079">原文未列數值</text>
+<text x="0" y="229.0" font-size="11" fill="#4a4c46">Li 2025　原文未列數值</text>
+<rect x="250" y="218.0" width="1.0" height="17" fill="#e4e0d9" opacity="0.85"/>
+<text x="256.0" y="229.0" font-size="10.5" fill="#6b7079">原文未列數值</text>
+<text x="0" y="255.0" font-size="11" fill="#4a4c46">Park 2018　原文未列數值</text>
+<rect x="250" y="244.0" width="1.0" height="17" fill="#e4e0d9" opacity="0.85"/>
+<text x="256.0" y="255.0" font-size="10.5" fill="#6b7079">原文未列數值</text>
+<text x="0" y="281.0" font-size="11" fill="#4a4c46">Porpiglia 2023　原文未列數值</text>
+<rect x="250" y="270.0" width="1.0" height="17" fill="#e4e0d9" opacity="0.85"/>
+<text x="256.0" y="281.0" font-size="10.5" fill="#6b7079">原文未列數值</text>
+<text x="0" y="307.0" font-size="11" fill="#4a4c46">合併值 pooled（9 篇）</text>
+<rect x="250" y="296.0" width="517.0" height="17" fill="#2f6b62" opacity="0.85"/>
+<text x="773.0" y="307.0" font-size="10.5" fill="#6b7079">94.0%（95% CI 88.0–97.1）</text>
+<line x1="250" y1="318" x2="800" y2="318" stroke="#e4e0d9" stroke-width="1"/>
+<rect x="250" y="331" width="11" height="11" fill="#8a4a3d" opacity="0.85"/>
+<text x="266" y="340" font-size="11" fill="#4a4c46">原文有列出分子／分母（本頁自行計算百分比）</text>
+<rect x="511.62" y="331" width="11" height="11" fill="#8a6a1f" opacity="0.85"/>
+<text x="527.62" y="340" font-size="11" fill="#4a4c46">離群值 Goyal 2021</text>
+<rect x="639.04" y="331" width="11" height="11" fill="#2f6b62" opacity="0.85"/>
+<text x="655.04" y="340" font-size="11" fill="#4a4c46">合併值</text>
+<text x="0" y="364" font-size="10.5" fill="#6b7079">9 篇中僅 4 篇在原文 Table 2 列出可驗算的分子／分母；其餘 5 篇原文未列數值，本頁不做推估。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 2「Tattooed/TLN identified」與「SLN identified」欄。<b>怎麼讀：</b>本頁自行以分子／分母計算得：Chen 246/254 ＝ <b>96.9%</b>、Khallaf 19/20 ＝ <b>95.0%</b>、Natsiopoulos 71/75 ＝ <b>94.7%</b>、Goyal 14/22 ＝ <b>63.6%</b>。前三篇都在 95% 上下，唯獨 Goyal 2021 掉到 63.6%，正是留一法分析中把整體 I² 從 75% 拉到 42% 的那一篇（見 Fig. 4）。<b>陷阱：</b>（1）原文 Table 2 把這幾個數字寫成 96.8%、95.0%、94.6%、64%，與本頁逐格重算的 96.9%、95.0%、94.7%、63.6% 有<b>小數點層級的差異</b>——這類差異雖不影響結論，但顯示原文表格的四捨五入並不一致；（2）9 篇中有 5 篇<b>原文未列出分子／分母</b>，本頁一律標示「原文未列數值」，<b>不做任何推估</b>；（3）Goyal 的低辨識率並非技術失敗那麼簡單——該研究刺青至手術的間隔中位數高達 <b>199 天（77–280）</b>，是所有研究中最長的，碳粒隨時間被巨噬細胞清除或擴散，是合理的機轉解釋。
+  </div></div>
+
+  <h3>各研究可取得之其他原始數據與本頁算術驗算</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th style="width:22%">研究</th><th style="width:44%">原文 Table 2 列出之數據</th><th style="width:34%">本頁自行驗算</th></tr></thead>
+    <tbody>
+      <tr><td><b>Chen 2025</b><br><span style="color:#6b7079;font-size:12.5px">254 人</span></td><td>ypN0 107（42.1%）／ypN1 76（29.9%）／ypN2 48（18.9%）／ypN3 23（9.1%）；乳房 pCR 68（26.8%）</td><td class="num">107＋76＋48＋23 ＝ <b>254</b> ✓<br>42.1＋29.9＋18.9＋9.1 ＝ <b>100.0%</b> ✓</td></tr>
+      <tr><td><b>Hartmann 2021</b><br><span style="color:#6b7079;font-size:12.5px">110 人</span></td><td>ypN0 52（47.3%）／ypN1 43（39.1%）／ypN2 11（10.0%）／ypN3 4（3.6%）；pCR 29（26.4%）</td><td class="num">52＋43＋11＋4 ＝ <b>110</b> ✓<br>百分比加總 <b>100.0%</b> ✓</td></tr>
+      <tr><td><b>Li 2025</b><br><span style="color:#6b7079;font-size:12.5px">30 人</span></td><td>ypN0 21（70.0%）／ypN1 7（23.3%）／ypN2 2（6.7%）；pCR 原文未列數值</td><td class="num">21＋7＋2 ＝ <b>30</b> ✓<br>百分比加總 <b>100.0%</b> ✓</td></tr>
+      <tr><td><b>Park 2018</b><br><span style="color:#6b7079;font-size:12.5px">20 人</span></td><td>ypN0 10（50.0%）／ypN1–2 10（50.0%）；pCR 原文未列數值</td><td class="num">10＋10 ＝ <b>20</b> ✓</td></tr>
+      <tr><td><b>Natsiopoulos 2019</b><br><span style="color:#6b7079;font-size:12.5px">75 人</span></td><td>腋下 pCR 49（65.3%）；整體 pCR（乳房＋腋下）34（45.3%）；受體型別 ER+/HER2+ 12、ER−/HER2+ 15、ER−/HER2− 14</td><td class="num">49/75 ＝ <b>65.3%</b> ✓；34/75 ＝ <b>45.3%</b> ✓<br>HER2+ 或三陰性 ＝ 12＋15＋14 ＝ 41/75 ＝ <b>54.7%</b></td></tr>
+      <tr><td><b>Khallaf 2023</b><br><span style="color:#6b7079;font-size:12.5px">Table 1 記 20 人<br>Table 2 記 40 人</span></td><td>腋下 pCR 15（37.5%）；TAD 組墨水辨識 19/20（95.0%）</td><td class="num">15 ÷ 0.375 ＝ 分母 <b>40</b><br><span class="win caution">與 Table 1 的 20 人矛盾</span></td></tr>
+      <tr><td><b>Boniface 2022 · Porpiglia 2023 · Goyal 2021</b></td><td class="na">此三篇之 ypN 分期與 pCR 於原文未列數值</td><td class="na">不做推估</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">
+    <b>怎麼讀：</b>右欄是本頁對原文表格的算術交叉驗算，五篇的分項加總與百分比加總<b>全部通過</b>，顯示 Table 2 的資料品質良好。<b>陷阱：</b>唯一沒通過的是 Khallaf 2023——由 15/37.5% 反推分母恰為 40，證實 Table 2 用的是全體 40 人（TAD 組 20 ＋ SLNB 組 20），而 Table 1 的「碳刺青世代 20 人」才是真正進入單臂合併的分母。這兩個數字在原文中並存且無說明。
+  </div>
+</section>
+
+<section id="sens">
+  <h2>Fig. 4 &amp; 6 <span class="zh">／ 敏感度分析與預設次群組分析</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 310" width="100%" height="310" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 4　留一法敏感度分析：移除單篇研究後異質性的變化">
+<rect x="0" y="0" width="920" height="310" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 4　留一法敏感度分析：移除單篇研究後異質性的變化</text>
+<line x1="54" y1="246.0" x2="900" y2="246.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="250.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text>
+<line x1="54" y1="207.2" x2="900" y2="207.2" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="211.2" font-size="10.5" fill="#6b7079" text-anchor="end">23</text>
+<line x1="54" y1="168.4" x2="900" y2="168.4" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="172.4" font-size="10.5" fill="#6b7079" text-anchor="end">46</text>
+<line x1="54" y1="129.6" x2="900" y2="129.6" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="133.6" font-size="10.5" fill="#6b7079" text-anchor="end">69</text>
+<line x1="54" y1="90.8" x2="900" y2="90.8" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="94.8" font-size="10.5" fill="#6b7079" text-anchor="end">92</text>
+<line x1="54" y1="52.0" x2="900" y2="52.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="56.0" font-size="10.5" fill="#6b7079" text-anchor="end">115</text>
+<text x="0" y="44" font-size="10.5" fill="#6b7079">I² (%)</text>
+<rect x="80.8" y="119.5" width="39.7" height="126.5" fill="#8a4a3d" opacity="0.88"/>
+<text x="100.6" y="114.5" font-size="10.5" fill="#4a4c46" text-anchor="middle">75</text>
+<rect x="124.5" y="175.1" width="39.7" height="70.9" fill="#2f6b62" opacity="0.88"/>
+<text x="144.4" y="170.1" font-size="10.5" fill="#4a4c46" text-anchor="middle">42</text>
+<text x="124.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">TLN</text>
+<text x="124.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">辨識率</text>
+<rect x="221.8" y="92.5" width="39.7" height="153.5" fill="#8a4a3d" opacity="0.88"/>
+<text x="241.6" y="87.5" font-size="10.5" fill="#4a4c46" text-anchor="middle">91</text>
+<rect x="265.5" y="97.5" width="39.7" height="148.5" fill="#2f6b62" opacity="0.88"/>
+<text x="285.4" y="92.5" font-size="10.5" fill="#4a4c46" text-anchor="middle">88</text>
+<text x="265.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">SLN</text>
+<text x="265.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">辨識率</text>
+<rect x="362.8" y="107.7" width="39.7" height="138.3" fill="#8a4a3d" opacity="0.88"/>
+<text x="382.6" y="102.7" font-size="10.5" fill="#4a4c46" text-anchor="middle">82</text>
+<rect x="406.5" y="134.7" width="39.7" height="111.3" fill="#2f6b62" opacity="0.88"/>
+<text x="426.4" y="129.7" font-size="10.5" fill="#4a4c46" text-anchor="middle">66</text>
+<text x="406.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">TLN–SLN</text>
+<text x="406.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">一致率</text>
+<rect x="503.8" y="246.0" width="39.7" height="0.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="523.6" y="241.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">0</text>
+<rect x="547.5" y="246.0" width="39.7" height="0.0" fill="#2f6b62" opacity="0.88"/>
+<text x="567.4" y="241.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">0</text>
+<text x="547.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">偽陰性率</text>
+<text x="547.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">FNR</text>
+<rect x="644.8" y="85.7" width="39.7" height="160.3" fill="#8a4a3d" opacity="0.88"/>
+<text x="664.6" y="80.7" font-size="10.5" fill="#4a4c46" text-anchor="middle">95</text>
+<rect x="688.5" y="87.4" width="39.7" height="158.6" fill="#2f6b62" opacity="0.88"/>
+<text x="708.4" y="82.4" font-size="10.5" fill="#4a4c46" text-anchor="middle">94</text>
+<text x="688.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">擷取淋巴</text>
+<text x="688.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">結顆數</text>
+<rect x="785.8" y="77.3" width="39.7" height="168.7" fill="#8a4a3d" opacity="0.88"/>
+<text x="805.6" y="72.3" font-size="10.5" fill="#4a4c46" text-anchor="middle">100</text>
+<rect x="829.5" y="92.5" width="39.7" height="153.5" fill="#2f6b62" opacity="0.88"/>
+<text x="849.4" y="87.5" font-size="10.5" fill="#4a4c46" text-anchor="middle">91</text>
+<text x="829.5" y="262.0" font-size="11" fill="#4a4c46" text-anchor="middle">刺青至手術</text>
+<text x="829.5" y="275.0" font-size="11" fill="#4a4c46" text-anchor="middle">間隔</text>
+<line x1="54" y1="246" x2="900" y2="246" stroke="#e4e0d9" stroke-width="1"/>
+<rect x="54" y="287" width="11" height="11" fill="#8a4a3d" opacity="0.88"/>
+<text x="70" y="296" font-size="11" fill="#4a4c46">移除前 I² (%)</text>
+<rect x="156.77999999999997" y="287" width="11" height="11" fill="#2f6b62" opacity="0.88"/>
+<text x="172.77999999999997" y="296" font-size="11" fill="#4a4c46">移除最具影響力研究後 I² (%)</text>
+<text x="900" y="296" font-size="10.5" fill="#6b7079" text-anchor="end">資料來源：原文 Table 3</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 3（留一法敏感度分析）。<b>怎麼讀：</b>每組左柱是移除前的 I²、右柱是移除「最具影響力那一篇」之後的 I²。只有 TLN 辨識率（移除 Goyal 2021：75%→42%）與 TLN–SLN 一致率（同樣移除 Goyal：82%→66%）出現有意義的下降；SLN 辨識率（移除 Chen 2025：91%→88%）與兩個連續變項幾乎紋風不動。<b>陷阱：</b>原文摘要寫「Sensitivity analyses showed that <b>no single study unduly influenced pooled estimates</b>」——這句話對「點估計」而言成立（TLN 0.940→0.950，位移極小），但對「異質性」而言並不成立：<b>單獨一篇 Goyal 2021 就解釋了 TLN 辨識率一半以上的異質性</b>。摘要的用詞容易讓讀者誤以為結果毫無敏感性。此外，SLN 辨識率移除最具影響力的一篇後 I² 仍達 88%，代表<b>那個 0.754 的合併值在臨床上基本不可用</b>。
+  </div></div>
+
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 212" width="100%" height="212" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 6　TLN 辨識率之預設次群組分析（依參考標準策略分層）">
+<rect x="0" y="0" width="920" height="212" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 6　TLN 辨識率之預設次群組分析（依參考標準策略分層）</text>
+<line x1="300.0" y1="50" x2="300.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="300.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">0%</text>
+<line x1="386.0" y1="50" x2="386.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="386.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">20%</text>
+<line x1="472.0" y1="50" x2="472.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="472.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">40%</text>
+<line x1="558.0" y1="50" x2="558.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="558.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">60%</text>
+<line x1="644.0" y1="50" x2="644.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="644.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">80%</text>
+<line x1="730.0" y1="50" x2="730.0" y2="160" stroke="#f0eeea" stroke-width="1"/>
+<text x="730.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">100%</text>
+<line x1="300" y1="160" x2="730" y2="160" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="73.0" font-size="12" font-weight="600" fill="#23241f">A 組：完成 ALND 驗證世代</text>
+<text x="0" y="86.0" font-size="10.5" fill="#6b7079">Boniface、Chen、Hartmann、Khallaf（4 篇）</text>
+<line x1="703.8" y1="75.0" x2="719.7" y2="75.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="703.8" y1="70.0" x2="703.8" y2="80.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="719.7" y1="70.0" x2="719.7" y2="80.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="708.7" y="70.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="73.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.962 (0.939–0.976)</text>
+<text x="742" y="86.0" font-size="10.5" fill="#6b7079">I² = 0%</text>
+<text x="0" y="107.0" font-size="12" font-weight="600" fill="#23241f">B 組：未強制 ALND／可行性世代</text>
+<text x="0" y="120.0" font-size="10.5" fill="#6b7079">Goyal、Li、Park、Porpiglia、Natsiopoulos（5 篇）</text>
+<line x1="635.8" y1="109.0" x2="716.2" y2="109.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="635.8" y1="104.0" x2="635.8" y2="114.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="716.2" y1="104.0" x2="716.2" y2="114.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="687.2" y="104.0" width="10" height="10" fill="#8a6a1f"/>
+<text x="742" y="107.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.912 (0.781–0.968)</text>
+<text x="742" y="120.0" font-size="10.5" fill="#6b7079">I² = 77%</text>
+<text x="0" y="141.0" font-size="12" font-weight="600" fill="#23241f">全體合併</text>
+<text x="0" y="154.0" font-size="10.5" fill="#6b7079">9 篇</text>
+<line x1="678.4" y1="143.0" x2="717.5" y2="143.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="678.4" y1="138.0" x2="678.4" y2="148.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="717.5" y1="138.0" x2="717.5" y2="148.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="699.2" y="138.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="742" y="141.0" font-size="11.5" fill="#4a4c46" font-weight="600">0.940 (0.880–0.971)</text>
+<text x="742" y="154.0" font-size="10.5" fill="#6b7079">I² = 75%</text>
+<text x="0" y="198" font-size="10.5" fill="#6b7079">次群組差異檢定 χ² = 2.16，p = 0.1418 → 未達統計顯著；數值上的差距不足以支持穩健的次群組效應。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Results「Subgroup analysis」段落與補充 Figure 9。<b>怎麼讀：</b>在有完成 ALND 驗證的 A 組，TLN 辨識率不但較高（96.2% vs 91.2%），而且<b>完全一致（I² ＝ 0%）</b>；未強制 ALND 的 B 組則異質性高達 77%。原文的解讀是：標準化的驗證流程會連帶「逼出」更嚴謹的術中目標設定與更一致的評估方式。<b>陷阱：</b>次群組差異檢定 <b>χ² ＝ 2.16、p ＝ 0.1418，未達顯著</b>——原文自己也寫「the available evidence does not confirm a robust between-subgroup effect」。這是一個容易被過度解讀的圖：<b>數值上的差距（差 5 個百分點）不能被當成「做 ALND 驗證會提高辨識率」的因果證據</b>。更根本的是，A 組只有 4 篇、B 組只有 5 篇，次群組檢定的檢定力極低，「沒測到差異」不等於「沒有差異」。
+  </div></div>
+</section>
+
+<section id="cont">
+  <h2>Fig. 5 <span class="zh">／ 連續型結果：擷取顆數與刺青至手術間隔（各自獨立刻度）</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 312" width="100%" height="312" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="continuous outcomes">
+<rect x="0" y="0" width="920" height="312" fill="#faf9f6"/>
+<text x="0" y="16" font-size="12.5" font-weight="700" fill="#23241f">擷取淋巴結顆數 Number of nodes retrieved　（單位：顆 nodes）</text>
+<line x1="250.0" y1="36" x2="250.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="342.0" y1="36" x2="342.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="342.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">1.2</text>
+<line x1="434.0" y1="36" x2="434.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="434.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">2.4</text>
+<line x1="526.0" y1="36" x2="526.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="526.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">3.6</text>
+<line x1="618.0" y1="36" x2="618.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="618.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">4.8</text>
+<line x1="710.0" y1="36" x2="710.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="710.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">6</text>
+<line x1="250" y1="106.0" x2="710" y2="106.0" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="62.0" font-size="12" font-weight="600" fill="#23241f">合併平均（9 篇）</text>
+<line x1="444.4" y1="58.0" x2="553.9" y2="58.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="444.4" y1="53.0" x2="444.4" y2="63.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="553.9" y1="53.0" x2="553.9" y2="63.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="494.2" y="53.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="718" y="57.0" font-size="11.5" font-weight="600" fill="#4a4c46">3.250 顆 (2.536–3.964)</text>
+<text x="718" y="69.0" font-size="10.5" fill="#6b7079">I² = 95%（極端異質）</text>
+<text x="0" y="94.0" font-size="12" font-weight="600" fill="#23241f">移除 Natsiopoulos 2019 後</text>
+<line x1="417.1" y1="90.0" x2="542.6" y2="90.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="417.1" y1="85.0" x2="417.1" y2="95.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="542.6" y1="85.0" x2="542.6" y2="95.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="474.8" y="85.0" width="10" height="10" fill="#2f6b62"/>
+<text x="718" y="89.0" font-size="11.5" font-weight="600" fill="#4a4c46">2.998 顆 (2.179–3.817)</text>
+<text x="718" y="101.0" font-size="10.5" fill="#6b7079">I² = 94%</text>
+<text x="0" y="136" font-size="12.5" font-weight="700" fill="#23241f">刺青至手術之間隔 Tattoo-to-surgery interval　（單位：天 days）</text>
+<line x1="250.0" y1="156" x2="250.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">100</text>
+<line x1="342.0" y1="156" x2="342.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="342.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">120</text>
+<line x1="434.0" y1="156" x2="434.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="434.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">140</text>
+<line x1="526.0" y1="156" x2="526.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="526.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">160</text>
+<line x1="618.0" y1="156" x2="618.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="618.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">180</text>
+<line x1="710.0" y1="156" x2="710.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="710.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">200</text>
+<line x1="250" y1="226.0" x2="710" y2="226.0" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="182.0" font-size="12" font-weight="600" fill="#23241f">合併平均</text>
+<line x1="396.7" y1="178.0" x2="591.1" y2="178.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="396.7" y1="173.0" x2="396.7" y2="183.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="591.1" y1="173.0" x2="591.1" y2="183.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="488.9" y="173.0" width="10" height="10" fill="#8a6a1f"/>
+<text x="718" y="177.0" font-size="11.5" font-weight="600" fill="#4a4c46">153.0 天 (131.9–174.2)</text>
+<text x="718" y="189.0" font-size="10.5" fill="#6b7079">I² = 100%（異質性上限）</text>
+<text x="0" y="214.0" font-size="12" font-weight="600" fill="#23241f">移除 Chen 2025 後</text>
+<line x1="407.9" y1="210.0" x2="511.1" y2="210.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="407.9" y1="205.0" x2="407.9" y2="215.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="511.1" y1="205.0" x2="511.1" y2="215.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="454.5" y="205.0" width="10" height="10" fill="#2f6b62"/>
+<text x="718" y="209.0" font-size="11.5" font-weight="600" fill="#4a4c46">145.5 天 (134.3–156.8)</text>
+<text x="718" y="221.0" font-size="10.5" fill="#6b7079">I² = 91%</text>
+<text x="0" y="307" font-size="10.5" fill="#6b7079">兩面板單位不同（顆 vs 天），刻度各自獨立，請勿跨面板比較線段長度；下面板 x 軸自 100 天起始。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Results「Number of nodes retrieved」「Tattoo-to-surgery interval」與 Table 3。<b>怎麼讀：</b>兩面板單位不同（顆 vs 天），刻度各自獨立；下面板 x 軸自 100 天起始以放大差異，請勿把兩面板的線段長度互比。目標術式平均取出約 <b>3.25 顆</b>淋巴結，與 SLNB 的典型顆數相近，<b>遠低於 ALND 的 10 顆以上</b>——這正是降階的臨床意義所在（淋巴水腫、感覺異常、肩關節活動受限的風險與取出顆數高度相關）。<b>陷阱：</b>擷取顆數的 I² ＝ 95%，原文自承主因是<b>「顆數」的定義各研究不同</b>（只算目標節點？還是目標＋前哨＋其他一併算？）；刺青至手術間隔的 I² ＝ <b>100%</b>，是異質性的絕對上限，原文也直接寫明這個 153 天「mainly summarizes the [distribution] rather than representing a stable typical interval」。換句話說，<b>這兩個數字都不該被拿來當成臨床基準值使用</b>，只能當成「大約三顆、大約五個月」的量級印象。
+  </div></div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼</span></h2>
+
+  <h3>一、誰適合</h3>
+  <ul class="clean">
+    <li><b>初始經切片（細針或粗針）證實腋下淋巴結轉移（cN+）、且將接受前導性全身治療的乳癌病人。</b>本文所有研究的納入條件都要求「基線有病理證實的腋下轉移」，未經證實者不適用。</li>
+    <li><b>院內尚未建置放射性粒子（seed）或磁性標記系統、或不希望使用含輻射定位方式的中心。</b>碳刺青免輻射、低成本、可在診斷性穿刺當下同時完成，不需要額外一次術前定位。</li>
+    <li><b>資源受限的醫療環境</b>——原文特別指出碳刺青在此類環境的經濟優勢明顯，<b>但同時警告</b>：確保可重現的取出率與可接受偽陰性率所需的流程基礎建設，恰恰也是這些環境最難落實的部分。</li>
+  </ul>
+
+  <h3>二、換來什麼</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>面向</th><th>本文提供的數字</th><th>臨床意義</th></tr></thead>
+    <tbody>
+      <tr><td>術中找得到標記節點的機會</td><td class="num">94.0%（88.0–97.1）；在有 ALND 驗證的中心可達 96.2%</td><td>約每 17 人有 1 人找不到，需事先與病人說明可能改為完整廓清</td></tr>
+      <tr><td>漏掉殘存腋下病灶的機會</td><td class="num">6.8%（4.2–10.8）</td><td>低於一般公認 &lt; 10% 的可接受門檻，但<b>分母是「確有殘存病灶者」</b>，不是全體病人</td></tr>
+      <tr><td>取出的淋巴結顆數</td><td class="num">約 3.25 顆</td><td>與 SLNB 相當，遠少於 ALND，理論上可大幅降低淋巴水腫與肩部併發症</td></tr>
+      <tr><td>刺青節點就是前哨節點的機會</td><td class="num">僅 55.4%</td><td><b>最重要的一點</b>：兩者不可互相取代，標準作法應是 <b>TAD ＝ 目標節點 ＋ 前哨節點一併取出</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>三、代價是什麼</h3>
+  <ul class="clean">
+    <li><b>證據等級極低。</b>GRADE 對<b>每一個</b>結果都評為「極低確信度」；9 篇皆為非隨機研究，ROBINS-I 整體偏差風險為中度，主要來自殘餘干擾（D1）與選擇性報告（D7）。</li>
+    <li><b>本文無法證明碳刺青本身有獨立貢獻。</b>多數研究同時使用藍染或放射性同位素做前哨定位，卻<b>未區分</b>目標節點是靠碳刺青還是靠前哨定位取到的。原文明白寫道：本文「do not definitively establish the independent incremental contribution of tattooing over conventional SLN mapping alone」。</li>
+    <li><b>失敗多半發生在「影像—手術」介面，而不是標記材料本身。</b>原文引用放射科觀點指出，成功關鍵在於：正確的標記沉積位置、影像確認、節點位置的清楚溝通、以及流程整合——這些都是<b>組織能力</b>而非器材問題。</li>
+    <li><b>間隔過長會侵蝕辨識率。</b>Goyal 2021 的間隔中位數 199 天、辨識率僅 63.6%，是全部研究中最差的一組配對。合併間隔約 153 天，各中心應把「刺青至手術的時間」納入品質指標。</li>
+    <li><b>沒有任何長期腫瘤學結果。</b>本文完全沒有腋下復發率、無病存活或整體存活資料。<b>「找得到」不等於「可以安全地少開刀」。</b></li>
+  </ul>
+
+  <h3>四、知情同意怎麼談（建議措辭）</h3>
+  <div class="call teal">
+    <div class="h">刺青前（診斷性穿刺當下）可以這樣說</div>
+    「您腋下這顆淋巴結，我們已經用針取樣、確認有癌細胞。接下來要先做全身性的藥物治療，很多人的淋巴結在治療後會變乾淨。<b>問題是治療結束後，我們就分不出當初有癌細胞的是哪一顆了。</b>所以我現在要在這顆上面打一點<b>醫用碳粉（像刺青一樣的黑色標記）</b>，它不含輻射、不用另外開刀放，就在這次穿刺順便做完。等到手術那天，我就能循著這個黑色記號把當初那顆確定有癌細胞的淋巴結找出來、單獨拿去化驗，<b>這樣就有機會不用把整個腋下的淋巴結全部清掉</b>，日後手臂腫脹和活動受限的機會會低很多。」
+  </div>
+  <div class="call amber">
+    <div class="h">手術前務必補充的三件事</div>
+    「有三件事我要先講清楚。<b>第一，大約每十五到二十個人裡面，會有一位在手術時找不到那個記號</b>，通常是因為從打記號到開刀隔太久（平均大概五個月）碳粉被身體吸收掉了；真的找不到的話，為了安全，我們還是會做完整的腋下廓清。<b>第二，那顆做記號的淋巴結，跟一般所謂的『前哨淋巴結』其實只有大約一半的機會是同一顆</b>，所以我們會<b>兩種都找、兩種都拿</b>，而不是二選一。<b>第三，就算這樣做，還是有大約百分之七的機會會漏掉一些殘存的癌細胞</b>——這個數字在國際上算是可接受的範圍，但不是零。目前這個做法的長期追蹤資料還不夠多，我們是在<b>有完整流程與定期稽核</b>的前提下才提供這個選項。」
+  </div>
+
+  <h3>五、若要在自家中心導入，原文建議標準化的三件事</h3>
+  <ol class="num">
+    <li><b>刺青技術與影像確認</b>：標記的注射位置、劑量、以及注射後的影像確認流程。</li>
+    <li><b>術中目標鎖定與檢體確認</b>：如何在術中確認取到的就是被標記的節點（而非鄰近染色擴散的組織）。</li>
+    <li><b>何時仍需完成 ALND 或追加腋下治療的明確條件</b>，並持續稽核自家的取出率與偽陰性率。</li>
+  </ol>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>GRADE 全部評為「極低」確信度。</b>原文自陳：非隨機設計、至少嚴重的偏差風險、多數結果有嚴重至非常嚴重的不一致性，加上寬信賴區間造成的不精確。<b>所有點估計應視為「指示性」而非「定論性」。</b></li>
+    <li><b>無法區分碳刺青的獨立貢獻。</b>多數研究併用藍染／放射性同位素前哨定位，卻未報告目標節點的取出、或殘存病灶的偵測，究竟是靠碳刺青還是靠前哨定位達成。這是本文<b>最根本的推論限制</b>，原文在 Discussion 與 Limitations 兩處重複承認。</li>
+    <li><b>Khallaf 2023 的人數在兩張表中不一致</b>：Table 1 記為 20 人（碳刺青世代）、Table 2 記為 40 人（TAD 20 ＋ SLNB 20），且可由腋下 pCR「15（37.5%）」反推分母為 40（本頁自行計算）。本頁採 Table 1 的 20 人作為合併分母，總人數因此為 729 人；若採 40 人則為 749 人。原文未報告總人數，無從對照。</li>
+    <li><b>單一研究支配合併值。</b>Chen 2025 一篇 254 人即佔全部 729 人的 34.8%（本頁自行計算），而該研究的 SLN 定位僅用單一藍染——已知會壓低 SLN 辨識率。SLN 辨識率的 91% 異質性有相當部分可能只是「定位劑不同」而已。</li>
+    <li><b>異質性居高不下且無法以留一法解決。</b>SLN 辨識率移除最具影響力研究後 I² 仍為 88%；擷取顆數 94%；刺青至手術間隔 91%。摘要「no single study unduly influenced pooled estimates」一語僅對點估計成立，對異質性並不成立。</li>
+    <li><b>偽陰性率的 I² ＝ 0% 具有誤導性。</b>該估計只來自 4 篇 A 組研究、事件數少；在研究數少且事件稀疏時 I² 本來就傾向被估為 0，不應解讀為「各中心表現高度一致」。</li>
+    <li><b>次群組分析未達顯著。</b>A 組 vs B 組的 TLN 辨識率差異 χ² ＝ 2.16、p ＝ 0.1418；4 篇 vs 5 篇的檢定力極低。不可把「驗證世代表現較好」當成因果結論。</li>
+    <li><b>術語定義不統一。</b>原文自陳各研究對 target node／tattooed node／targeted lymph node 的定義不一致，直接限制跨世代的可比性；「擷取顆數」是否包含前哨節點也各家不同。</li>
+    <li><b>發表偏差未以統計方法評估。</b>研究數僅 9 篇，原文 Methods 雖列出「publication bias/small-study effects where assessable」，但 Results 未報告任何漏斗圖或 Egger 檢定結果。</li>
+    <li><b>族群組成偏斜。</b>多數世代以 cN1 為主、以侵襲性乳管癌為大宗；HER2 陽性與三陰性占比在部分世代偏高（這兩型的腋下 pCR 率本來就高），可能<b>系統性地放大</b>「腋下降階」的可行性印象。lobular（小葉癌）病人在各世代皆為少數（2–7%），而該組織型的定位與影像評估難度更高。</li>
+    <li><b>僅 1 篇研究提供與單純 SLNB 的直接對照架構</b>（Khallaf 2023，各 20 人）。本文<b>完全無法回答「碳刺青 TAD 是否優於單純 SLNB」</b>這個臨床上最想問的問題。</li>
+    <li><b>與其他定位技術（clip、放射性粒子 seed、磁性標記、導線）的比較被排除條件排除在外</b>，因此無法據本文選擇定位方式。</li>
+    <li><b>本文完全未評估：</b>腋下復發率、無病存活、整體存活、淋巴水腫與上肢功能等病人報告結果、成本效益的正式分析、以及碳刺青對後續病理判讀（碳粒沉積可能被誤認為轉移或影響切片解讀）的影響。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss"><dl>
+<div class="gl-row"><dt>前導性全身治療　<span class="en">neoadjuvant systemic therapy, NST / NAST</span></dt><dd>手術前先給予的化學治療、標靶治療或內分泌治療。可縮小腫瘤、使部分腋下淋巴結轉為陰性，並提供活體藥物反應資訊。</dd></div>
+<div class="gl-row"><dt>目標腋下廓清　<span class="en">targeted axillary dissection, TAD</span></dt><dd>同時取出「治療前已標記且證實轉移的目標淋巴結（TLN）」與「前哨淋巴結（SLN）」的術式，用以在降階腋下手術的同時維持分期準確度。</dd></div>
+<div class="gl-row"><dt>目標／刺青淋巴結　<span class="en">targeted / tattooed lymph node, TLN</span></dt><dd>治療前經切片證實轉移、並以碳刺青（或夾子、粒子）標記的那顆淋巴結。</dd></div>
+<div class="gl-row"><dt>目標淋巴結切片　<span class="en">targeted lymph node biopsy, TLNB</span></dt><dd>僅取出被標記之目標淋巴結而不含前哨淋巴結的術式。</dd></div>
+<div class="gl-row"><dt>前哨淋巴結切片　<span class="en">sentinel lymph node biopsy, SLNB</span></dt><dd>以藍染、放射性同位素或雙示蹤劑找出腫瘤淋巴引流的第一站淋巴結並取出化驗。前導性治療後單獨使用時偽陰性率偏高，故發展出 TAD。</dd></div>
+<div class="gl-row"><dt>腋下淋巴結廓清　<span class="en">axillary lymph node dissection, ALND</span></dt><dd>清除腋下 Level I–II（有時含 III）全部淋巴結。分期最完整，但淋巴水腫、感覺異常與肩關節功能受限的風險顯著較高。</dd></div>
+<div class="gl-row"><dt>完成性腋下廓清　<span class="en">completion ALND, cALND</span></dt><dd>在目標／前哨手術之後追加的完整廓清，於研究中作為判定偽陰性率的<b>病理參考標準</b>。</dd></div>
+<div class="gl-row"><dt>偽陰性率　<span class="en">false-negative rate, FNR</span></dt><dd>在「確實有殘存腋下病灶」的病人中，目標術式判定為陰性的比例。國際上一般以 &lt; 10% 為可接受門檻。<b>分母不是全體病人。</b></dd></div>
+<div class="gl-row"><dt>陰性預測值　<span class="en">negative predictive value, NPV</span></dt><dd>檢查結果為陰性者，實際確為陰性的比例。與盛行率有關，不可跨族群直接比較。</dd></div>
+<div class="gl-row"><dt>病理完全緩解　<span class="en">pathologic complete response, pCR</span></dt><dd>前導性治療後手術檢體中找不到殘存侵襲癌。可再細分為乳房 pCR、腋下 pCR（ypN0）與整體 pCR。</dd></div>
+<div class="gl-row"><dt>治療後淋巴結分期　<span class="en">ypN stage</span></dt><dd>「yp」表示接受前導性治療後的病理分期。ypN0 即腋下已無殘存轉移。</dd></div>
+<div class="gl-row"><dt>臨床淋巴結陽性　<span class="en">clinically node-positive, cN+</span></dt><dd>治療前依影像與／或切片判定腋下有轉移。本文所有研究皆要求<b>切片證實</b>。</dd></div>
+<div class="gl-row"><dt>奈米碳懸浮液　<span class="en">carbon nanoparticle suspension</span></dt><dd>粒徑更小的碳標記材料，理論上停留更久、術中可見度更佳，但也引入新的技術變異來源。</dd></div>
+<div class="gl-row"><dt>廣義線性混合模型　<span class="en">generalized linear mixed model, GLMM</span></dt><dd>本文用來合併比例的隨機效應模型。相較傳統的轉換法，在事件稀疏或比例接近 0／1 時表現較佳。</dd></div>
+<div class="gl-row"><dt>留一法敏感度分析　<span class="en">leave-one-out sensitivity analysis</span></dt><dd>依序移除每一篇研究後重算合併值，用以找出具支配性的研究並評估結果穩健度。</dd></div>
+<div class="gl-row"><dt>非隨機研究偏差風險工具　<span class="en">ROBINS-I</span></dt><dd>評估非隨機介入性研究偏差風險的工具，共七個領域：干擾、參與者選擇、介入分類、偏離既定介入、遺漏資料、結果測量、報告結果之選擇。</dd></div>
+<div class="gl-row"><dt>證據確信度分級　<span class="en">GRADE</span></dt><dd>依偏差風險、不一致性、間接性、不精確性與發表偏差評定證據確信度（高／中／低／極低）。本文所有結果皆為<b>極低</b>。</dd></div>
+<div class="gl-row"><dt>異質性指標　<span class="en">I² statistic</span></dt><dd>研究間差異占總變異的百分比。&gt; 50% 視為顯著異質、&gt; 75% 為高度異質。研究數少或事件稀疏時，I² 的估計本身極不穩定。</dd></div>
+  </dl></div>
+</section>
+
+<section id="src">
+  <h2>Source <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <ul class="clean">
+    <li><b>原始論文：</b>Mirza W, Khan A, Iqbal H, Khan ME, Khan HM, Moeen-Ud-Din MB. <em>Carbon (charcoal) tattoo localization of biopsy-proven metastatic axillary lymph nodes for targeted axillary dissection after neoadjuvant therapy in breast cancer: a systematic review and single-arm meta-analysis.</em> World J Surg Oncol. 2026;24(1). DOI：<a href="https://doi.org/10.1186/s12957-026-04430-3">10.1186/s12957-026-04430-3</a>　·　<a href="https://pubmed.ncbi.nlm.nih.gov/42177471/">PubMed PMID 42177471</a></li>
+    <li><b>取用途徑：</b>本頁內容全部取自 PubMed 與 PubMed Central 開放取用全文（PMC13374229）。文獻檢索與全文取得均透過 PubMed／PMC。</li>
+    <li><b>圖表重繪聲明：</b>本頁 Fig. 1–6 皆為<b>依原文文字敘述、Table 1–3 之數據重新繪製的向量圖（inline SVG／HTML）</b>，未嵌入、未翻拍、未連結原文任何 Figure 影像。原文 Figure 1–7 與補充圖表（ROBINS-I 圖、次群組森林圖、GRADE 證據表）請至上方 DOI 連結查閱。</li>
+    <li><b>自行計算之數值：</b>凡標示「本頁自行計算」者，皆由原文表列數字直接加減乘除而得，包括：碳刺青世代合計 729 人（A 組 533 ＋ B 組 196）；PRISMA 各階段加減驗算；Chen 246/254 ＝ 96.9%、Khallaf 19/20 ＝ 95.0%、Natsiopoulos 71/75 ＝ 94.7%、Goyal 14/22 ＝ 63.6%；各研究 ypN 分項加總與百分比加總驗算；Khallaf 由 15/37.5% 反推分母 40；Chen 占比 254/729 ＝ 34.8%。<b>原文未列出分子／分母者，一律標示「原文未列數值」，本頁不做推估。</b></li>
+    <li><b>免責：</b>本頁為文獻閱讀輔助，不構成臨床指引或治療建議。所有臨床決策請回歸原始文獻、現行指引與個別病人狀況判斷。</li>
+  </ul>
+</section>
+
+</div>
+</body>
+</html>

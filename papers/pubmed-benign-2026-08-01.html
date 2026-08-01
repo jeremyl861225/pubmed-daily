@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-01</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 1 日 · 週六</span>
+    <span style="opacity:.4">/</span><span>Vol. 004</span>
+  </div>
+  <h1 class="title">雷射閉合術（SiLaC）vs. 內視鏡藏毛竇治療（EPSiT）處理藏毛竇疾病：29 篇研究的系統性回顧與單臂統合分析</h1>
+  <p class="title-en">A systematic review and meta-analysis of sinus laser associated closure (SiLaC) versus endoscopic pilonidal sinus treatment (EPSiT) in the management of pilonidal sinus disease</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Langenbeck&#39;s Archives of Surgery<br><span style="color:#6b7079;font-size:13px">2026;411(1):文章編號未列於索引</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Li Z, Jin L, Ouali M, de Parades V, Wang Z, Wu J, Ambe PC<br><span style="color:#6b7079;font-size:13px">上海中醫藥大學附屬岳陽中西醫結合醫院肛腸科（中國）；Université de Sfax（突尼西亞）；Hôpital Paris Saint-Joseph（法國）；Witten/Herdecke 大學（德國）</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-04-11</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v">系統性回顧 ＋ <b>兩組各自獨立的單臂比例統合分析</b>（間接比較）<br><span style="color:#6b7079;font-size:13px">29 篇研究（雷射 19 篇／內視鏡 10 篇），合計 2,696 人（本頁自行加總）；PROSPERO CRD420251274562；<b>無任何直接比較兩術式的研究</b></span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s00423-026-04026-1">10.1007/s00423-026-04026-1</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/41964736/">PMID 41964736 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">良性疾病與功能性疾患</span>
+    <span class="tag t2">藏毛竇疾病 Pilonidal sinus disease</span>
+    <span class="tag t2">微創術式 SiLaC / EPSiT</span>
+    <span class="tag t3">證據等級：單臂合併＋間接比較（低）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果＋森林圖</a><a href="#cont">連續型結果</a>
+  <a href="#raw">各研究原始資料</a><a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a>
+  <a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>這篇統合分析把 <strong>29 篇研究、2,696 位</strong>藏毛竇病人分成兩堆各自合併，結果顯示雷射閉合（SiLaC）與內視鏡治療（EPSiT）的<strong>治癒率（86% vs 88%）、復發率（11% vs 9%）、併發症率（10% vs 7%）、完全癒合時間（30.1 天 vs 26.6 天）幾乎沒有差別</strong>，唯一明顯不同的是<strong>手術時間（18.0 分 vs 30.1 分）</strong>；但最關鍵的一句話寫在方法學裡——<strong>文獻中沒有任何一篇研究直接把兩種術式擺在一起比較</strong>，本文是把兩堆單臂數據放在同一張表上「對看」，所有結果的 I² 都在 <strong>74.6–99.4%</strong> 之間（幾乎全部異質性極高），因此正確的臨床解讀不是「兩者一樣好」，而是「<strong>目前的證據還沒有能力分辨兩者的差別</strong>」，術式選擇應回歸設備可及性、術者熟練度與病人偏好。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Various surgical modalities exist for the management of pilonidal sinus disease (PSD), with an increasing trend toward minimally invasive techniques. Sinus Laser associated Closure (SiLaC) and endoscopic pilonidal sinus treatment (EPSiT) are two minimally invasive techniques widely used in clinical practice. However, a systematic comparison of both techniques is lacking. This study conducted separate single-arm analyses of both techniques to compare their efficacy and safety.</p>
+    <h4>Objective</h4>
+    <p>A systematic literature search was performed across electronic databases including Web of Science, Embase, the Cochrane Library, Google Scholar and PubMed to identify relevant studies investigating SiLaC versus EPSiT for PSD. The primary outcome measures included operative time, cure rate, recurrence rate, postoperative complication rate, and total wound healing time.</p>
+    <h4>Results</h4>
+    <p>A total of 29 studies were included. The mean operative time was 18.02 min (95% CI: 13.42–22.62; I² = 99.4%; P &lt; 0.001) for SiLaC and 30.11 min (95% CI: 21.33–38.88; I² = 98.5%; P &lt; 0.001) for EPSiT. The cure rate was 86% (95% CI: 80–91%; I² = 92%; P &lt; 0.001) in the SiLaC and 88% (95% CI: 83–94%; I² = 87.1%; P &lt; 0.001) in the EPSiT group. The pooled recurrence rate was 11% (95% CI: 6–15%; I² = 90.4%; P &lt; 0.001) for SiLaC and 9% (95% CI: 5–12%; I² = 82.9%; P &lt; 0.001) for EPSiT. The complication rate was 10% (95% CI: 7–14%; I² = 79.6%; P &lt; 0.001) for SiLaC and 7% (95% CI: 1–15%; I² = 74.7%; P &lt; 0.05) for EPSiT. The mean total healing time was 30.08 days (95% CI: 22.73–37.43; I² = 99.2%; P &lt; 0.001) for SiLaC and 26.55 days (95% CI: 24.40–28.70; I² = 90.9%; P &lt; 0.001) for EPSiT.</p>
+    <h4>Conclusion</h4>
+    <p>This indirect comparative analysis suggests comparable efficacy between SiLaC and EPSiT for PSD based on currently available, predominantly single-arm studies. These findings, limited by the lack of direct comparative trials, highlight the urgent need for prospective investigations to establish robust comparative effectiveness.</p>
+    <p class="note">原文摘要逐字引自 <em>Langenbeck&#39;s Archives of Surgery</em> 2026;411(1)（Open Access, CC BY-NC-ND）。PROSPERO 註冊編號 CRD420251274562。本頁所有圖表均為依原文 Abstract、Results 內文、Table 1 與 Table 2 之數據<strong>重新繪製</strong>，未嵌入或翻拍原文 Figure 1–11；原圖請見 DOI 連結。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>Fig. 1 <span class="zh">／ 文獻篩選流程（PRISMA flow diagram）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      資料庫檢索取得紀錄　<span class="n">326</span> 筆<br>
+      <span style="color:#6b7079;font-size:12.5px">Web of Science · Embase · Cochrane Library · PubMed · Google Scholar · ClinicalTrials.gov　·　檢索詞：PSD、pilonidal sinus (disease)、pilonidal disease、SiLaC、SILAT、Laser、Laser Ablation、EPSiT、endoscopic pilonidal sinus treatment</span>
+    </div></div><div class="pr-ex">移除重複<br><span class="n">原文未列數值</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Screening 標題／摘要篩選</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">
+      兩位審閱者（ZL、LJ）獨立篩選，歧異由資深研究者（JW、PCA）仲裁；並手動檢索納入文獻之參考書目<br>
+      <span style="color:#6b7079;font-size:12.5px">納入（PICOS）：<b>P</b> 確診藏毛竇疾病；<b>I</b> 雷射消融或內視鏡治療；<b>O</b> 手術時間／治癒率／復發率／術後併發症／完全癒合時間之任一項；<b>S</b> 隨機或非隨機臨床試驗、世代或病例對照研究</span>
+    </div></div><div class="pr-ex">排除筆數<br><span class="n">原文未列數值</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Eligibility 全文評估</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box">全文獨立評估合格性　<span class="n">原文未列數值</span><br>
+      <span style="color:#6b7079;font-size:12.5px">排除：不相關文章、社論、信件、個案報告、綜述、統合分析；<b>人數 &lt; 3 人之研究</b>；<b>將本文所評估術式與其他術式併用者</b>（例如 E-SiLaC 併用）；資料重複；未明確報告本文主要結果者</span></div></div>
+      <div class="pr-ex">排除理由與筆數<br><span class="n">原文未列數值</span><br><span style="font-size:11.5px">（原文僅以 Figure 1 影像呈現，本頁不做推估）</span></div></div>
+    <div class="pr-arrow"></div>
+
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row"><div class="pr-main"><div class="pr-box final">
+      最終納入　<span class="n">29</span> 篇研究<br>
+      <span style="color:#6b7079;font-size:12.5px">
+      <b>雷射組（SiLaC／SiLaT／PiLaC／PiLaT／LaPSe）</b>：19 篇 / <b>1,744</b> 人（本頁自行加總）<br>
+      <b>內視鏡組（EPSiT／VAAPS）</b>：10 篇 / <b>952</b> 人（本頁自行加總）<br>
+      收案年代 2012–2025　·　橫跨 17 國　·　<b>兩組之間沒有任何一篇直接比較的研究</b></span>
+    </div></div></div>
+    <div style="font-size:12.5px;color:#6b7079;margin-top:16px;padding-top:11px;border-top:1px solid #f0eeea">
+      <b>加總驗算（本頁自行計算）：</b>19 ＋ 10 ＝ <b>29</b> 篇，與原文一致。人數方面，原文<b>從未報告任何合併總人數</b>；本頁依原文 Table 1 逐列加總得雷射組 <b>1,744</b> 人、內視鏡組 <b>952</b> 人、總計 <b>2,696</b> 人，此數字為本頁自行計算，原文無可對照之數值。
+    </div>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Methods 全段與 Results「Search results」。<b>怎麼讀：</b>326 筆是唯一被寫進正文的篩選數字，中間各階段（去重、標題摘要排除、全文排除）原文完全沒有以文字報告，只畫在 Figure 1 裡。<b>陷阱：</b>PICOS 明訂排除「併用兩種術式者」，因此本文<b>刻意排除了 E-SiLaC（雷射＋內視鏡合併）</b>的資料——這正是 ISoLP 立場書目前最推薦的個別化選項，換句話說本文回答的是「二選一」，不是「臨床上真正的三選一」。
+  </div>
+</section>
+
+<section id="tbl1">
+  <h2>Table 1 <span class="zh">／ 29 篇納入研究之特徵（對應原文 Table 1、Table 2）</span></h2>
+  <div class="tbl-wrap"><table><thead><tr><th>研究（年）</th><th>設計</th><th>收案期間</th><th>國家</th><th class="num">人數</th><th>術式命名</th><th>報告之結果</th><th class="num">品質分數</th></tr></thead><tbody>
+<tr><td colspan="8" style="background:#f4f2ee;font-weight:700">雷射 SiLaC　（19 篇，合計 1744 人；本頁自行加總）</td></tr>
+<tr><td><b>Tran 2025</b></td><td>回溯</td><td>2024/12–2025/07</td><td>越南</td><td class="num">9</td><td>SiLaC</td><td style="font-size:12.5px">手術時間、併發症、癒合時間、治癒率、復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>EMRAL 2025</b></td><td>回溯</td><td>2022/01–2025/01</td><td>土耳其</td><td class="num">37</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、復發率、併發症（復發型 PSD）</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Romanova 2024</b></td><td>回溯</td><td>2019–2023</td><td>德國</td><td class="num">17</td><td>SiLaC</td><td style="font-size:12.5px">復發率、併發症、手術時間</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Yildirim 2024</b></td><td>回溯</td><td>2020/03–2023/12</td><td>土耳其</td><td class="num">64</td><td>SiLaC</td><td style="font-size:12.5px">復發率、併發症、治癒率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Sharaf 2024</b></td><td>回溯</td><td>2022/03–2022/06</td><td>埃及</td><td class="num">30</td><td>SiLaC</td><td style="font-size:12.5px">復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Kalaitzis 2024</b></td><td>回溯</td><td>2018/01–2024/01</td><td>原文未列</td><td class="num">368</td><td>LaPSe</td><td style="font-size:12.5px">治癒率、復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Al-Khazraji 2024</b></td><td>前瞻</td><td>2023/02–2024/02</td><td>伊拉克</td><td class="num">50</td><td>SiLaT</td><td style="font-size:12.5px">併發症</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>GÜLEN 2024</b></td><td>回溯</td><td>2020/08–2023/08</td><td>土耳其</td><td class="num">49</td><td>SiLaC</td><td style="font-size:12.5px">併發症、復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Horesh 2023</b></td><td>回溯</td><td>2018/09–2020/12</td><td>以色列</td><td class="num">92</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Pappas 2018</b></td><td>前瞻</td><td>2012/06–2015/12</td><td>希臘</td><td class="num">237</td><td>SiLaT</td><td style="font-size:12.5px">治癒率、併發症</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Li 2023</b></td><td>回溯</td><td>2019/03–2022/07</td><td>中國</td><td class="num">48</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、復發率、手術時間、癒合時間</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Johnson 2022</b></td><td>前瞻</td><td>2016/04–2019/07</td><td>英國</td><td class="num">35</td><td>PiLAC</td><td style="font-size:12.5px">治癒率、復發率</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Zubaid 2022</b></td><td>回溯</td><td>2012/02–2019/12</td><td>沙烏地阿拉伯</td><td class="num">41</td><td>SiLaT</td><td style="font-size:12.5px">併發症、癒合時間、復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Sluckin 2022</b></td><td>世代</td><td>2017/01–2020/03</td><td>荷蘭</td><td class="num">311</td><td>SiLaC</td><td style="font-size:12.5px">復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Bonito 2021</b></td><td>回溯</td><td>2018/07–2020/08</td><td>葡萄牙</td><td class="num">27</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Spindler 2021</b></td><td>回溯</td><td>2018/06–2019/08</td><td>法國</td><td class="num">29</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、癒合時間、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Dessily 2019</b></td><td>回溯</td><td>2015/03–2017/08</td><td>比利時</td><td class="num">200</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、癒合時間、手術時間、復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Georgiou 2018</b></td><td>前瞻</td><td>2015/04–2016/12</td><td>希臘</td><td class="num">60</td><td>PiLaT</td><td style="font-size:12.5px">滿意度、成功率、VAS 疼痛</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Dessily 2017</b></td><td>回溯</td><td>2014/09–2015/09</td><td>比利時</td><td class="num">40</td><td>SiLaC</td><td style="font-size:12.5px">治癒率、復發率、併發症</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td colspan="8" style="background:#f4f2ee;font-weight:700">內視鏡 EPSiT　（10 篇，合計 952 人；本頁自行加總）</td></tr>
+<tr><td><b>Hinksman 2023</b></td><td>回溯</td><td>2014/01–2019/11</td><td>澳洲</td><td class="num">137</td><td>EPSiT</td><td style="font-size:12.5px">返回工作時間、疼痛</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Erculiani 2022</b></td><td>回溯</td><td>2017/01–2021/12</td><td>義大利</td><td class="num">115</td><td>EPSiT</td><td style="font-size:12.5px">復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Foti 2021</b></td><td>回溯</td><td>2015/03–2019/12</td><td>義大利</td><td class="num">42</td><td>EPSiT</td><td style="font-size:12.5px">手術時間、併發症、癒合時間、復發率、治癒率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Dotlacil 2021</b></td><td>回溯</td><td>2018/11–2020/02</td><td>捷克</td><td class="num">17</td><td>EPSiT</td><td style="font-size:12.5px">併發症、復發率</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Gulcu 2021</b></td><td>前瞻</td><td>2018/05–2019/12</td><td>土耳其</td><td class="num">86</td><td>EPSiT</td><td style="font-size:12.5px">手術時間、併發症、癒合時間</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Manigrasso 2020</b></td><td>回溯</td><td>2014/01–2018/12</td><td>義大利</td><td class="num">63</td><td>VAAPS</td><td style="font-size:12.5px">復發率、癒合時間（復發型 PSD）</td><td class="num">6 <span class="win neutral">中等</span></td></tr>
+<tr><td><b>Meinero 2019</b></td><td>前瞻</td><td>2012/03–2014/12</td><td>義大利</td><td class="num">122</td><td>EPSiT</td><td style="font-size:12.5px">治癒率、癒合時間（復發型 PSD）</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Prato 2018</b></td><td>前瞻</td><td>2015/07–2017/03</td><td>義大利</td><td class="num">43</td><td>EPSiT</td><td style="font-size:12.5px">復發率、併發症、治癒率</td><td class="num">8 <span class="win">良好</span></td></tr>
+<tr><td><b>Giarratano 2017</b></td><td>前瞻</td><td>2013/10–2015/11</td><td>義大利</td><td class="num">77</td><td>EPSiT</td><td style="font-size:12.5px">手術時間、治癒率</td><td class="num">7 <span class="win">良好</span></td></tr>
+<tr><td><b>Meinero 2016</b></td><td>前瞻</td><td>2012/03–2014/12</td><td>瑞士</td><td class="num">250</td><td>EPSiT</td><td style="font-size:12.5px">治癒率、癒合時間、復發率</td><td class="num">8 <span class="win">良好</span></td></tr>
+</tbody></table></div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 1（研究特徵）與 Table 2（NICE case-series 檢核表，滿分 8 分；7–8 分＝良好、4–6 分＝中等、0–3 分＝不良）。<b>怎麼讀：</b>人數欄位可直接看出兩組的重量級研究——雷射組由 Kalaitzis（368 人）、Sluckin（311 人）、Pappas（237 人）、Dessily 2019（200 人）四篇撐起近六成人數；內視鏡組則由 Meinero 2016（250 人）、Hinksman（137 人）、Meinero 2019（122 人）、Erculiani（115 人）主導。<b>陷阱：</b>（1）<b>兩組的研究族群並不對等</b>：內視鏡組有 2 篇專收「復發型藏毛竇」（Meinero 2019、Manigrasso），雷射組僅 1 篇（EMRAL）——復發型病灶本來就比原發型難處理，這會系統性地低估內視鏡的表現；（2）Kalaitzis 一篇就佔雷射組 21.1%（368/1,744，本頁自行計算）而<b>國家未列</b>；（3）原文 Table 1 寫「Pappas, 2018」但 Table 2 寫「Pappas, 2023」、Table 1 寫「Al-Khazraji」而 Table 2 寫「Al-hazraji」，同一篇研究在兩張表中年份與拼寫不一致。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Fig. 2 <span class="zh">／ 主要結果：合併比例森林圖</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 314" width="100%" height="314" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 2　單臂合併比例森林圖（隨機效應模型）">
+<rect x="0" y="0" width="920" height="314" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 2　單臂合併比例森林圖（隨機效應模型）</text>
+<line x1="300.0" y1="50" x2="300.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="300.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">0%</text>
+<line x1="386.0" y1="50" x2="386.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="386.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">20%</text>
+<line x1="472.0" y1="50" x2="472.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="472.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">40%</text>
+<line x1="558.0" y1="50" x2="558.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="558.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">60%</text>
+<line x1="644.0" y1="50" x2="644.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="644.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">80%</text>
+<line x1="730.0" y1="50" x2="730.0" y2="262" stroke="#f0eeea" stroke-width="1"/>
+<text x="730.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">100%</text>
+<line x1="300" y1="262" x2="730" y2="262" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="73.0" font-size="12" font-weight="600" fill="#23241f">治癒率 Cure rate — SiLaC</text>
+<text x="0" y="86.0" font-size="10.5" fill="#6b7079">19 篇雷射研究（單臂合併）</text>
+<line x1="644.0" y1="75.0" x2="691.3" y2="75.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="644.0" y1="70.0" x2="644.0" y2="80.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="691.3" y1="70.0" x2="691.3" y2="80.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="664.8" y="70.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="742" y="73.0" font-size="11.5" fill="#4a4c46" font-weight="600">86% (80–91)</text>
+<text x="742" y="86.0" font-size="10.5" fill="#6b7079">I² = 92%；p &lt; 0.001</text>
+<text x="0" y="107.0" font-size="12" font-weight="600" fill="#23241f">治癒率 Cure rate — EPSiT</text>
+<text x="0" y="120.0" font-size="10.5" fill="#6b7079">10 篇內視鏡研究（單臂合併）</text>
+<line x1="656.9" y1="109.0" x2="704.2" y2="109.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="656.9" y1="104.0" x2="656.9" y2="114.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="704.2" y1="104.0" x2="704.2" y2="114.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="673.4" y="104.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="107.0" font-size="11.5" fill="#4a4c46" font-weight="600">88% (83–94)</text>
+<text x="742" y="120.0" font-size="10.5" fill="#6b7079">I² = 87.1%；p &lt; 0.001</text>
+<text x="0" y="141.0" font-size="12" font-weight="600" fill="#23241f">復發率 Recurrence — SiLaC</text>
+<line x1="325.8" y1="143.0" x2="364.5" y2="143.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="325.8" y1="138.0" x2="325.8" y2="148.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="364.5" y1="138.0" x2="364.5" y2="148.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="342.3" y="138.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="742" y="141.0" font-size="11.5" fill="#4a4c46" font-weight="600">11% (6–15)</text>
+<text x="742" y="154.0" font-size="10.5" fill="#6b7079">I² = 90.4%；p &lt; 0.001</text>
+<text x="0" y="175.0" font-size="12" font-weight="600" fill="#23241f">復發率 Recurrence — EPSiT</text>
+<line x1="321.5" y1="177.0" x2="351.6" y2="177.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="321.5" y1="172.0" x2="321.5" y2="182.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="351.6" y1="172.0" x2="351.6" y2="182.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="333.7" y="172.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="175.0" font-size="11.5" fill="#4a4c46" font-weight="600">9% (5–12)</text>
+<text x="742" y="188.0" font-size="10.5" fill="#6b7079">I² = 82.9%；p &lt; 0.001</text>
+<text x="0" y="209.0" font-size="12" font-weight="600" fill="#23241f">併發症率 Complication — SiLaC</text>
+<text x="0" y="222.0" font-size="10.5" fill="#6b7079">摘要 10%（7–14）／內文 9%（6–12）不一致</text>
+<line x1="330.1" y1="211.0" x2="360.2" y2="211.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="330.1" y1="206.0" x2="330.1" y2="216.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="360.2" y1="206.0" x2="360.2" y2="216.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="338.0" y="206.0" width="10" height="10" fill="#8a6a1f"/>
+<text x="742" y="209.0" font-size="11.5" fill="#4a4c46" font-weight="600">10% (7–14) ※摘要值</text>
+<text x="742" y="222.0" font-size="10.5" fill="#6b7079">I² = 79.6%（內文寫 74.6%）</text>
+<text x="0" y="243.0" font-size="12" font-weight="600" fill="#23241f">併發症率 Complication — EPSiT</text>
+<line x1="304.3" y1="245.0" x2="364.5" y2="245.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="304.3" y1="240.0" x2="304.3" y2="250.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="364.5" y1="240.0" x2="364.5" y2="250.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="325.1" y="240.0" width="10" height="10" fill="#2f6b62"/>
+<text x="742" y="243.0" font-size="11.5" fill="#4a4c46" font-weight="600">7% (1–15)</text>
+<text x="742" y="256.0" font-size="10.5" fill="#6b7079">I² = 74.7%；p &lt; 0.05</text>
+<text x="0" y="300" font-size="10.5" fill="#6b7079">※ 此為「單臂合併比例」，非兩組相比的效果值，因此沒有無效線（null line）；兩條線重疊不等於統計上不顯著。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Abstract 與 Results「Cure rate」「Recurrence rate」「Complication rate」段落（對應原文 Figure 4–9）。<b>怎麼讀：</b>方塊是合併點估計、橫線是 95% 信賴區間；<b>本圖刻意沒有畫「無效線」</b>，因為這些是單臂比例（proportion），不是兩組相比的效果值（RR/OR），根本沒有「1」這個參考點。判讀方式是看兩條線的區間有沒有大幅重疊——治癒率（80–91 vs 83–94）、復發率（6–15 vs 5–12）、併發症率（7–14 vs 1–15）三組區間都幾乎完全重疊，代表<b>目前資料無法分辨兩者</b>。<b>陷阱：</b>三個結果的 I² 分別高達 92%／90.4%／87.1%／82.9%／79.6%／74.7%，意思是「研究與研究之間的差異，遠大於隨機誤差可以解釋的範圍」——在這種異質性下，合併出來的那個數字其實<b>沒有一個真實世界的族群可以對應</b>，只能當成粗略的量級參考。另外注意 EPSiT 併發症率的區間寬達 1–15%（十五倍），這種寬度基本上等於「不知道」。
+  </div></div>
+
+  <h3>全部結果總覽表</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>結果</th><th>SiLaC（雷射，19 篇）</th><th>EPSiT（內視鏡，10 篇）</th><th>異質性 I²</th><th>本頁判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>治癒率</b> Cure rate</td><td class="num">86%（95% CI 80–91）</td><td class="num">88%（95% CI 83–94）</td><td class="num">92% / 87.1%</td><td><span class="win neutral">區間大幅重疊，無法分辨</span></td></tr>
+      <tr><td><b>復發率</b> Recurrence rate</td><td class="num">11%（95% CI 6–15）</td><td class="num">9%（95% CI 5–12）</td><td class="num">90.4% / 82.9%</td><td><span class="win neutral">區間大幅重疊，無法分辨</span></td></tr>
+      <tr><td><b>併發症率</b> Complication rate</td><td class="num">10%（95% CI 7–14）<br><span class="na">內文另寫 9%（6–12）</span></td><td class="num">7%（95% CI 1–15）</td><td class="num">79.6%（內文 74.6%） / 74.7%</td><td><span class="win caution">摘要與內文不一致</span></td></tr>
+      <tr><td><b>手術時間</b> Operative time</td><td class="num">18.02 分（13.42–22.62）</td><td class="num">30.11 分（21.33–38.88）</td><td class="num">99.4% / 98.5%</td><td><span class="win">唯一有差異的項目（區間僅邊緣接觸）</span></td></tr>
+      <tr><td><b>完全癒合時間</b> Healing time</td><td class="num">30.08 天（22.73–37.43）<br><span class="na">內文另寫（25.86–38.19）</span></td><td class="num">26.55 天（24.40–28.70）</td><td class="num">99.2%（內文 98.6%） / 90.9%</td><td><span class="win caution">摘要與內文不一致；區間重疊</span></td></tr>
+      <tr><td><b>直接比較的組間 p 值 / RR / OR</b></td><td colspan="2" class="num"><b>原文未計算</b>（設計上不可能計算）</td><td class="num">—</td><td><span class="win caution">本頁不做推估</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="cap">
+    <b>怎麼讀：</b>最後一列是本表最重要的一列——<b>原文從頭到尾沒有任何一個組間比較的統計量</b>（沒有 RR、沒有 OR、沒有 p 值），所有「A 比 B 好／差不多」的語句都是把兩個獨立的點估計用眼睛比出來的。<b>陷阱：</b>原文 Methods 寫「For dichotomous variables (e.g. healing rate, recurrence rate), risk ratios (RR) and 95% CI were calculated」，但<b>整篇 Results 沒有出現任何一個 RR</b>——方法段落描述的分析與實際執行的分析並不相符。
+  </div>
+</section>
+
+<section id="cont">
+  <h2>Fig. 3 <span class="zh">／ 連續型結果：手術時間與癒合時間（各自獨立刻度）</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 312" width="100%" height="312" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="continuous outcomes">
+<rect x="0" y="0" width="920" height="312" fill="#faf9f6"/>
+<text x="0" y="16" font-size="12.5" font-weight="700" fill="#23241f">手術時間 Operative time　（單位：分鐘 min）</text>
+<line x1="250.0" y1="36" x2="250.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="342.0" y1="36" x2="342.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="342.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">9</text>
+<line x1="434.0" y1="36" x2="434.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="434.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">18</text>
+<line x1="526.0" y1="36" x2="526.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="526.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">27</text>
+<line x1="618.0" y1="36" x2="618.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="618.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">36</text>
+<line x1="710.0" y1="36" x2="710.0" y2="106.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="710.0" y="30" font-size="10.5" fill="#6b7079" text-anchor="middle">45</text>
+<line x1="250" y1="106.0" x2="710" y2="106.0" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="62.0" font-size="12" font-weight="600" fill="#23241f">SiLaC（雷射）</text>
+<line x1="387.2" y1="58.0" x2="481.2" y2="58.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="387.2" y1="53.0" x2="387.2" y2="63.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="481.2" y1="53.0" x2="481.2" y2="63.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="429.2" y="53.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="718" y="57.0" font-size="11.5" font-weight="600" fill="#4a4c46">18.02 分 (13.42–22.62)</text>
+<text x="718" y="69.0" font-size="10.5" fill="#6b7079">I² = 99.4%</text>
+<text x="0" y="94.0" font-size="12" font-weight="600" fill="#23241f">EPSiT（內視鏡）</text>
+<line x1="468.0" y1="90.0" x2="647.4" y2="90.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="468.0" y1="85.0" x2="468.0" y2="95.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="647.4" y1="85.0" x2="647.4" y2="95.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="552.8" y="85.0" width="10" height="10" fill="#2f6b62"/>
+<text x="718" y="89.0" font-size="11.5" font-weight="600" fill="#4a4c46">30.11 分 (21.33–38.88)</text>
+<text x="718" y="101.0" font-size="10.5" fill="#6b7079">I² = 98.5%</text>
+<text x="0" y="136" font-size="12.5" font-weight="700" fill="#23241f">完全癒合時間 Total healing time　（單位：天 days）</text>
+<line x1="250.0" y1="156" x2="250.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="342.0" y1="156" x2="342.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="342.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">9</text>
+<line x1="434.0" y1="156" x2="434.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="434.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">18</text>
+<line x1="526.0" y1="156" x2="526.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="526.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">27</text>
+<line x1="618.0" y1="156" x2="618.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="618.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">36</text>
+<line x1="710.0" y1="156" x2="710.0" y2="226.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="710.0" y="150" font-size="10.5" fill="#6b7079" text-anchor="middle">45</text>
+<line x1="250" y1="226.0" x2="710" y2="226.0" stroke="#e4e0d9" stroke-width="1"/>
+<text x="0" y="182.0" font-size="12" font-weight="600" fill="#23241f">SiLaC（雷射）</text>
+<line x1="482.4" y1="178.0" x2="632.6" y2="178.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="482.4" y1="173.0" x2="482.4" y2="183.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="632.6" y1="173.0" x2="632.6" y2="183.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="552.5" y="173.0" width="10" height="10" fill="#8a6a1f"/>
+<text x="718" y="177.0" font-size="11.5" font-weight="600" fill="#4a4c46">30.08 天 (22.73–37.43) ※摘要值</text>
+<text x="718" y="189.0" font-size="10.5" fill="#6b7079">內文寫 (25.86–38.19)；I² 99.2% vs 98.6%</text>
+<text x="0" y="214.0" font-size="12" font-weight="600" fill="#23241f">EPSiT（內視鏡）</text>
+<line x1="499.4" y1="210.0" x2="543.4" y2="210.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="499.4" y1="205.0" x2="499.4" y2="215.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="543.4" y1="205.0" x2="543.4" y2="215.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="516.4" y="205.0" width="10" height="10" fill="#2f6b62"/>
+<text x="718" y="209.0" font-size="11.5" font-weight="600" fill="#4a4c46">26.55 天 (24.40–28.70)</text>
+<text x="718" y="221.0" font-size="10.5" fill="#6b7079">I² = 90.9%</text>
+<text x="0" y="307" font-size="10.5" fill="#6b7079">每個面板各自獨立刻度並標明單位；上圖單位為分鐘、下圖為天，切勿跨面板比較長度。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Abstract 與 Results「Operation time」「Healing time」段落（對應原文 Figure 2–3、10–11）。<b>怎麼讀：</b>兩個面板單位不同（分鐘 vs 天），刻度各自獨立，請勿把上下兩條線的長度拿來互比。手術時間是本文唯一有實質差距的結果：雷射平均快約 <b>12 分鐘</b>（30.11 − 18.02 ＝ 12.09 分，本頁自行計算），且雷射的區間上限（22.62）低於內視鏡的區間下限（21.33）……<b>但只低了 1.29 分鐘，兩區間在邊緣仍有重疊</b>，原文自己也承認「the CIs of the two interventions slightly overlap at the edge」。<b>陷阱：</b>手術時間的 I² 是 99.4% 與 98.5%——這是異質性的天花板，代表各研究報告的「手術時間」定義（是否含麻醉、擺位、備皮）根本不統一，把它們平均起來在方法學上意義極為有限。癒合時間的 3.5 天差距（30.08 − 26.55 ＝ 3.53 天，本頁自行計算）在原文 Discussion 被寫成「4 days difference」，且方向與摘要相反地被拿來質疑內視鏡的成本效益——請注意<b>這個 3.5 天的差距其實是雷射「較慢」</b>，原文論述在此處易讀錯。
+  </div></div>
+</section>
+
+<section id="raw">
+  <h2>Fig. 4–5 <span class="zh">／ 各研究原始資料與方法學品質</span></h2>
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 752" width="100%" height="752" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 4　29 篇納入研究的個別收案人數（依組別排序）（單位：人 patients）">
+<rect x="0" y="0" width="920" height="752" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 4　29 篇納入研究的個別收案人數（依組別排序）（單位：人 patients）</text>
+<line x1="250.0" y1="50" x2="250.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="250.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="360.0" y1="50" x2="360.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="360.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">80</text>
+<line x1="470.0" y1="50" x2="470.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="470.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">160</text>
+<line x1="580.0" y1="50" x2="580.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="580.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">240</text>
+<line x1="690.0" y1="50" x2="690.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="690.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">320</text>
+<line x1="800.0" y1="50" x2="800.0" y2="696" stroke="#f0eeea" stroke-width="1"/>
+<text x="800.0" y="44" font-size="10.5" fill="#6b7079" text-anchor="middle">400</text>
+<text x="0" y="73.0" font-size="11" fill="#4a4c46">Kalaitzis 2024（LaPSe）</text>
+<rect x="250" y="62.0" width="506.0" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="762.0" y="73.0" font-size="10.5" fill="#6b7079">368 人</text>
+<text x="0" y="95.0" font-size="11" fill="#4a4c46">Sluckin 2022（SiLaC）</text>
+<rect x="250" y="84.0" width="427.6" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="683.6" y="95.0" font-size="10.5" fill="#6b7079">311 人</text>
+<text x="0" y="117.0" font-size="11" fill="#4a4c46">Pappas 2018（SiLaT）</text>
+<rect x="250" y="106.0" width="325.9" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="581.9" y="117.0" font-size="10.5" fill="#6b7079">237 人</text>
+<text x="0" y="139.0" font-size="11" fill="#4a4c46">Dessily 2019（SiLaC）</text>
+<rect x="250" y="128.0" width="275.0" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="531.0" y="139.0" font-size="10.5" fill="#6b7079">200 人</text>
+<text x="0" y="161.0" font-size="11" fill="#4a4c46">Horesh 2023（SiLaC）</text>
+<rect x="250" y="150.0" width="126.5" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="382.5" y="161.0" font-size="10.5" fill="#6b7079">92 人</text>
+<text x="0" y="183.0" font-size="11" fill="#4a4c46">Yildirim 2024（SiLaC）</text>
+<rect x="250" y="172.0" width="88.0" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="344.0" y="183.0" font-size="10.5" fill="#6b7079">64 人</text>
+<text x="0" y="205.0" font-size="11" fill="#4a4c46">Georgiou 2018（PiLaT）</text>
+<rect x="250" y="194.0" width="82.5" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="338.5" y="205.0" font-size="10.5" fill="#6b7079">60 人</text>
+<text x="0" y="227.0" font-size="11" fill="#4a4c46">Al-Khazraji 2024（SiLaT）</text>
+<rect x="250" y="216.0" width="68.8" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="324.8" y="227.0" font-size="10.5" fill="#6b7079">50 人</text>
+<text x="0" y="249.0" font-size="11" fill="#4a4c46">GÜLEN 2024（SiLaC）</text>
+<rect x="250" y="238.0" width="67.4" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="323.4" y="249.0" font-size="10.5" fill="#6b7079">49 人</text>
+<text x="0" y="271.0" font-size="11" fill="#4a4c46">Li 2023（SiLaC）</text>
+<rect x="250" y="260.0" width="66.0" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="322.0" y="271.0" font-size="10.5" fill="#6b7079">48 人</text>
+<text x="0" y="293.0" font-size="11" fill="#4a4c46">Zubaid 2022（SiLaT）</text>
+<rect x="250" y="282.0" width="56.4" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="312.4" y="293.0" font-size="10.5" fill="#6b7079">41 人</text>
+<text x="0" y="315.0" font-size="11" fill="#4a4c46">Dessily 2017（SiLaC）</text>
+<rect x="250" y="304.0" width="55.0" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="311.0" y="315.0" font-size="10.5" fill="#6b7079">40 人</text>
+<text x="0" y="337.0" font-size="11" fill="#4a4c46">EMRAL 2025（SiLaC）</text>
+<rect x="250" y="326.0" width="50.9" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="306.9" y="337.0" font-size="10.5" fill="#6b7079">37 人</text>
+<text x="0" y="359.0" font-size="11" fill="#4a4c46">Johnson 2022（PiLAC）</text>
+<rect x="250" y="348.0" width="48.1" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="304.1" y="359.0" font-size="10.5" fill="#6b7079">35 人</text>
+<text x="0" y="381.0" font-size="11" fill="#4a4c46">Sharaf 2024（SiLaC）</text>
+<rect x="250" y="370.0" width="41.2" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="297.2" y="381.0" font-size="10.5" fill="#6b7079">30 人</text>
+<text x="0" y="403.0" font-size="11" fill="#4a4c46">Spindler 2021（SiLaC）</text>
+<rect x="250" y="392.0" width="39.9" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="295.9" y="403.0" font-size="10.5" fill="#6b7079">29 人</text>
+<text x="0" y="425.0" font-size="11" fill="#4a4c46">Bonito 2021（SiLaC）</text>
+<rect x="250" y="414.0" width="37.1" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="293.1" y="425.0" font-size="10.5" fill="#6b7079">27 人</text>
+<text x="0" y="447.0" font-size="11" fill="#4a4c46">Romanova 2024（SiLaC）</text>
+<rect x="250" y="436.0" width="23.4" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="279.4" y="447.0" font-size="10.5" fill="#6b7079">17 人</text>
+<text x="0" y="469.0" font-size="11" fill="#4a4c46">Tran 2025（SiLaC）</text>
+<rect x="250" y="458.0" width="12.4" height="13" fill="#8a4a3d" opacity="0.85"/>
+<text x="268.4" y="469.0" font-size="10.5" fill="#6b7079">9 人</text>
+<text x="0" y="491.0" font-size="11" fill="#4a4c46">Meinero 2016（EPSiT）</text>
+<rect x="250" y="480.0" width="343.8" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="599.8" y="491.0" font-size="10.5" fill="#6b7079">250 人</text>
+<text x="0" y="513.0" font-size="11" fill="#4a4c46">Hinksman 2023（EPSiT）</text>
+<rect x="250" y="502.0" width="188.4" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="444.4" y="513.0" font-size="10.5" fill="#6b7079">137 人</text>
+<text x="0" y="535.0" font-size="11" fill="#4a4c46">Meinero 2019（EPSiT）</text>
+<rect x="250" y="524.0" width="167.8" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="423.8" y="535.0" font-size="10.5" fill="#6b7079">122 人</text>
+<text x="0" y="557.0" font-size="11" fill="#4a4c46">Erculiani 2022（EPSiT）</text>
+<rect x="250" y="546.0" width="158.1" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="414.1" y="557.0" font-size="10.5" fill="#6b7079">115 人</text>
+<text x="0" y="579.0" font-size="11" fill="#4a4c46">Gulcu 2021（EPSiT）</text>
+<rect x="250" y="568.0" width="118.2" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="374.2" y="579.0" font-size="10.5" fill="#6b7079">86 人</text>
+<text x="0" y="601.0" font-size="11" fill="#4a4c46">Giarratano 2017（EPSiT）</text>
+<rect x="250" y="590.0" width="105.9" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="361.9" y="601.0" font-size="10.5" fill="#6b7079">77 人</text>
+<text x="0" y="623.0" font-size="11" fill="#4a4c46">Manigrasso 2020（VAAPS）</text>
+<rect x="250" y="612.0" width="86.6" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="342.6" y="623.0" font-size="10.5" fill="#6b7079">63 人</text>
+<text x="0" y="645.0" font-size="11" fill="#4a4c46">Prato 2018（EPSiT）</text>
+<rect x="250" y="634.0" width="59.1" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="315.1" y="645.0" font-size="10.5" fill="#6b7079">43 人</text>
+<text x="0" y="667.0" font-size="11" fill="#4a4c46">Foti 2021（EPSiT）</text>
+<rect x="250" y="656.0" width="57.8" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="313.8" y="667.0" font-size="10.5" fill="#6b7079">42 人</text>
+<text x="0" y="689.0" font-size="11" fill="#4a4c46">Dotlacil 2021（EPSiT）</text>
+<rect x="250" y="678.0" width="23.4" height="13" fill="#2f6b62" opacity="0.85"/>
+<text x="279.4" y="689.0" font-size="10.5" fill="#6b7079">17 人</text>
+<line x1="250" y1="696" x2="800" y2="696" stroke="#e4e0d9" stroke-width="1"/>
+<rect x="250" y="709" width="11" height="11" fill="#8a4a3d" opacity="0.85"/>
+<text x="266" y="718" font-size="11" fill="#4a4c46">雷射組 SiLaC 19 篇</text>
+<rect x="382.47999999999996" y="709" width="11" height="11" fill="#2f6b62" opacity="0.85"/>
+<text x="398.47999999999996" y="718" font-size="11" fill="#4a4c46">內視鏡組 EPSiT 10 篇</text>
+<text x="0" y="742" font-size="10.5" fill="#6b7079">本頁自行加總：雷射組 1,744 人、內視鏡組 952 人、合計 2,696 人（原文未報告總人數）。</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 1 逐列人數。<b>怎麼讀：</b>條長＝該研究收案人數。可以一眼看出兩組都被少數幾篇大型回溯性研究主導，且雷射組的人數集中度更高。<b>陷阱：</b>原文<b>沒有報告任何一篇研究的個別事件數（分子／分母）</b>，只有森林圖影像，因此本頁<b>無法自行計算任何一篇研究的治癒率或復發率，也不做推估</b>；讀者若要驗算合併值，必須回頭去讀原始文獻。這也意味著本文的合併結果無法被第三方重現。
+  </div></div>
+
+  <div class="fig"><div class="svgbox">
+<svg viewBox="0 0 920 300" width="100%" height="300" font-family="-apple-system, BlinkMacSystemFont, PingFang TC, Noto Sans TC, sans-serif" role="img" aria-label="Fig. 5　納入研究的方法學品質與研究設計（NICE case-series 檢核表）">
+<rect x="0" y="0" width="920" height="300" fill="#faf9f6"/>
+<text x="0" y="18" font-size="13" font-weight="700" fill="#23241f">Fig. 5　納入研究的方法學品質與研究設計（NICE case-series 檢核表）</text>
+<line x1="54" y1="236.0" x2="900" y2="236.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="240.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text>
+<line x1="54" y1="199.2" x2="900" y2="199.2" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="203.2" font-size="10.5" fill="#6b7079" text-anchor="end">4</text>
+<line x1="54" y1="162.4" x2="900" y2="162.4" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="166.4" font-size="10.5" fill="#6b7079" text-anchor="end">8</text>
+<line x1="54" y1="125.6" x2="900" y2="125.6" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="129.6" font-size="10.5" fill="#6b7079" text-anchor="end">12</text>
+<line x1="54" y1="88.8" x2="900" y2="88.8" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="92.8" font-size="10.5" fill="#6b7079" text-anchor="end">16</text>
+<line x1="54" y1="52.0" x2="900" y2="52.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="46" y="56.0" font-size="10.5" fill="#6b7079" text-anchor="end">20</text>
+<text x="0" y="44" font-size="10.5" fill="#6b7079">篇數 studies</text>
+<rect x="90.6" y="199.2" width="44.0" height="36.8" fill="#8a4a3d" opacity="0.88"/>
+<text x="112.6" y="194.2" font-size="10.5" fill="#4a4c46" text-anchor="middle">4</text>
+<rect x="138.6" y="190.0" width="44.0" height="46.0" fill="#2f6b62" opacity="0.88"/>
+<text x="160.6" y="185.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">5</text>
+<text x="138.6" y="252.0" font-size="11" fill="#4a4c46" text-anchor="middle">方法學品質</text>
+<text x="138.6" y="265.0" font-size="11" fill="#4a4c46" text-anchor="middle">良好（7–8 分）</text>
+<rect x="259.8" y="98.0" width="44.0" height="138.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="281.8" y="93.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">15</text>
+<rect x="307.8" y="190.0" width="44.0" height="46.0" fill="#2f6b62" opacity="0.88"/>
+<text x="329.8" y="185.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">5</text>
+<text x="307.8" y="252.0" font-size="11" fill="#4a4c46" text-anchor="middle">方法學品質</text>
+<text x="307.8" y="265.0" font-size="11" fill="#4a4c46" text-anchor="middle">中等（4–6 分）</text>
+<rect x="429.0" y="236.0" width="44.0" height="0.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="451.0" y="231.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">0</text>
+<rect x="477.0" y="236.0" width="44.0" height="0.0" fill="#2f6b62" opacity="0.88"/>
+<text x="499.0" y="231.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">0</text>
+<text x="477.0" y="252.0" font-size="11" fill="#4a4c46" text-anchor="middle">方法學品質</text>
+<text x="477.0" y="265.0" font-size="11" fill="#4a4c46" text-anchor="middle">不良（0–3 分）</text>
+<rect x="598.2" y="199.2" width="44.0" height="36.8" fill="#8a4a3d" opacity="0.88"/>
+<text x="620.2" y="194.2" font-size="10.5" fill="#4a4c46" text-anchor="middle">4</text>
+<rect x="646.2" y="190.0" width="44.0" height="46.0" fill="#2f6b62" opacity="0.88"/>
+<text x="668.2" y="185.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">5</text>
+<text x="646.2" y="252.0" font-size="11" fill="#4a4c46" text-anchor="middle">前瞻性收案</text>
+<rect x="767.4" y="98.0" width="44.0" height="138.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="789.4" y="93.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">15</text>
+<rect x="815.4" y="190.0" width="44.0" height="46.0" fill="#2f6b62" opacity="0.88"/>
+<text x="837.4" y="185.0" font-size="10.5" fill="#4a4c46" text-anchor="middle">5</text>
+<text x="815.4" y="252.0" font-size="11" fill="#4a4c46" text-anchor="middle">回溯性收案</text>
+<line x1="54" y1="236" x2="900" y2="236" stroke="#e4e0d9" stroke-width="1"/>
+<rect x="54" y="277" width="11" height="11" fill="#8a4a3d" opacity="0.88"/>
+<text x="70" y="286" font-size="11" fill="#4a4c46">雷射組 SiLaC（19 篇）</text>
+<rect x="202.76" y="277" width="11" height="11" fill="#2f6b62" opacity="0.88"/>
+<text x="218.76" y="286" font-size="11" fill="#4a4c46">內視鏡組 EPSiT（10 篇）</text>
+<text x="900" y="286" font-size="10.5" fill="#6b7079" text-anchor="end">本頁自行由原文 Table 2 逐列統計</text>
+</svg>
+  </div>
+  <div class="cap">
+    <b>資料來源：</b>原文 Table 2（NICE case-series 品質檢核表 8 項）。<b>怎麼讀：</b>29 篇中 <b>9 篇（31.0%，本頁自行計算）</b>為良好、<b>20 篇（69.0%）</b>為中等、0 篇不良；同樣 9 篇為前瞻性收案。內視鏡組的品質分布明顯較好（10 篇中 5 篇良好、5 篇前瞻），雷射組則 19 篇中僅 4 篇良好。<b>陷阱：</b>原文 Table 2 中「多中心研究」一欄，29 篇裡只有 <b>2 篇</b>（Prato 2018、Meinero 2016）得 1 分，其餘 27 篇全是單中心；而 Limitations 卻寫「<b>all studies included in this systematic review are of retrospective design</b>」——這與 Table 1／Table 2 明列的 9 篇前瞻性研究直接矛盾，是本文第三處內部不一致。
+  </div></div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼</span></h2>
+
+  <h3>一、這篇論文能改變什麼、不能改變什麼</h3>
+  <div class="call amber">
+    <div class="h">先把結論的效力講清楚</div>
+    這是<b>間接比較</b>：兩組病人來自不同醫院、不同年代、不同國家，從未被隨機分配，也從未在同一篇研究裡被比較過。因此本文<b>不能</b>用來說「雷射不劣於內視鏡」，只能說「<b>兩種術式各自的成績單長得差不多，而現有證據沒有能力分辨誰比較好</b>」。臨床上真正可用的一句話是：<b>如果你的醫院只有其中一種設備，本文沒有給你任何理由要為了另一種術式而轉診病人。</b>
+  </div>
+
+  <h3>二、誰適合、換來什麼、代價是什麼</h3>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>術式</th><th>誰適合</th><th>換來什麼</th><th>代價是什麼</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>雷射閉合 SiLaC</b><br><span style="color:#6b7079;font-size:12.5px">亦稱 SiLaT／PiLaC／PiLaT／LaPSe</span></td>
+        <td>單純、竇道結構不複雜的原發性藏毛竇；門診／日間手術取向、希望盡快返回工作或校園的年輕族群；院內已有雷射光纖設備者</td>
+        <td>手術時間短（合併 18.0 分，比內視鏡少約 12 分）；免除特殊內視鏡器械與額外訓練；設備門檻與整體治療成本較低（原文 Discussion 引用）</td>
+        <td>治癒率 86%（意即<b>約每 7 人有 1 人未達治癒</b>）、復發率 11%；<b>看不見竇道分支</b>，若有側支或殘留毛髮可能清創不全；癒合時間合併 30.1 天，並未比較短</td>
+      </tr>
+      <tr>
+        <td><b>內視鏡治療 EPSiT</b><br><span style="color:#6b7079;font-size:12.5px">亦含 VAAPS</span></td>
+        <td>竇道走向複雜、疑似有側支或多個外開口；復發型藏毛竇（本文中 2 篇專收復發型病人的研究皆在此組）；院內已備 fistuloscope 系統且術者受過訓練</td>
+        <td><b>直視下</b>探查並清除竇道內毛髮與肉芽組織，理論上較不易遺漏分支；治癒率 88%、復發率 9%、併發症率 7%（點估計皆略優，但區間重疊）</td>
+        <td>手術時間長約 12 分鐘；需購置專用內視鏡系統並額外訓練，<b>整體治療成本較高</b>（原文明確指出）；本文所有優勢皆未達可辨識的統計差異</td>
+      </tr>
+      <tr>
+        <td><b>E-SiLaC（兩者併用）</b></td>
+        <td colspan="3">ISoLP 立場書建議「個別化評估以找出可能受益者」。<b>本文以排除條件把這類病人全部排除在外</b>，故本頁無法提供任何合併數據。原文 Discussion 引述的證據亦互相矛盾：Bilgin 等（106 人，其中 73 人接受併用）<b>未發現</b>疼痛、恢復時間、併發症、再入院、復發、滿意度有任何改善；Ouali 等則報告 3 週內 95% 完全上皮化、6 個月復發率 3.3%。</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <h3>三、知情同意怎麼談（建議措辭）</h3>
+  <div class="call teal">
+    <div class="h">可以這樣說</div>
+    「您的尾骶部藏毛竇要處理，目前的微創做法有兩種：一種是<b>用雷射把竇道燒灼封閉</b>，另一種是<b>把細的內視鏡放進竇道、在看得見的情況下把裡面的毛髮和肉芽清掉</b>。<b>就目前全世界最好的整理資料來看，這兩種做法的成功率大約都是八成五到九成、復發率大約一成、併發症大約一成以內，兩者的差別小到研究還分不出來。</b>差別比較明顯的只有手術時間，雷射大概快十分鐘左右。<br><br>所以我不會說哪一種比較好，我會建議用<b>您的竇道長什麼樣子</b>來決定：如果只有一兩個開口、結構單純，雷射就很夠；如果開口多、之前開過刀又復發，我會偏好用內視鏡進去看清楚再清，因為看得見比較不會漏掉分支。<br><br>但有兩件事一定要先講：<b>第一，不管哪一種，大約每七到十個人就會有一個沒有完全治好或日後復發，需要再處理一次</b>，這不是失誤，是這個疾病本身的特性；<b>第二，傷口完全癒合平均要四週左右</b>，不是幾天就好，這段期間要配合除毛、保持乾燥、避免久坐。這些術後照護做不做得到，對復發率的影響可能比選哪一種術式還大。」
+  </div>
+
+  <h3>四、實務上真正該問的三個問題</h3>
+  <ul class="clean">
+    <li><b>你的醫院有哪一種設備、誰比較熟？</b>——本文最誠實的結論就寫在最後一句：「The selection of surgical modality should be individualized, comprehensively considering equipment availability, surgeon proficiency, and patient preference.」</li>
+    <li><b>這個病人是原發還是復發？</b>——本文的兩組族群在這一點上並不對等（內視鏡組含 2 篇純復發型研究），若你的病人是復發型，直接套用本文的 9% 復發率會低估風險。</li>
+    <li><b>術後照護能不能落實？</b>——藏毛竇的復發與肥胖、久坐、多毛、局部刺激密切相關（原文 Introduction）。本文完全沒有分析任何一項病人層級的危險因子，也沒有次群組分析。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>根本限制：沒有任何一篇直接比較的研究。</b>原文明白寫道「The current literature is void of publications with direct comparisons between SiLaC and EPSiT」，因此本文所有「比較」都是把兩組獨立的單臂合併值放在一起用眼睛看。這種設計<b>無法控制任何組間的基準差異</b>（年齡、BMI、竇道複雜度、原發或復發、醫院層級、年代），得到的「差不多」只是「看起來差不多」。</li>
+    <li><b>摘要與 Results 內文有三處數字不一致。</b>（a）SiLaC 併發症率：摘要 10%（7–14）、I² 79.6%；內文 9%（6–12）、I² 74.6%。（b）SiLaC 癒合時間信賴區間：摘要 22.73–37.43；內文 25.86–38.19。（c）SiLaC 癒合時間 I²：摘要 99.2%；內文 98.6%。<b>三處都在雷射組</b>，讀者引用時務必註明出處是摘要或內文。</li>
+    <li><b>Limitations 自述與 Table 1 直接矛盾。</b>原文寫「all studies included in this systematic review are of <b>retrospective</b> design」，但 Table 1／Table 2 明列 <b>9 篇前瞻性研究</b>（Al-Khazraji、Pappas、Johnson、Gulcu、Meinero 2019、Georgiou、Prato、Giarratano、Meinero 2016）。</li>
+    <li><b>Methods 描述的分析未被執行。</b>Methods 寫將計算 risk ratio 與 95% CI，但 Results 全文<b>沒有出現任何一個 RR</b>。同時 Methods 未說明單臂比例合併採用何種變異數穩定轉換（Freeman–Tukey？logit？），也未報告 τ² 或預測區間。</li>
+    <li><b>異質性全面失控。</b>五個結果、十個合併值的 I² 落在 <b>74.6–99.4%</b>：手術時間 99.4/98.5、癒合時間 99.2/90.9、治癒率 92/87.1、復發率 90.4/82.9、併發症 79.6/74.7。在 I² &gt; 90% 的情況下報告一個點估計，統計上幾乎沒有意義；原文<b>未做任何次群組分析或統合迴歸</b>去解釋異質性來源。</li>
+    <li><b>「治癒」與「復發」的定義未統一。</b>各研究的追蹤長度差異極大（有些僅數月），而藏毛竇的復發可以晚至術後數年才出現；<b>追蹤愈短、復發率看起來愈低</b>。原文既未報告各研究的追蹤時間，也未做追蹤長度的敏感度分析。</li>
+    <li><b>術式命名混雜。</b>「雷射組」實際上把 SiLaC、SiLaT、PiLaC、PiLaT、LaPSe 五種名稱、不同波長與能量參數的技術合併為一；「內視鏡組」則把 EPSiT 與 VAAPS 合併。這些在能量設定、清創徹底程度上並不可互換。</li>
+    <li><b>族群不對等：復發型病人的分布偏斜。</b>內視鏡組有 Meinero 2019（122 人）與 Manigrasso 2020（63 人）共 185 人（占該組 19.4%，本頁自行計算）為復發型藏毛竇；雷射組僅 EMRAL 2025（37 人，占 2.1%）。這會<b>系統性地低估內視鏡的真實表現</b>。</li>
+    <li><b>刻意排除併用術式。</b>PICOS 明訂排除「將所評估術式與其他手術方法併用者」，因此臨床上正在興起的 E-SiLaC 完全不在本文範圍內；讀者不能把本文結論外推到併用情境。</li>
+    <li><b>未報告任何個別研究的分子／分母。</b>合併值無法被第三方重現驗算，本頁因此對所有單篇比率一律標示「原文未列數值（僅以森林圖影像呈現）」，不做推估。</li>
+    <li><b>發表偏差完全未評估。</b>原文未做漏斗圖，也未做 Egger 檢定。單臂研究的發表偏差通常比比較性研究更嚴重——成績不好的個案系列往往不會被寫出來。</li>
+    <li><b>成本效益僅在 Discussion 以文字論述，未做正式分析</b>（原文自承 formal cost-effectiveness analysis was beyond the scope）。「內視鏡較貴」這個結論在本文中沒有任何量化依據。</li>
+    <li><b>本文完全未評估：</b>術後疼痛分數、返回工作／上學時間、美觀與疤痕、生活品質、病人滿意度、長期（&gt; 1 年）復發、肥胖／多毛等危險因子的次群組效應。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss"><dl>
+<div class="gl-row"><dt>藏毛竇疾病　<span class="en">pilonidal sinus disease, PSD</span></dt><dd>好發於尾骶部（sacrococcygeal region）的慢性疾病，年發生率約每 10 萬人 26 例，以年輕男性居多。急性期表現為腫脹疼痛，慢性期則為持續分泌物。</dd></div>
+<div class="gl-row"><dt>雷射相關竇道閉合術　<span class="en">sinus laser associated closure, SiLaC</span></dt><dd>將雷射光纖置入竇道，以熱能消融並使竇道閉合的微創術式。同義／近義名稱包括 SiLaT、PiLaC、PiLaT、LaPSe。</dd></div>
+<div class="gl-row"><dt>內視鏡藏毛竇治療　<span class="en">endoscopic pilonidal sinus treatment, EPSiT</span></dt><dd>Meinero 於 2013 年首創，以 fistuloscope（竇道鏡）系統在直視下清除竇道內的毛髮與肉芽組織。</dd></div>
+<div class="gl-row"><dt>影像輔助消融藏毛竇術　<span class="en">video-assisted ablation of pilonidal sinus, VAAPS</span></dt><dd>與 EPSiT 原理相同的影像輔助內視鏡清創術式，本文歸入內視鏡組。</dd></div>
+<div class="gl-row"><dt>E-SiLaC</dt><dd>EPSiT 與 SiLaC 併用的合併術式。ISoLP 立場書建議個別化評估適用對象，<b>但被本文的排除條件排除在外</b>。</dd></div>
+<div class="gl-row"><dt>國際雷射肛門直腸醫學會　<span class="en">International Society of Laser Proctology, ISoLP</span></dt><dd>發表 SiLaC 與 E-SiLaC 標準化立場書的國際專家組織；該立場書自承現有證據「limited to small retrospective series」。</dd></div>
+<div class="gl-row"><dt>單臂統合分析　<span class="en">single-arm meta-analysis</span></dt><dd>把只有一組（沒有對照）的研究之比率或平均值合併起來的方法。<b>只能描述某一術式的成績，不能做組間推論。</b></dd></div>
+<div class="gl-row"><dt>間接比較　<span class="en">indirect comparison</span></dt><dd>在缺乏頭對頭研究時，把兩組獨立的合併值放在一起對照。<b>未經隨機化保護，容易被組間基準差異扭曲。</b></dd></div>
+<div class="gl-row"><dt>合併比例　<span class="en">pooled proportion</span></dt><dd>以隨機效應模型合併多篇研究的比率。因為是單一比例而非兩組相比，森林圖<b>沒有無效線</b>。</dd></div>
+<div class="gl-row"><dt>異質性指標　<span class="en">I² statistic</span></dt><dd>研究間差異占總變異的百分比。&gt; 50% 視為顯著異質，&gt; 75% 為高度異質。本文十個合併值全部 &gt; 74%。</dd></div>
+<div class="gl-row"><dt>隨機效應模型　<span class="en">random-effects model</span></dt><dd>假設各研究的真實效果不同、來自同一分布的合併模型。異質性高時仍可計算，但合併值的臨床詮釋力會大幅下降。</dd></div>
+<div class="gl-row"><dt>NICE 個案系列品質檢核表　<span class="en">NICE quality assessment checklist for case series</span></dt><dd>英國國家健康暨照護卓越研究院發展的 8 項檢核表：多中心、目標明確、納入排除條件、結果定義、前瞻收案、連續收案、結果描述、分層報告。7–8 分＝良好、4–6 分＝中等、0–3 分＝不良。</dd></div>
+<div class="gl-row"><dt>竇道鏡　<span class="en">fistuloscope</span></dt><dd>可彎曲的細徑內視鏡，用於進入竇道或瘻管內部進行直視下沖洗與清創。</dd></div>
+<div class="gl-row"><dt>系統性回顧與統合分析報告準則　<span class="en">PRISMA</span></dt><dd>Preferred Reporting Items for Systematic Reviews and Meta-Analyses，規範系統性回顧報告內容的國際準則。</dd></div>
+<div class="gl-row"><dt>國際前瞻性系統性回顧註冊平台　<span class="en">PROSPERO</span></dt><dd>系統性回顧的事前註冊資料庫，用以降低事後更改研究計畫造成的偏差。本文註冊編號 CRD420251274562。</dd></div>
+  </dl></div>
+</section>
+
+<section id="src">
+  <h2>Source <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <ul class="clean">
+    <li><b>原始論文：</b>Li Z, Jin L, Ouali M, de Parades V, Wang Z, Wu J, Ambe PC. <em>A systematic review and meta-analysis of sinus laser associated closure (SiLaC) versus endoscopic pilonidal sinus treatment (EPSiT) in the management of pilonidal sinus disease.</em> Langenbecks Arch Surg. 2026;411(1). DOI：<a href="https://doi.org/10.1007/s00423-026-04026-1">10.1007/s00423-026-04026-1</a>　·　<a href="https://pubmed.ncbi.nlm.nih.gov/41964736/">PubMed PMID 41964736</a></li>
+    <li><b>取用途徑：</b>本頁內容全部取自 PubMed 與 PubMed Central 開放取用全文（PMC13180761）。文獻檢索與全文取得均透過 PubMed／PMC。</li>
+    <li><b>圖表重繪聲明：</b>本頁 Fig. 1–5 皆為<b>依原文文字敘述、Table 1 與 Table 2 之數據重新繪製的向量圖（inline SVG／HTML）</b>，未嵌入、未翻拍、未連結原文任何 Figure 影像。原文 Figure 1–11（PRISMA 流程圖與 10 張森林圖）請至上方 DOI 連結查閱。</li>
+    <li><b>自行計算之數值：</b>凡標示「本頁自行計算」者，皆由原文表列數字直接加減乘除而得，包括：雷射組合計 1,744 人、內視鏡組合計 952 人、總計 2,696 人；手術時間差 12.09 分；癒合時間差 3.53 天；良好品質研究 9/29（31.0%）；前瞻性研究 9/29（31.0%）；復發型病人占比。<b>原文未報告任何組間統計比較，本頁亦不做任何推估。</b></li>
+    <li><b>免責：</b>本頁為文獻閱讀輔助，不構成臨床指引或治療建議。所有臨床決策請回歸原始文獻、現行指引與個別病人狀況判斷。</li>
+  </ul>
+</section>
+
+</div>
+</body>
+</html>
