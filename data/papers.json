@@ -1,7 +1,57 @@
 {
- "count": 7,
- "latest": "2026-08-01",
+ "count": 9,
+ "latest": "2026-08-02",
  "papers": [
+  {
+   "id": "pubmed-gs-txp-2026-08-02",
+   "file": "papers/pubmed-gs-txp-2026-08-02.html",
+   "date": "2026-08-02",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 004",
+   "title": "機器人輔助 vs. 開腹腎臟移植：6 篇系統性回顧／統合分析的傘狀綜論——周術期結果改善，移植腎存活不變",
+   "title_en": "Robot-assisted versus open kidney transplantation: an umbrella review of systematic reviews and meta-analyses",
+   "journal": "Journal of Robotic Surgery 2026;20(1)（Open Access）",
+   "authors": "Madi R, Helou E Hôtel-Dieu de France 醫院泌尿科／Saint-Joseph University of Beirut 醫學院（黎巴嫩貝魯特）",
+   "design": "傘狀綜論 Umbrella review（綜論之綜論） 納入 6 篇綜論（4 篇統合分析＋2 篇系統性回顧，2017–2023 年發表）；涵蓋 32 篇不重複原始研究、共 71 次納入；AMSTAR-2 品質評估；CCA 重疊度 24.4%；未事前註冊於 PROSPERO",
+   "doi": "10.1007/s11701-026-03677-y",
+   "category": "移植外科",
+   "tags": [
+    "移植外科",
+    "機器人輔助腎臟移植 RAKT",
+    "傘狀綜論 Umbrella review",
+    "底層證據：至今零篇 RAKT vs. OKT 隨機試驗",
+    "Open Access"
+   ],
+   "tldr": "這篇傘狀綜論把 6 篇關於機器人輔助腎臟移植（RAKT）vs. 開腹腎臟移植（OKT）的綜論放在一起檢視，結論相當一致：RAKT 在出血量、傷口長度、術後疼痛、手術部位感染（SSI，4 篇統合分析的 RR 介於 0.15–0.33，全部顯著）與淋巴囊腫上明顯較佳，代價是冷缺血時間多約 5 分鐘、復溫時間多約 11–21 分鐘、總缺血時間多約 16–18 分鐘；而移植腎排斥、移植腎失敗、延遲移植腎功能（DGF）與全因死亡率在兩者之間完全沒有差異。但真正該記住的是三個「品質面」的數字：6 篇綜論沒有一篇被 AMSTAR-2 評為高品質（2 篇 moderate、2 篇 moderate-to-low、2 篇 low）、底層 32 篇原始研究至今沒有任何一篇隨機對照試驗、以及CCA 重疊度高達 24.4%（本頁自行驗算 (71−32)/(32×6−32) ＝ 24.4% ✓）——意思是這 6 篇",
+   "bytes": 93142
+  },
+  {
+   "id": "pubmed-crs-2026-08-02",
+   "file": "papers/pubmed-crs-2026-08-02.html",
+   "date": "2026-08-02",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 005",
+   "title": "右側惡性大腸阻塞的初始處置：立即手術 vs. 支架／減壓造口／減壓管作為橋接手術——18 篇研究、7,205 人的貝氏網絡統合分析",
+   "title_en": "Initial management strategies for right-sided malignant colonic obstruction: a systematic review and bayesian network meta-analysis",
+   "journal": "World Journal of Surgical Oncology 2026;24(1)（Open Access, CC BY）",
+   "authors": "Kitaguchi D, Forgione A, Innocenzi C, Yang Y, Espínola Schulze F, Dox I, Giménez M, Oda T, Marescaux J IRCAD France（法國史特拉斯堡）；University of Tsukuba（日本筑波）；Fondazione Policlinico Universitario A. Gemelli IRCCS（義大利羅馬）",
+   "design": "系統性回顧 ＋ 貝氏隨機效應網絡統合分析（PRISMA-NMA） 18 篇全部為回溯性非隨機世代研究 / 7,205 人；未納入任何 RCT；PROSPERO CRD420251234425；SUCRA 排序＋node-splitting 一致性檢定；ROBINS-I 偏誤評估",
+   "doi": "10.1186/s12957-026-04303-9",
+   "category": "大腸直腸癌手術與腫瘤學",
+   "tags": [
+    "大腸直腸癌手術與腫瘤學",
+    "急診大腸直腸外科 Emergency colorectal surgery",
+    "橋接手術 Bridge to surgery",
+    "證據等級：18/18 為回溯性研究，14 篇 ROBINS-I 為 serious",
+    "Open Access"
+   ],
+   "tldr": "在 18 篇回溯性研究、7,205 位「可治癒性」右側惡性大腸阻塞（RMCO）病人中，整體術後併發症率 28.6%、術後死亡率 5.1%，而幾乎所有死亡都發生在立即手術組；貝氏網絡統合分析顯示支架作為橋接手術（stent as BTS）相較立即手術可降低術後死亡率（RR 0.33，95% CrI 0.10–0.75；6.6% → 0.9%）與切除後造口率（RR 0.41，0.21–0.78；11.8% → 2.3%），但整體併發症與總體存活率則三組皆無差異；真正要記住的兩件事是——本研究沒有任何一篇隨機試驗、14/18 篇偏誤風險為 serious，因此這是「值得在高死亡風險病人身上認真考慮」的假說級證據，而不是可以取代右側阻塞標準處置的定論；且減壓造口在右側阻塞完全看不到左側阻塞那樣的好處，反而在造口率排名墊底。",
+   "bytes": 70341
+  },
   {
    "id": "pubmed-gs-breast-2026-08-01",
    "file": "papers/pubmed-gs-breast-2026-08-01.html",
