@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-03</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 3 日 · 週一</span>
+    <span style="opacity:.4">/</span><span>Vol. 005</span>
+  </div>
+  <h1 class="title">未滿 12 個月嬰兒腸套疊的超音波導引水壓灌腸復位：22 篇研究、2,656 名嬰兒的系統性回顧與統合分析——成功率 80%、復發 8%、穿孔 2%</h1>
+  <p class="title-en">Ultrasound-guided hydrostatic enema reduction for intussusception in children younger than 12 months: a systematic review and meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Pediatric Surgery International<br><span style="color:#6b7079;font-size:13px">2026;42(1)（Open Access，PMC13427986）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Alansari AN, Messaoud M, Zaazouee MS, Youssif H, Albaghdady A<br><span style="color:#6b7079;font-size:13px">通訊：Hamad Medical Corporation 小兒外科（卡達 Doha）；共同作者分屬突尼西亞 Monastir、埃及 Al-Azhar／Ain Shams、利比亞 Benghazi</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026-07-31（PMID 42536183）</div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧與單臂比例統合分析</b>（Single-arm proportional meta-analysis）<br><span style="color:#6b7079;font-size:13px">五個資料庫檢索至 2026 年 1 月；納入 22 篇（<b>21 篇觀察性研究 ＋ 僅 1 篇 RCT</b>）；隨機效應模型；R 語言分析；PROSPERO 註冊 CRD420261294714；品質評估採 NOS／NIH／Cochrane RoB；證據等級以 GRADE 評定</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s00383-026-06546-9">10.1007/s00383-026-06546-9</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42536183/">PMID 42536183 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">小兒外科</span>
+    <span class="tag t2">腸套疊 Intussusception</span>
+    <span class="tag t2">非手術復位 Nonoperative reduction</span>
+    <span class="tag t3">GRADE 證據等級：三個結果<b>全部為 low</b></span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">納入研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#sub">次群組分析</a>
+  <a href="#raw">原始數據與本頁重繪圖</a><a href="#flags">原文數值不一致之處</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>這是<strong>第一篇專門針對「未滿 12 個月嬰兒」的超音波導引水壓灌腸復位（ultrasound-guided hydrostatic enema reduction, UGHR）統合分析</strong>，22 篇研究、約 2,656 名嬰兒，得到三個核心數字：<strong>復位成功率 80%（95% CI 74–85）、復發率 8%（5–12）、腸穿孔率 2%（1–5）</strong>——足以支持「血行動力學穩定、無腹膜炎徵象的嬰兒，第一線就用 UGHR，而不必先讓他吃輻射」。但三個數字全部帶著<strong>高度異質性（I² 分別為 83%、86.7%、59%）</strong>，GRADE 也<strong>三個結果全部評為 low</strong>——因為 22 篇裡<strong>只有 1 篇是隨機對照試驗</strong>，其餘全是回溯性研究。真正該記住的臨床訊號是<strong>唯一達統計顯著的次群組效應：腸穿孔率在中低所得國家為 7%（3–17），而中高所得 1%、高所得 1%（次群組 p ＝ 0.0019）</strong>——這不是嬰兒生理的差異，而是<strong>就醫延遲與操作者經驗的差異</strong>，也正是台灣醫學中心可以直接對應到「症狀超過 48–72 小時、腹脹明顯者不要硬做灌腸、直接找外科」這條實務規則的地方。另外請注意兩個誠實的警訊：<strong>復發率的 Egger 檢定顯示有發表偏誤（p ＝ 0.040）</strong>，而<strong>唯一那篇 RCT 的成功率只有 65%，比整體 80% 低了 15 個百分點</strong>。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background and objectives</h4>
+    <p>Intussusception is the most common cause of bowel obstruction in infancy and may lead to substantial morbidity. This systematic review and meta-analysis evaluated success, recurrence, and perforation rates of ultrasound-guided hydrostatic enema reduction (UGHR) in infants younger than 12 months.</p>
+    <h4>Methods</h4>
+    <p>A systematic search was performed from database inception through January 2026. A random-effects model was applied to generate pooled estimates. Analyses, including subgroup analyses by sedation status, study design, and country income level, were conducted in R, and certainty of evidence was appraised.</p>
+    <h4>Results</h4>
+    <p>Twenty-two studies, including 2656 infants, met the inclusion criteria. The pooled success rate was 80%, the recurrence rate was 8%, and the perforation rate was 2%. Subgroup analysis demonstrated no significant effect of sedation status or study design on outcomes, whereas income level was significantly associated with perforation risk. Substantial heterogeneity was observed across outcomes. Overall certainty of evidence was low.</p>
+    <h4>Conclusions</h4>
+    <p>UGHR demonstrates a clinically meaningful success rate with an acceptable safety profile in infants under 12 months, supporting its role as a safe and effective non-surgical treatment in hemodynamically stable patients. Standardized global protocols and high-quality prospective multicenter studies are needed to optimize outcomes and strengthen the evidence base.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用，未做任何刪改。中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程（依原文 Results 文字與 Fig. 1 敘述重繪）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（資料庫建立至 2026 年 1 月，僅收英文文獻）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">220</span> 筆資料庫檢索紀錄<br>
+        <span style="color:#6b7079;font-size:12.5px">PubMed 56 ＋ Cochrane Library 5 ＋ Scopus 60 ＋ Web of Science 28 ＋ Embase 71；另手動檢視納入文獻之參考文獻清單</span></div></div>
+      <div class="pr-ex">扣除重複 <span class="n">19</span> 筆<br><span style="font-size:12px">本頁自行驗算：56＋5＋60＋28＋71 ＝ 220 ✓</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Screening 標題與摘要篩選</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">201</span> 筆進入標題／摘要篩選<br>
+        <span style="color:#6b7079;font-size:12.5px">由兩位審查者獨立進行，歧異以討論取得共識</span></div></div>
+      <div class="pr-ex">排除 <span class="n">158</span> 筆<br><span style="font-size:12px">本頁自行計算：201 − 43 ＝ 158（原文未直接列出此數）</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">43</span> 篇取得全文評讀<br>
+        <span style="color:#6b7079;font-size:12.5px">原文特別註明「all of which were successfully obtained」——<b>零篇全文取得失敗</b></span></div></div>
+      <div class="pr-ex">排除 <span class="n">21</span> 篇：<br>病例報告 4、綜論 3、<b>年齡超過 12 個月不符 14</b><br><span style="font-size:12px">本頁自行驗算：4＋3＋14 ＝ 21；43 − 21 ＝ 22 ✓</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">22</span> 篇納入質性整合<br>
+        <span style="color:#6b7079;font-size:12.5px">約 <b>2,656</b> 名嬰兒；成功率分析 19 篇、復發率分析 14 篇、穿孔率分析 8 篇；研究年份跨 1994–2026；橫跨中國、印度、奈及利亞、埃及、尼泊爾、澳洲、以色列、巴基斯坦、泰國、迦納、義大利、南韓</span></div></div>
+      <div class="pr-ex">研究設計分布：<br>回溯性世代 15 篇、前瞻性世代 2 篇、橫斷面 1 篇、前瞻性病例系列 1 篇、回溯性病例對照 2 篇、<b>RCT 僅 1 篇</b></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:14px;line-height:1.7"><b>怎麼讀：</b>這張 PRISMA 的數字全部內部一致（本頁已逐階段驗算，見上方各格），這在統合分析裡並不常見，值得肯定。但請注意<b>兩個決定了外推性的篩選條件</b>：一是<b>只收英文文獻</b>——腸套疊發生率最高、水壓灌腸經驗最豐富的地區（中國、日本、韓國）有大量非英文文獻被排除在外；二是<b>納入設計極為寬鬆</b>，世代研究、病例對照、橫斷面、病例系列、RCT 通通收，連 <b>n ＝ 8</b> 的病例系列都納入。<b>陷阱：</b>三個結果的<b>分析篇數與分母互不相同</b>（成功率 19 篇／1,647 人、復發率 14 篇／1,831 人、穿孔率 8 篇／1,757 人）——<b>篇數較少的復發率與穿孔率，分母反而比成功率大</b>。這在邏輯上是可能的（大型研究可能只報告部分結果），但也代表<b>這三個數字不是同一群嬰兒的三個面向，不能拿來互相推算</b>（例如不能說「80% 成功、8% 復發」就等於「約 6.4% 的嬰兒先成功後復發」）。本頁已將此列為原文數值需留意之處，詳見後段。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Included Studies <span class="zh">／ 納入 22 篇研究特徵表（原文 Table 1 完整內容）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:1180px">
+      <thead><tr><th>研究／年份</th><th>復位方式</th><th>總樣本</th><th>國家</th><th>研究設計</th><th>研究期間</th><th>年齡（月，平均或分布）</th><th>男性 n</th><th>腸套疊位置 n（%）</th><th>症狀持續時間（小時）</th></tr></thead>
+      <tbody>
+        <tr><td class="num"><b>Qiang 2026</b></td><td class="num">UGHR</td><td class="num">257</td><td class="num">中國</td><td class="num">回溯性世代</td><td class="num">2021/01–2025/08</td><td class="num">＜12，257（100%）</td><td class="num na">未列</td><td class="num na">未列</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Soundharya 2025</b></td><td class="num">UGHR</td><td class="num">47</td><td class="num">印度</td><td class="num">回溯性世代</td><td class="num">2016/01–2018/12</td><td class="num">＜12，47（45.63%）</td><td class="num na">未列</td><td class="num">迴腸結腸型</td><td class="num">＜48</td></tr>
+        <tr><td class="num"><b>Yadav 2025</b></td><td class="num">UGHR</td><td class="num">84</td><td class="num">尼泊爾</td><td class="num">橫斷面</td><td class="num">2023/02–2024/07</td><td class="num">＜12，67（82.72%）</td><td class="num">60</td><td class="num">迴腸結腸 74（88）；結腸結腸 8（9.5）；迴腸迴腸 2（2.4）</td><td class="num">≤24：30（37%）；24–48：39（48%）；＞48：12（14.8%）</td></tr>
+        <tr><td class="num"><b>Tang 2024</b></td><td class="num">UGHR</td><td class="num">15</td><td class="num">中國</td><td class="num">回溯性世代</td><td class="num na">未列</td><td class="num">≤10.5，1172（23.6%）<span style="color:#8a4a3d">※見數值檢查</span></td><td class="num na">未列</td><td class="num na">未列</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Binu 2023</b></td><td class="num">UGHR</td><td class="num">108</td><td class="num">澳洲</td><td class="num">回溯性世代</td><td class="num">2012–2020</td><td class="num">12</td><td class="num na">未列</td><td class="num">迴腸結腸 108（100）</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Chukwu 2022</b>（唯一 RCT）</td><td class="num">UGHR 26 vs. <b>UGPR 26</b></td><td class="num">52</td><td class="num">奈及利亞</td><td class="num"><b>隨機對照試驗</b></td><td class="num">2018/12–2020/08</td><td class="num">1–12</td><td class="num">16 vs. 19</td><td class="num">迴腸結腸 26（100）vs. 26（100）</td><td class="num">72 ± 48.9 vs. 76.8 ± 38.8</td></tr>
+        <tr><td class="num"><b>Ali 2022</b></td><td class="num">UGHR</td><td class="num">55</td><td class="num">巴基斯坦</td><td class="num">回溯性病例對照</td><td class="num na">未列</td><td class="num">12</td><td class="num">34</td><td class="num na">未列</td><td class="num">＜72：40（72.73%）；＞72：15（27.23%）</td></tr>
+        <tr><td class="num"><b>Zhang 2022</b></td><td class="num">UGHR</td><td class="num">71</td><td class="num">中國</td><td class="num">回溯性病例對照</td><td class="num">2019/01–2021/04</td><td class="num">＜12，71（28.4%）</td><td class="num na">未列</td><td class="num">迴腸結腸 71（100）</td><td class="num">≤24</td></tr>
+        <tr><td class="num"><b>Yu 2021</b></td><td class="num">UGHR</td><td class="num">178</td><td class="num">中國</td><td class="num">回溯性世代</td><td class="num na">未列</td><td class="num">＜12，178（77%）</td><td class="num na">未列</td><td class="num">迴腸結腸 178（100）</td><td class="num">9 ± 5.33</td></tr>
+        <tr><td class="num"><b>Chukwubuike 2020</b></td><td class="num">UGHR</td><td class="num">20</td><td class="num">奈及利亞</td><td class="num">回溯性世代</td><td class="num">2017/10–2019/03</td><td class="num">＜12，20（100%）</td><td class="num">16</td><td class="num">迴腸結腸 16（80）；迴腸迴腸 4（20）</td><td class="num">＜24：3（15%）；24–48：8（40%）；＞48：9（45%）</td></tr>
+        <tr><td class="num"><b>Sarma 2020</b></td><td class="num">UGHR</td><td class="num">152</td><td class="num">印度</td><td class="num">回溯性世代</td><td class="num">2017/01–2017/12</td><td class="num">11</td><td class="num">94（分母 176）</td><td class="num">迴腸結腸 152（100）</td><td class="num">平均 48</td></tr>
+        <tr><td class="num"><b>Sacks 2020</b></td><td class="num">UGHR</td><td class="num">338</td><td class="num">以色列</td><td class="num">回溯性世代</td><td class="num">1998–2018</td><td class="num">11.1</td><td class="num">213</td><td class="num">迴腸結腸 338（100）</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Shen 2018</b></td><td class="num">UGHR</td><td class="num">660</td><td class="num">中國</td><td class="num">回溯性世代</td><td class="num">2010/01–2017/12</td><td class="num">＜12，660（36.81%）</td><td class="num na">未列</td><td class="num na">未列</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Talabi 2018</b></td><td class="num">UGHR</td><td class="num">35</td><td class="num">奈及利亞</td><td class="num">前瞻性世代</td><td class="num">2016/01–2017/06</td><td class="num">＜35，35（77.78%）<span style="color:#8a4a3d">※見數值檢查</span></td><td class="num na">未列</td><td class="num">迴腸結腸與結腸結腸</td><td class="num">多數 ＜24</td></tr>
+        <tr><td class="num"><b>Eraki 2017</b></td><td class="num">UGHR</td><td class="num">50</td><td class="num">埃及</td><td class="num">回溯性世代</td><td class="num">2011/04–2013/04</td><td class="num">12</td><td class="num na">未列</td><td class="num">迴腸結腸與迴腸迴腸</td><td class="num">＜24：50（100%）</td></tr>
+        <tr><td class="num"><b>Khorana 2015</b></td><td class="num">UGHR 59 vs. <b>PR 111</b></td><td class="num">170</td><td class="num">泰國</td><td class="num">回溯性世代</td><td class="num">2006/01–2012/12</td><td class="num">9</td><td class="num">39 vs. 75</td><td class="num">迴腸結腸與迴腸迴腸</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>He 2014</b></td><td class="num">UGHR</td><td class="num">288</td><td class="num">中國</td><td class="num">回溯性世代</td><td class="num">逾 3 年</td><td class="num">＜12，169（58.68%）</td><td class="num">168</td><td class="num">多為升結腸</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Atalabi 2013</b></td><td class="num">UGHR</td><td class="num">72</td><td class="num">埃及<span style="color:#8a4a3d">※</span></td><td class="num">前瞻性世代</td><td class="num">2005/01–2013/09</td><td class="num">＜12，33（91.67%）</td><td class="num">24</td><td class="num na">未列</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Renzo 2012</b></td><td class="num">UGHR</td><td class="num">9</td><td class="num">義大利</td><td class="num">回溯性世代</td><td class="num">2000–2009</td><td class="num">＜12，9（77%）</td><td class="num na">未列</td><td class="num na">未列</td><td class="num">27.9（範圍 6–72）</td></tr>
+        <tr><td class="num"><b>Mensah 2011</b></td><td class="num">UGHR</td><td class="num">18</td><td class="num">迦納</td><td class="num">回溯性世代</td><td class="num">2008/03–2008/12</td><td class="num">11.7</td><td class="num">13</td><td class="num">升結腸 8（40）；橫結腸 5（25）；降結腸 4（20）</td><td class="num na">未列</td></tr>
+        <tr><td class="num"><b>Atalabi 2007</b></td><td class="num">UGHR</td><td class="num">8</td><td class="num">奈及利亞</td><td class="num">前瞻性病例系列</td><td class="num">2004/07–2006/06</td><td class="num">7.75</td><td class="num">6</td><td class="num na">未列</td><td class="num">平均 32.64</td></tr>
+        <tr><td class="num"><b>Choi 1994</b></td><td class="num">UGHR</td><td class="num">115</td><td class="num">南韓</td><td class="num">回溯性世代</td><td class="num">1988/04–1992/08</td><td class="num">10.9</td><td class="num">82</td><td class="num">迴腸結腸 82（71.3）</td><td class="num na">未列</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7">
+  <b>本頁自行加總：</b>22 篇的「UGHR 組樣本數」相加 ＝ <b>2,665</b>（若把 Chukwu 2022 的 UGPR 對照臂 26 人與 Khorana 2015 的氣壓復位臂 111 人也算進去，總數為 2,802）。原文寫的是「approximately a total of 2656 pediatric patients」，與本頁加總相差 <b>9 人</b>——原文用了「approximately」，本頁如實併陳兩個數字，<b>不做修正</b>。
+  <b>設計分布加總：</b>回溯性世代 15 ＋ 前瞻性世代 2 ＋ 橫斷面 1 ＋ 前瞻性病例系列 1 ＋ 回溯性病例對照 2 ＋ RCT 1 ＝ <b>22 ✓</b>，與原文品質評估段落所述「19 篇觀察性世代／病例對照 ＋ 1 篇病例系列 ＋ 1 篇橫斷面 ＋ 1 篇 RCT ＝ 22」一致（原文把橫斷面與病例對照的歸類在兩處寫法略有出入，總數皆為 22）。
+  <b>樣本數極端不均：</b>最小 8 人（Atalabi 2007）、最大 660 人（Shen 2018），相差 <b>82.5 倍</b>；隨機效應模型會給小型研究相對較高的權重，這正是後面「粗比例 vs. 合併比例」出現落差的原因。</p>
+</section>
+
+<section id="results">
+  <h2>Pooled Estimates <span class="zh">／ 主要合併結果（比例型森林圖）</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">復位成功率 Success</div><div class="big">80%</div><div class="sub">95% CI 74–85；19 篇；I² ＝ 83%（各篇 44–93%）</div></div>
+    <div class="c amber"><div class="lab">復發率 Recurrence</div><div class="big">8%</div><div class="sub">95% CI 5–12；14 篇；I² ＝ 86.7%（各篇 0–22%）</div></div>
+    <div class="c amber"><div class="lab">腸穿孔率 Perforation</div><div class="big">2%</div><div class="sub">95% CI 1–5；8 篇；I² ＝ 59%（各篇 0–11%）</div></div>
+    <div class="c"><div class="lab">GRADE 證據等級</div><div class="big">三項皆 low</div><div class="sub">因偏誤風險與 I² ＞ 70% 的不一致性各降一級</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 348" width="100%" height="348" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" role="img"><text x="10" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">結果（納入篇數，事件數／總人數）</text><text x="644" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">合併值（95% CI）</text><text x="4" y="46.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">三個主要合併結果（隨機效應模型；菱形＝原文報告之合併值）</text><text x="10" y="83.0" font-size="12.5" fill="#43464d">復位成功率 Success（19 篇，1,353/1,647）</text><line x1="544.6" y1="79.0" x2="576.5" y2="79.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="544.6" y1="75.0" x2="544.6" y2="83.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="576.5" y1="75.0" x2="576.5" y2="83.0" stroke="#2f6b62" stroke-width="1.6"/><path d="M562.0,72.0 L576.5,79.0 L562.0,86.0 L544.6,79.0 Z" fill="#2f6b62"/><text x="644" y="83.0" font-size="12" fill="#43464d">80%（74–85）I² ＝ 83%</text><text x="10" y="112.0" font-size="12.5" fill="#43464d">復發率 Recurrence（14 篇，184/1,831）</text><line x1="344.5" y1="108.0" x2="364.8" y2="108.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="344.5" y1="104.0" x2="344.5" y2="112.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="364.8" y1="104.0" x2="364.8" y2="112.0" stroke="#8a6a1f" stroke-width="1.6"/><path d="M353.2,101.0 L364.8,108.0 L353.2,115.0 L344.5,108.0 Z" fill="#8a6a1f"/><text x="644" y="112.0" font-size="12" fill="#43464d">8%（5–12）I² ＝ 86.7%</text><text x="10" y="141.0" font-size="12.5" fill="#43464d">腸穿孔率 Perforation（8 篇，15/1,757）</text><line x1="332.9" y1="137.0" x2="344.5" y2="137.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="332.9" y1="133.0" x2="332.9" y2="141.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="344.5" y1="133.0" x2="344.5" y2="141.0" stroke="#8a4a3d" stroke-width="1.6"/><path d="M335.8,130.0 L344.5,137.0 L335.8,144.0 L332.9,137.0 Z" fill="#8a4a3d"/><text x="644" y="141.0" font-size="12" fill="#43464d">2%（1–5）I² ＝ 59%</text><text x="10" y="170.0" font-size="12.5" fill="#43464d">腸穿孔率（排除 Mensah 2011 後之敏感度分析）</text><line x1="332.9" y1="166.0" x2="338.7" y2="166.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="332.9" y1="162.0" x2="332.9" y2="170.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="338.7" y1="162.0" x2="338.7" y2="170.0" stroke="#8a4a3d" stroke-width="1.6"/><path d="M332.9,159.0 L338.7,166.0 L332.9,173.0 L332.9,166.0 Z" fill="#8a4a3d"/><text x="644" y="170.0" font-size="12" fill="#43464d">1%（1–3）I² ＝ 23.2%</text><text x="4" y="192.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">本頁自行計算：以原文事件數／總人數直接得出的「粗比例」（未加權）</text><text x="10" y="229.0" font-size="12.5" fill="#43464d">粗成功率 1,353 ÷ 1,647</text><line x1="568.1" y1="225.0" x2="568.1" y2="225.0" stroke="#6b7079" stroke-width="1.6"/><line x1="568.1" y1="221.0" x2="568.1" y2="229.0" stroke="#6b7079" stroke-width="1.6"/><line x1="568.1" y1="221.0" x2="568.1" y2="229.0" stroke="#6b7079" stroke-width="1.6"/><rect x="563.1" y="220.0" width="10" height="10" fill="#6b7079"/><text x="644" y="229.0" font-size="12" fill="#43464d">82.1%（本頁自行計算）</text><text x="10" y="258.0" font-size="12.5" fill="#43464d">粗復發率 184 ÷ 1,831</text><line x1="359.0" y1="254.0" x2="359.0" y2="254.0" stroke="#6b7079" stroke-width="1.6"/><line x1="359.0" y1="250.0" x2="359.0" y2="258.0" stroke="#6b7079" stroke-width="1.6"/><line x1="359.0" y1="250.0" x2="359.0" y2="258.0" stroke="#6b7079" stroke-width="1.6"/><rect x="354.0" y="249.0" width="10" height="10" fill="#6b7079"/><text x="644" y="258.0" font-size="12" fill="#43464d">10.0%（本頁自行計算）</text><text x="10" y="287.0" font-size="12.5" fill="#43464d">粗穿孔率 15 ÷ 1,757</text><line x1="332.5" y1="283.0" x2="332.5" y2="283.0" stroke="#6b7079" stroke-width="1.6"/><line x1="332.5" y1="279.0" x2="332.5" y2="287.0" stroke="#6b7079" stroke-width="1.6"/><line x1="332.5" y1="279.0" x2="332.5" y2="287.0" stroke="#6b7079" stroke-width="1.6"/><rect x="327.5" y="278.0" width="10" height="10" fill="#6b7079"/><text x="644" y="287.0" font-size="12" fill="#43464d">0.85%（本頁自行計算）</text><line x1="330.0" y1="304.0" x2="620.0" y2="304.0" stroke="#6b7079" stroke-width="1"/><line x1="330.0" y1="304.0" x2="330.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="330.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text><line x1="388.0" y1="304.0" x2="388.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="388.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">20</text><line x1="446.0" y1="304.0" x2="446.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="446.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">40</text><line x1="504.0" y1="304.0" x2="504.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="504.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">60</text><line x1="562.0" y1="304.0" x2="562.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="562.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">80</text><line x1="620.0" y1="304.0" x2="620.0" y2="309.0" stroke="#6b7079" stroke-width="1"/><text x="620.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="middle">100</text><text x="475.0" y="338.0" font-size="11" fill="#6b7079" text-anchor="middle">合併比例（%）；本圖為比例的整合，無「無效線」可畫</text></svg></div>
+    <div class="cap"><b>數據來源：</b>上半部四列的合併比例、95% CI 與 I² <b>逐字取自原文 Results 之 Primary analysis 段落</b>（含排除 Mensah 2011 後的敏感度分析）；下半部三列的「粗比例」為<b>本頁以原文明列的事件數與總人數直接相除計算</b>（1,353÷1,647、184÷1,831、15÷1,757），因為是單一相除的點值，<b>不畫信賴區間也不畫菱形</b>。<b>如何解讀：</b>本圖整合的是「比例」而非「兩組相比的效果值」，<b>因此沒有無效線可畫，也不該畫</b>——比例的「1」沒有任何意義。菱形代表原文報告的隨機效應合併值，寬度即 95% CI。<b>本頁刻意不繪製各研究的個別森林圖列</b>：原文的 Fig. 2–4 雖然是森林圖，但<b>各研究的分子與分母只呈現在圖像中、未以文字或表格列出</b>，本頁一律標示「原文未列數值」並拒絕從圖像推估。<b>有何陷阱：</b>請仔細比較上下兩半——<b>粗穿孔率只有 0.85%，但隨機效應合併值是 2%，高出 2.4 倍</b>。這不是錯誤，而是隨機效應模型的必然結果：它給小型研究相對較高的權重，而小型研究（如 Mensah 2011，n ＝ 18）的穿孔率偏高。原文自己也做了敏感度分析——排除 Mensah 2011 後，合併穿孔率降到 1%、I² 從 59% 降到 23.2%。<b>換句話說，「2%」這個數字有很大一部分是由一篇 18 人的迦納研究撐起來的；跟家屬談風險時，「約 1–2%，在有經驗的中心接近 1%」是比較誠實的說法。</b>同理，粗復發率 10.0% 高於合併值 8%，粗成功率 82.1% 高於合併值 80%——方向與穿孔相反，同樣源於加權方式。</div>
+  </div>
+</section>
+
+<section id="sub">
+  <h2>Subgroup Analyses <span class="zh">／ 次群組分析：唯一有臨床意義的是「國家所得」</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 436" width="100%" height="436" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" role="img"><text x="10" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">次群組</text><text x="644" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">合併值（95% CI）</text><text x="4" y="46.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">成功率 ─ 依是否使用鎮靜（次群組 p ＝ 0.2959，不顯著）</text><text x="10" y="83.0" font-size="12.5" fill="#43464d">有使用鎮靜 With sedation</text><line x1="425.3" y1="79.0" x2="566.1" y2="79.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="425.3" y1="75.0" x2="425.3" y2="83.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="566.1" y1="75.0" x2="566.1" y2="83.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="503.1" y="74.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="83.0" font-size="12" fill="#43464d">73%（53–87）I² ＝ 92%</text><text x="10" y="112.0" font-size="12.5" fill="#43464d">未使用鎮靜 Without sedation</text><line x1="524.7" y1="108.0" x2="562.0" y2="108.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="524.7" y1="104.0" x2="524.7" y2="112.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="562.0" y1="104.0" x2="562.0" y2="112.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="540.4" y="103.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="112.0" font-size="12" fill="#43464d">82%（77–86）I² ＝ 71%</text><text x="4" y="134.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">成功率 ─ 依研究設計（次群組 p ＝ 0.4125，不顯著）</text><text x="10" y="171.0" font-size="12.5" fill="#43464d">回溯性研究 Retrospective</text><line x1="508.1" y1="167.0" x2="557.9" y2="167.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="508.1" y1="163.0" x2="508.1" y2="171.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="557.9" y1="163.0" x2="557.9" y2="171.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="532.1" y="162.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="171.0" font-size="12" fill="#43464d">80%（73–85）I² ＝ 85%</text><text x="10" y="200.0" font-size="12.5" fill="#43464d">前瞻性世代（單篇）</text><line x1="466.7" y1="196.0" x2="586.9" y2="196.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="466.7" y1="192.0" x2="466.7" y2="200.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="586.9" y1="192.0" x2="586.9" y2="200.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="532.1" y="191.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="200.0" font-size="12" fill="#43464d">80%（63–92）</text><text x="10" y="229.0" font-size="12.5" fill="#43464d">橫斷面／病例系列</text><line x1="375.6" y1="225.0" x2="607.6" y2="225.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="375.6" y1="221.0" x2="375.6" y2="229.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="607.6" y1="221.0" x2="607.6" y2="229.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="548.7" y="220.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="229.0" font-size="12" fill="#43464d">84%（41–97）I² ＝ 83.1%</text><text x="10" y="258.0" font-size="12.5" fill="#43464d">唯一一篇 RCT（Chukwu 2022）</text><line x1="388.0" y1="254.0" x2="607.6" y2="254.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="388.0" y1="250.0" x2="388.0" y2="258.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="607.6" y1="250.0" x2="607.6" y2="258.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="470.0" y="249.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="258.0" font-size="12" fill="#43464d">65%（44–97）※見數值檢查</text><text x="4" y="280.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">成功率 ─ 依國家所得層級（次群組 p ＝ 0.8861，不顯著）</text><text x="10" y="317.0" font-size="12.5" fill="#43464d">高所得國家 High income</text><line x1="475.0" y1="313.0" x2="578.6" y2="313.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="475.0" y1="309.0" x2="475.0" y2="317.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="578.6" y1="309.0" x2="578.6" y2="317.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="536.3" y="308.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="317.0" font-size="12" fill="#43464d">81%（65–90）I² ＝ 79.5%</text><text x="10" y="346.0" font-size="12.5" fill="#43464d">中高所得國家 Upper-middle</text><line x1="466.7" y1="342.0" x2="566.1" y2="342.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="466.7" y1="338.0" x2="466.7" y2="346.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="566.1" y1="338.0" x2="566.1" y2="346.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="519.7" y="337.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="346.0" font-size="12" fill="#43464d">77%（63–87）I² ＝ 91.7%</text><text x="10" y="375.0" font-size="12.5" fill="#43464d">中低所得國家 Lower-middle</text><line x1="504.0" y1="371.0" x2="570.3" y2="371.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="504.0" y1="367.0" x2="504.0" y2="375.0" stroke="#2f6b62" stroke-width="1.6"/><line x1="570.3" y1="367.0" x2="570.3" y2="375.0" stroke="#2f6b62" stroke-width="1.6"/><rect x="536.3" y="366.0" width="10" height="10" fill="#2f6b62"/><text x="644" y="375.0" font-size="12" fill="#43464d">81%（72–88）I² ＝ 76.1%</text><line x1="330.0" y1="392.0" x2="620.0" y2="392.0" stroke="#6b7079" stroke-width="1"/><line x1="330.0" y1="392.0" x2="330.0" y2="397.0" stroke="#6b7079" stroke-width="1"/><text x="330.0" y="410.0" font-size="10.5" fill="#6b7079" text-anchor="middle">30</text><line x1="412.9" y1="392.0" x2="412.9" y2="397.0" stroke="#6b7079" stroke-width="1"/><text x="412.9" y="410.0" font-size="10.5" fill="#6b7079" text-anchor="middle">50</text><line x1="495.7" y1="392.0" x2="495.7" y2="397.0" stroke="#6b7079" stroke-width="1"/><text x="495.7" y="410.0" font-size="10.5" fill="#6b7079" text-anchor="middle">70</text><line x1="578.6" y1="392.0" x2="578.6" y2="397.0" stroke="#6b7079" stroke-width="1"/><text x="578.6" y="410.0" font-size="10.5" fill="#6b7079" text-anchor="middle">90</text><line x1="620.0" y1="392.0" x2="620.0" y2="397.0" stroke="#6b7079" stroke-width="1"/><text x="620.0" y="410.0" font-size="10.5" fill="#6b7079" text-anchor="middle">100</text><text x="475.0" y="426.0" font-size="11" fill="#6b7079" text-anchor="middle">復位成功率（%）</text></svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 之 Secondary analysis「Subgroup analysis of success rate」段落，逐筆重繪；次群組 p 值取自原文。<b>如何解讀：</b>橫軸為線性百分比刻度（30–100%），方塊為各次群組的合併成功率、橫線為 95% CI；三個分層變項（鎮靜、研究設計、國家所得）<b>三個次群組 p 值全部不顯著</b>（0.2959／0.4125／0.8861），代表<b>成功率不因這三者而有系統性差異</b>。<b>有何陷阱：</b>不顯著≠沒有差異。「有鎮靜 73% vs. 無鎮靜 82%」的點估計差了 9 個百分點，臨床上不小，但因為有鎮靜組的 CI 極寬（53–87，I² ＝ 92%）而無法區分——這是<b>檢定力不足</b>而非<b>證實無差異</b>。更重要的是<b>方向反直覺</b>：一般會預期鎮靜讓嬰兒放鬆、成功率上升，這裡卻是鎮靜組較低。最可能的解釋是<b>適應症混淆（confounding by indication）</b>——躁動、症狀久、比較難做的個案才會被給鎮靜。這種混淆在單臂比例統合分析中<b>完全無法校正</b>。另請注意<b>唯一那篇 RCT 的成功率只有 65%（44–97）</b>，比整體低 15 個百分點；其 95% CI（44–97）在 n ＝ 26 的小樣本下雖屬合理，但極不對稱，本頁已於「原文數值不一致之處」一節列出供留意。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 580" width="100%" height="580" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" role="img"><text x="10" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">次群組</text><text x="644" y="18" font-size="11" fill="#6b7079" font-weight="700" letter-spacing="0.08em">合併值（95% CI）</text><text x="4" y="46.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">復發率 ─ 依鎮靜（p ＝ 0.1941）／研究設計（p ＝ 0.8025）／所得（p ＝ 0.7446）：全部不顯著</text><text x="10" y="83.0" font-size="12.5" fill="#43464d">未使用鎮靜</text><line x1="349.3" y1="79.0" x2="400.9" y2="79.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="349.3" y1="75.0" x2="349.3" y2="83.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="400.9" y1="75.0" x2="400.9" y2="83.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="357.2" y="74.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="83.0" font-size="12" fill="#43464d">5%（3–11）I² ＝ 74.2%</text><text x="10" y="112.0" font-size="12.5" fill="#43464d">有使用鎮靜</text><line x1="362.2" y1="108.0" x2="484.7" y2="108.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="362.2" y1="104.0" x2="362.2" y2="112.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="484.7" y1="104.0" x2="484.7" y2="112.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="395.9" y="103.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="112.0" font-size="12" fill="#43464d">11%（5–24）I² ＝ 93.7%</text><text x="10" y="141.0" font-size="12.5" fill="#43464d">回溯性研究</text><line x1="355.8" y1="137.0" x2="413.8" y2="137.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="355.8" y1="133.0" x2="355.8" y2="141.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="413.8" y1="133.0" x2="413.8" y2="141.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="376.6" y="132.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="141.0" font-size="12" fill="#43464d">8%（4–13）I² ＝ 89%</text><text x="10" y="170.0" font-size="12.5" fill="#43464d">橫斷面／病例系列</text><line x1="342.9" y1="166.0" x2="426.7" y2="166.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="342.9" y1="162.0" x2="342.9" y2="170.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="426.7" y1="162.0" x2="426.7" y2="170.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="357.2" y="161.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="170.0" font-size="12" fill="#43464d">5%（2–15）I² ＝ 18.3%</text><text x="10" y="199.0" font-size="12.5" fill="#43464d">唯一一篇 RCT</text><line x1="336.4" y1="195.0" x2="491.1" y2="195.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="336.4" y1="191.0" x2="336.4" y2="199.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="491.1" y1="191.0" x2="491.1" y2="199.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="376.6" y="190.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="199.0" font-size="12" fill="#43464d">8%（1–25）</text><text x="10" y="228.0" font-size="12.5" fill="#43464d">高所得國家</text><line x1="349.3" y1="224.0" x2="587.8" y2="224.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="349.3" y1="220.0" x2="349.3" y2="228.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="587.8" y1="220.0" x2="587.8" y2="228.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="402.3" y="219.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="228.0" font-size="12" fill="#43464d">12%（3–40）I² ＝ 92.4%</text><text x="10" y="257.0" font-size="12.5" fill="#43464d">中高所得國家</text><line x1="342.9" y1="253.0" x2="433.1" y2="253.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="342.9" y1="249.0" x2="342.9" y2="257.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="433.1" y1="249.0" x2="433.1" y2="257.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="363.7" y="248.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="257.0" font-size="12" fill="#43464d">6%（2–16）I² ＝ 92.4%</text><text x="10" y="286.0" font-size="12.5" fill="#43464d">中低所得國家</text><line x1="355.8" y1="282.0" x2="420.2" y2="282.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="355.8" y1="278.0" x2="355.8" y2="286.0" stroke="#8a6a1f" stroke-width="1.6"/><line x1="420.2" y1="278.0" x2="420.2" y2="286.0" stroke="#8a6a1f" stroke-width="1.6"/><rect x="370.1" y="277.0" width="10" height="10" fill="#8a6a1f"/><text x="644" y="286.0" font-size="12" fill="#43464d">7%（4–14）I² ＝ 49.7%</text><text x="4" y="308.0" font-size="11.5" font-weight="700" fill="#8a4a3d" letter-spacing="0.06em">腸穿孔率 ─ 依鎮靜（p ＝ 0.7341）／設計（p ＝ 0.4854）：不顯著；依所得 p ＝ 0.0019：顯著</text><text x="10" y="345.0" font-size="12.5" fill="#43464d">未使用鎮靜</text><line x1="336.4" y1="341.0" x2="355.8" y2="341.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="336.4" y1="337.0" x2="336.4" y2="345.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="355.8" y1="337.0" x2="355.8" y2="345.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="331.4" y="336.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="345.0" font-size="12" fill="#43464d">1%（1–4）I² ＝ 28%</text><text x="10" y="374.0" font-size="12.5" fill="#43464d">有使用鎮靜</text><line x1="330.0" y1="370.0" x2="407.3" y2="370.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="330.0" y1="366.0" x2="330.0" y2="374.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="407.3" y1="366.0" x2="407.3" y2="374.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="337.9" y="365.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="374.0" font-size="12" fill="#43464d">2%（0–12）I² ＝ 66.3%</text><text x="10" y="403.0" font-size="12.5" fill="#43464d">回溯性研究</text><line x1="336.4" y1="399.0" x2="362.2" y2="399.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="336.4" y1="395.0" x2="336.4" y2="403.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="362.2" y1="395.0" x2="362.2" y2="403.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="337.9" y="394.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="403.0" font-size="12" fill="#43464d">2%（1–5）I² ＝ 62.5%</text><text x="10" y="432.0" font-size="12.5" fill="#43464d">唯一一篇 RCT</text><line x1="330.0" y1="428.0" x2="458.9" y2="428.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="330.0" y1="424.0" x2="330.0" y2="432.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="458.9" y1="424.0" x2="458.9" y2="432.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="350.8" y="423.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="432.0" font-size="12" fill="#43464d">4%（0–20）</text><text x="10" y="461.0" font-size="12.5" fill="#43464d">高所得國家</text><line x1="330.0" y1="457.0" x2="471.8" y2="457.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="330.0" y1="453.0" x2="330.0" y2="461.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="471.8" y1="453.0" x2="471.8" y2="461.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="331.4" y="452.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="461.0" font-size="12" fill="#43464d">1%（0–22）</text><text x="10" y="490.0" font-size="12.5" fill="#43464d">中高所得國家</text><line x1="336.4" y1="486.0" x2="342.9" y2="486.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="336.4" y1="482.0" x2="336.4" y2="490.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="342.9" y1="482.0" x2="342.9" y2="490.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="331.4" y="481.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="490.0" font-size="12" fill="#43464d">1%（1–2）I² ＝ 0%</text><text x="10" y="519.0" font-size="12.5" fill="#43464d">中低所得國家</text><line x1="349.3" y1="515.0" x2="439.6" y2="515.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="349.3" y1="511.0" x2="349.3" y2="519.0" stroke="#8a4a3d" stroke-width="1.6"/><line x1="439.6" y1="511.0" x2="439.6" y2="519.0" stroke="#8a4a3d" stroke-width="1.6"/><rect x="370.1" y="510.0" width="10" height="10" fill="#8a4a3d"/><text x="644" y="519.0" font-size="12" fill="#43464d">7%（3–17）I² ＝ 0% ← 唯一顯著</text><line x1="330.0" y1="536.0" x2="620.0" y2="536.0" stroke="#6b7079" stroke-width="1"/><line x1="330.0" y1="536.0" x2="330.0" y2="541.0" stroke="#6b7079" stroke-width="1"/><text x="330.0" y="554.0" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text><line x1="394.4" y1="536.0" x2="394.4" y2="541.0" stroke="#6b7079" stroke-width="1"/><text x="394.4" y="554.0" font-size="10.5" fill="#6b7079" text-anchor="middle">10</text><line x1="458.9" y1="536.0" x2="458.9" y2="541.0" stroke="#6b7079" stroke-width="1"/><text x="458.9" y="554.0" font-size="10.5" fill="#6b7079" text-anchor="middle">20</text><line x1="523.3" y1="536.0" x2="523.3" y2="541.0" stroke="#6b7079" stroke-width="1"/><text x="523.3" y="554.0" font-size="10.5" fill="#6b7079" text-anchor="middle">30</text><line x1="587.8" y1="536.0" x2="587.8" y2="541.0" stroke="#6b7079" stroke-width="1"/><text x="587.8" y="554.0" font-size="10.5" fill="#6b7079" text-anchor="middle">40</text><text x="475.0" y="570.0" font-size="11" fill="#6b7079" text-anchor="middle">合併比例（%）</text></svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 之「Subgroup analysis of recurrence rate」與「Subgroup analysis of perforation rate」兩段，逐筆重繪。<b>如何解讀：</b>上半為復發率（三個分層皆不顯著），下半為穿孔率——<b>整份研究唯一達到統計顯著的次群組效應就在最下面三列：中低所得國家 7%（3–17）、中高所得 1%（1–2）、高所得 1%（0–22），次群組 p ＝ 0.0019</b>。特別值得注意的是，這三個次群組的 <b>I² 全部為 0%</b>，也就是說在各所得層級內部，各研究的穿孔率高度一致——這讓「所得層級真的解釋了穿孔率的差異」這個推論相對紮實。<b>有何陷阱：</b>「國家所得」不是生物學變項，它是一個<b>代理變項（proxy）</b>，背後真正的東西是：就醫延遲（症狀持續時間更長→腸壁水腫、缺血更嚴重）、超音波操作者的經驗與人力、有無小兒放射科醫師與小兒外科即時後援、以及水壓上限有無標準化。原文自己在討論中也是這樣詮釋。<b>因此正確的臨床轉譯不是「開發中國家的嬰兒腸子比較脆弱」，而是「延遲就醫與缺乏標準化流程會讓穿孔率上升 7 倍」</b>——這條規則在任何國家的任何醫院都成立，包括台灣的深夜急診。另請注意高所得國家那列的 CI（0–22）寬得離譜，代表該層級納入的研究數／事件數極少，1% 這個點估計其實非常不穩定。</div>
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Raw Numbers &amp; Redrawn Figures <span class="zh">／ 原始數據與本頁重繪圖</span></h2>
+
+  <h3>三個主要結果的完整數據（原文明列者）</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:960px">
+      <thead><tr><th>結果</th><th>納入篇數</th><th>事件數 / 總人數</th><th>合併比例（95% CI）</th><th>本頁自行計算之粗比例</th><th>I²</th><th>各研究範圍</th><th>判定</th></tr></thead>
+      <tbody>
+        <tr><td><b>復位成功率</b></td><td class="num">19</td><td class="num">1,353 / 1,647</td><td class="num">80%（74–85）</td><td class="num">82.1%</td><td class="num sig">83%（p ＜ 0.0001）</td><td class="num">44–93%</td><td><span class="win">臨床上足以支持第一線使用</span></td></tr>
+        <tr><td><b>復發率</b></td><td class="num">14</td><td class="num">184 / 1,831</td><td class="num">8%（5–12）</td><td class="num">10.0%</td><td class="num sig">86.7%（p ＜ 0.001）</td><td class="num">0–22%</td><td><span class="win caution">異質性極高；且有發表偏誤</span></td></tr>
+        <tr><td><b>腸穿孔率</b></td><td class="num">8</td><td class="num">15 / 1,757</td><td class="num">2%（1–5）</td><td class="num">0.85%</td><td class="num">59%（p ＝ 0.017）</td><td class="num">0–11%</td><td><span class="win caution">合併值高於粗比例 2.4 倍</span></td></tr>
+        <tr><td>腸穿孔率（排除 Mensah 2011）</td><td class="num">7</td><td class="num na">原文未列</td><td class="num">1%（1–3）</td><td class="num na">無法計算</td><td class="num">23.2%</td><td class="num na">—</td><td><span class="win">敏感度分析後穩定許多</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.7"><b>本頁自行驗算：</b>1,353 ÷ 1,647 ＝ <b>82.15%</b>；184 ÷ 1,831 ＝ <b>10.05%</b>；15 ÷ 1,757 ＝ <b>0.85%</b>。三個粗比例與原文合併值的落差方向不同（成功率與復發率的粗比例偏高、穿孔率的粗比例偏低），符合隨機效應加權的預期行為，<b>不代表原文計算有誤</b>。<b>各研究的個別分子／分母：原文未列數值</b>（僅呈現於 Fig. 2–4 森林圖影像），本頁因此<b>無法、也不推估</b>各研究的森林圖列。</p>
+
+  <h3>發表偏誤與證據品質（原文 Results 明列）</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:880px">
+      <thead><tr><th>結果</th><th>漏斗圖目視</th><th>Egger 迴歸檢定（截距，95% CI，p）</th><th>結論</th><th>GRADE</th></tr></thead>
+      <tbody>
+        <tr><td>成功率</td><td class="num">略不對稱</td><td class="num">−0.70（−3.35 至 1.94），p ＝ 0.609</td><td><span class="win neutral">無統計上顯著之發表偏誤</span></td><td class="num">low</td></tr>
+        <tr><td><b>復發率</b></td><td class="num">略不對稱</td><td class="num sig">−2.33（−4.32 至 −0.34），p ＝ 0.040</td><td><span class="win caution"><b>有發表偏誤之證據</b></span></td><td class="num">low</td></tr>
+        <tr><td>穿孔率</td><td class="num">大致對稱</td><td class="num">0.66（−1.29 至 2.61），p ＝ 0.532</td><td><span class="win neutral">無統計上顯著之發表偏誤</span></td><td class="num">low</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.7"><b>怎麼讀：</b>Egger 檢定的截距顯著偏離 0，代表小型研究的結果系統性地偏向某一方。復發率的截距為<b>負值且顯著</b>——依 Egger 檢定的慣例，這表示<b>小型研究報告的復發率偏低</b>，也就是說<b>真實的復發率很可能高於 8%</b>。原文的措辭是「smaller studies reporting less favourable outcomes potentially underrepresented」。<b>臨床上的意思是：跟家屬說「復發率大約 8%」時，這個數字比較可能是低估而非高估；說「大約一成」會更保險。</b></p>
+
+  <h3>品質評估結果（原文明列）</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:760px">
+      <thead><tr><th>研究類型</th><th>篇數</th><th>評估工具</th><th>結果</th></tr></thead>
+      <tbody>
+        <tr><td>觀察性世代與病例對照研究</td><td class="num">19</td><td class="num">Newcastle–Ottawa Scale（NOS）</td><td class="num">高品質 6 篇、中等品質 10 篇、<b>低品質 2 篇</b>（本頁自行加總 6＋10＋2 ＝ 18，<b>與原文所述 19 篇相差 1 篇</b>，見數值檢查）</td></tr>
+        <tr><td>病例系列</td><td class="num">1</td><td class="num">NIH Quality Assessment Tool</td><td class="num">good</td></tr>
+        <tr><td>橫斷面研究</td><td class="num">1</td><td class="num">NOS 橫斷面改編版</td><td class="num">moderate</td></tr>
+        <tr><td>隨機對照試驗</td><td class="num">1</td><td class="num">Cochrane Risk of Bias</td><td class="num">整體 moderate；<b>盲性（blinding）有疑慮</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 330" width="100%" height="330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" role="img"><line x1="62" y1="256.0" x2="856" y2="256.0" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="260.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text><line x1="62" y1="211.6" x2="856" y2="211.6" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="215.6" font-size="10.5" fill="#6b7079" text-anchor="end">18</text><line x1="62" y1="167.2" x2="856" y2="167.2" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="171.2" font-size="10.5" fill="#6b7079" text-anchor="end">36</text><line x1="62" y1="122.8" x2="856" y2="122.8" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="126.8" font-size="10.5" fill="#6b7079" text-anchor="end">54</text><line x1="62" y1="78.4" x2="856" y2="78.4" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="82.4" font-size="10.5" fill="#6b7079" text-anchor="end">72</text><line x1="62" y1="34.0" x2="856" y2="34.0" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">90</text><text x="14" y="145.0" font-size="11" fill="#6b7079" transform="rotate(-90 14 145.0)" text-anchor="middle">合併比例（%）</text><rect x="144.3" y="56.2" width="46.0" height="199.8" fill="#2f6b62"/><text x="167.3" y="50.2" font-size="11" fill="#43464d" text-anchor="middle">81.0%</text><rect x="198.3" y="253.5" width="46.0" height="2.5" fill="#8a4a3d"/><text x="221.3" y="247.5" font-size="11" fill="#43464d" text-anchor="middle">1.0%</text><text x="194.3" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">高所得</text><text x="194.3" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">High income</text><rect x="409.0" y="66.1" width="46.0" height="189.9" fill="#2f6b62"/><text x="432.0" y="60.1" font-size="11" fill="#43464d" text-anchor="middle">77.0%</text><rect x="463.0" y="253.5" width="46.0" height="2.5" fill="#8a4a3d"/><text x="486.0" y="247.5" font-size="11" fill="#43464d" text-anchor="middle">1.0%</text><text x="459.0" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">中高所得</text><text x="459.0" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">Upper-middle</text><rect x="673.7" y="56.2" width="46.0" height="199.8" fill="#2f6b62"/><text x="696.7" y="50.2" font-size="11" fill="#43464d" text-anchor="middle">81.0%</text><rect x="727.7" y="238.7" width="46.0" height="17.3" fill="#8a4a3d"/><text x="750.7" y="232.7" font-size="11" fill="#43464d" text-anchor="middle">7.0%</text><text x="723.7" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">中低所得</text><text x="723.7" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">Lower-middle</text><line x1="62" y1="256.0" x2="856" y2="256.0" stroke="#6b7079" stroke-width="1"/><rect x="62.0" y="308" width="11" height="11" fill="#2f6b62"/><text x="78.0" y="318" font-size="11.5" fill="#43464d">復位成功率（%）</text><rect x="170.0" y="308" width="11" height="11" fill="#8a4a3d"/><text x="186.0" y="318" font-size="11.5" fill="#43464d">腸穿孔率（%）</text></svg></div>
+    <div class="cap"><b>數據來源：</b>原文次群組分析中依世界銀行國家所得分層的合併成功率（81%／77%／81%）與合併穿孔率（1%／1%／7%），重繪為分組長條圖。<b>如何解讀：</b>青綠柱為成功率、赭紅柱為穿孔率，兩者共用同一個百分比縱軸以利直接比較。<b>三根青綠柱幾乎一樣高（77–81%，次群組 p ＝ 0.8861）——不論國家貧富，做得成的比例差不多；但最右邊那根赭紅柱明顯高出來（7% vs. 1% vs. 1%，p ＝ 0.0019）——差別不在做不做得成，而在做的過程中會不會弄破腸子。</b><b>有何陷阱：</b>把成功率與穿孔率畫在同一個 0–90% 的縱軸上，穿孔率的柱子會被壓得很矮，視覺上容易低估 1% 與 7% 之間的七倍差距——請以標在柱頂的數字為準，不要以柱高目視。另外，這是<b>生態學層級（ecological）的比較</b>：把國家整體所得歸因到個別嬰兒的結果，存在生態謬誤（ecological fallacy）的風險。原文並未提供病人層級的症狀持續時間與穿孔率的關聯分析，因此「延遲就醫導致穿孔」這個機轉在本文中<b>是合理推論，而非被證實的因果</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg viewBox="0 0 880 330" width="100%" height="330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" role="img"><line x1="62" y1="256.0" x2="856" y2="256.0" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="260.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text><line x1="62" y1="211.6" x2="856" y2="211.6" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="215.6" font-size="10.5" fill="#6b7079" text-anchor="end">18</text><line x1="62" y1="167.2" x2="856" y2="167.2" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="171.2" font-size="10.5" fill="#6b7079" text-anchor="end">36</text><line x1="62" y1="122.8" x2="856" y2="122.8" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="126.8" font-size="10.5" fill="#6b7079" text-anchor="end">54</text><line x1="62" y1="78.4" x2="856" y2="78.4" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="82.4" font-size="10.5" fill="#6b7079" text-anchor="end">72</text><line x1="62" y1="34.0" x2="856" y2="34.0" stroke="#e6e2d9" stroke-width="1"/><text x="54" y="38.0" font-size="10.5" fill="#6b7079" text-anchor="end">90</text><text x="14" y="145.0" font-size="11" fill="#6b7079" transform="rotate(-90 14 145.0)" text-anchor="middle">比例（%）</text><rect x="111.2" y="58.7" width="46.0" height="197.3" fill="#2f6b62"/><text x="134.2" y="52.7" font-size="11" fill="#43464d" text-anchor="middle">80.0%</text><rect x="165.2" y="236.3" width="46.0" height="19.7" fill="#8a6a1f"/><text x="188.2" y="230.3" font-size="11" fill="#43464d" text-anchor="middle">8.0%</text><text x="161.2" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">本文 2026</text><text x="161.2" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">UGHR，＜12 個月</text><rect x="363.8" y="235.0" width="46.0" height="21.0" fill="#8a6a1f"/><text x="386.8" y="229.0" font-size="11" fill="#43464d" text-anchor="middle">8.5%</text><text x="359.8" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">Gray 2014</text><text x="359.8" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">超音波導引非顯影劑灌腸</text><rect x="508.2" y="84.3" width="46.0" height="171.7" fill="#2f6b62"/><text x="531.2" y="78.3" font-size="11" fill="#43464d" text-anchor="middle">69.6%</text><text x="558.2" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">Sadigh 2015</text><text x="558.2" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">液體灌腸（全年齡）</text><rect x="706.8" y="52.0" width="46.0" height="204.0" fill="#2f6b62"/><text x="729.8" y="46.0" font-size="11" fill="#43464d" text-anchor="middle">82.7%</text><text x="756.8" y="276.0" font-size="11.5" fill="#43464d" text-anchor="middle">Sadigh 2015</text><text x="756.8" y="291.0" font-size="11.5" fill="#43464d" text-anchor="middle">空氣灌腸（全年齡）</text><line x1="62" y1="256.0" x2="856" y2="256.0" stroke="#6b7079" stroke-width="1"/><rect x="62.0" y="308" width="11" height="11" fill="#2f6b62"/><text x="78.0" y="318" font-size="11.5" fill="#43464d">復位成功率（%）</text><rect x="170.0" y="308" width="11" height="11" fill="#8a6a1f"/><text x="186.0" y="318" font-size="11.5" fill="#43464d">復發率（%）</text></svg></div>
+    <div class="cap"><b>數據來源：</b>本文的合併值（成功率 80%、復發率 8%）與原文 Discussion「Comparison with previous meta-analyses」段落中<b>逐字引述的前人數據</b>：Gray 等 2014 年報告超音波導引非顯影劑灌腸的復發率 8.5%；Sadigh 等 2015 年分析 102 篇、32,451 名兒童，報告<b>全年齡</b>的液體灌腸成功率 69.6%、空氣灌腸成功率 82.7%。<b>如何解讀：</b>青綠柱為成功率、琥珀柱為復發率；缺項代表該研究未報告該指標，本頁<b>留白而不補值</b>。<b>有何陷阱：</b>這四根柱子<b>不是同一件事的四次測量，不能直接排名</b>。Sadigh 2015 涵蓋近五十年、全年齡層、包含許多非超音波導引的舊技術，其 69.6% 自然偏低；本文則限定 2000 年代以後的即時超音波導引、且限定未滿 12 個月的嬰兒。<b>原文的論點是「現代超音波導引技術已把水壓灌腸拉到接近空氣灌腸的水準（80% vs. 82.7%）」——這個推論方向合理，但兩者的族群、年代與技術都不同，屬於間接比較（indirect comparison），沒有任何隨機化保護。</b>原文另引 Qafesha 2025（29 篇、9,281 人）指出氣壓復位整體成功率仍較高，但<b>2011 年以後的研究中兩者已無差異</b>，且在有小兒放射科醫師的中心結果相當——換言之，<b>決定成敗的是操作者，不是灌的是水還是空氣。</b></div>
+  </div>
+</section>
+
+<section id="flags">
+  <h2>Data Integrity Flags <span class="zh">／ 原文數值不一致之處（本頁如實揭露，未做修正推估）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:920px">
+      <thead><tr><th>項目</th><th>原文印出</th><th>問題</th><th>本頁處置</th></tr></thead>
+      <tbody>
+        <tr><td>總樣本數</td><td class="num">「approximately 2656」</td><td>本頁逐列加總 22 篇的 UGHR 樣本得 <b>2,665</b>，相差 9 人</td><td>兩個數字併陳；標題與內文沿用原文的 2,656，並註明本頁加總值</td></tr>
+        <tr><td>Tang 2024 的年齡欄</td><td class="num">樣本 15 人，年齡欄印「≤ 10.5，1172（23.6%）」</td><td>年齡欄的人數 1,172 遠大於該研究樣本數 15，數字明顯錯置</td><td>表格如實照登並加註記；不納入任何加總以外的推論</td></tr>
+        <tr><td>Talabi 2018 的年齡欄</td><td class="num">「＜35，35（77.78%）」</td><td>納入條件為 ＜12 個月，年齡欄卻寫 ＜35（月？）；且 35 人／77.78% 反推分母約 45，與樣本 35 不符</td><td>如實照登並加註記</td></tr>
+        <tr><td>Atalabi 2013 的國別</td><td class="num">埃及</td><td>Atalabi 為奈及利亞 Ibadan 之研究者（同表 Atalabi 2007 標為奈及利亞），國別標示可能有誤</td><td>照原文登錄為埃及並加註；<b>不自行更正</b></td></tr>
+        <tr><td>Sacks 2020 的年份</td><td class="num">「Sacks et al. 20200」</td><td>明顯的排版錯字（多一個 0）</td><td>本頁表格更正為 2020，其餘數值未動</td></tr>
+        <tr><td>Sarma 2020 的男性人數</td><td class="num">「94 of 176」</td><td>分母 176 大於該研究樣本 152</td><td>如實照登（本頁標為「94（分母 176）」）</td></tr>
+        <tr><td>各結果的分母不一致</td><td class="num">成功 19 篇/1,647；復發 14 篇/1,831；穿孔 8 篇/1,757</td><td><b>篇數較少的兩項，分母反而較大</b>；原文未解釋</td><td>如實揭露；本頁明確警告三個比例<b>不可互相推算</b></td></tr>
+        <tr><td>NOS 品質評估篇數</td><td class="num">「19 篇觀察性研究」，但列出高 6 ＋ 中 10 ＋ 低 2</td><td><b>本頁自行加總 ＝ 18，少 1 篇</b></td><td>如實揭露差異；不推估遺漏的是哪一篇</td></tr>
+        <tr><td>唯一 RCT 的成功率 CI</td><td class="num">「65%（95% CI: 44–97）」</td><td>其他次群組皆寫「95% CI」，此列格式與其他一致但<b>區間極不對稱且上界達 97%</b>，與 n ＝ 26 的小樣本相符但需留意</td><td>照原文繪製並於圖說加註；<b>不做修正</b></td></tr>
+        <tr><td>Choi 1994 的腸套疊位置</td><td class="num">「迴腸結腸 82（71.3）」</td><td>82 ÷ 115 ＝ 71.3% ✓（本頁驗算通過）；但 82 恰與男性人數 82 相同，可能為重複填入</td><td>照原文登錄；僅標註巧合，不做推論</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="call teal" style="margin-top:16px">
+    <div class="h">為什麼要花一整節列這些</div>
+    <p style="margin:0">這些不一致<b>都不會改變本文的三個核心數字</b>（80%／8%／2% 是從各研究的事件數合併而來，不是從 Table 1 的特徵欄算出來的），但它們透露一件事：<b>Table 1 的資料擷取是人工抄錄、且未經第二層數值稽核</b>。實務上的意義很直接——<b>如果你要在自己的簡報或論文中引用「Shen 2018 的成功率」或「Sacks 2020 的復發率」，請直接去讀那篇原文，不要引用這篇統合分析轉錄的表格值。</b>統合分析的合併估計可以引用；它的特徵表不宜。</p>
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：台灣急診與小兒外科的實務位置</span></h2>
+
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>最適合：血行動力學穩定、無腹膜炎徵象、症狀在 24 小時內的嬰兒。</b>原文的結論用字很明確——UGHR 應作為<b>第一線</b>治療。理由不只是 80% 的成功率，更關鍵的是<b>完全不需要游離輻射</b>；未滿 12 個月的嬰兒是全人類對輻射致癌最敏感的族群，而且腸套疊有 8% 會復發、需要再照一次。<b>「一次不照 X 光」的價值，在會復發的疾病上要乘以復發次數來算。</b></li>
+    <li><b>同樣適合：需要即時判讀復位是否完全的情境。</b>超音波可以直接看到腸壁的移動、殘餘套疊、以及「甜甜圈徵象（target/doughnut sign）」是否消失，並可即時偵測併發症——這是螢光透視或氣壓灌腸看不到的。</li>
+    <li><b>需要格外謹慎：症狀持續超過 48–72 小時、明顯腹脹、發燒、脫水、血便量大者。</b>原文明確指出：<b>症狀超過 48–72 小時、明顯腹脹或有腹膜炎徵象者，應直接轉外科評估，不要嘗試灌腸復位</b>。這條規則正是「中低所得國家穿孔率 7%」背後最可能的機轉——那些數字代表的其實是「拖太久才來的嬰兒」。</li>
+    <li><b>絕對不適合：休克、腹膜炎、氣腹、腸穿孔已發生者。</b>直接手術。</li>
+    <li><b>關於鎮靜：本文無法給出建議。</b>有鎮靜組成功率 73%、無鎮靜組 82%，但次群組 p ＝ 0.2959（不顯著），且方向極可能受適應症混淆影響。<b>正確的讀法是「本文不支持常規鎮靜，也不支持禁用鎮靜」</b>，仍依各院麻醉與小兒科的既有規範決定。</li>
+  </ul>
+
+  <h3>換來什麼？付出什麼代價？</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:820px">
+      <thead><tr><th>面向</th><th>換來的好處</th><th>代價與不確定性</th></tr></thead>
+      <tbody>
+        <tr><td>避免手術</td><td>約 <b>8 成</b>嬰兒可免於剖腹或腹腔鏡復位</td><td>另約 2 成仍需手術；且失敗者已多耗掉一段時間</td></tr>
+        <tr><td>輻射</td><td><b>完全零游離輻射</b>；對會復發的疾病，累積效益更大</td><td>需要有能即時執行、且有經驗的超音波操作者</td></tr>
+        <tr><td>即時監控</td><td>可直接看見腸壁移動、殘餘套疊與早期併發症</td><td>影像判讀高度依賴操作者；跨中心結果差異極大（I² ＝ 83%）</td></tr>
+        <tr><td>安全性</td><td>合併穿孔率 2%；排除單篇離群研究後為 <b>1%</b></td><td>2% 這個數字被一篇 18 人的研究拉高；在中低所得情境可高達 <b>7%</b></td></tr>
+        <tr><td>復發</td><td>復發多數可再次灌腸復位處理</td><td>合併復發率 8%，但 <b>Egger 檢定顯示可能被低估</b>；需要結構化的返診衛教</td></tr>
+        <tr><td>人力與流程</td><td>器材需求低（食鹽水、超音波），不需螢光透視室</td><td><b>需要小兒放射／超音波專長人員 ＋ 小兒外科即時後援</b>；原文明言標準化流程尚不存在</td></tr>
+        <tr><td>證據強度</td><td>是目前唯一針對＜12 個月嬰兒的專門整合</td><td><b>GRADE 三項全為 low</b>；22 篇中僅 1 篇 RCT；且與空氣灌腸的頭對頭比較在此年齡層幾乎不存在</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>知情同意怎麼談</h3>
+  <div class="call teal">
+    <div class="h">一段可以直接改寫成口語的說法（對嬰兒家屬）</div>
+    <p style="margin:0">「寶寶這是腸套疊——腸子有一段像望遠鏡一樣縮進去了。他現在生命徵象穩定、肚子按下去沒有腹膜炎的表現，所以我們建議<b>先不要開刀，用超音波一邊看、一邊從肛門灌溫的食鹽水把腸子推回去</b>。這個做法的好處是<b>完全不用照 X 光</b>，寶寶不會吃到輻射，而且我們可以在螢幕上即時看到腸子有沒有推回去。根據最新一篇整合了 22 篇研究、大約 2,600 位未滿一歲嬰兒的統計，<b>大約每 10 個有 8 個可以成功推回去</b>。我要老實告訴您三件事：第一，<b>大約 1 到 2 個裡面會有 2 個推不回去</b>，那就要進手術房。第二，過程中有<b>大約百分之一到百分之二的機會腸子會破掉</b>，那樣就必須馬上手術——這個機率跟寶寶拖了多久有關，拖越久越危險，所以我們現在就要做。第三，就算今天成功了，<b>大約每 10 到 12 個裡面會有 1 個在之後復發</b>，所以回家以後如果又出現一陣一陣的哭鬧、嘔吐、拉出草莓果醬顏色的大便，<b>要立刻回來，不要等</b>。復發大部分還是可以再灌一次，不一定要開刀。」</p>
+  </div>
+  <ul class="clean" style="margin-top:16px">
+    <li><b>務必說清楚的返診衛教：</b>原文在建議中特別把「post-reduction observation」與「structured caregiver education regarding recurrence warning signs」寫進正式建議。<b>8% 的復發率若沒有配套的家屬衛教，就會變成延遲就醫的下一批病人。</b></li>
+    <li><b>務必說清楚時間的價值：</b>症狀持續時間是唯一在文獻中反覆出現、且與成功率／穿孔率都有關的可改變因子。<b>「現在就做」本身就是治療的一部分。</b></li>
+    <li><b>科內導入的建議：</b>原文的正式建議是「institutions managing pediatric intussusception prioritize the development of standardized UGHR protocols」——特別是在沒有螢光透視、或不想用輻射的環境。建議至少把<b>最大水壓上限、灌注高度、嘗試次數上限、每次嘗試的時間上限、失敗判定標準、鎮靜使用時機</b>寫成書面流程，並登錄每例的症狀持續時間與結果。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>22 篇中只有 1 篇 RCT，其餘全是觀察性研究。</b>這是 GRADE 把三個結果全部降到 low 的主因之一。單臂比例統合分析<b>沒有對照組</b>，所有「成功率」都無法回答「跟氣壓灌腸相比如何」這個真正的臨床問題。</li>
+    <li><b>異質性極高且無法被次群組解釋。</b>I² 分別為 83%、86.7%、59%；而三個分層變項（鎮靜、設計、所得）在成功率與復發率上<b>全部不顯著</b>，也就是說<b>造成 83% 異質性的來源，這篇分析並沒有找到</b>。原文自己列舉了可能來源：水壓上限、鎮靜方案、操作者經驗、病人選擇門檻、症狀持續時間分布——<b>但這些都沒有被量化分析</b>。</li>
+    <li><b>復發率有發表偏誤的統計證據（Egger p ＝ 0.040）。</b>方向指向<b>真實復發率高於 8%</b>。</li>
+    <li><b>合併穿孔率 2% 高度依賴單一小型研究。</b>排除 Mensah 2011（n ＝ 18，迦納）後降至 1%、I² 從 59% 降到 23.2%。<b>敏感度分析的幅度這麼大，代表「2%」不是一個穩健的數字。</b></li>
+    <li><b>國家所得的次群組效應是生態學層級的關聯，不是病人層級的因果。</b>原文並未提供「症狀持續時間 vs. 穿孔率」的病人層級分析，因此「延遲就醫導致穿孔」在本文中<b>是推論而非證據</b>。</li>
+    <li><b>只收英文文獻。</b>中國、日本、韓國的大量非英文經驗被系統性排除；而這些地區正是水壓灌腸經驗最豐富的地方。這是<b>語言偏誤（language bias）</b>的教科書案例。</li>
+    <li><b>Table 1 存在多處資料擷取錯誤</b>（見前一節共 10 項），顯示特徵表未經第二層數值稽核。</li>
+    <li><b>三個結果的分析篇數與分母互不相同且未解釋</b>（19/1,647、14/1,831、8/1,757），使得三個數字無法整合成單一病人歷程的機率模型。</li>
+    <li><b>缺乏長期與功能性結果。</b>本文完全沒有處理：復位後的觀察時數、住院 vs. 門診觀察、病理性引導點（pathological lead point）的比例與處理、以及復發後再灌腸的成功率——而這些正是臨床上緊接著要決定的事。</li>
+    <li><b>無法回答「水 vs. 空氣」。</b>本文是單臂分析，唯一那篇 RCT（Chukwu 2022，UGHR 26 vs. UGPR 26）樣本極小。原文引用的 Liu 2024 與 Qafesha 2025 兩篇比較型統合分析<b>結論方向相反</b>（前者偏向水壓、後者偏向氣壓且指出 2011 年後差異消失）——這個問題目前仍未解決，尤其在＜12 個月的族群幾乎沒有直接證據。</li>
+  </ol>
+  <div class="call amber" style="margin-top:18px">
+    <div class="h">最關鍵的一個警訊</div>
+    <p style="margin:0">若只能記住一件事：<b>「80%／8%／2%」這三個數字的可信度，不在於它們的點估計，而在於它們背後 83% 與 86.7% 的 I²。</b>這麼高的異質性代表<b>「各中心的成績差異，遠大於這個技術本身的平均值所能告訴你的事」</b>——換句話說，<b>這篇文獻真正證明的不是「UGHR 有 80% 成功率」，而是「UGHR 在準備好的中心有 90% 以上的成功率、在沒準備好的中心只有 44%」</b>。所以正確的用法是：把它當作<b>建立自己中心標準化流程與品質指標的依據</b>（記錄你自己的成功率、復發率、穿孔率，跟這三個數字比），而不是拿來當作跟家屬報數字的固定值。原文自己的結論句也是這個意思——「Standardized global protocols and high-quality prospective multicenter studies are needed」。</p>
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>腸套疊 <span class="en">Intussusception</span></dt><dd>近端腸段像望遠鏡般套入遠端腸段，造成腸阻塞、靜脈鬱血、缺血甚至穿孔。3 個月至 6 歲兒童最常見的腸阻塞原因；全球發生率約每 10 萬名嬰兒 30–100 例／年，發生高峰為 5–7 個月大，60–75% 發生於一歲以內。</dd></div>
+      <div class="gl-row"><dt>超音波導引水壓灌腸復位 <span class="en">Ultrasound-guided hydrostatic enema reduction, UGHR</span></dt><dd>在即時超音波監看下，經肛門灌注液體（多為生理食鹽水）以水壓將套疊腸段推回的非手術復位方式；無游離輻射，可即時看見腸壁移動與併發症。</dd></div>
+      <div class="gl-row"><dt>超音波導引氣壓復位 <span class="en">Ultrasound-guided pneumatic reduction, UGPR</span></dt><dd>以空氣取代液體的超音波導引復位方式。</dd></div>
+      <div class="gl-row"><dt>氣壓復位 <span class="en">Pneumatic reduction, PR</span></dt><dd>傳統多在螢光透視（fluoroscopy）下以空氣灌腸復位，需游離輻射。</dd></div>
+      <div class="gl-row"><dt>迴腸結腸型腸套疊 <span class="en">Ileocolic intussusception</span></dt><dd>最常見的型態，占 80–90%；迴腸末端套入結腸。</dd></div>
+      <div class="gl-row"><dt>病理性引導點 <span class="en">Pathological lead point</span></dt><dd>如梅克爾憩室、息肉、淋巴瘤等造成套疊的實體病灶；年紀越大越常見，是復發與復位失敗的重要原因。</dd></div>
+      <div class="gl-row"><dt>單臂比例統合分析 <span class="en">Single-arm proportional meta-analysis</span></dt><dd>整合多篇研究的「發生比例」而非「兩組相比的效果值」；沒有對照組，因此無法回答比較性問題，也沒有「無效線」。</dd></div>
+      <div class="gl-row"><dt>隨機效應模型 <span class="en">Random-effects model</span></dt><dd>假設各研究的真實效果不同、來自同一分布；相對於固定效果模型，會給小型研究較高的相對權重，因此合併值可能明顯偏離「粗比例」。</dd></div>
+      <div class="gl-row"><dt>異質性 <span class="en">I² statistic</span></dt><dd>研究間變異占總變異的比例；＞50% 視為顯著異質、＞75% 為高度異質。本文三個結果分別為 83%、86.7%、59%。</dd></div>
+      <div class="gl-row"><dt>Egger 迴歸檢定 <span class="en">Egger's regression test</span></dt><dd>以統計方式檢驗漏斗圖是否不對稱，用以偵測小型研究效應與發表偏誤；截距顯著偏離 0 即提示偏誤存在。</dd></div>
+      <div class="gl-row"><dt>發表偏誤 <span class="en">Publication bias</span></dt><dd>結果不理想或不顯著的研究較不易被發表，導致文獻整體高估（或低估）真實效果。</dd></div>
+      <div class="gl-row"><dt>GRADE</dt><dd>評定證據確定性的架構，考量偏誤風險、不一致性、間接性、不精確性與發表偏誤；分為 high／moderate／low／very low 四級。本文三個結果全為 low。</dd></div>
+      <div class="gl-row"><dt>Newcastle–Ottawa Scale <span class="en">NOS</span></dt><dd>評估觀察性研究（世代、病例對照）方法學品質的量表，涵蓋選樣、可比較性、暴露／結果確認與追蹤完整度。</dd></div>
+      <div class="gl-row"><dt>敏感度分析 <span class="en">Sensitivity analysis</span></dt><dd>刻意排除特定研究或改變假設後重算，用以檢驗結論是否穩健。本文排除 Mensah 2011 後穿孔率由 2% 降至 1%。</dd></div>
+      <div class="gl-row"><dt>適應症混淆 <span class="en">Confounding by indication</span></dt><dd>某項處置只被用在病情較重的病人身上，導致該處置看起來與較差的結果相關；觀察性研究無法靠統計完全排除。</dd></div>
+      <div class="gl-row"><dt>生態謬誤 <span class="en">Ecological fallacy</span></dt><dd>把群體層級（如國家所得）的關聯直接套用到個體層級所產生的推論錯誤。</dd></div>
+      <div class="gl-row"><dt>語言偏誤 <span class="en">Language bias</span></dt><dd>僅納入特定語言（多為英文）文獻所造成的系統性偏誤。</dd></div>
+      <div class="gl-row"><dt>PROSPERO</dt><dd>系統性回顧的國際前瞻性註冊平台；事前註冊可降低結果指標被事後選擇性報告的風險。本文註冊號為 CRD420261294714。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; Disclosure <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Alansari AN, Messaoud M, Zaazouee MS, Youssif H, Albaghdady A. Ultrasound-guided hydrostatic enema reduction for intussusception in children younger than 12 months: a systematic review and meta-analysis. <i>Pediatr Surg Int</i>. 2026;42(1). DOI: <a href="https://doi.org/10.1007/s00383-026-06546-9">10.1007/s00383-026-06546-9</a>；PMID <a href="https://pubmed.ncbi.nlm.nih.gov/42536183/">42536183</a>（PMC13427986，Open Access）。PROSPERO 註冊號 CRD420261294714。</p>
+  <p><b>原文於討論中引用、本頁一併提及的比較對象：</b>Gray 等（2014）；Sadigh 等（2015，102 篇／32,451 名兒童）；Liu 等（2024，49 篇／逾 9,000 人）；Qafesha 等（2025，29 篇／9,281 人）。<b>本頁未直接查閱這四篇原文</b>，相關數字均為透過本文 Discussion 段落轉述，引用前請回查原始文獻。</p>
+  <p><b>資料擷取方式：</b>本頁所有數字均取自 PubMed 摘要與 PubMed Central 全文（含 Methods、Results 全段、Table 1 與 Discussion）。原文 Fig. 1（PRISMA 圖）、Fig. 2–4（三張森林圖）與補充圖 S1–S12 中<b>未以文字或表格列出的數字——特別是各研究個別的成功／復發／穿孔事件數——一律標示「原文未列數值」，本頁不做任何推估或從圖像反推</b>。因此本頁<b>不呈現各研究層級的森林圖</b>，僅呈現原文明列的合併值與次群組值。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文數字重新繪製的 inline SVG／HTML</b>，未複製、未嵌入出版社的任何圖檔。合併比例以菱形表示、次群組以方塊表示；<b>因本研究為單臂比例整合，本頁所有圖一律不畫「無效線」</b>（比例沒有無效值可言）。凡由原文數字四則運算得出者——PRISMA 各階段的加減驗算、三個粗比例（1,353÷1,647、184÷1,831、15÷1,757）、Table 1 樣本數加總、NOS 評級加總、設計分布加總——<b>均已就地標註「本頁自行計算」</b>。本頁發現的原文數值不一致之處，已於「原文數值不一致之處」一節逐條列出，<b>原文數字一律照原樣呈現，未做任何修改</b>（唯一例外為明顯排版錯字「Sacks et al. 20200」更正為 2020，已於該節註明）。</p>
+  <p><b>免責：</b>本頁為個人閱讀筆記與教學用途之重點整理，不構成臨床指引或醫療建議；實際臨床決策請回歸原始文獻全文、當地資源條件與病人個別狀況。</p>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 005 · 2026 年 8 月 3 日 ｜ 資料來源：PubMed / PubMed Central ｜ 本頁為單一自足 HTML，無外部資源、無腳本、無追蹤。
+</footer>
+
+</div>
+</body>
+</html>
