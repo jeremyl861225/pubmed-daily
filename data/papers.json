@@ -1,7 +1,57 @@
 {
- "count": 9,
- "latest": "2026-08-02",
+ "count": 11,
+ "latest": "2026-08-03",
  "papers": [
+  {
+   "id": "pubmed-periop-2026-08-03",
+   "file": "papers/pubmed-periop-2026-08-03.html",
+   "date": "2026-08-03",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 006",
+   "title": "迴腸造口關閉前的「遠端腸道刺激」能否減少術後腸阻塞？ILEOSTIM 多中心隨機對照試驗（西班牙 18 家醫院、175 人）",
+   "title_en": "The ILEOSTIM trial: A multicentre randomised controlled trial evaluating the impact of efferent loop stimulation prior to ileostomy reversal on postoperative ileus",
+   "journal": "Colorectal Disease 2026;28(5):e70448（大英暨愛爾蘭大腸直腸外科學會 ACPGBI 官方期刊，Open Access）",
+   "authors": "Arredondo J, Uriz A, Oliva I, Martín JI, Iglesias CN, Choolani E, Valle A, Rivera J, Jerí-McFarlane S, Romero JM, González C, Alvarellos A, Tasende M, Gómez L, Lázaro L, Montcusí B, Tejedor P, Trujillo-Díaz J, Ruiz de la Hermosa A, Baixauli J, Núñez-Córdoba JM, Aliseda D 通訊：Clínica Universidad de Navarra 一般外科（西班牙 Pamplona）；本試驗為西班牙大腸肛門學會（AECP）GECO-4 計畫",
+   "design": "多中心、開放標籤、隨機對照試驗（RCT） 西班牙 18 家醫院；2021-06-01 至 2023-04-15 收案 175 人；1:1 隨機（Sealed Envelope™，分配隱蔽）；意向治療分析（ITT）；依 CONSORT 報告；追蹤至少 6 個月；試驗註冊 NCT05302557",
+   "doi": "10.1111/codi.70448",
+   "category": "周術期照護與併發症",
+   "tags": [
+    "周術期照護與併發症",
+    "迴腸造口關閉 Ileostomy reversal",
+    "術後腸阻塞 POI",
+    "證據等級：多中心 RCT（開放標籤）",
+    "Open Access"
+   ],
+   "tldr": "在直腸癌術後要關閉保護性迴腸造口（loop ileostomy）的病人身上，術前 2 週每天以 500 mL 生理食鹽水加營養增稠劑灌洗遠端腸道（efferent bowel stimulation, EBS），把術後腸阻塞（postoperative ileus, POI）從 16.4%（16/97）降到 7.6%（6/78）——這是相對風險下降超過一半、絕對風險下降 8.8 個百分點（本頁自行計算 NNT ≈ 11.4 人），但沒有達到統計顯著（p ＝ 0.088；校正後 OR 0.38–0.47，95% CI 皆跨過 1）。這是一篇「方向對、力量不夠」的試驗：原始檢定力設定假設對照組 POI 為 29%，實際只有 16.4%，本頁自行驗算：以實際觀察到的事件率要證明同樣的效果，每組需要約 213 人（總計約 426 人），而本試驗每組只有 78／97 人。更該注意的是兩個不利訊號：刺",
+   "bytes": 83410
+  },
+  {
+   "id": "pubmed-gs-peds-2026-08-03",
+   "file": "papers/pubmed-gs-peds-2026-08-03.html",
+   "date": "2026-08-03",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 005",
+   "title": "未滿 12 個月嬰兒腸套疊的超音波導引水壓灌腸復位：22 篇研究、2,656 名嬰兒的系統性回顧與統合分析——成功率 80%、復發 8%、穿孔 2%",
+   "title_en": "Ultrasound-guided hydrostatic enema reduction for intussusception in children younger than 12 months: a systematic review and meta-analysis",
+   "journal": "Pediatric Surgery International 2026;42(1)（Open Access，PMC13427986）",
+   "authors": "Alansari AN, Messaoud M, Zaazouee MS, Youssif H, Albaghdady A 通訊：Hamad Medical Corporation 小兒外科（卡達 Doha）；共同作者分屬突尼西亞 Monastir、埃及 Al-Azhar／Ain Shams、利比亞 Benghazi",
+   "design": "系統性回顧與單臂比例統合分析（Single-arm proportional meta-analysis） 五個資料庫檢索至 2026 年 1 月；納入 22 篇（21 篇觀察性研究 ＋ 僅 1 篇 RCT）；隨機效應模型；R 語言分析；PROSPERO 註冊 CRD420261294714；品質評估採 NOS／NIH／Cochrane RoB；證據等級以 GRADE 評定",
+   "doi": "10.1007/s00383-026-06546-9",
+   "category": "小兒外科",
+   "tags": [
+    "小兒外科",
+    "腸套疊 Intussusception",
+    "非手術復位 Nonoperative reduction",
+    "GRADE 證據等級：三個結果全部為 low",
+    "Open Access"
+   ],
+   "tldr": "這是第一篇專門針對「未滿 12 個月嬰兒」的超音波導引水壓灌腸復位（ultrasound-guided hydrostatic enema reduction, UGHR）統合分析，22 篇研究、約 2,656 名嬰兒，得到三個核心數字：復位成功率 80%（95% CI 74–85）、復發率 8%（5–12）、腸穿孔率 2%（1–5）——足以支持「血行動力學穩定、無腹膜炎徵象的嬰兒，第一線就用 UGHR，而不必先讓他吃輻射」。但三個數字全部帶著高度異質性（I² 分別為 83%、86.7%、59%），GRADE 也三個結果全部評為 low——因為 22 篇裡只有 1 篇是隨機對照試驗，其餘全是回溯性研究。真正該記住的臨床訊號是唯一達統計顯著的次群組效應：腸穿孔率在中低所得國家為 7%（3–17），而中高所得 1%、高所得 1%（次群組 p ＝ 0.0019）——這不是嬰兒生理的差異，而是就醫",
+   "bytes": 95112
+  },
   {
    "id": "pubmed-gs-txp-2026-08-02",
    "file": "papers/pubmed-gs-txp-2026-08-02.html",
