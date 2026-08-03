@@ -1,7 +1,57 @@
 {
- "count": 11,
- "latest": "2026-08-03",
+ "count": 13,
+ "latest": "2026-08-04",
  "papers": [
+  {
+   "id": "pubmed-mis-2026-08-04",
+   "file": "papers/pubmed-mis-2026-08-04.html",
+   "date": "2026-08-04",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 007",
+   "title": "經肛門全直腸繫膜切除（TaTME）vs. 腹腔鏡全直腸繫膜切除（LapTME）治療中低位直腸癌：COLOR III 國際多中心第三期隨機非劣性試驗短期結果（28 家醫院、1,103 人）",
+   "title_en": "Transanal total mesorectal excision versus laparoscopic total mesorectal excision for mid and low rectal cancer (COLOR III): short-term outcomes of an international, multicentre, phase 3, randomised, controlled, non-inferiority trial",
+   "journal": "The Lancet Gastroenterology & Hepatology 2026;11(5):355–366（Lancet 系列消化科／肝膽腸胃專刊，訂閱制，非 Open Access）",
+   "authors": "Tuynman JB, Yao H, Moolenaar LR, Sietses C, Hompes R, Aigner F, Caycedo-Marulanda A, Chen CC, Deeb M, Doornebosch PG, Feng B, Foo CC, Fürst A, Ito M, de Lacy FB, Leão P, Maykel JA, Muratore A, van Oostendorp SE, Park SC, Pędziwiatr M, Ren M, Seitinger G, Stockmann HBAC, Talsma AK, Türler A, Tong W, Wang Q, Xu Q, Zhang H, van Waesberghe JTM, Ali M, Twisk JWR, Zhang Z, de Lacy AM, Hanna GB, Bonjer HJ 通訊：Jurriaan B Tuynman，Amsterdam UMC／VU University Medical Center 外科（荷蘭）；共同主持：Beijing Friendship Hospital（中國）。作者群含台灣：Chen Chien-Chih（陳建志），和信治癌中心醫院大腸直腸外科",
+   "design": "國際多中心、開放標籤、第三期、隨機對照、非劣性試驗 全球 28 家醫院；2017-01-02 至 2024-01-16 收案；1,205 人篩選、1,103 人隨機（2:1 分配至 TaTME／LapTME）；以最小化法（minimisation）分層：性別、BMI、腫瘤分期、腫瘤高度、術前放療、放化療後降期；術前需通過影片式技術能力審查（video-based competency assessment）、資格由中央 MRI 判讀；修正意向治療（mITT）分析；主要終點為3 年局部復發（尚未報告）；試驗註冊 NCT02736942",
+   "doi": "10.1016/S2468-1253(26)00022-1",
+   "category": "微創／機器人手術技術",
+   "tags": [
+    "微創／機器人手術技術",
+    "經肛門全直腸繫膜切除 TaTME",
+    "中低位直腸癌 Mid/low rectal cancer",
+    "證據等級：國際多中心第三期 RCT（非劣性）",
+    "非 Open Access"
+   ],
+   "tldr": "在 28 家醫院、1,103 位中低位（距肛門緣 ≤ 10 cm）直腸癌病人身上，TaTME 把轉開腹率從 16.5%（56/339）壓到 0.6%（4/696）——校正後 OR 0.03（95% CI 0.01–0.08），這是本試驗唯一巨大且穩固的差別；而其他每一項短期指標都「打平」：90 天併發症 20.0% vs. 17.6%（aOR 1.22，0.90–1.64）、重大併發症（Clavien-Dindo ≥ 3）11.2% vs. 9.3%（aOR 1.23，0.82–1.85）、吻合處滲漏 9.9% vs. 8.1%（aOR 1.32，0.83–2.08）、肉眼完整標本 84.3% vs. 85.8%（aOR 0.94，0.58–1.51），環周切緣（CRM）與遠端切緣（DRM）陽性率兩組都低於 1%。請注意三件事：（1）這只是次要終點，真正的主要終點「3 年局部復發（非劣性）",
+   "bytes": 83447
+  },
+  {
+   "id": "pubmed-gs-endo-2026-08-04",
+   "file": "papers/pubmed-gs-endo-2026-08-04.html",
+   "date": "2026-08-04",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 006",
+   "title": "甲狀腺全切除後低血鈣的預防：鈣＋維生素 D vs. 單用鈣 vs. 不常規補充——20 篇隨機試驗、3,669 人的貝氏網絡統合分析",
+   "title_en": "Effectiveness of perioperative calcium and vitamin D supplementation in preventing post-thyroidectomy hypocalcaemia: network meta-analysis of randomized trials",
+   "journal": "BJS Open 2026;10(4):zrag093（British Journal of Surgery 之 Open Access 姊妹刊）",
+   "authors": "Gkanis V, Papaconstantinou D, Lanitis S, Dafnios N, Papakonstantinou I, Nastos K 希臘雅典：Korgialeneio-Benakeio 紅十字總醫院第二外科暨外科腫瘤單位、雅典大學（NKUA）Attikon 醫院第三外科、Aretaieio 醫院第二外科",
+   "design": "系統性回顧＋貝氏網絡統合分析（Bayesian network meta-analysis） 僅納入隨機對照試驗；依 PRISMA 與 AMSTAR 2 執行；PROSPERO 註冊 CRD420251068837；檢索 PubMed／Scopus／Web of Science／Cochrane Library 至 2026-05-07（因權限未納入 Embase）；MetaInsight v6.4.0（gemtc ＋ JAGS）；隨機效應模型、無資訊先驗；MCMC 4 條鏈 × 25,000 次疊代、burn-in 5,000；以 RoB 2 評估偏差風險、以 GRADE 評估證據確定性",
+   "doi": "10.1093/bjsopen/zrag093",
+   "category": "內分泌外科",
+   "tags": [
+    "內分泌外科",
+    "甲狀腺全切除 Total thyroidectomy",
+    "術後低血鈣 Post-thyroidectomy hypocalcaemia",
+    "證據等級：20 篇 RCT 之貝氏網絡統合分析",
+    "Open Access"
+   ],
+   "tldr": "把 20 篇隨機試驗、3,669 位甲狀腺全切除病人的資料放進貝氏網絡統合分析後，答案很乾脆：術後常規給「鈣 ＋ 維生素 D」是三種策略中唯一有效的——相較於不常規補充，症狀性低血鈣 OR 0.31（95% 可信區間 0.17–0.51）、生化性低血鈣 OR 0.27（0.17–0.42）、需要靜脈補鈣 OR 0.15（0.05–0.32），三項的 GRADE 確定性都是中等（moderate）；而「只給鈣、不給維生素 D」在三項結果上全部沒有達到顯著（OR 0.60、0.62、0.43，可信區間都跨過 1）——這是本篇最實用、也最容易被忽略的一句話：單用碳酸鈣等於白做。以原文的算法，症狀性低血鈣的絕對風險下降約 14.4 個百分點、NNT ≈ 7；生化性低血鈣 23.4 個百分點、NNT ≈ 4；靜脈補鈣 9.7 個百分點、NNT ≈ 10。住院天數也縮短（合併平均差 −0.44 天，9",
+   "bytes": 88784
+  },
   {
    "id": "pubmed-periop-2026-08-03",
    "file": "papers/pubmed-periop-2026-08-03.html",
