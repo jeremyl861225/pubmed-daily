@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-04</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 4 日 · 週二</span>
+    <span style="opacity:.4">/</span><span>Vol. 006</span>
+  </div>
+  <h1 class="title">甲狀腺全切除後低血鈣的預防：鈣＋維生素 D vs. 單用鈣 vs. 不常規補充——20 篇隨機試驗、3,669 人的貝氏網絡統合分析</h1>
+  <p class="title-en">Effectiveness of perioperative calcium and vitamin D supplementation in preventing post-thyroidectomy hypocalcaemia: network meta-analysis of randomized trials</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">BJS Open<br><span style="color:#6b7079;font-size:13px">2026;10(4):zrag093（British Journal of Surgery 之 Open Access 姊妹刊）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Gkanis V, Papaconstantinou D, Lanitis S, Dafnios N, Papakonstantinou I, Nastos K<br><span style="color:#6b7079;font-size:13px">希臘雅典：Korgialeneio-Benakeio 紅十字總醫院第二外科暨外科腫瘤單位、雅典大學（NKUA）Attikon 醫院第三外科、Aretaieio 醫院第二外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧＋貝氏網絡統合分析（Bayesian network meta-analysis）</b><br><span style="color:#6b7079;font-size:13px">僅納入隨機對照試驗；依 PRISMA 與 AMSTAR 2 執行；PROSPERO 註冊 CRD420251068837；檢索 PubMed／Scopus／Web of Science／Cochrane Library 至 <b>2026-05-07</b>（因權限未納入 Embase）；MetaInsight v6.4.0（gemtc ＋ JAGS）；隨機效應模型、無資訊先驗；MCMC 4 條鏈 × 25,000 次疊代、burn-in 5,000；以 RoB 2 評估偏差風險、以 GRADE 評估證據確定性</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 3 日（PMID 42397982；PMC13330921）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（含 Table 1&#8211;3 完整內容）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1093/bjsopen/zrag093">10.1093/bjsopen/zrag093</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42397982/">PMID 42397982 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">內分泌外科</span>
+    <span class="tag t2">甲狀腺全切除 Total thyroidectomy</span>
+    <span class="tag t2">術後低血鈣 Post-thyroidectomy hypocalcaemia</span>
+    <span class="tag t3">證據等級：20 篇 RCT 之貝氏網絡統合分析</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#network">網絡結構</a><a href="#results">主要結果森林圖</a>
+  <a href="#overview">全部結果總覽</a><a href="#raw">原始數據表＋重繪圖</a><a href="#flags">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 20 篇隨機試驗、3,669 位甲狀腺全切除病人的資料放進貝氏網絡統合分析後，答案很乾脆：<strong>術後常規給「鈣 ＋ 維生素 D」是三種策略中唯一有效的</strong>——相較於不常規補充，症狀性低血鈣 <strong>OR 0.31（95% 可信區間 0.17–0.51）</strong>、生化性低血鈣 <strong>OR 0.27（0.17–0.42）</strong>、需要靜脈補鈣 <strong>OR 0.15（0.05–0.32）</strong>，三項的 GRADE 確定性都是<strong>中等（moderate）</strong>；而<strong>「只給鈣、不給維生素 D」在三項結果上全部沒有達到顯著</strong>（OR 0.60、0.62、0.43，可信區間都跨過 1）——這是本篇最實用、也最容易被忽略的一句話：<strong>單用碳酸鈣等於白做</strong>。以原文的算法，症狀性低血鈣的絕對風險下降約 <strong>14.4 個百分點、NNT ≈ 7</strong>；生化性低血鈣 <strong>23.4 個百分點、NNT ≈ 4</strong>；靜脈補鈣 <strong>9.7 個百分點、NNT ≈ 10</strong>。住院天數也縮短（合併平均差 <strong>−0.44 天，95% CI −0.58 至 −0.30，I² ＝ 0%</strong>，但僅 3 篇可合併）。<strong>三個必須放在心上的但書：</strong>（1）<strong>所有結果都只談「早期、暫時性」低血鈣</strong>——<strong>真正要命的永久性副甲狀腺功能低下（permanent hypoparathyroidism）本篇完全沒有評估</strong>；（2）維生素 D 這個節點<strong>把活性製劑（calcitriol、alfacalcidol）與原生型（cholecalciferol）混在一起</strong>，兩者藥動學差很多，<strong>本篇無法告訴你該用哪一種、用多少劑量</strong>；（3）20 篇當中<strong>6 篇整體偏差風險為「高」</strong>，GRADE 因此一律降級。實務結論：<strong>甲狀腺全切除後常規給鈣＋活性維生素 D 是有證據支持的預設作法，特別是在無法即時測 PTH 的單位；但別把它當成防止永久性副甲狀腺功能低下的保險，也別只給鈣。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Post-thyroidectomy hypocalcaemia is the most common complication after total thyroidectomy. Although perioperative calcium and vitamin D supplementation is widely used, the comparative effectiveness of different prophylactic strategies remains uncertain.</p>
+    <h4>Methods</h4>
+    <p>A systematic review and Bayesian network meta-analysis of randomized clinical trials was performed according to PRISMA guidelines. PubMed, Scopus, Web of Science, and the Cochrane Library were searched from inception to 7 May 2026. Adult patients undergoing total or near-total thyroidectomy were included. Three strategies were compared: no routine supplementation, calcium alone, and calcium combined with vitamin D analogues. Primary outcomes were clinical hypocalcaemia, biochemical hypocalcaemia, and need for intravenous calcium supplementation; length of hospital stay was secondary. Random-effects network meta-analysis estimated odds ratios with 95% credible intervals. Risk of bias was assessed using RoB 2. The protocol was registered in PROSPERO (CRD420251068837).</p>
+    <h4>Results</h4>
+    <p>Twenty randomized trials including 3669 patients were analysed. Calcium plus vitamin D significantly reduced clinical hypocalcaemia versus no supplementation (odds ratio 0.31, 95% credible interval 0.17 to 0.51) and calcium alone (odds ratio 0.52, 0.25 to 1.04). Combination therapy also reduced biochemical hypocalcaemia compared with no supplementation (odds ratio 0.27, 0.17 to 0.42) and calcium alone (odds ratio 0.44, 0.22 to 0.83), and markedly decreased intravenous calcium requirements (odds ratio 0.15, 0.05 to 0.32). Calcium monotherapy showed no significant benefit. Combination therapy ranked as most effective and was associated with shorter length of hospital stay (mean difference 0.44 days).</p>
+    <h4>Conclusions</h4>
+    <p>Perioperative calcium combined with vitamin D is the most effective strategy for preventing post-thyroidectomy hypocalcaemia and reducing intravenous calcium use, supporting routine postoperative implementation despite heterogeneity in supplementation protocols.</p>
+    <p class="note">以上為 PubMed Central 之作者原文摘要逐字引用，未做任何刪改。<b>請注意摘要中「calcium alone (odds ratio 0.52, 0.25 to 1.04)」一句話：這個可信區間其實跨過 1，嚴格說並未達到統計顯著，但被寫在 &#8220;significantly reduced&#8230;&#8221; 的句子裡</b>——原文正文自己有更正確的敘述（&#8220;although the credible interval marginally crossed unity&#8221;）。中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程（依原文 Fig. 1 之文字敘述重繪）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（PubMed、Scopus、Web of Science、Cochrane Library；自建庫起至 2026-05-07）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">3178</span> 筆紀錄經檢索identified<br>
+        <span style="color:#6b7079;font-size:12.5px">另手動檢視已納入文章與既往系統性回顧之參考文獻；<b>因權限限制未納入 Embase</b>（原文自陳）</span></div></div>
+      <div class="pr-ex">重複移除筆數、標題／摘要篩除筆數<br><b>原文未列數值</b><br><span style="font-size:12px">（僅見於原文 Fig. 1 影像，正文未複述）</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">91</span> 篇全文納入資格評讀<br>
+        <span style="color:#6b7079;font-size:12.5px">由兩位審閱者獨立、重複執行篩選與資料萃取，歧異以討論解決</span></div></div>
+      <div class="pr-ex"><b>本頁自行計算：</b>91 &#8722; 20 ＝ <b>71 篇</b>經全文評讀後排除<br><span style="font-size:12px"><b>各排除理由的篇數，原文未列數值</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入定量合成</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">20</span> 篇隨機對照試驗、<span class="n">3669</span> 位病人<br>
+        <span style="color:#6b7079;font-size:12.5px">形成三節點（不補充／單用鈣／鈣＋維生素 D）之完全連通三角網絡</span></div></div>
+      <div class="pr-ex">各結果實際貢獻資料的篇數不同：<br>臨床低血鈣 <b>18 篇 / 3,424 人</b>（15 篇兩臂、3 篇多臂）<br>生化低血鈣 <b>12 篇 / 2,043 人</b>（9 篇兩臂、3 篇多臂）<br>需靜脈補鈣 <b>17 篇 / 3,012 人</b><br>住院天數 <b>4 篇（僅 3 篇可合併）</b></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:14px;line-height:1.7"><b>怎麼讀：</b>這張圖唯一需要停下來的地方是最後一格右側的<b>「各結果篇數不同」</b>。同一篇統合分析裡，三個主要結果分別由 <b>18／12／17</b> 篇試驗支撐——<b>換句話說，「生化性低血鈣」這個效果最大（OR 0.27）的結果，其實是三者中證據基礎最薄的（只有 12 篇、2,043 人，約為總樣本的 56%）</b>。<b>陷阱：</b>讀者很容易把「20 篇、3,669 人」當成每一個結論的靠山，實際上沒有一個結果用到全部 20 篇。<b>本頁自行計算：</b>臨床低血鈣用到 3,424 / 3,669 ＝ <b>93.3%</b> 的樣本、需靜脈補鈣 3,012 / 3,669 ＝ <b>82.1%</b>、生化性低血鈣僅 2,043 / 3,669 ＝ <b>55.7%</b>。另外，<b>上游的重複移除與初篩數字原文正文並未複述</b>（只存在於 Fig. 1 的影像中），本頁一律標示「原文未列數值」而<b>不做任何推估</b>。原文亦坦承<b>未納入 Embase</b>，這是系統性回顧中少見且應扣分的檢索缺口。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study &amp; Method Characteristics <span class="zh">／ 研究特徵與方法學（原文 Methods 完整內容）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:940px">
+      <thead><tr><th>項目</th><th>內容</th><th>本頁註記</th></tr></thead>
+      <tbody>
+        <tr><td>設計</td><td>系統性回顧 ＋ <b>貝氏</b>隨機效應網絡統合分析</td><td>原文註記：PROSPERO 註冊時原訂為<b>頻率學派配對式</b>統合分析，實作時改為貝氏 NMA（<b>屬事後變更，已由原文揭露</b>）</td></tr>
+        <tr><td>報告規範</td><td>PRISMA；方法學品質以 AMSTAR 2 自我對照</td><td>&#8212;</td></tr>
+        <tr><td>註冊</td><td>PROSPERO CRD420251068837</td><td>前瞻註冊 ✓</td></tr>
+        <tr><td>資料庫</td><td>PubMed、Scopus、Web of Science、Cochrane Library（至 2026-05-07）</td><td><b>未納入 Embase（原文自陳因權限限制）</b></td></tr>
+        <tr><td>納入族群</td><td>成人（&gt; 18 歲）接受<b>全甲狀腺、近全甲狀腺或補全（completion）甲狀腺切除</b>，良性或惡性，可含頸部淋巴廓清</td><td>&#8212;</td></tr>
+        <tr><td>介入分類（三節點）</td><td>①&nbsp;不常規預防性補充（僅依症狀或生化異常才治療）②&nbsp;單用口服鈣 ③&nbsp;口服鈣 ＋ 維生素 D 類似物（<b>活性製劑 calcitriol／alfacalcidol 或原生型 cholecalciferol／ergocalciferol 皆計入同一節點</b>）</td><td><b>本頁最在意的一點：第三節點內部藥理異質性大</b></td></tr>
+        <tr><td>排除條件</td><td>曾接受頸部手術或頸部放療者、副甲狀腺疾病者、術前已在服用鈣／維生素 D 者、服用類固醇／利尿劑／雙磷酸鹽者；非 RCT；<b>僅評估術前補充者</b>；<b>直接比較「術前 vs. 術後」時機者</b></td><td>後兩項排除使本篇<b>無法回答「該不該術前先給」</b></td></tr>
+        <tr><td>主要結果</td><td>①&nbsp;臨床（症狀性）低血鈣 ②&nbsp;生化性低血鈣 ③&nbsp;需靜脈補鈣</td><td>定義由各原始試驗自訂（生化多以 &lt; 8.0 mg/dL）</td></tr>
+        <tr><td>次要結果</td><td>住院天數</td><td>僅 4 篇有數值、3 篇可合併</td></tr>
+        <tr><td>統計軟體與模型</td><td>MetaInsight v6.4.0（R 之 gemtc ＋ JAGS）；隨機效應；無資訊先驗；MCMC 4 鏈 × 25,000 疊代、burn-in 5,000</td><td>&#8212;</td></tr>
+        <tr><td>收斂診斷</td><td>Gelman-Rubin 收縮因子約 10,000 次疊代後<b>趨近 1.00</b>（判準 &lt; 1.05）；trace plot 混合良好；後驗密度單峰對稱</td><td>收斂良好 ✓</td></tr>
+        <tr><td>模型適配（DIC / dbar / 資料點數）</td><td>臨床低血鈣 <b>72.1 / 40.0 / 39</b>；生化低血鈣 <b>48.8 / 27.7 / 27</b>；靜脈補鈣 <b>67.6 / 41.5 / 36</b></td><td>dbar 接近資料點數 ＝ 適配良好；<b>靜脈補鈣一項 41.5 vs. 36 略高</b></td></tr>
+        <tr><td>研究間異質性 &#964;（95% cr.i.）</td><td>臨床低血鈣 <b>0.81（0.41&#8211;1.35）</b>；生化低血鈣 <b>0.50（0.10&#8211;1.03）</b>；靜脈補鈣 <b>1.06（0.27&#8211;2.37）</b></td><td><b>貝氏 NMA 以 &#964; 而非 I&#178; 表示異質性</b>；&#964; ＝ 1.06 屬偏高</td></tr>
+        <tr><td>一致性檢驗</td><td>node-splitting 全部 p &gt; 0.050（臨床低血鈣有兩處邊緣值 0.065、0.099）；NMA 與 UME 模型殘差偏差沿等值線分佈</td><td>敏感度分析中出現兩處邊緣不一致（p ＝ 0.040、0.037），<b>原文判定不影響結論</b></td></tr>
+        <tr><td>可轉移性 transitivity</td><td>年齡與甲狀腺機能亢進分佈相當（p ＝ 0.810、0.078）；<b>惡性比例與淋巴廓清比例在三節點間顯著失衡（皆 p &lt; 0.001），單用鈣組惡性與廓清比例較高</b></td><td><b>這是本篇最實質的方法學弱點</b>——單用鈣組本身風險較高，會讓單用鈣「看起來更無效」</td></tr>
+        <tr><td>偏差風險（RoB 2）</td><td>整體判定<b>低風險 3 篇</b>（Lee、Li、Gkanis）、<b>一些疑慮 11 篇</b>、<b>高風險 6 篇</b>（Langner、Ravikumar、Choe、Tartaglia、Jaan、Nemade）</td><td><b>本頁自行計算：3 ＋ 11 ＋ 6 ＝ 20 ✓</b>，與納入篇數相符</td></tr>
+        <tr><td>證據確定性（GRADE）</td><td>中等（moderate）4 項、低（low）5 項；<b>全部因 risk of bias 降一級</b>，其中 5 項再因 imprecision 降一級</td><td>見下方 GRADE 總表</td></tr>
+        <tr><td>敏感度分析</td><td>排除高偏差風險試驗、排除使用原生型維生素 D 之試驗、排除常規中央頸部廓清之試驗、排除周術期（含術前）補充之試驗</td><td><b>四項敏感度分析結論皆穩定</b>，合併值方向與排序不變</td></tr>
+        <tr><td>利益衝突／經費</td><td class="na">原文未列數值（PMC 全文之 funding 與 COI 段落未包含於本頁取得之文字中）</td><td>本頁不做推估</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="network">
+  <h2>Network Structure <span class="zh">／ 網絡結構：為什麼可以「間接比較」</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 330" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif">
+<rect width="880" height="330" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">三節點三角形網絡（本頁依原文 Fig. 2 之結構重繪，非原圖）</text>
+<line x1="440" y1="96" x2="200" y2="236" stroke="#d9d5cc" stroke-width="8"/>
+<line x1="440" y1="96" x2="680" y2="236" stroke="#d9d5cc" stroke-width="8"/>
+<line x1="200" y1="236" x2="680" y2="236" stroke="#d9d5cc" stroke-width="8"/>
+<circle cx="440" cy="96" r="26" fill="#2f6b62" opacity="0.95"/>
+<text x="440" y="48" font-size="13.5" fill="#2e2b28" text-anchor="middle" font-weight="700">鈣 ＋ 維生素 D</text>
+<text x="440" y="64" font-size="12" fill="#6b7079" text-anchor="middle">Ca + VitD</text>
+<circle cx="200" cy="236" r="26" fill="#8a6a1f" opacity="0.95"/>
+<text x="200" y="282" font-size="13.5" fill="#2e2b28" text-anchor="middle" font-weight="700">單用鈣</text>
+<text x="200" y="298" font-size="12" fill="#6b7079" text-anchor="middle">Calcium alone</text>
+<circle cx="680" cy="236" r="26" fill="#8a4a3d" opacity="0.95"/>
+<text x="680" y="282" font-size="13.5" fill="#2e2b28" text-anchor="middle" font-weight="700">不常規補充</text>
+<text x="680" y="298" font-size="12" fill="#6b7079" text-anchor="middle">No treatment</text>
+<text x="440" y="180" font-size="12" fill="#6b7079" text-anchor="middle">三條邊皆有直接比較 &#8594; 網絡完全連通</text>
+<text x="14" y="316" font-size="10.5" fill="#6b7079">原圖以節點大小與連線粗細表示研究數；<tspan font-weight="700">各配對之確切研究數原文未列數值</tspan>，故本頁一律以等大節點、等粗連線繪製，不做推估</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Fig. 2 之敘述（&#8220;Triangle-shaped network plot&#8230;The size of the node and the thickness of the edges represent the number of studies examining a specific treatment pair. Network plots for all three outcomes were visually identical.&#8221;）。<b>如何解讀：</b>網絡統合分析的價值在於「間接比較」——即使只有少數試驗直接比較「單用鈣 vs. 鈣＋維生素 D」，只要兩者都各自與「不補充」比較過，就能經由共同的比較基準推算出兩者的相對效果，並與直接證據合併。三條邊都存在（皆有直接比較），代表網絡<b>完全連通</b>，這是 NMA 成立的最低要求。<b>有何陷阱：</b>三個。①&nbsp;<b>本頁刻意畫成等大節點、等粗連線</b>——原圖以大小粗細編碼研究數，但<b>原文正文完全沒有列出各配對的確切研究數</b>，本頁拒絕從圖形比例目測推估，只忠實呈現拓樸結構。②&nbsp;間接比較的效力完全建立在<b>「可轉移性（transitivity）」</b>假設上，也就是三組試驗的族群必須夠相似；而<b>原文自己的檢定發現「惡性比例」與「淋巴廓清比例」在三節點間有顯著失衡（皆 p &lt; 0.001），且較高風險的個案集中在單用鈣組</b>——這會系統性地讓單用鈣看起來比實際更差。③&nbsp;<b>網絡圖漂亮不等於證據強</b>：本篇 9 個配對估計中有 5 個的 GRADE 只有「低」。</div>
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 三個主要結果的合併勝算比森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">臨床（症狀性）低血鈣</div><div class="big">OR 0.31</div><div class="sub">鈣＋維生素 D vs. 不補充；0.17&#8211;0.51；NNT &#8776; 7</div></div>
+    <div class="c teal"><div class="lab">生化性低血鈣</div><div class="big">OR 0.27</div><div class="sub">0.17&#8211;0.42；NNT &#8776; 4</div></div>
+    <div class="c teal"><div class="lab">需靜脈補鈣</div><div class="big">OR 0.15</div><div class="sub">0.05&#8211;0.32；NNT &#8776; 10</div></div>
+    <div class="c amber"><div class="lab">單用鈣（三項全部）</div><div class="big">皆不顯著</div><div class="sub">OR 0.60／0.62／0.43，可信區間皆跨 1</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 512" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif">
+<rect x="0" y="0" width="880" height="512" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">貝氏網絡統合分析：合併勝算比 OR（95% 可信區間 credible interval）</text>
+<line x1="379.3" y1="52" x2="379.3" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="379.3" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">0.05</text>
+<line x1="432.5" y1="52" x2="432.5" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="432.5" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">0.1</text>
+<line x1="503.0" y1="52" x2="503.0" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="503.0" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">0.25</text>
+<line x1="556.3" y1="52" x2="556.3" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="556.3" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">0.5</text>
+<line x1="609.5" y1="52" x2="609.5" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="609.5" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">1</text>
+<line x1="662.8" y1="52" x2="662.8" y2="440" stroke="#d9d5cc" stroke-width="1"/>
+<text x="662.8" y="458" font-size="11.5" fill="#6b7079" text-anchor="middle">2</text>
+<line x1="609.5" y1="52" x2="609.5" y2="440" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14" y="46" font-size="12" font-weight="700" fill="#6b7079">結果指標</text>
+<text x="866" y="46" font-size="12" font-weight="700" fill="#6b7079" text-anchor="end">OR（95% CI）</text>
+<text x="14" y="82.5" font-size="12.5" font-weight="700" fill="#8a4a3d">臨床（症狀性）低血鈣 Clinical hypocalcaemia｜18 篇 RCT、3,424 人</text>
+<line x1="14" y1="88.7" x2="866" y2="88.7" stroke="#d9d5cc" stroke-width="1"/>
+<text x="20" y="114.0" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 不補充</text>
+<text x="330" y="114.0" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：中等 Moderate</text>
+<line x1="473.3" y1="110.0" x2="557.8" y2="110.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="473.3" y1="105.5" x2="473.3" y2="114.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="557.8" y1="105.5" x2="557.8" y2="114.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 510.5 110.0 L 519.5 103.5 L 528.5 110.0 L 519.5 116.5 Z" fill="#2f6b62"/>
+<text x="866" y="114.0" font-size="12" fill="#2e2b28" text-anchor="end">0.31（0.17−0.51）</text>
+<text x="20" y="145.1" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 單用鈣</text>
+<text x="330" y="145.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：低 Low</text>
+<line x1="503.0" y1="141.1" x2="612.6" y2="141.1" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="503.0" y1="136.6" x2="503.0" y2="145.6" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="612.6" y1="136.6" x2="612.6" y2="145.6" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 550.3 141.1 L 559.3 134.6 L 568.3 141.1 L 559.3 147.6 Z" fill="#8a6a1f"/>
+<text x="866" y="145.1" font-size="12" fill="#2e2b28" text-anchor="end">0.52（0.25−1.04）</text>
+<text x="20" y="176.1" font-size="12.5" fill="#2e2b28">單用鈣 vs. 不補充</text>
+<text x="330" y="176.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：低 Low</text>
+<line x1="506.0" y1="172.1" x2="627.3" y2="172.1" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="506.0" y1="167.6" x2="506.0" y2="176.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="627.3" y1="167.6" x2="627.3" y2="176.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 561.3 172.1 L 570.3 165.6 L 579.3 172.1 L 570.3 178.6 Z" fill="#8a4a3d"/>
+<text x="866" y="176.1" font-size="12" fill="#2e2b28" text-anchor="end">0.60（0.26−1.26）</text>
+<text x="14" y="206.5" font-size="12.5" font-weight="700" fill="#8a4a3d">生化性低血鈣 Biochemical hypocalcaemia｜12 篇、2,043 人</text>
+<line x1="14" y1="212.7" x2="866" y2="212.7" stroke="#d9d5cc" stroke-width="1"/>
+<text x="20" y="238.1" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 不補充</text>
+<text x="330" y="238.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：中等 Moderate</text>
+<line x1="473.3" y1="234.1" x2="542.9" y2="234.1" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="473.3" y1="229.6" x2="473.3" y2="238.6" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="542.9" y1="229.6" x2="542.9" y2="238.6" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 499.9 234.1 L 508.9 227.6 L 517.9 234.1 L 508.9 240.6 Z" fill="#2f6b62"/>
+<text x="866" y="238.1" font-size="12" fill="#2e2b28" text-anchor="end">0.27（0.17−0.42）</text>
+<text x="20" y="269.1" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 單用鈣</text>
+<text x="330" y="269.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：中等 Moderate</text>
+<line x1="493.2" y1="265.1" x2="595.2" y2="265.1" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="493.2" y1="260.6" x2="493.2" y2="269.6" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="595.2" y1="260.6" x2="595.2" y2="269.6" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 537.4 265.1 L 546.4 258.6 L 555.4 265.1 L 546.4 271.6 Z" fill="#2f6b62"/>
+<text x="866" y="269.1" font-size="12" fill="#2e2b28" text-anchor="end">0.44（0.22−0.83）</text>
+<text x="20" y="300.1" font-size="12.5" fill="#2e2b28">單用鈣 vs. 不補充</text>
+<text x="330" y="300.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：低 Low</text>
+<line x1="524.3" y1="296.1" x2="622.9" y2="296.1" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="524.3" y1="291.6" x2="524.3" y2="300.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="622.9" y1="291.6" x2="622.9" y2="300.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 563.8 296.1 L 572.8 289.6 L 581.8 296.1 L 572.8 302.6 Z" fill="#8a4a3d"/>
+<text x="866" y="300.1" font-size="12" fill="#2e2b28" text-anchor="end">0.62（0.33−1.19）</text>
+<text x="14" y="330.5" font-size="12.5" font-weight="700" fill="#8a4a3d">需靜脈補鈣 i.v. calcium requirement｜17 篇、3,012 人</text>
+<line x1="14" y1="336.7" x2="866" y2="336.7" stroke="#d9d5cc" stroke-width="1"/>
+<text x="20" y="362.1" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 不補充</text>
+<text x="330" y="362.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：中等 Moderate</text>
+<line x1="379.3" y1="358.1" x2="522.0" y2="358.1" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="379.3" y1="353.6" x2="379.3" y2="362.6" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="522.0" y1="353.6" x2="522.0" y2="362.6" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 454.7 358.1 L 463.7 351.6 L 472.7 358.1 L 463.7 364.6 Z" fill="#2f6b62"/>
+<text x="866" y="362.1" font-size="12" fill="#2e2b28" text-anchor="end">0.15（0.05−0.32）</text>
+<text x="20" y="393.1" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 單用鈣</text>
+<text x="330" y="393.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：低 Low</text>
+<line x1="432.5" y1="389.1" x2="609.5" y2="389.1" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="432.5" y1="384.6" x2="432.5" y2="393.6" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="609.5" y1="384.6" x2="609.5" y2="393.6" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 522.0 389.1 L 531.0 382.6 L 540.0 389.1 L 531.0 395.6 Z" fill="#8a6a1f"/>
+<text x="866" y="393.1" font-size="12" fill="#2e2b28" text-anchor="end">0.36（0.10−1.00）</text>
+<text x="20" y="424.1" font-size="12.5" fill="#2e2b28">單用鈣 vs. 不補充</text>
+<text x="330" y="424.1" font-size="10.5" fill="#6b7079" text-anchor="end">GRADE：低 Low</text>
+<line x1="446.6" y1="420.1" x2="621.6" y2="420.1" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="446.6" y1="415.6" x2="446.6" y2="424.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="621.6" y1="415.6" x2="621.6" y2="424.6" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 535.7 420.1 L 544.7 413.6 L 553.7 420.1 L 544.7 426.6 Z" fill="#8a4a3d"/>
+<text x="866" y="424.1" font-size="12" fill="#2e2b28" text-anchor="end">0.43（0.12−1.17）</text>
+<text x="597.5" y="478" font-size="11.5" fill="#2f6b62" text-anchor="end">&#8592; 有利於補充</text>
+<text x="621.5" y="478" font-size="11.5" fill="#8a4a3d">不利於補充 &#8594;</text>
+<text x="14" y="502" font-size="10.5" fill="#6b7079">對數刻度；菱形＝合併估計值，橫線＝95% 區間，箭頭＝超出繪圖範圍；虛線＝無效線 1</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>全部 9 個估計值<b>逐字取自原文 Table 3（league table）與 Table 2（GRADE 表）</b>，本頁未做任何換算。<b>如何解讀：</b>橫軸為對數刻度，垂直虛線為無效線（OR ＝ 1）；<b>菱形代表這是「合併值」</b>（貝氏網絡合併估計，非單一研究），橫線為 <b>95% 可信區間（credible interval, cr.i.）</b>——注意這與頻率學派的信賴區間（confidence interval）意義不同：可信區間可以直接讀成「真值有 95% 機率落在此範圍」，這正是貝氏方法的優點。落在虛線左側代表該策略較優。<b>有何陷阱：</b>四個。①&nbsp;<b>最上面那個 0.52（0.25&#8211;1.04）在摘要裡被寫進了 &#8220;significantly reduced&#8221; 的句子，但它跨過 1</b>；原文正文有更正確的說法（&#8220;the credible interval marginally crossed unity&#8221;）。<b>讀摘要會被誤導，讀正文才對。</b>②&nbsp;<b>紅色的三列（單用鈣 vs. 不補充）全部跨過 1</b>——這是本篇最重要、也最違反直覺的發現：<b>只給碳酸鈣而不給維生素 D，統計上等於什麼都沒做。</b>③&nbsp;請比較「需靜脈補鈣」那一組的區間寬度（0.05&#8211;0.32、0.10&#8211;1.00、0.12&#8211;1.17）——明顯比另兩組寬，這對應到該結果最高的異質性（&#964; ＝ 1.06）。<b>效果看似最大（OR 0.15），但也最不精確。</b>④&nbsp;<b>三組都只看「早期」結果</b>；本圖沒有任何一列是「永久性副甲狀腺功能低下」——那是甲狀腺手術真正的長期併發症，<b>本篇完全沒有評估</b>。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Reported Outcomes <span class="zh">／ 全部結果總覽表（含 GRADE 判定）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:1120px">
+      <thead><tr><th>結果</th><th>比較</th><th>合併 OR（95% cr.i.）</th><th>&#964;（異質性）</th><th>GRADE 確定性</th><th>降級理由</th><th>判定</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="3"><b>臨床（症狀性）低血鈣</b><br><span style="font-size:12px;color:#6b7079">18 篇 / 3,424 人</span></td><td>鈣＋維生素 D vs. 不補充</td><td class="num sig">0.31（0.17&#8211;0.51）</td><td class="num" rowspan="3">0.81（0.41&#8211;1.35）</td><td><span class="grade">中等 Moderate</span></td><td>risk of bias（serious）</td><td><span class="win">顯著有利</span></td></tr>
+        <tr><td>鈣＋維生素 D vs. 單用鈣</td><td class="num">0.52（0.25&#8211;1.04）</td><td><span class="grade">低 Low</span></td><td>risk of bias ＋ imprecision</td><td><span class="win neutral">方向有利，未達顯著</span></td></tr>
+        <tr><td>單用鈣 vs. 不補充</td><td class="num">0.60（0.26&#8211;1.26）</td><td><span class="grade">低 Low</span></td><td>risk of bias ＋ imprecision</td><td><span class="win neutral">無顯著效果</span></td></tr>
+        <tr><td rowspan="3"><b>生化性低血鈣</b><br><span style="font-size:12px;color:#6b7079">12 篇 / 2,043 人</span></td><td>鈣＋維生素 D vs. 不補充</td><td class="num sig">0.27（0.17&#8211;0.42）</td><td class="num" rowspan="3">0.50（0.10&#8211;1.03）</td><td><span class="grade">中等 Moderate</span></td><td>risk of bias（serious）</td><td><span class="win">顯著有利</span></td></tr>
+        <tr><td>鈣＋維生素 D vs. 單用鈣</td><td class="num sig">0.44（0.22&#8211;0.83）</td><td><span class="grade">中等 Moderate</span></td><td>risk of bias（serious）</td><td><span class="win">顯著有利</span></td></tr>
+        <tr><td>單用鈣 vs. 不補充</td><td class="num">0.62（0.33&#8211;1.19）</td><td><span class="grade">低 Low</span></td><td>risk of bias ＋ imprecision</td><td><span class="win neutral">無顯著效果</span></td></tr>
+        <tr><td rowspan="3"><b>需靜脈補鈣</b><br><span style="font-size:12px;color:#6b7079">17 篇 / 3,012 人</span></td><td>鈣＋維生素 D vs. 不補充</td><td class="num sig">0.15（0.05&#8211;0.32）</td><td class="num" rowspan="3">1.06（0.27&#8211;2.37）</td><td><span class="grade">中等 Moderate</span></td><td>risk of bias（serious）</td><td><span class="win">顯著有利</span></td></tr>
+        <tr><td>鈣＋維生素 D vs. 單用鈣</td><td class="num">0.36（0.10&#8211;1.00）</td><td><span class="grade">低 Low</span></td><td>risk of bias ＋ imprecision</td><td><span class="win neutral">恰好貼到 1.00，判為未達顯著</span></td></tr>
+        <tr><td>單用鈣 vs. 不補充</td><td class="num">0.43（0.12&#8211;1.17）</td><td><span class="grade">低 Low</span></td><td>risk of bias ＋ imprecision</td><td><span class="win neutral">無顯著效果</span></td></tr>
+        <tr><td><b>住院天數</b><br><span style="font-size:12px;color:#6b7079">3 篇可合併</span></td><td>鈣＋維生素 D vs. 不補充</td><td class="num sig">MD −0.44 天（−0.58 至 −0.30）</td><td class="num">I&#178; ＝ 0%</td><td class="na">原文未評 GRADE</td><td>&#8212;</td><td><span class="win">顯著較短（但篇數極少）</span></td></tr>
+        <tr><td>住院天數（單篇）</td><td>單用鈣 vs. 不補充</td><td class="num">MD −0.80 天<span style="font-size:11.5px;color:#6b7079">（<b>原文未列 95% CI</b>）</span></td><td class="num na">不適用</td><td class="na">未合併</td><td>單一研究，未納入合併</td><td><span class="win caution">無法判斷</span></td></tr>
+        <tr><td><b>永久性副甲狀腺功能低下</b></td><td colspan="2" class="num na">本篇完全未評估</td><td class="num na">&#8212;</td><td class="na">&#8212;</td><td>原文明列為限制</td><td><span class="win caution">最重要的長期終點缺席</span></td></tr>
+        <tr><td>補充治療的不良事件（高血鈣、腎結石）</td><td colspan="2" class="num na">原文僅於討論中定性敘述，未做量化合併</td><td class="num na">&#8212;</td><td class="na">&#8212;</td><td>&#8212;</td><td><span class="win caution">未量化</span></td></tr>
+        <tr><td>最佳策略排序（SUCRA）</td><td colspan="2">三項結果一致：<b>鈣＋維生素 D &gt; 單用鈣 &gt; 不補充</b></td><td class="num na">&#8212;</td><td class="na">&#8212;</td><td><b>SUCRA 之確切數值原文未列</b></td><td><span class="win">排序穩定</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>這張表最值得記住的一列，是「鈣＋維生素 D vs. 單用鈣」在生化性低血鈣達到顯著（OR 0.44，0.22&#8211;0.83，GRADE 中等）。</b>它是全表唯一一個<b>直接證明「加維生素 D 有額外好處」且證據確定性達中等</b>的估計。其餘兩項同一比較（0.52、0.36）雖然方向相同，但都貼在 1.00 附近，GRADE 只有低。<b>換句話說：「該不該加維生素 D」的答案是「該加」，但這個答案的證據強度是中等而非高，且主要建立在生化指標而非症狀上。</b></p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始事件率與本頁重繪圖</span></h2>
+
+  <h3>三策略合併事件率（原文 Results 內文所載）</h3>
+  <div class="tbl-wrap">
+    <table style="min-width:960px">
+      <thead><tr><th>結果</th><th>不常規補充</th><th>單用鈣</th><th>鈣＋維生素 D</th><th>原文所列 ARR / NNT</th><th>本頁以觀察值直算之 ARR / NNT</th></tr></thead>
+      <tbody>
+        <tr><td>臨床（症狀性）低血鈣</td><td class="num">22.8%</td><td class="num">24.5%</td><td class="num">13.1%</td><td class="num">&#8776; 14.4 個百分點 / NNT &#8776; 7</td><td class="num">9.7 個百分點 / NNT &#8776; 10.3</td></tr>
+        <tr><td>生化性低血鈣</td><td class="num">37.2%</td><td class="num">36.6%</td><td class="num">15.8%</td><td class="num">&#8776; 23.4 個百分點 / NNT &#8776; 4</td><td class="num">21.4 個百分點 / NNT &#8776; 4.7</td></tr>
+        <tr><td>需靜脈補鈣</td><td class="num">11.6%</td><td class="num">16.0%</td><td class="num">4.0%</td><td class="num">&#8776; 9.7 個百分點 / NNT &#8776; 10</td><td class="num">7.6 個百分點 / NNT &#8776; 13.2</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.7"><b>本頁自行驗算（完全還原原文的算法，三項全部對上）：</b>原文的 ARR 並非「兩組觀察事件率相減」，而是<b>「把不補充組的基線事件率換成勝算，乘以 NMA 的合併 OR，再換回機率」</b>。以臨床低血鈣為例：基線 22.8% &#8594; 勝算 0.228/0.772 ＝ 0.2953 &#8594; ×0.31 ＝ 0.0916 &#8594; 換回機率 <b>8.39%</b> &#8594; ARR ＝ 22.8 &#8722; 8.39 ＝ <b>14.41 個百分點</b> &#8594; NNT ＝ 1/0.1441 ＝ <b>6.94 &#8594; 約 7 ✓</b>（與原文完全相符）。生化性低血鈣：37.2% &#8594; 13.79%，ARR <b>23.41</b>，NNT <b>4.27 &#8594; 約 4 ✓</b>。需靜脈補鈣：11.6% &#8594; 1.93%，ARR <b>9.67</b>，NNT <b>10.34 &#8594; 約 10 ✓</b>。<b>三項驗算全部通過，原文計算無誤。</b><br>
+  <b>但這裡有一個一定要指出的陷阱：</b>用 OR 推算的 ARR（14.4／23.4／9.7）<b>一律比直接相減的觀察值（9.7／21.4／7.6）來得大</b>。原因是<b>合併 OR 已經經過網絡整合與隨機效應收縮，與「把各組人數直接加總的粗事件率」不是同一個東西</b>；而 OR 在事件率不低時本來就會誇大相對效果。<b>本頁的立場：兩種算法都列出來，讓你自己判斷。實務上比較保守、也比較接近真實體感的是右邊那一欄——NNT 約 10、5、13，而不是 7、4、10。</b></p>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 372" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif">
+<rect width="880" height="372" fill="#faf9f6"/>
+<text x="14" y="24" font-size="15" font-weight="700" fill="#2e2b28">三種策略在各結果的合併事件率（%）— 原文 Results 內文所載</text>
+<line x1="62" y1="276.0" x2="858" y2="276.0" stroke="#d9d5cc"/>
+<text x="54" y="280.0" font-size="11" fill="#6b7079" text-anchor="end">0</text>
+<line x1="62" y1="234.0" x2="858" y2="234.0" stroke="#d9d5cc"/>
+<text x="54" y="238.0" font-size="11" fill="#6b7079" text-anchor="end">8</text>
+<line x1="62" y1="192.0" x2="858" y2="192.0" stroke="#d9d5cc"/>
+<text x="54" y="196.0" font-size="11" fill="#6b7079" text-anchor="end">16</text>
+<line x1="62" y1="150.0" x2="858" y2="150.0" stroke="#d9d5cc"/>
+<text x="54" y="154.0" font-size="11" fill="#6b7079" text-anchor="end">24</text>
+<line x1="62" y1="108.0" x2="858" y2="108.0" stroke="#d9d5cc"/>
+<text x="54" y="112.0" font-size="11" fill="#6b7079" text-anchor="end">32</text>
+<line x1="62" y1="66.0" x2="858" y2="66.0" stroke="#d9d5cc"/>
+<text x="54" y="70.0" font-size="11" fill="#6b7079" text-anchor="end">40</text>
+<text x="16" y="52" font-size="11.5" fill="#6b7079">合併事件率（%）</text>
+<rect x="137.7" y="156.3" width="34.0" height="119.7" fill="#8a4a3d" opacity="0.9"/>
+<text x="154.7" y="150.3" font-size="10.5" fill="#2e2b28" text-anchor="middle">22.8</text>
+<rect x="175.7" y="147.4" width="34.0" height="128.6" fill="#8a6a1f" opacity="0.9"/>
+<text x="192.7" y="141.4" font-size="10.5" fill="#2e2b28" text-anchor="middle">24.5</text>
+<rect x="213.7" y="207.2" width="34.0" height="68.8" fill="#2f6b62" opacity="0.9"/>
+<text x="230.7" y="201.2" font-size="10.5" fill="#2e2b28" text-anchor="middle">13.1</text>
+<text x="194.7" y="294.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">臨床（症狀性）低血鈣</text>
+<text x="194.7" y="308.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">Clinical</text>
+<rect x="403.0" y="80.7" width="34.0" height="195.3" fill="#8a4a3d" opacity="0.9"/>
+<text x="420.0" y="74.7" font-size="10.5" fill="#2e2b28" text-anchor="middle">37.2</text>
+<rect x="441.0" y="83.8" width="34.0" height="192.2" fill="#8a6a1f" opacity="0.9"/>
+<text x="458.0" y="77.8" font-size="10.5" fill="#2e2b28" text-anchor="middle">36.6</text>
+<rect x="479.0" y="193.1" width="34.0" height="83.0" fill="#2f6b62" opacity="0.9"/>
+<text x="496.0" y="187.1" font-size="10.5" fill="#2e2b28" text-anchor="middle">15.8</text>
+<text x="460.0" y="294.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">生化性低血鈣</text>
+<text x="460.0" y="308.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">Biochemical</text>
+<rect x="668.3" y="215.1" width="34.0" height="60.9" fill="#8a4a3d" opacity="0.9"/>
+<text x="685.3" y="209.1" font-size="10.5" fill="#2e2b28" text-anchor="middle">11.6</text>
+<rect x="706.3" y="192.0" width="34.0" height="84.0" fill="#8a6a1f" opacity="0.9"/>
+<text x="723.3" y="186.0" font-size="10.5" fill="#2e2b28" text-anchor="middle">16.0</text>
+<rect x="744.3" y="255.0" width="34.0" height="21.0" fill="#2f6b62" opacity="0.9"/>
+<text x="761.3" y="249.0" font-size="10.5" fill="#2e2b28" text-anchor="middle">4.0</text>
+<text x="725.3" y="294.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">需靜脈補鈣</text>
+<text x="725.3" y="308.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">i.v. calcium</text>
+<rect x="62.0" y="346.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="356.0" font-size="11.5" fill="#2e2b28">不常規補充 No treatment</text>
+<rect x="249.0" y="346.0" width="12" height="12" fill="#8a6a1f"/>
+<text x="266.0" y="356.0" font-size="11.5" fill="#2e2b28">單用鈣 Calcium alone</text>
+<rect x="419.3" y="346.0" width="12" height="12" fill="#2f6b62"/>
+<text x="436.3" y="356.0" font-size="11.5" fill="#2e2b28">鈣＋維生素 D Ca + VitD</text>
+<line x1="62" y1="276" x2="858" y2="276" stroke="#2e2b28" stroke-width="1.2"/>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Results 三段內文所載之「pooled event rates」（臨床 22.8/24.5/13.1%、生化 37.2/36.6/15.8%、靜脈補鈣 11.6/16.0/4.0%），<b>本頁未做任何換算，直接依原文數值繪製</b>。<b>如何解讀：</b>三個結果並排，每組三根柱子依序為赭紅（不補充）、警示黃（單用鈣）、青綠（鈣＋維生素 D）；縱軸統一為 0&#8211;40%，因此三組可直接目視比較。<b>青綠柱在三組都明顯最矮，這就是本篇的核心訊息。</b><b>有何陷阱：</b>三個，而且都很重要。①&nbsp;<b>請看黃色柱子：在「臨床低血鈣」與「需靜脈補鈣」兩項，單用鈣的事件率竟然「高於」完全不補充</b>（24.5% vs. 22.8%、16.0% vs. 11.6%）。這<b>不代表補鈣有害</b>——這是<b>粗事件率的陷阱</b>：原文的可轉移性檢定已發現<b>單用鈣組的惡性比例與淋巴廓清比例顯著較高</b>（p &lt; 0.001），也就是那一節點收的是<b>本來風險就較高的病人</b>。②&nbsp;<b>這三組事件率是「跨試驗直接加總」的粗值，不是隨機比較</b>；真正可用來比較的是上一節的森林圖（NMA 合併 OR），不是這張圖的柱高。③&nbsp;各節點的樣本數不同且原文未逐一列出，柱高的精確度不一致。<b>本頁畫這張圖的用意是呈現「絕對量級」（讓你知道 13% 與 23% 在病房裡差多少），不是用來做組間推論。</b></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif">
+<rect width="880" height="380" fill="#faf9f6"/>
+<text x="14" y="24" font-size="15" font-weight="700" fill="#2e2b28">ARR 與 NNT 的兩種算法為何不同（%）— 本頁自行計算 vs. 原文所採用者</text>
+<line x1="62" y1="284.0" x2="858" y2="284.0" stroke="#d9d5cc"/>
+<text x="54" y="288.0" font-size="11" fill="#6b7079" text-anchor="end">0</text>
+<line x1="62" y1="240.4" x2="858" y2="240.4" stroke="#d9d5cc"/>
+<text x="54" y="244.4" font-size="11" fill="#6b7079" text-anchor="end">8</text>
+<line x1="62" y1="196.8" x2="858" y2="196.8" stroke="#d9d5cc"/>
+<text x="54" y="200.8" font-size="11" fill="#6b7079" text-anchor="end">16</text>
+<line x1="62" y1="153.2" x2="858" y2="153.2" stroke="#d9d5cc"/>
+<text x="54" y="157.2" font-size="11" fill="#6b7079" text-anchor="end">24</text>
+<line x1="62" y1="109.6" x2="858" y2="109.6" stroke="#d9d5cc"/>
+<text x="54" y="113.6" font-size="11" fill="#6b7079" text-anchor="end">32</text>
+<line x1="62" y1="66.0" x2="858" y2="66.0" stroke="#d9d5cc"/>
+<text x="54" y="70.0" font-size="11" fill="#6b7079" text-anchor="end">40</text>
+<text x="16" y="52" font-size="11.5" fill="#6b7079">事件率（%）</text>
+<rect x="137.7" y="159.7" width="34.0" height="124.3" fill="#8a4a3d" opacity="0.9"/>
+<text x="154.7" y="153.7" font-size="10.5" fill="#2e2b28" text-anchor="middle">22.8</text>
+<rect x="175.7" y="238.3" width="34.0" height="45.7" fill="#2f6b62" opacity="0.9"/>
+<text x="192.7" y="232.3" font-size="10.5" fill="#2e2b28" text-anchor="middle">8.4</text>
+<rect x="213.7" y="212.6" width="34.0" height="71.4" fill="#8a6a1f" opacity="0.9"/>
+<text x="230.7" y="206.6" font-size="10.5" fill="#2e2b28" text-anchor="middle">13.1</text>
+<text x="194.7" y="302.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">臨床低血鈣</text>
+<text x="194.7" y="316.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">Clinical</text>
+<rect x="403.0" y="81.3" width="34.0" height="202.7" fill="#8a4a3d" opacity="0.9"/>
+<text x="420.0" y="75.3" font-size="10.5" fill="#2e2b28" text-anchor="middle">37.2</text>
+<rect x="441.0" y="208.8" width="34.0" height="75.2" fill="#2f6b62" opacity="0.9"/>
+<text x="458.0" y="202.8" font-size="10.5" fill="#2e2b28" text-anchor="middle">13.8</text>
+<rect x="479.0" y="197.9" width="34.0" height="86.1" fill="#8a6a1f" opacity="0.9"/>
+<text x="496.0" y="191.9" font-size="10.5" fill="#2e2b28" text-anchor="middle">15.8</text>
+<text x="460.0" y="302.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">生化低血鈣</text>
+<text x="460.0" y="316.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">Biochemical</text>
+<rect x="668.3" y="220.8" width="34.0" height="63.2" fill="#8a4a3d" opacity="0.9"/>
+<text x="685.3" y="214.8" font-size="10.5" fill="#2e2b28" text-anchor="middle">11.6</text>
+<rect x="706.3" y="273.5" width="34.0" height="10.5" fill="#2f6b62" opacity="0.9"/>
+<text x="723.3" y="267.5" font-size="10.5" fill="#2e2b28" text-anchor="middle">1.9</text>
+<rect x="744.3" y="262.2" width="34.0" height="21.8" fill="#8a6a1f" opacity="0.9"/>
+<text x="761.3" y="256.2" font-size="10.5" fill="#2e2b28" text-anchor="middle">4.0</text>
+<text x="725.3" y="302.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">需靜脈補鈣</text>
+<text x="725.3" y="316.0" font-size="11.5" fill="#2e2b28" text-anchor="middle">i.v. calcium</text>
+<rect x="62.0" y="354.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="364.0" font-size="11.5" fill="#2e2b28">不補充組基線事件率</text>
+<rect x="211.5" y="354.0" width="12" height="12" fill="#2f6b62"/>
+<text x="228.5" y="364.0" font-size="11.5" fill="#2e2b28">以 OR 推算之補充組事件率（本頁自行計算）</text>
+<rect x="492.3" y="354.0" width="12" height="12" fill="#8a6a1f"/>
+<text x="509.3" y="364.0" font-size="11.5" fill="#2e2b28">實際觀察到的補充組事件率</text>
+<line x1="62" y1="284" x2="858" y2="284" stroke="#2e2b28" stroke-width="1.2"/>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>赭紅柱與警示黃柱取自原文所載之事件率；<b>青綠柱（8.4%、13.8%、1.9%）為本頁依「基線事件率 × 合併 OR」自行計算</b>，即原文推導 ARR 與 NNT 時所隱含使用的數值——<b>原文並未把這三個數字印出來，是本頁反推還原的</b>。<b>如何解讀：</b>每組三根柱子：赭紅＝不補充組的基線；青綠＝<b>用 OR 推算</b>的補充組事件率（原文計算 NNT 的依據）；警示黃＝<b>實際觀察到</b>的補充組粗事件率。兩者的落差（青綠比黃矮）就是「用 OR 算 ARR」相對樂觀的幅度。<b>有何陷阱：</b>①&nbsp;<b>NNT 是統合分析裡最容易被過度包裝的數字。</b>同一份資料，換一種完全合理的算法，NNT 就從 7 變成 10、從 4 變成 5、從 10 變成 13。<b>看到 NNT 一定要問「基線事件率是誰的、用什麼算的」。</b>②&nbsp;基線事件率本身高度取決於各試驗的低血鈣定義（生化性多以血鈣 &lt; 8.0 mg/dL，但原文明言各研究閾值不一致）；<b>你所在醫院的基線若低於 22.8%，實際 NNT 會比這裡任何一個數字都大。</b>③&nbsp;本圖<b>不呈現任何可信區間</b>——因為 ARR 的區間需要原始各研究資料才能正確傳遞，<b>原文未提供，本頁拒絕推估</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 182" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif">
+<rect width="880" height="182" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">次要結果：住院天數（僅 3 篇可合併）</text>
+<line x1="320.0" y1="52" x2="320.0" y2="112" stroke="#d9d5cc"/>
+<text x="320.0" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">−0.8</text>
+<line x1="381.7" y1="52" x2="381.7" y2="112" stroke="#d9d5cc"/>
+<text x="381.7" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">−0.6</text>
+<line x1="443.3" y1="52" x2="443.3" y2="112" stroke="#d9d5cc"/>
+<text x="443.3" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">−0.4</text>
+<line x1="505.0" y1="52" x2="505.0" y2="112" stroke="#d9d5cc"/>
+<text x="505.0" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">−0.2</text>
+<line x1="566.7" y1="52" x2="566.7" y2="112" stroke="#d9d5cc"/>
+<text x="566.7" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">0.0</text>
+<line x1="628.3" y1="52" x2="628.3" y2="112" stroke="#d9d5cc"/>
+<text x="628.3" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">0.2</text>
+<line x1="690.0" y1="52" x2="690.0" y2="112" stroke="#d9d5cc"/>
+<text x="690.0" y="130" font-size="11.5" fill="#6b7079" text-anchor="middle">0.4</text>
+<text x="505.0" y="148" font-size="11.5" fill="#6b7079" text-anchor="middle">平均差（天 days）；負值代表住院較短</text>
+<line x1="566.7" y1="52" x2="566.7" y2="112" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14" y="46" font-size="12" font-weight="700" fill="#6b7079">結果指標</text>
+<text x="866" y="46" font-size="12" font-weight="700" fill="#6b7079" text-anchor="end">平均差 MD（95% CI）</text>
+<text x="20" y="84.0" font-size="12.5" fill="#2e2b28">鈣＋維生素 D vs. 不常規補充</text>
+<text x="20" y="98.0" font-size="10.5" fill="#6b7079">3 篇 RCT 配對式隨機效應合併；I² ＝ 0%</text>
+<line x1="387.8" y1="84.0" x2="474.2" y2="84.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="387.8" y1="79.5" x2="387.8" y2="88.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="474.2" y1="79.5" x2="474.2" y2="88.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 422.0 84.0 L 431.0 77.5 L 440.0 84.0 L 431.0 90.5 Z" fill="#2f6b62"/>
+<text x="866" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end">−0.44（−0.58 至 −0.30）</text>
+<text x="554.7" y="166" font-size="11.5" fill="#2f6b62" text-anchor="end">&#8592; 住院較短（有利補充）</text>
+<text x="578.7" y="166" font-size="11.5" fill="#8a4a3d">住院較長 &#8594;</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>原文 Fig. 4 與 Results 之次要結果段落：3 篇 RCT 之配對式隨機效應合併，平均差 <b>−0.44 天（95% CI −0.58 至 −0.30）</b>，I&#178; ＝ 0%。<b>如何解讀：</b>橫軸單位為<b>天（days）</b>，垂直虛線為無效線 0；菱形代表 3 篇的合併值，落在左側代表補充組住院較短。<b>有何陷阱：</b>四個。①&nbsp;<b>原文摘要把這個值寫成「mean difference 0.44 days」（正號），但正文與 CI 都是負的（−0.58 至 −0.30）</b>——<b>本頁自行驗算：CI 的中點 ＝ (−0.58 ＋ −0.30) &#247; 2 ＝ −0.44 ✓</b>，確認正確值應為 <b>−0.44 天</b>，摘要遺漏負號。②&nbsp;<b>只有 3 篇可合併</b>（原文另有 1 篇單用鈣 vs. 不補充報告 −0.80 天但<b>未列 CI</b>、1 篇只說顯著而<b>完全未給數值</b>）。3 篇的合併值卻得到 I&#178; ＝ 0% 與如此窄的 CI，<b>這種「篇數極少卻異質性為零」的組合本身就該提高警覺</b>——它更可能反映的是可選樣本太少，而不是真正的一致性。③&nbsp;<b>0.44 天在台灣的臨床意義有限</b>：甲狀腺全切除本來就多在術後 1&#8211;3 天出院，少半天不會改變流程，真正的價值在於<b>減少「因低血鈣症狀而卡住不能出院」的個案</b>，而那是二元事件、不是連續天數。④&nbsp;<b>原文未對此次要結果評 GRADE</b>。</div>
+  </div>
+</section>
+
+<section id="flags">
+  <h2>Data Integrity Flags <span class="zh">／ 數值一致性檢查（本頁如實揭露）</span></h2>
+  <div class="tbl-wrap">
+    <table style="min-width:920px">
+      <thead><tr><th>項目</th><th>原文印出</th><th>本頁驗算所得</th><th>本頁處置</th></tr></thead>
+      <tbody>
+        <tr><td><b>住院天數的正負號</b></td><td class="num">摘要：&#8220;mean difference 0.44 days&#8221;；正文：&#8220;MD 0.44 days, 95% c.i. −0.58 to −0.30&#8221;</td><td class="num sig">CI 中點 ＝ −0.44 &#8594; <b>點估計應為 −0.44</b>，摘要與正文皆遺漏負號</td><td>圖表一律以 <b>−0.44</b> 呈現並標明；摘要區<b>逐字照錄不修改</b></td></tr>
+        <tr><td><b>「significantly reduced」的用法</b></td><td class="num">摘要：&#8220;significantly reduced clinical hypocalcaemia versus no supplementation (OR 0.31&#8230;) <b>and calcium alone (OR 0.52, 0.25 to 1.04)</b>&#8221;</td><td class="num sig">0.52 的可信區間 <b>跨過 1</b>，不符合「顯著」</td><td>正文另有正確敘述（&#8220;marginally crossed unity&#8221;）。本頁總覽表judgement 欄標為<b>「方向有利，未達顯著」</b></td></tr>
+        <tr><td>league table 的倒數一致性</td><td class="num">0.31 &#8596; 3.22；0.44 &#8596; 2.28；0.62 &#8596; 1.61 等</td><td class="num">1/0.31 ＝ 3.226 ✓、1/0.44 ＝ 2.273 ✓、1/0.62 ＝ 1.613 ✓</td><td>相符（捨去差異）</td></tr>
+        <tr><td>league table 兩處較大落差</td><td class="num">0.27 &#8596; <b>3.66</b>；0.15 &#8596; <b>6.5</b></td><td class="num">1/0.27 ＝ <b>3.704</b>（差 0.044）；1/0.15 ＝ <b>6.667</b>（差 0.167）</td><td>屬<b>貝氏後驗分布不對稱＋列印時各自捨去</b>之正常現象，非錯誤；如實併陳</td></tr>
+        <tr><td>ARR / NNT 推導</td><td class="num">14.4% / NNT 7；23.4% / NNT 4；9.7% / NNT 10</td><td class="num">14.41 / 6.94 ✓；23.41 / 4.27 ✓；9.67 / 10.34 ✓</td><td><b>三項全部驗算通過</b>；但本頁另列「以觀察值直算」之較保守數字並說明差異來源</td></tr>
+        <tr><td>RoB 2 篇數加總</td><td class="num">Table 1 逐篇列出</td><td class="num">低 3 ＋ 一些疑慮 11 ＋ 高 6 ＝ <b>20 ✓</b></td><td>與納入篇數相符</td></tr>
+        <tr><td>各結果貢獻篇數</td><td class="num">18 / 12 / 17 篇；3,424 / 2,043 / 3,012 人</td><td class="num">分別佔總樣本 93.3% / 55.7% / 82.1%</td><td>於 PRISMA 段落明確標示，提醒讀者<b>沒有任何結論用到全部 20 篇</b></td></tr>
+        <tr><td>PRISMA 上游數字</td><td class="num">3178 identified、91 全文評讀、20 納入；<b>重複移除與初篩數僅存在於 Fig. 1 影像</b></td><td class="num">91 &#8722; 20 ＝ 71 篇全文排除（本頁自行計算）</td><td>其餘一律標示「<b>原文未列數值</b>」，<b>不做推估</b></td></tr>
+        <tr><td>SUCRA 數值</td><td class="num">正文僅稱「最高 SUCRA」，<b>未印出數字</b></td><td class="num">&#8212;</td><td>本頁<b>不繪製 SUCRA 圖、不推估數值</b>，僅記錄排序</td></tr>
+        <tr><td>方案事後變更</td><td class="num">PROSPERO 註冊為頻率學派配對式分析，實作為貝氏 NMA</td><td class="num">&#8212;</td><td><b>原文已主動揭露，屬誠實作法</b>；本頁記錄於研究特徵表</td></tr>
+        <tr><td>dbar vs. 資料點數</td><td class="num">臨床 40.0/39、生化 27.7/27、靜脈補鈣 41.5/36</td><td class="num">前兩者接近 ✓；<b>靜脈補鈣 41.5 明顯高於 36</b></td><td>如實列出；<b>對應該結果最高的 &#964;（1.06）與最寬的可信區間</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：在台灣的病房裡，這篇怎麼用</span></h2>
+
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>最適合：所有接受全甲狀腺／近全甲狀腺切除的病人，且你的單位無法在術後 4&#8211;6 小時拿到 PTH 數值。</b>這正是本篇最強的應用場景——原文明講常規補充可作為「PTH 導向分層策略」在資源受限環境下的<b>務實替代方案（pragmatic alternative to PTH-guided stratification）</b>。台灣多數醫院可測 iPTH，但<b>能在術後當晚就回報結果的並不多</b>；只要報告要等到隔天，常規補充的價值就成立。</li>
+    <li><b>特別適合：手術範圍較大者。</b>合併中央頸部淋巴廓清（central neck dissection）、Graves' 病、巨大胸骨後甲狀腺腫、二次手術（completion thyroidectomy），這些都是副甲狀腺血流受損風險最高的情境。<b>但請注意：原文的敏感度分析已排除「常規做中央廓清」的試驗，結論不變</b>——這代表效果並非只來自高風險族群。</li>
+    <li><b>不適合／要小心：本來就有高鈣尿症（hypercalciuria）、反覆腎結石、結節病等肉芽腫性疾病、正在使用 thiazide 利尿劑者。</b>原文討論明確提醒：短期補充整體安全、腎結石風險可忽略，但<b>鈣會增加尿鈣排泄、維生素 D 會加重易感者的結石風險，且文獻有高劑量補充後臨床顯著高血鈣的個案報告</b>。</li>
+    <li><b>本篇無法回答的族群：只做單側腺葉切除（hemithyroidectomy）者。</b>納入條件僅限全／近全／補全切除，<b>單葉切除不在本篇範圍</b>，不要外推。</li>
+  </ul>
+
+  <h3>換來什麼？代價是什麼？</h3>
+  <div class="call teal">
+    <div class="h">換來的</div>
+    <p style="margin:0 0 8px"><b>症狀性低血鈣</b>從約 22.8% 降到 13.1%（原文以 OR 推算為 8.4%）：<b>NNT 約 7&#8211;10 人</b>。這是病人真正有感的那一項——嘴唇麻、手指刺痛、抽筋，嚴重者喉痙攣或心律不整。</p>
+    <p style="margin:0 0 8px"><b>需要靜脈補鈣</b>從約 11.6% 降到 4.0%：<b>NNT 約 10&#8211;13 人</b>。少一條靜脈輸液、少一次夜間急 call、少一次心電圖監測。</p>
+    <p style="margin:0"><b>住院天數</b>縮短 <b>0.44 天</b>（僅 3 篇，I&#178; ＝ 0%）；更實際的價值是讓「當日／短期住院甲狀腺手術路徑」比較安全地跑得起來。</p>
+  </div>
+  <div class="call amber">
+    <div class="h">代價與尚未結清的帳</div>
+    <p style="margin:0 0 8px"><b>過度治療（overtreatment）。</b>若你的病人 100 人裡本來只有 23 人會有症狀，常規補充等於<b>讓 77 人吃了不需要的藥</b>。短期而言副作用極小，但這是真實的成本與服藥負擔。</p>
+    <p style="margin:0 0 8px"><b>可能遮蔽早期偵測。</b>常規補鈣會讓血鈣看起來正常，<b>理論上可能延後發現真正的永久性副甲狀腺功能低下</b>。原文完全沒有討論這個風險，但它是實務上真實存在的疑慮——<b>建議仍應在術後 4&#8211;6 週停藥後複驗血鈣與 PTH，而不是「補到底、不再追蹤」。</b></p>
+    <p style="margin:0"><b>最大的一筆未結帳：永久性副甲狀腺功能低下。</b>原文自陳未評估。<b>本篇沒有任何證據顯示常規補充能降低永久性副甲狀腺功能低下</b>——那個結果只取決於手術中對副甲狀腺的辨識、保留與自體移植，<b>藥物補充救不回被切掉或去血管化的腺體。</b></p>
+  </div>
+
+  <h3>知情同意怎麼談？（可直接照著講的版本）</h3>
+  <ol class="num">
+    <li>「甲狀腺全部拿掉之後，<b>最常見的問題是血鈣暫時下降</b>，因為調節血鈣的副甲狀腺就貼在甲狀腺後面，手術一定會影響到它的血流。<b>大約每 4&#8211;5 個人就有 1 個</b>會出現嘴唇麻、手腳刺痛甚至抽筋。」</li>
+    <li>「所以我們手術後會<b>常規給你鈣片加上活性維生素 D</b>。有 20 篇隨機試驗、將近 3,700 人的資料顯示，這樣做可以<b>把這些症狀的機會降到大約一半以下</b>，也<b>大幅減少需要打點滴補鈣的機會</b>。」</li>
+    <li>「要特別說明的是：<b>只吃鈣片、不加維生素 D，效果在研究裡等於沒做</b>。所以請兩種都按時吃，不要自己只留一種。」</li>
+    <li>「這些藥<b>不是永久的</b>。大部分人的副甲狀腺會在幾週到幾個月內恢復，我們會在術後大約 <b>4&#8211;6 週安排停藥後抽血</b>，確認你是不是可以完全停掉。」</li>
+    <li>「不過我必須誠實說：<b>吃這些藥並不能保證副甲狀腺不會永久受損</b>。那一部分取決於手術當下的狀況，藥物補充只是讓恢復期比較好過。如果最後真的需要長期服藥，我們會轉介新陳代謝科一起照顧。」</li>
+    <li>「如果你以前有<b>腎結石</b>或曾被說過尿鈣偏高，請現在告訴我，我會調整劑量並安排追蹤。」</li>
+  </ol>
+  <p style="font-size:12.5px;color:#6b7079;line-height:1.7"><b>台灣情境補充：</b>本篇把「活性維生素 D 類似物」（calcitriol、alfacalcidol）與「原生型維生素 D」（cholecalciferol）放在<b>同一個節點</b>，因此<b>無法回答該用哪一種</b>——但從藥理學上，術後低血鈣是急性、PTH 依賴性的，<b>需要不經腎臟 1&#945;-羥化即可作用的活性製劑（calcitriol／alfacalcidol）</b>，原生型維生素 D 起效太慢。原文的敏感度分析「排除使用原生型製劑的試驗後結論不變」間接支持這個選擇。<b>劑量與療程本篇完全沒有結論（原文明列為限制），請依貴院既有 protocol 與 ATA／ESES 指引執行。</b></p>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>永久性副甲狀腺功能低下完全未評估。</b>原文自陳：&#8220;did not evaluate long-term endpoints such as permanent hypoparathyroidism, which represents the most clinically significant complication after thyroidectomy&#8221;。<b>這是本篇最大的空白</b>——所有結論僅限術後早期。</li>
+    <li><b>維生素 D 節點內部藥理異質性大。</b>活性製劑（calcitriol、alfacalcidol）與原生型（cholecalciferol、ergocalciferol）被歸為同一節點，兩者藥動學與起效時間差異顯著。<b>本篇無法指出應選哪一種、用多少劑量、用多久。</b></li>
+    <li><b>可轉移性（transitivity）在兩個關鍵變項上不成立。</b>惡性比例與淋巴廓清比例在三節點間顯著失衡（皆 p &lt; 0.001），且<b>較高風險個案集中在單用鈣組</b>——這會系統性地讓單用鈣看起來比實際更無效。<b>本篇「單用鈣沒有效」這個結論，應打折閱讀。</b></li>
+    <li><b>偏差風險偏高。</b>20 篇中僅 3 篇整體低風險、<b>6 篇整體高風險</b>；問題主要出在隨機化過程、分配隱蔽報告不足，以及<b>多數研究未前瞻註冊而無法確認結果是否事先指定</b>。GRADE 因此全部因 risk of bias 降一級。</li>
+    <li><b>臨床低血鈣與靜脈補鈣的判定本質上無法設盲。</b>原文的 RoB 2 已註明：這兩個結果的「結果測量」領域常有疑慮，因為是症狀導向、由臨床醫師主觀決定。<b>生化性低血鈣是三者中最客觀的，也剛好是篇數最少的（12 篇）。</b></li>
+    <li><b>低血鈣的定義各研究不一致。</b>生化性低血鈣多以血鈣 &lt; 8.0 mg/dL，但閾值與是否校正白蛋白／使用游離鈣皆不統一；靜脈補鈣的門檻更是各院自訂。</li>
+    <li><b>未檢索 Embase。</b>原文自陳因權限限制未納入，這在系統性回顧中屬明確的檢索缺口。</li>
+    <li><b>方案事後變更。</b>PROSPERO 註冊時為頻率學派配對式統合分析，實作改為貝氏 NMA。<b>原文有主動揭露（值得肯定），但仍屬事後變更。</b></li>
+    <li><b>敏感度分析中出現兩處邊緣不一致</b>（p ＝ 0.040、0.037），原文判定不影響結論；<b>靜脈補鈣一項的 dbar（41.5）明顯高於資料點數（36）、&#964; 高達 1.06</b>，該結果的合併值精確度應打折。</li>
+    <li><b>不良事件未量化合併。</b>高血鈣、高鈣尿、腎結石僅於討論中定性提及，<b>沒有任何合併估計</b>——「利」有數字，「弊」沒有，這種不對稱在判斷是否常規給藥時必須自行補上。</li>
+    <li><b>住院天數僅 3 篇可合併，且原文未評 GRADE。</b>另兩篇分別缺 CI 與缺數值。</li>
+    <li><b>族群不含單葉切除（hemithyroidectomy）。</b>不可外推。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>全甲狀腺切除 <span class="en">Total thyroidectomy</span></dt><dd>切除全部甲狀腺組織，為分化型甲狀腺癌與雙側良性甲狀腺疾病的標準術式。</dd></div>
+      <div class="gl-row"><dt>近全甲狀腺切除 <span class="en">Near-total thyroidectomy</span></dt><dd>保留極少量（通常 &lt; 1 g）貼近副甲狀腺或喉返神經的甲狀腺組織，以降低併發症。</dd></div>
+      <div class="gl-row"><dt>補全甲狀腺切除 <span class="en">Completion thyroidectomy</span></dt><dd>先前已做單葉切除，因病理結果需再切除對側殘餘甲狀腺的二次手術。</dd></div>
+      <div class="gl-row"><dt>術後低血鈣 <span class="en">Post-thyroidectomy hypocalcaemia</span></dt><dd>甲狀腺術後最常見併發症，文獻報告發生率 13&#8211;49%，主因為副甲狀腺去血管化或誤切導致 PTH 分泌下降。</dd></div>
+      <div class="gl-row"><dt>副甲狀腺功能低下 <span class="en">Hypoparathyroidism</span></dt><dd>副甲狀腺素分泌不足所致；持續超過 6&#8211;12 個月者稱<b>永久性（permanent）</b>，需終身補充並顯著影響生活品質。</dd></div>
+      <div class="gl-row"><dt>副甲狀腺素 <span class="en">Parathyroid hormone, PTH</span></dt><dd>調節血鈣／磷平衡的主要荷爾蒙，直接作用於骨與腎、間接作用於腸道。</dd></div>
+      <div class="gl-row"><dt>症狀性（臨床）低血鈣 <span class="en">Clinical / symptomatic hypocalcaemia</span></dt><dd>出現口周麻木、四肢感覺異常、手足搐搦，或 Chvostek／Trousseau 徵象陽性。</dd></div>
+      <div class="gl-row"><dt>生化性低血鈣 <span class="en">Biochemical hypocalcaemia</span></dt><dd>血清鈣低於實驗室閾值（多數研究採 &lt; 8.0 mg/dL）但未必有症狀。</dd></div>
+      <div class="gl-row"><dt>手足搐搦 <span class="en">Tetany</span></dt><dd>低血鈣導致的不自主肌肉痙攣，典型為腕足痙攣（carpopedal spasm）。</dd></div>
+      <div class="gl-row"><dt>活性維生素 D 類似物 <span class="en">Active vitamin D analogues（calcitriol, alfacalcidol）</span></dt><dd>已完成或僅需肝臟羥化即可作用的製劑，<b>不需經腎臟 1&#945;-羥化</b>，適合 PTH 不足的急性期。</dd></div>
+      <div class="gl-row"><dt>原生型維生素 D <span class="en">Native vitamin D（cholecalciferol, ergocalciferol）</span></dt><dd>需經肝、腎兩次羥化才具活性，起效慢，<b>不適合術後急性低血鈣的預防</b>。</dd></div>
+      <div class="gl-row"><dt>網絡統合分析 <span class="en">Network meta-analysis, NMA</span></dt><dd>同時整合直接與間接證據，比較三種以上治療策略並排序的統計方法。</dd></div>
+      <div class="gl-row"><dt>貝氏方法 <span class="en">Bayesian framework</span></dt><dd>以先驗分布結合資料得到後驗分布；輸出為<b>可信區間（credible interval）</b>，可直接解讀為「真值有 95% 機率落在此區間」。</dd></div>
+      <div class="gl-row"><dt>可信區間 <span class="en">Credible interval, cr.i.</span></dt><dd>貝氏方法的區間估計，與頻率學派的信賴區間（confidence interval）意義不同。</dd></div>
+      <div class="gl-row"><dt>可轉移性 <span class="en">Transitivity</span></dt><dd>NMA 的核心假設：各比較的試驗族群、共同對照與結果定義必須夠相似，間接比較才成立。</dd></div>
+      <div class="gl-row"><dt>一致性 <span class="en">Consistency / incoherence</span></dt><dd>直接證據與間接證據是否吻合；常以 node-splitting 或 UME 模型檢驗。</dd></div>
+      <div class="gl-row"><dt>SUCRA <span class="en">Surface under the cumulative ranking curve</span></dt><dd>0&#8211;1 之間的排序指標，數值越高代表越可能是最佳策略。<b>本篇未印出確切數值。</b></dd></div>
+      <div class="gl-row"><dt>&#964;（tau） <span class="en">Between-study standard deviation</span></dt><dd>貝氏隨機效應模型中衡量研究間異質性的參數，取代頻率學派常用的 I&#178;。</dd></div>
+      <div class="gl-row"><dt>DIC / dbar <span class="en">Deviance information criterion / posterior mean residual deviance</span></dt><dd>貝氏模型適配度指標；dbar 接近資料點數代表適配良好。</dd></div>
+      <div class="gl-row"><dt>RoB 2 <span class="en">Cochrane Risk of Bias 2 tool</span></dt><dd>評估隨機試驗偏差風險的工具，含五個領域，判定為低風險／一些疑慮／高風險。</dd></div>
+      <div class="gl-row"><dt>GRADE</dt><dd>評估證據確定性的架構（高／中等／低／極低），依偏差風險、不一致性、間接性、不精確性、發表偏差降級。</dd></div>
+      <div class="gl-row"><dt>絕對風險下降 <span class="en">Absolute risk reduction, ARR</span></dt><dd>兩組事件率之差（以百分點表示）。</dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>ARR 的倒數，代表平均要治療幾人才能避免一次事件。</dd></div>
+      <div class="gl-row"><dt>中央頸部淋巴廓清 <span class="en">Central neck dissection</span></dt><dd>清除第 VI 區淋巴結，<b>是術後低血鈣最重要的手術端危險因子之一</b>。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Gkanis V, Papaconstantinou D, Lanitis S, Dafnios N, Papakonstantinou I, Nastos K. <i>Effectiveness of perioperative calcium and vitamin D supplementation in preventing post-thyroidectomy hypocalcaemia: network meta-analysis of randomized trials.</i> BJS Open. 2026;10(4):zrag093. DOI：<a href="https://doi.org/10.1093/bjsopen/zrag093">10.1093/bjsopen/zrag093</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42397982/">PMID 42397982</a>；PubMed Central：PMC13330921。方案註冊：PROSPERO CRD420251068837。</p>
+  <p><b>資料取得範圍：</b>本文為 Open Access，本頁透過 <b>PubMed Central 全文</b>取得 Methods、Results、Table 1（RoB 2）、Table 2（GRADE）、Table 3（league table）與 Discussion 之完整文字。<b>原文之 Fig. 1（PRISMA 圖）、Fig. 2（網絡圖）、Fig. 3（Rank-O-Gram）、Fig. 4（住院天數森林圖）以及補充資料（zrag093_Supplementary_Data）為影像或附檔，本頁未取得其中僅存在於圖形內的數值</b>；凡屬此類（如 PRISMA 上游各階段筆數、SUCRA 確切數值、各配對之研究數）一律標示「<b>原文未列數值</b>」，<b>不做任何推估</b>。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表<b>皆為依原文文字所載數字重新繪製的 inline SVG，未使用、未嵌入、未連結出版社或原作者之任何圖檔</b>。具體而言：<br>
+  &#8226; <b>PRISMA 流程圖</b>：以 HTML／CSS 方塊自行繪製；3178、91、20、3669 及各結果篇數／人數取自原文正文，「71 篇全文排除」與各佔比為<b>本頁自行計算</b>。<br>
+  &#8226; <b>網絡圖</b>：僅重繪三節點三角形之<b>拓樸結構</b>；因原文未列各配對之研究數，本頁<b>一律以等大節點、等粗連線繪製</b>，不模擬原圖之大小編碼。<br>
+  &#8226; <b>森林圖</b>：9 個合併 OR 與 95% 可信區間<b>逐字取自原文 Table 2 與 Table 3</b>，本頁未做換算；<b>以菱形表示，因其確為網絡合併值</b>。<br>
+  &#8226; <b>事件率長條圖</b>：直接採用原文 Results 內文所載之 pooled event rates，未做換算。<br>
+  &#8226; <b>ARR／NNT 驗算圖</b>：其中「以 OR 推算之補充組事件率」（8.39%、13.79%、1.93%）為<b>本頁自行計算並反推還原</b>，原文未印出此三個數值；另列之「以觀察值直算之 ARR／NNT」亦為<b>本頁自行計算</b>。<br>
+  &#8226; <b>住院天數平均差圖</b>：合併值與 I&#178; 取自原文；<b>點估計之負號為本頁依 95% CI 中點驗算後還原</b>（原文摘要與正文皆漏印負號），已於圖說與一致性檢查表中明確揭露。<br>
+  &#8226; 本頁<b>未計算亦未呈現任何原文未提供且無法由原文數字推導的量</b>；所有推導值均已就地標註「<b>本頁自行計算</b>」。</p>
+  <p><b>使用聲明：</b>本頁為個人閱讀筆記，中文標題、翻譯、圖表、計算與所有評論解讀均為本頁自行撰寫，<b>不代表原作者立場</b>，亦不構成臨床指引。臨床決策請以原文全文、最新指引（ATA、ESES、BAETS）與各院實務為準。</p>
+</section>
+
+<footer>
+  每日一般外科文獻 &#183; Vol. 006 &#183; 2026 年 8 月 4 日　|　資料來源：PubMed／PubMed Central（PMID 42397982；PMC13330921）
+</footer>
+
+</div>
+</body>
+</html>
