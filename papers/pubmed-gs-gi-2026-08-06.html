@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-06</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 6 日 · 週四</span>
+    <span style="opacity:.4">/</span><span>Vol. 007</span>
+  </div>
+  <h1 class="title">腹腔鏡腹股溝疝氣修補「需要固定網膜時」該用什麼？手術膠 vs. 可吸收釘——9 篇隨機試驗、1,289 人的系統性回顧與統合分析（含試驗序列分析）</h1>
+  <p class="title-en">Glue versus absorbable tacks for mesh fixation in laparoscopic inguinal hernia repair: a systematic review and meta-analysis of postoperative pain and complications</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Hernia: The Journal of Hernias and Abdominal Wall Surgery<br><span style="color:#6b7079;font-size:13px">2026;30(1)（Springer；歐洲疝氣學會 EHS 與美洲疝氣學會 AHS 之官方期刊）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Costa CPD, Valerio-Alves AP, de Oliveira RGB, Gonzaga TMA, de Almeida Porto Maia AB, de Oliveira ZRC, Morriello R, Fernandes MHF（通訊作者）<br><span style="color:#6b7079;font-size:13px">巴西：里約熱內盧聯邦公務員醫院一般外科、Barão de Mauá 大學中心醫學系、巴西國家癌症研究所腫瘤外科、Recife 之 IMIP 一般暨消化外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧 ＋ 隨機效應統合分析（僅納入隨機對照試驗）</b><br><span style="color:#6b7079;font-size:13px">依 Cochrane 手冊與 PRISMA 執行；<b>前瞻性註冊 PROSPERO CRD420251017746</b>；2025 年 2 月檢索 PubMed、EMBASE、CENTRAL（MeSH／關鍵字：“Hernia repair”、“Glue”、“Tacks”），並人工回溯所有納入文獻與既往回顧之參考文獻；兩位審閱者獨立萃取、第三位仲裁；RevMan 5.1；二元結果用 RR、連續型用 MD；Cochran Q 與 I² 評估異質性；<b>另做 95% 預測區間、留一法敏感度分析與試驗序列分析（TSA v0.9.5.10 Beta，雙尾 α ＝ 0.05、power 80%）</b>；RoB 2 評估偏差風險、GRADE 評估證據確定性</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>本篇回答的不是「要不要固定」，而是「決定要固定時，用哪一種」</b><br><span style="color:#6b7079;font-size:13px">原文明言：現行指引認為<b>多數腹腔鏡疝氣修補（尤其小型或間接型）不需常規固定</b>，固定只保留給大型直接型缺損或網膜移位風險高者</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 3 日（PMID 42397603；PMC13331940）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion／Conclusion 完整文字）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s10029-026-03757-w">10.1007/s10029-026-03757-w</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42397603/">PMID 42397603 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">消化外科</span>
+    <span class="tag t2">腹股溝疝氣 Inguinal hernia</span>
+    <span class="tag t2">網膜固定 Mesh fixation</span>
+    <span class="tag t2">TAPP／TEP</span>
+    <span class="tag t3">證據等級：9 篇 RCT 之統合分析＋TSA</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#flags">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 9 篇隨機試驗、1,289 位接受腹腔鏡腹股溝疝氣修補（TAPP 或 TEP）的病人合併起來，答案是：<strong>當你決定要固定網膜時，改用手術膠（fibrin 或 cyanoacrylate）換到的是「術後第 1–2 週稍微不痛一點」，但也僅止於此</strong>——術後 7–14 天疼痛的合併平均差 <strong>MD &#8722;0.77 分（95% CI &#8722;1.22 至 &#8722;0.33，p &lt; 0.001）</strong>，但<strong>異質性高達 I² ＝ 83%、95% 預測區間為 &#8722;2.33 至 0.79（跨過 0）</strong>，GRADE 只有<strong>中等</strong>；<strong>四週以後兩者就沒有差別了</strong>（MD &#8722;0.41，95% CI &#8722;1.07 至 0.24，p ＝ 0.21）。血腫（<strong>RR 0.34，0.13–0.92</strong>）與血清腫（<strong>RR 0.59，0.37–0.94</strong>）雖然名目上顯著有利手術膠，但<strong>兩者的預測區間都跨過 1（0.06–1.80 與 0.29–1.20），試驗序列分析也提示可能是偽陽性</strong>，GRADE 皆為<strong>低／極低</strong>；<strong>復發（RR 0.29，0.08–1.01，p ＝ 0.05）、傷口感染、尿滯留、手術時間全部沒有差異，而且全部檢力不足</strong>。三個必須放在心上的但書：（1）<strong>這篇談的是「要固定時選哪一種」，不是「要不要固定」</strong>——當代主流做法是<strong>不固定</strong>，原文自己在討論中強調得非常清楚，別把本篇誤讀成「應該用膠固定」；（2）<strong>0.77 分的疼痛差距低於 VAS 的最小臨床重要差異</strong>，而且<strong>留一法找不到任何一篇能解釋 83% 的異質性</strong>，代表差異來自無法被統計整理的臨床變異（4 篇用生物膠、5 篇用合成膠；釘的數量與位置多數研究根本沒寫）；（3）<strong>血腫的漏斗圖不對稱、復發只有 3 vs. 14 例、傷口感染的 95% CI 寬到 0.09–19.15</strong>，除了「早期疼痛」以外的每一個結論，實質上都還沒有被證實或被推翻。<strong>實務結論：多數腹股溝疝氣仍應以「不固定」為預設；真的需要固定（大型直接型缺損、網膜有移位風險）時，手術膠是合理且可能較舒適的選擇，但別期待它降低復發或併發症，也別為此增加成本或延長手術。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Purpose</h4>
+    <p>Mesh fixation is not routinely required in most laparoscopic inguinal hernia repairs (LIHR); however, when indicated, the optimal fixation method remains uncertain. This study aimed to compare surgical glue versus absorbable tacks (AT) for mesh fixation in LIHR, focusing on postoperative pain and early complications.</p>
+    <h4>Methods</h4>
+    <p>We searched PubMed, Embase, and Cochrane for randomized controlled trials (RCTs) comparing glue versus AT in elective LIHR. Effect estimates were pooled using random-effects models and expressed as mean differences (MDs) or risk ratios (RRs) with 95% confidence intervals (CIs). The primary outcome was postoperative pain assessed by the visual analogue scale (VAS). Secondary outcomes included complications and operative time. Risk of bias was assessed using the Cochrane RoB 2 tool. Trial sequential analysis (TSA) and prediction intervals (PI) were used to assess robustness.</p>
+    <h4>Results</h4>
+    <p>Nine RCTs comprising 1,289 patients were included. Glue fixation was associated with lower early postoperative pain at 7&#8211;14 days (MD &#8722; 0.77; 95% CI &#8722; 1.22 to &#8722; 0.33; p &lt; 0.001; I&#178; = 83%). However, substantial heterogeneity and wide prediction intervals (&#8722; 2.33 to 0.79) indicated variability across settings. TSA suggested evidence of potential effect; however, this finding should be interpreted in the context of substantial heterogeneity. No significant difference was observed beyond 4 weeks, with insufficient cumulative evidence to draw firm conclusions. Glue fixation was associated with lower rates of hematoma and seroma, although the findings were uncertain given the prediction intervals and TSA. Other outcomes were underpowered or inconclusive.</p>
+    <h4>Conclusion</h4>
+    <p>Glue fixation may be associated with lower early postoperative pain than absorbable tacks after LIHR; however, the available evidence remains heterogeneous and inconclusive for other postoperative outcomes. Further adequately powered randomized trials are required before definitive clinical recommendations can be made.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用，未做任何刪改（原文之 I² 上標在 PubMed 純文字紀錄中遺失，本頁依全文還原為 I²）。<b>值得注意的是這篇摘要相當克制</b>：它沒有寫「glue is superior」，而是三次使用 “may be associated with”、“uncertain”、“inconclusive”，並在結論中明白要求「需要更多有足夠檢力的隨機試驗才能給出明確建議」。<b>這種措辭與正文的 GRADE 評等（僅早期疼痛為中等，其餘皆低／極低）是一致的，值得肯定。</b>中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程（依原文 Results 之文字敘述重繪）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（PubMed、EMBASE、Cochrane CENTRAL；2025 年 2 月執行）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">893</span> 筆紀錄經檢索 identified<br>
+        <span style="color:#6b7079;font-size:12.5px">檢索詞為 MeSH 與關鍵字 “Hernia repair”、“Glue”、“Tacks”；完整檢索策略見原文 Supplementary Table 1（本頁未取得）。另人工回溯所有納入研究與既往回顧之參考文獻</span></div></div>
+      <div class="pr-ex">重複紀錄與明顯不相關者移除<br><b>本頁自行計算：893 &#8722; 39 ＝ 675 筆</b><br><span style="font-size:12px">原文僅寫「After removing duplicate records and unrelated studies, 39 remained」，<b>未分別列出重複與初篩排除的筆數</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">39</span> 篇全文納入資格評讀<br>
+        <span style="color:#6b7079;font-size:12.5px">由兩位審閱者（AP、RG）獨立依預設條件萃取與評讀，歧異由第三位（CP）仲裁</span></div></div>
+      <div class="pr-ex"><b>本頁自行計算：39 &#8722; 9 ＝ 30 篇</b>經全文評讀後排除<br><span style="font-size:12px"><b>各排除理由的篇數原文未列數值</b>（僅見於原文 Fig. 1 影像）。原文所列排除條件為：非可吸收釘或自貼式網膜、非隨機設計、無對照組、族群重疊</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入定量合成</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">9</span> 篇隨機對照試驗、<span class="n">1289</span> 位病人<br>
+        <span style="color:#6b7079;font-size:12.5px">手術膠 <b>651 人（50.50%）</b>／可吸收釘 <b>638 人（49.50%）</b>；男性 988 人（原文載 89.81%）；平均年齡 <b>60.0 ± 9.0 歲</b>；初發性疝氣修補 1,084 人（原文載 94.26%）</span></div></div>
+      <div class="pr-ex">各結果實際貢獻資料的篇數／人數不同：<br>7–14 天疼痛 <b>5 篇 / 608 人</b><br>≥ 4 週疼痛 <b>6 篇評估、僅 3 篇可合併 / 496 人</b><br>血腫 <b>7 篇 / 1,108 人</b>；血清腫 <b>6 篇 / 836 人</b><br>復發 <b>6 篇（僅 4 篇有事件）</b><br>傷口感染、尿滯留、手術時間 <b>各 3 篇</b></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:14px;line-height:1.7"><b>怎麼讀：</b>這張圖有兩個必須停下來的地方。<b>第一是最右下角：沒有任何一個結果用到全部 9 篇、1,289 人。</b>主要結果（早期疼痛）只有 <b>5 篇、608 人</b>——<b>本頁自行計算：僅佔總樣本的 47.2%</b>，也就是說這篇統合分析的招牌結論，其實只建立在不到一半的病人身上。<b>第二是「≥ 4 週疼痛」那一列的措辭</b>：原文寫「六篇評估了四週後的疼痛，其中三篇（496 人）被納入合併，因為<b>其餘研究的 VAS 分數為零</b>」。<b>陷阱：把「VAS ＝ 0」的研究排除在合併之外，在統計上是可以理解的（零變異無法計算標準化效果），但它會系統性地把「兩組都完全不痛」的情境從分析中刪掉，讓剩下的估計偏向「還有痛的族群」。</b>換句話說，「四週後沒有差異」這個結論，其實比表面上看起來更接近「四週後大家都不痛了」。<b>第三，上游的重複移除與初篩筆數原文並未分開列出</b>，本頁只以減法標示為「自行計算」，<b>不推估各排除理由的分布</b>。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study &amp; Method Characteristics <span class="zh">／ 研究特徵與方法學（原文 Methods 與 Results 完整內容）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:22%">項目</th><th>內容（依原文逐項整理）</th></tr></thead>
+    <tbody>
+      <tr><td><b>研究問題（PICO）</b></td><td><b>P</b>：成人（≥ 18 歲）接受<b>擇期</b>腹腔鏡腹股溝疝氣修補（<b>TAPP 或 TEP</b>）；<b>I</b>：手術膠（fibrin 生物膠或 cyanoacrylate 合成膠）固定網膜；<b>C</b>：可吸收釘（absorbable tacks）；<b>O</b>：主要為 VAS 術後疼痛，次要為併發症與手術時間</td></tr>
+      <tr><td><b>納入條件</b></td><td>①&nbsp;隨機對照試驗；②&nbsp;LIHR（TAPP 或 TEP）；③&nbsp;年齡 ≥ 18 歲；④&nbsp;比較「可吸收釘」與「手術黏著劑」</td></tr>
+      <tr><td><b>排除條件</b></td><td>①&nbsp;使用<b>非可吸收釘</b>或<b>自貼式網膜（self-gripping mesh）</b>者；②&nbsp;非隨機設計；③&nbsp;無對照組；④&nbsp;跨研究族群重疊。<b>原文特別強調：本篇「只收可吸收釘」，以降低臨床異質性——既往回顧把可吸收與不可吸收釘混在一起，而後者本身即與較高的術後疼痛相關</b></td></tr>
+      <tr><td><b>檢索</b></td><td>PubMed、EMBASE、Cochrane CENTRAL，<b>執行於 2025 年 2 月</b>；加上人工回溯參考文獻</td></tr>
+      <tr><td><b>方案註冊</b></td><td><b>PROSPERO CRD420251017746（前瞻性註冊）</b></td></tr>
+      <tr><td><b>納入研究數與人數</b></td><td><b>9 篇 RCT、1,289 人</b>；手術膠 651 人（50.50%）、可吸收釘 638 人（49.50%）</td></tr>
+      <tr><td><b>族群特徵</b></td><td>男性 988 人（原文載 89.81%）；<b>平均年齡 60.0 ± 9.0 歲</b>；初發性（primary）疝氣修補 1,084 人（原文載 94.26%）。<b>缺損大小與「為何需要固定」的臨床指標，各研究記載不一致，原文明言因此無法進一步評估臨床異質性</b></td></tr>
+      <tr><td><b>膠的種類</b></td><td><b>4 篇使用生物膠（fibrin）、5 篇使用合成膠（cyanoacrylate）</b></td></tr>
+      <tr><td><b>釘的數量與位置</b></td><td><b>多數研究未記載（原文明言 “often not reported”）</b></td></tr>
+      <tr><td><b>盲化狀況</b></td><td><b>4 篇單盲、2 篇雙盲、1 篇未盲、2 篇未報告</b>（合計 9 篇）</td></tr>
+      <tr><td><b>主要結果定義</b></td><td>術後疼痛（VAS），分「<b>術後 7–14 天</b>」與「<b>超過 4 週</b>」兩個時間窗</td></tr>
+      <tr><td><b>次要結果</b></td><td>傷口感染、手術時間（分鐘）、住院天數、疝氣復發、血腫、尿滯留（原文將次要結果視為<b>探索性</b>）</td></tr>
+      <tr><td><b>統計方法</b></td><td>RevMan 5.1；<b>隨機效應模型</b>；二元用 RR、連續用 MD，皆附 95% CI；異質性以 Cochran Q 與 I²；<b>中位數／範圍／四分位距以既有方法轉換為 mean ± SD</b>；另計算 <b>95% 預測區間</b></td></tr>
+      <tr><td><b>穩健性分析</b></td><td><b>試驗序列分析（TSA）</b>：雙尾 α ＝ 0.05、power 80%（β ＝ 0.20），效應量取自隨機效應合併值；累積 Z 曲線對照傳統顯著界線、benefit／futility 監測界線與所需資訊量。另做<b>留一法（leave-one-out）敏感度分析</b></td></tr>
+      <tr><td><b>偏差風險與證據確定性</b></td><td><b>RoB 2</b>（五個領域）；<b>GRADE</b>。原文指出主要疑慮在於「偏離既定介入」與「結果測量」兩個領域，反映各研究執行方式的差異；因研究數少，<b>漏斗圖僅作探索性解讀</b></td></tr>
+      <tr><td><b>GRADE 結論</b></td><td><b>早期術後疼痛：中等（moderate）</b>；<b>其餘所有結果：低或極低</b>——降級理由為不一致性（inconsistency）、不精確性（imprecision），以及 TSA 所示之資訊量不足</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call teal">
+    <div class="h">這篇方法學上做對的三件事（值得肯定）</div>
+    ①&nbsp;<b>只收可吸收釘。</b>原文明確批評既往回顧（Kitching 2025）把可吸收與不可吸收釘混在一起，而不可吸收釘本身就與更多術後疼痛相關，這會系統性地誇大「膠比較好」。本篇把這個混雜源切乾淨。②&nbsp;<b>同時用預測區間與 TSA。</b>只看 95% CI 很容易把「勉強顯著」誤讀為「已定案」；本篇對每一個顯著結果都補上預測區間（血腫 0.06–1.80、血清腫 0.29–1.20，<b>兩個都跨過 1</b>）與 TSA 的偽陽性警告，<b>並且在摘要與結論中誠實地把這些警訊寫出來，而不是藏在附錄裡</b>。③&nbsp;<b>把臨床定位講清楚。</b>原文反覆聲明本篇「只適用於已判定需要固定的情境，無法回答固定 vs. 不固定這個更上位的問題，而後者才是當代主流」。<b>這句話比任何一個 RR 都重要。</b>
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 主要結果森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">術後 7–14 天疼痛</div><div class="big">MD &#8722;0.77</div><div class="sub">95% CI &#8722;1.22 至 &#8722;0.33；I² ＝ 83%；GRADE 中等</div></div>
+    <div class="c amber"><div class="lab">術後 ≥ 4 週疼痛</div><div class="big">無差異</div><div class="sub">MD &#8722;0.41（&#8722;1.07 至 0.24），p ＝ 0.21</div></div>
+    <div class="c amber"><div class="lab">血腫／血清腫</div><div class="big">名目顯著</div><div class="sub">RR 0.34、0.59，但預測區間皆跨 1、TSA 提示偽陽性</div></div>
+    <div class="c amber"><div class="lab">復發／感染／尿滯留／手術時間</div><div class="big">全部無差異</div><div class="sub">且全部檢力不足（TSA 未達所需資訊量）</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="470" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">手術膠 vs. 可吸收釘：二元結果之合併相對風險 RR（95% CI，原文所載）</text>
+<line x1="380.0" y1="62.0" x2="380.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="380.0" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.05</text>
+<line x1="424.0" y1="62.0" x2="424.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="423.95037936694126" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="482.0" y1="62.0" x2="482.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="482.04962063305874" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="526.0" y1="62.0" x2="526.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="526.0" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="570.0" y1="62.0" x2="570.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="569.9503793669412" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="613.9" y1="62.0" x2="613.9" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="613.9007587338825" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="672.0" y1="62.0" x2="672.0" y2="350.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="672.0" y="368" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="570.0" y1="62.0" x2="570.0" y2="350.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14" y="54" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果指標（證據基礎）</text>
+<text x="866" y="54" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">RR（95% CI）</text>
+<text x="20" y="88" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">血腫 Hematoma</text>
+<text x="20" y="105" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">7 篇 RCT／1,108 人　｜　I² ＝ 9%　｜　GRADE：低 Low</text>
+<line x1="391.6" y1="105.0" x2="607.2" y2="105.0" stroke="#b9b3a8" stroke-width="4"/>
+<text x="866" y="109" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">預測區間 0.06–1.80</text>
+<line x1="440.6" y1="92.0" x2="564.7" y2="92.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="440.6" y1="87.5" x2="440.6" y2="96.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="564.7" y1="87.5" x2="564.7" y2="96.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 492.5 92.0 L 501.5 85.5 L 510.5 92.0 L 501.5 98.5 Z" fill="#2f6b62"/>
+<text x="866" y="96" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.34（0.13–0.92）</text>
+<text x="20" y="140" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">血清腫 Seroma</text>
+<text x="20" y="157" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">6 篇 RCT／836 人　｜　I² ＝ 0%　｜　GRADE：低 Low</text>
+<line x1="491.5" y1="157.0" x2="581.5" y2="157.0" stroke="#b9b3a8" stroke-width="4"/>
+<text x="866" y="161" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">預測區間 0.29–1.20</text>
+<line x1="506.9" y1="144.0" x2="566.0" y2="144.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="506.9" y1="139.5" x2="506.9" y2="148.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="566.0" y1="139.5" x2="566.0" y2="148.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 527.5 144.0 L 536.5 137.5 L 545.5 144.0 L 536.5 150.5 Z" fill="#2f6b62"/>
+<text x="866" y="148" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.59（0.37–0.94）</text>
+<text x="20" y="192" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">疝氣復發 Recurrence</text>
+<text x="20" y="209" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">6 篇報告／僅 4 篇有事件　｜　I² ＝ 0%　｜　GRADE：極低 Very low</text>
+<line x1="409.8" y1="196.0" x2="570.6" y2="196.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="409.8" y1="191.5" x2="409.8" y2="200.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="570.6" y1="191.5" x2="570.6" y2="200.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 482.5 196.0 L 491.5 189.5 L 500.5 196.0 L 491.5 202.5 Z" fill="#8a6a1f"/>
+<text x="866" y="200" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.29（0.08–1.01）</text>
+<text x="20" y="244" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">傷口感染 Wound infection</text>
+<text x="20" y="261" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇 RCT　｜　I² ＝ 32%　｜　GRADE：極低 Very low</text>
+<line x1="417.3" y1="248.0" x2="672.0" y2="248.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="417.3" y1="243.5" x2="417.3" y2="252.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 674.0 248.0 L 665.0 243.5 L 665.0 252.5 Z" fill="#8a6a1f"/>
+<path d="M 579.5 248.0 L 588.5 241.5 L 597.5 248.0 L 588.5 254.5 Z" fill="#8a6a1f"/>
+<text x="866" y="252" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">1.34（0.09–19.15）↦</text>
+<text x="20" y="296" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">尿滯留 Urinary retention</text>
+<text x="20" y="313" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇 RCT　｜　I² ＝ 11%　｜　GRADE：極低 Very low</text>
+<line x1="491.5" y1="300.0" x2="635.9" y2="300.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="491.5" y1="295.5" x2="491.5" y2="304.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="635.9" y1="295.5" x2="635.9" y2="304.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 554.3 300.0 L 563.3 293.5 L 572.3 300.0 L 563.3 306.5 Z" fill="#8a6a1f"/>
+<text x="866" y="304" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.90（0.29–2.83）</text>
+<text x="561.9503793669412" y="392" font-size="11.5" fill="#2f6b62" text-anchor="end" font-weight="400">← 有利手術膠 Glue</text>
+<text x="577.9503793669412" y="392" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="400">有利可吸收釘 Absorbable tacks →</text>
+<text x="14" y="418" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">刻度為對數尺度；無效線 RR ＝ 1。菱形＝原文隨機效應模型之合併值；灰色粗線＝原文所載之 95% 預測區間（prediction interval）。</text>
+<text x="14" y="436" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">「傷口感染」之上界 19.15 已超出繪圖範圍，以箭頭表示（↦）。原文未提供各單一研究的事件數，因此本圖無法呈現逐研究列。</text>
+<text x="14" y="454" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">青綠＝95% CI 完全落在 1 的左側；赭黃＝CI 跨過 1（未達顯著）。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>所有 RR、95% CI、預測區間、I² 與 GRADE 評等<b>逐字取自原文 Results 與 GRADE 段落</b>；篇數與人數亦取自原文。<b>本圖未做任何自行計算。</b><br>
+    <b>如何解讀：</b>五個二元結果中只有<b>血腫</b>與<b>血清腫</b>的 95% 信賴區間完全落在無效線 1 的左側（青綠）。血腫 RR 0.34 代表用膠固定者的血腫風險約為用釘者的三分之一；血清腫 RR 0.59 約為六成。原文對這個現象的機轉解釋是：<b>膠是「非穿透式」固定，不會刺穿肌肉內的小血管，因此局部組織損傷與發炎反應較小</b>。復發的 RR 0.29 上界剛好觸及 1.01、p ＝ 0.05，屬於「差一點就顯著」。<br>
+    <b>有何陷阱：</b>三個，而且每一個都足以推翻表面結論。①&nbsp;<b>看灰色粗線（預測區間）而不是黑色細線（信賴區間）。</b>血腫的預測區間是 <b>0.06–1.80</b>、血清腫是 <b>0.29–1.20</b>——<b>兩者都跨過 1</b>。信賴區間回答的是「這 7 篇研究的平均效果」，預測區間回答的是「<b>下一家醫院、下一位外科醫師做會得到什麼</b>」；後者跨過 1，意思就是<b>在某些情境下膠可能反而比較差</b>。②&nbsp;<b>TSA 對這兩個結果都給出「可能是偽陽性」的警告</b>，原文因此把 GRADE 降到低。③&nbsp;<b>血腫的漏斗圖是不對稱的</b>（7 篇），雖然原文謹慎地說「研究數太少，只能探索性解讀」，但小型研究效應／發表偏差無法排除。至於<b>傷口感染的 95% CI 寬達 0.09–19.15</b>（本圖以箭頭表示超出範圍），TSA 顯示累積資訊量<b>不到所需的 1%</b>——這不是「沒有差異」，而是<b>根本還沒開始有能力回答</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="430" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">連續型結果的合併平均差 MD（95% CI，原文所載）——上下兩區各有獨立刻度與單位</text>
+<text x="14" y="56" font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">【區塊 A】單位：VAS 疼痛分數（0–10 分）</text>
+<line x1="336.0" y1="70.0" x2="336.0" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="336.0" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−2.5</text>
+<line x1="380.6" y1="70.0" x2="380.6" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="380.57142857142856" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−2.0</text>
+<line x1="425.1" y1="70.0" x2="425.1" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="425.1428571428571" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="469.7" y1="70.0" x2="469.7" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="469.71428571428567" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="514.3" y1="70.0" x2="514.3" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="514.2857142857142" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="558.9" y1="70.0" x2="558.9" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="558.8571428571429" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="603.4" y1="70.0" x2="603.4" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="603.4285714285713" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="648.0" y1="70.0" x2="648.0" y2="208.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="648.0" y="226" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="558.9" y1="70.0" x2="558.9" y2="208.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="603.4285714285713" y="244" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">VAS 分</text>
+<text x="20" y="93" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="400">術後 7–14 天疼痛（5 篇／608 人）</text>
+<text x="20" y="110" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">p &lt; 0.001；I² ＝ 83%；GRADE 中等</text>
+<line x1="351.2" y1="110.0" x2="629.3" y2="110.0" stroke="#b9b3a8" stroke-width="4"/>
+<text x="866" y="114" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">預測區間 −2.33 至 0.79</text>
+<line x1="450.1" y1="96.0" x2="529.4" y2="96.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="450.1" y1="91.5" x2="450.1" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="529.4" y1="91.5" x2="529.4" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="484.2" y="90.0" width="12.0" height="12.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="100" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.77（−1.22 至 −0.33）</text>
+<text x="20" y="143" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="400">術後 ≥ 4 週疼痛（3 篇可合併／496 人）</text>
+<text x="20" y="160" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">p ＝ 0.21；I² ＝ 82%；GRADE 低</text>
+<line x1="463.5" y1="146.0" x2="580.3" y2="146.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="463.5" y1="141.5" x2="463.5" y2="150.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="580.3" y1="141.5" x2="580.3" y2="150.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="516.3" y="140.0" width="12.0" height="12.0" fill="#8a6a1f" opacity="1.0"/>
+<text x="866" y="150" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.41（−1.07 至 0.24）</text>
+<text x="20" y="193" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="400">　└ 排除 Moreno-Egea 後（事後敏感度分析）</text>
+<text x="20" y="210" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">p &lt; 0.05；I² ＝ 0%；事後、探索性</text>
+<line x1="545.5" y1="196.0" x2="552.6" y2="196.0" stroke="#7a8a86" stroke-width="1.8"/>
+<line x1="545.5" y1="191.5" x2="545.5" y2="200.5" stroke="#7a8a86" stroke-width="1.8"/>
+<line x1="552.6" y1="191.5" x2="552.6" y2="200.5" stroke="#7a8a86" stroke-width="1.8"/>
+<rect x="543.1" y="190.0" width="12.0" height="12.0" fill="#7a8a86" opacity="1.0"/>
+<text x="866" y="200" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.11（−0.15 至 −0.07）</text>
+<line x1="14.0" y1="262.0" x2="866.0" y2="262.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="14" y="288" font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">【區塊 B】單位：手術時間（分鐘 min）——刻度與區塊 A 不同，不可直接比較長度</text>
+<line x1="336.0" y1="300.0" x2="336.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="336.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−20</text>
+<line x1="388.0" y1="300.0" x2="388.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="388.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−15</text>
+<line x1="440.0" y1="300.0" x2="440.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−10</text>
+<line x1="492.0" y1="300.0" x2="492.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="492.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−5</text>
+<line x1="544.0" y1="300.0" x2="544.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="544.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="596.0" y1="300.0" x2="596.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="596.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="648.0" y1="300.0" x2="648.0" y2="356.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="648.0" y="374" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="544.0" y1="300.0" x2="544.0" y2="356.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="622.0" y="392" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">分鐘 min</text>
+<text x="20" y="323" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="400">手術時間（3 篇 RCT）</text>
+<text x="20" y="340" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">p ＝ 0.37；I² ＝ 90%；TSA 未達所需資訊量</text>
+<line x1="386.6" y1="326.0" x2="603.3" y2="326.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="386.6" y1="321.5" x2="386.6" y2="330.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="603.3" y1="321.5" x2="603.3" y2="330.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="488.9" y="320.0" width="12.0" height="12.0" fill="#8a6a1f" opacity="1.0"/>
+<text x="866" y="330" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−4.72 分（−15.13 至 ＋5.70）</text>
+<text x="14" y="414" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">方塊＝合併平均差；橫線＝95% 信賴區間；灰色粗線＝95% 預測區間；虛線＝無差異線（MD ＝ 0）。負值代表手術膠組較低。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>所有 MD、95% CI、預測區間、I²、p 值<b>逐字取自原文</b>。<b>本圖刻意分成上下兩個獨立區塊，因為兩者的單位不同（VAS 分 vs. 分鐘），若共用一條刻度會讓橫線長度產生誤導性的視覺比較。</b><br>
+    <b>如何解讀：</b>區塊 A 的第一列是本篇的招牌結果：<b>術後 7–14 天，膠比釘少 0.77 分（VAS 0–10）</b>。第二列告訴你這個優勢<b>撐不過四週</b>（MD &#8722;0.41，CI 跨 0）。第三列（灰色）是原文的<b>事後敏感度分析</b>：把 Moreno-Egea 那篇排除後，四週後的差異變成 MD &#8722;0.11（&#8722;0.15 至 &#8722;0.07）、I² 從 82% 掉到 0%、p &lt; 0.05。區塊 B 顯示<b>手術時間沒有差別</b>（&#8722;4.72 分鐘，CI &#8722;15.13 至 ＋5.70）。<br>
+    <b>有何陷阱：</b>①&nbsp;<b>0.77 分不到臨床有感的門檻。</b>急性疼痛 VAS 的最小臨床重要差異（MCID）文獻多在 1.3–2.0 分之間；<b>0.77 分低於此，連 95% CI 的最樂觀端 &#8722;1.22 都還沒摸到 MCID 下緣</b>。原文自己也寫「the clinical relevance of this effect size remains uncertain」。②&nbsp;<b>那條灰色的「排除某篇後」千萬不要當成結論。</b>原文自己用了三個限定詞：post hoc（事後）、exploratory（探索性）、“not reflecting the primary pooled estimate”（不代表主要合併估計）。<b>MD &#8722;0.11 分在臨床上等於零</b>——把它當成「其實四週後膠還是比較好」是嚴重誤讀。原文推測 Moreno-Egea 造成異質性的原因是<b>評估時間點不同（4 週 vs. 12 週）</b>。③&nbsp;<b>I² ＝ 83% 而留一法找不出兇手。</b>原文明白寫「no single study accounted for the observed heterogeneity, suggesting underlying clinical variability」——這代表異質性來自<b>臨床上真實而分散的差異</b>（生物膠 vs. 合成膠、釘的數量與位置未記載、疼痛評估時點不一），而不是某一篇離群值。<b>在這種情況下，合併平均值本身的意義就要打折。</b>④&nbsp;手術時間的 I² 高達 90%，「沒有差異」同樣是不精確而非等效。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表（含效果值、95% CI、p、I²、預測區間、TSA 與 GRADE）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>結果指標</th><th>證據基礎</th><th>效果值（95% CI）</th><th>p</th><th>I²</th><th>95% 預測區間</th><th>試驗序列分析 TSA</th><th>GRADE</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td colspan="9" style="background:#f3f1ec"><b>主要結果：術後疼痛（VAS 0–10）</b></td></tr>
+      <tr><td><b>術後 7–14 天疼痛</b></td><td class="num">5 篇／608 人</td><td class="num">MD &#8722;0.77（&#8722;1.22 至 &#8722;0.33）</td><td class="num">&lt; 0.001</td><td class="num">83%（&#964;² ＝ 0.19）</td><td class="num">&#8722;2.33 至 0.79</td><td>提示可能有效，但須在高異質性下解讀</td><td><span class="grade">中等 Moderate</span></td><td><span class="win">手術膠較佳</span></td></tr>
+      <tr><td><b>術後 ≥ 4 週疼痛</b></td><td class="num">6 篇評估／3 篇可合併、496 人</td><td class="num">MD &#8722;0.41（&#8722;1.07 至 0.24）</td><td class="num">0.21</td><td class="num">82%（&#964;² ＝ 0.27）</td><td class="na">原文未列數值</td><td>未跨越顯著或無效界線；<b>所需資訊量 2,640 人未達成</b></td><td><span class="grade">低 Low</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>　└ 排除 Moreno-Egea 後（<b>事後、探索性</b>）</td><td class="num">2 篇</td><td class="num">MD &#8722;0.11（&#8722;0.15 至 &#8722;0.07）</td><td class="num">&lt; 0.05</td><td class="num">0%（&#964;² ＝ 0）</td><td class="na">—</td><td>—</td><td><span class="grade">不適用</span></td><td><span class="win caution">不可作為結論</span></td></tr>
+      <tr><td colspan="9" style="background:#f3f1ec"><b>次要結果（原文視為探索性）</b></td></tr>
+      <tr><td><b>血腫 Hematoma</b></td><td class="num">7 篇／1,108 人</td><td class="num">RR 0.34（0.13–0.92）</td><td class="num">0.03</td><td class="num">9%</td><td class="num">0.06–1.80</td><td><b>提示可能為偽陽性</b>；穩健性有限</td><td><span class="grade">低 Low</span></td><td><span class="win caution">名目顯著，但不穩健</span></td></tr>
+      <tr><td><b>血清腫 Seroma</b></td><td class="num">6 篇／836 人</td><td class="num">RR 0.59（0.37–0.94）</td><td class="num">0.03</td><td class="num">0%</td><td class="num">0.29–1.20</td><td><b>易受偽陽性影響</b></td><td><span class="grade">低 Low</span></td><td><span class="win caution">名目顯著，但不穩健</span></td></tr>
+      <tr><td><b>疝氣復發 Recurrence</b></td><td class="num">6 篇報告／僅 4 篇有事件<br>（膠 3/578；釘 14/565）</td><td class="num">RR 0.29（0.08–1.01）</td><td class="num">0.05</td><td class="num">0%</td><td class="na">原文未列數值</td><td><b>提示可能為偽陰性</b>；所需資訊量未達成</td><td><span class="grade">極低 Very low</span></td><td><span class="win neutral">未達顯著</span></td></tr>
+      <tr><td><b>傷口感染 Wound infection</b></td><td class="num">3 篇</td><td class="num">RR 1.34（0.09–19.15）</td><td class="num">0.83</td><td class="num">32%</td><td class="na">原文未列數值</td><td><b>累積資訊量不足所需的 1%</b>，無法解讀</td><td><span class="grade">極低 Very low</span></td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td><b>尿滯留 Urinary retention</b></td><td class="num">3 篇</td><td class="num">RR 0.90（0.29–2.83）</td><td class="num">0.85</td><td class="num">11%</td><td class="na">原文未列數值</td><td><b>累積資訊量不足所需的 1%</b>，無法解讀</td><td><span class="grade">極低 Very low</span></td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td><b>手術時間 Operative time</b></td><td class="num">3 篇</td><td class="num">MD &#8722;4.72 分（&#8722;15.13 至 ＋5.70）</td><td class="num">0.37</td><td class="num">90%</td><td class="na">原文未列數值</td><td>證據不足以偵測差異；所需資訊量未達成</td><td><span class="grade">低 Low</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td><b>住院天數 Length of stay</b></td><td class="na" colspan="7">列為次要結果，但原文 Results 未報告任何合併估計 → <b>原文未列數值</b></td><td><span class="win neutral">未報告</span></td></tr>
+      <tr><td><b>慢性術後疼痛（&gt; 6 個月）</b></td><td class="na" colspan="7">原文明言<b>未直接評估</b>；僅 3 篇追蹤超過 6 個月 → <b>原文未列數值</b></td><td><span class="win neutral">未評估</span></td></tr>
+      <tr><td><b>成本</b></td><td class="na" colspan="7">本篇<b>完全未做成本分析</b>（膠與釘的單價差異在真實世界很可觀）</td><td><span class="win neutral">未評估</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>整張表最重要的一句話：</b>右邊「判定」欄裡只有<b>一格</b>是乾淨的青綠色（早期疼痛），兩格是「名目顯著但不穩健」，其餘全部是無差異、無法判定或未評估。<b>把 GRADE 那一欄由左至右讀過去（中等 → 低 → 低 → 極低 → 極低 → 極低 → 低），你會發現這篇統合分析真正能拿出來講的只有一件事：術後前兩週，膠可能讓病人稍微舒服一點。</b>其他所有「膠比較好」的說法，都還在假設階段。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始數據與自行重繪圖</span></h2>
+
+  <div class="call amber">
+    <div class="h">必須先說清楚的一件事：本篇無法重繪「逐研究」森林圖</div>
+    原文之 <b>Table 1（納入研究特徵）</b>與 <b>Fig. 2–9（各結果之森林圖、漏斗圖、RoB 2 圖、GRADE 表）</b>皆為表格物件或圖形，<b>PubMed Central 全文之文字並未複述各單一研究的作者、年份、樣本數與 2×2 事件數</b>。因此本頁<b>無法</b>繪製「每一列一篇研究」的傳統森林圖，也<b>不會</b>用任何方式推估這些數字。<b>全篇唯一有逐組原始事件數的結果是「疝氣復發」（膠 3/578 vs. 釘 14/565），以下即據此重繪。</b>其餘結果一律只呈現原文所載之合併值。
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="340" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">疝氣復發：原文唯一提供原始事件數的結果</text>
+<line x1="102.0" y1="250.0" x2="560.0" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="254.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">0.0%</text>
+<line x1="102.0" y1="220.0" x2="560.0" y2="220.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="224.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">0.5%</text>
+<line x1="102.0" y1="190.0" x2="560.0" y2="190.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="194.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">1.0%</text>
+<line x1="102.0" y1="160.0" x2="560.0" y2="160.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="164.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">1.5%</text>
+<line x1="102.0" y1="130.0" x2="560.0" y2="130.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="134.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2.0%</text>
+<line x1="102.0" y1="100.0" x2="560.0" y2="100.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="104.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2.5%</text>
+<line x1="102.0" y1="70.0" x2="560.0" y2="70.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="96" y="74.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">3.0%</text>
+<text x="40" y="160.0" font-size="12" fill="#6b7079" text-anchor="middle" font-weight="700">復發率</text>
+<rect x="170.0" y="218.9" width="110.0" height="31.1" fill="#2f6b62" opacity="0.9"/>
+<text x="225" y="192.85813148788927" font-size="14" fill="#2f6b62" text-anchor="middle" font-weight="700">0.52%</text>
+<text x="225" y="208.85813148788927" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">3 / 578</text>
+<text x="225" y="272" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">手術膠 Glue</text>
+<rect x="380.0" y="101.3" width="110.0" height="148.7" fill="#8a4a3d" opacity="0.9"/>
+<text x="435" y="75.32743362831857" font-size="14" fill="#8a4a3d" text-anchor="middle" font-weight="700">2.48%</text>
+<text x="435" y="91.32743362831857" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">14 / 565</text>
+<text x="435" y="272" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">可吸收釘 Tacks</text>
+<line x1="102.0" y1="250.0" x2="560.0" y2="250.0" stroke="#2e2b28" stroke-width="1.2"/>
+<rect x="600.0" y="72.0" width="266.0" height="190.0" fill="#ffffff" opacity="1" stroke="#d9d5cc"/>
+<text x="614" y="96" font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">本頁自行計算</text>
+<text x="614" y="120" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">粗合併 RR ＝ (3/578) ÷ (14/565)</text>
+<text x="614" y="140" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="700">　　　　　　＝ 0.21</text>
+<text x="614" y="164" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">絕對風險下降 ARR ＝ 1.96 個百分點</text>
+<text x="614" y="184" font-size="12" fill="#2e2b28" text-anchor="start" font-weight="700">NNT ≈ 51</text>
+<line x1="614.0" y1="198.0" x2="852.0" y2="198.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="614" y="220" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">原文隨機效應合併 RR ＝ 0.29</text>
+<text x="614" y="238" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">（95% CI 0.08–1.01，p ＝ 0.05）</text>
+<text x="614" y="256" font-size="11" fill="#8a6a1f" text-anchor="start" font-weight="700">兩者不同 ≠ 有錯，見圖說</text>
+<text x="14" y="290" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">長條為原文所載之原始事件數與分母（手術膠 3/578、可吸收釘 14/565）；百分比為本頁自行計算。</text>
+<text x="14" y="308" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">本圖不呈現合併菱形 —— 因為原文並未提供各單一研究的 2×2 事件數，無法逐研究重繪森林圖。</text>
+<text x="14" y="326" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">注意 6 篇報告復發中只有 4 篇出現過事件，另 2 篇為零事件研究；原文亦未列出各研究之追蹤時間。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>事件數與分母<b>逐字取自原文</b>（“glue: 3/578 [0.5%] vs absorbable tacks: 14/565 [2.5%]”）。百分比、粗合併 RR、ARR 與 NNT 為<b>本頁自行計算</b>。<br>
+    <b>如何解讀：</b>復發是疝氣手術最終極的結果指標。以原始數字看，膠組 578 人中復發 3 例（0.52%）、釘組 565 人中復發 14 例（2.48%）；<b>本頁自行計算的絕對風險下降為 1.96 個百分點、NNT ≈ 51</b>。<br>
+    <b>有何陷阱：</b>①&nbsp;<b>本頁算出的粗合併 RR 是 0.21，原文的隨機效應合併 RR 是 0.29——兩者不同不代表有錯。</b>粗合併把所有研究的事件直接相加（等於忽略研究間的差異），隨機效應模型則對每篇研究依其變異加權；當事件極少時，兩者的差距會被放大。<b>本頁以原文的 0.29 為準，自行計算的 0.21 僅供理解事件層次的原始樣貌。</b>②&nbsp;<b>總事件數只有 17 例。</b>在這種稀疏事件下，任何 RR 的估計都極不穩定——原文的 TSA 也直言「所需資訊量未達成」，並提示可能是<b>偽陰性</b>（也就是真的有差異卻沒測出來）。③&nbsp;<b>追蹤時間是關鍵而原文未列。</b>腹股溝疝氣的復發可以發生在術後 5 年、10 年；原文自己引用一份丹麥登錄研究，五年追蹤下兩種技術的復發率皆為 <b>5–8%</b>，遠高於本篇的 0.5–2.5%——<b>這個對比本身就說明本篇的追蹤太短，不足以談復發。</b>④&nbsp;6 篇報告復發的研究中<b>有 2 篇是零事件研究</b>，這類研究在多數統合分析模型中權重極低甚至被排除。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="380" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">同一篇統合分析裡，每個結果的證據基礎其實差很多</text>
+<text x="288" y="79" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">術後 7–14 天疼痛</text>
+<rect x="300.0" y="64.0" width="202.8" height="20.0" fill="#8a6a1f" opacity="0.85"/>
+<text x="512.8238944918542" y="79" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">5 篇／608 人（佔總數 47%）</text>
+<text x="288" y="115" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">術後 ≥ 4 週疼痛（可合併）</text>
+<rect x="300.0" y="100.0" width="165.5" height="20.0" fill="#8a6a1f" opacity="0.85"/>
+<text x="475.4615981380915" y="115" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">3 篇／496 人（佔總數 38%）</text>
+<text x="288" y="151" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">血腫 Hematoma</text>
+<rect x="300.0" y="136.0" width="369.6" height="20.0" fill="#2f6b62" opacity="0.85"/>
+<text x="679.6198603568657" y="151" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">7 篇／1,108 人（佔總數 86%）</text>
+<text x="288" y="187" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">血清腫 Seroma</text>
+<rect x="300.0" y="172.0" width="278.9" height="20.0" fill="#2f6b62" opacity="0.85"/>
+<text x="588.8828549262994" y="187" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">6 篇／836 人（佔總數 65%）</text>
+<text x="288" y="223" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">疝氣復發</text>
+<rect x="300.0" y="208.0" width="381.3" height="20.0" fill="#2f6b62" opacity="0.85"/>
+<text x="691.2955779674166" y="223" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">6 篇／1,143 人（佔總數 89%）</text>
+<text x="288" y="259" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">傷口感染</text>
+<rect x="300.0" y="244.0" width="40.0" height="20.0" fill="#d9d5cc" opacity="0.7"/>
+<text x="350" y="259" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇；人數原文未列數值</text>
+<text x="288" y="295" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">尿滯留</text>
+<rect x="300.0" y="280.0" width="40.0" height="20.0" fill="#d9d5cc" opacity="0.7"/>
+<text x="350" y="295" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇；人數原文未列數值</text>
+<text x="288" y="331" font-size="12.5" fill="#2e2b28" text-anchor="end" font-weight="400">手術時間</text>
+<rect x="300.0" y="316.0" width="40.0" height="20.0" fill="#d9d5cc" opacity="0.7"/>
+<text x="350" y="331" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇；人數原文未列數值</text>
+<line x1="300.0" y1="56.0" x2="300.0" y2="338.0" stroke="#d9d5cc" stroke-width="1"/>
+<rect x="300.0" y="66.0" width="0.0" height="0.0" fill="#faf9f6" opacity="1.0"/>
+<line x1="730.0" y1="56.0" x2="730.0" y2="338.0" stroke="#8a4a3d" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="730" y="48" font-size="11.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">全體 1,289 人</text>
+<text x="14" y="376" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">橫條長度與納入該結果分析的病人數成正比；青綠＝樣本數 ≥ 800，赭黃＝ &lt; 800。</text>
+<text x="14" y="394" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">復發之 1,143 人為本頁自行計算（578 ＋ 565）。傷口感染、尿滯留、手術時間三項原文只給篇數，未給人數。</text>
+<text x="14" y="412" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700">重點：「9 篇 RCT、1,289 人」是整份研究的規模，但沒有任何一個結果用到全部 1,289 人。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>各結果的篇數與人數<b>逐字取自原文</b>；復發的 1,143 人（578 ＋ 565）與各項佔總樣本的百分比為<b>本頁自行計算</b>；傷口感染、尿滯留、手術時間三項原文只給篇數（各 3 篇）而未給人數，本頁以灰色短條標示並註明「原文未列數值」，<b>不做推估</b>。<br>
+    <b>如何解讀：</b>這張圖是為了回答一個讀統合分析時最常被忽略的問題——「<b>這個結論到底是幾個人的資料撐起來的？</b>」答案是：招牌結論（早期疼痛）只有 <b>608 人（47.2%）</b>；證據最厚的反而是次要結果血腫（<b>1,108 人，86.0%</b>）。<br>
+    <b>有何陷阱：</b>①&nbsp;<b>「9 篇 RCT、1,289 人」這個數字會在轉述時被套用到每一個結論上</b>——包括在演講、在讀書會、在跟廠商討論時。實際上沒有任何一個結果用到全部 1,289 人。②&nbsp;橫條長度只反映<b>樣本數</b>，不反映<b>事件數</b>；復發雖有 1,143 人，但只有 17 個事件，實際的統計資訊量遠低於長條給人的印象。③&nbsp;三個「原文未列數值」的結果（傷口感染、尿滯留、手術時間）恰好也是 TSA 判定資訊量不足 1% 的那幾項——<b>資料揭露最少的地方，往往也是證據最弱的地方。</b></div>
+  </div>
+</section>
+
+<section id="flags">
+  <h2>Numerical Consistency Check <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:28%">驗算項目</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td>兩組人數加總</td><td>651 ＋ 638 ＝ <b>1,289</b> ＝ 原文所載總人數 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>兩組比例</td><td>651 ÷ 1,289 ＝ <b>50.50%</b>；638 ÷ 1,289 ＝ <b>49.50%</b>，與原文完全一致 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td><b>男性比例</b></td><td>原文寫「男性 988 人（89.81%）」，但 <b>988 ÷ 1,289 ＝ 76.65%</b>，不是 89.81%。<b>本頁回推：89.81% 對應的分母約為 1,100 人</b>，代表<b>並非所有研究都報告性別</b>，此百分比的分母是「有報告性別的子集」而非全體 1,289 人 <span style="color:#8a6a1f;font-weight:700">△ 分母不一致（非錯誤，但易誤讀）</span></td></tr>
+      <tr><td><b>初發性疝氣比例</b></td><td>原文寫「初發性修補 1,084 人（94.26%）」，但 <b>1,084 ÷ 1,289 ＝ 84.10%</b>。<b>本頁回推：94.26% 對應的分母約為 1,150 人</b>，同樣是子集分母 <span style="color:#8a6a1f;font-weight:700">△ 分母不一致（非錯誤，但易誤讀）</span></td></tr>
+      <tr><td>復發事件率</td><td>3 ÷ 578 ＝ <b>0.52%</b>（原文寫 0.5%）；14 ÷ 565 ＝ <b>2.48%</b>（原文寫 2.5%） <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>復發之粗合併 RR</td><td>本頁自行計算 (3/578) ÷ (14/565) ＝ <b>0.21</b>；原文隨機效應合併值為 <b>0.29</b>。差異源自加權方式不同（稀疏事件下差距會放大），<b>非計算錯誤</b> <span style="color:#8a6a1f;font-weight:700">△ 方法差異，已標註</span></td></tr>
+      <tr><td>盲化狀況篇數加總</td><td>4（單盲）＋ 2（雙盲）＋ 1（未盲）＋ 2（未報告）＝ <b>9 篇</b> <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>膠的種類篇數加總</td><td>4（生物膠）＋ 5（合成膠）＝ <b>9 篇</b> <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>PRISMA 減法</td><td>893 &#8722; 39 ＝ <b>675</b>（重複＋初篩排除）；39 &#8722; 9 ＝ <b>30</b>（全文評讀後排除）。原文未分別列出，本頁僅以減法標示為自行計算 <span class="sig">✔ 內部一致</span></td></tr>
+      <tr><td>主要結果的樣本佔比</td><td>608 ÷ 1,289 ＝ <b>47.2%</b>；血腫 1,108 ÷ 1,289 ＝ <b>86.0%</b>；血清腫 836 ÷ 1,289 ＝ <b>64.9%</b>；≥4 週疼痛 496 ÷ 1,289 ＝ <b>38.5%</b> <span class="sig">✔ 本頁自行計算</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>兩個「分母不一致」要怎麼看：</b>這<b>不是</b>原文的計算錯誤，而是統合分析常見的報告習慣——基線特徵的百分比只算「有報告該項目的研究」。但對讀者而言風險很實在：如果直接引用「本研究族群 89.81% 為男性」，其實是<b>把一個 1,100 人子集的比例，掛在 1,289 人的族群上</b>。<b>本頁的處理方式是：兩種數字都呈現，並明白標示原文的百分比與其隱含分母，讓讀者自行判斷。</b>這也提醒一件更一般性的事：<b>在統合分析裡看到百分比，永遠先問「分母是誰」。</b></p>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、知情同意怎麼談</span></h2>
+
+  <div class="call amber">
+    <div class="h">先把上位問題釘住：多數病人根本不需要固定網膜</div>
+    原文在 Introduction 與 Discussion 各講了一次，本頁再講第三次：<b>當代指引認為腹腔鏡腹股溝疝氣修補在多數情況下（尤其小型缺損與間接型疝氣）不需要常規固定網膜</b>；固定只保留給<b>大型直接型缺損</b>或<b>網膜移位風險高</b>者。<b>本篇完全無法回答「固定 vs. 不固定」孰優</b>——它只回答了下游的問題：「既然決定要固定，那用哪一種？」。<b>如果把這篇當成「應該用膠固定」的依據，方向就一開始就錯了。</b>
+  </div>
+
+  <h3>誰適合</h3>
+  <ul class="clean">
+    <li><b>本篇結論適用的族群：</b>成人、<b>擇期</b>、腹腔鏡（TAPP 或 TEP）腹股溝疝氣修補，<b>且外科醫師已判定此例需要固定網膜</b>者。族群以男性為主（原文載 89.81%）、平均年齡 60.0 ± 9.0 歲、九成以上為初發性疝氣。</li>
+    <li><b>最可能受惠：</b>希望<b>術後前兩週更舒適</b>、或屬於<b>出血／血腫風險較高</b>（如抗血小板藥物無法停、凝血功能邊緣）的病人——膠是非穿透式固定，理論上不會刺穿肌肉內小血管。<b>但請注意這只是機轉推論，本篇並未針對此類病人做次群組分析。</b></li>
+    <li><b>不適用：</b>①&nbsp;<b>急診／嵌頓性疝氣</b>（本篇只收擇期手術）；②&nbsp;<b>開放式修補（Lichtenstein 等）</b>——本篇只收腹腔鏡；③&nbsp;使用<b>自貼式網膜（self-gripping mesh）</b>者，原文明文排除；④&nbsp;使用<b>不可吸收釘</b>者，原文明文排除；⑤&nbsp;<b>腹壁疝氣、切口疝氣</b>——完全不同的臨床情境。</li>
+    <li><b>沒有答案的族群：</b>女性（樣本中僅約一成）、復發性疝氣（僅約 5–6%）、雙側疝氣（原文未分層）。</li>
+  </ul>
+
+  <h3>換來什麼</h3>
+  <div class="call teal">
+    <div class="h">一個可以講、兩個要保留、四個不能講</div>
+    <b>可以講：</b>術後<b>第 1 至 2 週</b>的疼痛平均少約 <b>0.77 分</b>（VAS 0–10）。這是全篇唯一 GRADE 達到「中等」的結果。<br>
+    <b>要保留（名目顯著但不穩健）：</b>①&nbsp;<b>血腫</b>風險約降至三分之一（RR 0.34）；②&nbsp;<b>血清腫</b>風險約降至六成（RR 0.59）。<b>但兩者的預測區間都跨過 1，TSA 都提示可能是偽陽性，GRADE 都只有「低」</b>——可以拿來討論，不宜寫進病歷當作療效承諾。<br>
+    <b>不能講：</b>①&nbsp;<b>降低復發</b>（RR 0.29，p ＝ 0.05，未達顯著，且追蹤太短）；②&nbsp;<b>減少慢性疼痛</b>（原文明言<b>未直接評估</b>，僅 3 篇追蹤超過 6 個月）；③&nbsp;<b>縮短手術時間</b>（MD &#8722;4.72 分鐘，CI 跨 0，I² ＝ 90%）；④&nbsp;<b>減少傷口感染或尿滯留</b>（資訊量不到所需的 1%）。
+  </div>
+
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>金錢，而且本篇完全沒算。</b>纖維蛋白膠與 cyanoacrylate 的單價與可吸收釘匣差異在真實世界相當可觀，且<b>因地區、廠牌、採購合約而異</b>。當唯一確立的好處是「前兩週少 0.77 分」時，<b>成本效益的天平其實很容易翻過去</b>——這是本篇最大的空白。</li>
+    <li><b>學習曲線與可得性。</b>膠的塗佈需要適當的視野與時間掌控；並非所有手術室都常備兩種材料。</li>
+    <li><b>不確定性。</b>9 篇研究中<b>4 篇用生物膠、5 篇用合成膠</b>，兩者的黏著強度、吸收時間與費用差很多，<b>本篇無法告訴你該用哪一種</b>；而<b>釘的數量與位置多數研究根本沒記載</b>，也就是說「對照組到底打了幾根釘」這個最關鍵的劑量變項是缺失的。</li>
+  </ul>
+
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call amber">
+    <div class="h">建議說法</div>
+    「你的疝氣我們打算用腹腔鏡修補，放一張網膜。<b>大部分的疝氣其實不需要把網膜『釘住』，靠腹壓自然貼合就夠了；只有缺損比較大、或網膜有滑動疑慮時才需要固定。</b>如果你的情況需要固定，我們有兩種選擇：<b>可吸收的固定釘</b>，或<b>手術用的黏膠</b>。<b>2026 年一篇整合了 9 個隨機試驗、1,289 人的研究告訴我們</b>：用膠的人在<b>術後頭一兩週</b>疼痛分數平均低了不到 1 分（滿分 10 分）——<b>老實說，你不一定感覺得出來</b>；<b>到了第四週以後，兩種就完全一樣了。</b>血腫和積水的機率用膠可能比較低，但那個證據還不夠穩，<b>研究者自己也說可能是統計上的假象</b>。至於<b>復發率、慢性疼痛、感染、手術時間，兩種完全沒有差別</b>。所以這不是一個攸關成敗的決定，主要看我們手上有什麼材料、以及費用。<b>真正影響你長期結果的，是網膜有沒有放好、腹膜有沒有關好，而不是用釘還是用膠。</b>」
+  </div>
+
+  <h3>對台灣臨床的三點提醒</h3>
+  <ol class="num">
+    <li><b>成本是台灣端最關鍵、卻是本篇最缺的變項。</b>健保給付與自費品項的組合會直接決定這個選擇；當唯一確立的好處是「前兩週 0.77 分」時，<b>建議把成本明確納入決策，並在知情同意時說清楚差價換到的是什麼。</b></li>
+    <li><b>別讓「膠比較不痛」變成「所以要固定」。</b>臨床上最實際的風險，是團隊在討論「膠 vs. 釘」時，不知不覺把「是否固定」這個上位問題略過。<b>對小型或間接型疝氣，最省錢也最不痛的選項是「都不用」。</b></li>
+    <li><b>這篇的族群是 60 歲、九成男性、九成初發性。</b>台灣的腹股溝疝氣族群年齡分布更廣（含年輕成人與 80 歲以上），且女性股疝（femoral hernia）比例不容忽視——<b>這些族群在本篇中幾乎沒有代表性。</b></li>
+  </ol>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>只回答下游問題（原文自陳的第一順位限制）。</b>本篇無法比較「固定 vs. 不固定」，而後者才是當代主流策略。</li>
+    <li><b>納入研究少且樣本小（原文自陳）。</b>僅 9 篇，多數樣本量不大；主要結果只有 5 篇、608 人。</li>
+    <li><b>異質性高且原因不明（原文自陳）。</b>早期疼痛 I² ＝ 83%、晚期疼痛 I² ＝ 82%、手術時間 I² ＝ 90%；<b>留一法找不到任何單一研究可以解釋</b>，代表異質性來自臨床本質的差異。</li>
+    <li><b>介入本身沒有標準化（原文自陳）。</b>網膜材質、膠的種類（4 篇生物膠 vs. 5 篇合成膠）、<b>釘的數量與位置多數未記載</b>；缺損大小與「為何需要固定」的臨床指標也記載不一致。<b>換句話說，被合併的「介入」其實不是同一件事。</b></li>
+    <li><b>疼痛評估時點不一致（原文自陳）。</b>各研究測量時間點不同，難以資料調和；追蹤期間長短不一且偏短。</li>
+    <li><b>盲化不足。</b>9 篇中只有 2 篇雙盲、1 篇明確未盲、2 篇未報告。主要結果是<b>病人自評的 VAS</b>，盲化不足會直接影響。</li>
+    <li><b>次要結果全部檢力不足。</b>TSA 顯示傷口感染與尿滯留的<b>累積資訊量不到所需的 1%</b>；復發與晚期疼痛的所需資訊量（2,640 人）亦未達成。<b>「沒有差異」在這裡一律應讀成「還不知道」。</b></li>
+    <li><b>血腫的漏斗圖不對稱。</b>原文謹慎地將其視為探索性判讀（研究數少），但<b>小型研究效應與發表偏差無法排除</b>——而血腫恰好是「膠比較好」最強的那一項。</li>
+    <li><b>事後敏感度分析的誤用風險。</b>「排除 Moreno-Egea 後 MD ＝ &#8722;0.11」在數值上漂亮（I² 掉到 0%）但<b>臨床上等於零</b>，且原文三度標明其為事後、探索性、不代表主要估計。<b>這是最容易被斷章取義引用的一句話。</b></li>
+    <li><b>未評估慢性術後疼痛。</b>對疝氣手術而言，慢性腹股溝疼痛（chronic postherniorrhaphy neuralgia，文獻報告 0.5–16%）才是最重要的長期結果——<b>本篇完全沒有回答</b>，僅 3 篇追蹤超過 6 個月。</li>
+    <li><b>未做成本分析。</b>在效果差異如此微小的情況下，<b>成本本應是決策的主軸，卻整篇缺席。</b></li>
+    <li><b>PROSPERO 為前瞻性註冊（此點為優點），但原文另一段落與註冊時序的描述本頁未能核對</b>——本頁僅照錄原文所載之註冊號 CRD420251017746，<b>不做推論。</b></li>
+  </ol>
+  <div class="call amber">
+    <div class="h">如果只能記住一個警訊</div>
+    <b>「95% 信賴區間顯著，但 95% 預測區間跨過 1」——這句話值得抄下來。</b>血腫（0.13–0.92 vs. 預測區間 0.06–1.80）與血清腫（0.37–0.94 vs. 0.29–1.20）都是這個型態。信賴區間問的是「<b>這幾篇研究的平均效果有多準</b>」，預測區間問的是「<b>換到你的醫院、你的病人身上，會發生什麼</b>」。<b>對臨床醫師而言，後者才是真正該看的那一個。</b>本篇最值得學習的地方，正是它把這兩者並列呈現、並據此主動降低自己結論的強度——這在統合分析裡並不常見。
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>腹股溝疝氣 <span class="en">Inguinal hernia</span></dt><dd>腹腔內容物經腹股溝管缺損突出；分<b>間接型（indirect，經內環）</b>與<b>直接型（direct，經 Hesselbach 三角）</b>。</dd></div>
+      <div class="gl-row"><dt>腹腔鏡腹股溝疝氣修補 <span class="en">Laparoscopic inguinal hernia repair, LIHR</span></dt><dd>總稱，含 TAPP 與 TEP 兩種入路。</dd></div>
+      <div class="gl-row"><dt>經腹腔腹膜前修補 <span class="en">Transabdominal preperitoneal, TAPP</span></dt><dd>先進入腹腔、切開腹膜，於腹膜前間隙放置網膜後再關閉腹膜。</dd></div>
+      <div class="gl-row"><dt>全腹膜外修補 <span class="en">Totally extraperitoneal, TEP</span></dt><dd>完全不進入腹腔，直接在腹膜外間隙建立操作空間並放置網膜。</dd></div>
+      <div class="gl-row"><dt>無張力網膜修補 <span class="en">Tension-free mesh repair</span></dt><dd>以人工網膜取代組織對合縫合；原文指出此技術把復發率從傳統縫合的約 60% 降至約 1%。</dd></div>
+      <div class="gl-row"><dt>網膜固定 <span class="en">Mesh fixation</span></dt><dd>將網膜固定於腹壁的步驟。分<b>穿透式（penetrating：釘、縫線）</b>與<b>非穿透式（non-penetrating：黏著劑）</b>。</dd></div>
+      <div class="gl-row"><dt>可吸收固定釘 <span class="en">Absorbable tacks, AT</span></dt><dd>可被組織吸收的螺旋狀或錨狀固定裝置；本篇之對照組。<b>不可吸收釘已被排除。</b></dd></div>
+      <div class="gl-row"><dt>手術黏著劑／手術膠 <span class="en">Surgical glue / tissue adhesive</span></dt><dd>本篇含<b>纖維蛋白膠（fibrin，生物性，4 篇）</b>與<b>氰基丙烯酸酯（cyanoacrylate，合成，5 篇）</b>兩類。</dd></div>
+      <div class="gl-row"><dt>自貼式網膜 <span class="en">Self-gripping mesh</span></dt><dd>網膜表面帶微鉤可自行附著、不需額外固定；<b>本篇明文排除。</b></dd></div>
+      <div class="gl-row"><dt>血腫 <span class="en">Hematoma</span></dt><dd>手術部位的血液積聚，多與組織剝離範圍與穿透式固定造成的小血管損傷有關。</dd></div>
+      <div class="gl-row"><dt>血清腫 <span class="en">Seroma</span></dt><dd>手術部位的漿液積聚；原文指出其形成為多因素，剝離範圍與手術時間為最主要因子。</dd></div>
+      <div class="gl-row"><dt>手術部位事件 <span class="en">Surgical site occurrence, SSO</span></dt><dd>涵蓋血腫、血清腫、感染、皮膚壞死等傷口相關事件的統稱。</dd></div>
+      <div class="gl-row"><dt>慢性術後腹股溝疼痛 <span class="en">Chronic postherniorrhaphy neuralgia</span></dt><dd>術後三個月以上持續的腹股溝疼痛；原文引述發生率 <b>0.5–16%</b>。<b>本篇未評估。</b></dd></div>
+      <div class="gl-row"><dt>視覺類比量表 <span class="en">Visual analogue scale, VAS</span></dt><dd>0–10 的自評疼痛量表；本篇之主要結果測量工具。</dd></div>
+      <div class="gl-row"><dt>最小臨床重要差異 <span class="en">Minimal clinically important difference, MCID</span></dt><dd>病人主觀上感覺得出來的最小改變；急性疼痛之 VAS MCID 文獻多在 <b>1.3–2.0 分</b>。<b>本篇的 0.77 分未達此門檻。</b></dd></div>
+      <div class="gl-row"><dt>相對風險 <span class="en">Risk ratio, RR</span></dt><dd>兩組事件率之比；RR &lt; 1 代表介入組風險較低。</dd></div>
+      <div class="gl-row"><dt>平均差 <span class="en">Mean difference, MD</span></dt><dd>兩組連續型結果平均值之差，保留原始單位（本篇為 VAS 分或分鐘）。</dd></div>
+      <div class="gl-row"><dt>信賴區間 <span class="en">Confidence interval, CI</span></dt><dd>對「<b>合併平均效果</b>」之不確定性的區間估計。</dd></div>
+      <div class="gl-row"><dt>預測區間 <span class="en">Prediction interval, PI</span></dt><dd>對「<b>未來某一個新研究／新場域</b>」之效果的區間估計；在異質性高時會遠寬於 CI。<b>本篇最重要的解讀工具。</b></dd></div>
+      <div class="gl-row"><dt>I² 統計量 <span class="en">I-squared</span></dt><dd>研究間變異佔總變異的比例；&gt; 75% 通常視為<b>高度異質</b>。</dd></div>
+      <div class="gl-row"><dt>&#964;²（tau-squared）</dt><dd>隨機效應模型中研究間變異的估計值（本篇早期疼痛為 0.19、晚期疼痛為 0.27）。</dd></div>
+      <div class="gl-row"><dt>試驗序列分析 <span class="en">Trial sequential analysis, TSA</span></dt><dd>把統合分析當作「累積中的試驗」來看，計算<b>所需資訊量（required information size）</b>與監測界線，用以判斷結論是否可能為<b>偽陽性或偽陰性</b>。</dd></div>
+      <div class="gl-row"><dt>所需資訊量 <span class="en">Required information size, RIS</span></dt><dd>要在指定 α 與 power 下得到可靠結論所需的總樣本數；本篇晚期疼痛之 RIS 為 <b>2,640 人</b>（未達成）。</dd></div>
+      <div class="gl-row"><dt>留一法敏感度分析 <span class="en">Leave-one-out sensitivity analysis</span></dt><dd>逐一排除單篇研究後重算合併值，用以找出離群或影響力過大的研究。</dd></div>
+      <div class="gl-row"><dt>漏斗圖 <span class="en">Funnel plot</span></dt><dd>以效果值對精確度作圖，不對稱時提示<b>發表偏差或小型研究效應</b>；研究數 &lt; 10 時判讀力有限。</dd></div>
+      <div class="gl-row"><dt>RoB 2 <span class="en">Cochrane Risk of Bias 2 tool</span></dt><dd>評估隨機試驗偏差風險的五領域工具。</dd></div>
+      <div class="gl-row"><dt>GRADE</dt><dd>證據確定性分級架構（高／中等／低／極低）。</dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>絕對風險下降的倒數；本頁計算之復發 NNT ≈ 51。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Costa CPD, Valerio-Alves AP, de Oliveira RGB, Gonzaga TMA, de Almeida Porto Maia AB, de Oliveira ZRC, Morriello R, Fernandes MHF. <i>Glue versus absorbable tacks for mesh fixation in laparoscopic inguinal hernia repair: a systematic review and meta-analysis of postoperative pain and complications.</i> Hernia. 2026;30(1). DOI：<a href="https://doi.org/10.1007/s10029-026-03757-w">10.1007/s10029-026-03757-w</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42397603/">PMID 42397603</a>；PubMed Central：PMC13331940。方案註冊：PROSPERO <b>CRD420251017746</b>。</p>
+  <p><b>資料取得範圍：</b>本文為 Open Access，本頁透過 <b>PubMed Central 全文</b>取得 Introduction、Methods（含 eligibility、search strategy、endpoints、statistical and sensitivity analysis、quality assessment）、Results（study selection、各結果之合併估計、quality assessment、GRADE）、Discussion 與 Conclusion 之完整文字。<b>原文之 Table 1（納入研究特徵）、Fig. 1（PRISMA 圖）、Fig. 2–9（各結果森林圖、漏斗圖、RoB 2 圖、GRADE 表）以及 Supplementary Table 1（檢索策略）為表格物件、圖形或附檔，本頁未取得其中僅存在於圖表內的數值</b>；凡屬此類（<b>各單一研究的作者、年份、樣本數與 2×2 事件數；PRISMA 上游各階段之分項筆數；多數結果的預測區間；住院天數之合併估計</b>）一律標示「<b>原文未列數值</b>」，<b>不做任何推估</b>。<b>因此本頁無法呈現逐研究列的傳統森林圖，僅呈現原文所載之合併估計值。</b></p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表<b>皆為依原文文字所載數字重新繪製的 inline SVG 或 HTML／CSS 方塊，未使用、未嵌入、未連結出版社或原作者之任何圖檔</b>。具體而言：<br>
+  &#8226; <b>PRISMA 流程圖</b>：以 HTML／CSS 方塊自行繪製；893、39、9、1,289、651、638 及各結果之篇數／人數取自原文正文，「675」與「30」為<b>本頁自行計算</b>之減法結果。<br>
+  &#8226; <b>二元結果森林圖</b>：RR、95% CI、預測區間、I²、GRADE <b>全部取自原文</b>，<b>無自行計算</b>；上界超出繪圖範圍者以箭頭（↦）標示，未做任何截斷或推估。<br>
+  &#8226; <b>連續型結果平均差圖</b>：MD、95% CI、預測區間、I²、p 值<b>全部取自原文</b>；因單位不同（VAS 分 vs. 分鐘），<b>刻意分為上下兩個獨立刻度區塊並各自標明單位</b>，避免橫線長度造成跨單位的誤導比較。<br>
+  &#8226; <b>復發原始事件數圖</b>：事件數 3/578 與 14/565 取自原文；<b>百分比、粗合併 RR ＝ 0.21、ARR ＝ 1.96 個百分點、NNT ≈ 51 為本頁自行計算</b>，並已於圖中與圖說明確標示其與原文隨機效應合併值 0.29 的差異來源。<b>因原文未提供各單一研究之事件數，本圖不呈現合併菱形。</b><br>
+  &#8226; <b>證據厚度長條圖</b>：篇數與人數取自原文；<b>復發之 1,143 人（578＋565）與所有佔比百分比為本頁自行計算</b>；原文未給人數者以灰色短條並標註「原文未列數值」。<br>
+  &#8226; 所有標示「本頁自行計算」者，皆由原文所載數字四則運算導出，計算式已於各處寫明，可自行覆核。<b>本頁不含任何未經標示的推估值。</b></p>
+  <p style="font-size:12.5px;color:#6b7079;line-height:1.7"><b>免責：</b>本頁為文獻閱讀筆記，非臨床指引，亦不構成個別病人的醫療建議。網膜固定材料之選擇請依各院常備品項、健保給付規定與術中實際狀況判斷。所有中文翻譯與解讀為本頁自行撰寫，若與原文有出入，<b>以原文為準</b>。</p>
+</section>
+
+</div>
+</body>
+</html>

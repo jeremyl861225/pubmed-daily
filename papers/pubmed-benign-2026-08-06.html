@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-06</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 6 日 · 週四</span>
+    <span style="opacity:.4">/</span><span>Vol. 008</span>
+  </div>
+  <h1 class="title">微粒化純化類黃酮（MPFF）能不能減輕肛門瘻管手術後的疼痛與換藥負擔？台灣雙和醫院 104 人單中心隨機對照試驗</h1>
+  <p class="title-en">Efficacy of micronized purified flavonoid fraction in reducing pain after anal fistula surgery: a randomized controlled trial</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Techniques in Coloproctology<br><span style="color:#6b7079;font-size:13px">2026;30(1)（Springer；歐洲肛門直腸外科領域的主要專科期刊。原文之文章編號未見於 PubMed 書目紀錄，本頁不推估）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Tsai Y-W, Kiu K-T, Chang T-C（通訊作者）<br><span style="color:#6b7079;font-size:13px"><b>台灣本土研究</b>：台南奇美醫院一般醫學科；<b>台北醫學大學雙和醫院外科部大腸直腸外科（新北市）</b>；台北醫學大學醫學院外科學科一般外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>前瞻性、單中心、隨機對照試驗（randomized controlled trial, RCT）</b><br><span style="color:#6b7079;font-size:13px">1:1 電腦亂數分派，序號、不透光、密封信封隱藏分派；<b>執刀醫師與資料收集／分析人員盲化，但病人未盲</b>（MPFF 與對照藥錠外觀不同，原文自陳）；意向治療（intention-to-treat）分析；收案期間 2023-12 至 2024-09；遵循 CONSORT 與 STROCSS；ClinicalTrials.gov <b>NCT06184438</b>；經聯合人體試驗審查會（Joint IRB）核准</span></div></div>
+    <div class="meta-item"><div class="k">介入 vs. 對照</div><div class="v"><b>MPFF 1 g bid，術後第 0 天至第 7 天</b>　vs.　<b>維生素 B 500 mg bid ×7 天</b><br><span style="color:#6b7079;font-size:13px"><b>注意：對照組不是安慰劑，而是「主動對照（active comparator）」的維生素 B</b>——這在解讀時很重要</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 3 月 3 日（PMID 41776089；PMC12965912）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion 完整文字）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s10151-026-03298-5">10.1007/s10151-026-03298-5</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/41776089/">PMID 41776089 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">良性疾病與功能性疾患</span>
+    <span class="tag t2">肛門瘻管 Anal fistula</span>
+    <span class="tag t2">術後疼痛 Postoperative pain</span>
+    <span class="tag t2">MPFF／diosmin＋hesperidin</span>
+    <span class="tag t3">證據等級：單中心 RCT（n ＝ 104）</span>
+    <span class="tag t3">Open Access（PMC 全文）</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#consort">CONSORT 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據表＋重繪圖</a><a href="#flags">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>台北醫學大學雙和醫院把 104 位接受<strong>單純型肛門瘻管手術（fistulotomy 或 fistulectomy）</strong>的病人隨機分成「術後吃 MPFF 1 g bid 七天」與「吃維生素 B 七天」兩組，結果是：<strong>MPFF 讓術後疼痛與換藥負擔都變小，但幅度不大</strong>——VAS 疼痛在<strong>術後第 2、4、5 天</strong>達統計顯著（3.02 vs. 3.92，P ＝ 0.045／2.54 vs. 3.40，P ＝ 0.038／2.34 vs. 3.25，P ＝ 0.022），<strong>三天的平均差都只有約 0.9 分，低於一般認定的最小臨床重要差異（MCID，約 1.3–2.0 分）</strong>；<strong>需每天換藥 ≥ 2 次的病人比例則從第 4 天起持續拉開</strong>（POD 7：40.4% vs. 67.3%，P ＝ 0.012，<strong>本頁自行計算的絕對差 26.9 個百分點、NNT ≈ 4</strong>）。但是——<strong>止痛藥用量沒有差、傷口感染／出血／尿滯留／延遲癒合／復發全部沒有差</strong>，也<strong>沒有任何一位病人因出血需要再處置</strong>。三個必須放在心上的但書：（1）<strong>對照組吃的是維生素 B 而不是安慰劑，而且病人沒有盲化</strong>（兩種藥錠外觀不同），VAS 與「換不換藥」這兩個都是<strong>病人自評的主觀指標</strong>，安慰劑效應與期待效應無法排除；（2）<strong>「換藥次數」只是滲液量的替代指標（surrogate）</strong>，原文自己承認換藥頻率會被病人的疼痛耐受度、對傷口潮濕的主觀認知與過往自我照護經驗影響；（3）<strong>只收單純型（低位）瘻管、單一醫學中心、追蹤僅 3 個月</strong>，複雜性瘻管（LIFT、黏膜推進皮瓣、雷射）與長期癒合／復發完全不能外推。<strong>實務結論：MPFF（在台灣即 Daflon 等 diosmin＋hesperidin 製劑）在單純型肛門瘻管術後可以合理加開七天，主要賣點是「傷口滲液少、換藥次數少」而不是「明顯比較不痛」；它不會取代 NSAID，也別對病人承諾疼痛會少一半。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>This prospective randomized controlled trial investigated the efficacy of micronized purified flavonoid fraction (MPFF) in managing postoperative pain and complications following anal fistula surgery. MPFF, a phlebotropic agent with anti-inflammatory and microcirculatory benefits, has demonstrated efficacy in hemorrhoidectomy recovery but remains unexplored in fistula surgery.</p>
+    <h4>Methods</h4>
+    <p>A total of 106 patients undergoing fistulotomy or fistulectomy were allocated to receive either MPFF at a dose of 1 g twice daily or serve as controls. The primary endpoints were daily pain scores measured by visual analog scale (VAS) and the frequency of dressing changes. Secondary outcomes included analgesic consumption, postoperative complications, and wound healing at 3 months.</p>
+    <h4>Results</h4>
+    <p>Among the enrolled patients, 104 completed the study, comprising 52 patients in the MPFF group and 52 in the control group. VAS scores were significantly lower in the MPFF group compared to the control group at multiple time points from 8 h post-surgery to day 7, with statistically significant differences observed on days 2 (3.02 &#177; 2.37 vs. 3.92 &#177; 2.16; P = 0.045), 4 (2.54 &#177; 2.29 vs. 3.40 &#177; 1.89; P = 0.038), and 5 (2.34 &#177; 2.09 vs. 3.25 &#177; 1.88; P = 0.022). Additionally, the frequency of dressing changes was reduced in the MPFF group relative to the control group from day 1 to day 7 post-surgery, with statistically significant differences observed from day 4 onward (day 4, P = 0.036; day 5, P = 0.012; day 6, P = 0.012; day 7, P = 0.012). Secondary outcomes, including analgesic use, wound healing, and postoperative complications such as infection, bleeding, urinary retention, delayed healing, and recurrence, showed no significant differences between groups. No patient required re-intervention for hemorrhage.</p>
+    <h4>Conclusion</h4>
+    <p>This study demonstrates that MPFF not only decreases postoperative pain but also lowers the frequency of dressing changes, supporting its role as a valuable therapeutic option for improving recovery after anal fistula surgery.</p>
+    <h4>Clinical trial registration</h4>
+    <p>This study was registered with ClinicalTrials.gov, and its registration number is NCT06184438.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用，未做任何刪改。<b>請注意摘要第三段的措辭：「VAS scores were significantly lower&#8230; at multiple time points from 8 h post-surgery to day 7」——「多個時間點顯著較低」的說法容易讓人誤以為七天都顯著，但緊接著列出的實際上只有第 2、4、5 天三天</b>；正文對此說得比較準確（「consistently lower&#8230; with statistically significant differences observed on postoperative days 2, 4, and 5」），原文的<b>結論段也明確承認「顯著性呈現不連續的時間型態（第 3 天不顯著）」</b>。中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="consort">
+  <h2>CONSORT Flow <span class="zh">／ 收案與分派流程（依原文 Results 之文字敘述重繪；本研究為 RCT，故無 PRISMA 流程）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Enrolment 收案（2023 年 12 月 – 2024 年 9 月，單一醫學中心）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">106</span> 位接受 fistulotomy 或 fistulectomy 的成人納入<br>
+        <span style="color:#6b7079;font-size:12.5px">納入：年齡 &gt; 20 歲、單純／低位肛門瘻管。排除：同時有大腸直腸癌、肝硬化、凝血功能異常、HIV 感染；<b>亦排除 LIFT、黏膜推進皮瓣、瘻管鏡等其他術式</b></span></div></div>
+      <div class="pr-ex">篩選階段被排除的人數與理由<br><b>原文未列數值</b><br><span style="font-size:12px">（原文僅呈現於 Fig. 1 CONSORT 圖影像，正文未複述）</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Allocation 隨機分派（1:1，電腦亂數 ＋ 密封信封）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">53</span> 人分派至 MPFF 組　／　<span class="n">53</span> 人分派至對照組<br>
+        <span style="color:#6b7079;font-size:12.5px">MPFF 組：MPFF 1 g bid，POD 0–7；對照組：維生素 B 500 mg bid，POD 0–7。第一劑於病人自麻醉恢復室返回病房後給予（手術皆於中午前完成，通常為術後 1–2 小時內），第二劑於當日晚間約 18:00–19:00</span></div></div>
+      <div class="pr-ex">MPFF 組排除 <b>1 人</b>（實際接受黏膜推進皮瓣修補，非原定術式）<br>對照組排除 <b>1 人</b>（術前撤回同意）</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Analysis 意向治療分析</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">104</span> 人納入分析（MPFF <span class="n">52</span> ／ 對照 <span class="n">52</span>）<br>
+        <span style="color:#6b7079;font-size:12.5px">追蹤：出院後第 1 週、第 1 個月、第 3 個月門診；由主治醫師逐一核對病人自填的每日 VAS、換藥次數與口服止痛藥使用紀錄表</span></div></div>
+      <div class="pr-ex"><b>本頁自行計算：</b>106 &#8722; 2 ＝ <b>104</b>，退出率 2/106 ＝ <b>1.9%</b><br><span style="font-size:12px">遠低於樣本數估算時預留的 20% 流失率</span></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:14px;line-height:1.7"><b>怎麼讀：</b>這張圖真正的重點在<b>最後一格右側</b>。原文樣本數估算是「至少 84 人可達 power 0.9（α ＝ 0.05、效應量 d ＝ 0.4、雙尾獨立樣本 t 檢定），再加 20% 流失 → 目標收 106 人」。<b>實際流失只有 2 人（1.9%），所以最終 104 人的檢定力是足夠的——但這個 power 是針對「d ＝ 0.4 的中等效應」設計的。</b><b>陷阱：</b>樣本數的依據，原文取自<b>痔瘡切除術（hemorrhoidectomy）</b>的既往資料——MPFF 組 POD 3 的 VAS 約 3.48–3.5、安慰劑組 5.0–6.16，也就是預期差距約 <b>1.5–2.7 分</b>。<b>本頁自行計算：本研究實際觀察到的差距只有約 0.9 分，僅為預期的三分之一到一半</b>；換句話說，<b>這個試驗是用「痔瘡的效應大小」去估算「瘻管的樣本數」，而瘻管手術傷口比痔瘡少（原文自陳 &gt; 95% 為單一瘻管、只有一個傷口），本來就更不痛、可改善的空間更小</b>。這正是為什麼多數天數沒有達到顯著——不見得是 MPFF 無效，而是<b>整個試驗對「真實但很小的效應」是不足檢力的（underpowered）</b>。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study &amp; Method Characteristics <span class="zh">／ 研究特徵與方法學（原文 Methods 完整內容）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:22%">項目</th><th>內容（依原文 Methods 逐項整理）</th></tr></thead>
+    <tbody>
+      <tr><td><b>設計</b></td><td>前瞻性、單中心、隨機對照試驗；依 Declaration of Helsinki、CONSORT、STROCSS 執行；經聯合人體試驗審查會核准；所有病人簽署書面同意書</td></tr>
+      <tr><td><b>場域與期間</b></td><td>單一「三級轉診醫學中心」；所有手術於 <b>2023 年 12 月至 2024 年 9 月</b>間完成</td></tr>
+      <tr><td><b>納入條件</b></td><td>年齡 &gt; 20 歲之成人；接受 <b>fistulotomy（切開術：把瘻管頂部剖開）</b>或 <b>fistulectomy（瘻管全切除：連同周邊組織整條挖除）</b></td></tr>
+      <tr><td><b>排除條件</b></td><td>① 其他術式（<b>LIFT 括約肌間瘻管結紮、黏膜推進皮瓣、瘻管鏡</b>）；② 合併大腸直腸癌；③ 肝硬化；④ 凝血功能異常；⑤ HIV 感染</td></tr>
+      <tr><td><b>族群限定</b></td><td>原文明言<b>僅收單純型／低位瘻管</b>（括約肌間型與低位穿括約肌型，約佔全部肛門瘻管的 70%），以維持族群同質性</td></tr>
+      <tr><td><b>分派</b></td><td>1:1 電腦產生亂數序列；<b>序號、不透光、密封信封</b>依序開啟</td></tr>
+      <tr><td><b>盲化</b></td><td><b>執刀醫師全程不知分派</b>；<b>資料收集與分析人員亦盲化</b>；<b>病人未盲化</b>（原文列為限制：兩種藥錠外觀不同）</td></tr>
+      <tr><td><b>介入</b></td><td><b>MPFF 1 g 每日兩次，POD 0–7</b>。MPFF ＝ 90% diosmin ＋ 10% hesperidin 的微粒化製劑</td></tr>
+      <tr><td><b>對照</b></td><td><b>維生素 B 500 mg 每日兩次，同為 7 天</b>（<b>非安慰劑，而是主動對照</b>）</td></tr>
+      <tr><td><b>手術標準化</b></td><td>一律採<b>折刀位（jackknife position）</b>；優先<b>脊椎麻醉</b>（僅出血風險高或無法配合區域麻醉者用全身麻醉）；<b>由 2 位外科醫師依同一標準流程執行</b>；完全止血後於肛管內置入<b>可吸收明膠海綿</b>結束手術</td></tr>
+      <tr><td><b>術後止痛（標準化）</b></td><td>主方案：口服 <b>diclofenac 25 mg qid</b>；對 NSAID 過敏或 eGFR &lt; 60 者改 <b>acetaminophen 500 mg qid</b>；出院時已無痛即停藥。住院期間 <b>VAS ≥ 4</b> 可要求靜脈 <b>parecoxib 40 mg</b> 作為救援止痛</td></tr>
+      <tr><td><b>主要指標</b></td><td>① 術後 7 天每日<b>疼痛強度（VAS 0–10）</b>；② 同期間<b>換藥次數</b></td></tr>
+      <tr><td><b>次要指標</b></td><td>① 術後第一週口服止痛藥總用量；② 30 天內<b>手術部位感染</b>（定義：需住院靜脈抗生素或需手術處置）；③ 第一週<b>尿滯留</b>（定義：需導尿）；④ <b>3 個月完全傷口癒合</b>。術後出血定義為 30 天內需再手術或再住院之出血事件；併發症一律依 <b>Clavien-Dindo</b> 分級</td></tr>
+      <tr><td><b>樣本數估算</b></td><td>依痔瘡手術既往資料（MPFF 組 POD 3 VAS 3.48–3.5、安慰劑組 5.0–6.16）；雙尾獨立樣本 t 檢定、α ＝ 0.05、power ≥ 0.9、效應量 d ＝ 0.4 → 最少 <b>84 人</b>；預留 20% 流失 → 目標 <b>106 人</b></td></tr>
+      <tr><td><b>統計</b></td><td>連續變項 mean ± SD、以兩樣本 t 檢定比較；類別變項以卡方或 Fisher 精確檢定；雙尾，P &lt; 0.05 為顯著。<b>原文未報告任何效果值的 95% 信賴區間，也未做多重比較校正</b></td></tr>
+      <tr><td><b>基線可比性</b></td><td>原文陳述兩組在<b>年齡、性別、糖尿病、瘻管型別、術前症狀、症狀持續時間、麻醉方式</b>皆無顯著差異。<b>各項的實際數值僅存在於原文 Table 1，PMC 全文之文字未複述 → 原文未列數值，本頁不推估</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">方法學上三個一定要看到的地方</div>
+    ①&nbsp;<b>對照組是維生素 B，不是安慰劑。</b>原文從頭到尾沒有用 placebo 這個字。維生素 B 群本身在神經痛與傷口修復上的作用雖然證據薄弱，但它<b>不是惰性對照</b>；同時病人也<b>沒有盲化</b>——當主要指標是病人自評的 VAS 與「我今天要換幾次藥」時，這個組合會系統性地偏向 MPFF。②&nbsp;<b>原文沒有報告任何 95% 信賴區間。</b>只有 mean ± SD 與 P 值。本頁下面的所有 MD／RR 與 CI 都是<b>本頁自行計算</b>的，不是原文結果。③&nbsp;<b>七天 ×（VAS ＋ 換藥次數 ＋ 止痛藥用量）＝ 至少 21 次比較，原文未做任何多重比較校正。</b>在 21 次獨立檢定下，即使兩組完全相同，「至少出現一個 P &lt; 0.05」的機率也高達約 66%（<b>本頁自行計算</b>：1 &#8722; 0.95<sup>21</sup> ＝ 0.659）。因此<b>「第 2、4、5 天顯著、第 3 天不顯著」這種跳躍式的型態，本身就是應該提高警覺的訊號</b>。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 兩個主要指標的重繪圖</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">VAS 疼痛（POD 5，差距最大）</div><div class="big">2.34 vs. 3.25</div><div class="sub">P ＝ 0.022；本頁計算 MD −0.91（−1.67 至 −0.15）</div></div>
+    <div class="c teal"><div class="lab">換藥 ≥ 2 次／天（POD 7）</div><div class="big">40.4% vs. 67.3%</div><div class="sub">P ＝ 0.012；本頁計算 RR 0.60（0.41–0.88）、NNT ≈ 4</div></div>
+    <div class="c amber"><div class="lab">口服止痛藥用量</div><div class="big">無顯著差異</div><div class="sub">MPFF 組較低但未達顯著；原文未列數值</div></div>
+    <div class="c amber"><div class="lab">併發症與 3 個月癒合</div><div class="big">全部無差異</div><div class="sub">感染／出血／尿滯留／延遲癒合／復發皆同</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 372" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="372" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">MPFF 組 vs. 對照組：VAS 疼痛平均差 MD（95% CI，本頁自行計算）</text>
+<line x1="340.0" y1="62.0" x2="340.0" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="340.0" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−2.0</text>
+<line x1="397.7" y1="62.0" x2="397.7" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="397.6923076923077" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="455.4" y1="62.0" x2="455.4" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="455.38461538461536" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="513.1" y1="62.0" x2="513.1" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="513.0769230769231" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="570.8" y1="62.0" x2="570.8" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="570.7692307692307" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="628.5" y1="62.0" x2="628.5" y2="250.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="628.4615384615385" y="268" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="570.8" y1="62.0" x2="570.8" y2="250.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14" y="54" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果指標（單位：VAS 0–10 分）</text>
+<text x="866" y="54" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">MD（95% CI）</text>
+<text x="562.7692307692307" y="292" font-size="11.5" fill="#2f6b62" text-anchor="end" font-weight="400">← 有利 MPFF（較不痛）</text>
+<text x="578.7692307692307" y="292" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="400">有利對照組 →</text>
+<text x="20" y="93" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後第 2 天 POD 2</text>
+<text x="20" y="111" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 3.02 ± 2.37　vs.　對照 3.92 ± 2.16　（各 n ＝ 52）　原文 P = 0.045</text>
+<line x1="366.4" y1="96.0" x2="567.5" y2="96.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="366.4" y1="91.5" x2="366.4" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="567.5" y1="91.5" x2="567.5" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="460.4" y="89.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="100" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.90（−1.77 至 −0.03）</text>
+<text x="20" y="145" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後第 4 天 POD 4</text>
+<text x="20" y="163" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 2.54 ± 2.29　vs.　對照 3.40 ± 1.89　（各 n ＝ 52）　原文 P = 0.038</text>
+<line x1="378.4" y1="148.0" x2="564.7" y2="148.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="378.4" y1="143.5" x2="378.4" y2="152.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="564.7" y1="143.5" x2="564.7" y2="152.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="465.0" y="141.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="152" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.86（−1.67 至 −0.05）</text>
+<text x="20" y="197" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後第 5 天 POD 5</text>
+<text x="20" y="215" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 2.34 ± 2.09　vs.　對照 3.25 ± 1.88　（各 n ＝ 52）　原文 P = 0.022</text>
+<line x1="377.6" y1="200.0" x2="553.9" y2="200.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="377.6" y1="195.5" x2="377.6" y2="204.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="553.9" y1="195.5" x2="553.9" y2="204.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="459.3" y="193.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="204" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−0.91（−1.67 至 −0.15）</text>
+<text x="14" y="320" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">方塊＝平均差點估計；橫線＝95% 信賴區間；虛線＝無差異線（MD ＝ 0）。</text>
+<text x="14" y="340" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">註：MD 與 95% CI 由原文各組 mean ± SD 與 n ＝ 52／52 以獨立樣本 t 檢定公式回推，屬「本頁自行計算」；P 值為原文所載。</text>
+<text x="14" y="360" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">原文本身完全沒有提供任何信賴區間。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>三個時間點的 mean ± SD 與 P 值<b>逐字取自原文摘要與 Results 內文</b>（POD 2：3.02 ± 2.37 vs. 3.92 ± 2.16；POD 4：2.54 ± 2.29 vs. 3.40 ± 1.89；POD 5：2.34 ± 2.09 vs. 3.25 ± 1.88；各組 n ＝ 52）。<b>平均差（MD）與 95% 信賴區間為本頁自行計算</b>：MD ＝ MPFF 平均 &#8722; 對照平均，標準誤 SE ＝ &#8730;(SD<sub>1</sub><sup>2</sup>/52 ＋ SD<sub>2</sub><sup>2</sup>/52)，CI ＝ MD ± 1.96 × SE。<b>原文本身完全沒有提供 CI。</b><br>
+    <b>如何解讀：</b>三個點估計都落在 &#8722;0.86 至 &#8722;0.91 之間，方向一致地有利 MPFF；三條信賴區間也都<b>剛好</b>不含 0（上界分別為 &#8722;0.03、&#8722;0.05、&#8722;0.15），與原文 P ＝ 0.045／0.038／0.022 完全吻合——<b>本頁回推的 t 值為 2.02／2.09／2.33，對應雙尾 P 約 0.046／0.039／0.022，可與原文對上，代表數字沒有內部矛盾。</b><br>
+    <b>有何陷阱：</b>三個 CI 的<b>上界都幾乎貼著 0</b>——這是「勉強顯著」的典型樣貌，只要少收幾個人或多一點變異，顯著性就會消失。更關鍵的是<b>臨床意義</b>：急性疼痛 VAS 的最小臨床重要差異（MCID）文獻多落在 <b>1.3–2.0 分</b>，而這裡三天的 MD 都<b>不到 1 分</b>，<b>連信賴區間的下界（最樂觀情境約 &#8722;1.77）都只是勉強觸及 MCID 的下緣</b>。原文自己在 Discussion 中也明白承認這一點，並以此解釋「為什麼止痛藥用量沒有跟著減少」。此外，<b>POD 0、1、3、6、7 的數值原文未列，本頁不補、不估、不畫</b>——尤其第 3 天不顯著這件事，讓「劑量–反應隨時間單調變化」的說法站不住腳。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="400" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">VAS 疼痛分數：MPFF 組 vs. 對照組（僅原文有列出數值的三天）</text>
+<line x1="92.0" y1="268.0" x2="830.0" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="272.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="92.0" y1="238.6" x2="830.0" y2="238.6" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="242.57142857142858" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">1</text>
+<line x1="92.0" y1="209.1" x2="830.0" y2="209.1" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="213.14285714285714" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2</text>
+<line x1="92.0" y1="179.7" x2="830.0" y2="179.7" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="183.71428571428572" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">3</text>
+<line x1="92.0" y1="150.3" x2="830.0" y2="150.3" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="154.28571428571428" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">4</text>
+<line x1="92.0" y1="120.9" x2="830.0" y2="120.9" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="124.85714285714286" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">5</text>
+<line x1="92.0" y1="91.4" x2="830.0" y2="91.4" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="95.42857142857144" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">6</text>
+<line x1="92.0" y1="62.0" x2="830.0" y2="62.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="66.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">7</text>
+<text x="30" y="165.0" font-size="12" fill="#6b7079" text-anchor="middle" font-weight="700">VAS 分數</text>
+<rect x="135.7" y="179.1" width="72.0" height="88.9" fill="#2f6b62" opacity="0.9"/>
+<line x1="171.7" y1="109.4" x2="171.7" y2="248.9" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="162.7" y1="109.4" x2="180.7" y2="109.4" stroke="#6b7079" stroke-width="1.2"/>
+<text x="171.66666666666669" y="99.38" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="700">3.02 ± 2.37</text>
+<rect x="235.7" y="152.6" width="72.0" height="115.4" fill="#8a4a3d" opacity="0.9"/>
+<line x1="271.7" y1="89.1" x2="271.7" y2="216.2" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="262.7" y1="89.1" x2="280.7" y2="89.1" stroke="#6b7079" stroke-width="1.2"/>
+<text x="271.6666666666667" y="79.07428571428572" font-size="11.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">3.92 ± 2.16</text>
+<text x="221.66666666666669" y="292" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">術後第 2 天 POD 2</text>
+<text x="221.66666666666669" y="312" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.045</text>
+<rect x="379.0" y="193.3" width="72.0" height="74.7" fill="#2f6b62" opacity="0.9"/>
+<line x1="415.0" y1="125.9" x2="415.0" y2="260.6" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="406.0" y1="125.9" x2="424.0" y2="125.9" stroke="#6b7079" stroke-width="1.2"/>
+<text x="415.00000000000006" y="115.86" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="700">2.54 ± 2.29</text>
+<rect x="479.0" y="167.9" width="72.0" height="100.1" fill="#8a4a3d" opacity="0.9"/>
+<line x1="515.0" y1="112.3" x2="515.0" y2="223.6" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="506.0" y1="112.3" x2="524.0" y2="112.3" stroke="#6b7079" stroke-width="1.2"/>
+<text x="515.0" y="102.32285714285716" font-size="11.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">3.40 ± 1.89</text>
+<text x="465.00000000000006" y="292" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">術後第 4 天 POD 4</text>
+<text x="465.00000000000006" y="312" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.038</text>
+<rect x="622.3" y="199.1" width="72.0" height="68.9" fill="#2f6b62" opacity="0.9"/>
+<line x1="658.3" y1="137.6" x2="658.3" y2="260.6" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="649.3" y1="137.6" x2="667.3" y2="137.6" stroke="#6b7079" stroke-width="1.2"/>
+<text x="658.3333333333334" y="127.63142857142859" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="700">2.34 ± 2.09</text>
+<rect x="722.3" y="172.4" width="72.0" height="95.6" fill="#8a4a3d" opacity="0.9"/>
+<line x1="758.3" y1="117.0" x2="758.3" y2="227.7" stroke="#6b7079" stroke-width="1.2"/>
+<line x1="749.3" y1="117.0" x2="767.3" y2="117.0" stroke="#6b7079" stroke-width="1.2"/>
+<text x="758.3333333333334" y="107.03142857142855" font-size="11.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">3.25 ± 1.88</text>
+<text x="708.3333333333334" y="292" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">術後第 5 天 POD 5</text>
+<text x="708.3333333333334" y="312" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.022</text>
+<line x1="92.0" y1="268.0" x2="830.0" y2="268.0" stroke="#2e2b28" stroke-width="1.2"/>
+<rect x="100.0" y="322.0" width="14.0" height="12.0" fill="#2f6b62" opacity="0.9"/>
+<text x="120" y="332" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 1 g bid（n ＝ 52）</text>
+<rect x="310.0" y="322.0" width="14.0" height="12.0" fill="#8a4a3d" opacity="0.9"/>
+<text x="330" y="332" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">對照：維生素 B 500 mg bid（n ＝ 52）</text>
+<text x="590" y="332" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">誤差線＝±1 標準差（不是 95% CI）</text>
+<text x="14" y="362" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">術後第 0、1、3、6、7 天的 VAS 數值僅存在於原文 Fig. 2 折線圖影像中，正文未複述 → 原文未列數值，本頁不推估。</text>
+<text x="14" y="384" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">注意標準差幾乎與平均值等大，代表分布高度重疊、可能右偏。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>同上，逐字取自原文；誤差線為原文所載的 ±1 標準差（<b>不是 95% CI</b>，兩者不可混用）。<br>
+    <b>如何解讀：</b>把絕對數值畫出來，最直觀的訊息其實是——<b>兩組都不太痛</b>。對照組三天的平均 VAS 是 3.92／3.40／3.25，MPFF 組是 3.02／2.54／2.34；也就是說<b>即使完全不給 MPFF，單純型瘻管手術病人在術後第 2 天的平均疼痛也只有 3.9 分（中度偏輕）</b>，第 5 天已降到 3.3 分。<b>這正是本研究效應量偏小的根本原因：天花板本來就低。</b><br>
+    <b>有何陷阱：</b>誤差線很長（SD 約 1.9–2.4），<b>兩組的分布高度重疊</b>——這代表「MPFF 組的病人一定比較不痛」是錯誤的個體層次推論，正確的說法只是「<b>族群平均</b>低了約 0.9 分」。另外要注意標準差幾乎和平均值一樣大（例如 POD 5 的 2.34 ± 2.09），<b>暗示分布嚴重右偏、可能不符合 t 檢定的常態假設</b>；在這種情況下，Mann–Whitney U 檢定或中位數呈現會更穩健，<b>而原文只用了 t 檢定</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="420" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">每日需換藥 ≥ 2 次的病人比例（原文有列出數值的 POD 4–7）</text>
+<line x1="92.0" y1="262.0" x2="830.0" y2="262.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="266.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">0%</text>
+<line x1="92.0" y1="212.0" x2="830.0" y2="212.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="216.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">20%</text>
+<line x1="92.0" y1="162.0" x2="830.0" y2="162.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="166.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">40%</text>
+<line x1="92.0" y1="112.0" x2="830.0" y2="112.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="116.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">60%</text>
+<line x1="92.0" y1="62.0" x2="830.0" y2="62.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="84" y="66.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">80%</text>
+<text x="34" y="162.0" font-size="12" fill="#6b7079" text-anchor="middle" font-weight="700">比例（%）</text>
+<rect x="121.2" y="141.8" width="60.0" height="120.3" fill="#2f6b62" opacity="0.9"/>
+<text x="151.25" y="133.75" font-size="12" fill="#2f6b62" text-anchor="middle" font-weight="700">48.1%</text>
+<rect x="201.2" y="84.0" width="60.0" height="178.0" fill="#8a4a3d" opacity="0.9"/>
+<text x="231.25" y="76.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">71.2%</text>
+<text x="191.25" y="286" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">POD 4</text>
+<text x="191.25" y="306" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.036</text>
+<text x="191.25" y="325" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">差 −23.1 個百分點</text>
+<rect x="303.8" y="151.5" width="60.0" height="110.5" fill="#2f6b62" opacity="0.9"/>
+<text x="333.75" y="143.5" font-size="12" fill="#2f6b62" text-anchor="middle" font-weight="700">44.2%</text>
+<rect x="383.8" y="84.0" width="60.0" height="178.0" fill="#8a4a3d" opacity="0.9"/>
+<text x="413.75" y="76.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">71.2%</text>
+<text x="373.75" y="286" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">POD 5</text>
+<text x="373.75" y="306" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.012</text>
+<text x="373.75" y="325" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">差 −27.0 個百分點</text>
+<rect x="486.2" y="156.2" width="60.0" height="105.7" fill="#2f6b62" opacity="0.9"/>
+<text x="516.25" y="148.25" font-size="12" fill="#2f6b62" text-anchor="middle" font-weight="700">42.3%</text>
+<rect x="566.2" y="89.0" width="60.0" height="173.0" fill="#8a4a3d" opacity="0.9"/>
+<text x="596.25" y="81.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">69.2%</text>
+<text x="556.25" y="286" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">POD 6</text>
+<text x="556.25" y="306" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.012</text>
+<text x="556.25" y="325" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">差 −26.9 個百分點</text>
+<rect x="668.8" y="161.0" width="60.0" height="101.0" fill="#2f6b62" opacity="0.9"/>
+<text x="698.75" y="153.0" font-size="12" fill="#2f6b62" text-anchor="middle" font-weight="700">40.4%</text>
+<rect x="748.8" y="93.8" width="60.0" height="168.2" fill="#8a4a3d" opacity="0.9"/>
+<text x="778.75" y="85.75" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">67.3%</text>
+<text x="738.75" y="286" font-size="12.5" fill="#2e2b28" text-anchor="middle" font-weight="700">POD 7</text>
+<text x="738.75" y="306" font-size="11.5" fill="#2f6b62" text-anchor="middle" font-weight="400">P = 0.012</text>
+<text x="738.75" y="325" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">差 −26.9 個百分點</text>
+<line x1="92.0" y1="262.0" x2="830.0" y2="262.0" stroke="#2e2b28" stroke-width="1.2"/>
+<rect x="100.0" y="344.0" width="14.0" height="12.0" fill="#2f6b62" opacity="0.9"/>
+<text x="120" y="354" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF（n ＝ 52）</text>
+<rect x="290.0" y="344.0" width="14.0" height="12.0" fill="#8a4a3d" opacity="0.9"/>
+<text x="310" y="354" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">對照組（n ＝ 52）</text>
+<text x="14" y="384" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">POD 1–3 的比例原文僅敘述「MPFF 組較低但未達顯著」，未列出數值 → 原文未列數值，本頁不推估。</text>
+<text x="14" y="406" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">兩組差距從第 4 天起穩定維持在 23–27 個百分點，沒有隨時間收斂。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>百分比與 P 值逐字取自原文 Results（POD 4：48.1% vs. 71.2%，P ＝ 0.036；POD 5：44.2% vs. 71.2%，P ＝ 0.012；POD 6：42.3% vs. 69.2%，P ＝ 0.012；POD 7：40.4% vs. 67.3%，P ＝ 0.012）。「差 X 個百分點」為<b>本頁自行計算</b>。<br>
+    <b>如何解讀：</b>這是本研究<b>比疼痛更有說服力的結果</b>：兩組的差距從第 4 天起<b>穩定維持在約 23–27 個百分點，而且沒有隨時間收斂</b>。臨床上的意義很具體——對照組到了術後第 7 天仍有<b>三分之二</b>的人每天要換兩次以上的藥，MPFF 組只剩<b>四成</b>。以絕對差 26.9 個百分點計算（POD 5–7 皆同），<b>NNT ≈ 4（本頁自行計算：1 ÷ 0.269 ＝ 3.7）</b>：每給 4 位病人 MPFF，就有 1 位可以少一天的頻繁換藥。<br>
+    <b>有何陷阱：</b>三個。①&nbsp;<b>「換藥次數」是病人自己決定、自己記錄的</b>——原文在限制中直言此頻率「因病人的疼痛耐受度、對傷口潮濕程度的主觀認知與自我照護經驗而有相當大的差異」。在<b>病人未盲化</b>的前提下，這是最容易被期待效應污染的指標。②&nbsp;它只是<b>滲液量的替代指標（surrogate）</b>，原文並未實際量測滲液重量或體積。③&nbsp;<b>POD 1–3 的比例原文未列數值</b>，只說「較低但未達顯著」；因此「從第幾天開始有效」這個問題其實沒有答案。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:24%">結果指標</th><th>MPFF（n ＝ 52）</th><th>對照（n ＝ 52）</th><th>效果值（本頁自行計算）</th><th>原文 P</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td colspan="6" style="background:#f3f1ec"><b>主要指標 ①：VAS 疼痛（0–10 分）</b></td></tr>
+      <tr><td>POD 2</td><td class="num">3.02 ± 2.37</td><td class="num">3.92 ± 2.16</td><td class="num">MD &#8722;0.90（&#8722;1.77 至 &#8722;0.03）</td><td class="num">0.045</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 4</td><td class="num">2.54 ± 2.29</td><td class="num">3.40 ± 1.89</td><td class="num">MD &#8722;0.86（&#8722;1.67 至 &#8722;0.05）</td><td class="num">0.038</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 5</td><td class="num">2.34 ± 2.09</td><td class="num">3.25 ± 1.88</td><td class="num">MD &#8722;0.91（&#8722;1.67 至 &#8722;0.15）</td><td class="num">0.022</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 0、1、3、6、7</td><td class="na" colspan="2">原文未列數值（僅見於 Fig. 2 折線圖影像）</td><td class="na">無法計算</td><td class="ns">未達顯著（原文敘述）</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td colspan="6" style="background:#f3f1ec"><b>主要指標 ②：當天換藥 ≥ 2 次的病人比例</b></td></tr>
+      <tr><td>POD 1–3</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著（原文敘述）</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>POD 4</td><td class="num">48.1%（回推 25/52）</td><td class="num">71.2%（回推 37/52）</td><td class="num">RR 0.68（0.49–0.94）；ARR 23.1 pp</td><td class="num">0.036</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 5</td><td class="num">44.2%（回推 23/52）</td><td class="num">71.2%（回推 37/52）</td><td class="num">RR 0.62（0.44–0.88）；ARR 27.0 pp</td><td class="num">0.012</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 6</td><td class="num">42.3%（回推 22/52）</td><td class="num">69.2%（回推 36/52）</td><td class="num">RR 0.61（0.42–0.88）；ARR 26.9 pp</td><td class="num">0.012</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td>POD 7</td><td class="num">40.4%（回推 21/52）</td><td class="num">67.3%（回推 35/52）</td><td class="num">RR 0.60（0.41–0.88）；ARR 26.9 pp、NNT ≈ 4</td><td class="num">0.012</td><td><span class="win">MPFF 較佳</span></td></tr>
+      <tr><td colspan="6" style="background:#f3f1ec"><b>次要指標</b></td></tr>
+      <tr><td>口服止痛藥（每日 ≥ 2 劑之比例，POD 1 起）</td><td class="na" colspan="2">原文未列數值（僅敘述 MPFF 組較低）</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>靜脈止痛藥需求</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>手術時間</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>住院天數</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>尿滯留（第一週，需導尿）</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>手術部位感染（30 天）</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>術後出血（需再手術／再住院）</td><td class="num">0 例</td><td class="num">0 例</td><td class="na">兩組皆無事件，無法計算</td><td class="ns">—</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>延遲傷口癒合</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>3 個月完全癒合</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>瘻管復發</td><td class="na" colspan="2">原文未列數值</td><td class="na">無法計算</td><td class="ns">未達顯著</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>MPFF 相關副作用／不良事件</td><td class="num">0 例（原文明列）</td><td class="num">—</td><td class="na">—</td><td class="ns">—</td><td><span class="win">安全</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>整張表最重要的一句話：</b>右邊「判定」欄看起來 MPFF 贏了 7 項、平手 12 項——但<b>7 項全部集中在「病人自評的主觀指標」（VAS、換藥次數），而 12 項平手的全部是「客觀的臨床結果」（感染、出血、癒合、復發、住院天數）</b>。這個分布型態本身就是解讀的關鍵：<b>MPFF 改變的是「主觀舒適度與傷口照護負擔」，不是「傷口會不會出事、多久會好」。</b>另外請注意表中大量的「原文未列數值」——原文的 Table 2、Table 3 只存在於出版社頁面的表格物件中，PMC 全文之文字未複述，<b>本頁一律誠實標示而不做任何推估。</b></p>
+</section>
+
+<section id="raw">
+  <h2>Reconstructed Raw Data <span class="zh">／ 原始數據回推表與自行重繪圖</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>術後天數</th><th>MPFF 換藥 ≥2 次<br>（回推事件數）</th><th>對照 換藥 ≥2 次<br>（回推事件數）</th><th>RR（95% CI）<br>本頁自行計算</th><th>絕對差 ARR<br>本頁自行計算</th><th>NNT<br>本頁自行計算</th><th>本頁重算之卡方 P<br>（Yates 校正）</th><th>原文 P</th></tr></thead>
+    <tbody>      <tr><td><b>POD 4</b></td><td class="num">25 / 52（48.1%）</td><td class="num">37 / 52（71.2%）</td><td class="num">0.68（0.49–0.94）</td><td class="num">23.1 個百分點</td><td class="num">4.3</td><td class="num">0.028</td><td class="num">0.036</td></tr>
+      <tr><td><b>POD 5</b></td><td class="num">23 / 52（44.2%）</td><td class="num">37 / 52（71.2%）</td><td class="num">0.62（0.44–0.88）</td><td class="num">26.9 個百分點</td><td class="num">3.7</td><td class="num">0.010</td><td class="num">0.012</td></tr>
+      <tr><td><b>POD 6</b></td><td class="num">22 / 52（42.3%）</td><td class="num">36 / 52（69.2%）</td><td class="num">0.61（0.42–0.88）</td><td class="num">26.9 個百分點</td><td class="num">3.7</td><td class="num">0.010</td><td class="num">0.012</td></tr>
+      <tr><td><b>POD 7</b></td><td class="num">21 / 52（40.4%）</td><td class="num">35 / 52（67.3%）</td><td class="num">0.60（0.41–0.88）</td><td class="num">26.9 個百分點</td><td class="num">3.7</td><td class="num">0.011</td><td class="num">0.012</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>回推方法（全部屬「本頁自行計算」）：</b>原文只給百分比，未給事件數。因兩組固定各 52 人，故以「百分比 × 52 後四捨五入」回推事件數：48.1% → 25 人（25/52 ＝ 48.08%，與原文相符至小數第二位）；71.2% → 37 人（71.15%）；44.2% → 23 人（44.23%）；42.3% → 22 人（42.31%）；69.2% → 36 人（69.23%）；40.4% → 21 人（40.38%）；67.3% → 35 人（67.31%）。<b>七組回推值全部與原文百分比吻合到小數第二位，交叉驗算通過。</b>RR 之 95% CI 以 log-RR 的標準誤 &#8730;(1/a &#8722; 1/n<sub>1</sub> ＋ 1/b &#8722; 1/n<sub>2</sub>) 計算。</p>
+  <div class="call amber">
+    <div class="h">一個必須誠實說明的不一致</div>
+    以回推的事件數重跑 2×2 卡方（Yates 連續性校正），得到 P ＝ <b>0.028／0.010／0.010／0.011</b>；<b>原文所載為 0.036／0.012／0.012／0.012</b>。方向與顯著性判定完全一致，但數值不完全相同。可能原因有三：①&nbsp;原文採用的檢定不同（例如未做 Yates 校正的卡方會更小、Fisher 精確檢定則會略大）；②&nbsp;回推事件數存在 ±1 人的誤差；③&nbsp;原文的分母可能不是 52（例如某天有病人未填表）。<b>本頁不主張哪一個是對的，只如實呈現差異，並提醒：以下所有 RR／NNT 都建立在「回推事件數正確」這個假設上。</b>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 372" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="372" fill="#faf9f6"/>
+<text x="14" y="26" font-size="15" font-weight="700" fill="#2e2b28">每日換藥 ≥ 2 次的相對風險 RR（本頁由原文百分比回推事件數後自行計算）</text>
+<line x1="360.0" y1="62.0" x2="360.0" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="360.0" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.3</text>
+<line x1="440.8" y1="62.0" x2="440.8" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.7791222224754" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="494.0" y1="62.0" x2="494.0" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="493.9869697969849" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.7</text>
+<line x1="550.4" y1="62.0" x2="550.4" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="550.3895611112378" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="614.5" y1="62.0" x2="614.5" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="614.5075575487515" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.5</text>
+<line x1="660.0" y1="62.0" x2="660.0" y2="268.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="286" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="550.4" y1="62.0" x2="550.4" y2="268.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14" y="54" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">術後天數（事件＝當天換藥 ≥ 2 次）</text>
+<text x="866" y="54" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">RR（95% CI）</text>
+<text x="20" y="93" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">POD 4</text>
+<text x="20" y="111" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 25/52　vs.　對照 37/52　（原文 P = 0.036）</text>
+<line x1="436.0" y1="96.0" x2="540.8" y2="96.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="436.0" y1="91.5" x2="436.0" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="540.8" y1="91.5" x2="540.8" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="481.9" y="89.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="100" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.68（0.49–0.94）</text>
+<text x="20" y="139" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">POD 5</text>
+<text x="20" y="157" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 23/52　vs.　對照 37/52　（原文 P = 0.012）</text>
+<line x1="419.7" y1="142.0" x2="530.7" y2="142.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="419.7" y1="137.5" x2="419.7" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="530.7" y1="137.5" x2="530.7" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="468.7" y="135.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="146" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.62（0.44–0.88）</text>
+<text x="20" y="185" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">POD 6</text>
+<text x="20" y="203" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 22/52　vs.　對照 36/52　（原文 P = 0.012）</text>
+<line x1="414.7" y1="188.0" x2="530.3" y2="188.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="414.7" y1="183.5" x2="414.7" y2="192.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="530.3" y1="183.5" x2="530.3" y2="192.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="466.0" y="181.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="192" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.61（0.42–0.88）</text>
+<text x="20" y="231" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">POD 7</text>
+<text x="20" y="249" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">MPFF 21/52　vs.　對照 35/52　（原文 P = 0.012）</text>
+<line x1="409.4" y1="234.0" x2="529.8" y2="234.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="409.4" y1="229.5" x2="409.4" y2="238.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="529.8" y1="229.5" x2="529.8" y2="238.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="463.1" y="227.5" width="13.0" height="13.0" fill="#2f6b62" opacity="1.0"/>
+<text x="866" y="238" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">0.60（0.41–0.88）</text>
+<text x="542.3895611112378" y="310" font-size="11.5" fill="#2f6b62" text-anchor="end" font-weight="400">← 有利 MPFF</text>
+<text x="558.3895611112378" y="310" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="400">有利對照組 →</text>
+<text x="14" y="340" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">刻度為對數尺度；無效線 RR ＝ 1。事件數由原文百分比 × 52 回推，RR 與 95% CI 為本頁自行計算。</text>
+<text x="14" y="362" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">本圖刻意不畫合併菱形 —— 四列是同一批病人在不同天的重複測量，合併在統計上並不成立。</text>
+</svg></div>
+    <div class="cap"><b>數據來源：</b>事件數為<b>本頁由原文百分比回推</b>；RR 與 95% CI 為<b>本頁自行計算</b>。<b>原文完全沒有提供 RR、也沒有提供任何信賴區間。</b><br>
+    <b>如何解讀：</b>四天的 RR 落在 0.60–0.68 之間，且<b>信賴區間全部完整落在無效線 1 的左側</b>，代表 MPFF 組「需要頻繁換藥」的風險比對照組低了約三到四成。四個點估計隨天數<b>單調下降</b>（0.68 → 0.62 → 0.61 → 0.60），與「MPFF 的抗發炎／改善淋巴回流作用需要幾天累積」這個機轉假說一致。<br>
+    <b>有何陷阱：</b>①&nbsp;<b>本圖刻意不畫合併菱形。</b>這四列是<b>同一批病人在不同天的重複測量</b>，彼此高度相關，把它們當成四個獨立研究去合併在統計上是錯的。②&nbsp;信賴區間的上界都很靠近 1（0.88–0.94），<b>精確度並不高</b>。③&nbsp;RR 的分子分母都是<b>病人自行決定的行為</b>，不是生理事件；在未盲化的設計下，這個「三到四成的風險下降」有多少來自藥效、有多少來自「我知道自己吃了活性藥所以覺得傷口比較乾」，本研究無法區分。</div>
+  </div>
+</section>
+
+<section id="flags">
+  <h2>Numerical Consistency Check <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:30%">驗算項目</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td>收案人數加總</td><td>53 ＋ 53 ＝ 106 ＝ 原文所載納入人數 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>分析人數加總</td><td>52 ＋ 52 ＝ 104；106 &#8722; 2（1 例改術式、1 例撤回同意）＝ 104 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>百分比與分母</td><td>48.1%、71.2%、44.2%、42.3%、69.2%、40.4%、67.3% 以 n ＝ 52 回推皆得整數人數，還原後誤差 &lt; 0.05 個百分點 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>P 值與 mean ± SD 的內部一致性</td><td>由 mean ± SD、n ＝ 52 回推之 t 值 2.02／2.09／2.33，對應雙尾 P ≈ 0.046／0.039／0.022，與原文 0.045／0.038／0.022 <span class="sig">✔ 相符</span></td></tr>
+      <tr><td>換藥比例的 P 值</td><td>回推事件數後之 Yates 校正卡方 P ＝ 0.028／0.010／0.010／0.011 vs. 原文 0.036／0.012／0.012／0.012 <span style="color:#8a6a1f;font-weight:700">△ 方向一致、數值略有出入（見上方說明）</span></td></tr>
+      <tr><td>樣本數估算的自洽性</td><td>原文以 d ＝ 0.4、power 0.9、α 0.05 推得「至少 84 人」；以標準公式驗算，每組需 n ＝ 2(1.96＋1.2816)<sup>2</sup>/0.4<sup>2</sup> ≈ 131 人（雙尾、power 0.9），<b>兩組共約 262 人</b>——<b>與原文的 84 人有明顯落差</b> <span style="color:#8a6a1f;font-weight:700">△ 無法重現</span></td></tr>
+      <tr><td>顯著天數的分布</td><td>第 2、4、5 天顯著、第 3 天不顯著；原文結論段亦主動點出此「變動的時間型態」 <span style="color:#8a6a1f;font-weight:700">△ 應提高警覺</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.7"><b>關於樣本數的落差：</b>以 Cohen 的標準公式，雙尾 α ＝ 0.05、power ＝ 0.9、效應量 d ＝ 0.4 時，<b>每組</b>約需 131 人。原文寫「minimum of 84 patients were needed」——如果 84 指的是<b>每組</b>，對應的 power 約為 0.72；如果指<b>兩組合計</b>，power 更低。<b>本頁只呈現驗算結果，不臆測原文的計算方式</b>；但這個落差與「多數天數未達顯著」的實際結果是相互印證的，也支持前面「本試驗對真實而微小的效應檢力不足」的判讀。</p>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、知情同意怎麼談</span></h2>
+
+  <h3>誰適合</h3>
+  <ul class="clean">
+    <li><b>最適合：接受 fistulotomy 或 fistulectomy 的單純型／低位肛門瘻管成人。</b>這正是本試驗的族群——括約肌間型或低位穿括約肌型，約佔所有肛門瘻管的 70%，也是台灣門診最常見的一群。</li>
+    <li><b>可以合理外推：同時做痔瘡切除的病人。</b>MPFF 在 Milligan–Morgan 痔瘡切除術後的證據其實比瘻管更強（原文引用之既往研究顯示 VAS 可降約 2 分，並減少止痛藥用量與續發性出血），本研究只是把適應症往外延伸一格。</li>
+    <li><b>不能外推：複雜型／高位瘻管。</b>接受 <b>LIFT</b>、<b>黏膜推進皮瓣（mucosal advancement flap）</b>、<b>雷射瘻管閉合（FiLaC）</b>或<b>瘻管鏡（VAAFT）</b>者被原文明文排除。這些術式的傷口型態、癒合機轉與失敗模式都不同。</li>
+    <li><b>不能外推：合併大腸直腸癌、肝硬化、凝血功能異常、HIV 感染者</b>——皆為原文排除條件。<b>克隆氏症（Crohn's disease）相關的肛門瘻管本研究未提及，亦不應套用。</b></li>
+    <li><b>相對禁忌：</b>MPFF 為口服類黃酮製劑，孕期與哺乳期資料有限；本試驗未納入這些族群。</li>
+  </ul>
+
+  <h3>換來什麼（用病人聽得懂的話）</h3>
+  <div class="call teal">
+    <div class="h">兩個可以承諾的、一個不能承諾的</div>
+    <b>可以承諾 ①：換藥會比較輕鬆。</b>術後第 4 天起，需要一天換兩次以上藥的機率大約從三分之二降到四成（<b>本頁自行計算：絕對差約 27 個百分點、NNT ≈ 4</b>）。這對「要回去上班、不方便一天跑兩次廁所換藥」的病人是最有感的好處。<br>
+    <b>可以承諾 ②：安全。</b>原文明確記載 MPFF 組<b>沒有任何藥物相關副作用或不良事件</b>；兩組的感染、出血、尿滯留、延遲癒合、復發率皆無差異；<b>沒有任何一位病人因術後出血需要再手術或再住院。</b><br>
+    <b>不能承諾：疼痛會少一半。</b>疼痛只降了約 0.9 分（10 分制），<b>低於一般認定的最小臨床重要差異</b>，而且<b>止痛藥的用量並沒有因此減少</b>。如果對病人說「吃這個就不痛了」，等他實際體驗後會覺得被誤導。
+  </div>
+
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>金錢。</b>MPFF（台灣即 Daflon<sup>&#174;</sup> 等 diosmin 500 mg ＋ hesperidin 50 mg 微粒化製劑）在肛門瘻管術後屬<b>適應症外使用（off-label）</b>，健保給付與否須依當下規定確認，多數情況為自費。本研究<b>完全沒有做成本效益分析</b>——「NNT ≈ 4 換一天少換一次藥」值不值得，取決於藥價與病人的價值觀，本頁無法代答。</li>
+    <li><b>七天、每天兩次的服藥負擔。</b>劑量為 1 g bid（即一般 500 mg 錠劑一次兩顆）。</li>
+    <li><b>不確定性本身。</b>這是<b>單一醫學中心、104 人、追蹤 3 個月、病人未盲化、對照組非安慰劑</b>的第一個此適應症試驗。原文標題自稱 pioneering，也就是<b>尚無第二個研究可以佐證</b>。</li>
+  </ul>
+
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call amber">
+    <div class="h">建議說法</div>
+    「你的瘻管手術傷口是<b>開放性</b>的，會滲組織液，通常要換藥兩三週。有一種口服的靜脈活性藥（微粒化純化類黃酮，MPFF），台灣常見的商品名是 Daflon，本來是治痔瘡和靜脈曲張用的。<b>台北醫學大學雙和醫院在 2026 年發表了一個 104 人的隨機試驗</b>：術後吃七天，<b>從第四天起，需要一天換兩次以上藥的人從大約三分之二降到四成</b>——大概每四個人裡有一個因此受惠。<b>疼痛也有降，但只有大約 1 分（滿分 10 分），你不太感覺得出來，止痛藥也不會因此少吃。</b>好處是<b>相當安全，這個試驗裡沒有人出現藥物副作用</b>；但要提醒你三件事：<b>第一，這是自費（或需確認健保給付）；第二，這個研究裡病人自己知道吃的是哪一種藥，所以「傷口比較乾」這個感覺有多少是藥效、多少是心理，說不準；第三，它幫不上忙的地方是——傷口多久會完全好、會不會復發，兩組完全一樣。</b>你要不要試，我們一起決定。」
+  </div>
+
+  <h3>對台灣臨床的三點提醒</h3>
+  <ol class="num">
+    <li><b>這是台灣自己的資料。</b>作者群來自台北醫學大學雙和醫院與奇美醫院，族群、術式（折刀位、脊椎麻醉、肛管內置可吸收明膠海綿）、術後止痛方案（diclofenac 25 mg qid）都與國內常規高度接近，<b>外推到台大或其他醫學中心的落差比多數國外文獻小得多</b>。</li>
+    <li><b>它的止痛藥基準線是 NSAID，不是鴉片類。</b>本研究的標準止痛是口服 diclofenac 加上必要時靜脈 parecoxib。因此結論應理解為「<b>在已經給足 NSAID 的前提下，MPFF 再多帶來約 0.9 分的降幅</b>」，而不是「MPFF 可以取代止痛藥」。</li>
+    <li><b>真正的臨床賣點請放在「傷口照護負擔」而不是「止痛」。</b>本頁認為這篇最有價值的訊息，是它把 MPFF 的定位從「止痛藥」轉為「<b>減少滲液、減少換藥次數</b>」——這正是門診肛門手術病人最常抱怨、卻最少被量化的一件事。</li>
+  </ol>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>病人未盲化 ＋ 對照組非安慰劑（原文自陳的第一項限制）。</b>MPFF 與維生素 B 藥錠外觀不同，病人知道自己拿到哪一種。<b>兩個主要指標（VAS、換藥次數）都是病人自評／自決的主觀指標</b>，這是本研究最根本的偏差來源，方向明確地有利 MPFF。</li>
+    <li><b>單一醫學中心（原文自陳）。</b>單一高量中心、僅 2 位外科醫師、單一標準流程；換到術式細節或術後照護不同的醫院，結果未必重現。</li>
+    <li><b>固定 7 天療程、追蹤僅 3 個月（原文自陳）。</b>無法回答「最佳療程長度是幾天」，也無法看到<b>延遲性傷口重塑與長期復發</b>。肛門瘻管的復發常發生在術後 1 年以後，3 個月遠遠不夠。</li>
+    <li><b>排除複雜術式（原文自陳）。</b>LIFT、黏膜推進皮瓣等皆被排除，MPFF 在複雜瘻管的角色完全未知。</li>
+    <li><b>換藥頻率的測量偏差（原文自陳）。</b>雖然入組時有標準化衛教，但實際換藥頻率「因病人的疼痛耐受度、對傷口潮濕的主觀認知與過往自我照護經驗而有相當大的差異」。</li>
+    <li><b>原文未報告任何信賴區間、未做多重比較校正。</b>七天 × 三個每日指標至少 21 次比較，全部以 P &lt; 0.05 判定。<b>本頁自行計算：在 21 次獨立檢定下，即使真實無差異，出現至少一個假陽性的機率約 66%。</b>「第 3 天不顯著、第 2／4／5 天顯著」的跳躍型態，正符合多重比較下的隨機樣貌。</li>
+    <li><b>效應量低於 MCID。</b>VAS 差距約 0.9 分，低於急性疼痛常用的 MCID（1.3–2.0 分）；原文自己也以此解釋「為什麼止痛藥用量沒有跟著下降」。<b>統計顯著 ≠ 臨床有意義，這篇是很乾淨的教科書級案例。</b></li>
+    <li><b>t 檢定的常態假設可疑。</b>多個時間點的標準差幾乎等於平均值（如 2.34 ± 2.09），暗示分布右偏；原文未報告是否做過常態性檢定，也未使用無母數方法作敏感度分析。</li>
+    <li><b>大量結果「原文未列數值」。</b>基線特徵、次要指標、併發症的實際人數，PMC 全文之文字皆未複述（僅存在於原文 Table 1–3 的表格物件中）。<b>本頁一律標示而不推估。</b></li>
+    <li><b>樣本數估算無法重現。</b>以標準公式驗算，d ＝ 0.4、power 0.9、α 0.05 時每組需約 131 人，與原文所述之 84 人有落差（見「數值一致性檢查」）。</li>
+    <li><b>無成本效益分析、無利益衝突之特別揭露資訊被納入本頁</b>（PMC 全文之文字未包含 funding／COI 段落；<b>本頁不推測</b>，讀者若在意請自行查閱出版社頁面）。</li>
+  </ol>
+  <div class="call amber">
+    <div class="h">如果只能記住一個警訊</div>
+    <b>「顯著的都是主觀指標，不顯著的都是客觀指標。」</b>當一個未盲化試驗出現這種完美對齊的分布時，最保守也最合理的解讀是：<b>MPFF 很可能有一個真實但不大的效應，而觀察到的效應量因為缺乏盲化而被放大了。</b>這不代表這篇研究沒有價值——它仍然是此適應症的第一個 RCT、安全性資料乾淨、方向合理；但它<b>不足以支撐「常規開立」的強建議，適合放在「與病人討論後可選擇」的層級。</b>
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>肛門瘻管 <span class="en">Anal fistula / fistula-in-ano</span></dt><dd>肛管與肛周皮膚之間形成的異常管道，多源自<b>肛腺感染（cryptoglandular infection）</b>與其後的肛周膿瘍。</dd></div>
+      <div class="gl-row"><dt>瘻管切開術 <span class="en">Fistulotomy</span></dt><dd>把瘻管「頂部」剖開、留其開放癒合（laying open）。原文定義：incising the roof of the fistula tract。</dd></div>
+      <div class="gl-row"><dt>瘻管切除術 <span class="en">Fistulectomy</span></dt><dd>把整條瘻管與周邊組織完整挖除（coring out）。傷口較大、癒合較久。</dd></div>
+      <div class="gl-row"><dt>括約肌間型瘻管 <span class="en">Intersphincteric fistula</span></dt><dd>管道僅穿過內括約肌、走在括約肌間隙；屬<b>單純型</b>，可安全切開。</dd></div>
+      <div class="gl-row"><dt>穿括約肌型瘻管 <span class="en">Transsphincteric fistula</span></dt><dd>管道穿過外括約肌。<b>低位</b>者仍屬單純型；<b>高位</b>者切開會傷及括約肌，屬複雜型。</dd></div>
+      <div class="gl-row"><dt>括約肌間瘻管結紮術 <span class="en">Ligation of the intersphincteric fistula tract, LIFT</span></dt><dd>保留括約肌的術式，於括約肌間隙結紮並切斷瘻管。<b>本研究排除。</b></dd></div>
+      <div class="gl-row"><dt>黏膜推進皮瓣 <span class="en">Mucosal advancement flap</span></dt><dd>以直腸黏膜瓣覆蓋內開口的保括約肌術式，用於高位／複雜瘻管。<b>本研究排除。</b></dd></div>
+      <div class="gl-row"><dt>瘻管鏡 <span class="en">Video-assisted anal fistula treatment, VAAFT / fistuloscopy</span></dt><dd>以內視鏡直視瘻管內腔並電燒清創。<b>本研究排除。</b></dd></div>
+      <div class="gl-row"><dt>微粒化純化類黃酮 <span class="en">Micronized purified flavonoid fraction, MPFF</span></dt><dd>由 <b>90% diosmin（地奧司明）＋ 10% hesperidin（橙皮苷）</b>組成的靜脈活性藥；台灣常見商品名 Daflon<sup>&#174;</sup>。</dd></div>
+      <div class="gl-row"><dt>靜脈活性藥／促靜脈張力劑 <span class="en">Phlebotropic / venoactive agent</span></dt><dd>作用機轉包含<b>提高靜脈張力、降低微血管通透性、抑制血管內皮活化、調節發炎反應</b>（原文所列四項）。</dd></div>
+      <div class="gl-row"><dt>Milligan–Morgan 痔瘡切除術 <span class="en">Open haemorrhoidectomy</span></dt><dd>開放式（傷口不縫合）痔瘡切除，通常留下三個開放傷口；MPFF 證據最強的既有適應症。</dd></div>
+      <div class="gl-row"><dt>視覺類比量表 <span class="en">Visual analog scale, VAS</span></dt><dd>0（完全不痛）至 10（此生最痛）的自評疼痛量表。</dd></div>
+      <div class="gl-row"><dt>最小臨床重要差異 <span class="en">Minimal clinically important difference, MCID</span></dt><dd>病人主觀上「感覺得出來」的最小改變量；急性疼痛之 VAS MCID 文獻多落在 <b>1.3–2.0 分</b>。<b>本研究之差距約 0.9 分，未達此門檻。</b></dd></div>
+      <div class="gl-row"><dt>意向治療分析 <span class="en">Intention-to-treat, ITT</span></dt><dd>依「原本被分派到哪一組」分析，不因未依方案完成而剔除，可保留隨機化的好處。</dd></div>
+      <div class="gl-row"><dt>主動對照 <span class="en">Active comparator</span></dt><dd>對照組給的是另一種真藥（本研究為維生素 B）而<b>非惰性安慰劑</b>；解讀時不能完全等同於安慰劑對照。</dd></div>
+      <div class="gl-row"><dt>替代指標 <span class="en">Surrogate endpoint</span></dt><dd>用來代表真正在意之結果的間接測量；本研究以<b>換藥次數</b>代表<b>滲液量</b>。</dd></div>
+      <div class="gl-row"><dt>相對風險 <span class="en">Risk ratio, RR</span></dt><dd>兩組事件率之比；RR &lt; 1 代表介入組風險較低。</dd></div>
+      <div class="gl-row"><dt>絕對風險下降 <span class="en">Absolute risk reduction, ARR</span></dt><dd>兩組事件率之差（百分點）。<b>比 RR 更能反映實際獲益大小。</b></dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>ARR 的倒數；平均需治療幾人才能多避免一次事件。</dd></div>
+      <div class="gl-row"><dt>Clavien–Dindo 分級</dt><dd>依「需要何種處置」把術後併發症分為 I–V 級的標準化分類。</dd></div>
+      <div class="gl-row"><dt>手術部位感染 <span class="en">Surgical site infection, SSI</span></dt><dd>本研究之操作型定義：30 天內需住院靜脈抗生素治療，或需手術處置之傷口問題。</dd></div>
+      <div class="gl-row"><dt>尿滯留 <span class="en">Urinary retention</span></dt><dd>本研究之操作型定義：術後第一週內臨床上需要導尿。</dd></div>
+      <div class="gl-row"><dt>折刀位 <span class="en">Jackknife position</span></dt><dd>俯臥並將臀部抬高、髖關節屈曲的體位，肛門手術的標準擺位。</dd></div>
+      <div class="gl-row"><dt>CONSORT</dt><dd>隨機對照試驗的標準報告規範（Consolidated Standards of Reporting Trials）。</dd></div>
+      <div class="gl-row"><dt>適應症外使用 <span class="en">Off-label use</span></dt><dd>在藥品核准適應症之外的用途使用；本適應症（肛門瘻管術後）即屬之。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Tsai Y-W, Kiu K-T, Chang T-C. <i>Efficacy of micronized purified flavonoid fraction in reducing pain after anal fistula surgery: a randomized controlled trial.</i> Techniques in Coloproctology. 2026;30(1). DOI：<a href="https://doi.org/10.1007/s10151-026-03298-5">10.1007/s10151-026-03298-5</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/41776089/">PMID 41776089</a>；PubMed Central：PMC12965912。試驗註冊：ClinicalTrials.gov <b>NCT06184438</b>。</p>
+  <p><b>資料取得範圍：</b>本文為 Open Access，本頁透過 <b>PubMed Central 全文</b>取得 Introduction、Materials and methods、Results、Discussion、Conclusion 之完整文字，並以 PubMed 書目紀錄核對作者、單位、期刊卷期與 MeSH。<b>原文之 Fig. 1（CONSORT 流程圖）、Fig. 2（每日 VAS 折線圖）以及 Table 1（基線特徵）、Table 2（周術期結果與併發症）、Table 3（換藥次數與止痛藥使用）為圖形或表格物件，本頁未取得其中僅存在於圖表內的數值</b>；凡屬此類（如基線各項數值、次要指標的實際人數、POD 0/1/3/6/7 之 VAS、POD 1–3 之換藥比例）一律標示「<b>原文未列數值</b>」，<b>不做任何推估</b>。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表<b>皆為依原文文字所載數字重新繪製的 inline SVG 或 HTML／CSS 方塊，未使用、未嵌入、未連結出版社或原作者之任何圖檔</b>。具體而言：<br>
+  &#8226; <b>CONSORT 流程圖</b>：以 HTML／CSS 方塊自行繪製；106、53、53、52、52 與兩位排除者的理由取自原文 Results 文字，「104」「退出率 1.9%」為<b>本頁自行計算</b>。<br>
+  &#8226; <b>VAS 平均差圖</b>：mean ± SD 與 P 值取自原文；<b>MD 與 95% CI 為本頁自行計算</b>（原文未提供任何 CI）。<br>
+  &#8226; <b>VAS 分組長條圖</b>：直接呈現原文所載之 mean ± SD，誤差線為 ±1 SD。<br>
+  &#8226; <b>換藥比例長條圖</b>：比例與 P 值取自原文；「差 X 個百分點」為<b>本頁自行計算</b>。<br>
+  &#8226; <b>換藥 RR 森林圖</b>：<b>事件數由原文百分比回推、RR 與 95% CI 為本頁自行計算</b>；因四列為同一批病人的重複測量，<b>刻意不呈現合併菱形</b>。<br>
+  &#8226; 所有標示「本頁自行計算」者，皆由原文所載數字四則運算或標準統計公式導出，計算方法已於各圖說與表註中寫明，可自行覆核。<b>本頁不含任何未經標示的推估值。</b></p>
+  <p style="font-size:12.5px;color:#6b7079;line-height:1.7"><b>免責：</b>本頁為文獻閱讀筆記，非臨床指引，亦不構成個別病人的醫療建議。用藥（含 MPFF 之劑量、療程與適應症）請依台灣現行藥品仿單、健保給付規定與各院常規辦理。所有中文翻譯與解讀為本頁自行撰寫，若與原文有出入，<b>以原文為準</b>。</p>
+</section>
+
+</div>
+</body>
+</html>
