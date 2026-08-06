@@ -1,7 +1,59 @@
 {
- "count": 15,
- "latest": "2026-08-06",
+ "count": 17,
+ "latest": "2026-08-07",
  "papers": [
+  {
+   "id": "pubmed-gs-breast-2026-08-07",
+   "file": "papers/pubmed-gs-breast-2026-08-07.html",
+   "date": "2026-08-07",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 008",
+   "title": "「微小輔助切口」內視鏡乳房保留手術（M-E-BCS）vs. 傳統開放式乳房保留手術：中國三家醫學中心、168 人的第三期隨機優越性試驗——18 個月疤痕滿意度 79.9 vs. 61.4 分",
+   "title_en": "Minimal incision-assisted endoscopic versus conventional open breast-conserving surgery: A multicentre randomized clinical trial",
+   "journal": "The Breast (Edinburgh, Scotland) 2026;89:104876（Elsevier；歐洲乳癌專科學會 EUSOMA 官方期刊）",
+   "authors": "Qiu M, Dai H, Zhu T, Liang F, Feng Y, Xie Y, Wu H, Luo G, Liu Z, Zhang D（共同通訊）, Yu Y（共同通訊）, Du Z（通訊作者） 中國：四川大學華西醫院一般外科／乳腺中心／乳房健康醫學研究所、四川省第四人民醫院一般外科、河南省人民醫院乳腺外科",
+   "design": "第三期、開放標籤、多中心、優越性隨機對照試驗（RCT） 依 CONSORT 報告；中國臨床試驗註冊中心 ChiCTR2200061907；三家醫院倫理審查（華西 [2022]817、四川省第四人民醫院 [2023]02、河南省人民醫院 [2022]169）；依腫瘤位置分層（內側 40%：外側 50%：下方 10%）後以動態分配 1:1 隨機；開放標籤，術前 24 小時內告知術者分組；樣本數以 PASS 15 估算：以 SCAR-Q 差 10 分為優越性界值、單尾 α ＝ 0.05、power 80%、脫落率 10%，需 168 人（84:84）；主要分析採完整病例分析（缺失率低於預設 10%）；SPSS 27",
+   "doi": "10.1016/j.breast.2026.104876",
+   "category": "乳房外科",
+   "tags": [
+    "乳房外科",
+    "乳房保留手術 BCS",
+    "內視鏡乳房手術 E-BCS",
+    "病人自評結果 SCAR-Q／BREAST-Q",
+    "證據等級：第三期多中心隨機對照試驗",
+    "Open Access"
+   ],
+   "tldr": "把 163 位早期乳癌病人隨機分成「單一腋下切口 ＋ 一個 2–5 mm 小孔的內視鏡乳房保留手術（M-E-BCS）」與「傳統開放式乳房保留手術（C-O-BCS）」，答案很直接：美觀與心理層面大幅勝出，手術層面幾乎沒有代價——術後 18 個月的疤痕滿意度 SCAR-Q 79.9 ± 9.5 vs. 61.4 ± 17.4 分（本頁自行計算 MD ＋18.5 分，95% CI ＋14.1 至 ＋22.9），遠超過研究預設的 10 分優越性界值；BREAST-Q 乳房滿意度的改善幅度為 ＋17.7 vs. ＋5.4 分（MD ＋12.3，95% CI ＋6.0 至 ＋18.6），心理社會健康 ＋10.1 vs. ＋0.1 分（MD ＋10.0，95% CI ＋3.9 至 ＋16.1），醫師端的 Ueda 評分「優」比例 86.5% vs. 57.9%。代價方面：總切口長度 4.0 vs. 7.",
+   "bytes": 99065
+  },
+  {
+   "id": "pubmed-crs-2026-08-07",
+   "file": "papers/pubmed-crs-2026-08-07.html",
+   "date": "2026-08-07",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 009",
+   "title": "短程放療為基礎的全程新輔助治療（SCRT-TNT）再加上 PD-1 抑制劑 tislelizumab，治療局部進展期直腸癌：Neo-STAR 單中心第二期隨機對照試驗（118 人）的早期結果",
+   "title_en": "Short-Course Radiotherapy-Based Total Neoadjuvant Therapy plus Tislelizumab for Locally Advanced Rectal Cancer (Neo-STAR): Early Outcomes of a Randomized Phase II Trial",
+   "journal": "Cancer Communications (London, England) 2026;46:0041（文章號 0041；中國抗癌協會與中山大學腫瘤防治中心之官方期刊，現由 AAAS／Science Partner Journal 平台發行）",
+   "authors": "Wu F, Hu X, Li B, Zhang J, Wang G, Fan H, An G, Yu B, Ma H, Zhao B, Li Z, Gao B, Liu M, Wang X, Liu D, Hu J, Liu H, Liu Y, Wang F, Zhang J, Feng J, Wang X, Meng Z, Zhang Z, Li Z, Sun J, Liu S, Wang N, Han J, Niu W, Zhou C, Xiao L, Wang G（通訊作者 Guiying Wang） 中國河北醫科大學第四醫院（放射腫瘤科、第二外科、消化內科、腫瘤內科、腫瘤研究所）與河北醫科大學第二醫院一般外科，共 33 位作者",
+   "design": "前瞻性、單中心、第二期隨機對照試驗（開放標籤，結果評估者盲化） 中央隨機分派（置換區組 block size ＝ 8，1:1；區組結構僅研究協調員與統計師知悉），未預設分層因子；放射科醫師、病理醫師與統計師全程盲化；主要終點 pCR，以卡方檢定比較，95% CI 用 Clopper–Pearson 法；不良事件用 Fisher 精確檢定；存活以 Kaplan–Meier 與 Cox 模型分析；效果分析同時做 mITT 與 PPS，另因年齡失衡追加傾向分數配對（PSM）；主要終點之缺失值一律視為未達 pCR；SPSS 27.0；ClinicalTrials.gov NCT05086627；倫理審查編號 2021104",
+   "doi": "10.34133/cancomm.0041",
+   "category": "大腸直腸癌手術與腫瘤學",
+   "tags": [
+    "大腸直腸癌手術與腫瘤學",
+    "全程新輔助治療 TNT",
+    "短程放療 SCRT",
+    "免疫檢查點抑制劑 ICI",
+    "證據等級：第二期隨機對照試驗（單中心）",
+    "Open Access"
+   ],
+   "tldr": "在 118 位局部進展期直腸癌（LARC）病人身上，把 PD-1 抑制劑 tislelizumab 疊加到「短程放療 25 Gy/5F ＋ 4 個週期 CAPOX ＋ 全直腸繫膜切除」的標準 SCRT-TNT 之上，病理完全緩解率從 27.6% 提高到 45.3%，但主要終點差了臨門一腳（OR 2.17，95% CI 0.99–4.79，p ＝ 0.052），沒有達到統計顯著；反而是次要終點主要病理緩解 MPR 達標（50.9% vs. 31.0%，OR 2.31，95% CI 1.06–5.01，p ＝ 0.033），而且腫瘤退縮的分布明顯往深處移動——TRG 3（幾乎沒有退縮）從 20.0% 掉到 4.8%，ypT0 從 37.5% 升到 57.1%，殘存 ypT3–4 從 45.0% 降到 19.1%，括約肌保留率從 67.5% 升到 85.7%。安全性方面，第 3–4 級不良事件兩",
+   "bytes": 102455
+  },
   {
    "id": "pubmed-gs-gi-2026-08-06",
    "file": "papers/pubmed-gs-gi-2026-08-06.html",
