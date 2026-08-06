@@ -1,7 +1,59 @@
 {
- "count": 13,
- "latest": "2026-08-04",
+ "count": 15,
+ "latest": "2026-08-06",
  "papers": [
+  {
+   "id": "pubmed-gs-gi-2026-08-06",
+   "file": "papers/pubmed-gs-gi-2026-08-06.html",
+   "date": "2026-08-06",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 007",
+   "title": "腹腔鏡腹股溝疝氣修補「需要固定網膜時」該用什麼？手術膠 vs. 可吸收釘——9 篇隨機試驗、1,289 人的系統性回顧與統合分析（含試驗序列分析）",
+   "title_en": "Glue versus absorbable tacks for mesh fixation in laparoscopic inguinal hernia repair: a systematic review and meta-analysis of postoperative pain and complications",
+   "journal": "Hernia: The Journal of Hernias and Abdominal Wall Surgery 2026;30(1)（Springer；歐洲疝氣學會 EHS 與美洲疝氣學會 AHS 之官方期刊）",
+   "authors": "Costa CPD, Valerio-Alves AP, de Oliveira RGB, Gonzaga TMA, de Almeida Porto Maia AB, de Oliveira ZRC, Morriello R, Fernandes MHF（通訊作者） 巴西：里約熱內盧聯邦公務員醫院一般外科、Barão de Mauá 大學中心醫學系、巴西國家癌症研究所腫瘤外科、Recife 之 IMIP 一般暨消化外科",
+   "design": "系統性回顧 ＋ 隨機效應統合分析（僅納入隨機對照試驗） 依 Cochrane 手冊與 PRISMA 執行；前瞻性註冊 PROSPERO CRD420251017746；2025 年 2 月檢索 PubMed、EMBASE、CENTRAL（MeSH／關鍵字：“Hernia repair”、“Glue”、“Tacks”），並人工回溯所有納入文獻與既往回顧之參考文獻；兩位審閱者獨立萃取、第三位仲裁；RevMan 5.1；二元結果用 RR、連續型用 MD；Cochran Q 與 I² 評估異質性；另做 95% 預測區間、留一法敏感度分析與試驗序列分析（TSA v0.9.5.10 Beta，雙尾 α ＝ 0.05、power 80%）；RoB 2 評估偏差風險、GRADE 評估證據確定性",
+   "doi": "10.1007/s10029-026-03757-w",
+   "category": "消化外科",
+   "tags": [
+    "消化外科",
+    "腹股溝疝氣 Inguinal hernia",
+    "網膜固定 Mesh fixation",
+    "TAPP／TEP",
+    "證據等級：9 篇 RCT 之統合分析＋TSA",
+    "Open Access"
+   ],
+   "tldr": "把 9 篇隨機試驗、1,289 位接受腹腔鏡腹股溝疝氣修補（TAPP 或 TEP）的病人合併起來，答案是：當你決定要固定網膜時，改用手術膠（fibrin 或 cyanoacrylate）換到的是「術後第 1–2 週稍微不痛一點」，但也僅止於此——術後 7–14 天疼痛的合併平均差 MD −0.77 分（95% CI −1.22 至 −0.33，p < 0.001），但異質性高達 I² ＝ 83%、95% 預測區間為 −2.33 至 0.79（跨過 0），GRADE 只有中等；四週以後兩者就沒有差別了（MD −0.41，95% CI −1.07 至 0.24，p ＝ 0.21）。血腫（RR 0.34，0.13–0.92）與血清腫（RR 0.59，0.37–0.94）雖然名目上顯著有利手術膠，但兩者的預測區間都跨過 1（0.06–1.80 與 0.29–1.20），試驗序列分析也提示可能是偽陽",
+   "bytes": 92890
+  },
+  {
+   "id": "pubmed-benign-2026-08-06",
+   "file": "papers/pubmed-benign-2026-08-06.html",
+   "date": "2026-08-06",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 008",
+   "title": "微粒化純化類黃酮（MPFF）能不能減輕肛門瘻管手術後的疼痛與換藥負擔？台灣雙和醫院 104 人單中心隨機對照試驗",
+   "title_en": "Efficacy of micronized purified flavonoid fraction in reducing pain after anal fistula surgery: a randomized controlled trial",
+   "journal": "Techniques in Coloproctology 2026;30(1)（Springer；歐洲肛門直腸外科領域的主要專科期刊。原文之文章編號未見於 PubMed 書目紀錄，本頁不推估）",
+   "authors": "Tsai Y-W, Kiu K-T, Chang T-C（通訊作者） 台灣本土研究：台南奇美醫院一般醫學科；台北醫學大學雙和醫院外科部大腸直腸外科（新北市）；台北醫學大學醫學院外科學科一般外科",
+   "design": "前瞻性、單中心、隨機對照試驗（randomized controlled trial, RCT） 1:1 電腦亂數分派，序號、不透光、密封信封隱藏分派；執刀醫師與資料收集／分析人員盲化，但病人未盲（MPFF 與對照藥錠外觀不同，原文自陳）；意向治療（intention-to-treat）分析；收案期間 2023-12 至 2024-09；遵循 CONSORT 與 STROCSS；ClinicalTrials.gov NCT06184438；經聯合人體試驗審查會（Joint IRB）核准",
+   "doi": "10.1007/s10151-026-03298-5",
+   "category": "良性疾病與功能性疾患",
+   "tags": [
+    "良性疾病與功能性疾患",
+    "肛門瘻管 Anal fistula",
+    "術後疼痛 Postoperative pain",
+    "MPFF／diosmin＋hesperidin",
+    "證據等級：單中心 RCT（n ＝ 104）",
+    "Open Access（PMC 全文）"
+   ],
+   "tldr": "台北醫學大學雙和醫院把 104 位接受單純型肛門瘻管手術（fistulotomy 或 fistulectomy）的病人隨機分成「術後吃 MPFF 1 g bid 七天」與「吃維生素 B 七天」兩組，結果是：MPFF 讓術後疼痛與換藥負擔都變小，但幅度不大——VAS 疼痛在術後第 2、4、5 天達統計顯著（3.02 vs. 3.92，P ＝ 0.045／2.54 vs. 3.40，P ＝ 0.038／2.34 vs. 3.25，P ＝ 0.022），三天的平均差都只有約 0.9 分，低於一般認定的最小臨床重要差異（MCID，約 1.3–2.0 分）；需每天換藥 ≥ 2 次的病人比例則從第 4 天起持續拉開（POD 7：40.4% vs. 67.3%，P ＝ 0.012，本頁自行計算的絕對差 26.9 個百分點、NNT ≈ 4）。但是——止痛藥用量沒有差、傷口感染／出血／尿滯留／延遲癒合／復發",
+   "bytes": 89674
+  },
   {
    "id": "pubmed-mis-2026-08-04",
    "file": "papers/pubmed-mis-2026-08-04.html",
