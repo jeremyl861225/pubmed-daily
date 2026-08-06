@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-07</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 7 日 · 週五</span>
+    <span style="opacity:.4">/</span><span>Vol. 009</span>
+  </div>
+  <h1 class="title">短程放療為基礎的全程新輔助治療（SCRT-TNT）再加上 PD-1 抑制劑 tislelizumab，治療局部進展期直腸癌：Neo-STAR 單中心第二期隨機對照試驗（118 人）的早期結果</h1>
+  <p class="title-en">Short-Course Radiotherapy-Based Total Neoadjuvant Therapy plus Tislelizumab for Locally Advanced Rectal Cancer (Neo-STAR): Early Outcomes of a Randomized Phase II Trial</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Cancer Communications (London, England)<br><span style="color:#6b7079;font-size:13px">2026;46:0041（文章號 0041；中國抗癌協會與中山大學腫瘤防治中心之官方期刊，現由 AAAS／Science Partner Journal 平台發行）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Wu F, Hu X, Li B, Zhang J, Wang G, Fan H, An G, Yu B, Ma H, Zhao B, Li Z, Gao B, Liu M, Wang X, Liu D, Hu J, Liu H, Liu Y, Wang F, Zhang J, Feng J, Wang X, Meng Z, Zhang Z, Li Z, Sun J, Liu S, Wang N, Han J, Niu W, Zhou C, Xiao L, Wang G（通訊作者 Guiying Wang）<br><span style="color:#6b7079;font-size:13px">中國河北醫科大學第四醫院（放射腫瘤科、第二外科、消化內科、腫瘤內科、腫瘤研究所）與河北醫科大學第二醫院一般外科，共 33 位作者</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>前瞻性、單中心、第二期隨機對照試驗（開放標籤，結果評估者盲化）</b><br><span style="color:#6b7079;font-size:13px">中央隨機分派（置換區組 block size ＝ 8，1:1；區組結構僅研究協調員與統計師知悉），未預設分層因子；<b>放射科醫師、病理醫師與統計師全程盲化</b>；主要終點 pCR，以卡方檢定比較，95% CI 用 Clopper–Pearson 法；不良事件用 Fisher 精確檢定；存活以 Kaplan–Meier 與 Cox 模型分析；<b>效果分析同時做 mITT 與 PPS，另因年齡失衡追加傾向分數配對（PSM）</b>；主要終點之缺失值一律視為未達 pCR；SPSS 27.0；ClinicalTrials.gov NCT05086627；倫理審查編號 2021104</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的不是「要不要做 TNT」，而是「已經做 SCRT-TNT 的病人，再加一個 PD-1 抑制劑值不值得」</b><br><span style="color:#6b7079;font-size:13px">兩組的放療、化療、手術完全相同（25 Gy/5F ＋ 4 個週期 CAPOX ＋ TME），<b>唯一差別是試驗組每個 CAPOX 週期第 1 天多打 200 mg tislelizumab</b>；<b>94.3%／96.6% 為 pMMR／MSS</b>，正是「免疫治療原本沒用」的族群</span></div></div>
+    <div class="meta-item"><div class="k">樣本數與檢力</div><div class="v"><b>依 49% vs. 17% 的 pCR 差距估算，需 100 人（各 50）；計入 15% 脫落收 118 人</b><br><span style="color:#6b7079;font-size:13px"><b>實際對照組 pCR 高達 27.6%，遠優於設計時假設的 17%</b> —— 這是本試驗主要終點 p ＝ 0.052 差一步的關鍵原因（本頁解讀）</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 23 日（PMID 42495710；PMC13392285）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Background／Materials and Methods／Results／Discussion／Conclusions 完整文字與 Table 1–3）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.34133/cancomm.0041">10.34133/cancomm.0041</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42495710/">PMID 42495710 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">大腸直腸癌手術與腫瘤學</span>
+    <span class="tag t2">全程新輔助治療 TNT</span>
+    <span class="tag t2">短程放療 SCRT</span>
+    <span class="tag t2">免疫檢查點抑制劑 ICI</span>
+    <span class="tag t3">證據等級：第二期隨機對照試驗（單中心）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">CONSORT 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在 118 位局部進展期直腸癌（LARC）病人身上，把 PD-1 抑制劑 tislelizumab 疊加到「短程放療 25 Gy/5F ＋ 4 個週期 CAPOX ＋ 全直腸繫膜切除」的標準 SCRT-TNT 之上，<strong>病理完全緩解率從 27.6% 提高到 45.3%，但主要終點差了臨門一腳（OR 2.17，95% CI 0.99–4.79，p ＝ 0.052），沒有達到統計顯著</strong>；反而是次要終點<strong>主要病理緩解 MPR 達標（50.9% vs. 31.0%，OR 2.31，95% CI 1.06–5.01，p ＝ 0.033）</strong>，而且腫瘤退縮的分布明顯往深處移動——<strong>TRG 3（幾乎沒有退縮）從 20.0% 掉到 4.8%，ypT0 從 37.5% 升到 57.1%，殘存 ypT3–4 從 45.0% 降到 19.1%，括約肌保留率從 67.5% 升到 85.7%</strong>。安全性方面，<strong>第 3–4 級不良事件兩組幾乎相同（9.4% vs. 10.3%），術後併發症也沒有增加</strong>，多出來的主要是可處理的第 1–2 級免疫相關內分泌事件（甲狀腺低下 11.3% vs. 1.7%、甲狀腺亢進 9.4% vs. 0%）。<strong>但四個但書必須同時記住：</strong>（1）<strong>存活完全沒有跟上</strong>——3 年 PFS 78.7% vs. 71.9%（HR 0.58，0.27–1.24）、3 年 OS 93.3% vs. 87.9%（HR 0.44，0.13–1.46），兩者的信賴區間都寬到毫無方向性，而且<strong>中位追蹤僅 33.74 個月、尚未滿 3 年</strong>；（2）<strong>這是單中心、樣本數 118 人的第二期試驗</strong>，且原本以「對照組 pCR ＝ 17%」設計檢力，實際對照組拿到 27.6%，<strong>檢力因此被吃掉大半</strong>；（3）<strong>兩組基線年齡明顯失衡</strong>（中位 55 歲 vs. 65 歲；≤ 60 歲者 67.9% vs. 34.5%），作者事後做 PSM 才補救，<strong>這是隨機化沒有分層造成的實質缺陷</strong>；（4）<strong>沒有手術的比例高得不尋常</strong>——mITT 中僅 80.2% 接受手術（對照組只有 75.9%），主因是病人拒絕與撤回同意（對照組 11 人、試驗組 6 人），<strong>雖然 pCR 缺失值一律以「未達 pCR」保守處理，但 PPS 分析的 pCR（54.8% vs. 37.5%）勢必被選擇性偏差灌水，不宜引用</strong>。<strong>實務結論：本試驗支持「pMMR/MSS 的 LARC 加上 ICI 可以換到更深的腫瘤退縮、更高的括約肌保留機會」這個方向，與 UNION、TORCH、STELLAR II、SPRING-01 的訊號一致；但在第三期試驗給出存活答案之前，它還不是標準治療，門診談的時候應該講「更容易縮小、更可能保住肛門」，而不是「活得更久」。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Short-course radiotherapy (SCRT)-based total neoadjuvant therapy (TNT) is used for locally advanced rectal cancer (LARC). However, the pathological complete response (pCR) rate still hovers around 30%. Radiotherapy and immune checkpoint inhibitors have been shown to exert synergistic anticancer effects. This phase II randomized clinical trial aimed to evaluate the efficacy and safety of SCRT followed by capecitabine plus oxaliplatin (CAPOX) and tislelizumab versus SCRT followed by CAPOX alone in LARC.</p>
+    <h4>Methods</h4>
+    <p>Patients initially diagnosed with clinical tumor stage 1 to 2, with node involvement and no distant metastasis (cTNM) or clinical tumor stage 3 to 4, with any node status and no distant metastasis (cTNM) rectal adenocarcinoma were randomly assigned to receive SCRT (25 Gy in 5 fractions [25 Gy/5F]), followed by 4 cycles of CAPOX combined with tislelizumab (SCRT-TNT-ICI) or CAPOX alone (SCRT-TNT). After total mesorectal excision, 2 cycles of postoperative chemotherapy were administered according to the patient's preference. The primary end point was the pCR rate, and secondary end points included major pathological response (tumor regression grade 0 or 1), 3-year progression-free survival, 3-year overall survival, and adverse events.</p>
+    <h4>Results</h4>
+    <p>Between September 2021 and March 2024, 118 patients were randomized, of whom 111 started the allocated treatment, with 53 and 58 in SCRT-TNT-ICI and SCRT-TNT groups, respectively. Of those, 89 patients had surgical resection, including 45 in the SCRT-TNT-ICI group and 44 in the SCRT-TNT group. The pCR rate was 45.3% (95% confidence interval [CI], 31.5% to 59.8%) in the SCRT-TNT-ICI group compared to 27.6% (95% CI, 16.6% to 40.8%) in the SCRT-TNT group (odds ratio = 2.17; 95% CI, 0.99 to 4.79; <i>P</i> = 0.052). The major pathological response rates were 50.9% (95% CI, 36.6% to 65.2%) and 31.0% (95% CI, 19.5% to 44.6%), respectively (odds ratio = 2.31; 95% CI, 1.06 to 5.01; <i>P</i> = 0.033). During the neoadjuvant treatment period, the incidence of grade 3 to 4 adverse events was comparable between the SCRT-TNT-ICI and SCRT-TNT groups, with anemia being the most common in both groups.</p>
+    <h4>Conclusions</h4>
+    <p>This phase II study provides preliminary evidence of promising tumor regression with SCRT-TNT combined with tislelizumab in LARC, warranting further validation in phase III trials. This trial was registered at clinicaltrials.gov (Identifier: NCT05086627).</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用。<b>唯一的補正</b>：PubMed 的純文字紀錄把斜體的 <i>P</i> 字母吃掉（原始紀錄顯示為「; = 0.052」），本頁依原文全文還原為「<i>P</i> = 0.052」，除此之外未改一字。<b>值得注意的是這份摘要的措辭相當保守</b>：主要終點沒有達標，作者在摘要中<b>完全沒有宣稱優越性</b>，只寫 “provides preliminary evidence of promising tumor regression”，並明白要求 “warranting further validation in phase III trials”。<b>摘要也刻意沒有把 PPS 族群那個好看得多的 54.8% vs. 37.5% 放進來</b>，這是值得肯定的自律。中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>CONSORT Flow <span class="zh">／ 收案與分析流程（本篇為隨機試驗，非系統性回顧，故繪 CONSORT 而非 PRISMA）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Enrollment 收案（2021 年 9 月 1 日至 2024 年 3 月 15 日，河北醫科大學第四醫院單中心）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">118</span> 位符合資格者完成隨機分派<br>
+        <span style="color:#6b7079;font-size:12.5px">中央隨機、置換區組（block ＝ 8）、1:1；<b>SCRT-TNT-ICI 組 59 人／SCRT-TNT 組 59 人</b>；未預設分層因子</span></div></div>
+      <div class="pr-ex"><b>7 人在分派後、開始治療前退出</b><br>試驗組 6 人／對照組 1 人<br><span style="font-size:12px">原文<b>未列出各自的退出理由</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">mITT 族群（開始接受所分派治療者；主要分析族群）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">111</span> 人納入 mITT 分析<br>
+        <span style="color:#6b7079;font-size:12.5px"><b>SCRT-TNT-ICI 53 人／SCRT-TNT 58 人</b>；安全性分析亦以此族群為準；<b>主要終點 pCR 之缺失值一律視為「未達 pCR」</b></span></div></div>
+      <div class="pr-ex"><b>22 人未接受手術（本頁自行計算：111 &#8722; 89 ＝ 22）</b><br>
+        試驗組 8 人：拒絕 4、撤回同意 2、達 cCR 進入 Watch &amp; Wait 1、急性腦梗塞 1<br>
+        對照組 14 人：拒絕 6、撤回同意 5、心血管疾病 2、達 cCR 進入 Watch &amp; Wait 1</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">手術族群</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">89</span> 人接受手術切除（占 mITT 的 80.2%）<br>
+        <span style="color:#6b7079;font-size:12.5px">試驗組 <b>45/53（84.9%）</b>／對照組 <b>44/58（75.9%）</b>；<b>兩組 R0 切除率皆為 100%</b></span></div></div>
+      <div class="pr-ex"><b>7 人因方案偏離被排除於 PPS 之外</b><br>4 人（兩組各 2）因手術延後而多打一個週期化療<br>試驗組 1 人術前評估發現肝轉移<br>對照組 1 人發現肺轉移、1 人第二週期後發現肝轉移</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">PPS 族群（完成預設方案並手術者）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">82</span> 人納入 PPS 分析<br>
+        <span style="color:#6b7079;font-size:12.5px"><b>試驗組 42 人／對照組 40 人</b>；資料截止日 2026 年 2 月 25 日，全世代中位追蹤 <b>33.74 個月</b>（範圍 23.06–54.73 個月）</span></div></div>
+      <div class="pr-ex">術後輔助化療（排除 3 位新輔助期間發生遠端轉移者後）：<br>試驗組 <b>29/44（65.9%）</b>／對照組 <b>25/42（59.5%）</b><br><span style="font-size:12px">是否施行由病人偏好決定，非方案強制</span></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：全部數字取自原文 Results「Patient characteristics」段落與 Fig. 1 之文字敘述；本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：由上而下每一層的左框是「還留在分析裡的人」，右框是「這一層流失了誰、為什麼」。<b>陷阱</b>：<b>最需要盯住的是第三層</b>——mITT 有 111 人，最後只有 89 人開刀，流失率 19.8%，而且<b>兩組不對稱（試驗組 15.1% vs. 對照組 24.1%）</b>；流失的主因是「拒絕手術」與「撤回同意」而非醫療原因，這在單臂盲化不足的開放標籤試驗中，本身就可能與治療分派有關。<b>作者把 pCR 的缺失一律算成「沒有達到 pCR」是正確且保守的做法</b>，所以 mITT 的 45.3% vs. 27.6% 可信；但 PPS 的 54.8% vs. 37.5% 建立在「有開刀的人」身上，<b>已經是選擇後的族群，不應被單獨引用</b>。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Baseline Characteristics <span class="zh">／ 研究特徵表（mITT 族群，n ＝ 111；原文 Table 1 完整內容）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:825px">
+    <thead><tr><th>特徵</th><th>SCRT-TNT-ICI（n ＝ 53）</th><th>SCRT-TNT（n ＝ 58）</th><th>本頁註記</th></tr></thead>
+    <tbody>
+      <tr><td><b>性別</b> 男／女</td><td class="num">37（69.8%）／16（30.2%）</td><td class="num">45（77.6%）／13（22.4%）</td><td>平衡</td></tr>
+      <tr><td><b>年齡</b> 中位（範圍）</td><td class="num">55（30–74）歲</td><td class="num">65（36–75）歲</td><td class="sig">相差 10 歲，明顯失衡</td></tr>
+      <tr><td>年齡 ≤ 60 歲</td><td class="num">36（67.9%）</td><td class="num">20（34.5%）</td><td class="sig">本試驗最大的基線缺陷</td></tr>
+      <tr><td>年齡 &gt; 60 歲</td><td class="num">17（32.1%）</td><td class="num">38（65.5%）</td><td class="sig">作者事後以 PSM 補救</td></tr>
+      <tr><td><b>ECOG PS</b> 0／1</td><td class="num">27（50.9%）／26（49.1%）</td><td class="num">27（46.6%）／31（53.4%）</td><td>平衡</td></tr>
+      <tr><td><b>PD-L1 CPS</b> &lt; 1</td><td class="num">14（26.4%）</td><td class="num">18（31.0%）</td><td>—</td></tr>
+      <tr><td>PD-L1 CPS ≥ 1</td><td class="num">27（50.9%）</td><td class="num">26（44.8%）</td><td>—</td></tr>
+      <tr><td>PD-L1 CPS 未知</td><td class="num">12（22.6%）</td><td class="num">14（24.1%）</td><td class="ns">近四分之一缺值</td></tr>
+      <tr><td><b>錯配修復狀態</b> dMMR 或 MSI-H</td><td class="num">3（5.7%）</td><td class="num">1（1.7%）</td><td class="ns">人數太少無法分析</td></tr>
+      <tr><td>pMMR／MSI-L／MSS</td><td class="num">50（94.3%）</td><td class="num">56（96.6%）</td><td><b>本篇的重點族群</b></td></tr>
+      <tr><td>MMR 狀態未知</td><td class="num">0（0.0%）</td><td class="num">1（1.7%）</td><td>—</td></tr>
+      <tr><td><b>臨床 T 分期</b> cT2</td><td class="num">2（3.8%）</td><td class="num">3（5.2%）</td><td>—</td></tr>
+      <tr><td>cT3</td><td class="num">35（66.0%）</td><td class="num">36（62.1%）</td><td>次群組獲益最明顯者</td></tr>
+      <tr><td>cT4</td><td class="num">16（30.2%）</td><td class="num">19（32.8%）</td><td>獲益幅度小很多</td></tr>
+      <tr><td><b>臨床 N 分期</b> N0／N1／N2</td><td class="num">3（5.7%）／15（28.3%）／35（66.0%）</td><td class="num">3（5.2%）／17（29.3%）／38（65.5%）</td><td>平衡；<b>三分之二為 N2</b></td></tr>
+      <tr><td><b>臨床分期</b> II／III</td><td class="num">3（5.7%）／50（94.3%）</td><td class="num">2（3.4%）／56（96.6%）</td><td>幾乎全為第三期</td></tr>
+      <tr><td><b>腫瘤距肛緣</b> ≤ 5 cm</td><td class="num">35（66.0%）</td><td class="num">36（62.1%）</td><td><b>三分之二為低位直腸癌</b></td></tr>
+      <tr><td>腫瘤距肛緣 5–10 cm</td><td class="num">18（34.0%）</td><td class="num">22（37.9%）</td><td>—</td></tr>
+      <tr><td><b>壁外血管侵犯 EMVI</b> 陽性／陰性</td><td class="num">24（45.3%）／29（54.7%）</td><td class="num">24（41.4%）／34（58.6%）</td><td>平衡</td></tr>
+      <tr><td><b>直腸繫膜筋膜 MRF</b> 陽性／陰性</td><td class="num">26（49.1%）／27（50.9%）</td><td class="num">32（55.2%）／26（44.8%）</td><td>約半數為高風險 MRF 陽性</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>本頁自行驗算</b>：各列人數加總與組別總數相符（試驗組 53、對照組 58）；百分比與分母亦相符（例：36/53 ＝ 67.9%、20/58 ＝ 34.5%、35/53 ＝ 66.0%、19/58 ＝ 32.8%），僅四捨五入層級之誤差。<b>原文 Table 1 未列 P 值</b>，年齡失衡的判定是本頁依中位數與分組比例所做的觀察。<b>這張表最該注意的兩件事</b>：其一，<b>94.3%／96.6% 是 pMMR/MSS</b>——這正是「單用免疫治療沒效」的族群，本試驗的立論基礎就是「放療把冷腫瘤變熱」；其二，<b>三分之二腫瘤距肛緣 ≤ 5 cm、約半數 MRF 陽性、三分之二 N2</b>，是相當硬的一群病人，因此括約肌保留率的差距（85.7% vs. 67.5%）在臨床上格外有意義。</p>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 主要結果森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c amber"><div class="lab">主要終點 pCR（mITT）</div><div class="big">45.3% vs. 27.6%</div><div class="sub">OR 2.17（0.99–4.79），p ＝ 0.052 —— <b>差一步未達標</b></div></div>
+    <div class="c teal"><div class="lab">次要終點 MPR（mITT）</div><div class="big">50.9% vs. 31.0%</div><div class="sub">OR 2.31（1.06–5.01），p ＝ 0.033 —— 達標</div></div>
+    <div class="c amber"><div class="lab">3 年 PFS／OS</div><div class="big">尚無差異</div><div class="sub">HR 0.58（0.27–1.24）／0.44（0.13–1.46）；追蹤未成熟</div></div>
+    <div class="c teal"><div class="lab">第 3–4 級不良事件</div><div class="big">9.4% vs. 10.3%</div><div class="sub">毒性未增加；多出的是第 1–2 級免疫相關內分泌事件</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="340" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">Neo-STAR：加不加免疫檢查點抑制劑的四個關鍵終點（對數刻度，無效線 ＝ 1）</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="503.7" y1="60.0" x2="503.7" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="503.7" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="551.8" y1="60.0" x2="551.8" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="551.8" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="600.0" y1="60.0" x2="600.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="600.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="648.2" y1="60.0" x2="648.2" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="648.2" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="711.8" y1="60.0" x2="711.8" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="711.8" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="600.0" y1="60.0" x2="600.0" y2="274.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點（pCR/MPR 為 OR；PFS/OS 為 HR，方向相反）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">效果值（95% CI）</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">病理完全緩解 pCR（mITT，主要終點）</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">24/53（45.3%）vs. 16/58（27.6%）｜ OR 為原文所載，本頁重算亦得 2.172</text>
+<line x1="599.3" y1="90.0" x2="708.9" y2="90.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="599.3" y1="85.5" x2="599.3" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="708.9" y1="85.5" x2="708.9" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="648.3" y="84.5" width="11.0" height="11.0" fill="#8a6a1f"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 2.17（0.99–4.79），p ＝ 0.052</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">主要病理緩解 MPR（mITT，TRG 0–1）</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">27/53（50.9%）vs. 18/58（31.0%）｜ 本頁重算得 2.308</text>
+<line x1="604.0" y1="142.0" x2="712.0" y2="142.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="604.0" y1="137.5" x2="604.0" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="712.0" y1="137.5" x2="712.0" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="652.7" y="136.5" width="11.0" height="11.0" fill="#2f6b62"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 2.31（1.06–5.01），p ＝ 0.033</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">3 年無惡化存活 PFS</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">78.7% vs. 71.9%（中位追蹤 33.74 個月；追蹤尚未成熟）</text>
+<line x1="509.0" y1="194.0" x2="614.9" y2="194.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="509.0" y1="189.5" x2="509.0" y2="198.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="614.9" y1="189.5" x2="614.9" y2="198.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="556.6" y="188.5" width="11.0" height="11.0" fill="#8a6a1f"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">HR 0.58（0.27–1.24），p ＝ 0.160</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">3 年總存活 OS</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">93.3% vs. 87.9%（事件數少，區間極寬）</text>
+<line x1="458.2" y1="246.0" x2="626.3" y2="246.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="458.2" y1="241.5" x2="458.2" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="626.3" y1="241.5" x2="626.3" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="537.5" y="240.5" width="11.0" height="11.0" fill="#8a6a1f"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">HR 0.44（0.13–1.46），p ＝ 0.179</text>
+<text x="592.0" y="314.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利對照 SCRT-TNT</text>
+<text x="608.0" y="314.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利 SCRT-TNT-ICI →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>OR、HR、95% CI 與 p 值全部取自原文 Results 與 Table 2；pCR、MPR 的 OR 本頁以原文事件數重新計算核對（24×42 ÷ 29×16 ＝ 2.172；27×40 ÷ 26×18 ＝ 2.308），與原文完全相符。<b>如何解讀：</b>橫軸為對數刻度，虛線為無效線 1。<b>但這張圖有一個必須先講清楚的方向問題</b>——上面兩列是 OR（&gt; 1 有利試驗組），下面兩列是 HR（&lt; 1 才有利試驗組），<b>兩者方向相反</b>，所以圖底的「有利／不利」箭頭只適用於前兩列；本頁在列名已標明。<b>有何陷阱：</b>（1）<b>pCR 的下界 0.99 只差 0.01 就過 1</b>，把它讀成「無效」或讀成「有效」都失之草率，正確的說法是「本試驗的樣本數不足以下定論，但點估計方向明確」；（2）<b>MPR 達標而 pCR 未達標，並不代表 MPR 比較可靠</b>——MPR 是次要終點、事件數較多因此檢力較高，屬於「同一個療效在不同門檻上的兩次測量」，不是兩個獨立的成功；（3）<b>PFS 與 OS 的區間寬到可以同時容納「減少 87% 死亡」與「增加 46% 死亡」</b>，這種區間在臨床上等同於「還不知道」，絕不可拿來做決策。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="340" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">pCR 次群組分析：本頁把原文 OR 取倒數，改成「SCRT-TNT-ICI 相對於對照」的方向</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="488.2" y1="60.0" x2="488.2" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="488.2" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="536.3" y1="60.0" x2="536.3" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="536.3" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="600.0" y1="60.0" x2="600.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="600.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="648.2" y1="60.0" x2="648.2" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="648.2" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="711.8" y1="60.0" x2="711.8" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="711.8" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">25</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">50</text>
+<line x1="488.2" y1="60.0" x2="488.2" y2="274.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">次群組（原文列出達顯著者，共 4 個）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">OR（95% CI）——本頁自行計算</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">年齡 ≤ 60 歲</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">pCR 50.0%（18/36）vs. 20.0%（4/20）｜原文 OR 0.25（0.07–0.90）</text>
+<line x1="495.5" y1="90.0" x2="672.9" y2="90.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="495.5" y1="85.5" x2="495.5" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="672.9" y1="85.5" x2="672.9" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="579.5" y="85.0" width="10.0" height="10.0" fill="#2f6b62"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 4.00（1.11–14.29）</text>
+<text x="1106.0" y="104.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">PD-L1 CPS ≥ 1</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">原文未列各組事件數｜原文 OR 0.30（0.09–0.98）</text>
+<line x1="489.6" y1="142.0" x2="655.5" y2="142.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="489.6" y1="137.5" x2="489.6" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="655.5" y1="137.5" x2="655.5" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="566.8" y="137.0" width="10.0" height="10.0" fill="#2f6b62"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 3.33（1.02–11.11）</text>
+<text x="1106.0" y="156.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">臨床 T3 期</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">pCR 54.3%（19/35）vs. 25.0%（9/36）｜原文 OR 0.28（0.10–0.77）</text>
+<line x1="506.3" y1="194.0" x2="648.2" y2="194.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="506.3" y1="189.5" x2="506.3" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="648.2" y1="189.5" x2="648.2" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="571.6" y="189.0" width="10.0" height="10.0" fill="#2f6b62"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 3.57（1.30–10.00）</text>
+<text x="1106.0" y="208.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">壁外血管侵犯 EMVI 陽性</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">原文未列各組事件數｜原文 OR 0.14（0.04–0.54）</text>
+<line x1="531.0" y1="246.0" x2="711.8" y2="246.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="531.0" y1="241.5" x2="531.0" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="711.8" y1="241.5" x2="711.8" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="619.8" y="241.0" width="10.0" height="10.0" fill="#2f6b62"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 7.14（1.85–25.00）</text>
+<text x="1106.0" y="260.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="480.2" y="314.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利對照</text>
+<text x="496.2" y="314.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利 SCRT-TNT-ICI →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Results 只列出達統計顯著的 4 個次群組 OR（共檢驗 11 個變項），其餘 7 個變項<b>原文未列數值</b>（僅見於原文 Fig. 2 影像，本頁不推估）。<b>如何解讀：</b><b>原文所列的 OR 方向是反的</b>——例如 cT3 次群組寫 OR 0.28，但同段文字說的是「試驗組 pCR 54.3% vs. 對照組 25.0%」，本頁以原文事件數驗算（19×27 ÷ 16×9 ＝ 3.5625，取倒數 ＝ 0.281）確認原文是以<b>試驗組為參考組</b>計算的。為避免誤讀，本圖已把 OR 與其上下界一併取倒數，換算成「試驗組相對於對照組」的慣用方向，<b>此換算為本頁自行計算</b>。<b>有何陷阱：</b>（1）<b>11 個次群組只報 4 個顯著的，是典型的選擇性呈現</b>，未經多重比較校正，任何一個都可能是偶然；（2）<b>年齡這一項幾乎確定是假象</b>——基線本來就是試驗組年輕（≤ 60 歲者 67.9% vs. 34.5%），「年輕人獲益較多」很可能只是把基線失衡再說一遍；（3）作者自己在討論中承認，<b>各試驗的年齡切點（45／50／60／65 歲）與 EMVI 方向彼此矛盾</b>（Neo-STAR 與 SPRING-01 說 EMVI 陽性獲益，UNION 與 TORCH 說 EMVI 陰性獲益），這種互相打架的次群組結果<b>應視為假說產生，不可用來選病人</b>。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1155px">
+    <thead><tr><th>結果指標</th><th>SCRT-TNT-ICI</th><th>SCRT-TNT</th><th>效果值（95% CI）</th><th>p 值</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>pCR（mITT，主要終點）</b></td><td class="num">24/53（45.3%；31.5–59.8）</td><td class="num">16/58（27.6%；16.6–40.8）</td><td class="num">OR 2.17（0.99–4.79）</td><td class="num">0.052</td><td><span class="win caution">未達標</span></td></tr>
+      <tr><td>MPR（mITT，TRG 0–1）</td><td class="num">27/53（50.9%；36.6–65.2）</td><td class="num">18/58（31.0%；19.5–44.6）</td><td class="num">OR 2.31（1.06–5.01）</td><td class="num">0.033</td><td><span class="win">達標</span></td></tr>
+      <tr><td>pCR（PSM，27 對）</td><td class="num">15/27（55.6%；35.4–74.5）</td><td class="num">8/27（29.6%；13.8–49.4）</td><td class="num">原文未列 OR</td><td class="num">0.052</td><td><span class="win caution">未達標</span></td></tr>
+      <tr><td>MPR（PSM，27 對）</td><td class="num">17/27（63.0%；42.5–80.6）</td><td class="num">9/27（33.3%；16.5–54.0）</td><td class="num">原文未列 OR</td><td class="num">0.029</td><td><span class="win">達標</span></td></tr>
+      <tr><td>pCR（PPS）</td><td class="num">23/42（54.8%；39.1–69.7）</td><td class="num">15/40（37.5%；24.2–53.2）</td><td class="num">原文未列 OR／p</td><td class="num">原文未列</td><td><span class="win caution">選擇後族群</span></td></tr>
+      <tr><td>MPR（PPS）</td><td class="num">26/42（61.9%；48.2–74.2）</td><td class="num">17/40（42.5%；26.6–59.2）</td><td class="num">原文未列 OR／p</td><td class="num">原文未列</td><td><span class="win caution">選擇後族群</span></td></tr>
+      <tr><td>R0 切除率</td><td class="num">45/45（100%）</td><td class="num">44/44（100%）</td><td class="num">無法計算</td><td class="num">—</td><td><span class="win neutral">相同</span></td></tr>
+      <tr><td>TRG 0（完全退縮，PPS）</td><td class="num">23/42（54.8%）</td><td class="num">15/40（37.5%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>TRG 3（幾乎無退縮，PPS）</td><td class="num">2/42（4.8%）</td><td class="num">8/40（20.0%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>ypT0（PPS）</td><td class="num">24/42（57.1%）</td><td class="num">15/40（37.5%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>殘存 ypT3–4（PPS）</td><td class="num">8/42（19.1%）</td><td class="num">18/40（45.0%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>ypN0（PPS）</td><td class="num">39/42（92.9%）</td><td class="num">36/40（90.0%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win neutral">相近</span></td></tr>
+      <tr><td>括約肌保留（PPS）</td><td class="num">36/42（85.7%）</td><td class="num">27/40（67.5%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>腹會陰聯合切除 APR（PPS）</td><td class="num">6/42（14.3%）</td><td class="num">13/40（32.5%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td>Hartmann 手術（PPS）</td><td class="num">0/42（0.0%）</td><td class="num">3/40（7.5%）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win">有利試驗組</span></td></tr>
+      <tr><td><b>3 年無惡化存活 PFS</b></td><td class="num">78.7%</td><td class="num">71.9%</td><td class="num">HR 0.58（0.27–1.24）</td><td class="num">0.160</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td><b>3 年總存活 OS</b></td><td class="num">93.3%</td><td class="num">87.9%</td><td class="num">HR 0.44（0.13–1.46）</td><td class="num">0.179</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>任何不良事件（第 1–2 級）</td><td class="num">40/53（75.5%）</td><td class="num">44/58（75.9%）</td><td class="num">未列</td><td class="num">0.999</td><td><span class="win neutral">相同</span></td></tr>
+      <tr><td>任何不良事件（第 3–4 級）</td><td class="num">5/53（9.4%）</td><td class="num">6/58（10.3%）</td><td class="num">未列</td><td class="num">0.999</td><td><span class="win neutral">相同</span></td></tr>
+      <tr><td>第 3–4 級貧血</td><td class="num">3/53（5.7%）</td><td class="num">4/58（6.9%）</td><td class="num">未列</td><td class="num">0.427</td><td><span class="win neutral">相同</span></td></tr>
+      <tr><td>甲狀腺低下（第 1–2 級）</td><td class="num">6/53（11.3%）</td><td class="num">1/58（1.7%）</td><td class="num">未列</td><td class="num">0.053</td><td><span class="win caution">試驗組較多</span></td></tr>
+      <tr><td>任何免疫相關不良事件 irAE</td><td class="num">10/53（18.8%）</td><td class="num">0/58（0.0%）</td><td class="num">無法計算（零事件）</td><td class="num">0.000</td><td><span class="win caution">試驗組特有</span></td></tr>
+      <tr><td>吻合口滲漏</td><td class="num">1 例（Clavien–Dindo II）</td><td class="num">2 例（皆 II 級）</td><td class="num">原文未列分母</td><td class="num">原文未列</td><td><span class="win neutral">未增加</span></td></tr>
+      <tr><td>腸阻塞</td><td class="num">8 例（I 級 1、II 級 7）</td><td class="num">4 例（I 級 3、II 級 1）</td><td class="num">原文未列分母</td><td class="num">原文未列</td><td><span class="win caution">試驗組較多</span></td></tr>
+      <tr><td>骨盆敗血症</td><td class="num">1 例（IIIa 級）</td><td class="num">1 例（II 級）</td><td class="num">原文未列分母</td><td class="num">原文未列</td><td><span class="win neutral">相同</span></td></tr>
+      <tr><td>30 天再入院</td><td class="num">2 例（腸阻塞、裡急後重）</td><td class="num">6 例（全為接受輔助化療）</td><td class="num">原文未列分母</td><td class="num">原文未列</td><td><span class="win neutral">性質不同</span></td></tr>
+      <tr><td>SCRT 完成至手術之中位間隔</td><td class="num">17.79 週（IQR 16.21–19.25）</td><td class="num">17.50 週（IQR 16.43–20.07）</td><td class="num">原文未列差值</td><td class="num">原文未列</td><td><span class="win neutral">相近</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px">「原文未列」表示該欄位在原文正文與 Table 1–3 中找不到數值，本頁一律留白<b>而不推估</b>。免疫相關不良事件的 18.8% 為本頁自行計算（16.9% 第 1–2 級 ＋ 1.9% 第 3–4 級 ＝ 10/53）；殘存 ypT3–4 的 19.1% 亦為本頁自行計算（ypT3 6 例 ＋ ypT4 2 例 ＝ 8/42 ＝ 19.05%，原文分列為 14.3% 與 4.8%）。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始數據表與本頁重繪圖</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">pCR 與 MPR：三種分析族群下的差距（原文數值）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">16</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">32</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">48</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">64</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">百分比 %</text>
+<rect x="84.2" y="182.1" width="42.0" height="135.9" fill="#8a4a3d"/>
+<text x="105.2" y="176.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">45.3%</text>
+<rect x="130.2" y="235.2" width="42.0" height="82.8" fill="#2f6b62"/>
+<text x="151.2" y="229.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">27.6%</text>
+<text x="128.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">mITT pCR</text>
+<text x="128.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">53 vs. 58 人</text>
+<rect x="216.5" y="165.3" width="42.0" height="152.7" fill="#8a4a3d"/>
+<text x="237.5" y="159.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">50.9%</text>
+<rect x="262.5" y="225.0" width="42.0" height="93.0" fill="#2f6b62"/>
+<text x="283.5" y="219.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">31.0%</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">mITT MPR</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">53 vs. 58 人</text>
+<rect x="348.8" y="151.2" width="42.0" height="166.8" fill="#8a4a3d"/>
+<text x="369.8" y="145.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">55.6%</text>
+<rect x="394.8" y="229.2" width="42.0" height="88.8" fill="#2f6b62"/>
+<text x="415.8" y="223.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">29.6%</text>
+<text x="392.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">PSM pCR</text>
+<text x="392.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">27 vs. 27 對</text>
+<rect x="481.2" y="129.0" width="42.0" height="189.0" fill="#8a4a3d"/>
+<text x="502.2" y="123.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">63.0%</text>
+<rect x="527.2" y="218.1" width="42.0" height="99.9" fill="#2f6b62"/>
+<text x="548.2" y="212.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">33.3%</text>
+<text x="525.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">PSM MPR</text>
+<text x="525.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">27 vs. 27 對</text>
+<rect x="613.5" y="153.6" width="42.0" height="164.4" fill="#8a4a3d"/>
+<text x="634.5" y="147.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">54.8%</text>
+<rect x="659.5" y="205.5" width="42.0" height="112.5" fill="#2f6b62"/>
+<text x="680.5" y="199.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">37.5%</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">PPS pCR</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">42 vs. 40 人</text>
+<rect x="745.8" y="132.3" width="42.0" height="185.7" fill="#8a4a3d"/>
+<text x="766.8" y="126.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">61.9%</text>
+<rect x="791.8" y="190.5" width="42.0" height="127.5" fill="#2f6b62"/>
+<text x="812.8" y="184.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">42.5%</text>
+<text x="789.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">PPS MPR</text>
+<text x="789.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">42 vs. 40 人</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT-ICI（加 tislelizumab）</text>
+<rect x="322.8" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="339.8" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT（僅化放療）</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">mITT：開始治療者；PSM：傾向分數配對後；PPS：完成全部方案並手術者</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Table 2（mITT 與 PPS）與 Results 段落中的 PSM 結果，百分比皆為原文所載。<b>如何解讀：</b>同一個試驗，換三種分析族群，答案的「大小」會不一樣：mITT 差 17.7 個百分點、PSM 差 26.0 個百分點、PPS 差 17.3 個百分點（皆為本頁自行相減）。<b>mITT 是唯一保留隨機化保護的分析</b>，也是唯一該被引用的主結果。<b>有何陷阱：</b>PSM 的 27 對是從 111 人裡挑出來的，樣本折半、檢力更低，<b>它的 pCR 差距最大反而最不可信</b>；PPS 則只包含「有開刀的人」，而未開刀者兩組比例不同（試驗組 8/53 vs. 對照組 14/58），<b>光是這個差異就足以把 PPS 的差距灌水</b>。看到一篇試驗同時報三個族群、而且愈往後差距愈好看時，正確反應是回頭看 mITT，不是挑最好看的講。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="280" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">腫瘤退縮分級 TRG 分布（PPS 族群，n ＝ 42 vs. 40；百分比為原文所載）</text>
+<text x="140.0" y="98.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="700">SCRT-TNT-ICI（n＝42）</text>
+<rect x="150.0" y="74.0" width="386.9" height="40.0" fill="#2f6b62"/>
+<text x="343.4" y="98.5" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">54.8%</text>
+<rect x="536.9" y="74.0" width="50.1" height="40.0" fill="#7aa79f"/>
+<text x="562.0" y="98.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">7.1%</text>
+<rect x="587.0" y="74.0" width="235.1" height="40.0" fill="#cbb99a"/>
+<text x="704.6" y="98.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">33.3%</text>
+<rect x="822.1" y="74.0" width="33.9" height="40.0" fill="#8a4a3d"/>
+<text x="839.1" y="68.0" font-size="10" fill="#2e2b28" text-anchor="middle" font-weight="400">4.8%</text>
+<text x="140.0" y="164.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="700">SCRT-TNT（n＝40）</text>
+<rect x="150.0" y="140.0" width="264.8" height="40.0" fill="#2f6b62"/>
+<text x="282.4" y="164.5" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">37.5%</text>
+<rect x="414.8" y="140.0" width="35.3" height="40.0" fill="#7aa79f"/>
+<text x="432.4" y="134.0" font-size="10" fill="#2e2b28" text-anchor="middle" font-weight="400">5.0%</text>
+<rect x="450.1" y="140.0" width="264.8" height="40.0" fill="#cbb99a"/>
+<text x="582.4" y="164.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">37.5%</text>
+<rect x="714.8" y="140.0" width="141.2" height="40.0" fill="#8a4a3d"/>
+<text x="785.4" y="164.5" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">20.0%</text>
+<rect x="20.0" y="240.0" width="12" height="12" fill="#2f6b62"/>
+<text x="37.0" y="250.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">TRG 0 完全緩解</text>
+<rect x="132.0" y="240.0" width="12" height="12" fill="#7aa79f"/>
+<text x="149.0" y="250.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">TRG 1 中度</text>
+<rect x="226.0" y="240.0" width="12" height="12" fill="#cbb99a"/>
+<text x="243.0" y="250.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">TRG 2 輕度</text>
+<rect x="320.0" y="240.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="337.0" y="250.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">TRG 3 不良</text>
+<text x="866.0" y="272.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">TRG 3（幾乎無退縮）由 20.0% 降到 4.8%，是本試驗最乾淨的訊號之一</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Table 2 之 PPS 族群 TRG 分布（試驗組 23／3／14／2 例，對照組 15／2／15／8 例；本頁驗算加總分別為 42 與 40，與原文相符）。<b>如何解讀：</b>pCR 只看「有沒有完全消失」這個二分法，會丟掉大量訊息；把整個 TRG 分布畫出來，才看得到療效其實是<b>整條分布往左推</b>。<b>本圖最重要的訊息在最右端</b>：TRG 3（幾乎沒有退縮）從 20.0% 掉到 4.8%，也就是說加上 ICI 之後，「完全沒反應」的病人少了四分之三。<b>有何陷阱：</b>（1）TRG 由兩位病理醫師獨立判讀且對分組盲化，這點做得好，但<b>TRG 2 的比例兩組幾乎一樣（33.3% vs. 37.5%）</b>，代表變化集中在兩端而非全面位移；（2）本圖用的是 PPS 族群，<b>同樣帶有前述的選擇性偏差</b>，若改用 mITT 並把未手術者計入，差距會縮小；（3）TRG 0 與 pCR 在本試驗中數值相同（54.8% vs. 37.5%），因為 pCR 的定義就是 ypT0N0，<b>兩者不是互相印證的獨立證據</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">病理降期與括約肌保留（PPS 族群，原文所載）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">百分比 %</text>
+<rect x="84.2" y="181.0" width="42.0" height="137.0" fill="#8a4a3d"/>
+<text x="105.2" y="175.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">57.1%</text>
+<rect x="130.2" y="228.0" width="42.0" height="90.0" fill="#2f6b62"/>
+<text x="151.2" y="222.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">37.5%</text>
+<text x="128.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">ypT0</text>
+<text x="128.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">無殘存腫瘤</text>
+<rect x="216.5" y="272.2" width="42.0" height="45.8" fill="#8a4a3d"/>
+<text x="237.5" y="266.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">19.1%</text>
+<rect x="262.5" y="210.0" width="42.0" height="108.0" fill="#2f6b62"/>
+<text x="283.5" y="204.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">45.0%</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">ypT3–4</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">殘存深層侵犯</text>
+<rect x="348.8" y="95.0" width="42.0" height="223.0" fill="#8a4a3d"/>
+<text x="369.8" y="89.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">92.9%</text>
+<rect x="394.8" y="102.0" width="42.0" height="216.0" fill="#2f6b62"/>
+<text x="415.8" y="96.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">90.0%</text>
+<text x="392.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">ypN0</text>
+<text x="392.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">淋巴結陰性</text>
+<rect x="481.2" y="112.3" width="42.0" height="205.7" fill="#8a4a3d"/>
+<text x="502.2" y="106.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">85.7%</text>
+<rect x="527.2" y="156.0" width="42.0" height="162.0" fill="#2f6b62"/>
+<text x="548.2" y="150.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">67.5%</text>
+<text x="525.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">括約肌保留</text>
+<text x="525.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">sphincter-sparing</text>
+<rect x="613.5" y="112.3" width="42.0" height="205.7" fill="#8a4a3d"/>
+<text x="634.5" y="106.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">85.7%</text>
+<rect x="659.5" y="174.0" width="42.0" height="144.0" fill="#2f6b62"/>
+<text x="680.5" y="168.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">60.0%</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">前位切除</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">anterior resection</text>
+<rect x="745.8" y="283.7" width="42.0" height="34.3" fill="#8a4a3d"/>
+<text x="766.8" y="277.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">14.3%</text>
+<rect x="791.8" y="240.0" width="42.0" height="78.0" fill="#2f6b62"/>
+<text x="812.8" y="234.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">32.5%</text>
+<text x="789.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">腹會陰聯合切除</text>
+<text x="789.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">APR</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT-ICI（n＝42）</text>
+<rect x="236.8" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="253.8" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT（n＝40）</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">ypT3–4 合計：ypT3 6 例 ＋ ypT4 2 例 ＝ 8/42 ＝ 19.0%（本頁自行計算；原文分列 14.3% 與 4.8%）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Table 2 之 PPS 族群病理分期與手術方式（試驗組 n ＝ 42、對照組 n ＝ 40）。<b>如何解讀：</b>這張圖回答的是外科醫師真正在意的問題——「腫瘤縮小到底換來了什麼？」答案是：<b>殘存深層侵犯（ypT3–4）從 45.0% 降到 19.1%，而括約肌保留率從 67.5% 升到 85.7%，APR 從 32.5% 降到 14.3%，Hartmann 手術從 7.5% 降到 0%</b>。以人數計，多保住肛門的是 <b>36/42 vs. 27/40</b>，<b>本頁自行計算的絕對差為 18.2 個百分點、需治療人數 NNT ≈ 6</b>（1 ÷ 0.182 ＝ 5.5，取整為 6）。<b>有何陷阱：</b>（1）<b>括約肌保留與否不是隨機決定的，是外科醫師在手術當下決定的</b>——這是開放標籤試驗，術者知道分組，<b>期待效應無法排除</b>；（2）兩組腫瘤距肛緣的基線分布相近（≤ 5 cm：66.0% vs. 62.1%），這點支持差異是真的，但<b>並未針對此分層隨機</b>；（3）ypN0 兩組幾乎相同（92.9% vs. 90.0%），代表<b>ICI 帶來的額外退縮主要發生在原發腫瘤，而不是淋巴結</b>，這與「括約肌保留獲益、存活未獲益」的整體圖像是一致的。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">不良事件：整體毒性沒有增加，多出來的是免疫相關內分泌事件（mITT，原文所載）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">18</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">36</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">54</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">72</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">90</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">發生率 %</text>
+<rect x="84.2" y="116.7" width="42.0" height="201.3" fill="#8a4a3d"/>
+<text x="105.2" y="110.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">75.5%</text>
+<rect x="130.2" y="115.6" width="42.0" height="202.4" fill="#2f6b62"/>
+<text x="151.2" y="109.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">75.9%</text>
+<text x="128.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">任何 AE</text>
+<text x="128.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">第 1–2 級</text>
+<rect x="216.5" y="292.9" width="42.0" height="25.1" fill="#8a4a3d"/>
+<text x="237.5" y="286.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">9.4%</text>
+<rect x="262.5" y="290.5" width="42.0" height="27.5" fill="#2f6b62"/>
+<text x="283.5" y="284.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">10.3%</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">任何 AE</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">第 3–4 級</text>
+<rect x="348.8" y="302.8" width="42.0" height="15.2" fill="#8a4a3d"/>
+<text x="369.8" y="296.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.7%</text>
+<rect x="394.8" y="299.6" width="42.0" height="18.4" fill="#2f6b62"/>
+<text x="415.8" y="293.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">6.9%</text>
+<text x="392.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">貧血</text>
+<text x="392.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">第 3–4 級</text>
+<rect x="481.2" y="287.9" width="42.0" height="30.1" fill="#8a4a3d"/>
+<text x="502.2" y="281.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">11.3%</text>
+<rect x="527.2" y="313.5" width="42.0" height="4.5" fill="#2f6b62"/>
+<text x="548.2" y="307.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">1.7%</text>
+<text x="525.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">甲狀腺低下</text>
+<text x="525.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">第 1–2 級</text>
+<rect x="613.5" y="292.9" width="42.0" height="25.1" fill="#8a4a3d"/>
+<text x="634.5" y="286.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">9.4%</text>
+<rect x="659.5" y="318.0" width="42.0" height="0.0" fill="#2f6b62"/>
+<text x="680.5" y="312.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">0.0%</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">甲狀腺亢進</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">第 1–2 級</text>
+<rect x="745.8" y="267.9" width="42.0" height="50.1" fill="#8a4a3d"/>
+<text x="766.8" y="261.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">18.8%</text>
+<rect x="791.8" y="318.0" width="42.0" height="0.0" fill="#2f6b62"/>
+<text x="812.8" y="312.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">0.0%</text>
+<text x="789.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">任何免疫相關 AE</text>
+<text x="789.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">irAE</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT-ICI（n＝53）</text>
+<rect x="236.8" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="253.8" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">SCRT-TNT（n＝58）</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">任何 irAE 18.8% ＝ 16.9%（第 1–2 級）＋1.9%（第 3–4 級），本頁自行計算</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Table 3（mITT 族群不良事件，n ＝ 53 vs. 58）。<b>如何解讀：</b>把「總毒性」與「新增毒性」分開看：<b>左半邊（任何 AE、第 3–4 級 AE、第 3–4 級貧血）兩組幾乎重疊</b>，代表加上 ICI 並沒有讓整體治療變得更難忍受；<b>右半邊才是 ICI 真正帶進來的東西</b>——甲狀腺低下 11.3% vs. 1.7%（p ＝ 0.053）、甲狀腺亢進 9.4% vs. 0%（p ＝ 0.022）、任何 irAE 18.8% vs. 0%。<b>有何陷阱：</b>（1）<b>對照組的 irAE 是 0，這是零事件格，任何相對風險都無法計算</b>，本頁因此不呈現 RR；（2）作者自己指出，<b>這些內分泌毒性導致部分病人手術延後、放療到手術的間隔拉長，甚至有人退出試驗</b>——這是「毒性沒有更嚴重，但療程更難跑完」的典型樣態，在流程圖裡看得到（試驗組隨機後未開始治療者 6 人 vs. 對照組 1 人）；（3）<b>試驗組腸阻塞 8 例 vs. 對照組 4 例</b>，原文未列分母與 p 值，數量太小無法判定，但值得在後續第三期試驗中盯住。</div>
+  </div>
+
+  <h3>原始事件數表（本頁由原文百分比與分母回推並驗算）</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:825px">
+    <thead><tr><th>項目</th><th>SCRT-TNT-ICI 事件／人數</th><th>SCRT-TNT 事件／人數</th><th>絕對差（本頁自行計算）</th></tr></thead>
+    <tbody>
+      <tr><td>pCR（mITT）</td><td class="num">24 / 53</td><td class="num">16 / 58</td><td class="num">＋17.7 個百分點</td></tr>
+      <tr><td>MPR（mITT）</td><td class="num">27 / 53</td><td class="num">18 / 58</td><td class="num">＋19.9 個百分點</td></tr>
+      <tr><td>pCR（PSM）</td><td class="num">15 / 27</td><td class="num">8 / 27</td><td class="num">＋26.0 個百分點</td></tr>
+      <tr><td>MPR（PSM）</td><td class="num">17 / 27</td><td class="num">9 / 27</td><td class="num">＋29.6 個百分點</td></tr>
+      <tr><td>pCR（PPS）</td><td class="num">23 / 42</td><td class="num">15 / 40</td><td class="num">＋17.3 個百分點</td></tr>
+      <tr><td>TRG 0（PPS）</td><td class="num">23 / 42</td><td class="num">15 / 40</td><td class="num">＋17.3 個百分點</td></tr>
+      <tr><td>TRG 3（PPS）</td><td class="num">2 / 42</td><td class="num">8 / 40</td><td class="num">&#8722;15.2 個百分點</td></tr>
+      <tr><td>ypT0（PPS）</td><td class="num">24 / 42</td><td class="num">15 / 40</td><td class="num">＋19.6 個百分點</td></tr>
+      <tr><td>殘存 ypT3–4（PPS）</td><td class="num">8 / 42</td><td class="num">18 / 40</td><td class="num">&#8722;25.9 個百分點</td></tr>
+      <tr><td>括約肌保留（PPS）</td><td class="num">36 / 42</td><td class="num">27 / 40</td><td class="num">＋18.2 個百分點（NNT ≈ 6）</td></tr>
+      <tr><td>接受手術（mITT）</td><td class="num">45 / 53</td><td class="num">44 / 58</td><td class="num">＋9.0 個百分點</td></tr>
+      <tr><td>第 3–4 級不良事件（mITT）</td><td class="num">5 / 53</td><td class="num">6 / 58</td><td class="num">&#8722;0.9 個百分點</td></tr>
+      <tr><td>任何 irAE（mITT）</td><td class="num">10 / 53</td><td class="num">0 / 58</td><td class="num">＋18.8 個百分點</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>事件數的來源說明</b>：pCR、MPR、TRG、ypT、手術方式、AE 的絕對人數<b>直接來自原文 Table 2 與 Table 3</b>；PSM 的 15／8／17／9 例則是<b>本頁由原文百分比（55.6%、29.6%、63.0%、33.3%）乘以 27 對回推</b>，四個數字回推後皆為整數且百分比可完全還原，故可視為確定。所有「絕對差」欄位皆為<b>本頁自行計算</b>。</p>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <ol class="num">
+    <li><b>隨機化與族群人數：</b>59 ＋ 59 ＝ 118 ✓；118 &#8722; 7 ＝ 111 ＝ 53 ＋ 58 ✓；45 ＋ 44 ＝ 89 ✓；89 &#8722; 7 ＝ 82 ＝ 42 ＋ 40 ✓；未手術者 8 ＋ 14 ＝ 22 ＝ 111 &#8722; 89 ✓。各項退出理由的細項加總（4＋2＋1＋1 ＝ 8；6＋5＋2＋1 ＝ 14）亦與總數相符 ✓。</li>
+    <li><b>主要終點 OR：</b>以原文事件數重算 (24×42)/(29×16) ＝ 2.172，原文載 2.17 ✓；MPR (27×40)/(26×18) ＝ 2.308，原文載 2.31 ✓。<b>兩個 OR 都通過驗算。</b></li>
+    <li><b>次群組 OR 的方向：</b>cT3 次群組原文載 pCR 54.3% vs. 25.0%、OR 0.28。以 cT3 人數 35 與 36 回推得 19/35 ＝ 54.29% ✓、9/36 ＝ 25.00% ✓，OR（試驗組為分子）＝ (19×27)/(16×9) ＝ 3.563，<b>取倒數 ＝ 0.281 ＝ 原文所載</b>。年齡 ≤ 60 歲亦同：18/36 ＝ 50.0% ✓、4/20 ＝ 20.0% ✓，OR ＝ 4.00，倒數 ＝ 0.25 ＝ 原文所載。<b>結論：原文次群組 OR 是以試驗組為參考組計算的，方向與慣例相反；本頁已在圖中換算並標註。</b></li>
+    <li><b>TRG 與 ypT 分期加總：</b>手術族群 24＋3＋16＋2 ＝ 45 ✓、17＋2＋16＋9 ＝ 44 ✓；PPS 23＋3＋14＋2 ＝ 42 ✓、15＋2＋15＋8 ＝ 40 ✓；ypT 24＋1＋0＋9＋6＋2 ＝ 42 ✓、15＋0＋1＋6＋10＋8 ＝ 40 ✓；ypN 39＋3＋0 ＝ 42 ✓、36＋3＋1 ＝ 40 ✓；手術方式 36＋6＋0 ＝ 42 ✓、24＋13＋3 ＝ 40 ✓。<b>全部通過。</b></li>
+    <li><b>術後化療分母：</b>29/44 ＝ 65.9% ✓、25/42 ＝ 59.5% ✓；44 ＋ 42 ＝ 86 ＝ 89 &#8722; 3（新輔助期間發生遠端轉移者）✓。</li>
+    <li><b>發現的一處內部張力（非錯誤）：</b>原文 Table 2 的「手術族群」TRG 0 為 24/45（53.3%）與 17/44（38.6%），而 PPS 的 TRG 0 為 23/42 與 15/40；差額（1 例與 2 例）正好對應被排除於 PPS 之外的方案偏離者，<b>邏輯自洽</b>。但<b>摘要與正文引用 pCR 時混用 mITT（45.3%）與 PPS（54.8%）兩套數字</b>，讀者若不留意分母，很容易高估療效——這是本頁認為最需要提醒的閱讀陷阱。</li>
+    <li><b>樣本數估算與實際結果的落差：</b>方案設計時假設對照組 pCR ＝ 17%（引自 STELLAR 試驗）、試驗組 49%；<b>實際對照組拿到 27.6%</b>。以原設計的 α ＝ 0.05、power ＝ 0.9 反推，若真實差距是 45% vs. 28%，所需樣本數遠大於 100 人。<b>因此主要終點的 p ＝ 0.052 更合理的解釋是「檢力不足」而非「療效不存在」</b>（此推論為本頁自行判讀，原文未明言）。</li>
+  </ol>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵</span></h2>
+
+  <div class="call teal">
+    <div class="h">誰適合？</div>
+    <p>依本試驗的納入條件，最貼近的族群是：<b>18–75 歲、ECOG 0–1、腫瘤距肛緣 ≤ 10 cm、臨床第 II–III 期（cT3–4 或 N＋）、無遠端轉移的直腸腺癌</b>，而且<b>不必先驗 MMR／MSI</b>——本試驗 94% 以上是 pMMR／MSS，正是傳統上認為「免疫治療無效」的那一群。實際上最可能獲益的，是<b>cT3、腫瘤位置低、原本評估必須做 APR 或 Hartmann、但病人強烈希望保住肛門</b>的病人。反過來說，<b>cT4 的獲益幅度在本試驗與 UNION、TORCH、SPRING-01 中都明顯較小</b>，dMMR／MSI-H 的病人則另有更成熟的免疫單藥路徑（本試驗僅 4 人，無從分析）。</p>
+  </div>
+
+  <div class="call teal">
+    <div class="h">換來什麼？</div>
+    <ul class="clean">
+      <li><b>更深的腫瘤退縮：</b>pCR 45.3% vs. 27.6%（＋17.7 個百分點）、MPR 50.9% vs. 31.0%（＋19.9 個百分點）、「幾乎沒有退縮」的 TRG 3 從 20.0% 降到 4.8%。</li>
+      <li><b>更高的保肛機會：</b>括約肌保留 85.7% vs. 67.5%，<b>本頁自行計算 NNT ≈ 6</b>——每治療約 6 位，多 1 位免於永久造口。這是本試驗對外科醫師最實質的訊息。</li>
+      <li><b>更少的深層殘存：</b>ypT3–4 從 45.0% 降到 19.1%，意味著手術面對的組織條件較好（惟本試驗未報告環周切緣 CRM 的量化資料）。</li>
+      <li><b>可能開啟 Watch &amp; Wait 的門：</b>兩組各有 1 人達 cCR 而選擇非手術追蹤；本試驗<b>不是為此設計</b>，但退縮加深在觀念上與器官保留策略同向。</li>
+    </ul>
+  </div>
+
+  <div class="call amber">
+    <div class="h">代價是什麼？</div>
+    <ul class="clean">
+      <li><b>錢與可近性：</b>4 個週期的 PD-1 抑制劑是額外自費或給付爭議的成本，<b>本試驗完全未做成本效益分析</b>。</li>
+      <li><b>免疫相關毒性：</b>18.8% 出現 irAE（對照組 0%），以甲狀腺低下 11.3%、甲狀腺亢進 9.4% 為主，另有皮膚炎 5.7%（含 1 例第 3–4 級）、免疫相關腸炎 1.9%、心肌旋轉蛋白 I 上升 1.9%。<b>絕大多數是第 1–2 級、可處理，但需要內分泌追蹤與長期補充甲狀腺素的可能。</b></li>
+      <li><b>療程可能被拖慢：</b>作者明言毒性導致<b>手術延後、放療至手術間隔拉長，甚至有病人退出</b>。試驗組隨機後尚未開始治療即退出者有 6 人（對照組 1 人）。</li>
+      <li><b>存活還沒有兌現：</b>3 年 PFS 與 OS 皆無統計差異，而且<b>追蹤中位數僅 33.74 個月，尚未滿 3 年</b>。目前所有的獲益都停留在「病理與手術層面」。</li>
+    </ul>
+  </div>
+
+  <div class="call">
+    <div class="h">知情同意怎麼談（可直接使用的口語版本）</div>
+    <p>「你的腫瘤位置比較低，照標準做法是先做五天短程放療、四次化療，再開刀。<b>現在有一個做法，是在每一次化療的時候多打一劑免疫藥。</b>目前有一個 118 人的隨機試驗顯示，<b>加了這個藥，腫瘤完全消失的比例大約從三成提高到四成半</b>，而且<b>最重要的是保住肛門、不用做永久人工肛門的機會，從大約七成提高到八成半</b>——大概每六個人多一個人能保住。<b>但是我必須把話講清楚的三件事：</b>第一，<b>這個研究並沒有證明活得比較久</b>，追蹤時間還不夠，目前看到的好處都在『腫瘤縮得比較小、比較好開』這一層；第二，<b>這個藥會有大約兩成的機會出現免疫副作用</b>，最常見的是甲狀腺功能異常，多半不嚴重、可以用藥控制，但可能要長期追蹤甚至補充甲狀腺素，也有少數人因此手術要往後延；第三，<b>這還不是標準治療</b>，是一個單一醫院、一百多人的第二期試驗，正式的答案要等更大型的第三期研究。<b>如果你最在意的是保住肛門、願意承擔額外的費用與副作用，這是一個合理的選項；如果你最在意的是活得久，目前沒有證據支持多花這個錢。</b>」</p>
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>主要終點沒有達標，這件事不能被輕輕帶過。</b>p ＝ 0.052、95% CI 下界 0.99。依預先設定的統計規則，<b>本試驗的正式結論是「未能證明 pCR 有差異」</b>。作者在摘要中的自制值得肯定，但引用者常會直接說成「pCR 顯著提高」，這是錯的。</li>
+    <li><b>單中心、118 人、第二期。</b>作者列為第一項限制。單中心意味著病理判讀、放療品質、手術水準都來自同一團隊，<b>外推性有限</b>；台灣的實作條件（放療技術、手術量、TME 品質）未必相同。</li>
+    <li><b>基線年齡嚴重失衡（中位 55 vs. 65 歲）。</b>這是<b>隨機化未分層</b>的後果。作者以 PSM 補救，但 PSM 只能平衡「有測到的」變項，且把樣本砍到 27 對。<b>更麻煩的是，「年齡 ≤ 60 歲獲益較多」這個次群組結論，本身就可能只是基線失衡的鏡像。</b></li>
+    <li><b>19.8% 的病人沒有開刀，而且兩組不對稱。</b>試驗組 8/53（15.1%）vs. 對照組 14/58（24.1%）。流失主因是<b>病人拒絕與撤回同意</b>（11 人 vs. 6 人合計 17 人），不是醫療因素。在開放標籤試驗中，<b>知道自己被分到「沒有免疫藥」那組的病人更容易退出</b>，這種差別流失會直接污染 PPS 分析。</li>
+    <li><b>三套族群、三個答案，容易被挑好看的講。</b>mITT ＋17.7、PSM ＋26.0、PPS ＋17.3 個百分點。<b>唯一該引用的是 mITT。</b></li>
+    <li><b>11 個次群組只報 4 個顯著的，且無多重比較校正。</b>並且作者自己承認各試驗的年齡切點與 EMVI 方向互相矛盾。<b>這些次群組只能當假說，不能拿來挑病人。</b></li>
+    <li><b>存活資料未成熟。</b>中位追蹤 33.74 個月卻報「3 年 PFS／OS」，代表<b>相當比例的病人根本還沒追蹤滿 3 年</b>，Kaplan–Meier 曲線尾端的估計極不穩定。HR 的區間（0.27–1.24、0.13–1.46）也證實了這一點。</li>
+    <li><b>對照組表現優於設計假設，吃掉了檢力。</b>設計時假設對照組 pCR ＝ 17%，實際 27.6%。<b>這既是好消息（現代 SCRT-TNT 本身就很強），也是本試驗未達標的主因。</b></li>
+    <li><b>沒有報告的重要外科結果。</b>原文<b>未列</b>環周切緣（CRM）陽性率、直腸繫膜完整度分級、低前位切除症候群（LARS）分數、造口關閉率與時間、長期排便與泌尿性功能。<b>對外科決策而言，這些缺口相當關鍵</b>——本試驗證明了「更容易保住肛門」，但沒有回答「保住的肛門功能好不好」。</li>
+    <li><b>irAE 的長期後果未追蹤。</b>甲狀腺功能異常在放化療合併免疫的情境下可能持續；本試驗僅報告新輔助期間的發生率，<b>未報告是否恢復、是否需長期用藥</b>。</li>
+    <li><b>單一藥物、單一族裔。</b>tislelizumab、全中國病人。與其他 PD-1 抑制劑的類效應（class effect）在本試驗無從驗證。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>局部進展期直腸癌 <span class="en">Locally advanced rectal cancer, LARC</span></dt><dd>一般指 cT3–4 或有淋巴結轉移、但無遠端轉移的直腸癌；本試驗另納入 cT1–2N＋。</dd></div>
+      <div class="gl-row"><dt>全程新輔助治療 <span class="en">Total neoadjuvant therapy, TNT</span></dt><dd>把原本術後才給的化療<b>提前到手術前</b>，與放療一起在術前跑完；目的是提高退縮率並降低遠端轉移。</dd></div>
+      <div class="gl-row"><dt>短程放療 <span class="en">Short-course radiotherapy, SCRT</span></dt><dd>25 Gy 分 5 次（25 Gy/5F）於一週內完成，相對於長程同步化放療（LCRT，約 5 週）。</dd></div>
+      <div class="gl-row"><dt>長程同步化放療 <span class="en">Long-course chemoradiotherapy, LCRT</span></dt><dd>約 45–50.4 Gy 分 25–28 次，同步口服 capecitabine；本試驗未使用。</dd></div>
+      <div class="gl-row"><dt>全直腸繫膜切除 <span class="en">Total mesorectal excision, TME</span></dt><dd>沿直腸繫膜筋膜平面完整切除直腸與其繫膜，是直腸癌手術的品質標準。</dd></div>
+      <div class="gl-row"><dt>免疫檢查點抑制劑 <span class="en">Immune checkpoint inhibitor, ICI</span></dt><dd>解除 T 細胞煞車的單株抗體；本試驗用的 <b>tislelizumab（替雷利珠單抗）</b>為抗 PD-1 抗體。</dd></div>
+      <div class="gl-row"><dt>病理完全緩解 <span class="en">Pathological complete response, pCR</span></dt><dd>術後標本中<b>完全找不到殘存腫瘤細胞（ypT0N0）</b>；本試驗之主要終點。</dd></div>
+      <div class="gl-row"><dt>主要病理緩解 <span class="en">Major pathological response, MPR</span></dt><dd>本試驗定義為 <b>TRG 0 或 1</b>，即完全緩解或僅剩單一／小群癌細胞。</dd></div>
+      <div class="gl-row"><dt>腫瘤退縮分級 <span class="en">Tumor regression grade, TRG</span></dt><dd>AJCC 第 8 版：<b>0 ＝ 無殘存癌細胞、1 ＝ 單一或小群癌細胞、2 ＝ 殘存癌被纖維化包圍、3 ＝ 幾乎無退縮</b>。</dd></div>
+      <div class="gl-row"><dt>臨床完全緩解 <span class="en">Clinical complete response, cCR</span></dt><dd>影像與內視鏡上看不到殘存腫瘤；達 cCR 者可考慮 Watch &amp; Wait 而不手術。</dd></div>
+      <div class="gl-row"><dt>觀察等待 <span class="en">Watch and wait, W&amp;W</span></dt><dd>達 cCR 者暫不手術、密集追蹤，一旦再生長再行手術的器官保留策略。</dd></div>
+      <div class="gl-row"><dt>錯配修復缺損 <span class="en">Deficient mismatch repair, dMMR</span></dt><dd>MLH1／MSH2／MSH6／PMS2 任一蛋白表現喪失；常伴隨 MSI-H，對免疫治療反應佳。</dd></div>
+      <div class="gl-row"><dt>微衛星不穩定性高 <span class="en">Microsatellite instability-high, MSI-H</span></dt><dd>基因檢測所定義的高度不穩定；<b>本試驗僅 4 人</b>。</dd></div>
+      <div class="gl-row"><dt>錯配修復功能正常／微衛星穩定 <span class="en">pMMR / MSS</span></dt><dd>占本試驗 94% 以上；傳統上對單用免疫治療反應差，<b>是本試驗的立論核心</b>。</dd></div>
+      <div class="gl-row"><dt>PD-L1 綜合陽性分數 <span class="en">PD-L1 combined positive score, CPS</span></dt><dd>PD-L1 陽性細胞（腫瘤＋免疫細胞）數除以腫瘤細胞總數再乘 100；本試驗以 ≥ 1 為切點。</dd></div>
+      <div class="gl-row"><dt>壁外血管侵犯 <span class="en">Extramural vascular invasion, EMVI</span></dt><dd>MRI 上腫瘤侵入腸壁外血管，為遠端轉移的高風險指標。</dd></div>
+      <div class="gl-row"><dt>直腸繫膜筋膜 <span class="en">Mesorectal fascia, MRF</span></dt><dd>MRI 上腫瘤與繫膜筋膜的距離；MRF 陽性代表切緣可能不足，屬高風險。</dd></div>
+      <div class="gl-row"><dt>環周切緣 <span class="en">Circumferential resection margin, CRM</span></dt><dd>標本徑向的最短切緣；<b>本試驗未報告</b>，是重要缺口。</dd></div>
+      <div class="gl-row"><dt>腹會陰聯合切除 <span class="en">Abdominoperineal resection, APR</span></dt><dd>切除直腸與肛門並做永久性結腸造口。</dd></div>
+      <div class="gl-row"><dt>Hartmann 手術</dt><dd>切除病灶後關閉遠端殘端、近端做造口，不做吻合。</dd></div>
+      <div class="gl-row"><dt>括約肌保留手術 <span class="en">Sphincter-sparing surgery</span></dt><dd>保住肛門括約肌並完成吻合，避免永久造口。</dd></div>
+      <div class="gl-row"><dt>修正意向治療族群 <span class="en">Modified intention-to-treat, mITT</span></dt><dd>納入所有<b>已開始接受分派治療</b>者；本試驗的主要分析族群。</dd></div>
+      <div class="gl-row"><dt>符合方案族群 <span class="en">Per protocol set, PPS</span></dt><dd>只納入完全依方案完成治療並手術者；<b>已失去隨機化保護</b>。</dd></div>
+      <div class="gl-row"><dt>傾向分數配對 <span class="en">Propensity score matching, PSM</span></dt><dd>依可測量的基線變項配對兩組，用以事後平衡失衡；<b>無法平衡未測量的變項</b>。</dd></div>
+      <div class="gl-row"><dt>勝算比 <span class="en">Odds ratio, OR</span></dt><dd>兩組事件勝算之比；OR &gt; 1 代表該組事件較可能發生（<b>但須確認參考組是誰</b>）。</dd></div>
+      <div class="gl-row"><dt>風險比 <span class="en">Hazard ratio, HR</span></dt><dd>時間至事件分析中的瞬時風險比；<b>HR &lt; 1 才是有利</b>，方向與 OR 相反。</dd></div>
+      <div class="gl-row"><dt>Clopper–Pearson 法</dt><dd>二項比例之「精確」信賴區間計算法，在樣本小或比例接近 0／1 時較保守可靠。</dd></div>
+      <div class="gl-row"><dt>Clavien–Dindo 分級</dt><dd>術後併發症的嚴重度分級；<b>≥ III 級</b>代表需要手術、內視鏡或放射線介入。</dd></div>
+      <div class="gl-row"><dt>免疫相關不良事件 <span class="en">Immune-related adverse event, irAE</span></dt><dd>免疫檢查點抑制劑特有的自體免疫性副作用；本試驗以甲狀腺功能異常為主。</dd></div>
+      <div class="gl-row"><dt>CTCAE 第 5 版 <span class="en">Common Terminology Criteria for Adverse Events v5.0</span></dt><dd>不良事件嚴重度的標準分級（第 1–5 級）。</dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>絕對風險差的倒數；本頁計算之括約肌保留 NNT ≈ 6。</dd></div>
+      <div class="gl-row"><dt>CAPOX 方案</dt><dd>capecitabine 1,000 mg/m² 每日兩次口服第 1–14 天 ＋ oxaliplatin 130 mg/m² 靜脈注射第 1 天，每 3 週一次。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Wu F, Hu X, Li B, Zhang J, Wang G, Fan H, An G, Yu B, Ma H, Zhao B, Li Z, Gao B, Liu M, Wang X, Liu D, Hu J, Liu H, Liu Y, Wang F, Zhang J, Feng J, Wang X, Meng Z, Zhang Z, Li Z, Sun J, Liu S, Wang N, Han J, Niu W, Zhou C, Xiao L, Wang G. <i>Short-Course Radiotherapy-Based Total Neoadjuvant Therapy plus Tislelizumab for Locally Advanced Rectal Cancer (Neo-STAR): Early Outcomes of a Randomized Phase II Trial.</i> Cancer Commun (Lond). 2026;46:0041. DOI：<a href="https://doi.org/10.34133/cancomm.0041">10.34133/cancomm.0041</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42495710/">PMID 42495710</a>；PubMed Central：PMC13392285；試驗註冊：ClinicalTrials.gov NCT05086627。本頁內容係<b>依 PubMed 與 PubMed Central 所提供之開放取用全文</b>撰寫。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文文字與表格數值重新繪製的 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未連結、未重製原文或出版社的任何圖檔</b>，全頁不含任何外部資源。凡由原文數字加減乘除得出的數值（絕對百分點差、NNT、次群組 OR 之倒數換算、irAE 合計、ypT3–4 合計、PSM 事件數回推），已在該處就地標註<b>「本頁自行計算」</b>。原文<b>未列出的數值一律標示「原文未列數值」並留白，不做任何推估</b>。英文摘要為逐字引用；中文標題、翻譯、所有解讀、臨床意涵與限制分析均為本頁自行撰寫，不代表原作者立場。</p>
+  <p style="font-size:13px;color:#6b7079"><b>閱讀本頁時請記得：</b>這是一篇<b>單中心、118 人、主要終點未達標</b>的第二期試驗。它值得讀，是因為它問了一個外科醫師真正在意的問題（保肛），而且把安全性資料攤得很開；它<b>還不能改變常規</b>，是因為存活未兌現、族群未外推、檢力不足。<b>正確的引用方式是「第二期訊號」，不是「新標準」。</b></p>
+</section>
+
+<footer>
+  每日大腸直腸外科文獻 · Vol. 009 · 2026 年 8 月 7 日 ｜ 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/42495710/">PubMed</a> 與 PubMed Central 開放取用全文 ｜ 本頁為閱讀輔助，臨床決策請回歸原文與病人個別狀況
+</footer>
+
+</div>
+
+</body>
+</html>

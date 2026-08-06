@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-07</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 7 日 · 週五</span>
+    <span style="opacity:.4">/</span><span>Vol. 008</span>
+  </div>
+  <h1 class="title">「微小輔助切口」內視鏡乳房保留手術（M-E-BCS）vs. 傳統開放式乳房保留手術：中國三家醫學中心、168 人的第三期隨機優越性試驗——18 個月疤痕滿意度 79.9 vs. 61.4 分</h1>
+  <p class="title-en">Minimal incision-assisted endoscopic versus conventional open breast-conserving surgery: A multicentre randomized clinical trial</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">The Breast (Edinburgh, Scotland)<br><span style="color:#6b7079;font-size:13px">2026;89:104876（Elsevier；歐洲乳癌專科學會 EUSOMA 官方期刊）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Qiu M, Dai H, Zhu T, Liang F, Feng Y, Xie Y, Wu H, Luo G, Liu Z, Zhang D（共同通訊）, Yu Y（共同通訊）, Du Z（通訊作者）<br><span style="color:#6b7079;font-size:13px">中國：四川大學華西醫院一般外科／乳腺中心／乳房健康醫學研究所、四川省第四人民醫院一般外科、河南省人民醫院乳腺外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>第三期、開放標籤、多中心、優越性隨機對照試驗（RCT）</b><br><span style="color:#6b7079;font-size:13px">依 CONSORT 報告；中國臨床試驗註冊中心 <b>ChiCTR2200061907</b>；三家醫院倫理審查（華西 [2022]817、四川省第四人民醫院 [2023]02、河南省人民醫院 [2022]169）；<b>依腫瘤位置分層（內側 40%：外側 50%：下方 10%）後以動態分配 1:1 隨機</b>；開放標籤，術前 24 小時內告知術者分組；<b>樣本數以 PASS 15 估算：以 SCAR-Q 差 10 分為優越性界值、單尾 α ＝ 0.05、power 80%、脫落率 10%，需 168 人（84:84）</b>；主要分析採完整病例分析（缺失率低於預設 10%）；SPSS 27</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的不是「內視鏡好不好」，而是「把第二個切口從 2 cm 縮成 2–5 mm，值不值得」</b><br><span style="color:#6b7079;font-size:13px">既往內視鏡乳房保留手術多採<b>雙切口</b>（另加乳房上至少 2 cm 輔助切口），總切口長度與開放手術相當，<b>美觀優勢因此被抵銷</b>；本術式改為<b>單一腋下切口（3–5 cm，隱藏於腋褶）＋ 一個 2–5 mm 的「HUAXI Hole 3」</b>，且該小孔<b>不計入切口數</b></span></div></div>
+    <div class="meta-item"><div class="k">主要終點與追蹤</div><div class="v"><b>術後 18 個月的 SCAR-Q 疤痕外觀滿意度（病人自評）</b><br><span style="color:#6b7079;font-size:13px">2022 年 7 月至 2024 年 9 月收案；資料截止 2026 年 5 月，<b>全部 163 人皆已滿 18 個月</b>；全研究中位追蹤 <b>30.0 個月（範圍 19.0–45.0 個月）</b>；36 與 60 個月時間點仍在追蹤中</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 19 日（PMID 42497645；PMC13418225）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion 完整文字）。<b>原文各 Table 之表格本體未隨全文釋出</b>，本頁僅使用正文中明列的數值</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1016/j.breast.2026.104876">10.1016/j.breast.2026.104876</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42497645/">PMID 42497645 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">乳房外科</span>
+    <span class="tag t2">乳房保留手術 BCS</span>
+    <span class="tag t2">內視鏡乳房手術 E-BCS</span>
+    <span class="tag t2">病人自評結果 SCAR-Q／BREAST-Q</span>
+    <span class="tag t3">證據等級：第三期多中心隨機對照試驗</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">CONSORT 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 163 位早期乳癌病人隨機分成「單一腋下切口 ＋ 一個 2–5 mm 小孔的內視鏡乳房保留手術（M-E-BCS）」與「傳統開放式乳房保留手術（C-O-BCS）」，答案很直接：<strong>美觀與心理層面大幅勝出，手術層面幾乎沒有代價</strong>——術後 18 個月的疤痕滿意度 SCAR-Q <strong>79.9 ± 9.5 vs. 61.4 ± 17.4 分（本頁自行計算 MD ＋18.5 分，95% CI ＋14.1 至 ＋22.9）</strong>，遠超過研究預設的 10 分優越性界值；BREAST-Q 乳房滿意度的<strong>改善幅度</strong>為 ＋17.7 vs. ＋5.4 分（<strong>MD ＋12.3，95% CI ＋6.0 至 ＋18.6</strong>），心理社會健康 ＋10.1 vs. ＋0.1 分（<strong>MD ＋10.0，95% CI ＋3.9 至 ＋16.1</strong>），醫師端的 Ueda 評分「優」比例 <strong>86.5% vs. 57.9%</strong>。代價方面：<strong>總切口長度 4.0 vs. 7.1 cm（少 3.1 cm）</strong>，<strong>手術時間只多 9 分鐘且無統計差異（130.8 vs. 121.8 分鐘，p ＝ 0.167）</strong>，<strong>併發症 11.0% vs. 13.6%（兩組皆無 Clavien–Dindo ≥ III 級的重大併發症）</strong>，<strong>初次切緣陽性率 4.9% vs. 9.9%（全部經一次擴大切除後轉陰）</strong>，<strong>24 小時出院率相當（53.7% vs. 56.8%）</strong>，多花的錢約 <strong>312 美元</strong>。<strong>但五個但書必須同時記住：</strong>（1）<strong>這是開放標籤試驗，而主要終點是病人自評的滿意度</strong>——病人知道自己被分到「幾乎沒有疤」的那一組，<strong>期待效應無法排除，這是本研究最根本的限制</strong>；（2）<strong>三位術者各來自一家醫院、且全部已通過學習曲線</strong>，原文明言無法呈現學習曲線的量化趨勢，<strong>換成剛開始做的人，數字不會是這樣</strong>；（3）<strong>93.3% 的腫瘤位在內側或外側區、43.9% 為 cT2</strong>，原文自己說結論僅適用於這類病人，並<strong>明白不建議用於乳房下方區腫瘤</strong>；（4）<strong>腫瘤學安全性遠未定案</strong>——中位追蹤 30 個月、兩組皆無局部復發與死亡，<strong>但乳癌的復發常在 5 年以後，這個追蹤長度只能說「短期沒問題」</strong>；（5）<strong>本頁以原文所列平均值與標準差重算住院費用的組間比較，得到 p ≈ 0.08，與原文標示的 P < 0.0001 明顯不符</strong>（詳見「數值一致性檢查」），提醒讀者引用該項時保留態度。<strong>實務結論：對於腫瘤 &lt; 3 cm、位於內側或外側區、對外觀在意、願意接受約 300 美元額外成本的早期乳癌病人，這是一個有第三期隨機證據支持的合理選項；但別把它當成腫瘤學上更好的手術，它換到的是「看不到疤」與「心情比較好」，不是「活得更久」。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Compared with conventional open breast-conserving surgery (BCS), conventional endoscopic (E-BCS) mostly involves dual incisions, which provide an insignificant scarring benefit but increase the surgical difficulty and prolong the surgical time. In contrast, the novel minimal incision-assisted E-BCS (M-E-BCS) procedure enables a near-scarless operation with efficient and precise tumour resection through a single axillary incision.</p>
+    <h4>Methods</h4>
+    <p>This is a phase III, open-label, multicentre, superiority, randomized controlled trial conducted in 3 class IIIA hospitals in China. Patients were assigned to M-E-BCS or conventional open BCS (C-O-BCS). The aim was to compare aesthetic outcomes, surgical efficiency, and safety. The primary endpoint was the patient-reported SCAR-Q score for scar appearance satisfaction at 18 months postoperatively. Secondary endpoints included aesthetic outcomes, quality of life (QoL), operative time, complications, and oncologic outcomes.</p>
+    <h4>Results</h4>
+    <p>Overall, 163 patients were analysed, with 82 in the M-E-BCS group and 81 in the C-O-BCS group. The 18-month SCAR-Q score was available for 155 patients (8 missing, 4 per group). M-E-BCS demonstrated superior SCAR-Q scores (79.9 &#177; 9.5 vs. 61.4 &#177; 17.4, P &lt; 0.001), greater improvement in BREAST-Q breast satisfaction (17.7 &#177; 18.2 vs. 5.4 &#177; 21.5, P &lt; 0.001), and better psychosocial well-being (10.1 &#177; 19.2 vs. 0.1 &#177; 19.3, P &#61; 0.001) at 18 months. The physician assessment (Ueda score) showed a higher &#8220;excellent&#8221; rate for M-E-BCS (86.5% vs. 57.9%). Operative time (130.8 &#177; 37.9 vs. 121.8 &#177; 30.5 min, P &#61; 0.167), complication rates (11.0% vs. 13.6%, P &#61; 0.612), and short-term oncologic outcomes were not significantly different between groups. The median follow-up was 30.0 months (range 19.0&#8211;45.0 months). One patient in the C-O-BCS group developed bone metastasis at 5 months, and another developed axillary lymph node recurrence at 17 months. No local recurrence or death occurred in either group.</p>
+    <h4>Conclusion</h4>
+    <p>M-E-BCS significantly improves aesthetic outcomes and QoL compared to C-O-BCS, without compromising surgical efficiency or safety for early-stage breast cancer patients, supporting its clinical adoption.</p>
+    <h4>Trial registration</h4>
+    <p>ChiCTR2200061907.</p>
+    <h4>Highlights（原文所列四點，逐字引用）</h4>
+    <p>&#8226; Novel endoscopic breast conserving surgery uses a hidden armpit incision.<br>
+       &#8226; This method leads to significantly better scar satisfaction and aesthetics.<br>
+       &#8226; Patients report improved psychological well-being and quality of life.<br>
+       &#8226; The technique offers comparable operative time and safety to conventional open surgery.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要與 Highlights 逐字引用，未做任何刪改。<b>值得注意的是措辭的落差</b>：摘要結論寫的是 “significantly improves aesthetic outcomes and QoL … supporting its clinical adoption”，語氣相當肯定；但<b>原文討論段的最後一句自己收得比較緊</b>——「compared with C-O-BCS, M-E-BCS is a safe and effective surgical technique … <b>especially for those with tumours less than 3 cm in size located in the inner and outer regions</b>」，明確把適用範圍限縮。<b>兩者並不矛盾，但引用摘要時容易漏掉那個限制條件。</b>另外，摘要用 “short-term oncologic outcomes were not significantly different” 是誠實的——它<b>沒有</b>宣稱腫瘤學安全性已經確立。中文翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>CONSORT Flow <span class="zh">／ 收案與分析流程（本篇為隨機試驗，非系統性回顧，故繪 CONSORT 而非 PRISMA）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Enrollment 收案（2022 年 7 月至 2024 年 9 月；華西醫院、四川省第四人民醫院、河南省人民醫院）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">168</span> 位符合條件者完成隨機分派<br>
+        <span style="color:#6b7079;font-size:12.5px"><b>依腫瘤位置分層</b>（內側 40%：外側 50%：下方 10%）後以動態分配 1:1 隨機；<b>M-E-BCS 86 人／C-O-BCS 82 人</b>；系統自動產生病人編號、分組與隨機日期</span></div></div>
+      <div class="pr-ex"><b>4 人隨機後排除</b><br>M-E-BCS 組 3 人／C-O-BCS 組 1 人<br><span style="font-size:12px">理由皆為<b>個人要求更換手術方式</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Follow-up 追蹤（術後 2 週、1、3、6、18、36、60 個月；門診或電話）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">164</span> 人進入追蹤（<b>本頁自行計算：168 &#8722; 4 ＝ 164</b>）<br>
+        <span style="color:#6b7079;font-size:12.5px">資料截止 2026 年 5 月；<b>全部個案皆已達 18 個月時間點</b>；36 與 60 個月仍在追蹤中</span></div></div>
+      <div class="pr-ex"><b>1 人失去追蹤</b>（M-E-BCS 組，術後 3 個月）<br><span style="font-size:12px">另有 <b>9 人無術後照片</b>（返回當地醫院接受後續治療，全程以電話追蹤），影響醫師端 Ueda 評分之分母</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Analysis 分析（完整病例分析 complete-case analysis）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">163</span> 人納入最終分析<br>
+        <span style="color:#6b7079;font-size:12.5px"><b>M-E-BCS 82 人／C-O-BCS 81 人</b>（本頁驗算：86 &#8722; 3 &#8722; 1 ＝ 82 ✓；82 &#8722; 1 ＝ 81 ✓；82 ＋ 81 ＝ 163 ✓）</span></div></div>
+      <div class="pr-ex">18 個月病人自評問卷（BREAST-Q／SCAR-Q）<br><b>可分析者 155 人</b>（缺 8 人，<b>兩組各 4 人</b>）<br><span style="font-size:12px">缺失率兩組平衡且低於預設的 10% 脫落率，故未做插補</span></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：全部數字取自原文 Methods 與 Results「From July 2022 to September 2024 …」段落；本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：左框是仍在分析中的人數，右框是該層流失了誰、為什麼。<b>這張流程圖的品質其實相當好</b>——總流失只有 5 人（3.0%），問卷缺失兩組各 4 人完全對稱，不太可能造成偏差。<b>陷阱</b>：（1）<b>4 位「個人要求更換手術方式」者被排除於分析之外，嚴格說這不是意向治療（ITT）分析</b>，而是修正後的完整病例分析；人數少、影響有限，但值得註記；（2）<b>9 位無照片者影響的是醫師端 Ueda 評分</b>——原文<b>未列出 Ueda 評分的實際分母</b>，因此該項的百分比無法回推事件數，本頁不做推估；（3）真正該盯的不是流程圖，而是<b>「主要終點是病人自評、而病人知道自己開了哪一種刀」</b>這件事，流程再乾淨也解決不了。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Baseline &amp; Operative Characteristics <span class="zh">／ 研究特徵表（原文正文所列數值）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:825px">
+    <thead><tr><th>項目</th><th>M-E-BCS（n ＝ 82）</th><th>C-O-BCS（n ＝ 81）</th><th>本頁註記</th></tr></thead>
+    <tbody>
+      <tr><td><b>年齡</b>（平均 ± 標準差）</td><td class="num">48.4 ± 10.4 歲</td><td class="num">47.5 ± 10.9 歲</td><td>平衡</td></tr>
+      <tr><td><b>腫瘤大小</b>（平均 ± 標準差）</td><td class="num">1.9 ± 0.7 cm</td><td class="num">1.7 ± 0.7 cm</td><td>M-E-BCS 略大 0.2 cm</td></tr>
+      <tr><td>腫瘤位於<b>外側區</b></td><td class="num">62.2%（本頁回推 51 人）</td><td class="num">61.7%（本頁回推 50 人）</td><td>平衡</td></tr>
+      <tr><td>腫瘤位於<b>內側區</b></td><td class="num">30.5%（本頁回推 25 人）</td><td class="num">32.1%（本頁回推 26 人）</td><td>平衡</td></tr>
+      <tr><td>腫瘤位於<b>下方區</b></td><td class="num">本頁自行計算：約 7.3%（6 人）</td><td class="num">本頁自行計算：約 6.2%（5 人）</td><td class="ns">原文未直接列出</td></tr>
+      <tr><td>全世代 cT2 比例</td><td colspan="2" class="num">43.9%（原文僅列全體，未分組）</td><td class="ns">原文未列分組數值</td></tr>
+      <tr><td>全世代內／外側區合計</td><td colspan="2" class="num">93.3%（本頁驗算 152/163 ＝ 93.25% ✓）</td><td>結論外推的邊界</td></tr>
+      <tr><td><b>切口設計</b>：單一腋下切口</td><td class="num">82/82（100%）</td><td class="num">0（0%）</td><td>術式定義差異</td></tr>
+      <tr><td>腋下 ＋ 乳暈周圍切口</td><td class="num">—</td><td class="num">42.0%（本頁回推 34 人）</td><td>—</td></tr>
+      <tr><td>腋下 ＋ 腫瘤表面切口</td><td class="num">—</td><td class="num">38.3%（本頁回推 31 人）</td><td>—</td></tr>
+      <tr><td>其餘切口組合</td><td class="num">—</td><td class="num">本頁自行計算：19.7%（16 人）</td><td class="ns">原文未說明其內容</td></tr>
+      <tr><td><b>總切口長度</b></td><td class="num">4.0 ± 0.6 cm</td><td class="num">7.1 ± 1.8 cm</td><td class="sig">P &lt; 0.001（<b>2–5 mm 小孔不計入</b>）</td></tr>
+      <tr><td><b>手術時間</b></td><td class="num">130.8 ± 37.9 分鐘</td><td class="num">121.8 ± 30.5 分鐘</td><td class="ns">P ＝ 0.167（含冷凍切片等待時間）</td></tr>
+      <tr><td><b>24 小時出院率</b></td><td class="num">53.7%（本頁回推 44 人）</td><td class="num">56.8%（本頁回推 46 人）</td><td class="ns">相當</td></tr>
+      <tr><td><b>住院費用</b></td><td class="num">2,148.7 ± 1,225.5 美元</td><td class="num">1,836.9 ± 1,061.3 美元</td><td class="sig">原文 P &lt; 0.0001（<b>本頁重算不符，見下</b>）</td></tr>
+      <tr><td><b>切除腺體重量</b></td><td class="num">47.8 ± 27.3 g</td><td class="num">40.6 ± 19.5 g</td><td class="ns">P ＝ 0.178</td></tr>
+      <tr><td><b>術者</b></td><td colspan="2" class="num">三位，每家醫院各一位，<b>全部已通過學習曲線</b></td><td class="sig">外推的最大限制</td></tr>
+      <tr><td><b>中位追蹤時間</b></td><td class="num">30.5 個月（IQR 25.8–38.0）</td><td class="num">30.0 個月（IQR 26.1–39.0）</td><td>平衡</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>回推說明</b>：原文正文只列百分比、未列人數，本頁以百分比 × 該組人數回推，並驗證回推值可完整還原原百分比（51/82 ＝ 62.20%、50/81 ＝ 61.73%、25/82 ＝ 30.49%、26/81 ＝ 32.10%、34/81 ＝ 41.98%、31/81 ＝ 38.27%、44/82 ＝ 53.66%、46/81 ＝ 56.79%），全部相符，故可視為確定；<b>凡此皆標註為本頁自行計算</b>。<b>納入條件重點</b>：單側第 I–II 期侵襲性乳癌或原位癌、T1–T2（若曾接受前導性化療則以化療後為準）、腫瘤與乳房體積比適合、單一病灶且未侵犯皮膚／皮下組織／胸大肌／乳頭乳暈複合體、接受乳房保留手術與放療。<b>排除條件</b>：多發或多中心病灶、腫瘤 ≥ 5 cm、中央區腫瘤（距乳頭 ≤ 2 cm）、擴大切除後切緣仍持續陽性、放療禁忌、發炎性乳癌、既有乳房皮膚疤痕、<b>BRCA1/2 基因突變</b>。</p>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 主要結果</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">主要終點：18 個月 SCAR-Q</div><div class="big">79.9 vs. 61.4</div><div class="sub">MD ＋18.5 分（＋14.1 至 ＋22.9）；預設優越性界值僅 10 分</div></div>
+    <div class="c teal"><div class="lab">BREAST-Q 乳房滿意度改善</div><div class="big">＋17.7 vs. ＋5.4</div><div class="sub">MD ＋12.3 分（＋6.0 至 ＋18.6），P &lt; 0.001</div></div>
+    <div class="c amber"><div class="lab">手術時間與併發症</div><div class="big">無差異</div><div class="sub">＋9.0 分鐘（p ＝ 0.167）；11.0% vs. 13.6%（p ＝ 0.612）</div></div>
+    <div class="c amber"><div class="lab">腫瘤學結果</div><div class="big">短期無差異</div><div class="sub">中位追蹤 30 個月；<b>不足以判定長期安全性</b></div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 548" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="548" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">連續型結果的平均差 MD（M-E-BCS 減去 C-O-BCS）；每列各自刻度，單位已標於右側</text>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（各列刻度不同）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">平均差 MD（95% CI）</text>
+<line x1="440.0" y1="108.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="104.0" x2="440.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">0</text>
+<line x1="590.0" y1="104.0" x2="590.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">12</text>
+<line x1="740.0" y1="104.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">SCAR-Q 疤痕外觀滿意度（18 個月，主要終點）</text>
+<text x="20.0" y="103.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">79.9 ± 9.5（n＝78）vs. 61.4 ± 17.4（n＝77）｜原文 P &lt; 0.001</text>
+<text x="752.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：分</text>
+<line x1="608.9" y1="90.0" x2="715.1" y2="90.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="608.9" y1="85.5" x2="608.9" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="715.1" y1="85.5" x2="715.1" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="657.5" y="85.5" width="9" height="9" fill="#2f6b62"/>
+<text x="1106.0" y="93.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋18.5 分（14.1 至 22.9）</text>
+<line x1="440.0" y1="174.0" x2="740.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="170.0" x2="440.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">0</text>
+<line x1="590.0" y1="170.0" x2="590.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">12</text>
+<line x1="740.0" y1="170.0" x2="740.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<text x="20.0" y="151.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">BREAST-Q 乳房滿意度「術後 − 術前」變化（18 個月）</text>
+<text x="20.0" y="169.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">＋17.7 ± 18.2 vs. ＋5.4 ± 21.5｜原文 P &lt; 0.001</text>
+<text x="752.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：分</text>
+<line x1="512.3" y1="156.0" x2="662.9" y2="156.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="512.3" y1="151.5" x2="512.3" y2="160.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="662.9" y1="151.5" x2="662.9" y2="160.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="583.1" y="151.5" width="9" height="9" fill="#2f6b62"/>
+<text x="1106.0" y="159.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋12.3 分（6.0 至 18.6）</text>
+<line x1="440.0" y1="240.0" x2="740.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="236.0" x2="440.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">0</text>
+<line x1="590.0" y1="236.0" x2="590.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">12</text>
+<line x1="740.0" y1="236.0" x2="740.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<text x="20.0" y="217.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">BREAST-Q 心理社會健康變化（18 個月）</text>
+<text x="20.0" y="235.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">＋10.1 ± 19.2 vs. ＋0.1 ± 19.3｜原文 P ＝ 0.001</text>
+<text x="752.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：分</text>
+<line x1="487.3" y1="222.0" x2="632.7" y2="222.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="487.3" y1="217.5" x2="487.3" y2="226.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="632.7" y1="217.5" x2="632.7" y2="226.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="555.5" y="217.5" width="9" height="9" fill="#2f6b62"/>
+<text x="1106.0" y="225.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋10.0 分（3.9 至 16.1）</text>
+<line x1="440.0" y1="306.0" x2="740.0" y2="306.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="302.0" x2="440.0" y2="306.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="319.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−5</text>
+<line x1="590.0" y1="302.0" x2="590.0" y2="306.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="319.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="740.0" y1="302.0" x2="740.0" y2="306.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="319.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">1</text>
+<line x1="690.0" y1="273.0" x2="690.0" y2="306.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="283.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">總切口長度</text>
+<text x="20.0" y="301.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4.0 ± 0.6 cm vs. 7.1 ± 1.8 cm｜原文 P &lt; 0.001</text>
+<text x="752.0" y="319.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：公分</text>
+<line x1="514.4" y1="288.0" x2="555.6" y2="288.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="514.4" y1="283.5" x2="514.4" y2="292.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="555.6" y1="283.5" x2="555.6" y2="292.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="530.5" y="283.5" width="9" height="9" fill="#2f6b62"/>
+<text x="1106.0" y="291.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD −3.1 cm（−3.5 至 −2.7）</text>
+<line x1="440.0" y1="372.0" x2="740.0" y2="372.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="368.0" x2="440.0" y2="372.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="385.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−15</text>
+<line x1="590.0" y1="368.0" x2="590.0" y2="372.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="385.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="740.0" y1="368.0" x2="740.0" y2="372.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="385.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<line x1="552.5" y1="339.0" x2="552.5" y2="372.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="349.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">手術時間</text>
+<text x="20.0" y="367.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">130.8 ± 37.9 min vs. 121.8 ± 30.5 min｜原文 P ＝ 0.167</text>
+<text x="752.0" y="385.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：分鐘</text>
+<line x1="540.8" y1="354.0" x2="699.2" y2="354.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="540.8" y1="349.5" x2="540.8" y2="358.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="699.2" y1="349.5" x2="699.2" y2="358.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="615.5" y="349.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="1106.0" y="357.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋9.0 min（−1.6 至 19.6）</text>
+<line x1="440.0" y1="438.0" x2="740.0" y2="438.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="434.0" x2="440.0" y2="438.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="451.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−6</text>
+<line x1="590.0" y1="434.0" x2="590.0" y2="438.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="451.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">6</text>
+<line x1="740.0" y1="434.0" x2="740.0" y2="438.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="451.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">18</text>
+<line x1="515.0" y1="405.0" x2="515.0" y2="438.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="415.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">切除腺體重量</text>
+<text x="20.0" y="433.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">47.8 ± 27.3 g vs. 40.6 ± 19.5 g｜原文 P ＝ 0.178</text>
+<text x="752.0" y="451.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：公克</text>
+<line x1="514.0" y1="420.0" x2="696.0" y2="420.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="514.0" y1="415.5" x2="514.0" y2="424.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="696.0" y1="415.5" x2="696.0" y2="424.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="600.5" y="415.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="1106.0" y="423.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋7.2 g（−0.1 至 14.5）</text>
+<line x1="440.0" y1="504.0" x2="740.0" y2="504.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="500.0" x2="440.0" y2="504.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="517.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−200</text>
+<line x1="590.0" y1="500.0" x2="590.0" y2="504.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="517.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">300</text>
+<line x1="740.0" y1="500.0" x2="740.0" y2="504.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="517.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">800</text>
+<line x1="500.0" y1="471.0" x2="500.0" y2="504.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="481.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">住院費用</text>
+<text x="20.0" y="499.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2148.7 ± 1225.5 vs. 1836.9 ± 1061.3 美元｜原文 P &lt; 0.0001（本頁重算 p ≈ 0.08，不一致）</text>
+<text x="752.0" y="517.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：美元</text>
+<line x1="488.0" y1="486.0" x2="699.1" y2="486.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="488.0" y1="481.5" x2="488.0" y2="490.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="699.1" y1="481.5" x2="699.1" y2="490.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="589.0" y="481.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="1106.0" y="489.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋312 美元（−40 至 664）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>各組平均值與標準差全部取自原文正文；<b>平均差（MD）與 95% 信賴區間為本頁自行計算</b>（原文只給 P 值，未列 MD 與 CI）。計算方式：MD ＝ 兩組平均值相減；標準誤 ＝ √(SD₁²/n₁ ＋ SD₂²/n₂)；CI ＝ MD ± 1.96 × 標準誤。<b>18 個月的三項病人自評結果採實際分析人數 n ＝ 78 與 77</b>（原文載 155 人可分析、兩組各缺 4 人）；<b>手術時間、切口長度、費用、腺體重量採 n ＝ 82 與 81</b>。<b>如何解讀：</b>每一列各自有獨立刻度，單位標示在右端；虛線為 0（無差異）。<b>本圖的重點在前四列與最後一列的對比</b>——前四列（疤痕、乳房滿意、心理社會、切口長度）的信賴區間全部完全避開 0，而且幅度大；<b>後三列（手術時間、腺體重量、費用）的區間全部跨過 0</b>。<b>有何陷阱：</b>（1）<b>SCAR-Q 是絕對分數，BREAST-Q 三項是「術後減術前」的變化量</b>，兩者尺度不同，不可互相比較大小；（2）<b>本頁的 CI 假設兩組變異數獨立且樣本近似常態</b>，對費用這類右偏分布並不理想——這正是本頁重算與原文 P 值不符的可能原因（見下方一致性檢查）；（3）<b>6 個月時間點的實際分析人數原文未列</b>，故 6 個月的 MD 未納入本圖，僅在長條圖中呈現原始分數。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">美觀與生活品質：6 個月與 18 個月（原文所載平均分數；BREAST-Q 為術後減術前之變化量）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">18</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">36</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">54</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">72</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">90</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">分數（分）</text>
+<rect x="84.2" y="123.1" width="42.0" height="194.9" fill="#8a4a3d"/>
+<text x="105.2" y="117.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">73.1</text>
+<rect x="130.2" y="148.1" width="42.0" height="169.9" fill="#2f6b62"/>
+<text x="151.2" y="142.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">63.7</text>
+<text x="128.2" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">SCAR-Q</text>
+<text x="128.2" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">6 個月</text>
+<rect x="216.5" y="104.9" width="42.0" height="213.1" fill="#8a4a3d"/>
+<text x="237.5" y="98.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">79.9</text>
+<rect x="262.5" y="154.3" width="42.0" height="163.7" fill="#2f6b62"/>
+<text x="283.5" y="148.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">61.4</text>
+<text x="260.5" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">SCAR-Q</text>
+<text x="260.5" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">18 個月</text>
+<rect x="348.8" y="278.3" width="42.0" height="39.7" fill="#8a4a3d"/>
+<text x="369.8" y="272.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">14.9</text>
+<rect x="394.8" y="301.7" width="42.0" height="16.3" fill="#2f6b62"/>
+<text x="415.8" y="295.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">6.1</text>
+<text x="392.8" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">BREAST-Q 乳房滿意</text>
+<text x="392.8" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">6 個月</text>
+<rect x="481.2" y="270.8" width="42.0" height="47.2" fill="#8a4a3d"/>
+<text x="502.2" y="264.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">17.7</text>
+<rect x="527.2" y="303.6" width="42.0" height="14.4" fill="#2f6b62"/>
+<text x="548.2" y="297.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.4</text>
+<text x="525.2" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">BREAST-Q 乳房滿意</text>
+<text x="525.2" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">18 個月</text>
+<rect x="613.5" y="296.1" width="42.0" height="21.9" fill="#8a4a3d"/>
+<text x="634.5" y="290.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">8.2</text>
+<rect x="659.5" y="318.0" width="42.0" height="2.5" fill="#2f6b62"/>
+<text x="680.5" y="332.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">−0.9</text>
+<text x="657.5" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">心理社會健康</text>
+<text x="657.5" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">6 個月</text>
+<rect x="745.8" y="291.1" width="42.0" height="26.9" fill="#8a4a3d"/>
+<text x="766.8" y="285.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">10.1</text>
+<rect x="791.8" y="317.7" width="42.0" height="0.3" fill="#2f6b62"/>
+<text x="812.8" y="311.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">0.1</text>
+<text x="789.8" y="356.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">心理社會健康</text>
+<text x="789.8" y="370.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">18 個月</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">M-E-BCS 內視鏡</text>
+<rect x="176.6" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="193.6" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">C-O-BCS 開放</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">注意：SCAR-Q 為絕對分數（0–100），BREAST-Q 三項為「變化量」，兩者不可直接互比</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Results「Aesthetic outcomes and quality of life」段落所列全部平均分數（6 個月與 18 個月），數值皆為原文所載，本頁未做任何轉換。<b>如何解讀：</b>把時間軸攤開來看，會發現兩組的走勢<b>方向相反</b>：M-E-BCS 組從 6 個月到 18 個月<b>持續改善</b>（SCAR-Q 73.1 → 79.9、BREAST-Q ＋14.9 → ＋17.7、心理社會 ＋8.2 → ＋10.1），而 C-O-BCS 組<b>不但沒有改善，還略微退步</b>（63.7 → 61.4、＋6.1 → ＋5.4、−0.93 → ＋0.1）。這符合臨床直覺：<b>腋下的隱藏疤痕會隨時間淡化並被手臂自然遮蔽，乳房上的疤痕則在放療後可能更明顯、且每天照鏡子都看得到。</b><b>有何陷阱：</b>（1）<b>C-O-BCS 組 6 個月的心理社會健康變化是 −0.93 分，也就是比術前還差</b>——這個負值提醒我們，對照組不是「沒有變好」，而是「變差了」，兩組差距有一部分來自對照組的惡化；（2）<b>SCAR-Q（左四根）是 0–100 的絕對分數，BREAST-Q 兩項（右四根）是變化量，圖上高度不可跨組別互比</b>，本圖已在註腳標明；（3）6 個月的實際受訪人數原文未列，缺失可能多於 18 個月。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1155px">
+    <thead><tr><th>結果指標</th><th>M-E-BCS（n ＝ 82）</th><th>C-O-BCS（n ＝ 81）</th><th>效果值（95% CI）</th><th>p 值</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>SCAR-Q 疤痕滿意度（18 個月，主要終點）</b></td><td class="num">79.9 ± 9.5</td><td class="num">61.4 ± 17.4</td><td class="num">MD ＋18.5（＋14.1 至 ＋22.9）*</td><td class="num">&lt; 0.001</td><td><span class="win">達優越性</span></td></tr>
+      <tr><td>SCAR-Q（6 個月）</td><td class="num">73.1 ± 10.8</td><td class="num">63.7 ± 10.9</td><td class="num">MD ＋9.4（＋6.1 至 ＋12.7）*</td><td class="num">&lt; 0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>BREAST-Q 乳房滿意度變化（18 個月）</td><td class="num">＋17.7 ± 18.2</td><td class="num">＋5.4 ± 21.5</td><td class="num">MD ＋12.3（＋6.0 至 ＋18.6）*</td><td class="num">&lt; 0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>BREAST-Q 乳房滿意度變化（6 個月）</td><td class="num">＋14.9 ± 17.1</td><td class="num">＋6.1 ± 21.9</td><td class="num">MD ＋8.8（原文未列 CI）</td><td class="num">0.017</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>心理社會健康變化（18 個月）</td><td class="num">＋10.1 ± 19.2</td><td class="num">＋0.1 ± 19.3</td><td class="num">MD ＋10.0（＋3.9 至 ＋16.1）*</td><td class="num">0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>心理社會健康變化（6 個月）</td><td class="num">＋8.2 ± 17.8</td><td class="num">&#8722;0.93 ± 16.9</td><td class="num">MD ＋9.1（原文未列 CI）</td><td class="num">0.003</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>Ueda 評分「優」（18 個月，醫師端）</td><td class="num">86.5%</td><td class="num">57.9%</td><td class="num">原文未列分母，無法計算</td><td class="num">&lt; 0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td>Ueda 評分「優」（6 個月，醫師端）</td><td class="num">92.6%</td><td class="num">56.3%</td><td class="num">原文未列分母，無法計算</td><td class="num">&lt; 0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td><b>總切口長度</b></td><td class="num">4.0 ± 0.6 cm</td><td class="num">7.1 ± 1.8 cm</td><td class="num">MD &#8722;3.1 cm（&#8722;3.5 至 &#8722;2.7）*</td><td class="num">&lt; 0.001</td><td><span class="win">有利內視鏡</span></td></tr>
+      <tr><td><b>手術時間</b></td><td class="num">130.8 ± 37.9 min</td><td class="num">121.8 ± 30.5 min</td><td class="num">MD ＋9.0 min（&#8722;1.6 至 ＋19.6）*</td><td class="num">0.167</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td><b>任何手術併發症</b></td><td class="num">11.0%（9/82，本頁回推）</td><td class="num">13.6%（11/81，本頁回推）</td><td class="num">RR 0.81（0.35–1.85）*</td><td class="num">0.612</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>重大併發症（Clavien–Dindo ≥ III）</td><td class="num">0</td><td class="num">0</td><td class="num">無法計算（零事件）</td><td class="num">—</td><td><span class="win">兩組皆無</span></td></tr>
+      <tr><td><b>初次切緣陽性</b></td><td class="num">4.9%（4/82，本頁回推）</td><td class="num">9.9%（8/81，本頁回推）</td><td class="num">RR 0.49（0.15–1.58）*</td><td class="num">0.222</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>擴大切除一次後轉陰</td><td colspan="2" class="num">兩組全部（100%）</td><td class="num">—</td><td class="num">—</td><td><span class="win">兩組皆佳</span></td></tr>
+      <tr><td>切除腺體重量</td><td class="num">47.8 ± 27.3 g</td><td class="num">40.6 ± 19.5 g</td><td class="num">MD ＋7.2 g（&#8722;0.1 至 ＋14.5）*</td><td class="num">0.178</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>24 小時出院率</td><td class="num">53.7%（44/82）</td><td class="num">56.8%（46/81）</td><td class="num">原文未列</td><td class="num">原文未列</td><td><span class="win neutral">相當</span></td></tr>
+      <tr><td><b>住院費用</b></td><td class="num">2,148.7 ± 1,225.5 美元</td><td class="num">1,836.9 ± 1,061.3 美元</td><td class="num">MD ＋311.8 美元（&#8722;40 至 ＋664）*</td><td class="num">原文載 &lt; 0.0001</td><td><span class="win caution">重算不符</span></td></tr>
+      <tr><td>局部（乳房）復發</td><td class="num">0</td><td class="num">0</td><td class="num">無法計算（零事件）</td><td class="num">—</td><td><span class="win neutral">追蹤過短</span></td></tr>
+      <tr><td>腋下淋巴結復發</td><td class="num">0</td><td class="num">1 例（術後 17 個月）</td><td class="num">無法計算（零事件格）</td><td class="num">原文未列</td><td><span class="win neutral">追蹤過短</span></td></tr>
+      <tr><td>遠端轉移</td><td class="num">0</td><td class="num">1 例（骨轉移，術後 5 個月）</td><td class="num">無法計算（零事件格）</td><td class="num">原文未列</td><td><span class="win neutral">追蹤過短</span></td></tr>
+      <tr><td>死亡</td><td class="num">0</td><td class="num">0</td><td class="num">無法計算（零事件）</td><td class="num">—</td><td><span class="win neutral">追蹤過短</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px">標示 <b>*</b> 者為<b>本頁自行計算</b>（原文只提供平均值 ± 標準差、百分比與 P 值，未列效果值與信賴區間）。「原文未列」表示該數值在原文正文中找不到，本頁一律留白<b>而不推估</b>——特別是 <b>Ueda 評分的分母</b>（9 位病人無術後照片）與 <b>6 個月時間點的實際受訪人數</b>，兩者都無從得知，因此該兩列不計算效果值。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始數據表與本頁重繪圖</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 236" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="236" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">安全性與腫瘤學結果：本頁自行計算之相對風險 RR（原文只給百分比與 P 值，未列 RR）</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="515.0" y1="60.0" x2="515.0" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="515.0" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="571.7" y1="60.0" x2="571.7" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="571.7" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="628.3" y1="60.0" x2="628.3" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="628.3" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="685.0" y1="60.0" x2="685.0" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="685.0" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="170.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="187.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="628.3" y1="60.0" x2="628.3" y2="170.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（無合併菱形：單一試驗，非統合分析）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">RR（95% CI）——本頁自行計算</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">任何手術併發症（Clavien–Dindo）</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">9/82（11.0%）vs. 11/81（13.6%）｜兩組皆無 ≥ 第 III 級重大併發症｜原文 P ＝ 0.612</text>
+<line x1="543.4" y1="90.0" x2="678.5" y2="90.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="543.4" y1="85.5" x2="543.4" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="678.5" y1="85.5" x2="678.5" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="605.9" y="85.0" width="10.0" height="10.0" fill="#8a6a1f"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.81（0.35–1.85）</text>
+<text x="1106.0" y="104.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算（事件數由原文百分比回推）</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">初次切緣陽性</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4/82（4.9%）vs. 8/81（9.9%）｜全部經一次擴大切除後轉陰｜原文 P ＝ 0.222</text>
+<line x1="475.7" y1="142.0" x2="665.6" y2="142.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="475.7" y1="137.5" x2="475.7" y2="146.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="665.6" y1="137.5" x2="665.6" y2="146.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="565.6" y="137.0" width="10.0" height="10.0" fill="#8a6a1f"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.49（0.15–1.58）</text>
+<text x="1106.0" y="156.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算（事件數由原文百分比回推）</text>
+<text x="620.3" y="210.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利 M-E-BCS（內視鏡）</text>
+<text x="636.3" y="210.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利 C-O-BCS（開放）→</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>事件數由原文所列百分比（11.0%、13.6%、4.9%、9.9%）乘以各組人數回推，回推值皆為整數且可完整還原原百分比（9/82 ＝ 10.98%、11/81 ＝ 13.58%、4/82 ＝ 4.88%、8/81 ＝ 9.88%）；<b>相對風險 RR 與其 95% CI 為本頁自行計算</b>（對數 RR 之標準誤 ＝ √(1/a &#8722; 1/n₁ ＋ 1/b &#8722; 1/n₂)）。<b>如何解讀：</b>橫軸為對數刻度、虛線為無效線 1。<b>本圖刻意不畫合併菱形</b>——這是單一隨機試驗，不是統合分析，畫菱形會誤導讀者以為是合併值。兩條線的方向都偏向內視鏡組，<b>但兩條的 95% CI 都跨過 1</b>，也就是說「內視鏡的併發症與切緣陽性都不比開放手術差」是成立的，但「內視鏡比較好」<b>並沒有被證明</b>。<b>有何陷阱：</b>（1）<b>切緣陽性率 4.9% vs. 9.9% 看起來差一半，但事件數只有 4 例對 8 例</b>——這種量級的差距，光是一兩位病人的分類差異就能翻盤，CI 從 0.15 到 1.58 正說明了這一點；（2）原文自己指出，<b>兩組的切緣陽性率都低於既往乳房保留手術文獻的 10.09–48.43%</b>，這既可能反映術式精準，也可能反映本試驗的病人選得比較好（單一病灶、T1–T2、無皮膚侵犯、排除多中心病灶）；（3）<b>併發症的定義採 Clavien–Dindo，但原文未列出各類併發症的細項</b>（血清腫、感染、皮瓣壞死、乳頭感覺異常、上肢淋巴水腫等），只給總數，<b>這是一個明顯的報告缺口</b>——尤其是內視鏡途徑要在皮下剝離 5–10 cm，理論上血清腫與感覺異常的風險應該不同。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">醫師評分（Ueda「優」比例）與手術面向（原文所載）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">百分比 %</text>
+<rect x="84.2" y="95.8" width="42.0" height="222.2" fill="#8a4a3d"/>
+<text x="105.2" y="89.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">92.6%</text>
+<rect x="130.2" y="182.9" width="42.0" height="135.1" fill="#2f6b62"/>
+<text x="151.2" y="176.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">56.3%</text>
+<text x="128.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Ueda 優</text>
+<text x="128.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">6 個月</text>
+<rect x="216.5" y="110.4" width="42.0" height="207.6" fill="#8a4a3d"/>
+<text x="237.5" y="104.4" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">86.5%</text>
+<rect x="262.5" y="179.0" width="42.0" height="139.0" fill="#2f6b62"/>
+<text x="283.5" y="173.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">57.9%</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Ueda 優</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">18 個月</text>
+<rect x="348.8" y="189.1" width="42.0" height="128.9" fill="#8a4a3d"/>
+<text x="369.8" y="183.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">53.7%</text>
+<rect x="394.8" y="181.7" width="42.0" height="136.3" fill="#2f6b62"/>
+<text x="415.8" y="175.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">56.8%</text>
+<text x="392.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">24 小時</text>
+<text x="392.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">出院率</text>
+<rect x="481.2" y="306.2" width="42.0" height="11.8" fill="#8a4a3d"/>
+<text x="502.2" y="300.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">4.9%</text>
+<rect x="527.2" y="294.2" width="42.0" height="23.8" fill="#2f6b62"/>
+<text x="548.2" y="288.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">9.9%</text>
+<text x="525.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">初次切緣</text>
+<text x="525.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">陽性率</text>
+<rect x="613.5" y="291.6" width="42.0" height="26.4" fill="#8a4a3d"/>
+<text x="634.5" y="285.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">11.0%</text>
+<rect x="659.5" y="285.4" width="42.0" height="32.6" fill="#2f6b62"/>
+<text x="680.5" y="279.4" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">13.6%</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">任何</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">併發症</text>
+<rect x="745.8" y="78.0" width="42.0" height="240.0" fill="#8a4a3d"/>
+<text x="766.8" y="72.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">100.0%</text>
+<rect x="791.8" y="318.0" width="42.0" height="0.0" fill="#2f6b62"/>
+<text x="812.8" y="312.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">0.0%</text>
+<text x="789.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">單一腋下</text>
+<text x="789.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">切口完成率</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">M-E-BCS 內視鏡</text>
+<rect x="176.6" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="193.6" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">C-O-BCS 開放</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">Ueda 評分之分母原文未列數值（9 人無術後照片，全程電話追蹤）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>Ueda 評分「優」比例、24 小時出院率、切緣陽性率、併發症率皆為原文所載百分比；「單一腋下切口完成率」為原文所述之術式定義（M-E-BCS 組 100% 經單一腋下切口完成，C-O-BCS 組則 42.0% 用腋下＋乳暈、38.3% 用腋下＋腫瘤表面切口）。<b>如何解讀：</b>左半是「看得見的好處」，右半是「本來擔心會變差、結果沒有變差的項目」。<b>Ueda 評分是本圖最值得注意的一項</b>——它由三位外科醫師依術後照片獨立評分，屬於<b>醫師端的客觀化評估</b>，方向與病人自評一致（86.5% vs. 57.9%），<b>這在某種程度上緩解了「開放標籤導致病人自評灌水」的疑慮</b>。<b>有何陷阱：</b>（1）<b>但評分的醫師是看照片，照片上腋下切口本來就比乳房切口容易看不見</b>——評分者實質上並未被有效盲化，因為術式從照片就看得出來；（2）<b>Ueda 評分的分母原文未列數值</b>（9 人無照片），本圖只呈現百分比，未回推人數；（3）<b>24 小時出院率兩組相當（53.7% vs. 56.8%）是一個容易被忽略但重要的訊息</b>——它說明內視鏡並未讓病人住得更久，這與「手術時間只多 9 分鐘」是一致的；（4）「單一切口完成率 100% vs. 0%」不是療效指標，是<b>術式定義</b>，放在圖中只為對照，不應解讀為優越性證據。</div>
+  </div>
+
+  <h3>原始事件數與差值表（本頁由原文百分比與分母回推並驗算）</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:825px">
+    <thead><tr><th>項目</th><th>M-E-BCS 事件／人數</th><th>C-O-BCS 事件／人數</th><th>差值（本頁自行計算）</th></tr></thead>
+    <tbody>
+      <tr><td>任何手術併發症</td><td class="num">9 / 82（10.98%）</td><td class="num">11 / 81（13.58%）</td><td class="num">&#8722;2.6 個百分點</td></tr>
+      <tr><td>Clavien–Dindo ≥ III 級</td><td class="num">0 / 82</td><td class="num">0 / 81</td><td class="num">0</td></tr>
+      <tr><td>初次切緣陽性</td><td class="num">4 / 82（4.88%）</td><td class="num">8 / 81（9.88%）</td><td class="num">&#8722;5.0 個百分點</td></tr>
+      <tr><td>24 小時出院</td><td class="num">44 / 82（53.66%）</td><td class="num">46 / 81（56.79%）</td><td class="num">&#8722;3.1 個百分點</td></tr>
+      <tr><td>腫瘤位於外側區</td><td class="num">51 / 82（62.20%）</td><td class="num">50 / 81（61.73%）</td><td class="num">＋0.5 個百分點</td></tr>
+      <tr><td>腫瘤位於內側區</td><td class="num">25 / 82（30.49%）</td><td class="num">26 / 81（32.10%）</td><td class="num">&#8722;1.6 個百分點</td></tr>
+      <tr><td>18 個月問卷可分析人數</td><td class="num">78 / 82</td><td class="num">77 / 81</td><td class="num">兩組各缺 4 人</td></tr>
+      <tr><td>SCAR-Q（18 個月）</td><td class="num">79.9 分</td><td class="num">61.4 分</td><td class="num">MD ＋18.5 分</td></tr>
+      <tr><td>SCAR-Q（6 個月）</td><td class="num">73.1 分</td><td class="num">63.7 分</td><td class="num">MD ＋9.4 分</td></tr>
+      <tr><td>SCAR-Q 6 → 18 個月的變化</td><td class="num">＋6.8 分（改善）</td><td class="num">&#8722;2.3 分（退步）</td><td class="num">走勢相反</td></tr>
+      <tr><td>總切口長度</td><td class="num">4.0 cm</td><td class="num">7.1 cm</td><td class="num">&#8722;3.1 cm（少 43.7%）</td></tr>
+      <tr><td>住院費用</td><td class="num">2,148.7 美元</td><td class="num">1,836.9 美元</td><td class="num">＋311.8 美元（多 17.0%）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <ol class="num">
+    <li><b>人數流向全部通過：</b>86 ＋ 82 ＝ 168 ✓；86 &#8722; 3 &#8722; 1 ＝ 82 ✓；82 &#8722; 1 ＝ 81 ✓；82 ＋ 81 ＝ 163 ✓；18 個月問卷 155 ＝ 163 &#8722; 8，且兩組各缺 4 人 ✓。</li>
+    <li><b>百分比與分母全部相符：</b>62.2%／61.7%／30.5%／32.1%／42.0%／38.3%／53.7%／56.8%／11.0%／13.6%／4.9%／9.9% 全部可由整數事件數完整還原（誤差皆 &lt; 0.05 個百分點）✓。內／外側合計 152/163 ＝ 93.25%，與原文所載 93.3% 相符 ✓。</li>
+    <li><b>主要終點的統計方向可驗證：</b>以 79.9 ± 9.5（n ＝ 78）vs. 61.4 ± 17.4（n ＝ 77）重算，MD ＝ ＋18.5、標準誤 ＝ 2.26、t ≈ 8.20 → <b>p &lt; 0.001，與原文相符</b> ✓。心理社會健康 t ≈ 3.23 → p ≈ 0.001，<b>與原文所載 P ＝ 0.001 完全吻合</b> ✓。BREAST-Q 乳房滿意度 t ≈ 3.84 → p &lt; 0.001 ✓。<b>主要終點的統計檢定通過交叉驗算。</b></li>
+    <li><b>發現的第一處不一致（重要）——住院費用：</b>以原文所列 2,148.7 ± 1,225.5（n ＝ 82）vs. 1,836.9 ± 1,061.3（n ＝ 81）重算，MD ＝ ＋311.8 美元、標準誤 ＝ 179.5、<b>t ≈ 1.74 → p ≈ 0.08</b>，<b>與原文標示的「P &lt; 0.0001」相差極遠</b>。可能的解釋有三：（a）費用分布嚴重右偏，原文改用 Mann–Whitney U 等無母數檢定，而該檢定比較的是分布位置而非平均數；（b）原文表格中的標準差可能實為標準誤或四分位距；（c）排版誤植。<b>本頁無法判定何者為真，因此在圖表中同時呈現重算結果並標註不一致，建議引用該項時保留態度。</b>值得注意的是，<b>原文討論段自己說「絕對差約 300 美元，在臨床脈絡下相當有限」</b>——這個定性描述與「p ≈ 0.08」其實更一致。</li>
+    <li><b>發現的第二處不一致（次要）——切除腺體重量：</b>以 47.8 ± 27.3 vs. 40.6 ± 19.5 重算，t ≈ 1.94 → <b>p ≈ 0.05</b>，原文標示 P ＝ 0.178。差異方向與費用那項相同（重算比原文更「顯著」），<b>同樣可能來自無母數檢定或實際分析人數較少</b>。此項不影響主要結論。</li>
+    <li><b>6 個月時間點的 P 值與重算略有出入，但可被合理解釋：</b>以全數 82／81 重算，6 個月 BREAST-Q 得 p ≈ 0.005（原文載 0.017）、心理社會得 p ≈ 0.001（原文載 0.003）。若 6 個月的實際受訪人數約為 60 人／組，重算結果即與原文吻合。<b>由於原文未列 6 個月的分析人數，本頁不將此列為不一致，只在圖說中註明。</b></li>
+    <li><b>樣本數估算的邏輯自洽：</b>原文以前導世代的 75.2 ± 7.3 vs. 62.3 ± 6.9 估算，設定 10 分為優越性界值、單尾 α ＝ 0.05、power 80%、脫落率 10%，得 168 人。<b>實際觀察到的差距 18.5 分遠大於預設的 10 分界值</b>，因此主要終點以極大的餘裕達標——<b>這也是本試驗最堅實的部分。</b></li>
+    <li><b>一個容易被忽略的定義問題：</b>原文明言「<b>The &#8220;HUAXI Hole 3&#8221; was not counted as an incision</b>」，也就是那個 2–5 mm 的輔助孔<b>不計入切口數與總長度</b>。若把它計入，M-E-BCS 的總切口長度應為 4.0 ＋ 0.2～0.5 ＝ <b>4.2–4.5 cm</b>（本頁自行計算），<b>仍遠短於對照組的 7.1 cm，結論不變</b>；但這個計算慣例應該被明確知道，而不是隱含在方法學細節裡。</li>
+  </ol>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵</span></h2>
+
+  <div class="call teal">
+    <div class="h">誰適合？</div>
+    <p>依本試驗的納入條件與原文自己在結論中畫下的界線，最適合的是：<b>單側第 I–II 期侵襲性乳癌或原位癌、T1–T2 且腫瘤 &lt; 3 cm、單一病灶、腫瘤位於內側或外側區、腫瘤與乳房體積比適合、未侵犯皮膚／皮下／胸大肌／乳頭乳暈複合體、距乳頭 &gt; 2 cm、願意接受術後放療、而且<b>對外觀在意</b>的病人。<b>明確不適合或應審慎的族群：</b>多發或多中心病灶、瀰漫性可疑鈣化、腫瘤 ≥ 5 cm、中央區腫瘤（距乳頭 ≤ 2 cm）、放療禁忌、發炎性乳癌、既有乳房皮膚疤痕、<b>BRCA1/2 基因突變者（本試驗明文排除）</b>。<b>原文另外特別聲明：乳房下方區的腫瘤「not strongly recommended」</b>，除非病人對美觀有極高要求——本試驗中下方區僅約 11 人（本頁自行計算），證據極為薄弱。</p>
+  </div>
+
+  <div class="call teal">
+    <div class="h">換來什麼？</div>
+    <ul class="clean">
+      <li><b>看不到的疤：</b>總切口長度從 7.1 cm 降到 4.0 cm，且<b>乳房與乳頭乳暈上完全沒有切口</b>，唯一的 3–5 cm 切口藏在腋褶內、手臂放鬆時完全遮蔽；2–5 mm 的輔助孔在放療後幾乎看不見。</li>
+      <li><b>疤痕滿意度 ＋18.5 分（0–100 分尺度）：</b>是研究預設優越性界值（10 分）的近兩倍，而且<b>差距隨時間拉大而非縮小</b>。</li>
+      <li><b>心理層面的實質改善：</b>心理社會健康 ＋10.0 分。原文的描述值得引用——隱藏的疤痕讓病人「能自信參與社交活動，甚至忘記自己曾經罹癌」。</li>
+      <li><b>可能保留較好的皮膚與乳頭乳暈感覺：</b>因為乳房表面完全沒有切口。<b>但原文承認尚無系統性、客觀的乳頭乳暈感覺評估方案，這是推論而非實測。</b></li>
+      <li><b>腋下切口的幾何優勢：</b>原文以「三角形兩邊之和大於第三邊」說明——單一腋下切口可以<b>就地完成前哨淋巴結切片或腋下廓清（直視下）</b>，再往病灶方向剝離，總剝離路徑比乳暈或乳下皺褶入路的「雙向剝離」更短。</li>
+    </ul>
+  </div>
+
+  <div class="call amber">
+    <div class="h">代價是什麼？</div>
+    <ul class="clean">
+      <li><b>錢：</b>多約 312 美元（約 17%），主要來自內視鏡器械與單次使用耗材。<b>惟此項的統計顯著性經本頁重算後存疑（見一致性檢查第 4 點）。</b></li>
+      <li><b>時間：</b>多 9 分鐘（無統計差異）。<b>但這是三位已通過學習曲線的術者的成績</b>；原文引述既往內視鏡乳房保留手術的報告是延長 30–50 分鐘。</li>
+      <li><b>更大範圍的皮下剝離：</b>需建立 5–10 cm 的皮下操作空間並灌注 CO₂（12 mmHg、20–40 L/min）。原文明白列出<b>尚未被充分研究的疑慮：同側上肢淋巴水腫、皮膚感覺異常／麻木、肢體活動受限</b>，以及疼痛控制策略與引流管使用率。<b>本試驗未報告這些項目。</b></li>
+      <li><b>技術門檻與可近性：</b>需要內視鏡設備、CO₂ 灌注、手套式單孔平台（wound protector ＋ 手術手套 ＋ trocar），以及術者的學習曲線。<b>本試驗無法告訴你「剛開始做的人」數字會是多少。</b></li>
+      <li><b>熱傷害的風險點：</b>電燒刀經 2–5 mm 小孔進出時，原文強調<b>只能讓絕緣塑膠鞘接觸皮緣</b>，以免熱傷害；切緣附近亦應避免反覆燒灼以減少熱假影影響病理判讀。<b>這是一個具體的技術警訊。</b></li>
+    </ul>
+  </div>
+
+  <div class="call">
+    <div class="h">知情同意怎麼談（可直接使用的口語版本）</div>
+    <p>「你的腫瘤大約 2 公分、位置在外側、只有一個病灶，適合做乳房保留手術。<b>接下來有兩種做法。</b>傳統做法是在乳房上開一個口拿腫瘤、腋下再開一個口做淋巴結，<b>兩個口加起來大約 7 公分，而且乳房上那一道疤會一直看得到。</b>另一種做法是只在腋下開一個 3 到 5 公分的口、藏在腋窩皺褶裡，再在旁邊打一個像原子筆芯那麼細、大約 2 到 5 公厘的小孔，用內視鏡把腫瘤拿掉，<b>乳房表面完全不會有疤。</b><br>
+    <b>有一個 168 人的隨機研究比較過這兩種做法：</b>術後一年半，對疤痕的滿意度是 80 分對 61 分（滿分 100），醫師看照片評為『優』的比例是 87% 對 58%，<b>而且做內視鏡的人滿意度會隨時間愈來愈好，開放手術的反而會退步一點。</b>手術時間只多大概 9 分鐘，併發症、切緣要不要再切、住院時間都<b>差不多</b>，兩組都沒有嚴重併發症。<br>
+    <b>但我必須把三件事講清楚：</b>第一，<b>這個手術不會讓你活得比較久，也沒有證據說腫瘤控制得比較好</b>——目前追蹤兩年半，兩組都沒有乳房局部復發，<b>但乳癌的復發常常在五年以後，這個時間還不夠長</b>；第二，<b>費用大概多三百美元左右</b>，而且需要在皮下做比較大範圍的剝離，<b>上肢淋巴水腫、皮膚麻木這些問題目前研究還沒有仔細評估</b>；第三，<b>這個結果來自三位經驗豐富的醫師</b>，做的都是位在內側或外側、三公分以下的腫瘤，<b>如果腫瘤在乳房下方，這個做法就不建議。</b><br>
+    <b>簡單說：如果你很在意胸前有沒有疤、腫瘤條件也合適，這是一個有好證據支持的選擇；如果你最在意的是腫瘤本身治得好不好，兩種做法目前看起來是一樣的，不必為此多花錢。</b>」</p>
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>開放標籤 ＋ 病人自評主要終點，這是結構性的問題。</b>病人知道自己被分到「幾乎沒有疤」的那一組，SCAR-Q 與 BREAST-Q 都是主觀量表。<b>期待效應無法排除，也無法事後校正。</b>唯一的緩衝是醫師端的 Ueda 評分方向一致——<b>但評分者看的是照片，從照片就看得出術式，實質上也沒有被盲化。</b></li>
+    <li><b>三位術者、每院一位、全部已通過學習曲線。</b>原文自己列為限制，明言無法呈現技術熟練度提升與臨床結果改善的量化趨勢。<b>這代表本試驗的手術時間、併發症、切緣陽性率都是「最佳狀況」的數字。</b></li>
+    <li><b>族群窄，原文自己畫了界線。</b>43.9% 為 cT2、93.3% 位於內側或外側區，<b>作者明言結論「更適用於符合上述特徵的病人」</b>，並<b>不建議用於乳房下方區</b>。下方區在本試驗中僅約 11 人（本頁自行計算），無從評估。</li>
+    <li><b>腫瘤學安全性遠未定案。</b>中位追蹤 30 個月、兩組皆無局部復發與死亡。<b>但乳癌的局部復發與遠端轉移高峰常在術後 5 年甚至更久</b>，原文也承認「longer-term follow-up is still needed」。<b>36 與 60 個月的資料才是真正的答案。</b></li>
+    <li><b>零事件與極少事件充斥。</b>局部復發 0 vs. 0、死亡 0 vs. 0、重大併發症 0 vs. 0、遠端轉移 0 vs. 1、腋下復發 0 vs. 1。<b>這些格子完全無法做統計推論</b>，本頁因此不計算任何相對風險，也不做連續性校正——<b>因為在這個追蹤長度下，「沒有事件」本身就沒有資訊量。</b></li>
+    <li><b>併發症只報總數，未報細項。</b>原文只給 11.0% vs. 13.6% 與「無 ≥ III 級」，<b>沒有列出血清腫、血腫、感染、皮瓣壞死、乳頭乳暈缺血、上肢淋巴水腫、皮膚感覺異常的個別發生率</b>。這對一個「需要更大範圍皮下剝離」的新術式來說，<b>是最需要而恰恰缺席的資料</b>——原文自己也把這些列為「require more comprehensive investigation」。</li>
+    <li><b>非嚴格的意向治療分析。</b>4 位隨機後「個人要求更換手術方式」者被排除於分析之外。人數少、兩組不對稱程度低（3 vs. 1），影響有限，<b>但技術上這是修正後的完整病例分析，不是 ITT</b>。</li>
+    <li><b>費用的統計檢定與本頁重算不符（p ≈ 0.08 vs. 原文 P &lt; 0.0001）。</b>詳見一致性檢查第 4 點。<b>不影響主要結論，但提醒該項數字不宜直接引用。</b></li>
+    <li><b>手術時間的定義偏寬。</b>包含冷凍切片等待時間與標本運送時間，而<b>等待冷凍切片期間術者是在做腺體縫合</b>——原文自承「無法分步驟精確評估腫瘤切除時間」。因此「只多 9 分鐘」這個數字<b>低估了純內視鏡操作的額外耗時，也可能高估了對手術室週轉的實際影響</b>，兩個方向都要留意。</li>
+    <li><b>單一國家、單一醫療體系。</b>三家中國三甲醫院，24 小時出院率超過五成——<b>這個「日間手術」模式本身就與台灣的實作習慣不同</b>，成本比較與住院天數的外推需謹慎。</li>
+    <li><b>成本效益未評估。</b>只比了住院費用，<b>沒有納入器械攤提、學習曲線期間的額外成本、再手術率、長期併發症的處置成本</b>，也沒有做效用值（QALY）分析。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>乳房保留手術 <span class="en">Breast-conserving surgery, BCS</span></dt><dd>切除腫瘤與周邊安全距離、保留大部分乳房，術後併行放射治療；為早期乳癌的主流術式。</dd></div>
+      <div class="gl-row"><dt>傳統開放式乳房保留手術 <span class="en">Conventional open BCS, C-O-BCS</span></dt><dd>直視下經乳房切口切除腫瘤，另經腋下切口做淋巴結手術；本試驗之對照組。</dd></div>
+      <div class="gl-row"><dt>內視鏡乳房保留手術 <span class="en">Endoscopic BCS, E-BCS</span></dt><dd>以內視鏡經隱蔽切口完成腫瘤切除；<b>既往多採雙切口</b>，美觀優勢有限。</dd></div>
+      <div class="gl-row"><dt>微小輔助切口內視鏡乳房保留手術 <span class="en">Minimal incision-assisted E-BCS, M-E-BCS</span></dt><dd>本試驗之試驗組術式：<b>單一腋下切口（3–5 cm）＋ 一個 2–5 mm 輔助孔（「HUAXI Hole 3」）</b>。</dd></div>
+      <div class="gl-row"><dt>微創乳房手術 <span class="en">Minimal access breast surgery, MABS</span></dt><dd>內視鏡或機器人輔助之乳房手術總稱。</dd></div>
+      <div class="gl-row"><dt>逆序內視鏡保留乳頭乳房切除術 <span class="en">Reverse-sequence endoscopic nipple-sparing mastectomy, R-E-NSM</span></dt><dd>同一團隊先前發展的術式，以 CO₂ 灌注取代拉鉤建立操作空間。</dd></div>
+      <div class="gl-row"><dt>直接置入植入物乳房重建 <span class="en">Direct-to-implant breast reconstruction, DIBR</span></dt><dd>乳房切除同時一次置入永久性植入物，不經組織擴張器。</dd></div>
+      <div class="gl-row"><dt>闊背肌肌皮瓣 <span class="en">Latissimus dorsi muscle flap, LDMF</span></dt><dd>取背部闊背肌轉位重建乳房的自體組織皮瓣。</dd></div>
+      <div class="gl-row"><dt>乳頭乳暈複合體 <span class="en">Nipple–areolar complex, NAC</span></dt><dd>乳頭與乳暈的合稱；經乳暈切口有造成其缺血或壞死之風險。</dd></div>
+      <div class="gl-row"><dt>前哨淋巴結切片 <span class="en">Sentinel lymph node biopsy, SLNB</span></dt><dd>只切除最先引流的淋巴結以評估腋下狀態，避免全面廓清的併發症。</dd></div>
+      <div class="gl-row"><dt>腋下淋巴結廓清 <span class="en">Axillary lymph node dissection, ALND</span></dt><dd>系統性切除腋下淋巴結；淋巴水腫等併發症較多。</dd></div>
+      <div class="gl-row"><dt>腫瘤整形手術 <span class="en">Oncoplastic surgery</span></dt><dd>在腫瘤切除的同時，以腺體皮瓣旋轉或整形縫合重塑乳房外形。</dd></div>
+      <div class="gl-row"><dt>切緣 <span class="en">Surgical margin</span></dt><dd>切除標本邊緣是否有癌細胞；陽性者需擴大切除。本試驗以術中冷凍切片評估。</dd></div>
+      <div class="gl-row"><dt>術中冷凍切片 <span class="en">Intraoperative frozen section</span></dt><dd>手術當下快速冰凍染色判讀，用以即時決定是否需擴大切除。</dd></div>
+      <div class="gl-row"><dt>熱假影 <span class="en">Thermal artifact</span></dt><dd>電燒造成的組織熱變性，會干擾切緣的病理判讀；原文特別提醒切緣附近應避免反覆燒灼。</dd></div>
+      <div class="gl-row"><dt>導線定位 <span class="en">Wire localization</span></dt><dd>術前在超音波導引下置入定位導線，用以標示無法觸診的病灶。</dd></div>
+      <div class="gl-row"><dt>亞甲藍 <span class="en">Methylene blue</span></dt><dd>本術式用以在皮下五個點標示預定切除範圍（各距病灶邊緣約 1 cm）的染劑。</dd></div>
+      <div class="gl-row"><dt>傷口保護套 <span class="en">Wound protector</span></dt><dd>撐開並保護切口的環狀裝置；本術式以 60 mm 保護套配合手術手套自製單孔平台。</dd></div>
+      <div class="gl-row"><dt>套管 <span class="en">Trocar</span></dt><dd>供內視鏡與器械進出的通道管。</dd></div>
+      <div class="gl-row"><dt>鈦夾 <span class="en">Titanium clip</span></dt><dd>置於術後腔隙邊緣作為放射治療加強照野的定位標記。</dd></div>
+      <div class="gl-row"><dt>SCAR-Q 量表</dt><dd>經驗證的<b>病人自評疤痕外觀滿意度</b>量表（0–100 分，分數愈高愈滿意）；本試驗之主要終點。</dd></div>
+      <div class="gl-row"><dt>BREAST-Q 量表</dt><dd>經驗證的乳房手術病人自評量表，含<b>乳房滿意度、心理社會健康、身體健康、性健康</b>等面向；本試驗分析的是<b>術後減術前的變化量</b>。</dd></div>
+      <div class="gl-row"><dt>Ueda 評分 <span class="en">Ueda score</span></dt><dd><b>醫師端</b>依術後乳房照片評定的美觀分級；本試驗由三位外科醫師獨立評分。</dd></div>
+      <div class="gl-row"><dt>病人自評結果 <span class="en">Patient-reported outcome, PRO</span></dt><dd>直接由病人填答、不經醫師轉譯的結果測量。</dd></div>
+      <div class="gl-row"><dt>Clavien–Dindo 分級 <span class="en">Clavien–Dindo classification, CDC</span></dt><dd>術後併發症嚴重度分級；<b>≥ III 級</b>代表需手術、內視鏡或放射線介入。本試驗兩組皆為 0。</dd></div>
+      <div class="gl-row"><dt>優越性試驗 <span class="en">Superiority trial</span></dt><dd>設計目的為證明新介入「優於」對照，與非劣性試驗（non-inferiority）的統計假設方向相反。</dd></div>
+      <div class="gl-row"><dt>優越性界值 <span class="en">Superiority margin</span></dt><dd>事前設定「大到有臨床意義」的差距；本試驗設為 SCAR-Q 10 分。</dd></div>
+      <div class="gl-row"><dt>開放標籤 <span class="en">Open-label</span></dt><dd>受試者與研究者皆知曉分組；<b>當主要終點為主觀量表時，是重要的偏差來源</b>。</dd></div>
+      <div class="gl-row"><dt>完整病例分析 <span class="en">Complete-case analysis</span></dt><dd>只分析資料完整者，不做插補；在缺失率低且兩組平衡時可接受。</dd></div>
+      <div class="gl-row"><dt>意向治療分析 <span class="en">Intention-to-treat, ITT</span></dt><dd>依原分派分析所有隨機受試者；本試驗因排除 4 位換術式者，<b>嚴格說並非完整 ITT</b>。</dd></div>
+      <div class="gl-row"><dt>動態分配 <span class="en">Dynamic allocation</span></dt><dd>依既有分組情形即時調整分派機率以維持組間平衡的隨機方法。</dd></div>
+      <div class="gl-row"><dt>平均差 <span class="en">Mean difference, MD</span></dt><dd>兩組連續型結果平均值之差，保留原始單位（本頁計算單位為分、公分、分鐘、公克、美元）。</dd></div>
+      <div class="gl-row"><dt>相對風險 <span class="en">Risk ratio, RR</span></dt><dd>兩組事件率之比；RR &lt; 1 代表試驗組風險較低。</dd></div>
+      <div class="gl-row"><dt>信賴區間 <span class="en">Confidence interval, CI</span></dt><dd>對效果值不確定性的區間估計；跨過無效值（MD 的 0、RR 的 1）即代表未達統計顯著。</dd></div>
+      <div class="gl-row"><dt>CONSORT 準則</dt><dd>隨機對照試驗的標準報告規範。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Qiu M, Dai H, Zhu T, Liang F, Feng Y, Xie Y, Wu H, Luo G, Liu Z, Zhang D, Yu Y, Du Z. <i>Minimal incision-assisted endoscopic versus conventional open breast-conserving surgery: A multicentre randomized clinical trial.</i> The Breast. 2026;89:104876. DOI：<a href="https://doi.org/10.1016/j.breast.2026.104876">10.1016/j.breast.2026.104876</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42497645/">PMID 42497645</a>；PubMed Central：PMC13418225；試驗註冊：中國臨床試驗註冊中心 ChiCTR2200061907。本頁內容係<b>依 PubMed 與 PubMed Central 所提供之開放取用全文</b>撰寫。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文文字所載數值重新繪製的 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未連結、未重製原文或出版社的任何圖檔</b>（原文的手術步驟照片、CONSORT 流程圖、病例照片與圖表本體均未使用），全頁不含任何外部資源。<b>需特別說明的是</b>：原文各 Table 的表格本體未隨 PubMed Central 全文釋出，因此本頁所用數值<b>全部取自原文正文中明確寫出的數字</b>；凡正文未寫出者（Ueda 評分之分母、6 個月的實際受訪人數、併發症細項、cT 分期的分組人數）一律標示<b>「原文未列數值」並留白，不做任何推估</b>。凡由原文數字加減乘除得出者（平均差、95% 信賴區間、相對風險、事件數回推、絕對百分點差、百分比變化），已在該處就地標註<b>「本頁自行計算」</b>。英文摘要與 Highlights 為逐字引用；中文標題、翻譯、所有解讀、臨床意涵與限制分析均為本頁自行撰寫，不代表原作者立場。</p>
+  <p style="font-size:13px;color:#6b7079"><b>閱讀本頁時請記得：</b>這是一篇<b>方法學紮實、主要終點以大幅餘裕達標</b>的第三期隨機試驗——樣本數估算合理、分層隨機、多中心、追蹤完整度高、統計可被交叉驗算。它的弱點不在執行，而在<b>設計上無法迴避的開放標籤 ＋ 主觀主要終點</b>，以及<b>腫瘤學追蹤長度不足</b>。<b>正確的引用方式是「內視鏡乳房保留手術在美觀與生活品質上有第三期隨機證據支持，且短期安全性與腫瘤學結果不劣於開放手術」；不正確的引用方式是「內視鏡乳房保留手術比較好」。</b></p>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 008 · 2026 年 8 月 7 日 ｜ 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/42497645/">PubMed</a> 與 PubMed Central 開放取用全文 ｜ 本頁為閱讀輔助，臨床決策請回歸原文與病人個別狀況
+</footer>
+
+</div>
+
+</body>
+</html>
