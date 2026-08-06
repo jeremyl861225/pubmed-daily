@@ -11,7 +11,7 @@
  */
 const CACHE_PREFIX = 'pubmed-daily-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1';
-const BUILD = '60ca9c5855d7';
+const BUILD = '2e68bccbd213';
 
 const PRECACHE_URLS = [
   './',
@@ -41,10 +41,12 @@ const PRECACHE_URLS = [
   './papers/pubmed-gs-gi-2026-08-06.html',
   './papers/pubmed-gs-peds-2026-08-03.html',
   './papers/pubmed-gs-txp-2026-08-02.html',
+  './papers/pubmed-gs-txp-2026-08-05.html',
   './papers/pubmed-mis-2026-07-31.html',
   './papers/pubmed-mis-2026-08-04.html',
   './papers/pubmed-periop-2026-07-30.html',
   './papers/pubmed-periop-2026-08-03.html',
+  './papers/pubmed-periop-2026-08-05.html',
 ];
 
 // 安裝：預先快取全部檔案（含每一篇論文），讓 App 可完全離線閱讀

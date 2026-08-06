@@ -601,5 +601,64 @@
 
 </div>
 
+<!-- daily-lit-toolbar -->
+<style>
+  /* left:50% 的固定定位元素可用寬度只剩一半視窗，不給 width:max-content 按鈕文字會被折行 */
+  .dl-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));
+    z-index:9999;display:flex;align-items:center;gap:8px;
+    width:max-content;max-width:calc(100vw - 24px);}
+  .dl-bar .dl-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:40px;
+    border:0;border-radius:20px;background:rgba(27,28,30,.9);color:#fff;cursor:pointer;
+    font:600 14px/1 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;
+    text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.22);
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+  .dl-bar .dl-back{padding:0 18px;}
+  .dl-bar .dl-fav,.dl-bar .dl-top{width:40px;font-size:17px;padding:0;}
+  .dl-bar .dl-fav[aria-pressed="true"]{background:#8a4a3d;}
+  .dl-bar .dl-btn:active{opacity:.75;}
+  .dl-bar .dl-top[hidden]{display:none;}
+  @media print{.dl-bar{display:none;}}
+</style>
+<div class="dl-bar" data-paper-id="pubmed-gs-txp-2026-08-05">
+  <a class="dl-btn dl-back" href="../index.html">&#8592; 文獻列表</a>
+  <button type="button" class="dl-btn dl-fav" aria-pressed="false" aria-label="加入精選">&#9734;</button>
+  <button type="button" class="dl-btn dl-top" aria-label="回到最上面" hidden>&#8593;</button>
+</div>
+<script>
+(function () {
+  var bar = document.currentScript.previousElementSibling;
+  var id = bar.getAttribute('data-paper-id');
+  var fav = bar.querySelector('.dl-fav');
+  var top = bar.querySelector('.dl-top');
+
+  function read() {
+    try { return JSON.parse(localStorage.getItem('dl-favs')) || []; } catch (e) { return []; }
+  }
+  function paint(list) {
+    var on = list.indexOf(id) !== -1;
+    fav.setAttribute('aria-pressed', String(on));
+    fav.innerHTML = on ? '&#9733;' : '&#9734;';
+    fav.setAttribute('aria-label', on ? '取消精選' : '加入精選');
+  }
+  paint(read());
+
+  fav.addEventListener('click', function () {
+    var list = read();
+    var i = list.indexOf(id);
+    if (i === -1) { list.push(id); } else { list.splice(i, 1); }
+    try { localStorage.setItem('dl-favs', JSON.stringify(list)); } catch (e) {}
+    paint(list);
+  });
+
+  top.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  // 捲過一屏才出現，免得一開頁就擋住內文
+  window.addEventListener('scroll', function () {
+    top.hidden = window.pageYOffset < 400;
+  }, { passive: true });
+})();
+</script>
+<!-- /daily-lit-toolbar -->
 </body>
 </html>
