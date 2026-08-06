@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-05</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 5 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 008</span>
+  </div>
+  <h1 class="title">網膜成形術（omentoplasty）能不能防止大腸直腸吻合處滲漏？8 篇研究、5,330 人的系統性回顧與統合分析——整體滲漏沒有降低，但「有臨床症狀」的滲漏降了三分之二</h1>
+  <p class="title-en">Omentoplasty to Prevent Anastomotic Leak in Colorectal Anastomosis: A Systematic Review and Meta-Analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Cureus（Journal of Medical Science）<br><span style="color:#6b7079;font-size:13px">2026;18(7):e112138（Springer Nature 旗下之開放取用期刊；<b>同儕審查標準較主流外科期刊寬鬆，引用時宜註明</b>）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Dias LM, Pereira Filho VL, Barros WS, Pereira BF（通訊作者）等<br><span style="color:#6b7079;font-size:13px">原文全文之作者署名僅以縮寫呈現於方法學段落（L.M.D.、V.L.P.F.、W.S.B.、B.F.P.）；<b>完整作者名單原文未於本頁可取得之全文中列出</b></span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧 ＋ 隨機效應統合分析（同時納入隨機試驗與觀察性研究）</b><br><span style="color:#6b7079;font-size:13px">依 Cochrane 手冊與 PRISMA 執行；<b>前瞻性註冊 PROSPERO CRD42024552817</b>；檢索 PubMed、Scopus、Cochrane Library 自建庫至 2024 年 7 月 1 日；兩位審閱者以 Rayyan 獨立篩選、第三位仲裁；DerSimonian–Laird 隨機效應模型；二元結果用 OR、連續型用 MD；Cochran Q 與 I²（p &lt; 0.10 或 I² &gt; 25% 視為顯著異質）；<b>做留一法敏感度分析</b>；RCT 用 RoB 2、觀察性研究用 ROBINS-I；GRADE 評證據確定性；R 4.3.3</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的是「把網膜拉下來包住吻合口，到底防不防得住滲漏」</b><br><span style="color:#6b7079;font-size:13px">網膜富含血管與免疫組織（milky spots 含巨噬細胞與淋巴聚集），理論上<b>既可機械性覆蓋、又能局限細菌污染</b>；本篇最重要的貢獻，是把<b>「防止滲漏發生」與「限制滲漏後果」拆開來看</b></span></div></div>
+    <div class="meta-item"><div class="k">與前一篇統合分析的差異</div><div class="v"><b>刻意擴大納入範圍，同時也帶進了混淆</b><br><span style="color:#6b7079;font-size:13px">最近一篇由 Sahebally 等人所做的統合分析<b>只納入 4 篇 RCT、1,067 人</b>，結論是 OMP 顯著降低吻合處滲漏；本篇<b>加入觀察性研究後樣本擴大到 5,330 人，結論反而變成「整體滲漏沒有差異」</b></span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 6 日（PMID 42535046；PMC13422579）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 開放取用全文（含 Introduction／Methods／Results／Discussion 與 Table 1–3 完整內容）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.7759/cureus.112138">10.7759/cureus.112138</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42535046/">PMID 42535046 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">周術期照護與併發症</span>
+    <span class="tag t2">吻合處滲漏 Anastomotic leak</span>
+    <span class="tag t2">網膜成形術 Omentoplasty</span>
+    <span class="tag t2">GRADE 證據確定性</span>
+    <span class="tag t3">證據等級：4 篇 RCT ＋ 4 篇觀察性研究之統合分析</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 8 篇研究（4 篇隨機試驗 ＋ 4 篇觀察性研究）、5,330 位接受大腸直腸吻合的病人合併起來，網膜成形術（omentoplasty, OMP）給出的是一個<strong>非常特別、也非常容易被誤讀的結果</strong>：<strong>整體吻合處滲漏沒有顯著降低（OR 0.61，95% CI 0.33–1.12，p ＝ 0.11，I² ＝ 56%）、影像上才看得到的滲漏也沒有（OR 0.77，0.40–1.47），但「有臨床症狀、需要處理」的滲漏卻顯著少了三分之二（OR 0.35，95% CI 0.15–0.81，p ＝ 0.01，I² ＝ 0%）</strong>。作者對這個分離現象的解釋很有說服力：<strong>網膜可能不是在「防止吻合口漏」，而是在「漏了以後把它包起來」</strong>——限制腸內容物在腹腔擴散、削弱腹膜炎與敗血症的臨床表現。除此之外，<strong>再手術（OR 0.63，0.37–1.08）、死亡（OR 0.78，0.33–1.86）、術後感染（OR 1.19，0.75–1.87）、失血、住院天數、手術時間全部沒有差異</strong>。<strong>但四個必須同時記住的但書：</strong>（1）<strong>那個唯一顯著的結果，建立在 8 例 vs. 24 例、總共 32 個事件、3 篇研究之上</strong>，GRADE 因此只給「低」——原文自己在結論裡就寫了「should be interpreted with caution」；（2）<strong>證據極度不穩</strong>——留一法顯示，<strong>只要抽掉 Ozben 那篇 2,891 人的資料庫研究，整體滲漏就會翻成顯著有利 OMP（OR 0.49，0.28–0.88）</strong>；抽掉 Nasiri 那篇，術後感染會翻成<strong>顯著有利「不做」OMP（OR 1.42，1.04–1.96）</strong>；抽掉佔 64.8% 權重的 Merad 那篇，再手術會逼近顯著（OR 0.41，0.17–1.01）。<strong>三個結果、三種翻盤方式</strong>；（3）<strong>本頁自行計算發現三處「粗事件率與合併估計方向相反」</strong>——整體滲漏的粗 OR 為 1.05、死亡的粗 OR 為 2.33、感染的粗 OR 為 0.76，都與合併值方向不一致（詳見一致性檢查），這是隨機效應加權與研究規模懸殊造成的，<strong>提醒讀者不要把「總人數 5,330」誤當成證據強度</strong>；（4）<strong>手術技術本身完全沒有標準化</strong>——原文明言各研究對「網膜怎麼放、要不要縫、包幾面、蒂多長」的描述南轅北轍，而且多數根本沒寫。<strong>實務結論：這篇不足以支持「常規對所有大腸直腸吻合加做網膜成形」，但它提供了一個合理且低成本的選項——當你面對的是高風險的低位骨盆吻合、網膜條件又允許時，把網膜拉下來蓋住吻合口，最可能換到的不是「不會漏」，而是「萬一漏了，比較不會變成腹膜炎」。這個假說值得一個專門針對低位直腸吻合的隨機試驗來檢驗，而原文的結語正是這麼寫的。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Anastomotic leakage (AL) increases morbidity and mortality in colonic and rectal surgery. Omentoplasty (OMP), the use of a pedicled flap from the omentum to shield the anastomotic site, has been proposed as a potential method to prevent this complication. This study aims to evaluate the effectiveness of OMP in reducing the incidence of AL and its clinical repercussions.</p>
+    <h4>Methods</h4>
+    <p>We searched PubMed, Scopus, and the Cochrane Library for randomized controlled trials (RCTs) and observational studies comparing OMP and non-omentoplasty (n-OMP) in colonic and rectal surgeries. Mean differences (MDs) were computed for continuous outcomes and odds ratios (ORs) for binary endpoints, with 95% confidence intervals (CIs). Heterogeneity was assessed using I&#178; statistics. Statistical analysis was performed using R software, version 4.3.3 (R Foundation for Statistical Computing, Vienna, Austria).</p>
+    <h4>Results</h4>
+    <p>Eight studies (four RCTs and four observational studies) involving a total of 5,330 patients were included, with 806 patients (15%) in the OMP group and 4,524 patients (85%) in the n-OMP group. Clinical AL, reported in three studies that distinguished leak type, was significantly reduced in the OMP group (OR 0.35; 95% CI 0.15-0.81; p=0.01; I&#178;=0). There were no significant differences in overall AL (OR 0.61; 95% CI 0.33-1.12; p=0.11; I&#178;=56%), radiological AL (OR 0.77; 95% CI 0.40-1.47; p=0.42; I&#178;=0%), reoperation rates (OR 0.63; 95% CI 0.37-1.08; p=0.09; I&#178;=0%), mortality (OR 0.78; 95% CI 0.33-1.86; p=0.58; I&#178;=25%), or postoperative infection rates.</p>
+    <h4>Conclusions</h4>
+    <p>OMP was not associated with a significant reduction in overall or radiological AL. Clinical AL, however, was significantly lower in the OMP group, a finding drawn from a small subset of studies that may point to a role for OMP in containing the consequences of a leak rather than preventing it outright. No significant differences were observed in reoperation rates, mortality, or postoperative infection rates. Given the heterogeneity and inclusion of observational data, further RCTs are needed to confirm these findings.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用，未做任何刪改。<b>這份摘要的自制值得肯定</b>：唯一達到統計顯著的結果（臨床性滲漏），作者在摘要結論裡就主動加上 “drawn from a small subset of studies” 與 “may point to”，並明白說明其可能機轉是 <b>“containing the consequences of a leak rather than preventing it outright”</b>——<b>這正是本篇最重要、也最容易在二手引用中被抹掉的一句話。</b>中文標題、翻譯、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程（依原文 Results 之文字敘述重繪）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（PubMed、Scopus、Cochrane Library；自建庫至 2024 年 7 月 1 日）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">3827</span> 筆紀錄經檢索 identified<br>
+        <span style="color:#6b7079;font-size:12.5px">檢索式為（“Rectal Cancer Surgery” OR “Colorectal Surgery” OR “Intestinal Resection” OR “Colorectal Resection” OR “Colon Surgery” OR “Rectal Resection” OR “Anastomosis Leak”）AND（“Omentoplasty” OR “Omental Pedicled Flap” OR “Omental Pedicle Flap” OR “Epiploplasty” OR “Colorectal Anastomosis” OR “Rectal Anastomosis” OR “Colon Anastomosis”）；另人工回溯納入研究與既往回顧之參考文獻</span></div></div>
+      <div class="pr-ex">去除重複與題目／摘要初篩排除<br><b>本頁自行計算：3,827 &#8722; 15 ＝ 3,812 筆</b><br><span style="font-size:12px">原文僅寫「After duplicate removal and title and abstract screening, 15 full-text studies met the prespecified eligibility criteria」，<b>未分別列出重複筆數與初篩排除筆數</b>（原文未列數值，僅見於原文 Figure 1 影像，本頁不推估）</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">15</span> 篇全文納入資格評讀<br>
+        <span style="color:#6b7079;font-size:12.5px">由兩位審閱者（L.M.D. 與 V.L.P.F.）以 Rayyan 軟體獨立篩選，歧異由第三位（B.F.P.）仲裁</span></div></div>
+      <div class="pr-ex"><b>本頁自行計算：15 &#8722; 8 ＝ 7 篇</b>經全文評讀後排除<br><span style="font-size:12px"><b>各排除理由的篇數原文未列數值。</b>原文所列排除條件為：非大腸直腸手術；未做吻合之大腸直腸手術；缺乏對照組或對照組不適當；不適合的出版型式（個案報告、會議摘要、統合分析、回顧、動物實驗）；無法向通訊作者取得原始資料</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入定量合成</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">8</span> 篇研究、<span class="n">5330</span> 位病人<br>
+        <span style="color:#6b7079;font-size:12.5px"><b>4 篇隨機對照試驗 ＋ 4 篇觀察性研究</b>；來自六個國家（法國、伊朗、義大利、荷蘭、巴基斯坦、美國）；OMP 組 <b>806 人（15.1%）</b>／n-OMP 組 <b>4,524 人（84.9%）</b>；單篇規模自 51 人（Klaver 等）至 2,891 人（Ozben 等）</span></div></div>
+      <div class="pr-ex">各結果實際貢獻資料的篇數／人數不同：<br>整體滲漏 <b>6 篇 / 4,426 人</b><br>影像性與臨床性滲漏 <b>各 3 篇 RCT / 943 人</b><br>再手術 <b>4 篇 / 3,834 人</b>；死亡 <b>6 篇 / 4,426 人</b><br>術後感染 <b>5 篇 / 5,041 人</b><br>失血 <b>2 篇</b>；住院天數 <b>3 篇</b>；手術時間 <b>3 篇</b></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：3,827、15、8、5,330、806、4,524 皆取自原文 Results「Study Selection and Characteristics」段落；中間各階段的分項數字<b>原文未列數值</b>，本頁只做總數相減並標明為自行計算。本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：左框是仍在流程中的研究，右框是該階段被排除的部分。<b>陷阱</b>：這張流程圖最該注意的<b>不是篩選過程，而是最後一層右框</b>——<b>「5,330 人」這個數字沒有任何一個結果真正用到</b>。最大的結果（術後感染）用了 5,041 人，而<b>本篇唯一顯著的結果（臨床性滲漏）只用了 943 人、32 個事件</b>。當一篇統合分析的標題寫著「5,330 patients」，你要問的第一個問題永遠是：<b>「你那個結論用到了其中幾個人？」</b></p>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵表（原文 Table 2 完整內容）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1485px">
+    <thead><tr><th>研究（年）</th><th>設計／國家</th><th>人數 OMP／n-OMP</th><th>疾病</th><th>吻合部位</th><th>平均年齡 OMP／n-OMP</th><th>術式（開腹／腹腔鏡）</th><th>吻合方式（釘合／手縫）</th></tr></thead>
+    <tbody>
+      <tr><td><b>Merad 等（1998）</b></td><td>前瞻性 RCT／法國</td><td class="num">341／364</td><td>癌症、良性腫瘤、克隆氏症、憩室疾病</td><td>迴結腸、大腸直腸、迴腸直腸</td><td class="num">66／66</td><td class="num">原文未列</td><td class="num">41.7%／58.3%</td></tr>
+      <tr><td><b>Tocchi 等（2000）</b></td><td>前瞻性 RCT／義大利</td><td class="num">53／59</td><td>直腸腺癌</td><td>大腸直腸吻合</td><td class="num">64.3／65.2</td><td class="num">100%／0%</td><td class="num">100%／0%</td></tr>
+      <tr><td><b>Agnifili 等（2004）</b></td><td>前瞻性 RCT／義大利</td><td class="num">62／64</td><td>癌症、良性腫瘤、憩室疾病等</td><td>大腸直腸吻合</td><td class="num">64／61</td><td class="num">100%／0%</td><td class="num">100%／0%</td></tr>
+      <tr><td>Klaver 等（2008）</td><td>回溯性世代／荷蘭</td><td class="num">31／20</td><td>直腸癌</td><td>大腸直腸吻合與 APR</td><td class="num">62.8／66.6</td><td class="num">原文未列</td><td class="num">原文未列</td></tr>
+      <tr><td>Ozben 等（2016）</td><td>前瞻性世代／美國</td><td class="num">65／403</td><td>直腸癌</td><td>大腸直腸吻合</td><td class="num">59.2／59.6</td><td class="num">67.5%／32.5%</td><td class="num">88.5%／11.5%</td></tr>
+      <tr><td><b>Nasiri 等（2017）</b></td><td>前瞻性 RCT／伊朗</td><td class="num">62／62</td><td>癌症、腸阻塞或穿孔、迴腸造口關閉、大腸無力、腸繫膜缺血</td><td class="sig">迴迴腸、迴結腸、結結腸（<b>完全不含直腸／低位骨盆吻合</b>）</td><td class="num">51.8／54.1</td><td class="num">100%／0%</td><td class="num">原文未列</td></tr>
+      <tr><td>Ozben 等（2018）</td><td>回溯性世代／美國</td><td class="num">86／2,805</td><td>大腸直腸癌、憩室炎、發炎性腸道疾病等</td><td>大腸直腸吻合</td><td class="num">60.0／60.2</td><td class="num">32.4%／67.6%</td><td class="num">原文未列</td></tr>
+      <tr><td>Ali 等（2024）</td><td>回溯性世代／巴基斯坦</td><td class="num">106／747</td><td>惡性腫瘤、良性腫瘤、憩室疾病</td><td>大腸直腸吻合（腹膜反折以下）</td><td class="num">58.9／58.5</td><td class="num">23.4%／52.6%</td><td class="num">83.7%／8.6%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>粗體者為隨機對照試驗。</b>「原文未列」表示原文 Table 2 該欄位標示為 NA 或未提供，本頁一律留白<b>而不推估</b>；Ali 等與 Ozben 等之術式百分比合計不足 100%，原文註明「其餘資料缺失或歸為其他」。<b>術中漏氣測試（air leak test）的執行率</b>僅 Agnifili（100% 執行）、Merad（陰性 73.3%／陽性 6%／未執行 20.7%）、Ali（陰性 59.1%／陽性 3.9%／未執行 27.5%）三篇有資料，其餘<b>原文未列數值</b>。<b>本表最該注意的一列是 Nasiri 等（2017）</b>：它是唯一<b>完全不含直腸或低位骨盆吻合</b>的研究——而低位吻合正是滲漏風險最高、也是網膜理論上最有用的地方。原文自己在討論中指出，把這種基線風險完全不同的吻合合併在一起，<b>很可能稀釋掉了 OMP 在高風險骨盆吻合上的保護效果</b>。而巧的是，留一法顯示<b>抽掉 Nasiri 這篇，術後感染的結論就翻盤</b>。</p>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 主要結果森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c amber"><div class="lab">整體吻合處滲漏</div><div class="big">無差異</div><div class="sub">OR 0.61（0.33–1.12），p ＝ 0.11；I² ＝ 56%；GRADE 低</div></div>
+    <div class="c teal"><div class="lab">臨床性滲漏（有症狀）</div><div class="big">OR 0.35</div><div class="sub">95% CI 0.15–0.81，p ＝ 0.01；但僅 32 個事件；GRADE 低</div></div>
+    <div class="c amber"><div class="lab">影像性滲漏（無症狀）</div><div class="big">無差異</div><div class="sub">OR 0.77（0.40–1.47）；<b>本篇唯一 GRADE 中等的結果</b></div></div>
+    <div class="c amber"><div class="lab">再手術／死亡／感染</div><div class="big">全部無差異</div><div class="sub">且三者皆在留一法下不穩定</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 496" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="496" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">網膜成形術（OMP）vs. 不做網膜成形（n-OMP）：七個二元結果的合併勝算比（對數刻度，無效線 ＝ 1）</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="491.4" y1="60.0" x2="491.4" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="491.4" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="530.3" y1="60.0" x2="530.3" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="530.3" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="569.2" y1="60.0" x2="569.2" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="569.2" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="608.1" y1="60.0" x2="608.1" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="608.1" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="659.5" y1="60.0" x2="659.5" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="659.5" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="698.4" y1="60.0" x2="698.4" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="698.4" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">30</text>
+<line x1="569.2" y1="60.0" x2="569.2" y2="430.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果指標（證據基礎與 GRADE 確定性）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">OR（95% CI）——原文所載</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">整體吻合處滲漏 Overall AL</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">6 篇／4,426 人｜40/669 vs. 214/3,757｜I² ＝ 56%｜GRADE：低</text>
+<line x1="507.0" y1="90.0" x2="575.5" y2="90.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="507.0" y1="85.5" x2="507.0" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="575.5" y1="85.5" x2="575.5" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 532.5 90.0 L 541.5 83.5 L 550.5 90.0 L 541.5 96.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.61（0.33–1.12），p ＝ 0.11</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">影像性滲漏 Radiological AL</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇 RCT／943 人｜17/456 vs. 24/487｜I² ＝ 0%｜GRADE：中等</text>
+<line x1="517.8" y1="142.0" x2="590.8" y2="142.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="517.8" y1="137.5" x2="517.8" y2="146.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="590.8" y1="137.5" x2="590.8" y2="146.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 545.5 142.0 L 554.5 135.5 L 563.5 142.0 L 554.5 148.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.77（0.40–1.47），p ＝ 0.42</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">臨床性滲漏 Clinical AL</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇 RCT／943 人｜8/456 vs. 24/487｜I² ＝ 0%｜GRADE：低</text>
+<line x1="462.7" y1="194.0" x2="557.4" y2="194.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="462.7" y1="189.5" x2="462.7" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="557.4" y1="189.5" x2="557.4" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 501.3 194.0 L 510.3 187.5 L 519.3 194.0 L 510.3 200.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.35（0.15–0.81），p ＝ 0.01</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">再手術 Reoperation</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇／3,834 人｜21/542 vs. 176/3,292｜I² ＝ 0%｜GRADE：低</text>
+<line x1="513.4" y1="246.0" x2="573.5" y2="246.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="513.4" y1="241.5" x2="513.4" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="573.5" y1="241.5" x2="573.5" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 534.3 246.0 L 543.3 239.5 L 552.3 246.0 L 543.3 252.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.63（0.37–1.08），p ＝ 0.09</text>
+<text x="20.0" y="292.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">整體死亡 Overall mortality</text>
+<text x="20.0" y="309.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">6 篇／4,426 人｜20/669 vs. 49/3,757｜I² ＝ 25%｜GRADE：低</text>
+<line x1="507.0" y1="298.0" x2="604.0" y2="298.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="507.0" y1="293.5" x2="507.0" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="604.0" y1="293.5" x2="604.0" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 546.2 298.0 L 555.2 291.5 L 564.2 298.0 L 555.2 304.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="296.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.78（0.33–1.86），p ＝ 0.58</text>
+<text x="20.0" y="344.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">腹腔併發症所致死亡</text>
+<text x="20.0" y="361.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇｜10/19 vs. 11/24 例死亡（分母為死亡數而非人數）｜I² ＝ 53%｜GRADE：極低</text>
+<line x1="445.3" y1="350.0" x2="748.8" y2="350.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="445.3" y1="345.5" x2="445.3" y2="354.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="748.8" y1="345.5" x2="748.8" y2="354.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 588.6 350.0 L 597.6 343.5 L 606.6 350.0 L 597.6 356.5 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="348.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.66（0.11–24.58），p ＝ 0.71</text>
+<text x="20.0" y="396.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後感染 Postoperative infection</text>
+<text x="20.0" y="413.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">5 篇／5,041 人｜61/660 vs. 520/4,381｜I² ＝ 50%｜GRADE：低</text>
+<line x1="553.0" y1="402.0" x2="604.3" y2="402.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="553.0" y1="397.5" x2="553.0" y2="406.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="604.3" y1="397.5" x2="604.3" y2="406.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 569.9 402.0 L 578.9 395.5 L 587.9 402.0 L 578.9 408.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="400.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.19（0.75–1.87），p ＝ 0.46</text>
+<text x="561.2" y="470.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利網膜成形 OMP</text>
+<text x="577.2" y="470.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利不做 n-OMP →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>全部 OR、95% CI、p 值、I² 與事件數皆取自原文 Results 各段落與 Table 3（GRADE 摘要表），本頁未做任何轉換。<b>如何解讀：</b>橫軸為對數刻度，虛線為無效線 1，<b>菱形代表合併估計值</b>（本篇為統合分析，故使用菱形）。<b>本圖真正的訊息藏在第二列與第三列的對比</b>：影像性滲漏（無症狀、只在顯影或電腦斷層上看得到）OR 0.77 跨過 1，臨床性滲漏（腹膜炎、糞便或膿性引流、敗血症）OR 0.35 明確落在 1 的左邊——<b>而且兩者用的是同樣那 3 篇隨機試驗、同樣 943 位病人</b>。<b>有何陷阱：</b>（1）<b>「臨床性滲漏」這個顯著結果只有 32 個事件（8 vs. 24）</b>，GRADE 因此以「非常嚴重的不精確」降兩級到「低」——在這種事件數下，<b>只要多兩三個病人被歸到另一邊，顯著性就會消失</b>；（2）<b>倒數第二列「腹腔併發症所致死亡」的分母不是人數而是死亡數</b>（10/19 vs. 11/24），區間橫跨 200 倍以上，GRADE 評為「極低」，實質上等於<b>沒有資訊</b>，本頁保留它只是為了完整呈現；（3）<b>唯一 GRADE 給到「中等」的是影像性滲漏，而它是個陰性結果</b>——換句話說，<b>本篇最可信的一句話，是「網膜並不會減少滲漏本身」</b>，而不是那個看起來很漂亮的 OR 0.35。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 284" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="284" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">連續型結果的合併平均差 MD（OMP 減去 n-OMP）；每列各自刻度，單位標於右側</text>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（各列刻度不同）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">平均差 MD（95% CI）</text>
+<line x1="440.0" y1="108.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="104.0" x2="440.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−40</text>
+<line x1="590.0" y1="104.0" x2="590.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">20</text>
+<line x1="740.0" y1="104.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="540.0" y1="75.0" x2="540.0" y2="108.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術中失血量</text>
+<text x="20.0" y="103.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2 篇觀察性研究｜n ＝ 171 vs. 1,150｜I² ＝ 0%｜GRADE：極低</text>
+<text x="752.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：毫升 mL</text>
+<line x1="503.1" y1="90.0" x2="674.2" y2="90.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="503.1" y1="85.5" x2="503.1" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="674.2" y1="85.5" x2="674.2" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="584.1" y="85.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="1106.0" y="93.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD ＋19.46 mL（−14.78 至 ＋53.70），p ＝ 0.27</text>
+<line x1="440.0" y1="174.0" x2="740.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="170.0" x2="440.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−8</text>
+<line x1="590.0" y1="170.0" x2="590.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="740.0" y1="170.0" x2="740.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">8</text>
+<line x1="590.0" y1="141.0" x2="590.0" y2="174.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="151.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">住院天數</text>
+<text x="20.0" y="169.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇｜n ＝ 179 vs. 2,889｜I² ＝ 96%（極高）｜GRADE：極低</text>
+<text x="752.0" y="187.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：天</text>
+<line x1="465.3" y1="156.0" x2="690.5" y2="156.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="465.3" y1="151.5" x2="465.3" y2="160.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="690.5" y1="151.5" x2="690.5" y2="160.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="573.3" y="151.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="1106.0" y="159.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD −0.65 天（−6.65 至 ＋5.36），p ＝ 0.83</text>
+<line x1="440.0" y1="240.0" x2="740.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="236.0" x2="440.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−35</text>
+<line x1="590.0" y1="236.0" x2="590.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="740.0" y1="236.0" x2="740.0" y2="240.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">30</text>
+<line x1="601.5" y1="207.0" x2="601.5" y2="240.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="217.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">手術時間</text>
+<text x="20.0" y="235.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇｜n ＝ 224 vs. 1,209｜I² ＝ 80%（高）｜GRADE：極低</text>
+<text x="752.0" y="253.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：分鐘</text>
+<line x1="471.4" y1="222.0" x2="702.1" y2="222.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="471.4" y1="217.5" x2="471.4" y2="226.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="702.1" y1="217.5" x2="702.1" y2="226.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="582.2" y="217.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="1106.0" y="225.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">MD −3.21 分（−28.20 至 ＋21.78），p ＝ 0.80</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>三個連續型結果的 MD、95% CI、p 值、I² 與貢獻人數皆取自原文 Results 與 Table 3。<b>如何解讀：</b>每列各自有獨立刻度，單位標示在右端；虛線為 0（無差異）。三條區間全部跨過 0，代表<b>加做網膜成形不會讓手術變久、也不會多流血</b>——這對「要不要多做這一步」的實務決策其實是好消息。<b>有何陷阱：</b>（1）<b>住院天數的 I² ＝ 96%、手術時間的 I² ＝ 80%</b>，原文自己明言「these pooled MDs do not represent a common underlying effect and should be interpreted with caution rather than as summary estimates of a consistent treatment effect」——<b>這兩條線在統計上其實不該被畫成一個合併值</b>，本頁畫出來是為了呈現原文所報，讀者應把它們讀成「無法合併」而非「無差異」；（2）<b>留一法顯示，抽掉 Agnifili 那篇，住院天數會反轉成顯著有利「不做」OMP（MD ＋1.89 天，0.32–3.46，I² 降到 0%）</b>——也就是說，96% 的異質性幾乎全來自一篇研究；（3）失血量只有 2 篇觀察性研究、共 1,321 人，GRADE 極低。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表（含原文 Table 3 之 GRADE 評等與絕對效果）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1320px">
+    <thead><tr><th>結果指標</th><th>人數（篇數）</th><th>OMP 事件／n-OMP 事件</th><th>效果值（95% CI）</th><th>p／I²</th><th>絕對效果（原文 GRADE 表）</th><th>GRADE</th></tr></thead>
+    <tbody>
+      <tr><td><b>整體吻合處滲漏</b></td><td class="num">4,426（6 篇）</td><td class="num">40/669 vs. 214/3,757</td><td class="num">OR 0.61（0.33–1.12）</td><td class="num">0.11／56%</td><td class="num">每千人少 21 例（少 37 至多 6）</td><td><span class="win neutral">低 Low</span></td></tr>
+      <tr><td>影像性滲漏（無臨床症狀）</td><td class="num">943（3 篇 RCT）</td><td class="num">17/456 vs. 24/487</td><td class="num">OR 0.77（0.40–1.47）</td><td class="num">0.42／0%</td><td class="num">每千人少 11 例（少 29 至多 22）</td><td><span class="win">中等 Moderate</span></td></tr>
+      <tr><td><b>臨床性滲漏（有症狀）</b></td><td class="num">943（3 篇 RCT）</td><td class="num">8/456 vs. 24/487</td><td class="num">OR 0.35（0.15–0.81）</td><td class="num">0.01／0%</td><td class="num">每千人少 32 例（少 42 至少 9）</td><td><span class="win neutral">低 Low</span></td></tr>
+      <tr><td>再手術</td><td class="num">3,834（4 篇）</td><td class="num">21/542 vs. 176/3,292</td><td class="num">OR 0.63（0.37–1.08）</td><td class="num">0.09／0%</td><td class="num">每千人少 19 例（少 33 至多 4）</td><td><span class="win neutral">低 Low</span></td></tr>
+      <tr><td>整體死亡</td><td class="num">4,426（6 篇）</td><td class="num">20/669 vs. 49/3,757</td><td class="num">OR 0.78（0.33–1.86）</td><td class="num">0.58／25%</td><td class="num">每千人少 3 例（少 9 至多 11）</td><td><span class="win neutral">低 Low</span></td></tr>
+      <tr><td>腹腔併發症所致死亡</td><td class="num">43 例死亡（3 篇）</td><td class="num">10/19 vs. 11/24（<b>分母為死亡數</b>）</td><td class="num">OR 1.66（0.11–24.58）</td><td class="num">0.71／53%</td><td class="num">族群層級無法估計</td><td><span class="win caution">極低 Very low</span></td></tr>
+      <tr><td>術後感染（含淺層／深層 SSI、腹腔內感染）</td><td class="num">5,041（5 篇）</td><td class="num">61/660 vs. 520/4,381</td><td class="num">OR 1.19（0.75–1.87）</td><td class="num">0.46／50%</td><td class="num">每千人多 19 例（少 27 至多 83）</td><td><span class="win neutral">低 Low</span></td></tr>
+      <tr><td>術中失血量</td><td class="num">1,321（2 篇觀察性）</td><td class="num">n ＝ 171 vs. 1,150</td><td class="num">MD ＋19.46 mL（−14.78 至 ＋53.70）</td><td class="num">0.27／0%</td><td class="num">—</td><td><span class="win caution">極低 Very low</span></td></tr>
+      <tr><td>住院天數</td><td class="num">3,068（3 篇）</td><td class="num">n ＝ 179 vs. 2,889</td><td class="num">MD −0.65 天（−6.65 至 ＋5.36）</td><td class="num">0.83／<b>96%</b></td><td class="num">—</td><td><span class="win caution">極低 Very low</span></td></tr>
+      <tr><td>手術時間</td><td class="num">1,433（3 篇）</td><td class="num">n ＝ 224 vs. 1,209</td><td class="num">MD −3.21 分（−28.20 至 ＋21.78）</td><td class="num">0.80／<b>80%</b></td><td class="num">—</td><td><span class="win caution">極低 Very low</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>原文 GRADE 降級理由（Table 3 註腳，逐條翻譯）：</b>整體滲漏因「混合 RCT 與觀察性證據、4 篇 RCT 中有 2 篇為 RoB 2『some concerns』、觀察性研究皆為 ROBINS-I『moderate』（主因為殘餘混淆）」降一級，另因「I² ＝ 56%，且剔除 Ozben 後方向改變」再降；影像性滲漏因「3 篇僅 41 個事件」之不精確降一級；<b>臨床性滲漏因「雖達統計顯著，但 3 篇僅 32 個事件，屬於證據基礎極有限的訊號」降兩級</b>；再手術因「由佔 64.8% 權重的 Merad 主導，而其中 70% 的再手術與吻合處滲漏無關」以偏差／間接性降級；腹腔併發症死亡因「CI 橫跨超過 200 倍、僅 19 與 24 例死亡」降到最低；住院天數與手術時間因「I² ＝ 96% 與 80% 之極嚴重不一致，合併估計不代表共同效果」降兩級。<b>整份表格只有一個結果拿到「中等」，而它是陰性的。</b></p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始數據表與本頁重繪圖</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">本頁自行計算的「粗事件率」：注意它與合併勝算比的方向並不一致</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">3</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">6</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">8</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">11</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">14</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">粗事件率 %</text>
+<rect x="84.2" y="215.5" width="42.0" height="102.5" fill="#8a4a3d"/>
+<text x="105.2" y="209.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">6.0%</text>
+<rect x="130.2" y="220.3" width="42.0" height="97.7" fill="#2f6b62"/>
+<text x="151.2" y="214.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.7%</text>
+<text x="128.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">整體滲漏</text>
+<text x="128.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">40/669 vs. 214/3757</text>
+<rect x="216.5" y="254.1" width="42.0" height="63.9" fill="#8a4a3d"/>
+<text x="237.5" y="248.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">3.7%</text>
+<rect x="262.5" y="233.5" width="42.0" height="84.5" fill="#2f6b62"/>
+<text x="283.5" y="227.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">4.9%</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">影像性滲漏</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">17/456 vs. 24/487</text>
+<rect x="348.8" y="288.0" width="42.0" height="30.0" fill="#8a4a3d"/>
+<text x="369.8" y="282.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">1.8%</text>
+<rect x="394.8" y="233.5" width="42.0" height="84.5" fill="#2f6b62"/>
+<text x="415.8" y="227.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">4.9%</text>
+<text x="392.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">臨床性滲漏</text>
+<text x="392.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">8/456 vs. 24/487</text>
+<rect x="481.2" y="251.7" width="42.0" height="66.3" fill="#8a4a3d"/>
+<text x="502.2" y="245.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">3.9%</text>
+<rect x="527.2" y="226.3" width="42.0" height="91.7" fill="#2f6b62"/>
+<text x="548.2" y="220.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.3%</text>
+<text x="525.2" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">再手術</text>
+<text x="525.2" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">21/542 vs. 176/3292</text>
+<rect x="613.5" y="266.7" width="42.0" height="51.3" fill="#8a4a3d"/>
+<text x="634.5" y="260.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">3.0%</text>
+<rect x="659.5" y="295.7" width="42.0" height="22.3" fill="#2f6b62"/>
+<text x="680.5" y="289.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">1.3%</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">整體死亡</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">20/669 vs. 49/3757</text>
+<rect x="745.8" y="159.6" width="42.0" height="158.4" fill="#8a4a3d"/>
+<text x="766.8" y="153.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">9.2%</text>
+<rect x="791.8" y="114.5" width="42.0" height="203.5" fill="#2f6b62"/>
+<text x="812.8" y="108.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">11.9%</text>
+<text x="789.8" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">術後感染</text>
+<text x="789.8" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">61/660 vs. 520/4381</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">OMP 網膜成形術</text>
+<rect x="159.4" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="176.4" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">n-OMP 不做網膜成形</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">全部為本頁自行計算（事件數 ÷ 人數 × 100），非原文所載</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>事件數與人數取自原文各結果段落，<b>百分比全部為本頁自行計算（事件數 ÷ 人數 × 100），原文未以此形式呈現</b>。<b>如何解讀：</b>這張圖故意畫的是<b>「不加權的粗事件率」</b>，用來和上面的合併勝算比對照。三處對得起來（影像性滲漏、臨床性滲漏、再手術），<b>三處對不起來</b>。<b>有何陷阱——這正是本圖存在的理由：</b>（1）<b>整體滲漏</b>：粗事件率 OMP 5.98% vs. n-OMP 5.70%，本頁自行計算的<b>粗 OR ＝ 1.05（略偏向 OMP 較差）</b>，但合併 OR 是 <b>0.61</b>；（2）<b>整體死亡</b>：粗事件率 2.99% vs. 1.30%，<b>粗 OR ＝ 2.33（OMP 死亡率是對照的兩倍以上）</b>，但合併 OR 是 <b>0.78</b>；（3）<b>術後感染</b>：粗事件率 9.24% vs. 11.87%，<b>粗 OR ＝ 0.76（偏向 OMP 較好）</b>，但合併 OR 是 <b>1.19</b>。<b>三處方向都反了。</b>這不是誰算錯——隨機效應模型是<b>依各研究的精確度加權後再合併</b>，當單篇規模從 51 人到 2,891 人相差 57 倍、而各研究的基線風險又差很多時，<b>「把所有人倒在一起算」與「把各研究的效果加權平均」本來就會給出不同答案</b>（統計上稱為 Simpson 悖論的一種表現）。<b>合併估計才是統合分析的正確讀法，粗率不是</b>；但這三處反轉提醒我們一件事：<b>當你看到「5,330 人」時，那個數字並沒有站在合併估計的背後替它撐腰。</b></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 444" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="444" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">留一法敏感度分析：三個結果只要抽掉一篇研究，結論就改變（原文所載）</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="515.0" y1="60.0" x2="515.0" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="515.0" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="571.7" y1="60.0" x2="571.7" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="571.7" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="628.3" y1="60.0" x2="628.3" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="628.3" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="685.0" y1="60.0" x2="685.0" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="685.0" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="378.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="395.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="628.3" y1="60.0" x2="628.3" y2="378.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（原始估計 vs. 剔除單篇後）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">OR（95% CI）——原文所載</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">整體滲漏（原始估計）</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">6 篇全數納入｜I² ＝ 56%</text>
+<line x1="537.7" y1="90.0" x2="637.6" y2="90.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="537.7" y1="85.5" x2="537.7" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="637.6" y1="85.5" x2="637.6" y2="94.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 578.9 90.0 L 587.9 83.5 L 596.9 90.0 L 587.9 96.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.61（0.33–1.12）</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">整體滲漏（剔除 Ozben 等）</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">轉為統計顯著、異質性降到 I² ＝ 34%</text>
+<line x1="524.2" y1="142.0" x2="617.9" y2="142.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="524.2" y1="137.5" x2="524.2" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="617.9" y1="137.5" x2="617.9" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 561.0 142.0 L 570.0 135.5 L 579.0 142.0 L 570.0 148.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.49（0.28–0.88）</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">再手術（原始估計）</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇全數納入｜I² ＝ 0%</text>
+<line x1="547.0" y1="194.0" x2="634.6" y2="194.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="547.0" y1="189.5" x2="547.0" y2="198.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="634.6" y1="189.5" x2="634.6" y2="198.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 581.6 194.0 L 590.6 187.5 L 599.6 194.0 L 590.6 200.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.63（0.37–1.08）</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">再手術（剔除 Merad 等）</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">Merad 佔 64.8% 權重，且其中 70% 再手術與滲漏無關</text>
+<line x1="483.4" y1="246.0" x2="629.2" y2="246.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="483.4" y1="241.5" x2="483.4" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="629.2" y1="241.5" x2="629.2" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 546.4 246.0 L 555.4 239.5 L 564.4 246.0 L 555.4 252.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.41（0.17–1.01）</text>
+<text x="20.0" y="292.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後感染（原始估計）</text>
+<text x="20.0" y="309.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">5 篇全數納入｜I² ＝ 50%</text>
+<line x1="604.8" y1="298.0" x2="679.6" y2="298.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="604.8" y1="293.5" x2="604.8" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="679.6" y1="293.5" x2="679.6" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 633.6 298.0 L 642.6 291.5 L 651.6 298.0 L 642.6 304.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="296.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.19（0.75–1.87）</text>
+<text x="20.0" y="344.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後感染（剔除 Nasiri 等）</text>
+<text x="20.0" y="361.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">方向反轉並達顯著、異質性降到 I² ＝ 4%</text>
+<line x1="631.6" y1="350.0" x2="683.4" y2="350.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="631.6" y1="345.5" x2="631.6" y2="354.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="683.4" y1="345.5" x2="683.4" y2="354.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 648.0 350.0 L 657.0 343.5 L 666.0 350.0 L 657.0 356.5 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="348.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.42（1.04–1.96）</text>
+<text x="620.3" y="418.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利 OMP</text>
+<text x="636.3" y="418.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利 n-OMP →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原始估計與留一法後之估計、95% CI、I² 皆取自原文 Results「Sensitivity Analysis」段落（原文 Figures 5–6 的數值敘述），本頁未做推估。<b>如何解讀：</b>每一組上下兩列，上面是納入全部研究的原始結果，下面是<b>抽掉單獨一篇之後的結果</b>。<b>三個結果、三種翻盤</b>：抽掉 Ozben，整體滲漏從「無差異」變成<b>顯著有利 OMP</b>；抽掉 Merad，再手術從 p ＝ 0.09 逼近顯著（但區間仍勉強含 1）；抽掉 Nasiri，術後感染從「無差異」變成<b>顯著有利「不做」OMP</b>。<b>有何陷阱：</b>（1）<b>留一法不是用來「挑一個比較好看的答案」的工具</b>，它是用來揭露「這個結論有多依賴單一研究」的診斷；本篇三個主要結果都通不過這個診斷，這比任何一個 p 值都更能說明證據的脆弱；（2）<b>被抽掉的三篇各有其理由</b>——Ozben 是 2,891 人的 ACS-NSQIP 資料庫研究（權重極大、且為回溯性）、Merad 佔再手術分析 64.8% 權重且其中 70% 的再手術與滲漏無關、Nasiri 是唯一完全不含直腸吻合的研究；<b>換句話說，這三篇之所以有影響力，正是因為它們與其他研究「不是同一件事」</b>；（3）原文也誠實列出：<b>整體死亡、腹腔併發症死亡、失血量、手術時間在留一法下維持穩定</b>——但這四個本來就都是陰性且極不精確的結果，穩定並不代表有意義。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">八篇納入研究的規模：兩篇 ACS-NSQIP 資料庫研究貢獻了全部樣本的六成以上</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">600</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">1200</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">1800</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">2400</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">3000</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">人數</text>
+<rect x="78.2" y="290.7" width="31.4" height="27.3" fill="#8a4a3d"/>
+<text x="93.9" y="284.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">341</text>
+<rect x="113.6" y="288.9" width="31.4" height="29.1" fill="#2f6b62"/>
+<text x="129.3" y="282.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">364</text>
+<text x="111.6" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Merad 1998</text>
+<text x="111.6" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">法國・RCT</text>
+<rect x="177.4" y="313.8" width="31.4" height="4.2" fill="#8a4a3d"/>
+<text x="193.2" y="307.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">53</text>
+<rect x="212.9" y="313.3" width="31.4" height="4.7" fill="#2f6b62"/>
+<text x="228.6" y="307.3" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">59</text>
+<text x="210.9" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Tocchi 2000</text>
+<text x="210.9" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">義大利・RCT</text>
+<rect x="276.7" y="313.0" width="31.4" height="5.0" fill="#8a4a3d"/>
+<text x="292.4" y="307.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">62</text>
+<rect x="312.1" y="312.9" width="31.4" height="5.1" fill="#2f6b62"/>
+<text x="327.8" y="306.9" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">64</text>
+<text x="310.1" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Agnifili 2004</text>
+<text x="310.1" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">義大利・RCT</text>
+<rect x="375.9" y="315.5" width="31.4" height="2.5" fill="#8a4a3d"/>
+<text x="391.7" y="309.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">31</text>
+<rect x="411.4" y="316.4" width="31.4" height="1.6" fill="#2f6b62"/>
+<text x="427.1" y="310.4" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">20</text>
+<text x="409.4" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Klaver 2008</text>
+<text x="409.4" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">荷蘭・世代</text>
+<rect x="475.2" y="312.8" width="31.4" height="5.2" fill="#8a4a3d"/>
+<text x="490.9" y="306.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">65</text>
+<rect x="510.6" y="285.8" width="31.4" height="32.2" fill="#2f6b62"/>
+<text x="526.3" y="279.8" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">403</text>
+<text x="508.6" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Ozben 2016</text>
+<text x="508.6" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">美國・世代</text>
+<rect x="574.4" y="313.0" width="31.4" height="5.0" fill="#8a4a3d"/>
+<text x="590.2" y="307.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">62</text>
+<rect x="609.9" y="313.0" width="31.4" height="5.0" fill="#2f6b62"/>
+<text x="625.6" y="307.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">62</text>
+<text x="607.9" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Nasiri 2017</text>
+<text x="607.9" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">伊朗・RCT</text>
+<rect x="673.7" y="311.1" width="31.4" height="6.9" fill="#8a4a3d"/>
+<text x="689.4" y="305.1" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">86</text>
+<rect x="709.1" y="93.6" width="31.4" height="224.4" fill="#2f6b62"/>
+<text x="724.8" y="87.6" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">2805</text>
+<text x="707.1" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Ozben 2018</text>
+<text x="707.1" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">美國・世代</text>
+<rect x="772.9" y="309.5" width="31.4" height="8.5" fill="#8a4a3d"/>
+<text x="788.7" y="303.5" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">106</text>
+<rect x="808.4" y="258.2" width="31.4" height="59.8" fill="#2f6b62"/>
+<text x="824.1" y="252.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">747</text>
+<text x="806.4" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">Ali 2024</text>
+<text x="806.4" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">巴基斯坦・世代</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">OMP 組人數</text>
+<rect x="142.2" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="159.2" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">n-OMP 組人數</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">人數取自原文 Table 2；OMP 合計 806、n-OMP 合計 4,524（本頁驗算與原文相符）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>各研究人數取自原文 Table 2，<b>本頁驗算 OMP 合計 806、n-OMP 合計 4,524、總計 5,330，與原文完全相符</b>。<b>如何解讀：</b>注意縱軸——<b>Ozben 等（2018）一篇的對照組就有 2,805 人，佔全部 n-OMP 的 62.0%（本頁自行計算）</b>；再加上 Ali 等（747 人）與 Ozben 等（2016，403 人），<b>三篇回溯性／資料庫研究就貢獻了 3,955 人，佔 n-OMP 的 87.4%</b>。相對地，四篇隨機試驗（Merad、Tocchi、Agnifili、Nasiri）合計只有 1,067 人——<b>恰好就是前一篇 Sahebally 等統合分析的全部樣本</b>。<b>有何陷阱：</b>（1）<b>樣本量的分布是嚴重右偏的</b>，這正是粗事件率與合併估計方向反轉的結構性原因；（2）<b>OMP 組與 n-OMP 組人數在觀察性研究中極不平衡</b>（Ozben 2018 為 86 vs. 2,805，比例 1:33），代表<b>接受網膜成形的是被外科醫師「挑選」出來的病人</b>——是因為網膜條件好？還是因為醫師覺得這個吻合特別危險？兩種相反的選擇偏差都可能存在，而回溯性資料無法分辨；（3）原文明言四篇觀察性研究以 ROBINS-I 評為<b>「中度偏差風險，主因為殘餘混淆」</b>，這正是本篇與前一篇「只納入 RCT」的統合分析結論相反的關鍵所在。</div>
+  </div>
+
+  <h3>各結果的原始事件數與本頁自行計算的粗指標</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:1155px">
+    <thead><tr><th>結果</th><th>OMP 事件／人數（粗率）</th><th>n-OMP 事件／人數（粗率）</th><th>本頁自行計算之粗 OR</th><th>原文合併 OR</th><th>方向是否一致</th></tr></thead>
+    <tbody>
+      <tr><td>整體吻合處滲漏</td><td class="num">40 / 669（5.98%）</td><td class="num">214 / 3,757（5.70%）</td><td class="num">1.05</td><td class="num">0.61</td><td><span class="win caution">不一致</span></td></tr>
+      <tr><td>影像性滲漏</td><td class="num">17 / 456（3.73%）</td><td class="num">24 / 487（4.93%）</td><td class="num">0.75</td><td class="num">0.77</td><td><span class="win">一致</span></td></tr>
+      <tr><td>臨床性滲漏</td><td class="num">8 / 456（1.75%）</td><td class="num">24 / 487（4.93%）</td><td class="num">0.34</td><td class="num">0.35</td><td><span class="win">一致</span></td></tr>
+      <tr><td>再手術</td><td class="num">21 / 542（3.87%）</td><td class="num">176 / 3,292（5.35%）</td><td class="num">0.71</td><td class="num">0.63</td><td><span class="win">一致</span></td></tr>
+      <tr><td>整體死亡</td><td class="num">20 / 669（2.99%）</td><td class="num">49 / 3,757（1.30%）</td><td class="num">2.33</td><td class="num">0.78</td><td><span class="win caution">不一致</span></td></tr>
+      <tr><td>術後感染</td><td class="num">61 / 660（9.24%）</td><td class="num">520 / 4,381（11.87%）</td><td class="num">0.76</td><td class="num">1.19</td><td><span class="win caution">不一致</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>事件數與人數為原文所載；粗率與粗 OR 全部為本頁自行計算</b>（粗 OR ＝ a×(n₂−b) ÷ (n₁−a)×b）。<b>再次強調：合併 OR 才是統合分析的正確結論，粗 OR 只是用來揭示樣本結構的不均衡</b>，兩者不一致並非計算錯誤，也不代表原文有誤。</p>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <ol class="num">
+    <li><b>樣本數加總全部通過：</b>OMP 各篇 341＋53＋62＋31＋65＋62＋86＋106 ＝ <b>806</b> ✓（與原文相符）；n-OMP 各篇 364＋59＋64＋20＋403＋62＋2,805＋747 ＝ <b>4,524</b> ✓；806 ＋ 4,524 ＝ <b>5,330</b> ✓；806/5,330 ＝ 15.1% ✓、4,524/5,330 ＝ 84.9% ✓。</li>
+    <li><b>GRADE 表的對照組風險可回推：</b>整體滲漏 214/3,757 ＝ 56.96 每千人（原文載 57）✓；影像性與臨床性滲漏 24/487 ＝ 49.3 每千人（原文皆載 49）✓；再手術 176/3,292 ＝ 53.5（原文載 54）✓；死亡 49/3,757 ＝ 13.0（原文載 13）✓；感染 520/4,381 ＝ 118.7（原文載 119）✓。<b>五項全數通過。</b></li>
+    <li><b>合併 OR 與事件數方向一致性檢查（本頁自行計算）：</b>影像性滲漏粗 OR ＝ 0.75 vs. 合併 0.77 ✓；臨床性滲漏粗 OR ＝ 0.34 vs. 合併 0.35 ✓；再手術粗 OR ＝ 0.71 vs. 合併 0.63（方向一致）✓。<b>但整體滲漏（粗 1.05 vs. 合併 0.61）、整體死亡（粗 2.33 vs. 合併 0.78）、術後感染（粗 0.76 vs. 合併 1.19）三項方向相反</b>——如上文所述，這是隨機效應加權與單篇規模懸殊的必然結果，<b>不是錯誤</b>，但必須讓讀者知道。</li>
+    <li><b>發現的一處值得注意的巧合（非錯誤）：</b>原文報告<b>影像性滲漏的對照組事件數為 24/487，臨床性滲漏的對照組事件數也是 24/487</b>，兩者完全相同，而 OMP 組分別為 17 與 8。以此回推 OR：影像性 (17×463)/(439×24) ＝ 0.747、臨床性 (8×463)/(448×24) ＝ 0.345，<b>與原文所載的 0.77 與 0.35 相符</b>，且原文 GRADE 表也對兩者標示相同的對照組風險（49 每千人），<b>顯示這並非排版誤植，而是原文確實對兩個分析使用了同一組對照事件</b>。這在臨床上是可能的（若那 24 例對照組滲漏全部既有影像證據、又有臨床症狀），但也意味著<b>這兩個結果並非彼此獨立的證據</b>——「影像性沒差、臨床性有差」這個對比，其差異全部來自 OMP 組的 17 與 8。<b>本頁認為這是解讀本篇時最關鍵、也最容易被忽略的一個技術細節。</b></li>
+    <li><b>「5,330 人」與實際使用人數的落差：</b>最大的單一分析（術後感染）用了 5,041 人（94.6%），<b>而唯一達顯著的分析（臨床性滲漏）只用了 943 人（17.7%）與 32 個事件</b>（本頁自行計算）。標題數字與結論數字之間相差 5.65 倍。</li>
+    <li><b>觀察性研究對樣本的主導程度（本頁自行計算）：</b>Ozben 2018（2,805 人）佔 n-OMP 的 62.0%；加上 Ali（747）與 Ozben 2016（403）共 3,955 人，佔 n-OMP 的 87.4%。四篇 RCT 合計 1,067 人，<b>恰與前一篇「只納入 RCT」之統合分析的樣本數相同</b>——這解釋了為何兩篇的結論會相反。</li>
+    <li><b>發表偏差未能評估（原文明言）：</b>因納入研究少於 10 篇，漏斗圖不對稱檢定的檢力不足，原文<b>未進行發表偏差評估</b>。此為誠實的處理，但也代表本篇無法排除小型研究效應。</li>
+    <li><b>兩項預先規劃的次群組分析未能執行（原文明言）：</b>依<b>研究設計（RCT vs. 觀察性）</b>與<b>吻合技術（釘合 vs. 手縫）</b>的次群組分析，因各次群組研究數過少而<b>無法進行</b>。這是一個實質缺口——正因為本篇的爭議點就在於「加入觀察性研究是否改變了結論」，<b>而這個問題恰恰是唯一沒被回答的。</b></li>
+  </ol>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵</span></h2>
+
+  <div class="call teal">
+    <div class="h">誰適合？</div>
+    <p>依納入研究的實際族群，本篇的證據最貼近的是：<b>成年（≥ 18 歲）、接受大腸直腸切除並做初級吻合、以惡性腫瘤為主要適應症（另含憩室疾病、發炎性腸道疾病、腸阻塞或穿孔）的病人</b>。<b>但真正該考慮加做網膜成形的，是原文自己在結語中指出的族群</b>：<b>低位直腸與骨盆吻合</b>——因為左側大腸與低位骨盆吻合的血流較差、細菌負荷高、技術難度大，<b>滲漏的發生率與後果都是最高的，而網膜「機械支撐＋局限污染」的理論效益也在此處最大</b>。前提是：<b>網膜本身條件允許</b>（大小足夠、無萎縮、未因先前手術而瘢痕化——這是多篇研究明列的排除條件）。<b>不建議常規施行的情況</b>：迴結腸等近端吻合（Nasiri 那篇的族群，本身滲漏風險就低）；腹腔鏡手術中網膜不易安全轉位、或會顯著延長手術時間者（Agnifili 與 Ali 兩篇明列「腹腔鏡入路」或「網膜不適用」為排除條件）。</p>
+  </div>
+
+  <div class="call teal">
+    <div class="h">換來什麼？</div>
+    <ul class="clean">
+      <li><b>可能少一個「變成腹膜炎」的滲漏：</b>臨床性滲漏 OR 0.35，原文 GRADE 表換算為<b>每千人少 32 例（少 42 至少 9）</b>；以此計算，<b>本頁自行計算的需治療人數 NNT ≈ 32</b>（1 ÷ 0.032 ＝ 31.3）。但請記住這建立在 32 個事件上。</li>
+      <li><b>幾乎不用付出手術上的代價：</b>手術時間 MD −3.21 分、失血量 MD ＋19.46 mL、住院天數 MD −0.65 天，<b>三者的信賴區間都跨過 0</b>——即使把異質性的問題放一邊，也看不到「多做這一步會讓手術變糟」的訊號。</li>
+      <li><b>技術上不需要額外器材或成本：</b>網膜成形只需要把大網膜的帶蒂皮瓣轉下來覆蓋或包繞吻合口，<b>沒有耗材、沒有學習曲線門檻</b>。這是它與許多「預防滲漏」方案（生物補片、螢光血流評估、經肛減壓管）最大的不同。</li>
+    </ul>
+  </div>
+
+  <div class="call amber">
+    <div class="h">代價是什麼？</div>
+    <ul class="clean">
+      <li><b>它可能只是把滲漏「藏起來」：</b>這是本篇最需要被認真對待的一個可能性。<b>影像性滲漏沒有減少、臨床性滲漏減少</b>，除了「網膜局限了污染」這個好的解釋之外，還有一個壞的解釋：<b>網膜把滲漏包成一個局部膿瘍，讓它不再表現為腹膜炎，但也因此延後了診斷</b>。原文並未報告<b>診斷滲漏的時間</b>，也未報告<b>影像追蹤的頻率與時機</b>，因此無法分辨這兩種可能。<b>實務上的意義是：對做過網膜成形的病人，臨床表現不典型時仍應積極影像檢查，不要因為「肚子軟」就放心。</b></li>
+      <li><b>術後感染的訊號方向不明：</b>合併 OR 1.19（不顯著），<b>但抽掉 Nasiri 那篇就變成顯著有利「不做」OMP（OR 1.42，1.04–1.96）</b>。網膜是血流豐富的組織，理論上有助抗感染；但把它轉位下來也意味著更多的組織剝離面。<b>這件事目前沒有答案。</b></li>
+      <li><b>網膜的其他用途會被消耗掉：</b>大網膜在骨盆手術中還有其他角色（填補骨盆死腔、覆蓋會陰傷口、隔離放療腸道）。<b>用來包吻合口，就是把這個資源用掉了</b>——本篇完全未觸及這個機會成本。</li>
+      <li><b>技術完全沒有標準化：</b>原文明言各研究對<b>「是否縫合固定、包繞一圈或只蓋單面、皮瓣的長度與血管蒂」</b>的描述南轅北轍，而且多數研究根本沒寫。<b>這代表即使你決定要做，也沒有一個被驗證過的標準做法可以照著做。</b></li>
+    </ul>
+  </div>
+
+  <div class="call">
+    <div class="h">知情同意怎麼談（可直接使用的口語版本）</div>
+    <p>「你的腫瘤位置比較低，切除以後要把腸子重新接起來。<b>接口癒合不好、發生滲漏</b>，是這種手術最主要的風險，發生率大約百分之二到十幾。<b>有一個做法是把肚子裡的『大網膜』——就是覆蓋在腸子前面那一層像圍裙的脂肪組織——拉下來蓋住接口。</b>它血流很豐富，也有免疫功能。<br>
+    <b>目前把八個研究、五千多位病人合起來看，結果是這樣的：</b>它<b>並沒有真的減少接口漏的機率</b>——照影像去找，漏的比例是一樣的；<b>但是「漏到出現腹膜炎、發燒、需要處理」的比例，從大約百分之五降到百分之二不到。</b>意思比較像是：<b>它不能讓接口不漏，但萬一漏了，比較不會擴散成整個肚子的感染。</b>而且這一步<b>不會讓手術變久、不會多流血、不用多花錢</b>。<br>
+    <b>但我要老實說三件事：</b>第一，<b>那個好處是從三個研究、總共三十幾個案例算出來的，數字很小</b>，研究者自己也說要謹慎解讀；第二，<b>研究之間的做法差很多</b>，有的縫固定、有的只是蓋上去，<b>沒有一個標準做法</b>；第三，也是最需要注意的——<b>如果它是靠「把漏包起來」在發揮作用，那也可能讓症狀變得不明顯、比較晚才被發現</b>，所以術後我們還是會照原本的標準密切觀察，不會因為做了這一步就放鬆。<br>
+    <b>簡單說：這是一個成本很低、可能有幫助、風險也很低的額外步驟。如果手術當下你的網膜條件夠好，我會傾向做；但我不會告訴你它保證你不會漏。</b>」</p>
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>唯一顯著的結果建立在 32 個事件上。</b>臨床性滲漏 8/456 vs. 24/487，3 篇研究、943 人。GRADE 因「非常嚴重的不精確」降兩級。<b>這是全篇最脆弱、也最常被單獨引用的數字。</b></li>
+    <li><b>影像性與臨床性滲漏共用同一組對照事件（皆為 24/487）。</b>兩個分析並非獨立證據，「有差 vs. 沒差」的對比完全來自 OMP 組的 17 與 8 之差（見一致性檢查第 4 點）。</li>
+    <li><b>三個主要結果在留一法下全部翻盤。</b>整體滲漏（抽掉 Ozben → 顯著有利 OMP）、術後感染（抽掉 Nasiri → 顯著有利 n-OMP）、住院天數（抽掉 Agnifili → 顯著有利 n-OMP）。<b>一個結論若取決於納不納入某一篇，它就還不是結論。</b></li>
+    <li><b>一半的研究是觀察性、且多為回溯性。</b>原文列為第一項限制。四篇觀察性研究以 ROBINS-I 皆評為「中度偏差風險，主因為殘餘混淆」，而它們貢獻了 87.4% 的對照組樣本（本頁自行計算）。<b>「誰被選去做網膜成形」這件事，在回溯資料中無法還原。</b></li>
+    <li><b>吻合部位的基線風險被混在一起。</b>六篇評估大腸直腸吻合、Merad 涵蓋迴結腸到迴腸直腸、<b>Nasiri 完全不含直腸或低位骨盆吻合</b>。原文自承這「可能稀釋了 OMP 在高風險骨盆吻合上更明顯的保護效果」。</li>
+    <li><b>手術技術完全未標準化，且多數未報告。</b>固定方式、覆蓋範圍、皮瓣長度與血管蒂在各研究間不一致，原文明言這「限制了辨識最佳技術的能力」。</li>
+    <li><b>轉流性造口的使用完全沒有被萃取。</b>原文列為最後一項限制，並明白指出：<b>糞便轉流會改變滲漏的臨床表現與可偵測性</b>，若兩組的造口比例不同，<b>它就是「臨床性滲漏」這個結果的未測量混淆因子</b>——而這正是本篇唯一顯著的結果。</li>
+    <li><b>兩項預先規劃的次群組分析未能執行</b>（設計別、吻合技術別），詳見一致性檢查第 8 點。</li>
+    <li><b>發表偏差未評估</b>（研究數 &lt; 10，檢力不足）。</li>
+    <li><b>期刊層級應納入考量。</b>本篇發表於 Cureus，<b>其同儕審查標準較主流外科期刊寬鬆</b>。這不表示內容有誤——事實上本篇的 GRADE 評估與敏感度分析做得相當紮實、對自身弱點也交代得很誠實——但在引用份量上宜與發表於 Annals of Surgery、BJS 等期刊的統合分析有所區別。</li>
+    <li><b>缺乏長期與功能性結果。</b>原文<b>未報告</b>永久造口率、造口關閉率、低前位切除症候群（LARS）、腫瘤學結果，也未報告滲漏的<b>嚴重度分級（如 ISGRC 的 A／B／C 級）</b>——而後者恰恰是「臨床性 vs. 影像性」這個分類最該被取代的、更精細的分級方式。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>吻合處滲漏 <span class="en">Anastomotic leakage, AL</span></dt><dd>吻合口癒合失敗使腸內容物漏入腹腔。原文引述發生率 <b>2–14%</b>，其中約 <b>10–35%</b> 需要手術處理。</dd></div>
+      <div class="gl-row"><dt>整體滲漏 <span class="en">Overall AL</span></dt><dd>不論以何種方式偵測到的所有滲漏。</dd></div>
+      <div class="gl-row"><dt>臨床性滲漏 <span class="en">Clinical AL</span></dt><dd>伴隨<b>腹膜炎、糞便或膿性引流、敗血症</b>等症狀而需進一步處置者。</dd></div>
+      <div class="gl-row"><dt>影像性滲漏 <span class="en">Radiological AL</span></dt><dd>僅在<b>顯影灌腸或電腦斷層</b>上被發現、無對應臨床症狀者（亦稱亞臨床滲漏 subclinical leak）。</dd></div>
+      <div class="gl-row"><dt>網膜成形術 <span class="en">Omentoplasty, OMP</span></dt><dd>取大網膜之<b>帶蒂皮瓣（pedicled flap）</b>覆蓋或包繞吻合口。亦稱 epiploplasty、omental pedicled flap。</dd></div>
+      <div class="gl-row"><dt>乳斑 <span class="en">Milky spots</span></dt><dd>大網膜上富含<b>巨噬細胞與淋巴聚集</b>的免疫結構，可清除腹腔中的細菌與顆粒物質；為網膜「免疫活性」的解剖基礎。</dd></div>
+      <div class="gl-row"><dt>大腸直腸吻合 <span class="en">Colorectal anastomosis</span></dt><dd>大腸與直腸之間的接合；相對於較近端的迴迴腸（ileoileal）、迴結腸（ileocolic）、結結腸（colocolic）與迴腸直腸（ileorectal）吻合。</dd></div>
+      <div class="gl-row"><dt>低前位切除 <span class="en">Low anterior resection, LAR</span></dt><dd>切除直腸並在骨盆深處做吻合；<b>滲漏風險最高的吻合部位之一</b>。</dd></div>
+      <div class="gl-row"><dt>腹會陰聯合切除 <span class="en">Abdominoperineal resection, APR</span></dt><dd>切除直腸與肛門並做永久造口，不做吻合。</dd></div>
+      <div class="gl-row"><dt>轉流性造口 <span class="en">Diverting stoma</span></dt><dd>將糞便流轉出吻合口近端，可降低污染、<b>也可能遮蔽滲漏的臨床表現</b>；本篇<b>未萃取此資料</b>。</dd></div>
+      <div class="gl-row"><dt>漏氣測試 <span class="en">Air leak test / air-tightness test</span></dt><dd>術中經肛注氣檢查吻合口是否密合；<b>陽性與釘環不完整為滲漏的預測因子</b>。</dd></div>
+      <div class="gl-row"><dt>釘合 vs. 手縫吻合 <span class="en">Stapled vs. hand-sewn anastomosis</span></dt><dd>兩種吻合技術；本篇預定的次群組分析因研究數不足<b>未能執行</b>。</dd></div>
+      <div class="gl-row"><dt>手術部位感染 <span class="en">Surgical site infection, SSI</span></dt><dd>分淺層與深層；本篇的「術後感染」另含腹腔內感染、蜂窩組織炎與膿瘍。</dd></div>
+      <div class="gl-row"><dt>勝算比 <span class="en">Odds ratio, OR</span></dt><dd>兩組事件勝算之比；<b>OR &lt; 1 代表介入組事件較少</b>。</dd></div>
+      <div class="gl-row"><dt>平均差 <span class="en">Mean difference, MD</span></dt><dd>兩組連續型結果平均值之差，保留原始單位。</dd></div>
+      <div class="gl-row"><dt>信賴區間 <span class="en">Confidence interval, CI</span></dt><dd>對合併效果之不確定性的區間估計；跨過無效值（OR 的 1、MD 的 0）即未達統計顯著。</dd></div>
+      <div class="gl-row"><dt>I² 統計量 <span class="en">I-squared</span></dt><dd>研究間變異佔總變異的比例；<b>本篇以 &gt; 25% 即視為顯著異質</b>（較一般文獻的 50% 更嚴格）。</dd></div>
+      <div class="gl-row"><dt>DerSimonian–Laird 隨機效應模型</dt><dd>假設各研究的真實效果不同、服從某分布，依各研究精確度加權合併；<b>與「把所有人倒在一起算」的粗率不同</b>。</dd></div>
+      <div class="gl-row"><dt>留一法敏感度分析 <span class="en">Leave-one-out sensitivity analysis</span></dt><dd>逐一排除單篇研究後重算合併值，用以檢查結論是否依賴單一研究。<b>本篇最重要的分析。</b></dd></div>
+      <div class="gl-row"><dt>Simpson 悖論 <span class="en">Simpson's paradox</span></dt><dd>分層或加權後的關聯方向與合併原始資料後的方向相反；本頁在三個結果中觀察到此現象。</dd></div>
+      <div class="gl-row"><dt>RoB 2 <span class="en">Cochrane Risk of Bias 2 tool</span></dt><dd>評估隨機試驗偏差風險的工具；本篇 4 篇 RCT 中<b>2 篇為「some concerns」（主因兩組疾病基線不平衡）</b>。</dd></div>
+      <div class="gl-row"><dt>ROBINS-I</dt><dd>評估非隨機介入研究偏差風險的工具；本篇 4 篇觀察性研究<b>皆評為「中度」，主因為殘餘混淆</b>。</dd></div>
+      <div class="gl-row"><dt>GRADE</dt><dd>證據確定性分級架構（高／中等／低／極低）。<b>本篇十個結果中只有一個拿到「中等」，而它是陰性結果。</b></dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>絕對風險下降的倒數；本頁依原文 GRADE 表之絕對效果計算，臨床性滲漏之 NNT ≈ 32。</dd></div>
+      <div class="gl-row"><dt>PROSPERO</dt><dd>系統性回顧的國際前瞻性註冊平台；本篇註冊號 CRD42024552817。</dd></div>
+      <div class="gl-row"><dt>ACS-NSQIP</dt><dd>美國外科學會全國手術品質改善計畫資料庫；Ozben 等兩篇研究的資料來源。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Dias LM, Pereira Filho VL, Barros WS, Pereira BF, et al. <i>Omentoplasty to Prevent Anastomotic Leak in Colorectal Anastomosis: A Systematic Review and Meta-Analysis.</i> Cureus. 2026;18(7):e112138. DOI：<a href="https://doi.org/10.7759/cureus.112138">10.7759/cureus.112138</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42535046/">PMID 42535046</a>；PubMed Central：PMC13422579；系統性回顧註冊：PROSPERO CRD42024552817。<b>作者姓名之完整拼寫在本頁可取得之全文中僅以縮寫出現（L.M.D.、V.L.P.F.、W.S.B.、B.F.P.），本頁據此還原並標明不確定性。</b>本頁內容係<b>依 PubMed 與 PubMed Central 所提供之開放取用全文</b>撰寫。</p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文文字與 Table 2–3 數值重新繪製的 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未連結、未重製原文或出版社的任何圖檔</b>（原文的 PRISMA 流程圖、森林圖、留一法圖與偏差風險圖均未使用），全頁不含任何外部資源。凡由原文數字加減乘除得出者（PRISMA 各階段相減、粗事件率、粗 OR、樣本占比、NNT、資料庫研究貢獻比例），已在該處就地標註<b>「本頁自行計算」</b>。原文<b>未列出的數值一律標示「原文未列數值」並留白，不做任何推估</b>——包括 PRISMA 中間各階段的分項筆數、各排除理由的篇數、部分研究的術式與吻合方式。英文摘要為逐字引用；中文標題、翻譯、所有解讀、臨床意涵與限制分析均為本頁自行撰寫，不代表原作者立場。</p>
+  <p style="font-size:13px;color:#6b7079"><b>閱讀本頁時請記得：</b>這篇統合分析的價值<b>不在於它的 p 值，而在於它示範了一件事</b>——把「滲漏」拆成「影像上看得到的」與「臨床上會出事的」兩件事來看，答案完全不同。<b>正確的引用方式是「網膜成形術可能減少滲漏的臨床後果，而非滲漏本身；此訊號來自 3 篇研究、32 個事件，GRADE 為低，且整體證據在留一法下不穩定」；不正確的引用方式是「網膜成形術可減少吻合處滲漏」。</b>原文結語點出的下一步也很明確：<b>需要一個專門針對低位直腸與骨盆吻合的隨機試驗</b>——因為那正是滲漏的發生率與後果都最高、網膜的理論效益也最大的地方。</p>
+</section>
+
+<footer>
+  每日大腸直腸外科文獻 · Vol. 008 · 2026 年 8 月 5 日 ｜ 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/42535046/">PubMed</a> 與 PubMed Central 開放取用全文 ｜ 本頁為閱讀輔助，臨床決策請回歸原文與病人個別狀況
+</footer>
+
+</div>
+
+</body>
+</html>

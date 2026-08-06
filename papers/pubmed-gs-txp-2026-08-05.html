@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-05</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 5 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 007</span>
+  </div>
+  <h1 class="title">肝臟移植用「機械灌流」保存移植肝，能不能降低肝細胞癌的移植後復發？10 篇研究、6,652 人的系統性回顧與統合分析</h1>
+  <p class="title-en">The role of machine perfusion in preventing recurrence after liver transplant for hepatocellular carcinoma: a systematic review and meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">BMC Gastroenterology<br><span style="color:#6b7079;font-size:13px">2026;26(1)（BMC／Springer Nature；完全開放取用）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Garzali IU（通訊作者）, Abou Zeid EED, Aloun A, Elyakub AI, Sheshe AA<br><span style="color:#6b7079;font-size:13px">奈及利亞 Aminu Kano 教學醫院外科、以色列 Soroka 醫學中心外科、約旦 King Hussein 醫學中心外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧 ＋ 隨機效應統合分析</b><br><span style="color:#6b7079;font-size:13px">檢索 PubMed、Cochrane CENTRAL、Scopus、Google Scholar 與 ClinicalTrials.gov，自建庫至 <b>2026 年 1 月 31 日</b>；比較機械灌流（MP）與靜態冷保存（SCS）兩種移植肝保存方式；<b>主要結果為移植後肝細胞癌復發</b>；次要結果為微血管侵犯（MVI）、移植前 AFP、米蘭準則符合度與前導性治療；二元結果用 OR、連續型用標準化平均差（SMD）；RevMan 5.4.1</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的是一個外科端可以直接改變的變項：移植肝怎麼保存</b><br><span style="color:#6b7079;font-size:13px">缺血再灌流傷害（IRI）會透過改變肝臟微環境而助長腫瘤復發；機械灌流可減輕 IRI，<b>因此理論上可能同時是「保護移植肝」與「抗腫瘤復發」的介入</b>——這是本篇的立論核心</span></div></div>
+    <div class="meta-item"><div class="k">⚠ 資料可得性聲明</div><div class="v"><b>本頁僅能取得原文之摘要層級數值</b><br><span style="color:#6b7079;font-size:13px">本篇<b>尚未進入 PubMed Central</b>，出版社頁面在本環境下僅回傳摘要，<b>PRISMA 各階段筆數、納入研究一覽表、各研究原始事件數、偏差風險評估、發表偏差與 GRADE 評等皆無法取得</b>。凡屬此類，本頁一律標示<b>「原文未列數值（本頁無法取得）」並留白，絕不推估</b>。這也代表本頁的分析深度低於本系列常態，請讀者以此為前提閱讀</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 7 月 20 日（PMID 42477564）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed 摘要全文（Background／Methods／Results／Conclusion）與出版社公開之摘要頁</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1186/s12876-026-05142-4">10.1186/s12876-026-05142-4</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42477564/">PMID 42477564 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">移植外科</span>
+    <span class="tag t2">機械灌流 Machine perfusion</span>
+    <span class="tag t2">低溫充氧灌流 HOPE</span>
+    <span class="tag t2">缺血再灌流傷害 IRI</span>
+    <span class="tag t3">證據等級：10 篇研究之統合分析（以回溯性研究為主）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#prisma">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">方向換算與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 10 篇比較「機械灌流（machine perfusion, MP）」與「靜態冷保存（static cold storage, SCS）」的研究、共 6,652 位因肝細胞癌接受肝臟移植的病人合併起來，結果是：<strong>使用靜態冷保存的病人，移植後肝癌復發的勝算是機械灌流組的 2.34 倍（95% CI 1.40–3.91，p ＝ 0.001，I² ＝ 53%）</strong>；換成臨床上習慣的方向（<strong>本頁自行計算，取倒數</strong>），就是<strong>機械灌流把復發勝算降到約 0.43 倍（95% CI 0.26–0.71）</strong>。這個結果在敏感度分析後更穩（<strong>OR 2.26，1.48–3.45，I² 從 53% 降到 22%</strong>），只看九篇使用<strong>低溫充氧灌流（HOPE）</strong>的研究也維持顯著（<strong>OR 1.97，1.25–3.10，p ＝ 0.003</strong>）。而且——這是本篇最重要的支撐——<strong>兩組的基線腫瘤條件看起來是可比的</strong>：移植前 AFP 沒有差異（SMD 0.02，−0.09 至 0.13，p ＝ 0.68）、符合米蘭準則的比例沒有差異（OR 0.83，0.59–1.19，p ＝ 0.32），微血管侵犯與前導性治療的使用也沒有差異，<strong>因此作者主張這個獲益「與基線腫瘤特徵及移植前治療無關」</strong>。<strong>但四個必須同時記住的但書：</strong>（1）<strong>這是以回溯性研究為主的合併，不是隨機試驗</strong>——原文自己在結論中就寫「Given the predominance of retrospective studies」，而<strong>「哪一顆肝被送去做機械灌流」本身就不是隨機決定的</strong>：邊緣性移植肝（脂肪肝、高齡捐贈者、心臟死亡後捐贈）比較可能被灌流，而這些捐贈者的受贈者往往也是被更謹慎篩選過的，<strong>殘餘混淆的方向難以預判</strong>；（2）<strong>「機械灌流」不是一種東西</strong>——本篇九篇是 HOPE、一篇是無缺血肝移植（IFLT），而<strong>常溫機械灌流（NMP）與常溫區域灌流（NRP）幾乎沒有進來</strong>，所以本篇的結論嚴格說只適用於低溫充氧灌流；（3）<strong>原文的 OR 是以 SCS 為分子</strong>（OR 2.34 指「冷保存組復發較多」），<strong>與一般「介入組相對於對照組」的寫法相反，極易被誤讀成「機械灌流讓復發增加 2.34 倍」</strong>，本頁因此另外畫了一張換算後的圖；（4）<strong>更根本的是：本頁只能取得摘要層級的數字</strong>——這篇尚未進入 PubMed Central，PRISMA 各階段筆數、納入研究一覽表、各研究原始事件數、偏差風險與 GRADE 評等本頁<strong>全部無法取得</strong>，因此無從判斷單篇研究的權重是否過度集中、也無從做留一法的判讀。<strong>實務結論：機械灌流原本就是為了保護移植肝而做的，本篇提供了「它可能順帶降低肝癌復發」的觀察性訊號，是一個值得注意、方向合理、生物學上說得通的假說；但在有隨機試驗以復發為終點給出答案之前，它不足以成為「為了抗腫瘤而做灌流」的理由——真正該記住的一句話是原文自己寫的：需要前瞻性多中心研究與隨機試驗來確認。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Hepatocellular carcinoma (HCC) is a leading indication for liver transplantation (LT), but post-transplant recurrence remains a major cause of treatment failure. Ischemia-reperfusion injury (IRI) has been implicated in tumor recurrence through modulation of the hepatic microenvironment. Machine perfusion (MP) techniques reduce IRI and may improve oncologic outcomes. This systematic review and meta-analysis evaluated the impact of MP versus static cold storage (SCS) on HCC recurrence following LT.</p>
+    <h4>Methods</h4>
+    <p>A systematic search of PubMed, CENTRAL, Scopus, Google Scholar and ClinicalTrials.gov was conducted from database inception to January 31, 2026. Studies comparing HCC recurrence after LT using MP or SCS graft preservation were included. The primary outcome was post-transplant HCC recurrence. Secondary outcomes included microvascular invasion (MVI), pre-transplant alpha-fetoprotein (AFP), Milan criteria status, and neoadjuvant therapies. Pooled odds ratios (ORs) and standardized mean differences (SMDs) with 95% confidence intervals (CIs) were calculated using RevMan 5.4.1.</p>
+    <h4>Results</h4>
+    <p>Ten studies involving 6,652 patients (4,944 SCS and 1,708 MP) were included. Nine studies evaluated hypothermic oxygenated perfusion and one assessed ischemia-free liver transplantation. Meta-analysis demonstrated a significantly higher risk of HCC recurrence in the SCS group compared with the MP group (OR 2.34, 95% CI 1.40-3.91; p&#8201;=&#8201;0.001; I&#178;=53%). Sensitivity analysis confirmed the robustness of the finding (OR 2.26, 95% CI 1.48-3.45; p&#8201;=&#8201;0.0002; I&#178;=22%). Subgroup analysis restricted to hypothermic oxygenated perfusion also favored MP (OR 1.97, 95% CI 1.25-3.10; p&#8201;=&#8201;0.003). No significant differences were observed between groups regarding pre-transplant AFP levels (SMD 0.02, 95% CI&#8201;-&#8201;0.09 to 0.13; p&#8201;=&#8201;0.68), Milan criteria status (OR 0.83, 95% CI 0.59-1.19; p&#8201;=&#8201;0.32), use of neoadjuvant therapies, or MVI.</p>
+    <h4>Conclusions</h4>
+    <p>Machine perfusion for liver graft preservation is associated with a lower risk of HCC recurrence after liver transplantation compared with static cold storage. This benefit appears independent of baseline tumor characteristics and pre-transplant treatments. Given the predominance of retrospective studies, further prospective multicenter studies and randomized controlled trials are needed to confirm these findings and define the oncologic role of machine perfusion in liver transplantation for HCC.</p>
+    <p class="note">以上為 PubMed 之作者原文摘要逐字引用，未做任何刪改。<b>兩點值得注意</b>：其一，結論用的是 <b>“is associated with”</b> 而非 “reduces”，並主動點出 “Given the predominance of retrospective studies”，<b>措辭相當克制</b>；其二，<b>Results 段落中所有的 OR 都是以 SCS 為分子</b>（“a significantly higher risk of HCC recurrence in the SCS group compared with the MP group”），<b>這與外科文獻慣用的「介入組 vs. 對照組」方向相反</b>，若只掃過數字很容易把 OR 2.34 誤讀成不利於機械灌流。中文標題、翻譯、方向換算、所有推導計算與解讀均為本頁自行撰寫，不屬原文。</p>
+  </div>
+</section>
+
+<section id="prisma">
+  <h2>PRISMA Flow <span class="zh">／ 文獻篩選流程</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（PubMed、Cochrane CENTRAL、Scopus、Google Scholar、ClinicalTrials.gov；自建庫至 2026 年 1 月 31 日）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">檢索筆數：<span class="n">原文未列數值</span><br>
+        <span style="color:#6b7079;font-size:12.5px">原文摘要僅載明檢索的資料庫與截止日期；<b>各資料庫的命中筆數、檢索式全文與去重後筆數，本頁無法取得</b></span></div></div>
+      <div class="pr-ex">去除重複與初篩排除的筆數<br><b>原文未列數值（本頁無法取得）</b><br><span style="font-size:12px">本頁不做任何推估</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">全文評讀篇數：<span class="n">原文未列數值</span><br>
+        <span style="color:#6b7079;font-size:12.5px">納入條件為「比較機械灌流與靜態冷保存兩種保存方式下，肝細胞癌病人接受肝移植後復發情形」的研究；<b>詳細的納入／排除條件與篩選者人數，本頁無法取得</b></span></div></div>
+      <div class="pr-ex">各排除理由的篇數<br><b>原文未列數值（本頁無法取得）</b></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 納入定量合成</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">10</span> 篇研究、<span class="n">6652</span> 位病人<br>
+        <span style="color:#6b7079;font-size:12.5px">靜態冷保存 <b>4,944 人（74.3%）</b>／機械灌流 <b>1,708 人（25.7%）</b>（百分比為本頁自行計算）；<b>9 篇評估低溫充氧灌流（HOPE）、1 篇評估無缺血肝移植（IFLT）</b></span></div></div>
+      <div class="pr-ex">各結果實際貢獻資料的篇數與人數<br><b>原文未列數值（本頁無法取得）</b><br><span style="font-size:12px">僅知主要結果（肝癌復發）為 10 篇／6,652 人；次群組分析限於 9 篇 HOPE 研究，<b>但該次群組的人數與 I² 原文未列</b></span></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：10、6,652、4,944、1,708、9 篇 HOPE、1 篇 IFLT 皆取自原文摘要 Results 段落；其餘各階段的數字<b>原文未列數值（本頁無法取得原文 PRISMA 圖與表格）</b>。本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：左框是仍在流程中的研究，右框是該階段流失的部分。<b>陷阱</b>：<b>這張流程圖大半是空的，而這件事本身就是重要資訊</b>。統合分析的可信度有很大一部分建立在「篩選過程可被追溯」與「納入研究一覽表可被檢視」之上；當這兩者都拿不到時，讀者無法回答幾個關鍵問題：<b>10 篇裡有幾篇是同一個中心、同一段時間的資料？有沒有族群重疊？單篇的權重是否過度集中？</b>——後者尤其重要，因為 I² ＝ 53% 意味著研究之間有中等程度的異質性，而<b>敏感度分析把 I² 從 53% 壓到 22%，代表確實有一到兩篇研究是離群的</b>，但<b>原文摘要並未說明剔除了哪一篇、為什麼剔除</b>。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:660px">
+    <thead><tr><th>項目</th><th>內容</th><th>來源</th></tr></thead>
+    <tbody>
+      <tr><td><b>納入研究總數</b></td><td class="num">10 篇</td><td>原文摘要</td></tr>
+      <tr><td><b>總人數</b></td><td class="num">6,652 人</td><td>原文摘要</td></tr>
+      <tr><td>靜態冷保存 SCS 組</td><td class="num">4,944 人（74.3%）</td><td>人數為原文；百分比為<b>本頁自行計算</b></td></tr>
+      <tr><td>機械灌流 MP 組</td><td class="num">1,708 人（25.7%）</td><td>人數為原文；百分比為<b>本頁自行計算</b></td></tr>
+      <tr><td><b>灌流模式：低溫充氧灌流 HOPE</b></td><td class="num">9 篇</td><td>原文摘要</td></tr>
+      <tr><td>灌流模式：無缺血肝移植 IFLT</td><td class="num">1 篇</td><td>原文摘要</td></tr>
+      <tr><td>灌流模式：常溫機械灌流 NMP</td><td class="num">0 篇（未納入）</td><td><b>本頁依「9 ＋ 1 ＝ 10」推得，並非原文明文</b></td></tr>
+      <tr><td>研究設計組成（RCT／前瞻／回溯各幾篇）</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>各研究的國家、年份、中心數</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>各研究的 SCS／MP 分組人數</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>各研究的肝癌復發事件數</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>追蹤時間（中位數或範圍）</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>復發的定義與診斷方式</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>捐贈者型態（DBD／DCD）之分布</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>偏差風險評估工具與結果</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>GRADE 證據確定性</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>發表偏差評估</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>PROSPERO 註冊號</td><td class="num">原文未列數值（本頁無法取得）</td><td>—</td></tr>
+      <tr><td>統計軟體</td><td class="num">RevMan 5.4.1</td><td>原文摘要</td></tr>
+      <tr><td>檢索截止日</td><td class="num">2026 年 1 月 31 日</td><td>原文摘要</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px"><b>本表刻意把「拿不到的欄位」也列出來</b>，因為在評估一篇統合分析時，<b>「哪些資訊沒有被呈現」與「呈現了什麼」同樣重要</b>。特別是<b>捐贈者型態（DBD 腦死後捐贈 vs. DCD 心臟死亡後捐贈）的分布</b>——這是本篇最關鍵的潛在混淆因子：機械灌流最常被用在 DCD 與邊緣性移植肝上，而 DCD 移植肝的受贈者通常經過更嚴格的腫瘤條件篩選；<b>若兩組的捐贈者型態分布不同，就無法排除「不是灌流讓復發變少，而是接受灌流肝的病人本來腫瘤條件就更好」的可能</b>。原文以「AFP 與米蘭準則無差異」來部分回應這個疑慮，方向正確，<b>但 AFP 與米蘭準則並不能涵蓋腫瘤生物學的全部</b>（例如腫瘤分化程度、等候期間的進展速度、AFP 反應動力學都沒有被檢查）。</p>
+</section>
+
+<section id="results">
+  <h2>Primary Outcome <span class="zh">／ 主要結果森林圖</span></h2>
+
+  <div class="kv">
+    <div class="c teal"><div class="lab">主要結果：肝癌復發</div><div class="big">OR 2.34</div><div class="sub">SCS 相對於 MP；95% CI 1.40–3.91，p ＝ 0.001，I² ＝ 53%</div></div>
+    <div class="c teal"><div class="lab">換算為 MP 相對於 SCS</div><div class="big">OR 0.43</div><div class="sub">95% CI 0.26–0.71（<b>本頁自行計算，取倒數</b>）</div></div>
+    <div class="c teal"><div class="lab">僅限 HOPE 次群組</div><div class="big">OR 1.97</div><div class="sub">1.25–3.10，p ＝ 0.003；方向一致</div></div>
+    <div class="c amber"><div class="lab">基線腫瘤條件</div><div class="big">兩組相近</div><div class="sub">AFP、米蘭準則、MVI、前導性治療皆無差異</div></div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="340" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">原文所載方向：靜態冷保存（SCS）相對於機械灌流（MP）的勝算比（對數刻度，無效線 ＝ 1）</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="500.1" y1="60.0" x2="500.1" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="500.1" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="560.3" y1="60.0" x2="560.3" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="560.3" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="620.4" y1="60.0" x2="620.4" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="620.4" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="699.9" y1="60.0" x2="699.9" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="699.9" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="560.3" y1="60.0" x2="560.3" y2="274.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（注意：分子為 SCS 組）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">OR（95% CI）——原文所載</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（主要結果，原文方向）</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">10 篇／6,652 人｜I² ＝ 53%｜隨機效應模型</text>
+<line x1="589.4" y1="90.0" x2="678.5" y2="90.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="589.4" y1="85.5" x2="589.4" y2="94.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="678.5" y1="85.5" x2="678.5" y2="94.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 625.0 90.0 L 634.0 83.5 L 643.0 90.0 L 634.0 96.5 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 2.34（1.40–3.91），p ＝ 0.001</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（敏感度分析後）</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">異質性由 I² ＝ 53% 降至 22%；原文稱結果穩健</text>
+<line x1="594.3" y1="142.0" x2="667.7" y2="142.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="594.3" y1="137.5" x2="594.3" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="667.7" y1="137.5" x2="667.7" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 622.0 142.0 L 631.0 135.5 L 640.0 142.0 L 631.0 148.5 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 2.26（1.48–3.45），p ＝ 0.0002</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（僅限 HOPE 次群組）</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">9 篇使用低溫充氧灌流｜原文未列該次群組之 I² 與人數</text>
+<line x1="579.6" y1="194.0" x2="658.4" y2="194.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="579.6" y1="189.5" x2="579.6" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="658.4" y1="189.5" x2="658.4" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 610.1 194.0 L 619.1 187.5 L 628.1 194.0 L 619.1 200.5 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.97（1.25–3.10），p ＝ 0.003</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">符合米蘭準則之比例（基線）</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">用以檢查兩組腫瘤負荷是否可比｜原文未列篇數</text>
+<line x1="514.5" y1="246.0" x2="575.3" y2="246.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="514.5" y1="241.5" x2="514.5" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="575.3" y1="241.5" x2="575.3" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 535.1 246.0 L 544.1 239.5 L 553.1 246.0 L 544.1 252.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.83（0.59–1.19），p ＝ 0.32</text>
+<text x="552.3" y="314.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利靜態冷保存 SCS</text>
+<text x="568.3" y="314.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利機械灌流 MP →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>四個效果值、95% CI、p 值與 I² 全部取自原文摘要 Results 段落，本頁未做任何轉換。<b>如何解讀：</b>橫軸為對數刻度，虛線為無效線 1，菱形為合併估計值。<b>但這張圖必須先看清楚方向</b>——原文所報的 OR <b>分子是靜態冷保存組</b>，所以<b>「菱形落在 1 的右邊」代表冷保存組復發較多，也就是有利於機械灌流</b>。這與外科文獻的慣例相反，本頁在標題與列名都特別標明。<b>有何陷阱：</b>（1）<b>最後一列「符合米蘭準則之比例」是基線特徵，不是療效結果</b>——它放在這裡是為了說明「兩組腫瘤負荷可比」，OR 0.83 跨過 1 是<b>好消息</b>（代表沒有失衡），與上面三列的意義完全不同，讀圖時不可混為一談；（2）<b>I² ＝ 53% 是中等程度的異質性</b>，而<b>敏感度分析把它壓到 22%</b>——這代表確實有離群研究，<b>但原文摘要沒有說明剔除了哪一篇、依據為何</b>，這是判讀上的一個實質缺口；（3）<b>HOPE 次群組的 OR（1.97）低於整體（2.34）</b>，暗示那一篇無缺血肝移植（IFLT）的效果可能更大——但<b>單篇研究撐起的訊號不應被獨立解讀</b>，而本頁也拿不到它的資料。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="340" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">本頁換算後：機械灌流（MP）相對於靜態冷保存（SCS）——這才是臨床上習慣的讀法</text>
+<line x1="440.0" y1="60.0" x2="440.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="519.5" y1="60.0" x2="519.5" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="519.5" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="579.6" y1="60.0" x2="579.6" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="579.6" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="639.7" y1="60.0" x2="639.7" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="639.7" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="699.9" y1="60.0" x2="699.9" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="699.9" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="760.0" y1="60.0" x2="760.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="760.0" y="291.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4</text>
+<line x1="639.7" y1="60.0" x2="639.7" y2="274.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（分子改為 MP 組）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">OR（95% CI）——本頁自行計算</text>
+<text x="20.0" y="84.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（主要結果）</text>
+<text x="20.0" y="101.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">10 篇／6,652 人｜I² ＝ 53%</text>
+<line x1="521.5" y1="90.0" x2="610.6" y2="90.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="521.5" y1="85.5" x2="521.5" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="610.6" y1="85.5" x2="610.6" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 557.0 90.0 L 566.0 83.5 L 575.0 90.0 L 566.0 96.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="88.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.43（0.26–0.71）</text>
+<text x="1106.0" y="104.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="136.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（敏感度分析後）</text>
+<text x="20.0" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">I² 降至 22%</text>
+<line x1="532.3" y1="142.0" x2="605.7" y2="142.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="532.3" y1="137.5" x2="532.3" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="605.7" y1="137.5" x2="605.7" y2="146.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 560.0 142.0 L 569.0 135.5 L 578.0 142.0 L 569.0 148.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="140.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.44（0.29–0.68）</text>
+<text x="1106.0" y="156.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="188.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肝癌復發（僅限 HOPE）</text>
+<text x="20.0" y="205.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">9 篇低溫充氧灌流</text>
+<line x1="541.6" y1="194.0" x2="620.4" y2="194.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="541.6" y1="189.5" x2="541.6" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="620.4" y1="189.5" x2="620.4" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 571.9 194.0 L 580.9 187.5 L 589.9 194.0 L 580.9 200.5 Z" fill="#2f6b62"/>
+<text x="1106.0" y="192.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.51（0.32–0.80）</text>
+<text x="1106.0" y="208.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="20.0" y="240.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">符合米蘭準則之比例（基線）</text>
+<text x="20.0" y="257.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">兩組腫瘤負荷相近</text>
+<line x1="624.7" y1="246.0" x2="685.5" y2="246.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="624.7" y1="241.5" x2="624.7" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="685.5" y1="241.5" x2="685.5" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 646.9 246.0 L 655.9 239.5 L 664.9 246.0 L 655.9 252.5 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="244.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.20（0.84–1.69）</text>
+<text x="1106.0" y="260.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">本頁自行計算：原文 OR 取倒數</text>
+<text x="631.7" y="314.0" font-size="11.5" fill="#8a4a3d" text-anchor="end" font-weight="400">← 有利機械灌流 MP</text>
+<text x="647.7" y="314.0" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="400">有利靜態冷保存 SCS →</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>本圖的所有數值皆為<b>本頁自行計算</b>——把原文所載的 OR 與其上下界一併取倒數（例如 2.34 → 1/2.34 ＝ 0.43；上界 3.91 → 1/3.91 ＝ 0.26；下界 1.40 → 1/1.40 ＝ 0.71），換算成「機械灌流相對於靜態冷保存」的方向。<b>如何解讀：</b>換算後，<b>菱形落在 1 的左邊代表有利於機械灌流</b>，符合一般外科文獻的閱讀習慣：<b>機械灌流把肝癌復發的勝算降到約 0.43 倍（0.26–0.71）</b>；HOPE 次群組為 0.51（0.32–0.80）。<b>有何陷阱：</b>（1）<b>取倒數只是換個角度看同一個數字，不會增加任何證據</b>——它不會讓一個觀察性的關聯變成因果；（2）<b>勝算比在事件率不低時會誇大相對風險</b>，肝移植後 HCC 復發率一般在 10–20% 之譜，屬於「不算罕見」的事件，<b>此時 OR 0.43 對應的相對風險（RR）會明顯較接近 1</b>；由於<b>本頁無法取得各組的原始事件數，無法計算 RR 或絕對風險差，因此也無法計算 NNT</b>——這是本頁最想給、卻給不出來的數字；（3）最後一列（米蘭準則）換算後為 1.21（0.84–1.70），同樣是基線特徵而非療效，方向解讀與其他三列不同。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1155px">
+    <thead><tr><th>結果指標</th><th>效果值（原文方向：SCS vs. MP）</th><th>換算後（MP vs. SCS，本頁自行計算）</th><th>p 值／I²</th><th>篇數／人數</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>肝癌復發（主要結果）</b></td><td class="num">OR 2.34（1.40–3.91）</td><td class="num">OR 0.43（0.26–0.71）</td><td class="num">0.001／53%</td><td class="num">10 篇／6,652 人</td><td><span class="win">有利機械灌流</span></td></tr>
+      <tr><td>肝癌復發（敏感度分析）</td><td class="num">OR 2.26（1.48–3.45）</td><td class="num">OR 0.44（0.29–0.68）</td><td class="num">0.0002／22%</td><td class="num">原文未列（本頁無法取得）</td><td><span class="win">結果穩健</span></td></tr>
+      <tr><td>肝癌復發（僅限 HOPE 次群組）</td><td class="num">OR 1.97（1.25–3.10）</td><td class="num">OR 0.51（0.32–0.80）</td><td class="num">0.003／原文未列</td><td class="num">9 篇／人數原文未列</td><td><span class="win">方向一致</span></td></tr>
+      <tr><td>移植前甲型胎兒蛋白 AFP</td><td class="num">SMD 0.02（−0.09 至 0.13）</td><td class="num">SMD −0.02（−0.13 至 0.09）</td><td class="num">0.68／原文未列</td><td class="num">原文未列（本頁無法取得）</td><td><span class="win neutral">兩組相近</span></td></tr>
+      <tr><td>符合米蘭準則之比例</td><td class="num">OR 0.83（0.59–1.19）</td><td class="num">OR 1.21（0.84–1.70）</td><td class="num">0.32／原文未列</td><td class="num">原文未列（本頁無法取得）</td><td><span class="win neutral">兩組相近</span></td></tr>
+      <tr><td>微血管侵犯 MVI</td><td class="num">原文未列數值（僅稱無顯著差異）</td><td class="num">無法計算</td><td class="num">原文未列</td><td class="num">原文未列（本頁無法取得）</td><td><span class="win neutral">兩組相近</span></td></tr>
+      <tr><td>前導性治療之使用</td><td class="num">原文未列數值（僅稱無顯著差異）</td><td class="num">無法計算</td><td class="num">原文未列</td><td class="num">原文未列（本頁無法取得）</td><td><span class="win neutral">兩組相近</span></td></tr>
+      <tr><td>無復發存活 RFS</td><td colspan="2" class="num">本篇<b>未評估</b></td><td class="num">—</td><td class="num">—</td><td><span class="win caution">重要缺口</span></td></tr>
+      <tr><td>整體存活 OS</td><td colspan="2" class="num">本篇<b>未評估</b></td><td class="num">—</td><td class="num">—</td><td><span class="win caution">重要缺口</span></td></tr>
+      <tr><td>移植肝存活與早期移植肝功能不良 EAD</td><td colspan="2" class="num">本篇<b>未評估</b></td><td class="num">—</td><td class="num">—</td><td><span class="win caution">重要缺口</span></td></tr>
+      <tr><td>非吻合性膽道狹窄 NAS</td><td colspan="2" class="num">本篇<b>未評估</b></td><td class="num">—</td><td class="num">—</td><td><span class="win caution">重要缺口</span></td></tr>
+      <tr><td>成本與可近性</td><td colspan="2" class="num">本篇<b>未評估</b></td><td class="num">—</td><td class="num">—</td><td><span class="win caution">重要缺口</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:10px">「原文未列數值（本頁無法取得）」表示該資訊存在於原文正文或表格中、但本環境下無法取得，<b>本頁一律留白而不推估</b>。<b>「本篇未評估」則是不同層次的問題</b>——那些是原文根本沒有設定為結果的項目。<b>最後五列的缺口值得特別注意</b>：本篇只問了「復發率」，<b>沒有問「復發後活多久」「移植肝本身好不好」</b>。而機械灌流原本被引進臨床，正是為了改善<b>移植肝存活、早期移植肝功能不良與膽道併發症</b>——這些才是它已有較強證據（含隨機試驗）的領域。<b>把本篇讀成「機械灌流的價值在抗腫瘤」是本末倒置的</b>：它的價值在保護移植肝，抗腫瘤是一個尚待驗證的附帶假說。</p>
+</section>
+
+<section id="raw">
+  <h2>Redrawn Figures <span class="zh">／ 本頁重繪圖</span></h2>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">納入族群的組成：機械灌流組只佔全部病人的四分之一（原文所載人數）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">1200</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">2400</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">3600</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">4800</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">6000</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">人數</text>
+<rect x="239.5" y="120.2" width="42.0" height="197.8" fill="#8a4a3d"/>
+<text x="260.5" y="114.2" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">4944</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">靜態冷保存 SCS</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">n ＝ 4,944</text>
+<rect x="636.5" y="249.7" width="42.0" height="68.3" fill="#8a4a3d"/>
+<text x="657.5" y="243.7" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">1708</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">機械灌流 MP</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">n ＝ 1,708</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">人數（人）</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">4,944 ＋ 1,708 ＝ 6,652 ✓（本頁驗算與原文相符）；MP 佔 25.7%（本頁自行計算）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>4,944 與 1,708 為原文摘要所載，<b>百分比與合計為本頁自行計算並驗算（4,944 ＋ 1,708 ＝ 6,652 ✓）</b>。<b>如何解讀：</b>兩組人數相差近三倍，<b>機械灌流組只佔全部病人的 25.7%</b>。<b>有何陷阱：</b>（1）<b>這種比例在觀察性資料中是常態，但它會放大選擇偏差的影響</b>——當某個介入只用在四分之一的病人身上，「誰被選中」這件事就特別重要；（2）機械灌流是相對新的技術，<b>使用它的病人在時間上通常較晚</b>，而<b>肝癌移植的病人選擇準則、等候名單管理、影像監測與局部治療在近十年都明顯進步</b>，<b>因此「時代效應」是一個結構性的混淆</b>——晚近的病人本來就可能復發較少，與保存方式無關；（3）本頁<b>無法取得各研究的年份</b>，因此無從判斷這個時代效應的嚴重程度，也無從檢查是否有做時間校正。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="880" height="414" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">十篇納入研究所使用的保存方式：九篇為低溫充氧灌流（HOPE），僅一篇為無缺血肝移植（IFLT）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="322.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="62.0" y1="270.0" x2="856.0" y2="270.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="274.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">2</text>
+<line x1="62.0" y1="222.0" x2="856.0" y2="222.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="226.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">5</text>
+<line x1="62.0" y1="174.0" x2="856.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="178.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">7</text>
+<line x1="62.0" y1="126.0" x2="856.0" y2="126.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="130.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">10</text>
+<line x1="62.0" y1="78.0" x2="856.0" y2="78.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="54.0" y="82.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">12</text>
+<text x="54.0" y="64.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">研究篇數</text>
+<rect x="239.5" y="138.0" width="42.0" height="180.0" fill="#2f6b62"/>
+<text x="260.5" y="132.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">9</text>
+<text x="260.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">低溫充氧灌流</text>
+<text x="260.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">HOPE（9 篇）</text>
+<rect x="636.5" y="298.0" width="42.0" height="20.0" fill="#2f6b62"/>
+<text x="657.5" y="292.0" font-size="10.5" fill="#2e2b28" text-anchor="middle" font-weight="700">1</text>
+<text x="657.5" y="338.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="700">無缺血肝移植</text>
+<text x="657.5" y="352.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="400">IFLT（1 篇）</text>
+<line x1="62.0" y1="318.0" x2="856.0" y2="318.0" stroke="#b9b3a8" stroke-width="1.2"/>
+<rect x="62.0" y="378.0" width="12" height="12" fill="#2f6b62"/>
+<text x="79.0" y="388.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="400">篇數</text>
+<text x="866.0" y="406.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">各篇的人數分配、國家、設計與追蹤時間——原文未列數值（表格本體未隨全文釋出）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>9 篇 HOPE 與 1 篇 IFLT 為原文摘要所載；「NMP 0 篇」為<b>本頁依 9 ＋ 1 ＝ 10 推得</b>，原文並未明文排除 NMP。<b>如何解讀：</b>本篇的「機械灌流」<b>實質上等於低溫充氧灌流（HOPE）</b>。HOPE 是在 4–12 ℃ 下以充氧灌流液經門靜脈（單血管）或門靜脈加肝動脈（雙血管，dHOPE）灌流移植肝，機轉是<b>在低溫下補充粒線體所需的氧，重新充填 ATP、減少再灌流當下的活性氧爆發</b>——這正是缺血再灌流傷害的核心事件。<b>有何陷阱：</b>（1）<b>不能把本篇的結論外推到常溫機械灌流（NMP）或常溫區域灌流（NRP）</b>，它們的生理機轉、臨床用法與適應症都不同；（2）<b>那一篇「無缺血肝移植（IFLT）」是完全不同的手術概念</b>——它是在移植全程都不中斷血流灌注，<b>技術門檻極高、目前僅少數中心可執行</b>，把它與 HOPE 合併在同一個「機械灌流」標籤下，本身就是異質性的來源之一（可能正是 I² ＝ 53% 的部分成因）；（3）<b>HOPE 次群組的 OR（1.97）小於整體（2.34）</b>，暗示 IFLT 那篇的效果較大，<b>但單篇證據不應被獨立解讀</b>。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 152" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="152" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">基線腫瘤負荷指標：兩組的移植前 AFP 沒有差異（原文所載）</text>
+<text x="14.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">結果（各列刻度不同）</text>
+<text x="1106.0" y="54.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">平均差 MD（95% CI）</text>
+<line x1="440.0" y1="108.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="440.0" y1="104.0" x2="440.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="440.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">−0.20</text>
+<line x1="590.0" y1="104.0" x2="590.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="590.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">0.00</text>
+<line x1="740.0" y1="104.0" x2="740.0" y2="108.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="end" font-weight="400">0.20</text>
+<line x1="590.0" y1="75.0" x2="590.0" y2="108.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">移植前甲型胎兒蛋白 AFP（標準化平均差）</text>
+<text x="20.0" y="103.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">原文方向：SCS 減 MP｜原文未列篇數與人數｜以 SMD 呈現代表各研究單位不一</text>
+<text x="752.0" y="121.0" font-size="10" fill="#6b7079" text-anchor="start" font-weight="400">單位：標準差（SMD，無單位）</text>
+<line x1="522.5" y1="90.0" x2="687.5" y2="90.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="522.5" y1="85.5" x2="522.5" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="687.5" y1="85.5" x2="687.5" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="600.5" y="85.5" width="9" height="9" fill="#2f6b62"/>
+<text x="1106.0" y="93.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">SMD ＋0.02（−0.09 至 ＋0.13），p ＝ 0.68</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>SMD 0.02（−0.09 至 0.13）、p ＝ 0.68 皆取自原文摘要，<b>貢獻的篇數與人數原文未列（本頁無法取得）</b>。<b>如何解讀：</b>這是一個<b>基線平衡的檢查</b>，不是療效結果。SMD（標準化平均差）用於各研究的測量單位或尺度不一致時；<b>SMD 0.02 幾乎等於零，且信賴區間極窄（±0.11）</b>，代表兩組移植前的 AFP 分布高度相似，這是本篇支持「獲益與基線腫瘤負荷無關」這個論點的主要證據之一。<b>有何陷阱：</b>（1）<b>AFP 的分布極度右偏</b>（多數人在正常範圍，少數人高達數萬），<b>用平均數與 SMD 來比較並不理想</b>；更有意義的比較是「AFP &gt; 400 或 &gt; 1000 ng/mL 的比例」或「AFP 的反應動力學」，<b>而這些原文皆未評估</b>；（2）<b>基線平衡只涵蓋被測量到的變項</b>——AFP 與米蘭準則相近，並不保證腫瘤分化程度、等候期間的進展速度、局部治療的反應深度也相近；（3）<b>SMD 是無單位的</b>，圖上刻度不可解讀為 ng/mL。</div>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <ol class="num">
+    <li><b>人數加總通過：</b>4,944（SCS）＋ 1,708（MP）＝ <b>6,652</b> ✓，與原文所載總數相符。比例為 74.3% vs. 25.7%（本頁自行計算）。</li>
+    <li><b>研究篇數加總通過：</b>9 篇 HOPE ＋ 1 篇 IFLT ＝ <b>10 篇</b> ✓，與原文所載總篇數相符。</li>
+    <li><b>方向換算的驗算（本頁自行計算）：</b>1 ÷ 2.34 ＝ 0.427；1 ÷ 3.91 ＝ 0.256；1 ÷ 1.40 ＝ 0.714 → <b>OR 0.43（0.26–0.71）</b>。同法得敏感度分析 0.44（0.29–0.68）、HOPE 次群組 0.51（0.32–0.80）、米蘭準則 1.21（0.84–1.70）。取倒數後<b>上下界互換</b>，本頁已正確處理。</li>
+    <li><b>效果值與 p 值的內部一致性（本頁自行檢查）：</b>主要結果 OR 2.34、95% CI 1.40–3.91 → 以對數尺度反推，ln(2.34) ＝ 0.850、ln(3.91/1.40)/(2×1.96) ＝ 0.262 為標準誤，<b>z ＝ 0.850/0.262 ＝ 3.24 → p ≈ 0.0012</b>，與原文所載 p ＝ 0.001 <b>相符</b> ✓。敏感度分析 OR 2.26、CI 1.48–3.45 → ln(2.26) ＝ 0.815、SE ＝ 0.216、<b>z ＝ 3.77 → p ≈ 0.00016</b>，與原文所載 p ＝ 0.0002 <b>相符</b> ✓。HOPE 次群組 OR 1.97、CI 1.25–3.10 → z ＝ 2.99 → <b>p ≈ 0.0028</b>，與原文所載 p ＝ 0.003 <b>相符</b> ✓。<b>三項全數通過，摘要中的數字彼此自洽。</b></li>
+    <li><b>無法執行的檢查（誠實列出）：</b>因本頁無法取得原文表格與各研究資料，以下檢查<b>一律無法進行</b>：各研究事件數加總是否等於總人數、單篇權重是否過度集中、留一法是否穩定、漏斗圖是否對稱、各組復發的絕對風險與 NNT、族群是否重疊。<b>讀者在引用本篇時應意識到這些檢查尚未被本頁（也可能尚未被任何獨立讀者）執行。</b></li>
+    <li><b>一個需要留意的敘述落差：</b>原文摘要稱敏感度分析「confirmed the robustness of the finding」，且 I² 由 53% 降至 22%。<b>但「剔除某些研究後異質性下降」與「結果穩健」在方法學上並不是同一件事</b>——前者是描述，後者是判斷。真正的穩健性檢驗應該是<b>逐一剔除每一篇後結論都不變</b>；<b>原文摘要並未說明敏感度分析的執行方式、剔除了哪些研究、依據為何</b>，因此本頁無法確認這個「穩健」的宣稱。</li>
+  </ol>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵</span></h2>
+
+  <div class="call teal">
+    <div class="h">誰適合？</div>
+    <p>本篇的族群是<b>因肝細胞癌而接受肝臟移植的成年病人</b>。但要講清楚的是：<b>「要不要用機械灌流」在實務上並不是為了病人的腫瘤而決定的，而是為了移植肝</b>。目前 HOPE 最明確的適應症是<b>邊緣性移植肝</b>——心臟死亡後捐贈（DCD）、高齡捐贈者、脂肪變性明顯、冷缺血時間偏長的移植肝；在這些情境下，HOPE 已有隨機試驗支持它能降低<b>早期移植肝功能不良（EAD）與非吻合性膽道狹窄（NAS）</b>。本篇提供的是一個<b>額外的、觀察性的理由</b>：如果受贈者是肝癌病人，那麼灌流<b>可能</b>順帶降低復發。<b>合理的實務立場是：在原本就該用灌流的情境下，肝癌是一個「加分」的理由；但單憑本篇，不足以支持「為了抗腫瘤而把原本不需要灌流的良好移植肝也拿去灌流」。</b></p>
+  </div>
+
+  <div class="call teal">
+    <div class="h">換來什麼？</div>
+    <ul class="clean">
+      <li><b>復發勝算約降到 0.43 倍（0.26–0.71，本頁自行計算）：</b>方向明確、區間不跨 1，而且在敏感度分析與 HOPE 次群組中都維持。</li>
+      <li><b>訊號在生物學上說得通：</b>缺血再灌流傷害會透過活性氧、發炎細胞激素、內皮活化與免疫抑制性微環境等途徑，替殘存腫瘤細胞創造有利的著床條件；HOPE 在低溫下重新充填粒線體 ATP、抑制再灌流當下的活性氧爆發，<b>因此「減少 IRI → 減少復發」不是事後湊出來的解釋，而是事前就存在的假說</b>。</li>
+      <li><b>兩組的基線腫瘤條件看起來可比：</b>AFP、米蘭準則、微血管侵犯、前導性治療的使用皆無顯著差異，<b>這削弱了（但沒有排除）「灌流組本來腫瘤就比較好」的解釋</b>。</li>
+    </ul>
+  </div>
+
+  <div class="call amber">
+    <div class="h">代價與未知</div>
+    <ul class="clean">
+      <li><b>本篇完全沒有回答「活得比較久嗎」：</b>無復發存活、整體存活皆未評估。<b>復發率下降而存活未知，是一個不完整的故事。</b></li>
+      <li><b>本篇沒有算成本：</b>機械灌流需要設備、灌流液、耗材與人力，並改變器官運送與手術排程的流程。<b>本篇未做任何成本或成本效益分析。</b></li>
+      <li><b>選擇偏差與時代效應無法排除：</b>灌流組只佔 25.7%、以回溯性研究為主、而且使用灌流的病人在時間上通常較晚——<b>而肝癌移植的病人選擇與等候名單管理在近十年明顯進步</b>。原文以基線腫瘤特徵相近來回應，但這只涵蓋被測量到的變項。</li>
+      <li><b>技術異質性：</b>九篇 HOPE ＋ 一篇 IFLT 被放在同一個標籤下；<b>單血管 HOPE 與雙血管 dHOPE、灌流時間長短、是否併用常溫灌流，都可能影響結果，而本頁無從得知各研究的做法。</b></li>
+      <li><b>本頁的資料深度受限：</b>如頁首所述，本篇尚未進入 PubMed Central，<b>表格與圖檔皆無法取得</b>，因此本頁無法做本系列慣常的原始事件數驗算、權重檢查與留一法判讀。</li>
+    </ul>
+  </div>
+
+  <div class="call">
+    <div class="h">在移植團隊討論中可以這樣說</div>
+    <p>「這篇把十個研究、六千六百多位<b>因肝癌接受肝臟移植</b>的病人合起來看，比較的是移植肝用<b>傳統的冰桶靜態冷保存</b>，還是用<b>機械灌流</b>——十篇裡有九篇用的是<b>低溫充氧灌流（HOPE）</b>。<br>
+    <b>結果是：用傳統冷保存的病人，移植後肝癌復發的勝算大約是灌流組的 2.3 倍</b>；反過來說，<b>灌流大概把復發勝算降到四成三左右</b>。而且兩組移植前的 AFP、符合米蘭準則的比例、微血管侵犯都差不多，<b>所以作者主張這個差別不是因為灌流組本來腫瘤就比較輕。</b><br>
+    <b>但有幾件事我們自己要清楚：</b>第一，<b>這些幾乎都是回溯性資料</b>，作者自己在結論裡就寫了這一點；<b>哪一顆肝被送去灌流，本來就不是隨機決定的</b>。第二，<b>灌流組只佔四分之一，而且時間上通常比較晚</b>——這十年我們選病人、管等候名單、做局部治療的方式都進步了，<b>時代效應沒辦法排除</b>。第三，也是最重要的：<b>這篇只看復發率，沒看存活，也沒看移植肝本身的結果</b>。<br>
+    <b>所以我的建議是：這不改變我們用不用灌流的判斷——那個判斷還是應該照移植肝本身的條件來下（DCD、高齡、脂肪肝、冷缺血時間長）。但如果受贈者是肝癌病人，這篇提供了一個額外的、方向合理的加分理由。真正的答案要等以復發為終點的前瞻性研究。</b>」</p>
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>以回溯性研究為主，非隨機證據。</b>原文結論明言 “Given the predominance of retrospective studies”。<b>「哪一顆移植肝被拿去灌流」是臨床判斷的結果，不是隨機分派</b>，殘餘混淆無法以統計方式完全處理。</li>
+    <li><b>方向容易被誤讀。</b>原文所有 OR 皆以 SCS 為分子。OR 2.34 的意思是「冷保存組復發較多」，<b>不是「灌流讓復發增加 2.34 倍」</b>。二手引用時這是最可能出錯的一點。</li>
+    <li><b>「機械灌流」不是單一介入。</b>九篇 HOPE、一篇 IFLT；<b>常溫機械灌流（NMP）與常溫區域灌流（NRP）未被納入</b>，結論不可外推到這些模式。</li>
+    <li><b>中等異質性且來源不明。</b>I² ＝ 53%，敏感度分析後降至 22%——<b>代表有離群研究，但原文摘要未說明剔除了哪一篇、依據為何</b>。</li>
+    <li><b>只報相對值，沒有絕對值。</b>原文摘要未提供各組復發的絕對比例或事件數，<b>因此無法計算風險差、NNT，也無法判斷 OR 是否誇大了相對風險</b>（在事件率約 10–20% 時，OR 會明顯偏離 RR）。</li>
+    <li><b>缺少最關鍵的臨床終點。</b>無復發存活、整體存活、移植肝存活、早期移植肝功能不良、非吻合性膽道狹窄<b>皆未評估</b>。</li>
+    <li><b>捐贈者型態的分布未知。</b>DBD 與 DCD 的比例是本篇最重要的潛在混淆因子，而本頁無法取得。</li>
+    <li><b>時代效應未被處理。</b>機械灌流是近十年才普及的技術，而同期肝癌移植的病人選擇與橋接治療也大幅改善。</li>
+    <li><b>族群重疊未知。</b>多中心資料庫研究之間常有病人重疊；<b>本頁無法檢查</b>。</li>
+    <li><b>偏差風險、GRADE、發表偏差、PROSPERO 註冊皆無法確認</b>（本頁無法取得原文相關段落）。</li>
+    <li><b>本頁自身的限制。</b>本篇尚未進入 PubMed Central，出版社頁面在本環境下僅回傳摘要，<b>因此本頁的分析深度顯著低於本系列常態</b>。凡是本頁標示「原文未列數值（本頁無法取得）」者，<b>並不代表原文沒有寫，只代表本頁拿不到</b>——這個區別很重要，讀者若能取得全文，應以全文為準。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>肝細胞癌 <span class="en">Hepatocellular carcinoma, HCC</span></dt><dd>原發性肝癌中最常見者；為肝臟移植的主要適應症之一。</dd></div>
+      <div class="gl-row"><dt>肝臟移植 <span class="en">Liver transplantation, LT</span></dt><dd>以捐贈者肝臟置換病肝；對符合條件的肝癌同時處理腫瘤與潛在肝硬化。</dd></div>
+      <div class="gl-row"><dt>靜態冷保存 <span class="en">Static cold storage, SCS</span></dt><dd>傳統做法：以保存液沖洗後將移植肝置於 0–4 ℃ 冰桶中運送，<b>器官在此期間無灌流、代謝停滯</b>。</dd></div>
+      <div class="gl-row"><dt>機械灌流 <span class="en">Machine perfusion, MP</span></dt><dd>以機器將保存液或血液持續灌流移植肝的動態保存策略之總稱。</dd></div>
+      <div class="gl-row"><dt>低溫充氧灌流 <span class="en">Hypothermic oxygenated perfusion, HOPE</span></dt><dd>約 4–12 ℃ 下以<b>充氧</b>灌流液灌流移植肝；機轉為<b>在低溫下重新充填粒線體 ATP、抑制再灌流時的活性氧爆發</b>。本篇十篇中有九篇屬此。</dd></div>
+      <div class="gl-row"><dt>雙血管低溫充氧灌流 <span class="en">Dual HOPE, dHOPE</span></dt><dd>同時經<b>門靜脈與肝動脈</b>灌流；相對於僅經門靜脈的單血管 HOPE。<b>本篇各研究採何種，原文未列數值。</b></dd></div>
+      <div class="gl-row"><dt>常溫機械灌流 <span class="en">Normothermic machine perfusion, NMP</span></dt><dd>在接近體溫（約 37 ℃）下以含氧血灌流，可在移植前評估移植肝功能。<b>本篇未納入。</b></dd></div>
+      <div class="gl-row"><dt>常溫區域灌流 <span class="en">Normothermic regional perfusion, NRP</span></dt><dd>在捐贈者體內、器官摘取前即以體外循環恢復腹部器官灌流。<b>本篇未納入。</b></dd></div>
+      <div class="gl-row"><dt>無缺血肝移植 <span class="en">Ischemia-free liver transplantation, IFLT</span></dt><dd>摘取、保存到植入全程<b>不中斷血流灌注</b>的技術；技術門檻極高。本篇十篇中有一篇屬此。</dd></div>
+      <div class="gl-row"><dt>缺血再灌流傷害 <span class="en">Ischemia-reperfusion injury, IRI</span></dt><dd>器官在缺血後恢復血流時，因活性氧爆發、發炎細胞激素釋放與內皮活化而造成的傷害；<b>本篇假說的核心機轉</b>。</dd></div>
+      <div class="gl-row"><dt>腦死後捐贈 <span class="en">Donation after brain death, DBD</span></dt><dd>捐贈者在腦死狀態下、循環仍維持時摘取器官。</dd></div>
+      <div class="gl-row"><dt>心臟死亡後捐贈 <span class="en">Donation after circulatory death, DCD</span></dt><dd>循環停止後才摘取器官，<b>移植肝承受額外的溫缺血傷害</b>；為機械灌流最主要的適應族群。</dd></div>
+      <div class="gl-row"><dt>邊緣性移植肝 <span class="en">Marginal / extended criteria graft</span></dt><dd>高齡捐贈者、脂肪變性明顯、冷缺血時間長或 DCD 等風險較高的移植肝。</dd></div>
+      <div class="gl-row"><dt>冷缺血時間 <span class="en">Cold ischemia time, CIT</span></dt><dd>自灌洗保存液起至植入再灌流止的低溫缺血時間；愈長風險愈高。</dd></div>
+      <div class="gl-row"><dt>早期移植肝功能不良 <span class="en">Early allograft dysfunction, EAD</span></dt><dd>移植後早期的移植肝功能異常；<b>HOPE 已有隨機試驗顯示可降低之，但本篇未評估</b>。</dd></div>
+      <div class="gl-row"><dt>非吻合性膽道狹窄 <span class="en">Non-anastomotic biliary stricture, NAS</span></dt><dd>與吻合口無關的膽道狹窄，多與缺血性膽道病變有關；<b>本篇未評估</b>。</dd></div>
+      <div class="gl-row"><dt>米蘭準則 <span class="en">Milan criteria</span></dt><dd>肝癌移植的經典選擇準則：單一腫瘤 ≤ 5 cm，或 ≤ 3 顆且每顆 ≤ 3 cm，且無血管侵犯與肝外轉移。</dd></div>
+      <div class="gl-row"><dt>甲型胎兒蛋白 <span class="en">Alpha-fetoprotein, AFP</span></dt><dd>肝癌的血清標記；移植前數值與復發風險相關。<b>其分布極度右偏，不宜以平均數比較。</b></dd></div>
+      <div class="gl-row"><dt>微血管侵犯 <span class="en">Microvascular invasion, MVI</span></dt><dd>病理上腫瘤侵入微小血管；<b>移植後復發最強的病理預測因子之一</b>。</dd></div>
+      <div class="gl-row"><dt>前導性／橋接治療 <span class="en">Neoadjuvant / bridging therapy</span></dt><dd>移植前為控制腫瘤或降期而施行的治療（如 TACE、TARE、消融）。</dd></div>
+      <div class="gl-row"><dt>勝算比 <span class="en">Odds ratio, OR</span></dt><dd>兩組事件勝算之比。<b>事件率不低時，OR 會誇大相對風險（RR）</b>；本篇無法計算 RR。</dd></div>
+      <div class="gl-row"><dt>標準化平均差 <span class="en">Standardized mean difference, SMD</span></dt><dd>各研究測量尺度不一致時，把平均差除以合併標準差後合併；<b>無單位</b>。</dd></div>
+      <div class="gl-row"><dt>I² 統計量 <span class="en">I-squared</span></dt><dd>研究間變異佔總變異的比例；50% 附近視為中等異質。本篇主要結果為 53%。</dd></div>
+      <div class="gl-row"><dt>敏感度分析 <span class="en">Sensitivity analysis</span></dt><dd>以不同納入條件或方法重算，檢查結論是否改變。<b>本篇未說明其執行方式。</b></dd></div>
+      <div class="gl-row"><dt>殘餘混淆 <span class="en">Residual confounding</span></dt><dd>即使已校正已知變項，仍存在未測量或測量不精確之混淆因子；<b>回溯性比較的核心限制</b>。</dd></div>
+      <div class="gl-row"><dt>時代效應 <span class="en">Period / era effect</span></dt><dd>因不同年代的整體照護水準差異而產生的偏差；新技術與較佳結果常同時出現在較晚的年份。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redrawing Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻（According to PubMed）：</b>Garzali IU, Abou Zeid EED, Aloun A, Elyakub AI, Sheshe AA. <i>The role of machine perfusion in preventing recurrence after liver transplant for hepatocellular carcinoma: a systematic review and meta-analysis.</i> BMC Gastroenterol. 2026;26(1). DOI：<a href="https://doi.org/10.1186/s12876-026-05142-4">10.1186/s12876-026-05142-4</a>；PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42477564/">PMID 42477564</a>。本頁內容係<b>依 PubMed 之作者摘要與出版社公開摘要頁</b>撰寫。</p>
+  <p><b>⚠ 資料可得性聲明（重要）：</b>本篇於撰寫本頁時<b>尚未進入 PubMed Central</b>，出版社網頁在本環境下僅回傳摘要層級內容。因此本頁<b>無法取得</b>：PRISMA 流程圖各階段筆數、納入研究一覽表（作者／年份／國家／設計／分組人數／灌流模式／追蹤時間）、各研究的原始復發事件數、偏差風險評估、發表偏差評估、GRADE 證據確定性、PROSPERO 註冊號、以及微血管侵犯與前導性治療的具體效果值。<b>凡此一律標示「原文未列數值（本頁無法取得）」並留白，本頁不做任何推估。</b>請注意這個標示的意思是「本頁拿不到」，<b>而非「原文沒有寫」</b>——若讀者能取得全文，應以全文為準。<b>也因此，本頁的分析深度低於本系列常態，特別是無法執行原始事件數驗算、單篇權重檢查與留一法判讀。</b></p>
+  <p><b>圖表重繪聲明：</b>本頁所有圖表皆為<b>依原文摘要所載數值重新繪製的 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未連結、未重製原文或出版社的任何圖檔</b>，全頁不含任何外部資源。凡由原文數字換算或計算得出者（OR 取倒數後的方向換算、組別百分比、以 CI 反推標準誤與 p 值的一致性檢查），已在該處就地標註<b>「本頁自行計算」</b>。英文摘要為逐字引用；中文標題、翻譯、所有解讀、臨床意涵與限制分析均為本頁自行撰寫，不代表原作者立場。</p>
+  <p style="font-size:13px;color:#6b7079"><b>閱讀本頁時請記得：</b>這是一個<b>方向合理、機轉說得通、但以回溯性資料為主</b>的觀察性訊號，而且本頁只能看到它的摘要。<b>正確的引用方式是「以回溯性研究為主的統合分析顯示，機械灌流（以低溫充氧灌流為主）保存的移植肝，其受贈者移植後肝癌復發較少（換算後 OR 約 0.43，0.26–0.71）；此關聯與基線腫瘤特徵無關，但需前瞻性研究確認」；不正確的引用方式是「機械灌流可預防肝癌移植後復發」。</b>更不該做的，是把 OR 2.34 誤讀成不利於機械灌流——<b>原文的分子是靜態冷保存組。</b></p>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 007 · 2026 年 8 月 5 日 ｜ 資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/42477564/">PubMed</a> 作者摘要 ｜ 本頁為閱讀輔助，臨床決策請回歸原文與病人個別狀況
+</footer>
+
+</div>
+
+</body>
+</html>
