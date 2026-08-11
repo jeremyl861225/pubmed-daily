@@ -1,7 +1,59 @@
 {
- "count": 19,
- "latest": "2026-08-07",
+ "count": 21,
+ "latest": "2026-08-12",
  "papers": [
+  {
+   "id": "pubmed-mis-2026-08-12",
+   "file": "papers/pubmed-mis-2026-08-12.html",
+   "date": "2026-08-12",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 011",
+   "title": "機器人 vs. 腹腔鏡全直腸繫膜切除（TME）治療中低位直腸癌：只收隨機試驗的系統性回顧與統合分析（4 篇 RCT、1,952 人）——CRM 陽性 OR 0.58、繫膜完整 OR 1.55、轉開腹 OR 0.41，三年局部復發 1.8% vs. 4.2%",
+   "title_en": "Resection quality and oncologic outcomes after robotic versus laparoscopic total mesorectal excision for mid and low rectal cancer: a systematic review and meta-analysis of randomised trials",
+   "journal": "Journal of Robotic Surgery 2026;20(1)（Springer Nature 發行之機器人手術專門期刊）",
+   "authors": "Gosavi R, Smith B, Mealy A, Iftekher W, Bell S, McMurrick P, Nguyen TC, Teoh W, Narasimhan V 通訊作者 Vignesh Narasimhan；澳洲墨爾本 Cabrini Health／Monash Health／Alfred Health 大腸直腸外科團隊",
+   "design": "系統性回顧與統合分析（僅納入平行分組隨機對照試驗） MEDLINE／Embase／CENTRAL／Google Scholar 檢索至 2025 年 9 月 22 日；兩位審查者獨立篩選與萃取；RoB 2.0 評估偏誤、GRADE 評估確定性；隨機效果模式合併",
+   "doi": "10.1007/s11701-026-03541-z",
+   "category": "微創／機器人手術技術",
+   "tags": [
+    "微創／機器人手術技術",
+    "全直腸繫膜切除 TME",
+    "環周切除緣 CRM",
+    "機器人手術",
+    "證據等級：統合分析（僅收 RCT）",
+    "Open Access"
+   ],
+   "tldr": "把腫瘤高度限定在肛門緣 10 公分以內、只收隨機試驗的 4 篇 RCT（1,952 人）合併起來看，機器人 TME 明顯改善的是「標本品質」與「不用中途轉開腹」——CRM 陽性率 OR 0.58（95% CI 0.38–0.87）、繫膜完整率 OR 1.55（1.14–2.12）、轉開腹 OR 0.41（0.21–0.79），三項異質性都是 I² ＝ 0%、GRADE 高度確定性；但換算成絕對值只有 2–4 個百分點（CRM 每 1,000 人少 27 例、轉開腹少 18 例，NNT 分別約 37 與 56），而且術中／術後併發症沒有差別。三年腫瘤學終點只有 2 篇試驗、事件數極少：局部區域復發 1.8% vs. 4.2%（OR 0.43）、DFS HR 0.78（0.61–0.99，勉強壓線）、總存活無差異（HR 0.79，0.57–1.11）。四篇中三篇來自東亞高量中心、REAL 一篇",
+   "bytes": 86837
+  },
+  {
+   "id": "pubmed-gs-peds-2026-08-12",
+   "file": "papers/pubmed-gs-peds-2026-08-12.html",
+   "date": "2026-08-12",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 010",
+   "title": "小兒穿孔性闌尾炎術後的抗生素可以打短一點嗎？3 篇 RCT（215 童）＋1 篇前後對照（288 童）的系統性回顧與統合分析——腹腔內膿瘍 17.4% vs. 15.5%（RR 1.12），非劣性未成立、但也沒看到風險上升，住院天數則少約 2 天",
+   "title_en": "Effectiveness and Safety of Shortened Postoperative Antibiotic Regimens in Children with Perforated Appendicitis: A Systematic Review and Meta-Analysis",
+   "journal": "European Journal of Pediatric Surgery 2026;36(3):210–216（線上先行 2025 年 12 月 24 日）；奧地利小兒外科學會等之官方期刊，Thieme 發行",
+   "authors": "Löfgren P, Berge E, de Wijkerslooth EML, Jivegård L, Sjöström S, Wallerstedt SM 瑞典哥德堡 Queen Silvia 兒童醫院小兒外科 ＋ Västra Götaland 區醫療科技評估中心（HTA）；第三作者 de Wijkerslooth 同時是本篇納入的關鍵 RCT 之作者",
+   "design": "系統性回顧與統合分析（納入 RCT 與前瞻性對照研究），主要終點採非劣性設計 Medline／Embase／Cochrane Library／CINAHL 檢索至 2023 年 10 月 23 日；PICO 預設；隨機效果模式合併風險比（RR）與風險差（RD）；GRADE 評定確定性",
+   "doi": "10.1055/a-2761-5649",
+   "category": "小兒外科",
+   "tags": [
+    "小兒外科",
+    "穿孔性闌尾炎",
+    "術後抗生素療程",
+    "抗生素管理 Antimicrobial stewardship",
+    "證據等級：系統性回顧／統合分析（非劣性）",
+    "Open Access"
+   ],
+   "tldr": "把小兒穿孔性闌尾炎術後「靜脈抗生素打不到 5 天」和「打滿 5 天」放在一起比，能拿來合併的只有 2 篇 RCT、189 名兒童：腹腔內膿瘍 16/92（17.4%）vs. 15/97（15.5%），風險差 ＋2 個百分點、95% CI −8 至 12，上界越過了預設的 7.5 個百分點非劣性界線——所以「非劣性沒有成立」。但要注意這句話的另一半：信賴區間同時也涵蓋 0 與負值，也就是「沒有證據顯示風險上升」；作者自己的結論是「本回顧並不意味著應該避免縮短療程」。相對地，縮短靜脈療程可以把住院天數縮短約 2 天（GRADE 中度確定性，是全篇唯一達到中度確定性的終點），再入院率與抗生素相關併發症看不出差別。死亡、腸阻塞、手術部位感染則因事件數太少（多為 0–4 例）完全無法下結論。整篇的本質是：不是「證明了安全」，而是「證據量根本不夠回答這個問題」。",
+   "bytes": 85113
+  },
   {
    "id": "pubmed-gs-breast-2026-08-07",
    "file": "papers/pubmed-gs-breast-2026-08-07.html",
