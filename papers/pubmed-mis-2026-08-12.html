@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-12</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 12 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 011</span>
+  </div>
+  <h1 class="title">機器人 vs. 腹腔鏡全直腸繫膜切除（TME）治療中低位直腸癌：只收隨機試驗的系統性回顧與統合分析（4 篇 RCT、1,952 人）——CRM 陽性 OR 0.58、繫膜完整 OR 1.55、轉開腹 OR 0.41，三年局部復發 1.8% vs. 4.2%</h1>
+  <p class="title-en">Resection quality and oncologic outcomes after robotic versus laparoscopic total mesorectal excision for mid and low rectal cancer: a systematic review and meta-analysis of randomised trials</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Journal of Robotic Surgery<br><span style="color:#6b7079;font-size:13px">2026;20(1)（Springer Nature 發行之機器人手術專門期刊）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Gosavi R, Smith B, Mealy A, Iftekher W, Bell S, McMurrick P, Nguyen TC, Teoh W, Narasimhan V<br><span style="color:#6b7079;font-size:13px">通訊作者 Vignesh Narasimhan；澳洲墨爾本 Cabrini Health／Monash Health／Alfred Health 大腸直腸外科團隊</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧與統合分析（僅納入平行分組隨機對照試驗）</b><br><span style="color:#6b7079;font-size:13px">MEDLINE／Embase／CENTRAL／Google Scholar 檢索至 2025 年 9 月 22 日；兩位審查者獨立篩選與萃取；RoB 2.0 評估偏誤、GRADE 評估確定性；隨機效果模式合併</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>把腫瘤高度限定在肛門緣 10 公分以內，問「機器人到底有沒有把標本切得比較好」</b><br><span style="color:#6b7079;font-size:13px">共同主要終點刻意選<b>病理品質</b>（CRM 與繫膜完整度）而非住院天數之類的周術期代理指標，這是本篇與過去統合分析最大的差別</span></div></div>
+    <div class="meta-item"><div class="k">納入規模</div><div class="v"><b>4 篇 RCT／1,952 人（機器人 977、腹腔鏡 975）</b><br><span style="color:#6b7079;font-size:13px">REAL 2025（中國多中心 1,171 人）、COLRAR 2023（南韓 295 人）、Kim 2018（南韓 139 人）、Feng 2022（中國 347 人，全為 APR）</span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">PROSPERO CRD420251266523<br><span style="color:#6b7079;font-size:13px"><b>原文自承登錄日為 2025 年 12 月 1 日，晚於回顧開始執行的時間</b>（“registered after commencement of the review”）</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 6 月 1 日（PMID 42223567；PMC13226396）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion／Table 1／Table 2 全文）；<b>四張森林圖為圖檔，PubMed Central 純文字版未附各研究原始事件數</b></span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s11701-026-03541-z">10.1007/s11701-026-03541-z</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42223567/">PMID 42223567 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">微創／機器人手術技術</span>
+    <span class="tag t2">全直腸繫膜切除 TME</span>
+    <span class="tag t2">環周切除緣 CRM</span>
+    <span class="tag t2">機器人手術</span>
+    <span class="tag t3">證據等級：統合分析（僅收 RCT）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">絕對風險與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把腫瘤高度限定在肛門緣 10 公分以內、只收隨機試驗的 4 篇 RCT（1,952 人）合併起來看，<strong>機器人 TME 明顯改善的是「標本品質」與「不用中途轉開腹」——CRM 陽性率 OR 0.58（95% CI 0.38–0.87）、繫膜完整率 OR 1.55（1.14–2.12）、轉開腹 OR 0.41（0.21–0.79），三項異質性都是 I² ＝ 0%、GRADE 高度確定性</strong>；但換算成絕對值只有 2–4 個百分點（CRM 每 1,000 人少 27 例、轉開腹少 18 例，NNT 分別約 37 與 56），而且術中／術後併發症沒有差別。<strong>三年腫瘤學終點只有 2 篇試驗、事件數極少</strong>：局部區域復發 1.8% vs. 4.2%（OR 0.43）、DFS HR 0.78（0.61–0.99，勉強壓線）、總存活無差異（HR 0.79，0.57–1.11）。四篇中三篇來自東亞高量中心、REAL 一篇就占六成人數，作者自己也把長期結果定位成「探索性而非確認性」。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Abstract（本刊採不分段式摘要，以下為 PubMed 所載全文逐字引用）</h4>
+    <p>Total mesorectal excision (TME) for mid and low rectal cancer is technically demanding, and resection quality strongly influences local control and survival. Robotic platforms may offer technical advantages over conventional laparoscopy, but oncologic benefits remain uncertain. This meta-analysis evaluates resection quality and early oncologic outcomes using evidence exclusively from randomised trials. A PRISMA aligned systematic review of MEDLINE, Embase, CENTRAL and Google Scholar was performed to 22 September 2025. Eligible studies were parallel-group randomised controlled trials comparing robotic with laparoscopic TME for mid or low rectal adenocarcinoma, defined as tumour height of 10&nbsp;cm or less from the anal verge. Co-primary outcomes were circumferential resection margin (CRM) positivity and completeness of the mesorectum. Secondary outcomes included conversion to open surgery, intraoperative complications, and three-year locoregional recurrence, disease-free survival, and overall survival. Odds ratios and hazard ratios were pooled using random effects models. Four randomised trials met inclusion, enrolling 1,952 patients. Robotic TME reduced CRM positivity (OR 0.58, 95% CI 0.38 to 0.87) and increased complete TME rates (OR 1.55, 95% CI 1.14 to 2.12). Conversion to open surgery was less frequent with robotics (OR 0.41, 95% CI 0.21 to 0.79). Intraoperative and early postoperative complications did not differ. Two trials reported three-year oncologic outcomes. Robotic TME was associated with lower three-year locoregional recurrence (OR 0.43, 95% CI 0.23&ndash;0.81) and a modest improvement in disease-free survival (HR 0.78, 95% CI 0.61&ndash;0.99), although event rates were low and estimates should be interpreted cautiously. Overall survival did not differ (HR 0.79, 95% CI 0.57&ndash;1.11). In mid and low rectal cancer, robotic TME was associated with improved pathological resection quality and lower conversion rates compared with laparoscopic TME, without clear differences in early perioperative morbidity There is emerging evidence of improved three-year locoregional recurrence and disease-free survival.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用，<b>一字未改</b>（包含原文末段 “…without clear differences in early perioperative morbidity There is emerging evidence…” 缺漏句點的排版瑕疵，本頁照錄）。<b>值得注意的是</b>：摘要對三年腫瘤學結果用的是 “was associated with”、“should be interpreted cautiously”，作者<b>沒有宣稱因果或優越性</b>；下方臨床意涵段落請以此為準，不要把 DFS 的 HR 0.78 讀成「機器人能延長無病存活」。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>PRISMA Flow <span class="zh">／ 檢索與納入流程（本篇為系統性回顧，繪 PRISMA）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（MEDLINE、Embase、CENTRAL、Google Scholar；自資料庫起始至 2025 年 9 月 22 日）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n" style="font-size:17px">原文未列數值</span><br>
+        <span style="color:#6b7079;font-size:12.5px">原文僅以 Fig. 1「PRISMA search」圖檔呈現各階段人數，<b>PubMed Central 的純文字全文與 Springer 網頁版皆未把圖內數字轉為文字</b>；本頁<b>拒絕推估</b>，一律留白。另有以下補充來源：手動查核參考文獻清單、ClinicalTrials.gov 試驗登錄、相關系統性回顧</span></div></div>
+      <div class="pr-ex"><b>排除階段人數：原文未列數值</b><br>
+        <span style="font-size:12px">兩位審查者（RG、BS）獨立篩選題名／摘要／全文，歧見由資深作者（VN）仲裁；<b>未設語言限制</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 納入條件（原文 Methods 逐條）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">納入：<b>平行分組 RCT</b>、成人、中低位直腸腺癌（<b>肛門緣 10 公分以內</b>）、根治性切除、機器人 TME vs. 腹腔鏡 TME<br>
+        <span style="color:#6b7079;font-size:12.5px">且至少須報告「術中併發症、病理結果、轉開腹」三者之一</span></div></div>
+      <div class="pr-ex"><b>排除：</b>沒有機器人 vs. 腹腔鏡對照的 TME 試驗、非隨機研究、<b>大腸直腸混合世代且無法拆出直腸資料者</b>、僅限上段直腸癌者</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 最終納入</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">4</span> 篇隨機對照試驗，<span class="n">1,952</span> 位受試者<br>
+        <span style="color:#6b7079;font-size:12.5px">機器人 <b>977</b> 人／腹腔鏡 <b>975</b> 人（本頁自行計算：586＋151＋66＋174 ＝ 977；585＋144＋73＋173 ＝ 975，與原文一致）</span></div></div>
+      <div class="pr-ex"><b>各終點實際貢獻人數不同</b><br>
+        CRM 陽性 1,896 人（<b>本頁自行計算：比全體少 56 人</b>，原文未說明缺失原因）<br>
+        術後併發症 1,605 人（3 篇）<br>三年腫瘤學終點 1,517 人（2 篇）</div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：納入條件、排除條件、最終篇數與人數取自原文 Methods 與 Results；<b>各篩選階段的記錄數原文未以文字列出</b>，本頁以「原文未列數值」標示，未做任何推估。本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：由上而下是「找到什麼 → 留下什麼 → 各終點實際算到幾個人」。<b>有何陷阱</b>：最下一格的三個數字（1,896／1,605／1,517）彼此不同，代表<b>不同終點的證據基礎其實不一樣</b>——CRM 少了 56 人、術後併發症少了一篇試驗、三年結果只剩兩篇。看森林圖時務必回頭對照這一格，別把「4 篇 RCT、1,952 人」的印象套用到每一條線上。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵表（原文 Table 1 完整內容）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1120px">
+    <thead><tr><th style="width:96px">試驗</th><th style="width:82px">場域</th><th>分析人數<br>（機器人 vs. 腹腔鏡）</th><th>主要腫瘤納入條件</th><th>術式組成</th><th>新輔助治療<br>（機器人 vs. 腹腔鏡）</th><th>機器人平台</th></tr></thead>
+    <tbody>
+      <tr><td><b>REAL 2025</b></td><td>中國，多中心</td><td class="num"><b>586 vs. 585</b></td>
+        <td>直腸腺癌距肛門緣 ≤ 10 cm；cT1–T3 且繫膜筋膜未受侵犯、N0–N1，或術前放（化）療後 ycT1–T3 Nx；M0</td>
+        <td>保留括約肌（LAR ＋ ISR）：<br>機器人 487/586（83.1%）vs. 腹腔鏡 452/585（77.3%）<br>APR：99/586（16.9%）vs. 133/585（22.7%）</td>
+        <td class="num">254/586（43.3%）<br>vs. 257/585（43.9%）<br><span class="na">放（化）療允許但非強制；若施行僅限長程</span></td>
+        <td>da Vinci Si</td></tr>
+      <tr><td><b>COLRAR 2023</b></td><td>南韓，多中心</td><td class="num"><b>151 vs. 144</b></td>
+        <td>直腸腺癌 ≤ 10 cm；cT1–4a、任意 N（Nx）、M0</td>
+        <td>保留括約肌：123/151（81.5%）vs. 112/144（77.8%）<br>APR：9/151（6.0%）vs. 14/144（9.7%）</td>
+        <td class="num">76/151（50.3%）<br>vs. 68/144（47.2%）<br><span class="na">依是否接受 CRT 分層隨機</span></td>
+        <td>da Vinci</td></tr>
+      <tr><td><b>Kim 2018</b></td><td>南韓，單中心</td><td class="num"><b>66 vs. 73</b></td>
+        <td>直腸腺癌距肛門緣 9 cm 以內；cT1–3、Nx、M0</td>
+        <td>保留括約肌：65/66（98.5%）vs. 70/73（95.9%）<br>APR：1/66（1.5%）vs. 2/73（2.7%）</td>
+        <td class="num">51/66（77.3%）<br>vs. 58/73（79.5%）<br><span class="na">cT3 依院內流程給 CRT</span></td>
+        <td>da Vinci S</td></tr>
+      <tr><td><b>Feng 2022</b></td><td>中國，單中心</td><td class="num"><b>174 vs. 173</b></td>
+        <td>直腸腺癌距肛門緣 <b>≤ 5 cm</b>；cT1–T3、N0–1（或 CRT 後 ycT1–T3 Nx）；M0；繫膜筋膜未受侵犯</td>
+        <td class="sig">APR：174/174（100%）vs. 173/173（100%）<br><b>全部為腹會陰聯合切除，無一例保留括約肌</b></td>
+        <td class="num">37/174（21.3%）<br>vs. 35/173（20.2%）</td>
+        <td>da Vinci S</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079"><b>本頁自行計算的加總與比例</b>：機器人 586＋151＋66＋174 ＝ <b>977</b>；腹腔鏡 585＋144＋73＋173 ＝ <b>975</b>；合計 <b>1,952</b>，與原文完全一致。REAL 一篇即貢獻 1,171 人，占全體 <b>60.0%</b>；Feng 2022 貢獻 347 人（17.8%）。<b>四篇之中三篇來自東亞</b>（中國 2 篇、南韓 2 篇；原文 Discussion 亦自承「Three of four trials were conducted in East Asia」）。</p>
+  <div class="call amber">
+    <div class="h">看這張表要先看懂的一件事</div>
+    Feng 2022 收的是「距肛門緣 5 公分以內、<b>全部做 APR</b>」的極低位腫瘤，而 REAL／COLRAR／Kim 收的是「10 公分以內、八成以上做保留括約肌手術」。<b>這四篇合併時，統計上的異質性 I² ＝ 0%，但臨床上的異質性其實很大</b>。原文有做敏感度分析（排除純 APR 那篇），結果方向與顯著性不變——這一點值得記住，因為它是本篇少數幾個真正做過的穩健性檢驗。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary &amp; Secondary Outcomes <span class="zh">／ 主要結果森林圖（本頁依原文所載合併效果值重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="500" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">機器人 TME vs. 腹腔鏡 TME：七個二分類終點的合併勝算比（對數刻度，無效線 ＝ 1）</text><line x1="470.0" y1="60.0" x2="470.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="470.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.2</text><line x1="577.1" y1="60.0" x2="577.1" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="577.1" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text><line x1="658.0" y1="60.0" x2="658.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="658.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text><line x1="739.0" y1="60.0" x2="739.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="739.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text><line x1="820.0" y1="60.0" x2="820.0" y2="430.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="820.0" y="447.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4</text><line x1="658.0" y1="60.0" x2="658.0" y2="430.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點（除「繫膜完整」外，OR ＜ 1 皆代表機器人較佳）</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">效果值（95% CI）</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">環周切除緣陽性 CRM positivity（共同主要終點）</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇 RCT／1,896 人｜I² ＝ 0%｜GRADE 高度確定性</text><line x1="545.0" y1="91.0" x2="641.8" y2="91.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="545.0" y1="86.5" x2="545.0" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="641.8" y1="86.5" x2="641.8" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 594.4 83.0 L 605.4 91.0 L 594.4 99.0 L 583.4 91.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.58（0.38–0.87），p ＝ 0.01</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">繫膜不完整 Incomplete TME（nearly complete ＋ incomplete）</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇 RCT／1,952 人｜I² ＝ 0%</text><line x1="567.3" y1="141.0" x2="641.8" y2="141.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="567.3" y1="136.5" x2="567.3" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="641.8" y1="136.5" x2="641.8" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 604.1 133.0 L 615.1 141.0 L 604.1 149.0 L 593.1 141.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.63（0.46–0.87），p ＝ 0.004</text><text x="20.0" y="185.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">繫膜完整 Complete TME（共同主要終點，方向相反）</text><text x="20.0" y="202.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇 RCT／1,952 人｜I² ＝ 0%｜GRADE 高度確定性｜數值 ＞ 1 才是機器人有利</text><line x1="673.3" y1="191.0" x2="745.8" y2="191.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="673.3" y1="186.5" x2="673.3" y2="195.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="745.8" y1="186.5" x2="745.8" y2="195.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 709.2 183.0 L 720.2 191.0 L 709.2 199.0 L 698.2 191.0 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="195.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.55（1.14–2.12），p ＝ 0.006</text><text x="20.0" y="235.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">轉開腹 Conversion to open surgery</text><text x="20.0" y="252.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇 RCT／1,952 人｜I² ＝ 0%｜GRADE 高度確定性</text><line x1="475.7" y1="241.0" x2="630.5" y2="241.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="475.7" y1="236.5" x2="475.7" y2="245.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="630.5" y1="236.5" x2="630.5" y2="245.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 553.9 233.0 L 564.9 241.0 L 553.9 249.0 L 542.9 241.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="245.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.41（0.21–0.79），p ＝ 0.008</text><text x="20.0" y="285.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術中併發症 Intraoperative complications</text><text x="20.0" y="302.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4 篇 RCT／1,952 人｜I² ＝ 14%｜GRADE 中度確定性</text><line x1="567.3" y1="291.0" x2="669.2" y2="291.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="567.3" y1="286.5" x2="567.3" y2="295.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="669.2" y1="286.5" x2="669.2" y2="295.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 618.0 283.0 L 629.0 291.0 L 618.0 299.0 L 607.0 291.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="295.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.71（0.46–1.10），p ＝ 0.13</text><text x="20.0" y="335.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後併發症 Postoperative complications</text><text x="20.0" y="352.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3 篇 RCT／1,605 人｜I² ＝ 78%（異質性大）｜GRADE 低度確定性</text><line x1="586.0" y1="341.0" x2="754.8" y2="341.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="586.0" y1="336.5" x2="586.0" y2="345.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="754.8" y1="336.5" x2="754.8" y2="345.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 670.2 333.0 L 681.2 341.0 L 670.2 349.0 L 659.2 341.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="345.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.11（0.54–2.29），p ＝ 0.77</text><text x="20.0" y="385.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">三年局部區域復發 3-year locoregional recurrence</text><text x="20.0" y="402.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2 篇 RCT／1,517 人｜1.8% vs. 4.2%｜I² ＝ 0%｜GRADE 中度確定性</text><line x1="486.3" y1="391.0" x2="633.4" y2="391.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="486.3" y1="386.5" x2="486.3" y2="395.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="633.4" y1="386.5" x2="633.4" y2="395.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 559.4 383.0 L 570.4 391.0 L 559.4 399.0 L 548.4 391.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="395.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.43（0.23–0.81），p ＝ 0.009</text><text x="646.0" y="470.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 機器人較佳</text><text x="670.0" y="470.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">腹腔鏡較佳 ▶</text><text x="14.0" y="490.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">■ 個別研究／單一終點　◆ 合併估計值（菱形）　箭頭 ＝ 信賴區間超出繪圖範圍</text></svg></div>
+    <div class="cap"><b>資料來源</b>：全部合併效果值、95% CI、I²、p 值均取自原文 Results 段落與 Table 2（GRADE 摘要表）逐字對應。<b>原文四張森林圖為圖檔，PubMed Central 純文字版與出版社網頁版皆未列出各研究的原始事件數</b>，因此本圖<b>只呈現合併菱形，不呈現個別研究的方塊</b>——沒有原始數據就不畫，不推估。<b>怎麼解讀</b>：垂直虛線是無效線（OR ＝ 1）。菱形整個落在左側代表機器人事件較少；唯獨「繫膜完整 Complete TME」是正向指標（愈多愈好），所以它的菱形落在右側才是機器人有利，本圖已用琥珀色與註記區隔。<b>有何陷阱</b>：(1) 三條 GRADE 高度確定性的線（CRM、繫膜完整、轉開腹）都是<b>病理與技術指標</b>，不是病人感受得到的終點；(2) 「術後併發症」那條的 I² ＝ 78%，四篇對「併發症」的定義本來就不一樣，這條線幾乎不能拿來做臨床決策；(3) 最下面那條三年局部復發只來自 2 篇試驗、事件數極少（1.8% vs. 4.2%），信賴區間看起來漂亮是因為事件太少、分母很大，不代表結論穩固。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 250" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="250" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">時間至事件終點：合併風險比（HR，對數刻度）</text><line x1="470.0" y1="60.0" x2="470.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="470.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.4</text><line x1="518.5" y1="60.0" x2="518.5" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="518.5" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text><line x1="669.3" y1="60.0" x2="669.3" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="669.3" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text><line x1="820.0" y1="60.0" x2="820.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="820.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text><line x1="669.3" y1="60.0" x2="669.3" y2="180.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點（HR ＜ 1 代表機器人較佳）</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">風險比（95% CI）</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">三年無病存活 Disease-free survival</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2 篇 RCT／1,517 人｜I² ＝ 0%｜GRADE 中度確定性</text><line x1="561.8" y1="91.0" x2="667.1" y2="91.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="561.8" y1="86.5" x2="561.8" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="667.1" y1="86.5" x2="667.1" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 615.2 83.0 L 626.2 91.0 L 615.2 99.0 L 604.2 91.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">HR 0.78（0.61–0.99），p ＝ 0.04</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">總存活 Overall survival</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2 篇 RCT／1,517 人｜I² ＝ 0%｜GRADE 中度確定性</text><line x1="547.0" y1="141.0" x2="692.0" y2="141.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="547.0" y1="136.5" x2="547.0" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="692.0" y1="136.5" x2="692.0" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 618.0 133.0 L 629.0 141.0 L 618.0 149.0 L 607.0 141.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">HR 0.79（0.57–1.11），p ＝ 0.18</text><text x="657.3" y="220.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 機器人較佳</text><text x="681.3" y="220.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">腹腔鏡較佳 ▶</text><text x="14.0" y="240.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">■ 個別研究／單一終點　◆ 合併估計值（菱形）　箭頭 ＝ 信賴區間超出繪圖範圍</text></svg></div>
+    <div class="cap"><b>資料來源</b>：原文 Results「Long-term oncologic outcomes」段落與 Table 2。<b>怎麼解讀</b>：HR ＜ 1 代表機器人組事件（復發或死亡）發生得比較慢。DFS 的信賴區間上界是 0.99——<b>只差 0.01 就跨過無效線</b>，這是典型的「勉強壓線顯著」。<b>有何陷阱</b>：原文對這兩條線的處理方式是「有報 HR 就用，沒報就從 Kaplan–Meier 曲線重建 log HR 與標準誤」，<b>重建法本身會低估變異</b>；再加上只有 2 篇試驗、事件數少，作者自己在 Discussion 明白寫這是 “exploratory rather than confirmatory”。臨床上，<b>不應該用這張圖去跟病人說「機器人可以讓你活得比較久」</b>。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表（原文 Table 2 GRADE 摘要表逐格照抄）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1260px">
+    <thead><tr><th style="width:176px">終點</th><th>腹腔鏡（基線風險）</th><th>機器人（推算風險）</th><th>相對效果<br>（95% CI）</th><th>I²</th><th>p</th><th>人數（試驗數）</th><th>GRADE 確定性</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>CRM 陽性</b>（共同主要）</td><td class="num">66 / 1,000</td><td class="num">39 / 1,000<br><span class="na">（26–58）</span></td><td class="num">OR 0.58<br>（0.38–0.87）</td><td class="num">0%</td><td class="num">0.01</td><td class="num">1,896（4）</td><td><span class="grade" style="background:#e8f2ef;color:#2f6b62">⨁⨁⨁⨁ 高</span></td><td><span class="win">機器人較佳</span></td></tr>
+      <tr><td><b>繫膜完整 TME</b>（共同主要）</td><td class="num">883 / 1,000</td><td class="num">921 / 1,000<br><span class="na">（896–941）</span></td><td class="num">OR 1.55<br>（1.14–2.12）</td><td class="num">0%</td><td class="num">0.006</td><td class="num">1,952（4）</td><td><span class="grade" style="background:#e8f2ef;color:#2f6b62">⨁⨁⨁⨁ 高</span></td><td><span class="win">機器人較佳</span></td></tr>
+      <tr><td>繫膜<b>不</b>完整（反向表述）</td><td class="num" colspan="2"><span class="na">原文未列絕對風險</span></td><td class="num">OR 0.63<br>（0.46–0.87）</td><td class="num">0%</td><td class="num">0.004</td><td class="num">1,952（4）</td><td><span class="na">原文未評</span></td><td><span class="win">機器人較佳</span></td></tr>
+      <tr><td><b>轉開腹</b></td><td class="num">31 / 1,000</td><td class="num">13 / 1,000<br><span class="na">（7–24）</span></td><td class="num">OR 0.41<br>（0.21–0.79）</td><td class="num">0%</td><td class="num">0.008</td><td class="num">1,952（4）</td><td><span class="grade" style="background:#e8f2ef;color:#2f6b62">⨁⨁⨁⨁ 高</span></td><td><span class="win">機器人較佳</span></td></tr>
+      <tr><td>術中併發症</td><td class="num">77 / 1,000</td><td class="num">56 / 1,000<br><span class="na">（37–84）</span></td><td class="num">OR 0.71<br>（0.46–1.10）</td><td class="num">14%</td><td class="num">0.13</td><td class="num">1,952（4）</td><td><span class="grade">⨁⨁⨁◯ 中</span></td><td><span class="win neutral">無顯著差異</span></td></tr>
+      <tr><td>術後併發症</td><td class="num">204 / 1,000</td><td class="num">222 / 1,000<br><span class="na">（122–371）</span></td><td class="num">OR 1.11<br>（0.54–2.29）</td><td class="num sig">78%</td><td class="num">0.77</td><td class="num">1,605（3）</td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁⨁◯◯ 低</span></td><td><span class="win neutral">無顯著差異</span></td></tr>
+      <tr><td>三年局部區域復發</td><td class="num">42 / 1,000<br><span class="na">（4.2%）</span></td><td class="num">19 / 1,000<br><span class="na">（1.8%；10–34）</span></td><td class="num">OR 0.43<br>（0.23–0.81）</td><td class="num">0%</td><td class="num">0.009</td><td class="num">1,517（2）</td><td><span class="grade">⨁⨁⨁◯ 中</span></td><td><span class="win caution">機器人較佳，但探索性</span></td></tr>
+      <tr><td>三年無病存活 DFS</td><td class="num" colspan="2"><span class="na">原文未估絕對效果（基線存活率未預設、報告不一致）</span></td><td class="num">HR 0.78<br>（0.61–0.99）</td><td class="num">0%</td><td class="num">0.04</td><td class="num">1,517（2）</td><td><span class="grade">⨁⨁⨁◯ 中</span></td><td><span class="win caution">勉強壓線</span></td></tr>
+      <tr><td>總存活 OS</td><td class="num" colspan="2"><span class="na">原文未估絕對效果</span></td><td class="num">HR 0.79<br>（0.57–1.11）</td><td class="num">0%</td><td class="num">0.18</td><td class="num">1,517（2）</td><td><span class="grade">⨁⨁⨁◯ 中</span></td><td><span class="win neutral">無顯著差異</span></td></tr>
+      <tr><td>造口相關結果</td><td class="num" colspan="6"><span class="na">原文明白寫「因各試驗定義與追蹤不一致、報告不完整，無法合成」（Stoma-related outcomes could not be synthesised）</span></td><td><span class="na">—</span></td><td><span class="win neutral">未能分析</span></td></tr>
+      <tr><td>手術時間、失血量、住院天數</td><td class="num" colspan="6"><span class="na">原文未納入為預設終點，Results 未報告合併值（Discussion 僅提及 “higher operative time and resource utilisation”，未附數值）</span></td><td><span class="na">—</span></td><td><span class="win neutral">未報告</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079">本表所有數字（含每 1,000 人風險、OR／HR、95% CI、I²、p、GRADE 圈數）逐格取自原文 Table 2 與 Results 段落，<b>本頁未做任何換算</b>。原文對 GRADE 降級理由的說明：術中併發症與術後併發症因<b>不精確</b>降一級（CI 同時涵蓋「臨床上重要的差異」與「沒有差異」）；術後併發症另因 <b>I² ＝ 78% 的不一致性</b>再降一級；三年局部復發、DFS、OS 皆因<b>事件數少、資訊量不足</b>降一級。原文預設的最小重要差異（MID）為：CRM 陽性 2%、繫膜完整 3%、轉開腹 2%、術中併發症 3%、術後併發症 5%、三年局部復發 2%、存活終點 HR 0.85。</p>
+</section>
+
+<section id="raw">
+  <h2>Absolute Effects &amp; Redrawn Figures <span class="zh">／ 絕對效果與本頁重繪圖</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 430" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1060" height="430" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">GRADE 摘要表：每 1,000 位病人的絕對風險（原文 Table 2 逐格照抄，未經本頁換算）</text><text x="14.0" y="48.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">每 1,000 人中的事件數</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="328.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0</text><line x1="78.0" y1="274.0" x2="1036.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="278.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">210</text><line x1="78.0" y1="224.0" x2="1036.0" y2="224.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="228.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">420</text><line x1="78.0" y1="174.0" x2="1036.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="178.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">630</text><line x1="78.0" y1="124.0" x2="1036.0" y2="124.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="128.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">840</text><line x1="78.0" y1="74.0" x2="1036.0" y2="74.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="78.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">1050</text><rect x="111.8" y="308.3" width="42.0" height="15.7" fill="#8a4a3d"/>
+<text x="132.8" y="302.3" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">66</text><rect x="157.8" y="314.7" width="42.0" height="9.3" fill="#2f6b62"/>
+<text x="178.8" y="308.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">39</text><text x="157.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">CRM 陽性</text><text x="157.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4 RCT／1,896 人</text><rect x="271.5" y="113.8" width="42.0" height="210.2" fill="#8a4a3d"/>
+<text x="292.5" y="107.8" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">883</text><rect x="317.5" y="104.7" width="42.0" height="219.3" fill="#2f6b62"/>
+<text x="338.5" y="98.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">921</text><text x="317.5" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">繫膜完整</text><text x="317.5" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4 RCT／1,952 人</text><rect x="431.2" y="316.6" width="42.0" height="7.4" fill="#8a4a3d"/>
+<text x="452.2" y="310.6" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">31</text><rect x="477.2" y="320.9" width="42.0" height="3.1" fill="#2f6b62"/>
+<text x="498.2" y="314.9" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">13</text><text x="477.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">轉開腹</text><text x="477.2" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4 RCT／1,952 人</text><rect x="590.8" y="305.7" width="42.0" height="18.3" fill="#8a4a3d"/>
+<text x="611.8" y="299.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">77</text><rect x="636.8" y="310.7" width="42.0" height="13.3" fill="#2f6b62"/>
+<text x="657.8" y="304.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">56</text><text x="636.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">術中併發症</text><text x="636.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">4 RCT／1,952 人</text><rect x="750.5" y="275.4" width="42.0" height="48.6" fill="#8a4a3d"/>
+<text x="771.5" y="269.4" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">204</text><rect x="796.5" y="271.1" width="42.0" height="52.9" fill="#2f6b62"/>
+<text x="817.5" y="265.1" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">222</text><text x="796.5" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">術後併發症</text><text x="796.5" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">3 RCT／1,605 人</text><rect x="910.2" y="314.0" width="42.0" height="10.0" fill="#8a4a3d"/>
+<text x="931.2" y="308.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">42</text><rect x="956.2" y="319.5" width="42.0" height="4.5" fill="#2f6b62"/>
+<text x="977.2" y="313.5" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">19</text><text x="956.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">三年局部復發</text><text x="956.2" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2 RCT／1,517 人</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#6b7079" stroke-width="1.2"/>
+<rect x="78.0" y="390.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="95.0" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">腹腔鏡（對照組實際基線風險）</text><rect x="273.0" y="390.0" width="12" height="12" fill="#2f6b62"/>
+<text x="290.0" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">機器人（依合併 OR 推算）</text><text x="1036.0" y="400.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">註：「繫膜完整」數值愈高愈好，其餘五項愈低愈好</text></svg></div>
+    <div class="cap"><b>資料來源</b>：原文 Table 2「Anticipated absolute effects（95% CI）」欄位，逐格照抄，<b>本頁未換算</b>。基線風險由原文取自各終點所貢獻試驗之腹腔鏡（對照）組合併風險。<b>怎麼解讀</b>：這張圖回答的是「一千個病人裡差幾個」。CRM 從 66 降到 39、轉開腹從 31 降到 13、三年局部復發從 42 降到 19——<b>相對效果聽起來很大（OR 0.41～0.58），但絕對差都只有 2 個百分點上下</b>。繫膜完整那組是唯一「愈高愈好」的柱子，883 → 921。<b>有何陷阱</b>：原文 Discussion 自己點破了這件事——「absolute differences were modest because baseline event rates were low in these trials」，並且指出<b>在 CRM 陽性率本來就很低、又有常規病理稽核的高量中心，這 2–3 個百分點可能幾乎感覺不到</b>。換句話說，這張圖是本篇最誠實的一張圖，也是最容易被行銷簡報省略的一張。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 456" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="456" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">把相對效果換算成「一百個病人裡差幾個」：絕對風險差與 NNT（全部由原文 GRADE 表數字自行計算）</text><line x1="446.2" y1="60.0" x2="446.2" y2="380.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="446.2" y="397.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−5</text><line x1="527.5" y1="60.0" x2="527.5" y2="380.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="527.5" y="397.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0</text><line x1="608.8" y1="60.0" x2="608.8" y2="380.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="608.8" y="397.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text><line x1="690.0" y1="60.0" x2="690.0" y2="380.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="690.0" y="397.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text><line x1="771.2" y1="60.0" x2="771.2" y2="380.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="771.2" y="397.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">15</text><text x="625.0" y="414.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="600">絕對風險差（百分點）</text><line x1="527.5" y1="60.0" x2="527.5" y2="380.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點（本頁自行計算，非原文所載）</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">絕對差｜需治療人數 NNT</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">CRM 陽性率</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">66 → 39 / 1,000（本頁自行計算差值）</text><line x1="462.5" y1="91.0" x2="514.5" y2="91.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="462.5" y1="86.5" x2="462.5" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="514.5" y1="86.5" x2="514.5" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="478.1" y="85.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−2.7 個百分點｜NNT ≈ 37</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">轉開腹率</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">31 → 13 / 1,000</text><line x1="488.5" y1="141.0" x2="516.1" y2="141.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="488.5" y1="136.5" x2="488.5" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="516.1" y1="136.5" x2="516.1" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="492.8" y="135.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−1.8 個百分點｜NNT ≈ 56</text><text x="20.0" y="185.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">三年局部區域復發率</text><text x="20.0" y="202.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">42 → 19 / 1,000</text><line x1="475.5" y1="191.0" x2="514.5" y2="191.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="475.5" y1="186.5" x2="475.5" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="514.5" y1="186.5" x2="514.5" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="484.6" y="185.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="195.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−2.3 個百分點｜NNT ≈ 44</text><text x="20.0" y="235.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">繫膜完整率（正向指標）</text><text x="20.0" y="252.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">883 → 921 / 1,000</text><line x1="548.6" y1="241.0" x2="621.8" y2="241.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="548.6" y1="236.5" x2="548.6" y2="245.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="621.8" y1="236.5" x2="621.8" y2="245.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="583.8" y="235.5" width="11" height="11" fill="#8a6a1f"/>
+<text x="1106.0" y="245.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋3.8 個百分點｜NNT ≈ 27</text><text x="20.0" y="285.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術中併發症率</text><text x="20.0" y="302.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">77 → 56 / 1,000</text><line x1="462.5" y1="291.0" x2="538.9" y2="291.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="462.5" y1="286.5" x2="462.5" y2="295.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="538.9" y1="286.5" x2="538.9" y2="295.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="487.9" y="285.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="295.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−2.1 個百分點（區間跨 0）</text><text x="20.0" y="335.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">術後併發症率</text><text x="20.0" y="352.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">204 → 222 / 1,000</text><line x1="430.0" y1="341.0" x2="798.9" y2="341.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="798.9" y1="336.5" x2="798.9" y2="345.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="551.2" y="335.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="345.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋1.8 個百分點（區間跨 0）</text><text x="515.5" y="432.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 機器人事件較少</text><text x="539.5" y="432.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">機器人事件較多 ▶</text></svg></div>
+    <div class="cap"><b>資料來源</b>：<b>本圖為本頁自行計算</b>——由上圖（原文 Table 2）的每 1,000 人風險相減得絕對風險差，再取倒數得 NNT；區間端點由原文所載的 95% CI 端點（如 CRM 26–58／1,000）同法計算。<b>原文並未提供這些絕對差與 NNT，也未提供其正式的統計信賴區間</b>，本圖的橫線僅是「把原文 CI 端點換算成絕對差」的視覺呈現，<b>不是正式的風險差統合分析結果</b>，引用時請務必註明。<b>怎麼解讀</b>：以 CRM 為例，NNT ≈ 37 表示「大約每 37 台改用機器人做，可以多換到一個 CRM 陰性的標本」。<b>有何陷阱</b>：NNT 只有在基線風險相同時才可移轉。台大的中低位直腸癌 CRM 陽性率若本來就低於 6.6%，實際 NNT 會比 37 大得多；反之若是體型肥胖、男性窄骨盆、新輔助治療後平面模糊的困難病例，NNT 會小得多——<b>但原文明白寫這些次群組效果「未曾預設也未曾報告」，屬於假說產生，不是隨機證據</b>。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 430" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1060" height="430" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">四篇納入試驗的分析人數（原文 Table 1；本頁加總後為 977 vs. 975 ＝ 1,952，與原文一致）</text><text x="14.0" y="48.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">分析人數（人）</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="328.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0</text><line x1="78.0" y1="274.0" x2="1036.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="278.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">144</text><line x1="78.0" y1="224.0" x2="1036.0" y2="224.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="228.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">288</text><line x1="78.0" y1="174.0" x2="1036.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="178.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">432</text><line x1="78.0" y1="124.0" x2="1036.0" y2="124.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="128.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">576</text><line x1="78.0" y1="74.0" x2="1036.0" y2="74.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="78.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">720</text><rect x="151.8" y="120.5" width="42.0" height="203.5" fill="#2f6b62"/>
+<text x="172.8" y="114.5" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">586</text><rect x="197.8" y="120.9" width="42.0" height="203.1" fill="#8a4a3d"/>
+<text x="218.8" y="114.9" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">585</text><text x="197.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">REAL 2025</text><text x="197.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">中國多中心</text><rect x="391.2" y="271.6" width="42.0" height="52.4" fill="#2f6b62"/>
+<text x="412.2" y="265.6" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">151</text><rect x="437.2" y="274.0" width="42.0" height="50.0" fill="#8a4a3d"/>
+<text x="458.2" y="268.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">144</text><text x="437.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">COLRAR 2023</text><text x="437.2" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">南韓多中心</text><rect x="630.8" y="301.1" width="42.0" height="22.9" fill="#2f6b62"/>
+<text x="651.8" y="295.1" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">66</text><rect x="676.8" y="298.7" width="42.0" height="25.3" fill="#8a4a3d"/>
+<text x="697.8" y="292.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">73</text><text x="676.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">Kim 2018</text><text x="676.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">南韓單中心</text><rect x="870.2" y="263.6" width="42.0" height="60.4" fill="#2f6b62"/>
+<text x="891.2" y="257.6" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">174</text><rect x="916.2" y="263.9" width="42.0" height="60.1" fill="#8a4a3d"/>
+<text x="937.2" y="257.9" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">173</text><text x="916.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">Feng 2022</text><text x="916.2" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">中國單中心（全為 APR）</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#6b7079" stroke-width="1.2"/>
+<rect x="78.0" y="390.0" width="12" height="12" fill="#2f6b62"/>
+<text x="95.0" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">機器人組</text><rect x="148.0" y="390.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="165.0" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">腹腔鏡組</text><text x="1036.0" y="400.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">REAL 一篇即占全體 60.0%（本頁自行計算：1,171 / 1,952）</text></svg></div>
+    <div class="cap"><b>資料來源</b>：原文 Table 1 之「Patients analysed (robotic vs. lap)」欄位。<b>怎麼解讀</b>：這張圖是要提醒「1,952 人」不是平均分散在四篇試驗上的。REAL 2025 一篇就 1,171 人，占 60.0%（本頁自行計算），所以幾乎每一條合併線的權重都由 REAL 主導。<b>有何陷阱</b>：這也意味著<b>本篇的結論在很大程度上就是 REAL 試驗的結論</b>。而 REAL 是中國多中心、da Vinci Si 平台、43% 接受新輔助治療的世代；Feng 2022 那 347 人則全部是距肛門緣 5 公分以內的 APR。把這兩種臨床情境放在同一個菱形裡，統計上 I² ＝ 0% 說得通，臨床上要不要照單全收，是另一回事。</div>
+  </div>
+  <div class="call amber">
+    <div class="h">為什麼本頁沒有「各研究原始事件數表」</div>
+    本系列的慣例是把每一篇納入研究的原始分子／分母列出來，讓讀者可以自行重算。<b>但本篇原文的四張森林圖（Fig. 2–5）與補充圖（Supplementary Fig. 3–5）都是圖檔</b>，PubMed Central 的純文字全文、以及 Springer 網頁版的可擷取文字，<b>都沒有把各研究的事件數與分母寫成文字</b>。既然拿不到，本頁就<b>不列、不推估、也不用連續性校正硬湊</b>——只呈現原文明確以文字寫出的合併值與 GRADE 絕對風險。唯一的例外是三年局部區域復發，原文在 Results 文字中寫出了合併比率「1.8% vs. 4.2%」，已列於上方總覽表。若需逐篇原始數據，請直接調閱原文 PDF 之 Fig. 2–5。
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1080px">
+    <thead><tr><th style="width:190px">檢查項目</th><th>原文數值</th><th>本頁驗算</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td>各組人數加總</td><td class="num">機器人 977、腹腔鏡 975、合計 1,952</td><td class="num">586＋151＋66＋174 ＝ 977<br>585＋144＋73＋173 ＝ 975<br>977＋975 ＝ 1,952</td><td><span class="win">完全相符</span></td></tr>
+      <tr><td>REAL 試驗術式人數</td><td class="num">保括約肌 487／APR 99（機器人）</td><td class="num">487＋99 ＝ 586 ＝ 該組總人數</td><td><span class="win">相符</span></td></tr>
+      <tr><td>COLRAR 術式人數</td><td class="num">保括約肌 123／APR 9（機器人，n ＝ 151）</td><td class="num">123＋9 ＝ 132 ≠ 151，<b>差 19 人</b><br>腹腔鏡 112＋14 ＝ 126 ≠ 144，<b>差 18 人</b></td><td><span class="win caution">原文未說明<br>（推測為其他術式或未手術）</span></td></tr>
+      <tr><td>Kim 2018 術式人數</td><td class="num">65＋1 ＝ 66；70＋2 ＝ 72（n ＝ 73）</td><td class="num">腹腔鏡組差 1 人，原文未說明</td><td><span class="win caution">輕微不符</span></td></tr>
+      <tr><td>三年終點的 1,517 人來自哪兩篇</td><td class="num">原文只寫「2 篇 RCT」，<b>未指名</b></td><td class="num">依人數推算最接近 REAL（1,171）＋ Feng（347）＝ <b>1,518</b>，與 1,517 差 1 人</td><td><span class="win caution">本頁推算，<br>非原文所載</span></td></tr>
+      <tr><td class="sig"><b>轉開腹的 OR，摘要／Results 與 Discussion 不一致</b></td><td class="num">摘要、Results、Table 2：<b>OR 0.41（0.21–0.79），p ＝ 0.008</b><br>Discussion：<b>OR 0.43（0.22–0.85），p ＝ 0.02</b></td><td class="num">兩處數值不同，原文未說明何者為準</td><td><span class="win caution">內部矛盾</span></td></tr>
+      <tr><td>CRM 的 CI，Results 與 Discussion 不一致</td><td class="num">Results／Table 2：0.38–0.87<br>Discussion：0.38–<b>0.88</b></td><td class="num">上界差 0.01</td><td><span class="win caution">輕微不一致</span></td></tr>
+      <tr><td>繫膜完整的 CI，Results 與 Discussion 不一致</td><td class="num">Results／Table 2：1.14–2.12<br>Discussion：1.13–2.11</td><td class="num">兩端各差 0.01</td><td><span class="win caution">輕微不一致</span></td></tr>
+      <tr><td>轉開腹的絕對減少幅度</td><td class="num">Discussion 稱「a 1.9% absolute reduction」</td><td class="num">依 Table 2：31 → 13 / 1,000 ＝ <b>1.8 個百分點</b></td><td><span class="win caution">差 0.1 個百分點<br>（可能因 OR 取 0.43 換算）</span></td></tr>
+      <tr><td>CRM 終點的分母</td><td class="num">1,896 人（其餘終點 1,952）</td><td class="num">1,952 − 1,896 ＝ <b>56 人</b>，原文未說明去向</td><td><span class="win caution">原文未說明</span></td></tr>
+      <tr><td>三年局部復發的比率與絕對風險</td><td class="num">Results：1.8% vs. 4.2%<br>Table 2：19 vs. 42 / 1,000</td><td class="num">19/1,000 ＝ 1.9%；42/1,000 ＝ 4.2%<br>（1.8% 為實際觀察值，1.9% 為依 OR 推算值）</td><td><span class="win">可互相解釋</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">這一節最值得記住的一行</div>
+    <b>轉開腹的合併 OR，同一篇論文裡出現兩個版本（0.41 vs. 0.43）、p 值也不同（0.008 vs. 0.02）。</b>兩個版本都指向同一個方向、都達統計顯著，所以臨床結論不受影響；但這代表這篇論文<b>沒有經過嚴謹的內部數值校對</b>。同樣的粗心也出現在 CRM 與繫膜完整的信賴區間小數點上。引用時請以<b>摘要／Results／Table 2 的版本（OR 0.41，95% CI 0.21–0.79）</b>為準，那是三處一致的版本。
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、怎麼談</span></h2>
+  <h3>誰最可能受益</h3>
+  <ul class="clean">
+    <li><b>腫瘤位於肛門緣 10 公分以內、預計需要完整 TME 的中低位直腸癌</b>——這是本篇唯一有隨機證據支持的族群。上段直腸癌被原文明確排除，<b>不要把結論外推上去</b>。</li>
+    <li><b>技術上困難的骨盆解剖</b>（極低位腫瘤、男性窄骨盆、肥胖、腫瘤體積大、新輔助治療後平面模糊、繫膜筋膜受威脅）：原文認為這裡的邊際效益最大，<b>但同時白紙黑字寫明「這些次群組效果未曾預設也未曾報告，屬於假說產生（hypothesis-generating），不是隨機證據所建立」</b>。跟病人談的時候，這個區別必須說清楚。</li>
+    <li><b>反過來，最不可能受益的是：</b>CRM 陽性率本來就很低、有常規病理稽核、腹腔鏡經驗成熟的高量中心裡的一般難度病例。原文原話是「small absolute gains may have limited impact on patient-level outcomes」。</li>
+  </ul>
+  <h3>換來什麼（以每 100 台手術計，本頁自原文 GRADE 表換算）</h3>
+  <div class="kv">
+    <div class="c teal"><div class="lab">CRM 陽性</div><div class="big">−2.7</div><div class="sub">每 100 台少 2.7 例<br>6.6% → 3.9%</div></div>
+    <div class="c teal"><div class="lab">繫膜完整</div><div class="big">＋3.8</div><div class="sub">每 100 台多 3.8 例<br>88.3% → 92.1%</div></div>
+    <div class="c teal"><div class="lab">轉開腹</div><div class="big">−1.8</div><div class="sub">每 100 台少 1.8 例<br>3.1% → 1.3%</div></div>
+    <div class="c amber"><div class="lab">三年局部復發</div><div class="big">−2.3</div><div class="sub">每 100 人少 2.3 例<br>4.2% → 1.9%（僅 2 篇）</div></div>
+    <div class="c"><div class="lab">術中併發症</div><div class="big">n.s.</div><div class="sub">7.7% → 5.6%<br>未達顯著</div></div>
+    <div class="c"><div class="lab">術後併發症</div><div class="big">n.s.</div><div class="sub">20.4% → 22.2%<br>I² ＝ 78%，無法解讀</div></div>
+  </div>
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>錢與時間</b>：原文 Discussion 明白提到「higher operative time and resource utilisation」，但<b>本篇沒有合併手術時間，也沒有做任何成本效益分析</b>，只說「economic evaluations will be essential」。也就是說，本篇給了你分子（好處），沒有給你分母（代價）。</li>
+    <li><b>可近性</b>：原文特別用一整段討論澳洲／紐西蘭公立體系的資本與手術房資源限制，結論是「universal adoption of robotic TME is neither feasible nor currently justifiable」——這句話對台灣健保脈絡下的自費決策同樣適用。</li>
+    <li><b>沒有換到的東西</b>：術中／術後併發症沒有改善，總存活沒有差異，造口相關結果完全無法分析。</li>
+  </ul>
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call teal">
+    <div class="h">建議說法</div>
+    「以你這個位置的直腸癌來說，目前把四個隨機試驗、將近兩千人合起來看，機器人手術<b>比較確定的好處有三個，而且都跟『把腫瘤切乾淨』有關</b>：切除邊緣有癌細胞的機率大約從 6.6% 降到 3.9%、切下來的繫膜完整的比率從 88% 升到 92%、手術中途必須改成開腹的機率從 3.1% 降到 1.3%。換算下來，大概<b>每三十幾台手術會多一個人拿到乾淨的邊緣</b>。<br><br>但我也必須告訴你三件事：第一，<b>術中和術後的併發症機率，兩種做法沒有差別</b>。第二，<b>目前沒有證據顯示機器人能讓你活得更久</b>——三年的存活率兩組一樣，只有『癌症在原地復發』這一項機器人看起來比較低，但那只來自兩個試驗、事件數很少，作者自己說是初步的。第三，<b>機器人手術時間比較長、費用比較高</b>，這篇研究沒有算過值不值得。<br><br>所以我的建議是：如果你的腫瘤位置很低、骨盆比較窄、或做過放療讓組織沾黏，機器人的技術優勢比較容易發揮；如果是相對單純的中位直腸癌，用腹腔鏡由有經驗的團隊來做，結果的差距其實很小。」
+  </div>
+  <h3>對科部層級的意涵</h3>
+  <ul class="clean">
+    <li>原文對導入機器人的建議是<b>配套式的</b>：實施時必須同步稽核三個品質指標——<b>CRM 陽性率、TME 分級、轉開腹率</b>。若導入後這三項沒有改善，那麼在你的中心，本篇的效果就沒有複製成功。</li>
+    <li>原文也呼籲未來試驗必須報告<b>術者經驗指標與平台世代</b>；本篇因四篇試驗跨越了機器人系統大幅演進的年代，無法做學習曲線的次群組分析。</li>
+  </ul>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>三年腫瘤學結果只有 2 篇試驗、事件數極少。</b>作者自述 “exploratory rather than confirmatory”。DFS 的 HR 0.78（0.61–0.99）上界只差 0.01 就跨過 1，任何一個事件的增減都可能翻盤。</li>
+    <li><b>時間至事件資料有一部分是從 Kaplan–Meier 曲線「重建」出來的。</b>原文 Methods 明說「If hazard ratios were not reported, we derived log hazard ratios and standard errors from Kaplan–Meier curves using established reconstruction methods」。重建法的標準誤通常偏小，會讓 CI 看起來比實際窄。</li>
+    <li><b>PROSPERO 登錄晚於回顧開始執行。</b>原文自承「The protocol was registered in PROSPERO after commencement of the review」（2025 年 12 月 1 日登錄，但檢索截止日是 2025 年 9 月 22 日）。事後登錄無法排除終點選擇性報告。</li>
+    <li><b>統計異質性 I² ＝ 0%，但臨床異質性很大。</b>Feng 2022 全部是 5 公分以內的 APR，其他三篇八成以上是保留括約肌手術；腫瘤高度閾值、新輔助治療比率、繫膜筋膜受威脅的納入條件都不統一。I² ＝ 0% 只代表「效果值方向一致」，不代表「病人是同一群人」。</li>
+    <li><b>四篇中三篇來自東亞、且都是高量中心。</b>原文自承西方族群肥胖與共病比率較高、病例組成與術者認證制度不同，「absolute benefits observed here may not translate uniformly to lower-volume centres」。</li>
+    <li><b>REAL 一篇占六成權重。</b>本篇的結論在很大程度上就是 REAL 試驗的結論（本頁自行計算：1,171/1,952 ＝ 60.0%）。</li>
+    <li><b>術後併發症的 I² ＝ 78%，且各試驗定義不一。</b>原文直接以「trial-reported definitions」合併，這一條線在臨床上幾乎不可解讀，GRADE 也只給低度確定性。</li>
+    <li><b>造口相關結果完全無法合成。</b>對中低位直腸癌病人而言，「會不會永久造口、暫時造口多久會關」往往是最在意的問題，本篇答不了。</li>
+    <li><b>沒有成本、沒有手術時間、沒有功能性結果（LARS、泌尿性功能）。</b>本篇評的是標本品質與轉開腹，不是病人的生活。</li>
+    <li><b>同一篇論文內部數值不一致</b>（轉開腹 OR 0.41 vs. 0.43、CRM CI 上界 0.87 vs. 0.88、繫膜完整 CI 1.14–2.12 vs. 1.13–2.11）。詳見上方「數值一致性檢查」。</li>
+    <li><b>盲性先天不足。</b>外科試驗無法對術者盲化；原文 RoB 2.0 評估中，周術期終點（轉開腹、併發症）多被判為 “some concerns”，主要來自「偏離預定介入」與「結果測量」兩個領域。病理終點因有稽核或盲化評估，偏誤風險較低——<b>這正是本篇把病理指標設為共同主要終點的合理之處</b>。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>全直腸繫膜切除 <span class="en">Total mesorectal excision, TME</span></dt><dd>沿直腸繫膜筋膜的胚胎學平面，把直腸連同其周圍脂肪、淋巴組織整塊完整取下的術式，是直腸癌根治手術的基準。</dd></div>
+      <div class="gl-row"><dt>環周切除緣 <span class="en">Circumferential resection margin, CRM</span></dt><dd>標本外側（放射狀）切緣。本篇定義「腫瘤位於墨染放射狀切緣上或距其 1 公釐以內」為陽性。CRM 陽性是局部復發最重要的病理預測因子。</dd></div>
+      <div class="gl-row"><dt>繫膜完整度分級 <span class="en">Mesorectal quality / plane of surgery (Quirke) grading</span></dt><dd>病理科依標本表面平整度分為完整（complete）、近乎完整（nearly complete）、不完整（incomplete）三級。本篇合成時把後兩者併為「非完整」。</dd></div>
+      <div class="gl-row"><dt>腹會陰聯合切除 <span class="en">Abdominoperineal resection, APR</span></dt><dd>切除直腸與肛門括約肌、做永久性乙狀結腸造口的術式，用於極低位、無法保留括約肌的腫瘤。Feng 2022 全部為此術式。</dd></div>
+      <div class="gl-row"><dt>低前位切除 <span class="en">Low anterior resection, LAR</span></dt><dd>保留肛門括約肌的直腸切除與吻合術。</dd></div>
+      <div class="gl-row"><dt>括約肌間切除 <span class="en">Intersphincteric resection, ISR</span></dt><dd>切除部分內括約肌以爭取遠端切緣，同時保留排便功能的極低位保肛術式。</dd></div>
+      <div class="gl-row"><dt>轉開腹 <span class="en">Conversion to open surgery</span></dt><dd>微創手術中途改為傳統開腹。本篇定義為「非計畫性剖腹」，若有說明則包含「大於取出標本所需之切口」。</dd></div>
+      <div class="gl-row"><dt>局部區域復發 <span class="en">Locoregional recurrence, LRR</span></dt><dd>癌症在原手術部位或區域淋巴引流區再度出現。</dd></div>
+      <div class="gl-row"><dt>無病存活 <span class="en">Disease-free survival, DFS</span></dt><dd>自隨機分派起至復發、次發癌或任何原因死亡之時間。</dd></div>
+      <div class="gl-row"><dt>勝算比 <span class="en">Odds ratio, OR</span></dt><dd>兩組事件勝算之比。事件罕見時近似風險比；事件常見時（如本篇「繫膜完整」約 88–92%）會誇大相對效果，這也是本頁強調要看絕對風險的原因。</dd></div>
+      <div class="gl-row"><dt>風險比 <span class="en">Hazard ratio, HR</span></dt><dd>兩組單位時間內事件發生率之比，用於時間至事件分析。</dd></div>
+      <div class="gl-row"><dt>異質性指標 <span class="en">I²</span></dt><dd>各研究效果值變異中，可歸因於真實差異而非抽樣誤差的百分比。0% 表示各研究方向與大小一致；≥ 75% 通常視為高度異質。</dd></div>
+      <div class="gl-row"><dt>需治療人數 <span class="en">Number needed to treat, NNT</span></dt><dd>為多避免一次事件所需治療的人數，等於絕對風險差的倒數。<b>本頁的 NNT 為自行計算，原文未列</b>。</dd></div>
+      <div class="gl-row"><dt>最小重要差異 <span class="en">Minimal important difference, MID</span></dt><dd>臨床上值得在意的最小效果幅度，用於 GRADE 判定「不精確」是否成立。本篇為每個終點預設了 MID（詳見總覽表下方註記）。</dd></div>
+      <div class="gl-row"><dt>GRADE 確定性 <span class="en">GRADE certainty of evidence</span></dt><dd>依偏誤風險、不一致性、間接性、不精確、發表偏差五面向，把證據分為高／中／低／極低四級（⨁ 個數）。</dd></div>
+      <div class="gl-row"><dt>偏誤風險工具 <span class="en">Cochrane RoB 2.0</span></dt><dd>隨機試驗偏誤風險評估工具，涵蓋隨機化過程、偏離預定介入、缺失結果資料、結果測量、選擇性報告五個領域。</dd></div>
+      <div class="gl-row"><dt>繫膜筋膜 <span class="en">Mesorectal fascia, MRF</span></dt><dd>包覆直腸繫膜的筋膜層，術前 MRI 若顯示腫瘤距其 ≤ 1 公釐即為「受威脅」，是新輔助治療與手術策略的關鍵判準。</dd></div>
+      <div class="gl-row"><dt>新輔助（化）放療 <span class="en">Neoadjuvant chemoradiotherapy, CRT</span></dt><dd>手術前施行的放射線治療（多合併化學治療），用以縮小腫瘤、提高 CRM 陰性率。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redraw Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻</b>：Gosavi R, Smith B, Mealy A, Iftekher W, Bell S, McMurrick P, Nguyen TC, Teoh W, Narasimhan V.
+  <i>Resection quality and oncologic outcomes after robotic versus laparoscopic total mesorectal excision for mid and low rectal cancer: a systematic review and meta-analysis of randomised trials.</i>
+  J Robot Surg. 2026;20(1). DOI：<a href="https://doi.org/10.1007/s11701-026-03541-z">10.1007/s11701-026-03541-z</a>　·　PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42223567/">PMID 42223567</a>　·　PubMed Central：PMC13226396（Open Access）。</p>
+  <p><b>資料取得方式</b>：本頁內容取自 PubMed 之書目與摘要紀錄，以及 PubMed Central 之全文（Introduction、Methods、Results、Discussion、Conclusion、Table 1、Table 2）。<b>依 PubMed 使用規範，本頁在此明確標示資料來源為 PubMed／PubMed Central，並附上原文 DOI 連結。</b></p>
+  <p><b>圖表重繪聲明</b>：本頁所有圖形皆為<b>依原文所載數字重新繪製之 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未重製原出版社之任何圖檔</b>。凡屬本頁由原文數字加減乘除得出者（絕對風險差、NNT、人數加總、比例、內部一致性驗算），均已於圖說或表格中就地標註「本頁自行計算」。凡原文未以文字提供者（PRISMA 各階段記錄數、四張森林圖的各研究原始事件數），一律標示「原文未列數值」，<b>本頁未做任何推估或補值</b>。</p>
+  <p><b>本頁定位</b>：這是給外科醫師快速讀懂一篇論文用的閱讀頁，不是臨床指引，也不能取代原文。任何臨床決策請回到原始文獻與所屬機構的診療規範。</p>
+  <footer>
+    每日大腸直腸外科文獻 · Vol. 011 · 2026 年 8 月 12 日 ｜ 本頁由 Claude（Cowork）依原文數據產出，內容僅供學術閱讀參考。
+  </footer>
+</section>
+
+</div>
+</body>
+</html>

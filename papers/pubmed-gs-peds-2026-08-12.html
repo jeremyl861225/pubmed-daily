@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-12</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 12 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 010</span>
+  </div>
+  <h1 class="title">小兒穿孔性闌尾炎術後的抗生素可以打短一點嗎？3 篇 RCT（215 童）＋1 篇前後對照（288 童）的系統性回顧與統合分析——腹腔內膿瘍 17.4% vs. 15.5%（RR 1.12），非劣性未成立、但也沒看到風險上升，住院天數則少約 2 天</h1>
+  <p class="title-en">Effectiveness and Safety of Shortened Postoperative Antibiotic Regimens in Children with Perforated Appendicitis: A Systematic Review and Meta-Analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">European Journal of Pediatric Surgery<br><span style="color:#6b7079;font-size:13px">2026;36(3):210–216（線上先行 2025 年 12 月 24 日）；奧地利小兒外科學會等之官方期刊，Thieme 發行</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Löfgren P, Berge E, de Wijkerslooth EML, Jivegård L, Sjöström S, Wallerstedt SM<br><span style="color:#6b7079;font-size:13px">瑞典哥德堡 Queen Silvia 兒童醫院小兒外科 ＋ Västra Götaland 區醫療科技評估中心（HTA）；<b>第三作者 de Wijkerslooth 同時是本篇納入的關鍵 RCT 之作者</b></span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧與統合分析（納入 RCT 與前瞻性對照研究），主要終點採非劣性設計</b><br><span style="color:#6b7079;font-size:13px">Medline／Embase／Cochrane Library／CINAHL 檢索至 2023 年 10 月 23 日；PICO 預設；隨機效果模式合併風險比（RR）與風險差（RD）；GRADE 評定確定性</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的不是「要不要給抗生素」，而是「已經開完刀的穿孔性闌尾炎小孩，靜脈抗生素能不能少打幾天」</b><br><span style="color:#6b7079;font-size:13px">主要安全終點刻意設為<b>腹腔內膿瘍</b>，並預設 <b>7.5 個百分點</b>的非劣性界線（沿用成人大型 RCT 的界線，以利互相比較）</span></div></div>
+    <div class="meta-item"><div class="k">納入規模</div><div class="v"><b>3 篇 RCT（215 名兒童）＋ 1 篇前後對照研究（288 名兒童）</b><br><span style="color:#6b7079;font-size:13px">實際進入合併分析的只有 <b>2 篇 RCT、189 名兒童</b>（本頁自行計算：92＋97 ＝ 189）</span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">PROSPERO CRD42024501215<br><span style="color:#6b7079;font-size:13px">本回顧原本是為瑞典 Västra Götaland 區的醫療科技評估（HTA）而做，用於區域層級的實證決策</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2025 年 12 月 24 日（PMID 41443239；PMC13288424）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion／Table 1／Table 2 全文）；<b>Fig. 1 PRISMA 流程圖與 Fig. 2 森林圖為圖檔</b>，但各研究原始事件數在 Table 1 中已以文字完整列出</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1055/a-2761-5649">10.1055/a-2761-5649</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/41443239/">PMID 41443239 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">小兒外科</span>
+    <span class="tag t2">穿孔性闌尾炎</span>
+    <span class="tag t2">術後抗生素療程</span>
+    <span class="tag t2">抗生素管理 Antimicrobial stewardship</span>
+    <span class="tag t3">證據等級：系統性回顧／統合分析（非劣性）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把小兒穿孔性闌尾炎術後「靜脈抗生素打不到 5 天」和「打滿 5 天」放在一起比，<strong>能拿來合併的只有 2 篇 RCT、189 名兒童：腹腔內膿瘍 16/92（17.4%）vs. 15/97（15.5%），風險差 ＋2 個百分點、95% CI −8 至 12，上界越過了預設的 7.5 個百分點非劣性界線——所以「非劣性沒有成立」</strong>。但要注意這句話的另一半：<strong>信賴區間同時也涵蓋 0 與負值，也就是「沒有證據顯示風險上升」</strong>；作者自己的結論是「本回顧並不意味著應該避免縮短療程」。相對地，<strong>縮短靜脈療程可以把住院天數縮短約 2 天（GRADE 中度確定性，是全篇唯一達到中度確定性的終點）</strong>，再入院率與抗生素相關併發症看不出差別。死亡、腸阻塞、手術部位感染則因事件數太少（多為 0–4 例）完全無法下結論。整篇的本質是：<strong>不是「證明了安全」，而是「證據量根本不夠回答這個問題」</strong>。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Postoperative antibiotic treatment of varying length is routinely used in perforated appendicitis to reduce the risk of complications. In the pediatric population, outcomes of shortened antibiotic regimens have not been specifically reviewed.</p>
+    <h4>Methods</h4>
+    <p>Medline, Embase, the Cochrane Library, and CINAHL were searched (October 2023): P, patients: Children with perforated appendicitis; I, intervention and C, comparison: Antibiotic regimen below (I) and above (C) a defined number of days; O, outcomes, focus: Patient risks and benefits. For the main outcome (intra-abdominal abscess), non-inferiority was assessed.</p>
+    <h4>Results</h4>
+    <p>Three randomized controlled trials (RCTs; 215 children) and one non-randomized study (288 children) fulfilled the PICO criteria. Regarding intra-abdominal abscess, pooling data from two RCTs (&lt;5 vs. 5 days of intravenous antibiotics; 16 (17%) vs. 15 [15%] events) resulted in a wide 95% confidence interval (risk difference: &minus;8 to 12 percentage points) not meeting the predefined non-inferiority margin of 7.5. One RCT (2 vs. 5 days of intravenous antibiotics) provided data regarding readmissions (9 vs. 7 events) and complications to antibiotic treatment (8 vs. 9 events). Two RCTs (&lt;5 vs. 5 days of intravenous antibiotics) reported significantly shorter length of stay in the intervention group.</p>
+    <h4>Conclusion</h4>
+    <p>This systematic review shows neither non-inferiority nor an increased risk of intra-abdominal abscess with a shortened postoperative antibiotic regimen. There may be no difference regarding readmission rates and treatment-related complications. Shorter regimens probably offer the advantage of reduced hospital stay. Due to substantial uncertainties, further RCTs are needed to define the optimal duration of antibiotics in children.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用。<b>唯一的補正</b>：PubMed 的純文字紀錄把「16 (17%) vs. 15 [15%]」的括號寫法照錄（原文即混用圓括號與方括號），本頁未更動。<b>值得注意的是這份摘要的措辭</b>：結論第一句用的是 “shows neither non-inferiority nor an increased risk”——<b>這是一句雙重否定，兩邊都沒證明</b>。任何把這篇讀成「短療程已證實安全」的引用都是誤讀；作者在正文 Discussion 才把話說完整：「does not imply that shortened postoperative antibiotic regimens should be avoided」。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>PRISMA Flow <span class="zh">／ 檢索與納入流程</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（Medline、Embase、Cochrane Library、CINAHL；2023 年 10 月 23 日由兩位 HTA 圖書館員執行）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">2,421</span> 筆記錄（去除重複後）<br>
+        <span style="color:#6b7079;font-size:12.5px">另補以：相關文章的參考文獻清單、瑞典 SBU 與其他區域 HTA 中心網站；<b>語言限英文、瑞典文、丹麥文、挪威文</b>。另於 2024 年 2 月 21 日搜尋 ClinicalTrials.gov 以找出進行中的研究</span></div></div>
+      <div class="pr-ex"><b>題名／摘要篩除筆數：原文未列數值</b><br>
+        <span style="font-size:12px">兩位圖書館員以 Rayyan 工具獨立篩選，歧見以共識解決；<b>全文評讀階段的排除篇數與理由原文置於線上補充資料，PubMed Central 純文字全文未收錄</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Eligibility 全文評讀（五位作者獨立評讀後共識決定）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><b>直接納入 3 篇</b>：2 篇 RCT ＋ 1 篇前後對照研究<br>
+        <span style="color:#6b7079;font-size:12.5px">研究設計限定為<b>隨機對照試驗或前瞻性對照研究</b>；病人限 0–17 歲、因穿孔性闌尾炎接受急診闌尾切除者</span></div></div>
+      <div class="pr-ex"><b>另有 3 篇 RCT 為成人／兒童與複雜性／穿孔性闌尾炎混合，未分開報告</b><br>
+        作者去信索取兒童穿孔性闌尾炎的分層資料：<b>1 篇提供 → 納入</b>；<b>其餘 2 篇多次聯繫未果 → 排除</b></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 最終納入</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">4</span> 篇研究：<b>3 篇 RCT（215 名兒童）＋ 1 篇前後對照（288 名兒童）</b><br>
+        <span style="color:#6b7079;font-size:12.5px">本頁自行計算：RCT 87＋102＋26 ＝ <b>215</b>，與原文一致；四篇合計 503 名兒童</span></div></div>
+      <div class="pr-ex"><b>實際進入主要終點合併分析者僅 2 篇 RCT、189 人</b><br>
+        另一篇 RCT（Rice 2001，26 人）<b>兩組皆零事件</b>，第四篇為非隨機研究，皆未併入<br>
+        <span style="font-size:12px">ClinicalTrials.gov 搜得 48 筆，<b>無一符合 PICO</b></span></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：2,421 筆、48 筆、篇數與人數皆取自原文 Results 第一段與 Table 1；<b>題名／摘要與全文階段的排除筆數，原文僅以 Fig. 1 圖檔與線上補充資料呈現，本頁以「原文未列數值」標示，未做推估</b>。本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：由上而下是「找到 2,421 筆 → 只有 4 篇合格 → 真正能合併的只有 2 篇」。<b>有何陷阱</b>：最下方右框才是本篇的真相——<b>2,421 筆記錄最後只換到 189 個孩子的可合併資料</b>。當你看到「系統性回顧與統合分析」這個標題就自動給它高證據等級時，這一格是解藥。另外注意，被排除的兩篇 RCT 是因為<b>聯繫不上作者</b>而非方法學問題，這種排除本身就是一種潛在的偏誤來源。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵表（原文 Table 1 完整內容，逐格照抄）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1180px">
+    <thead><tr><th style="width:150px">研究</th><th style="width:62px">國家</th><th style="width:104px">設計</th><th style="width:112px">人數</th><th>比較的抗生素療程</th><th>主要臨床發現（原文逐項）</th></tr></thead>
+    <tbody>
+      <tr><td><b>de Wijkerslooth 2023</b></td><td>荷蘭</td><td>RCT</td><td class="num">87<br><span class="na">介入 42／對照 45</span></td>
+        <td><b>靜脈 2 天 vs. 5 天</b><br><span class="na">（無後續口服）</span></td>
+        <td>腹腔內膿瘍：<b>6 vs. 5</b>｜死亡：0 vs. 0｜腸阻塞：1 vs. 4｜再入院：<b>9 vs. 7</b>｜抗生素相關併發症：<b>8 vs. 9</b>｜手術部位感染：1 vs. 0<br>住院天數（平均 ± SD）：<b>3.4 ± 1.6 vs. 5.6 ± 1.9 天</b><br><span class="na">本篇資料由作者依本回顧要求另行提供（原文 Table 1 註記 b）</span></td></tr>
+      <tr><td><b>Fraser 2010</b></td><td>美國</td><td>RCT</td><td class="num">102</td>
+        <td><b>靜脈＋口服 5 天 vs. 7 天</b>（I1 ＝ 52／C1 ＝ 50）<br><b>靜脈 ＜5 天 vs. 5 天</b>（I2 ＝ 50／C2 ＝ 52）<br><span class="na">同一批病人的兩種切法</span></td>
+        <td>腹腔內膿瘍：<b>10 vs. 10</b><br>住院天數（平均 ± SD）：<br>靜脈＋口服角度：6.06 ± 2.00 vs. 4.48 ± 2.36<br>靜脈角度：<b>4.48 ± 2.36 vs. 6.06 ± 2.00，p ＝ 0.01</b><br><span class="na">原文 Table 1 對此段標註 “sic erat scriptum”（原文照錄），意指數字方向確實如此</span></td></tr>
+      <tr><td><b>Rice 2001</b></td><td>美國</td><td>RCT</td><td class="num">26<br><span class="na">介入 16／對照 10</span></td>
+        <td><b>靜脈 ＜5 天 vs. 10 天</b></td>
+        <td>腹腔內膿瘍：<b>0 vs. 0</b>｜腸阻塞：0 vs. 0｜手術部位感染：0 vs. 1<br><span class="na">兩組主要終點皆零事件，無法計算風險比</span></td></tr>
+      <tr><td><b>Desai 2015</b></td><td>美國</td><td class="sig">前後對照<br>（非隨機）</td><td class="num">288<br><span class="na">介入 152／對照 136</span></td>
+        <td><b>靜脈＋口服 ＜5 天 vs. 7 天</b></td>
+        <td>腹腔內膿瘍：<b>12 vs. 6</b><br><span class="na">唯一的非隨機研究；未納入任何合併分析</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079"><b>本頁自行計算的加總與交叉驗算</b>：三篇 RCT 87＋102＋26 ＝ <b>215</b> 名兒童，與原文摘要一致；四篇合計 215＋288 ＝ <b>503</b> 名。各研究組別加總：87 ＝ 42＋45 ✓；102 ＝ 52＋50 ＝ 50＋52 ✓；26 ＝ 16＋10 ✓；288 ＝ 152＋136 ✓，<b>四篇全部相符</b>。<br>
+      <b>Fraser 兩種切法的關係</b>（本頁推導）：52 人組＝「總療程 5 天、靜脈滿 5 天」；50 人組＝「總療程 7 天，但靜脈不到 5 天、較早改口服」。所以在「靜脈療程」的比較中，<b>50 人組才是縮短組</b>——這也解釋了為什麼住院天數 4.48 天對應的是 50 人組。</p>
+  <div class="call amber">
+    <div class="h">看這張表最容易看錯的一格</div>
+    Fraser 2010 只有 102 個孩子，卻同時被當成「靜脈＋口服總療程」與「靜脈療程」兩種比較。<b>這兩種切法用的是同一批人、只是把哪一組叫「介入組」對調了</b>。原文的合併分析只用「靜脈療程」這一種切法（與 de Wijkerslooth 併在一起），因此在合併時，Fraser 的縮短組是那 50 人（膿瘍 10 例、住院 4.48 天）。若把兩種切法都拿去合併，就會出現同一批病人被算兩次的錯誤——原文明確避開了這個陷阱，也明白寫出「pooling was not relevant」的理由。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary Outcome <span class="zh">／ 主要終點：腹腔內膿瘍（本頁依原文原始事件數重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="400" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">術後腹腔內膿瘍：縮短療程 vs. 標準療程的風險比（對數刻度，無效線 ＝ 1）</text><line x1="430.0" y1="60.0" x2="430.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text><line x1="520.2" y1="60.0" x2="520.2" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="520.2" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text><line x1="610.5" y1="60.0" x2="610.5" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="610.5" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text><line x1="700.7" y1="60.0" x2="700.7" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="700.7" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text><line x1="820.0" y1="60.0" x2="820.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="820.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text><line x1="610.5" y1="60.0" x2="610.5" y2="330.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">研究（RR ＞ 1 代表縮短療程的膿瘍較多）</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">風險比（95% CI）</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">de Wijkerslooth 2023（荷蘭，RCT）</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">靜脈抗生素 2 天 vs. 5 天｜6/42（14.3%）vs. 5/45（11.1%）</text><line x1="498.8" y1="91.0" x2="787.7" y2="91.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="498.8" y1="86.5" x2="498.8" y2="95.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="787.7" y1="86.5" x2="787.7" y2="95.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="638.5" y="86.2" width="9.5" height="9.5" fill="#8a4a3d"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 1.29（0.42–3.90）本頁自行計算</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Fraser 2010（美國，RCT）</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">靜脈抗生素 ＜5 天 vs. 5 天｜10/50（20.0%）vs. 10/52（19.2%）</text><line x1="513.3" y1="141.0" x2="717.9" y2="141.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="513.3" y1="136.5" x2="513.3" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="717.9" y1="136.5" x2="717.9" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="609.3" y="134.8" width="12.5" height="12.5" fill="#8a4a3d"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 1.04（0.47–2.28）本頁自行計算</text><text x="20.0" y="185.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">合併估計值（原文所載，2 篇 RCT）</text><text x="20.0" y="202.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">16/92（17.4%）vs. 15/97（15.5%）｜隨機效果模式</text><line x1="541.8" y1="191.0" x2="708.3" y2="191.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="541.8" y1="186.5" x2="541.8" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="708.3" y1="186.5" x2="708.3" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 625.2 183.0 L 636.2 191.0 L 625.2 199.0 L 614.2 191.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="195.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 1.12（0.59–2.12）原文所載</text><text x="20.0" y="235.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Rice 2001（美國，RCT）— 未納入合併</text><text x="20.0" y="252.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">靜脈抗生素 ＜5 天 vs. 10 天｜0/16 vs. 0/10：兩組皆零事件</text><text x="438.0" y="243.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">原文未列數值 / 無法估計</text><text x="1106.0" y="245.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">無法估計（不作連續性校正）</text><text x="20.0" y="285.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Desai 2015（美國，前後對照）— 未納入合併</text><text x="20.0" y="302.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">非隨機研究｜12/152（7.9%）vs. 6/136（4.4%）</text><line x1="562.2" y1="291.0" x2="810.2" y2="291.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="562.2" y1="286.5" x2="562.2" y2="295.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="810.2" y1="286.5" x2="810.2" y2="295.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="680.7" y="285.5" width="11.0" height="11.0" fill="#8a6a1f"/>
+<text x="1106.0" y="295.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 1.79（0.69–4.64）本頁自行計算</text><text x="598.5" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 縮短療程膿瘍較少</text><text x="622.5" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">縮短療程膿瘍較多 ▶</text><text x="14.0" y="390.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">■ 個別研究／單一終點　◆ 合併估計值（菱形）　箭頭 ＝ 信賴區間超出繪圖範圍</text></svg></div>
+    <div class="cap"><b>資料來源</b>：各研究的分子／分母全部取自原文 Table 1（原文以文字完整列出）；<b>菱形（合併值 RR 1.12，95% CI 0.59–2.12）為原文 Results 段落所載</b>；<b>兩條個別研究的風險比與信賴區間為本頁以 Katz 對數法自行計算</b>（原文的 Fig. 2 為圖檔，未附各研究 RR 數值）。<b>怎麼解讀</b>：垂直虛線是無效線。方塊落在右側代表「縮短療程那一組的膿瘍比較多」。兩篇 RCT 的方塊都在右邊一點點，但信賴區間都又寬又橫跨無效線——這正是「看不出差別，也不能說沒有差別」。<b>有何陷阱</b>：(1) Rice 2001 兩組都是零事件，本頁<b>刻意不做 0.5 連續性校正</b>，因為零事件研究對風險比毫無資訊、硬校正只會製造假精確；(2) Desai 2015 是<b>前後對照的非隨機研究</b>，先後兩段時間的照護標準本來就會改變，本頁以琥珀色標示且原文未併入合併，讀者請勿把它與上面兩篇等量齊觀；(3) 方塊大小僅依樣本數粗略呈現，<b>不代表原文的統計權重</b>。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 406" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="406" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">同一件事換成絕對風險差：合併值的信賴區間上界 12 個百分點，越過了 7.5 的非劣性界線</text><line x1="460.8" y1="60.0" x2="460.8" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="460.8" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−15</text><line x1="512.1" y1="60.0" x2="512.1" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="512.1" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−10</text><line x1="563.4" y1="60.0" x2="563.4" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="563.4" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−5</text><line x1="614.7" y1="60.0" x2="614.7" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="614.7" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0</text><line x1="666.1" y1="60.0" x2="666.1" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="666.1" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text><line x1="717.4" y1="60.0" x2="717.4" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="717.4" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text><line x1="768.7" y1="60.0" x2="768.7" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="768.7" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">15</text><line x1="820.0" y1="60.0" x2="820.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="820.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">20</text><text x="625.0" y="364.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="600">腹腔內膿瘍的風險差（百分點）</text><line x1="614.7" y1="60.0" x2="614.7" y2="330.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<line x1="691.7" y1="60.0" x2="691.7" y2="330.0" stroke="#8a6a1f" stroke-width="1.6" stroke-dasharray="2 4"/>
+<text x="691.7" y="40.0" font-size="11" fill="#8a6a1f" text-anchor="middle" font-weight="700">非劣性界線 ＋7.5 個百分點</text><text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">研究</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">風險差（95% CI）</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">de Wijkerslooth 2023（RCT）</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">14.3% − 11.1%</text><line x1="503.5" y1="91.0" x2="791.2" y2="91.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="503.5" y1="86.5" x2="503.5" y2="95.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="791.2" y1="86.5" x2="791.2" y2="95.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="641.8" y="85.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋3.2 個百分點（−10.8 至 17.2）</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Fraser 2010（RCT）</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">20.0% − 19.2%</text><line x1="464.4" y1="141.0" x2="780.9" y2="141.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="464.4" y1="136.5" x2="464.4" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="780.9" y1="136.5" x2="780.9" y2="145.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="617.1" y="135.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋0.8 個百分點（−14.6 至 16.2）</text><text x="20.0" y="185.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">合併估計值（原文所載）</text><text x="20.0" y="202.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">17.4% − 15.5%｜隨機效果模式</text><line x1="532.6" y1="191.0" x2="737.9" y2="191.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="532.6" y1="186.5" x2="532.6" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="737.9" y1="186.5" x2="737.9" y2="195.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 635.3 183.0 L 646.3 191.0 L 635.3 199.0 L 624.3 191.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="195.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋2 個百分點（−8 至 12）原文所載</text><text x="20.0" y="235.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">合併估計值（本頁自行重算）</text><text x="20.0" y="252.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">16/92 vs. 15/97，Wald 法</text><line x1="526.1" y1="241.0" x2="743.0" y2="241.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="526.1" y1="236.5" x2="526.1" y2="245.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="743.0" y1="236.5" x2="743.0" y2="245.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="629.0" y="235.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="245.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋1.9 個百分點（−8.6 至 12.5）</text><text x="20.0" y="285.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Desai 2015（前後對照，未納入合併）</text><text x="20.0" y="302.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">7.9% − 4.4%</text><line x1="594.0" y1="291.0" x2="707.0" y2="291.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="594.0" y1="286.5" x2="594.0" y2="295.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="707.0" y1="286.5" x2="707.0" y2="295.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="645.0" y="285.5" width="11" height="11" fill="#8a6a1f"/>
+<text x="1106.0" y="295.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">＋3.5 個百分點（−2.0 至 9.0）本頁自行計算</text><text x="602.7" y="382.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 縮短療程較少膿瘍</text><text x="626.7" y="382.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">縮短療程較多膿瘍 ▶</text></svg></div>
+    <div class="cap"><b>資料來源</b>：合併風險差「＋2 個百分點（−8 至 12）」與非劣性界線 7.5 為原文所載；<b>個別研究的風險差、以及「本頁自行重算」那一列，皆為本頁以 Wald 法自行計算</b>。<b>怎麼解讀</b>：這是本篇真正的主角圖。琥珀色點虛線是預設的非劣性界線（＋7.5 個百分點）。<b>判定規則是：只有當合併風險差的 95% CI「整條」都落在界線左邊，才算證明了非劣性</b>。本篇的區間右端是 ＋12，超出界線，所以非劣性不成立。<b>但同樣重要的是：區間左端是 −8，涵蓋 0 甚至偏向有利，所以也沒有證據說縮短療程比較危險</b>。原文另做了單側信賴區間的敏感度分析，上界為 ＋11 個百分點，<b>仍舊越界</b>。<b>有何陷阱</b>：非劣性界線 7.5 不是天上掉下來的——原文說明是沿用一篇成人大型 RCT 所用的界線，理由是「複雜性闌尾炎術後的感染性併發症通常只造成輕微病態」，並經兩位小兒外科醫師討論後認可。<b>如果你認為小孩的腹腔內膿瘍比成人更難處理、界線應該更嚴（例如 5%），那本篇的結論只會更「不成立」；反之若你認為界線可以放寬到 15%，結論就會翻轉</b>。這條線的位置，比 p 值重要得多。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表（原文 Table 2 GRADE 摘要表 ＋ Results 內文數值）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1220px">
+    <thead><tr><th style="width:190px">終點</th><th>研究數</th><th>合併人數</th><th>事件數<br>（縮短 vs. 標準）</th><th>效果值（95% CI）</th><th>GRADE 確定性</th><th>原文結論用語</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>腹腔內膿瘍</b>（主要終點，非劣性）</td><td class="num">3 RCT ＋ 1 前後對照<br><span class="na">（實際合併 2 RCT）</span></td><td class="num">189</td><td class="num"><b>16/92（17.4%）<br>vs. 15/97（15.5%）</b></td>
+        <td class="num">RD ＋2 個百分點<br>（−8 至 12）<br>RR 1.12（0.59–2.12）<br><span class="na">單側 CI 上界 ＋11</span></td>
+        <td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁⨁◯◯ 低</span></td><td>「非劣性未證實；<br>亦無統計顯著差異」</td><td><span class="win caution">非劣性不成立<br>但風險未見上升</span></td></tr>
+      <tr><td>死亡</td><td class="num">1 RCT</td><td class="num">87</td><td class="num">0 vs. 0</td><td class="num"><span class="na">無事件，無法估計</span></td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁◯◯◯ 極低</span></td><td>「無差別」</td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td>腸阻塞 ileus</td><td class="num">2 RCT</td><td class="num">113</td><td class="num">1 vs. 4（de Wijkerslooth）<br>0 vs. 0（Rice）</td><td class="num"><span class="na">原文未列合併效果值</span></td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁◯◯◯ 極低</span></td><td>「無差別」</td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td>再入院</td><td class="num">1 RCT</td><td class="num">87</td><td class="num">9/42（21%）<br>vs. 7/45（16%）</td><td class="num">RR 1.38（0.56–3.37）<br>RD ＋6（−10 至 22）</td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁⨁◯◯ 低</span></td><td>「無差別」</td><td><span class="win neutral">無顯著差異</span></td></tr>
+      <tr><td>抗生素治療相關併發症</td><td class="num">1 RCT</td><td class="num">87</td><td class="num">8/42 vs. 9/45</td><td class="num">RR 0.95（0.41–2.24）<br>RD −1（−18 至 16）</td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁⨁◯◯ 低</span></td><td>「無差別」</td><td><span class="win neutral">無顯著差異</span></td></tr>
+      <tr><td>手術部位感染</td><td class="num">2 RCT</td><td class="num">113</td><td class="num">1 vs. 0（de Wijkerslooth）<br>0 vs. 1（Rice）</td><td class="num"><span class="na">原文未列合併效果值</span></td><td><span class="grade" style="background:#f6ece8;color:#8a4a3d">⨁◯◯◯ 極低</span></td><td>「無差別」</td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td><b>住院天數</b></td><td class="num">2 RCT</td><td class="num">189</td><td class="num">3.4 vs. 5.6 天<br>4.48 vs. 6.06 天</td><td class="num"><b>約縮短 2 天</b><br>de Wijkerslooth：MD −2.2<br>（−2.94 至 −1.46）<br>Fraser：p ＝ 0.01<br><span class="na">原文未做合併平均差</span></td>
+        <td><span class="grade" style="background:#e8f2ef;color:#2f6b62">⨁⨁⨁◯ 中</span></td><td>「約可縮短 2 天」</td><td><span class="win">縮短療程較佳</span></td></tr>
+      <tr><td>加護病房需求</td><td class="num" colspan="5"><span class="na">預設為主要終點，但<b>無任何研究報告</b></span></td><td><span class="na">—</span></td><td><span class="win neutral">無資料</span></td></tr>
+      <tr><td>敗血症</td><td class="num" colspan="5"><span class="na">預設為主要終點，但<b>無任何研究報告</b></span></td><td><span class="na">—</span></td><td><span class="win neutral">無資料</span></td></tr>
+      <tr><td>健康相關生活品質</td><td class="num" colspan="5"><span class="na">預設終點，<b>無任何研究報告</b></span></td><td><span class="na">—</span></td><td><span class="win neutral">無資料</span></td></tr>
+      <tr><td>局部性 vs. 瀰漫性腹膜炎次群組</td><td class="num" colspan="5"><span class="na">預設次群組，<b>無任何研究分開報告，無法分析</b></span></td><td><span class="na">—</span></td><td><span class="win neutral">無資料</span></td></tr>
+      <tr><td>其他預設次群組</td><td class="num" colspan="5"><span class="na">術前嘔吐：<b>無資料</b>；症狀期 ≤ 48 小時：膿瘍 3 vs. 4 例；術前 CRP ＞ 100：膿瘍 5 vs. 4 例（僅來自一篇 RCT 的作者提供資料，原文未做次群組統計）</span></td><td><span class="na">—</span></td><td><span class="win neutral">不足以分析</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079">本表的 GRADE 確定性、研究數、合併人數與原文結論用語，逐格取自原文 Table 2；事件數取自原文 Table 1 與 Results 內文；再入院與抗生素併發症的 RR／RD 為原文 Results 所載。原文對降級理由的說明：腹腔內膿瘍為「嚴重不精確、間接性有些不確定、有些研究限制」；死亡、腸阻塞、手術部位感染為「<b>非常</b>嚴重不精確」；住院天數僅因「間接性與研究限制」降級，因兩篇結果一致且皆達統計顯著，故不因不一致或不精確降級——這是全篇唯一達中度確定性的終點。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 各研究原始數據與本頁重繪圖</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1080px">
+    <thead><tr><th style="width:240px">研究（比較切法）</th><th>縮短組<br>事件／人數</th><th>標準組<br>事件／人數</th><th>縮短組<br>發生率</th><th>標準組<br>發生率</th><th>RR（95% CI）<br>本頁自行計算</th><th>RD（95% CI）<br>本頁自行計算</th></tr></thead>
+    <tbody>
+      <tr><td>de Wijkerslooth 2023（靜脈 2 天 vs. 5 天）</td><td class="num">6 / 42</td><td class="num">5 / 45</td><td class="num">14.29%</td><td class="num">11.11%</td><td class="num">1.29（0.42–3.90）</td><td class="num">＋3.17（−10.84 至 17.19）</td></tr>
+      <tr><td>Fraser 2010（靜脈 ＜5 天 vs. 5 天）</td><td class="num">10 / 50</td><td class="num">10 / 52</td><td class="num">20.00%</td><td class="num">19.23%</td><td class="num">1.04（0.47–2.28）</td><td class="num">＋0.77（−14.65 至 16.19）</td></tr>
+      <tr style="background:#f6ece8"><td><b>合併（本頁以粗略加總重算）</b></td><td class="num"><b>16 / 92</b></td><td class="num"><b>15 / 97</b></td><td class="num"><b>17.39%</b></td><td class="num"><b>15.46%</b></td><td class="num"><b>1.12（0.59–2.14）</b></td><td class="num"><b>＋1.93（−8.64 至 12.50）</b></td></tr>
+      <tr style="background:#e8f2ef"><td><b>合併（原文所載，隨機效果模式）</b></td><td class="num"><b>16（17%）</b></td><td class="num"><b>15（15%）</b></td><td class="num" colspan="2"><span class="na">原文以百分比表示</span></td><td class="num"><b>1.12（0.59–2.12）</b></td><td class="num"><b>＋2（−8 至 12）</b></td></tr>
+      <tr><td>Rice 2001（靜脈 ＜5 天 vs. 10 天）</td><td class="num">0 / 16</td><td class="num">0 / 10</td><td class="num">0%</td><td class="num">0%</td><td class="num"><span class="na">無法估計（不作連續性校正）</span></td><td class="num">0（−13.9 至 13.9）<span class="na">＊</span></td></tr>
+      <tr><td class="sig">Desai 2015（前後對照，非隨機）</td><td class="num">12 / 152</td><td class="num">6 / 136</td><td class="num">7.89%</td><td class="num">4.41%</td><td class="num">1.79（0.69–4.64）</td><td class="num">＋3.48（−2.02 至 8.99）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079">＊Rice 2001 兩組皆零事件，風險差為 0 但變異數估計不可靠，此處僅供參考，原文亦未納入任何合併分析。表中所有 RR 以 Katz 對數法（log-RR 之標準誤 ＝ √(1/a − 1/n₁ ＋ 1/b − 1/n₂)）、RD 以 Wald 法計算，<b>皆為本頁自行計算</b>；分子與分母則逐格取自原文 Table 1。<b>本頁重算的合併值（RR 1.12、RD ＋1.93）與原文所載（RR 1.12、RD ＋2）到小數點後兩位都吻合</b>，見下方一致性檢查。</p>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 256" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="256" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">住院天數：兩篇 RCT 都顯示縮短靜脈抗生素療程可縮短住院（原文未做合併，故無菱形）</text><line x1="430.0" y1="60.0" x2="430.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−4</text><line x1="508.0" y1="60.0" x2="508.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="508.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−3</text><line x1="586.0" y1="60.0" x2="586.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="586.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text><line x1="664.0" y1="60.0" x2="664.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="664.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1</text><line x1="742.0" y1="60.0" x2="742.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="742.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0</text><line x1="820.0" y1="60.0" x2="820.0" y2="180.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="820.0" y="197.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text><text x="625.0" y="214.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="600">住院天數平均差（天）</text><line x1="742.0" y1="60.0" x2="742.0" y2="180.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">研究</text><text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">平均差（95% CI）</text><text x="20.0" y="85.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">de Wijkerslooth 2023</text><text x="20.0" y="102.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">3.4 ± 1.6 天（n ＝ 42）vs. 5.6 ± 1.9 天（n ＝ 45）</text><line x1="512.7" y1="91.0" x2="628.1" y2="91.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="512.7" y1="86.5" x2="512.7" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="628.1" y1="86.5" x2="628.1" y2="95.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="564.9" y="85.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="95.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−2.20 天（−2.94 至 −1.46）原文所載</text><text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Fraser 2010（靜脈療程比較）</text><text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">4.48 ± 2.36 天（n ＝ 50）vs. 6.06 ± 2.00 天（n ＝ 52）</text><line x1="552.5" y1="141.0" x2="685.1" y2="141.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="552.5" y1="136.5" x2="552.5" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="685.1" y1="136.5" x2="685.1" y2="145.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="613.3" y="135.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="145.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−1.58 天（−2.43 至 −0.73）本頁自行計算</text><text x="730.0" y="232.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 縮短療程住得比較短</text><text x="754.0" y="232.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">住得比較久 ▶</text></svg></div>
+    <div class="cap"><b>資料來源</b>：兩篇 RCT 的住院天數平均值與標準差取自原文 Table 1；<b>de Wijkerslooth 的平均差 −2.20（−2.94 至 −1.46）為原文 Results 所載</b>，<b>Fraser 的平均差 −1.58（−2.43 至 −0.73）為本頁自行計算</b>（原文明言「In the other, the difference could not be estimated based on reported figures」，但 Table 1 已提供兩組的平均與 SD，故本頁得以補算；此為本頁的補充，非原文結論）。<b>怎麼解讀</b>：兩條線都完全落在 0 的左邊，代表縮短靜脈抗生素療程確實讓孩子早點回家，約 1.6–2.2 天。<b>有何陷阱</b>：(1) <b>住院天數受抗生素療程直接決定</b>——如果院內規定「靜脈抗生素打完才能出院」，那麼縮短療程當然會縮短住院，這比較接近同義反覆而非真正的臨床獲益；真正要看的是「早出院有沒有換來更多再入院」，而再入院的資料只有一篇 RCT、9 vs. 7 例，看不出差別。(2) 原文<b>刻意沒有把這兩篇合併</b>，因為總療程的定義不同；本圖並排呈現，不代表可以合併。(3) 兩篇的標準差都不小（1.6–2.4 天），代表個別孩子的差異很大。</div>
+  </div>
+
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 430" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1060" height="430" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">唯一報告完整次要終點的試驗：de Wijkerslooth 2023 的事件數（人次，非百分比）</text><text x="14.0" y="48.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">事件數（人次）</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="328.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0</text><line x1="78.0" y1="274.0" x2="1036.0" y2="274.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="278.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">2</text><line x1="78.0" y1="224.0" x2="1036.0" y2="224.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="228.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">5</text><line x1="78.0" y1="174.0" x2="1036.0" y2="174.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="178.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">7</text><line x1="78.0" y1="124.0" x2="1036.0" y2="124.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="128.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">10</text><line x1="78.0" y1="74.0" x2="1036.0" y2="74.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="70.0" y="78.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">12</text><rect x="111.8" y="199.0" width="42.0" height="125.0" fill="#2f6b62"/>
+<text x="132.8" y="193.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">6</text><rect x="157.8" y="219.8" width="42.0" height="104.2" fill="#8a4a3d"/>
+<text x="178.8" y="213.8" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">5</text><text x="157.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">腹腔內膿瘍</text><text x="157.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">主要終點</text><rect x="271.5" y="136.5" width="42.0" height="187.5" fill="#2f6b62"/>
+<text x="292.5" y="130.5" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">9</text><rect x="317.5" y="178.2" width="42.0" height="145.8" fill="#8a4a3d"/>
+<text x="338.5" y="172.2" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">7</text><text x="317.5" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">再入院</text><rect x="431.2" y="157.3" width="42.0" height="166.7" fill="#2f6b62"/>
+<text x="452.2" y="151.3" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">8</text><rect x="477.2" y="136.5" width="42.0" height="187.5" fill="#8a4a3d"/>
+<text x="498.2" y="130.5" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">9</text><text x="477.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">抗生素相關</text><text x="477.2" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">併發症</text><rect x="590.8" y="303.2" width="42.0" height="20.8" fill="#2f6b62"/>
+<text x="611.8" y="297.2" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">1</text><rect x="636.8" y="240.7" width="42.0" height="83.3" fill="#8a4a3d"/>
+<text x="657.8" y="234.7" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">4</text><text x="636.8" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">腸阻塞</text><text x="636.8" y="359.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">（ileus）</text><rect x="750.5" y="303.2" width="42.0" height="20.8" fill="#2f6b62"/>
+<text x="771.5" y="297.2" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">1</text><rect x="796.5" y="324.0" width="42.0" height="0.0" fill="#8a4a3d"/>
+<text x="817.5" y="318.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">0</text><text x="796.5" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">手術部位感染</text><rect x="910.2" y="324.0" width="42.0" height="0.0" fill="#2f6b62"/>
+<text x="931.2" y="318.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">0</text><rect x="956.2" y="324.0" width="42.0" height="0.0" fill="#8a4a3d"/>
+<text x="977.2" y="318.0" font-size="11" fill="#2e2b28" text-anchor="middle" font-weight="600">0</text><text x="956.2" y="344.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="600">死亡</text><line x1="78.0" y1="324.0" x2="1036.0" y2="324.0" stroke="#6b7079" stroke-width="1.2"/>
+<rect x="78.0" y="390.0" width="12" height="12" fill="#2f6b62"/>
+<text x="95.0" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">靜脈抗生素 2 天（n ＝ 42）</text><rect x="310.5" y="390.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="327.5" y="400.0" font-size="11.5" fill="#2e2b28" text-anchor="start" font-weight="600">靜脈抗生素 5 天（n ＝ 45）</text><text x="1036.0" y="400.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">每一格的事件數都是個位數 —— 這正是本篇無法下結論的根本原因</text></svg></div>
+    <div class="cap"><b>資料來源</b>：原文 Table 1 中 de Wijkerslooth 2023 的逐項事件數（人次），一格未改。<b>怎麼解讀</b>：這是全篇唯一把次要終點報告完整的一篇試驗，也是「2 天 vs. 5 天」這個最大膽的縮短幅度。看得出來每一項的事件數都在 0–9 之間。<b>有何陷阱</b>：這張圖最重要的訊息不是「哪根柱子比較高」，而是<b>所有柱子都太矮</b>。以再入院為例，9 vs. 7 兩例之差，換算成 RR 是 1.38、95% CI 0.56–3.37——涵蓋了「減少四成四」到「增加兩倍多」的全部可能。<b>在這種事件數下，任何「兩組差不多」的說法都應該讀成「這個試驗沒有能力回答」</b>。另請注意腸阻塞 1 vs. 4 那一格：看起來對縮短療程有利，但 5 個事件不足以支撐任何推論，原文 GRADE 也只給極低確定性。</div>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1100px">
+    <thead><tr><th style="width:200px">檢查項目</th><th>原文數值</th><th>本頁驗算</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td>三篇 RCT 人數加總</td><td class="num">215 名兒童</td><td class="num">87＋102＋26 ＝ 215</td><td><span class="win">完全相符</span></td></tr>
+      <tr><td>各研究組別加總</td><td class="num">87／102／26／288</td><td class="num">42＋45 ＝ 87；52＋50 ＝ 102；50＋52 ＝ 102；16＋10 ＝ 26；152＋136 ＝ 288</td><td><span class="win">全部相符</span></td></tr>
+      <tr><td>合併分析人數</td><td class="num">Table 2：189 人</td><td class="num">(42＋50) ＋ (45＋52) ＝ 92＋97 ＝ 189</td><td><span class="win">相符</span></td></tr>
+      <tr><td>合併事件數與百分比</td><td class="num">16（17%）vs. 15（15%）</td><td class="num">16/92 ＝ 17.39%；15/97 ＝ 15.46%</td><td><span class="win">四捨五入後相符</span></td></tr>
+      <tr><td><b>合併風險比</b></td><td class="num">RR 1.12（0.59–2.12）</td><td class="num">粗略加總重算：1.1246（0.591–2.142）</td><td><span class="win">相符至小數第二位</span></td></tr>
+      <tr><td><b>合併風險差</b></td><td class="num">＋2 個百分點（−8 至 12）</td><td class="num">1.93（−8.64 至 12.50）</td><td><span class="win">相符</span></td></tr>
+      <tr><td>再入院 RR／RD</td><td class="num">RR 1.38（0.56–3.37）<br>RD ＋6（−10 至 22）</td><td class="num">9/42 vs. 7/45 → RR 1.3776（0.5636–3.3672）<br>RD ＋5.87（−10.44 至 22.19）</td><td><span class="win">完全相符</span></td></tr>
+      <tr><td>抗生素併發症 RR／RD</td><td class="num">RR 0.95（0.41–2.24）<br>RD −1（−18 至 16）</td><td class="num">8/42 vs. 9/45 → RR 0.9524（0.4052–2.2383）<br>RD −0.95（−17.61 至 15.71）</td><td><span class="win">完全相符</span></td></tr>
+      <tr><td>住院天數平均差</td><td class="num">MD −2.2（−2.94 至 −1.46）</td><td class="num">(3.4 − 5.6) ± 1.96 × √(1.6²/42 ＋ 1.9²/45) ＝ −2.20 ± 0.74 → (−2.936, −1.464)</td><td><span class="win">完全相符</span></td></tr>
+      <tr><td>再入院百分比</td><td class="num">9（21%）vs. 7（16%）</td><td class="num">9/42 ＝ 21.4%；7/45 ＝ 15.6%</td><td><span class="win">相符</span></td></tr>
+      <tr><td>Fraser 住院天數的方向</td><td class="num">Table 1 對此標註 “sic erat scriptum”</td><td class="num">52 人組 ＝ 6.06 天、50 人組 ＝ 4.48 天；<b>在靜脈療程的切法下，50 人組才是縮短組</b>，故縮短組住得較短，與 Results 敘述一致</td><td><span class="win">可自洽解釋</span></td></tr>
+      <tr><td class="sig">腹腔內膿瘍的研究數與人數不一致</td><td class="num">Table 2 寫「3 RCT ＋ 1 前後對照」，人數 189</td><td class="num">189 只來自 2 篇 RCT；Rice（26 人）與 Desai（288 人）並未計入</td><td><span class="win caution">Table 2 的「研究數」<br>與「人數」定義不同<br>（前者指有報告，<br>後者指有合併）</span></td></tr>
+      <tr><td>單側非劣性敏感度分析</td><td class="num">單側 CI 上界 ＋11 個百分點</td><td class="num">雙側上界 12.50，單側（95%，z ＝ 1.645）上界 ＝ 1.93 ＋ 1.645 × 5.39 ＝ ＋10.8</td><td><span class="win">相符（原文取整為 11）</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call teal">
+    <div class="h">這一節的好消息</div>
+    本篇是少見「每一個能驗算的數字都算得回來」的統合分析：<b>合併 RR、合併 RD、再入院 RR／RD、抗生素併發症 RR／RD、住院天數平均差，本頁獨立重算的結果與原文完全吻合</b>，連單側信賴區間的敏感度分析都對得上。這在方法學上是很強的正面訊號——本篇的問題不在算錯，<b>而在可算的東西實在太少</b>。
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、怎麼談</span></h2>
+  <h3>先釐清這篇能回答與不能回答什麼</h3>
+  <div class="call amber">
+    <div class="h">一句話版本</div>
+    這篇<b>不是</b>「短療程已證實安全」的證據，也<b>不是</b>「短療程比較危險」的證據。它是一份誠實的盤點：<b>在小兒穿孔性闌尾炎這個相當常見的情境，全世界能拿來回答「靜脈抗生素該打幾天」的隨機證據，只有 189 個孩子的資料</b>。作者的立場很清楚——現有證據<b>不支持</b>「應該避免縮短療程」這個結論，但也<b>還不足以</b>把短療程寫成標準。
+  </div>
+  <h3>誰適合縮短療程</h3>
+  <ul class="clean">
+    <li><b>本篇納入的都是「因穿孔性闌尾炎接受急診闌尾切除、多數以腹腔鏡完成」的 0–17 歲兒童</b>（原文自承「most appendectomies in the pooled studies were performed with a laparoscopic technique」）。不適用於非手術治療、闌尾膿瘍先引流、或未穿孔的單純性闌尾炎。</li>
+    <li><b>原文明確指出無法回答的次群組</b>：局部性腹膜炎 vs. 瀰漫性腹膜炎完全沒有研究分開報告；術前嘔吐、症狀期長短、術前 CRP ＞ 100 的次群組也只有零星幾例，無法分析。<b>臨床上最想知道「哪種孩子可以放心縮短」的答案，本篇答不出來。</b></li>
+    <li>原文另指出一項限制：<b>部分研究把年紀最小的孩子排除在外</b>，因此嬰幼兒的外推更需保守。</li>
+  </ul>
+  <h3>換來什麼</h3>
+  <div class="kv">
+    <div class="c teal"><div class="lab">住院天數</div><div class="big">−2 天</div><div class="sub">全篇唯一達 GRADE<br>中度確定性的獲益</div></div>
+    <div class="c"><div class="lab">腹腔內膿瘍</div><div class="big">＋2</div><div class="sub">個百分點（−8 至 12）<br>非劣性未成立</div></div>
+    <div class="c"><div class="lab">再入院</div><div class="big">＋6</div><div class="sub">個百分點（−10 至 22）<br>無顯著差異</div></div>
+    <div class="c amber"><div class="lab">最壞情境</div><div class="big">1 / 8</div><div class="sub">若真為區間上界 12 個<br>百分點，約每 8 個孩子<br>多一例膿瘍（原文原話）</div></div>
+    <div class="c"><div class="lab">抗生素併發症</div><div class="big">−1</div><div class="sub">個百分點（−18 至 16）<br>無顯著差異</div></div>
+    <div class="c"><div class="lab">抗藥性</div><div class="big">未測</div><div class="sub">原文列為縮短療程的<br>理論益處，無研究實測</div></div>
+  </div>
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>最壞情境是每 8 個孩子多一例腹腔內膿瘍。</b>這是原文自己算的（信賴區間上界 12 個百分點 → 1/0.12 ≈ 8）。作者的緩和說法是：腹腔內膿瘍雖然嚴重，但「在合理時間內臨床上可以處理」（clinically manageable within a reasonable time frame）。<b>要不要接受這個交換，取決於你對「多一次影像導引引流、多一次麻醉」的權重。</b></li>
+    <li><b>沒有量到的代價</b>：本篇完全沒有加護病房需求、敗血症、生活品質的資料，也沒有量到抗藥性。</li>
+  </ul>
+  <h3>和現行指引怎麼對齊（原文 Discussion 整理）</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:700px">
+    <thead><tr><th>來源</th><th>對象</th><th>建議</th><th>本篇的評語</th></tr></thead>
+    <tbody>
+      <tr><td>美國小兒外科學會 APSA</td><td>兒童穿孔性闌尾炎</td><td>術後靜脈廣效抗生素 <b>5 天</b>，總療程 <b>7 天</b>；符合臨床條件可提早改口服</td><td rowspan="2">原文直言：這些指引<b>沒有明確交代建議與證據之間的連結</b>，而本回顧顯示兒童族群的支持證據其實很有限</td></tr>
+      <tr><td>世界急診外科學會 WSES</td><td>同上</td><td><b>48 小時</b>後改口服，總療程 <b>＜7 天</b></td></tr>
+      <tr><td>近期成人指引</td><td>複雜性闌尾炎（壞疽或穿孔）成人</td><td>術後抗生素限於 <b>24–48 小時</b>（引用中度品質證據）</td><td>成人的證據已經走得比兒童遠得多</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3>原文提出的實務折衷：以臨床條件決定，而非以天數決定</h3>
+  <p>原文在 Discussion 花了一整段談這件事：成人的多篇研究已提出以<b>臨床條件</b>作為停藥或改口服的判準——<b>能進食、白血球回到正常、退燒超過 24 小時、腹痛可忍受</b>。由於相關抗生素的口服生體可用率高，一旦孩子開始進食、腸蠕動恢復、沒有嘔吐，口服劑型能達到的血中濃度是可以期待的。<b>雖然本回顧本身沒有直接檢驗「靜脈轉口服」的時機，但藥動學特性支持依臨床條件切換、以利提早出院。</b>這大概是本篇對日常臨床最實用的一句話。</p>
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call teal">
+    <div class="h">建議說法（對家屬）</div>
+    「你的孩子是闌尾破掉的闌尾炎，開完刀之後還需要打抗生素，避免肚子裡形成膿包。<b>傳統做法是打滿 5 天再改口服，總共 7 天左右</b>；近年有一些研究試著把靜脈的部分縮短到 2–3 天。<br><br>我把目前的證據老實告訴你：<b>能拿來比較的隨機試驗只有兩個、加起來 189 個孩子</b>。結果是——打短一點的那一組，肚子裡形成膿包的比率是 17%，打滿的那一組是 15%，<b>看起來差不多，但因為人數太少，統計上沒辦法保證「短的不會比較差」</b>。最壞的情況估計是，<b>大約每 8 個孩子可能多一個人形成膿包</b>；不過膿包通常可以用引流處理，不會危及生命。<br><br>好處也很實在：<b>打短一點的孩子平均可以早 2 天回家</b>，再入院的比率兩組看不出差別。<br><br>所以我的建議是：<b>不看死板的天數，而是看孩子的狀況</b>——如果他退燒超過一天、可以正常吃東西、肚子不太痛、抽血發炎指數往下掉，我們就可以提早停靜脈抗生素、改成口服帶回家；如果還在發燒或吃不下，那就按標準療程繼續打。回家之後如果又發燒、肚子痛、吃不下，一定要馬上回來。」
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>能合併的只有 2 篇 RCT、189 個孩子。</b>2,421 筆檢索記錄最後只換到這麼多可合併資料。這是本篇一切限制的根源。</li>
+    <li><b>被排除的兩篇 RCT 是因為聯繫不上作者，不是因為方法學不合格。</b>原文寫「contact with the authors could not be established despite repeated attempts」。這種基於資料可得性的排除，本身就是潛在的偏誤來源，且方向不明。</li>
+    <li><b>合併的兩篇試驗，療程定義其實不同。</b>de Wijkerslooth 比的是「靜脈 2 天 vs. 5 天、無口服」，Fraser 比的是「靜脈 ＜5 天 vs. 5 天，且兩組總療程分別為 7 天與 5 天」。原文自承「the antibiotic regimens and the treatment lengths varied within the pooled groups, and heterogeneity must be considered」。</li>
+    <li><b>非劣性界線 7.5 個百分點是借來的。</b>沿用一篇成人大型 RCT 的界線，理由是感染性併發症「多造成輕微病態」。這個判斷在兒童是否成立，原文只以「兩位小兒外科醫師討論後認為合理」帶過。<b>界線的位置直接決定結論成立與否</b>。</li>
+    <li><b>檢索停在 2023 年 10 月，論文 2025 年底才線上發表。</b>中間超過兩年的新研究不在其中（另於 2024 年 2 月查過 ClinicalTrials.gov，48 筆皆不符 PICO）。</li>
+    <li><b>語言限於英文與北歐三語。</b>非這些語言發表的研究一律未納入。</li>
+    <li><b>作者群與納入研究有重疊。</b>第三作者 de Wijkerslooth 同時是本篇最關鍵的納入 RCT（de Wijkerslooth 2023）之作者，該篇的兒童分層資料也是由作者方提供。原文未特別討論此一利益衝突或評讀獨立性的安排。</li>
+    <li><b>主要終點的實際證據等級只有 GRADE「低」。</b>死亡、腸阻塞、手術部位感染更只有「極低」。<b>唯一達到「中度」的是住院天數</b>——而住院天數與抗生素療程之間存在制度性的循環（打完才出院），其臨床意義需打折扣。</li>
+    <li><b>所有預設的次群組分析全部落空。</b>局部性 vs. 瀰漫性腹膜炎、術前嘔吐、症狀期、CRP ＞ 100，沒有一項能做。</li>
+    <li><b>沒有量抗藥性、沒有量成本、沒有量家長負擔或生活品質。</b>縮短療程最重要的兩個理論益處（減少抗藥性、減少家庭負擔），本篇一個都沒有實測。</li>
+    <li><b>手術技術、院內流程與病人族群在各中心之間本來就不同</b>，原文自承這可能影響結果，且「穿孔」的定義在各研究間也略有差異。</li>
+    <li><b>零事件研究的處理。</b>Rice 2001 兩組皆零事件，被排除於風險比合併之外；本頁亦不作連續性校正。這是正確做法，但代表 26 個孩子的資料實質上被浪費了。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>穿孔性闌尾炎 <span class="en">Perforated appendicitis</span></dt><dd>闌尾壁破裂、腸內容物進入腹腔。約占兒童闌尾炎的 20%（原文引述），併發症率約 8–20%，多為腹腔內膿瘍。</dd></div>
+      <div class="gl-row"><dt>複雜性闌尾炎 <span class="en">Complicated / complex appendicitis</span></dt><dd>涵蓋壞疽性與穿孔性闌尾炎（可合併或不合併膿瘍形成）。本篇刻意只收<b>穿孔性</b>，並因多篇成人試驗未把穿孔性單獨報告而必須向作者索資料。</dd></div>
+      <div class="gl-row"><dt>腹腔內膿瘍 <span class="en">Intra-abdominal abscess, IAA</span></dt><dd>術後腹腔內形成的局限性化膿積聚，是本篇的主要安全終點，通常需影像導引穿刺引流或再次手術。</dd></div>
+      <div class="gl-row"><dt>非劣性 <span class="en">Non-inferiority</span></dt><dd>不試圖證明新做法比較好，只證明「不會差過某個可接受的幅度」。<b>只有當效果值的信賴區間整條落在界線的安全側，非劣性才成立</b>。</dd></div>
+      <div class="gl-row"><dt>非劣性界線 <span class="en">Non-inferiority margin</span></dt><dd>事先設定的「最大可容忍變差幅度」。本篇設為腹腔內膿瘍風險差 ＋7.5 個百分點。</dd></div>
+      <div class="gl-row"><dt>風險差 <span class="en">Risk difference, RD</span></dt><dd>兩組發生率相減，單位為百分點。非劣性判定用的是絕對尺度而非相對尺度，因為「可容忍多少」是一個絕對量的判斷。</dd></div>
+      <div class="gl-row"><dt>風險比 <span class="en">Risk ratio / relative risk, RR</span></dt><dd>兩組發生率之比。RR ＝ 1 表示無差異。</dd></div>
+      <div class="gl-row"><dt>PICO 架構 <span class="en">Population, Intervention, Comparison, Outcome</span></dt><dd>系統性回顧的問題界定架構。本篇的 P 是 0–17 歲穿孔性闌尾炎術後兒童，I／C 是療程天數低於／高於某一界線，O 以病人風險與獲益為主。</dd></div>
+      <div class="gl-row"><dt>醫療科技評估 <span class="en">Health technology assessment, HTA</span></dt><dd>為醫療體系決策而做的系統性證據評估，通常同時納入臨床效果、成本與實施可行性。本篇原本即為瑞典 Västra Götaland 區的 HTA 產出。</dd></div>
+      <div class="gl-row"><dt>GRADE 確定性 <span class="en">GRADE certainty of evidence</span></dt><dd>依偏誤風險、不一致性、間接性、不精確、發表偏差五面向，把證據分為高／中／低／極低。</dd></div>
+      <div class="gl-row"><dt>間接性 <span class="en">Indirectness</span></dt><dd>研究的病人、介入、對照或終點與臨床問題不完全吻合的程度。本篇多個終點因此降級（例如療程定義在合併組內不一致）。</dd></div>
+      <div class="gl-row"><dt>不精確 <span class="en">Imprecision</span></dt><dd>樣本數或事件數太少導致信賴區間過寬。本篇主要終點因「嚴重不精確」降級，次要終點多因「非常嚴重不精確」降兩級。</dd></div>
+      <div class="gl-row"><dt>連續性校正 <span class="en">Continuity correction</span></dt><dd>統合分析中遇到零事件格時，慣例加 0.5 以便計算比值。<b>兩組皆為零時通常直接排除該研究</b>，本頁即採此做法。</dd></div>
+      <div class="gl-row"><dt>靜脈轉口服 <span class="en">IV-to-oral switch</span></dt><dd>依臨床條件（能進食、退燒、白血球正常、腹痛可忍受）把靜脈抗生素改為口服，是縮短住院的關鍵步驟。</dd></div>
+      <div class="gl-row"><dt>生體可用率 <span class="en">Bioavailability</span></dt><dd>口服藥物進入全身循環的比例。原文指出本情境常用抗生素的口服生體可用率高，是支持提早改口服的藥動學依據。</dd></div>
+      <div class="gl-row"><dt>抗生素管理 <span class="en">Antimicrobial stewardship</span></dt><dd>以最短有效療程、最窄有效抗菌譜為原則的用藥治理，目的在減少抗藥性。是縮短療程的主要理論動機之一，但本篇未實測。</dd></div>
+      <div class="gl-row"><dt>前後對照研究 <span class="en">Before/after study</span></dt><dd>比較政策改變前後兩段時期的結果。非隨機，容易受同期照護標準改變的干擾，本篇的 Desai 2015 即屬此類，未納入合併。</dd></div>
+      <div class="gl-row"><dt>腸阻塞 <span class="en">Ileus</span></dt><dd>術後腸蠕動停滯導致的功能性阻塞。</dd></div>
+      <div class="gl-row"><dt>手術部位感染 <span class="en">Surgical site infection, SSI</span></dt><dd>手術切口或深部器官腔隙的感染。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redraw Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻</b>：Löfgren P, Berge E, de Wijkerslooth EML, Jivegård L, Sjöström S, Wallerstedt SM.
+  <i>Effectiveness and Safety of Shortened Postoperative Antibiotic Regimens in Children with Perforated Appendicitis: A Systematic Review and Meta-Analysis.</i>
+  Eur J Pediatr Surg. 2026;36(3):210–216（線上先行 2025 年 12 月 24 日）。DOI：<a href="https://doi.org/10.1055/a-2761-5649">10.1055/a-2761-5649</a>　·　PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/41443239/">PMID 41443239</a>　·　PubMed Central：PMC13288424（Open Access）。</p>
+  <p><b>本篇納入的四項研究</b>（依原文 Table 1 所載）：de Wijkerslooth et al, 2023（荷蘭，RCT，87 人）；Fraser et al, 2010（美國，RCT，102 人）；Rice et al, 2001（美國，RCT，26 人）；Desai et al, 2015（美國，前後對照，288 人）。<span class="na">原文 Table 1 未列出各篇的完整書目資訊（僅以內文引用編號標示），本頁不另行補充，以免誤植。</span></p>
+  <p><b>資料取得方式</b>：本頁內容取自 PubMed 之書目與摘要紀錄，以及 PubMed Central 之全文（Introduction、Methods、Results、Discussion、Conclusion、Table 1、Table 2）。<b>依 PubMed 使用規範，本頁在此明確標示資料來源為 PubMed／PubMed Central，並附上原文 DOI 連結。</b></p>
+  <p><b>圖表重繪聲明</b>：本頁所有圖形皆為<b>依原文所載數字重新繪製之 inline SVG 或 HTML／CSS 方塊</b>，<b>未嵌入、未重製原出版社之任何圖檔</b>。凡屬本頁由原文數字計算而得者（各研究的 RR 與 RD 及其 95% CI、Fraser 的住院天數平均差、人數加總、發生率百分比、單側信賴區間驗算），均已於圖說或表格中就地標註「本頁自行計算」。凡原文未以文字提供者（PRISMA 各篩選階段的排除筆數、各篇納入研究的完整書目），一律標示「原文未列數值」，<b>本頁未做任何推估或補值</b>；兩組皆零事件的研究亦<b>未</b>以連續性校正硬算比值。</p>
+  <p><b>本頁定位</b>：這是給外科醫師快速讀懂一篇論文用的閱讀頁，不是臨床指引，也不能取代原文。任何臨床決策請回到原始文獻與所屬機構的診療規範。</p>
+  <footer>
+    每日一般外科文獻 · Vol. 010 · 2026 年 8 月 12 日 ｜ 本頁由 Claude（Cowork）依原文數據產出，內容僅供學術閱讀參考。
+  </footer>
+</section>
+
+</div>
+</body>
+</html>
