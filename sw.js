@@ -11,7 +11,7 @@
  */
 const CACHE_PREFIX = 'pubmed-daily-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1';
-const BUILD = 'f7465e794d2b';
+const BUILD = '8c22af249f02';
 
 const PRECACHE_URLS = [
   './',
@@ -30,6 +30,7 @@ const PRECACHE_URLS = [
   './icons/apple-touch-icon.png',
   './papers/pubmed-benign-2026-08-01.html',
   './papers/pubmed-benign-2026-08-06.html',
+  './papers/pubmed-benign-2026-08-14.html',
   './papers/pubmed-crs-2026-07-29.html',
   './papers/pubmed-crs-2026-08-02.html',
   './papers/pubmed-crs-2026-08-07.html',
@@ -37,6 +38,7 @@ const PRECACHE_URLS = [
   './papers/pubmed-gs-breast-2026-08-07.html',
   './papers/pubmed-gs-endo-2026-07-30.html',
   './papers/pubmed-gs-endo-2026-08-04.html',
+  './papers/pubmed-gs-endo-2026-08-14.html',
   './papers/pubmed-gs-gi-2026-07-31.html',
   './papers/pubmed-gs-gi-2026-08-06.html',
   './papers/pubmed-gs-peds-2026-08-03.html',

@@ -1,7 +1,59 @@
 {
- "count": 21,
- "latest": "2026-08-12",
+ "count": 23,
+ "latest": "2026-08-14",
  "papers": [
+  {
+   "id": "pubmed-gs-endo-2026-08-14",
+   "file": "papers/pubmed-gs-endo-2026-08-14.html",
+   "date": "2026-08-14",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 011",
+   "title": "續發性副甲狀腺機能亢進（SHPT）做完全副甲狀腺切除後，自體移植該放前臂還是胸鎖乳突肌？27 篇研究、6,979 人的貝氏網絡統合分析——兩個部位在復發與術後低血鈣皆無顯著差異；但本頁清點後發現，兩者之間一篇直接比較的研究都沒有",
+   "title_en": "Forearm vs sternocleidomastoid autotransplantation after total parathyroidectomy for secondary hyperparathyroidism: a network meta-analysis and global bibliometric study",
+   "journal": "Frontiers in Endocrinology 2026;17:1855948（線上發表 2026 年 7 月 22 日）；Frontiers 發行，完全開放取用",
+   "authors": "Wang Yanjun, Bao Ruochen, Zhang Fubo, Wang Jiangtao, Cheng Kai 中國山東：山東第二醫藥大學第二臨床醫學院（煙台）；濱州醫學院附屬煙台醫院甲狀腺乳腺外科",
+   "design": "系統性回顧 ＋ 貝氏網絡統合分析（Bayesian NMA）；另附 2006–2025 年文獻計量學分析 R 4.5.0 之 gemtc ＋ rjags；隨機效果模式、4 條馬可夫鏈、burn-in 5,000 次、取樣 10,000 次、thinning ＝ 1；以 node-splitting 檢驗一致性（P > 0.05，採一致性模式）；效果值為勝算比 OR 與 95% 可信區間 CrI",
+   "doi": "10.3389/fendo.2026.1855948",
+   "category": "內分泌外科",
+   "tags": [
+    "內分泌外科",
+    "副甲狀腺切除 Parathyroidectomy",
+    "續發性副甲狀腺機能亢進 SHPT",
+    "自體移植 Autotransplantation",
+    "證據等級：貝氏網絡統合分析（27 篇，僅 2 篇 RCT）",
+    "Open Access"
+   ],
+   "tldr": "這篇網絡統合分析想回答的是「TPTX＋自體移植要種前臂還是胸鎖乳突肌」，答案是兩者在復發（OR 0.66，95% CrI 0.13–3.05）與術後低血鈣（OR 1.18，95% CrI 0.18–6.23）上都看不出差別——但這個「看不出差別」的份量，遠比表面上輕。本頁逐篇清點原文 Table 1 的 27 篇研究、59 個治療組別後發現：前臂移植與胸鎖乳突肌移植之間，一篇直接比較的研究都沒有（0 篇）；也就是說，本篇最核心的那一條估計值 100% 來自繞道 SPTX 與 TPTX 的間接推論，而且 ATSCM 這一組全世界可用的資料只有 163 人、6 篇研究。真正有統計顯著性的其實是另外兩件事：(1) 復發風險——SPTX 是 TPTX 的 3.80 倍（1.67–10.78）、TPTX＋ATF 是 TPTX 的 2.66 倍（1.04–8.33），留組織就會復發，這符合直覺；(2)",
+   "bytes": 98522
+  },
+  {
+   "id": "pubmed-benign-2026-08-14",
+   "file": "papers/pubmed-benign-2026-08-14.html",
+   "date": "2026-08-14",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 012",
+   "title": "產科肛門括約肌損傷（OASI）初次修補崩開後的「延遲二次修補」：重疊式括約肌成形術 vs. 端對端縫合——埃及開羅單中心 40 人隨機對照試驗，12 個月 Wexner 失禁分數 0.5 vs. 2.2 分、併發症 11.1% vs. 30.0%",
+   "title_en": "Delayed secondary repair of third- and fourth-degree obstetric anal sphincter injuries: a randomized controlled trial comparing overlapping versus end-to-end sphincter repair",
+   "journal": "Techniques in Coloproctology 2026 年 8 月 6 日線上發表；Springer 發行，義大利結直腸外科學會（SICCR）等之官方期刊",
+   "authors": "開羅 Ain Shams 大學醫院大腸直腸外科團隊（單一資深主治領軍，該術者自述具 25 年以上骨盆底與肛門直腸手術經驗、個人完成逾 1,000 例肛門括約肌修補） PubMed 書目紀錄之作者欄位在本頁擷取時未完整列出全部作者姓名，本頁不臆測補齊；完整作者群請以出版社頁面為準",
+   "design": "單中心、前瞻性、1:1 隨機對照試驗（RCT）；主要終點為術後 12 個月 Wexner 失禁分數 電腦產生區塊隨機（SPSS v26）、序號不透明信封隱蔽分配；病人與結果評估者雙盲（術者不參與任何術後評估）；主分析為 per-protocol，另做意向治療敏感度分析",
+   "doi": "10.1007/s10151-026-03362-0",
+   "category": "良性疾病與功能性疾患",
+   "tags": [
+    "良性疾病與功能性疾患",
+    "骨盆底 · 肛門失禁",
+    "括約肌成形術 Sphincteroplasty",
+    "產科肛門括約肌損傷 OASI",
+    "證據等級：單中心隨機對照試驗（n ＝ 40）",
+    "Open Access"
+   ],
+   "tldr": "在「初次修補崩開、產後至少 3 個月才做延遲二次重建」的三、四度產科肛門括約肌損傷（OASI）病人身上，重疊式括約肌成形術（overlapping sphincteroplasty）在 12 個月時的 Wexner 失禁分數顯著低於端對端縫合（0.5 ± 0.2 vs. 2.2 ± 0.8 分，p < 0.001；本頁自行計算的平均差為 −1.70 分，95% CI −2.06 至 −1.34），代價是手術時間多了約 18.5 分鐘。整體併發症 11.1% vs. 30.0%、直腸陰道瘻管 5.6% vs. 15.0%、需再手術 5.6% vs. 10.0%，方向一致但全部都是探索性次要終點、事件數個位數，本頁自行計算的信賴區間都寬到跨越無效線（例如整體併發症 RR 0.37，95% CI 0.09–1.61）。更要緊的是：本頁把原文自己列出的數字重算了一遍，發現至少三處內部不一致——(1",
+   "bytes": 100177
+  },
   {
    "id": "pubmed-mis-2026-08-12",
    "file": "papers/pubmed-mis-2026-08-12.html",
