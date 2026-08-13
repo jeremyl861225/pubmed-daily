@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-14</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 14 日 · 週五</span>
+    <span style="opacity:.4">/</span><span>Vol. 012</span>
+  </div>
+  <h1 class="title">產科肛門括約肌損傷（OASI）初次修補崩開後的「延遲二次修補」：重疊式括約肌成形術 vs. 端對端縫合——埃及開羅單中心 40 人隨機對照試驗，12 個月 Wexner 失禁分數 0.5 vs. 2.2 分、併發症 11.1% vs. 30.0%</h1>
+  <p class="title-en">Delayed secondary repair of third- and fourth-degree obstetric anal sphincter injuries: a randomized controlled trial comparing overlapping versus end-to-end sphincter repair</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Techniques in Coloproctology<br><span style="color:#6b7079;font-size:13px">2026 年 8 月 6 日線上發表；Springer 發行，義大利結直腸外科學會（SICCR）等之官方期刊</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">開羅 Ain Shams 大學醫院大腸直腸外科團隊（單一資深主治領軍，該術者自述具 25 年以上骨盆底與肛門直腸手術經驗、個人完成逾 1,000 例肛門括約肌修補）<br><span style="color:#6b7079;font-size:13px">PubMed 書目紀錄之作者欄位在本頁擷取時未完整列出全部作者姓名，本頁不臆測補齊；完整作者群請以出版社頁面為準</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>單中心、前瞻性、1:1 隨機對照試驗（RCT）；主要終點為術後 12 個月 Wexner 失禁分數</b><br><span style="color:#6b7079;font-size:13px">電腦產生區塊隨機（SPSS v26）、序號不透明信封隱蔽分配；<b>病人與結果評估者雙盲</b>（術者不參與任何術後評估）；主分析為 per-protocol，另做意向治療敏感度分析</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的不是「初次修補要用哪一種縫法」，而是「初次修補已經崩開、產後 3 個月以上才來處理的病人，二次重建要用哪一種縫法」</b><br><span style="color:#6b7079;font-size:13px">作者明言：既有 4 篇比較 overlapping 與 end-to-end 的 RCT 都是<b>初次修補</b>；延遲二次修補面對的是纖維化疤痕組織，必須額外做鬆解與去疤，<b>不應直接外推</b></span></div></div>
+    <div class="meta-item"><div class="k">納入規模</div><div class="v"><b>隨機 40 人（重疊式 20／端對端 20）；per-protocol 分析 38 人（18／20）</b><br><span style="color:#6b7079;font-size:13px">重疊式組 2 人失聯；收案期間 2023 年 3 月至 2024 年 6 月，中位追蹤 12 個月（IQR 12–12）</span></div></div>
+    <div class="meta-item"><div class="k">樣本數計算</div><div class="v">以 Wexner 分數<b>最小臨床重要差異 1.5 分</b>、假設標準差 1.5、power 80%、雙側 α ＝ 0.05 → 每組 17 人；計入 10–15% 失聯後訂為 38 人<br><span style="color:#6b7079;font-size:13px"><b>只為主要終點設計檢力</b>；併發症、瘻管、再手術、壓力測定皆屬探索性次要終點</span></div></div>
+    <div class="meta-item"><div class="k">線上發表</div><div class="v">2026 年 8 月 6 日（PMID 42562921；PMC13447328）<br><span style="color:#6b7079;font-size:13px">本頁資料來源：PubMed Central 全文（Introduction／Methods／Results／Discussion 全文）；<b>原文 Table 1–3 與 Fig. 1 CONSORT 流程圖為表格／圖檔，PMC 純文字全文未收錄格內數值</b>，故本頁凡表格內容一律標示「原文未列數值」，未做任何推估</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1007/s10151-026-03362-0">10.1007/s10151-026-03362-0</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42562921/">PMID 42562921 &#8594;</a></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">良性疾病與功能性疾患</span>
+    <span class="tag t2">骨盆底 · 肛門失禁</span>
+    <span class="tag t2">括約肌成形術 Sphincteroplasty</span>
+    <span class="tag t2">產科肛門括約肌損傷 OASI</span>
+    <span class="tag t3">證據等級：單中心隨機對照試驗（n ＝ 40）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">CONSORT 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在「初次修補崩開、產後至少 3 個月才做延遲二次重建」的三、四度產科肛門括約肌損傷（OASI）病人身上，<strong>重疊式括約肌成形術（overlapping sphincteroplasty）在 12 個月時的 Wexner 失禁分數顯著低於端對端縫合（0.5 ± 0.2 vs. 2.2 ± 0.8 分，p &lt; 0.001；本頁自行計算的平均差為 −1.70 分，95% CI −2.06 至 −1.34）</strong>，代價是手術時間多了約 18.5 分鐘。整體併發症 11.1% vs. 30.0%、直腸陰道瘻管 5.6% vs. 15.0%、需再手術 5.6% vs. 10.0%，方向一致但<strong>全部都是探索性次要終點、事件數個位數，本頁自行計算的信賴區間都寬到跨越無效線</strong>（例如整體併發症 RR 0.37，95% CI 0.09–1.61）。<strong>更要緊的是：本頁把原文自己列出的數字重算了一遍，發現至少三處內部不一致</strong>——(1) 完全禁制率「100% vs. 85%」原文標為 p ＝ 0.03，但以 0/18 vs. 3/20 做 Fisher 精確檢定得到的是 p ≈ 0.23；(2) 討論段把端對端組的併發症寫成 33.3%，但 6/20 應為 30.0%（33.3% 是誤用分母 18）；(3) 癒合天數、Starck 分數、靜止壓、收縮壓四項，原文報 p ＝ 0.08–0.12「未達顯著」，但以其所載平均 ± 標準差重算的常態近似 p 值都在 0.05 以下（合理解釋是原文對非常態資料改用 Mann–Whitney 檢定，但原文未逐項標示各終點用了哪一種檢定）。<strong>所以本頁的建議是：把「重疊式較佳」當成一個方向明確、機轉合理、但需要更大型試驗確認的訊號，而不是一個已經定案的數字。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Secondary anal sphincter repair is necessary in fewer than 3% of cases following primary repair of obstetric anal sphincter injuries (OASI). Although there is some growing evidence comparing early and delayed secondary repairs, the traditional and most common way to manage secondary OASI is still delayed repair. This study compared clinical and functional outcomes of overlapping versus end-to-end sphincter repair techniques in delayed secondary repair of OASI.</p>
+    <h4>Methods</h4>
+    <p>In this single-center randomized controlled trial, 40 women with third- or fourth-degree OASI and wound dehiscence after primary repair were randomized 1:1 to overlapping sphincteroplasty or end-to-end approximation. Assessments were performed preoperatively and at 2 weeks, 3, 6, and 12 months. The primary outcome was the Wexner incontinence score at 12 months. Analysis was per-protocol with intention-to-treat sensitivity analysis.</p>
+    <h4>Results</h4>
+    <p>Thirty-eight women were included in the per-protocol analysis (overlapping = 18; end-to-end = 20). Two patients in the overlapping group were lost to follow-up. Operative time was significantly longer in the overlapping group (121.3 &plusmn; 5.5 vs 102.8 &plusmn; 6.3 min; &lt; 0.001). The overlapping repair resulted in a significantly lower mean Wexner score (0.5 &plusmn; 0.2 vs 2.2 &plusmn; 0.8; &lt; 0.001) and higher rate of complete continence (Wexner &le; 5: 100% vs 85%; = 0.03). Time to wound healing was shorter (23.3 &plusmn; 4.8 vs 26.9 &plusmn; 5.5 days; = 0.08) and overall complications were lower (11.1% vs 30.0%) in the overlapping group. Endoanal ultrasound Starck scores and manometry parameters showed consistent trends favoring overlapping repair, although these differences were not statistically significant.</p>
+    <h4>Conclusion</h4>
+    <p>In delayed secondary OASI repair, overlapping sphincteroplasty provided superior continence outcomes and lower complication rates than end-to-end repair, when combined with meticulous muscle mobilization and a standardized postoperative regimen. These findings support overlapping repair as the preferred technique in this setting.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用。<b>唯一的補正</b>：PubMed 的純文字紀錄把 “p” 字母吃掉了（顯示為「&lt; 0.001」「= 0.03」），本頁未擅自補回，僅在此註明其原意應為 p 值。<b>值得注意的措辭</b>：摘要結論寫的是 “provided superior continence outcomes and lower complication rates”，把主要終點（有檢力）與併發症（無檢力、探索性）並列為同等結論——<b>這是本篇最需要打折扣的一句話</b>，詳見下方「研究限制與解讀警訊」。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>CONSORT Flow <span class="zh">／ 收案與分析流程（本篇為 RCT，非系統性回顧，故以 CONSORT 流程呈現）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Enrollment 收案（開羅 Ain Shams 大學醫院大腸直腸科「會陰特別門診」，2023 年 3 月–2024 年 6 月）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">40</span> 名女性隨機分配（1:1）<br>
+        <span style="color:#6b7079;font-size:12.5px">納入：年齡 ≥ 18 歲、經確認之三度或四度 OASI 且<b>初次修補後傷口崩開</b>、產後至少 3 個月才來求治</span></div></div>
+      <div class="pr-ex"><b>受評估與排除人數：原文未列數值</b><br>
+        <span style="font-size:12px">排除條件（原文明列）：年齡 &lt; 18 歲、拒絕手術、已知發炎性腸道疾病或結核、<b>本次生產前即有大便失禁病史</b>、僅有外括約肌部分撕裂、評估當時有活動性會陰感染或已形成直腸陰道瘻管。<b>原文 Fig. 1 為 CONSORT 圖檔，篩選與排除的實際筆數 PMC 純文字全文未收錄</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Allocation 分配（電腦產生區塊隨機；序號不透明密封信封由獨立研究人員準備）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><b>重疊式括約肌成形術 20 人</b>　｜　<b>端對端縫合 20 人</b><br>
+        <span style="color:#6b7079;font-size:12.5px">兩組皆由<b>同一組資深大腸直腸團隊</b>在全身麻醉下完成，術前給予預防性廣效抗生素；皮膚縫合方式兩組刻意一致以維持病人盲性，且<b>不告知病人重疊式手術時間較長</b></span></div></div>
+      <div class="pr-ex"><b>盲性安排</b><br>病人盲；<b>所有術後評估（Wexner、SMIS、肛門內超音波、肛門壓力測定）皆由未參與手術的獨立受訓評估者執行</b>，且 2 週、3、6、12 個月各時點全程維持盲性</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Follow-up 追蹤與分析</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final">Per-protocol 分析：<span class="n">38</span> 人（重疊式 <b>18</b>／端對端 <b>20</b>）<br>
+        <span style="color:#6b7079;font-size:12.5px">中位追蹤 12 個月（IQR 12–12）；肛門內超音波與壓力測定於中位 12 個月（IQR 11.5–12.5）執行</span></div></div>
+      <div class="pr-ex"><b>重疊式組 2 人失聯（10%）</b>，於 per-protocol 分析中排除<br>
+        <b>意向治療敏感度分析（n ＝ 40）</b>：以基線值遞補該 2 人，Wexner 0.6 ± 0.3 vs. 2.2 ± 0.8，p ＝ 0.002，結論一致<br>
+        <span style="font-size:12px">端對端組無失聯</span></div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：40／20／20／38／18／20 及追蹤中位數皆取自原文 Results 與 Methods 內文；<b>被篩選與被排除的人數僅存在於原文 Fig. 1 圖檔，本頁以「原文未列數值」標示，未做推估</b>。本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。<b>怎麼解讀</b>：由上往下看，重點在最下面一列——<b>失聯全部集中在重疊式組（2/20 vs. 0/20）</b>。<b>有何陷阱</b>：失聯單向集中在「勝出的那一組」，在小樣本試驗裡是一個必須警覺的訊號。作者做了意向治療敏感度分析（以基線值遞補），結論不變，這是加分；但基線值遞補（baseline-carried-forward）是相當寬鬆的假設——它預設這兩人「完全沒有改善」，實務上反而偏保守，因此結論方向的穩健性可以接受。真正無法排除的是：<b>如果這兩人是因為結果特別差而不再回診，任何遞補方式都補不回來</b>。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵與兩種術式的操作差異</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1080px">
+    <thead><tr><th style="width:150px">項目</th><th style="width:300px">重疊式括約肌成形術<br>Overlapping sphincteroplasty</th><th style="width:300px">端對端縫合<br>End-to-end approximation</th><th>兩組共通處（原文明列）</th></tr></thead>
+    <tbody>
+      <tr><td><b>分析人數</b></td><td class="num">18（隨機 20，2 人失聯）</td><td class="num">20（隨機 20，0 人失聯）</td><td>合計隨機 40 人、分析 38 人（本頁自行計算：18 ＋ 20 ＝ 38 ✓）</td></tr>
+      <tr><td><b>核心操作差異</b></td><td>外括約肌兩斷端<b>重疊</b>後縫合</td><td>外括約肌兩斷端<b>對接</b>後縫合</td><td>原文將兩種縫法的細部針法列於 Methods 的項目清單中，<b>PMC 純文字全文未收錄該清單內容</b>，本頁不臆測</td></tr>
+      <tr><td><b>術前準備</b></td><td colspan="2" style="text-align:center">完全相同</td><td>產後至少 3 個月由 proctology 主治評估；SMIS 評估失禁嚴重度；<b>肛門內超音波（改良 Starck 分數 0–16，全層不連續 &gt; 1 小時／30° 定義為殘餘缺損）</b>；高解析固態導管肛門壓力測定（ManoScan，依 London Classification）</td></tr>
+      <tr><td><b>手術步驟</b></td><td colspan="2" style="text-align:center">除縫合方式外完全相同</td><td>截石位、全身麻醉、預防性廣效抗生素；肛門指診確認崩開範圍後<b>拆除舊縫線</b>；以刷子與刮匙清創、電燒止血；剝離纖維化組織使外括約肌<b>完全游離</b>；以 Vicryl 2/0 夾持兩斷端，向外側自坐骨肛門脂肪處鬆解以釋放張力；<b>內括約肌若破壞則各層分別修補</b>；陰道黏膜與直腸黏膜分層縫合</td></tr>
+      <tr><td><b>刻意不做的事</b></td><td colspan="2" style="text-align:center">兩組皆不做</td><td><b>未使用任何介入性皮瓣移植（Martius flap）</b>；術中未發現肛門陰道瘻管；<b>所有病例的直腸陰道隔皆為薄且纖維化</b></td></tr>
+      <tr><td><b>會陰體重建</b></td><td colspan="2" style="text-align:center">相同，均為三層</td><td>2-0 Vicryl：陰道黏膜連續非鎖邊縫合 → 會陰肌肉自皮膚剝離釋放張力後連續縫合一至兩層並關閉死腔 → 皮膚間斷褥式縫合；<b>結束時重複陰道與直腸指診，確認陰道口可容納至少兩指幅、且無縫線穿透直腸黏膜</b></td></tr>
+      <tr><td><b>術後標準化處置</b></td><td colspan="2" style="text-align:center">兩組完全相同</td><td>口服廣效抗生素 <b>5 天</b>；軟便劑 <b>10 天</b>；<b>禁性行為 6 週</b>；<b>合併口服避孕藥做 2 個月的月經抑制</b>（以減少經血污染傷口）</td></tr>
+      <tr><td><b>術者</b></td><td colspan="2" style="text-align:center">同一團隊</td><td>由同一位資深主治領軍，該術者具 25 年以上骨盆底與肛門直腸手術經驗、個人完成逾 1,000 例肛門括約肌修補</td></tr>
+      <tr><td><b>基線可比性</b></td><td colspan="2" class="num">原文稱兩組在年齡、BMI、新生兒體重、生產方式、會陰切開率、原始撕裂嚴重度均無統計差異</td><td class="na"><b>各項基線數值本身為原文 Table 1 內容，PMC 純文字全文未收錄，本頁標示「原文未列數值」，不做任何推估</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">看這張表最容易漏掉的一件事</div>
+    這篇試驗真正被隨機的，<b>只有「外括約肌兩斷端要重疊還是對接」這一個動作</b>。清創、去疤、外側鬆解、分層縫合、術後 5 天抗生素＋10 天軟便劑＋6 週禁性行為＋2 個月月經抑制，兩組完全一樣。作者在結論裡也刻意把功勞分給後者：<b>“when combined with meticulous muscle mobilization and a standardized postoperative regimen”</b>。所以這篇能支持的推論是「<b>在這一整套標準化流程之下</b>，重疊式優於端對端」，而不是「重疊式本身就能救回一個沒有鬆解、沒有月經抑制的修補」。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary &amp; Secondary Outcomes <span class="zh">／ 主要與次要終點（本頁依原文所載數值自行重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 402" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="402" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">二元終點：重疊式 vs. 端對端的風險比（對數刻度，無效線 ＝ 1）－全部為本頁自行計算</text>
+<line x1="460.0" y1="64.0" x2="460.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="460.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.01</text>
+<line x1="600.0" y1="64.0" x2="600.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="600.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.1</text>
+<line x1="740.0" y1="64.0" x2="740.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="740.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="880.0" y1="64.0" x2="880.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="880.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="740.0" y1="64.0" x2="740.0" y2="330.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點／比較</text>
+<text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">效果值（95% CI）</text>
+<text x="20.0" y="83.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">12 個月殘餘失禁（Wexner 6–9 分）</text>
+<text x="20.0" y="100.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">0/18（0%）vs. 3/20（15.0%）｜零事件格加 0.5 連續性校正</text>
+<line x1="460.0" y1="90.0" x2="803.9" y2="90.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 460.0 90.0 l 9 -5.5 l 0 11 Z" fill="#8a4a3d"/>
+<line x1="803.9" y1="85.5" x2="803.9" y2="94.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="623.3" y="85.5" width="9.0" height="9.0" fill="#8a4a3d"/>
+<text x="1106.0" y="94.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.16（0.01–2.86）</text>
+<text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">整體術後併發症</text>
+<text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">2/18（11.1%）vs. 6/20（30.0%）</text>
+<line x1="590.3" y1="142.0" x2="768.9" y2="142.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="590.3" y1="137.5" x2="590.3" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="768.9" y1="137.5" x2="768.9" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="673.6" y="136.0" width="12.0" height="12.0" fill="#8a4a3d"/>
+<text x="1106.0" y="146.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.37（0.09–1.61）</text>
+<text x="20.0" y="187.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">直腸陰道瘻管形成</text>
+<text x="20.0" y="204.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">1/18（5.6%）vs. 3/20（15.0%）</text>
+<line x1="547.6" y1="194.0" x2="811.7" y2="194.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="547.6" y1="189.5" x2="547.6" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="811.7" y1="189.5" x2="811.7" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="675.1" y="189.5" width="9.0" height="9.0" fill="#8a4a3d"/>
+<text x="1106.0" y="198.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.37（0.04–3.25）</text>
+<text x="20.0" y="239.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">需再次手術（再修補或瘻管手術）</text>
+<text x="20.0" y="256.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">1/18（5.6%）vs. 2/20（10.0%）｜由原文文字敘述整理</text>
+<line x1="563.5" y1="246.0" x2="845.0" y2="246.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="563.5" y1="241.5" x2="563.5" y2="250.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="845.0" y1="241.5" x2="845.0" y2="250.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="700.3" y="242.0" width="8.0" height="8.0" fill="#8a4a3d"/>
+<text x="1106.0" y="250.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">RR 0.56（0.05–5.62）</text>
+<text x="20.0" y="291.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">需暫時性造口</text>
+<text x="20.0" y="308.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">0/18 vs. 0/20：兩組皆零事件</text>
+<text x="466.0" y="302.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">兩組皆 0 例 → 無資訊，刻意不校正</text>
+<text x="1106.0" y="302.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">無法估計（不作連續性校正）</text>
+<text x="728.0" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 重疊式較少</text>
+<text x="752.0" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">重疊式較多 ▶</text>
+<text x="14.0" y="392.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">■ 個別終點的風險比　箭頭 ＝ 信賴區間超出繪圖範圍　本圖不畫合併菱形（單一試驗，無合併值）</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：所有分子／分母（0/18、2/18、1/18、3/20、6/20、2/20）均取自原文 Results 與 Discussion 的文字敘述；<b>本圖所有風險比與 95% 信賴區間皆為本頁以 Katz 對數法自行計算，原文完全未提供任何相對效果值</b>。<b>怎麼解讀</b>：垂直虛線是無效線 1。方塊落在左側代表「重疊式那一組事件較少」。四個可估計的終點方塊全部在左邊，方向一致——這是一個令人安心的訊號。<b>有何陷阱</b>：(1) <b>四條橫線全部跨過無效線</b>，也就是說「單看統計，這四項都不能宣稱有差別」；本篇的樣本數只夠回答主要終點。(2) 殘餘失禁那一列因為重疊式組是<b>零事件</b>，必須加 0.5 連續性校正才畫得出來，該點估計值（RR 0.16）帶有人為成分，請把它讀成「方向」而非「數值」。(3) 「需再次手術」一列是本頁從原文文字（「一例瘻管需手術修補」＋「端對端組另有一人因復發性崩開需再修補」）整理出來的，<b>原文未以表格形式列出此終點</b>，若原文 Table 2 另有定義，請以原文為準。(4) 本圖<b>不畫合併菱形</b>——這是單一試驗，沒有可合併的對象。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 702" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="702" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">連續型終點：重疊式 − 端對端的平均差（每列各自刻度，單位已標於左側）</text>
+<text x="20.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點（單位）</text>
+<text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">平均差（95% CI）－本頁自行計算</text>
+<text x="20.0" y="90.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Wexner 失禁分數（12 個月，主要終點）</text>
+<text x="20.0" y="107.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：分（0–20 分，越低越好）</text>
+<line x1="430.0" y1="118.0" x2="890.0" y2="118.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="118.0" x2="430.0" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−3</text>
+<line x1="506.7" y1="118.0" x2="506.7" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="506.7" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="583.3" y1="118.0" x2="583.3" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="583.3" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−1</text>
+<line x1="660.0" y1="118.0" x2="660.0" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="736.7" y1="118.0" x2="736.7" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="736.7" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="813.3" y1="118.0" x2="813.3" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="813.3" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="890.0" y1="118.0" x2="890.0" y2="123.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="136.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">3</text>
+<line x1="660.0" y1="80.0" x2="660.0" y2="118.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="501.9" y1="96.0" x2="557.5" y2="96.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="501.9" y1="91.5" x2="501.9" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="557.5" y1="91.5" x2="557.5" y2="100.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="524.2" y="90.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="100.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−1.70（−2.06 至 −1.34） 分</text>
+<line x1="14" y1="148.0" x2="1106" y2="148.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="176.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">Wexner 失禁分數（意向治療敏感度分析）</text>
+<text x="20.0" y="193.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：分（n ＝ 40，兩名失聯者以基線值遞補）</text>
+<line x1="430.0" y1="204.0" x2="890.0" y2="204.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="204.0" x2="430.0" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−3</text>
+<line x1="506.7" y1="204.0" x2="506.7" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="506.7" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="583.3" y1="204.0" x2="583.3" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="583.3" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−1</text>
+<line x1="660.0" y1="204.0" x2="660.0" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="736.7" y1="204.0" x2="736.7" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="736.7" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="813.3" y1="204.0" x2="813.3" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="813.3" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="890.0" y1="204.0" x2="890.0" y2="209.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="222.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">3</text>
+<line x1="660.0" y1="166.0" x2="660.0" y2="204.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="508.6" y1="182.0" x2="566.0" y2="182.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="508.6" y1="177.5" x2="508.6" y2="186.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="566.0" y1="177.5" x2="566.0" y2="186.5" stroke="#2f6b62" stroke-width="1.8"/>
+<rect x="531.8" y="176.5" width="11" height="11" fill="#2f6b62"/>
+<text x="1106.0" y="186.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−1.60（−1.97 至 −1.23） 分</text>
+<line x1="14" y1="234.0" x2="1106" y2="234.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="262.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">手術時間</text>
+<text x="20.0" y="279.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：分鐘（越低越好）</text>
+<line x1="430.0" y1="290.0" x2="890.0" y2="290.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="290.0" x2="430.0" y2="295.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="308.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−25.0</text>
+<line x1="545.0" y1="290.0" x2="545.0" y2="295.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="545.0" y="308.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−12.5</text>
+<line x1="660.0" y1="290.0" x2="660.0" y2="295.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="308.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="775.0" y1="290.0" x2="775.0" y2="295.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="775.0" y="308.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">12.5</text>
+<line x1="890.0" y1="290.0" x2="890.0" y2="295.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="308.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">25.0</text>
+<line x1="660.0" y1="252.0" x2="660.0" y2="290.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="795.7" y1="268.0" x2="864.7" y2="268.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="795.7" y1="263.5" x2="795.7" y2="272.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="864.7" y1="263.5" x2="864.7" y2="272.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<rect x="824.7" y="262.5" width="11" height="11" fill="#8a6a1f"/>
+<text x="1106.0" y="272.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">18.5（14.7 至 22.3） 分鐘</text>
+<line x1="14" y1="320.0" x2="1106" y2="320.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="348.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">完全癒合所需天數</text>
+<text x="20.0" y="365.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：天（越低越好）</text>
+<line x1="430.0" y1="376.0" x2="890.0" y2="376.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="376.0" x2="430.0" y2="381.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="394.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−8</text>
+<line x1="545.0" y1="376.0" x2="545.0" y2="381.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="545.0" y="394.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−4</text>
+<line x1="660.0" y1="376.0" x2="660.0" y2="381.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="394.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="775.0" y1="376.0" x2="775.0" y2="381.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="775.0" y="394.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">4</text>
+<line x1="890.0" y1="376.0" x2="890.0" y2="381.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="394.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">8</text>
+<line x1="660.0" y1="338.0" x2="660.0" y2="376.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="462.3" y1="354.0" x2="650.7" y2="354.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="462.3" y1="349.5" x2="462.3" y2="358.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="650.7" y1="349.5" x2="650.7" y2="358.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="551.0" y="348.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="358.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−3.6（−6.9 至 −0.3） 天</text>
+<line x1="14" y1="406.0" x2="1106" y2="406.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="434.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肛門內超音波 Starck 分數（12 個月）</text>
+<text x="20.0" y="451.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：分（0–16 分，越低代表殘餘缺損越小）</text>
+<line x1="430.0" y1="462.0" x2="890.0" y2="462.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="462.0" x2="430.0" y2="467.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="480.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−4</text>
+<line x1="545.0" y1="462.0" x2="545.0" y2="467.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="545.0" y="480.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="660.0" y1="462.0" x2="660.0" y2="467.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="480.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="775.0" y1="462.0" x2="775.0" y2="467.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="775.0" y="480.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="890.0" y1="462.0" x2="890.0" y2="467.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="480.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">4</text>
+<line x1="660.0" y1="424.0" x2="660.0" y2="462.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="491.7" y1="440.0" x2="645.4" y2="440.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="491.7" y1="435.5" x2="491.7" y2="444.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="645.4" y1="435.5" x2="645.4" y2="444.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="563.1" y="434.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="444.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">−1.59（−2.93 至 −0.25） 分</text>
+<line x1="14" y1="492.0" x2="1106" y2="492.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="520.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肛門靜止壓 Maximum resting pressure</text>
+<text x="20.0" y="537.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：mmHg（越高越好）</text>
+<line x1="430.0" y1="548.0" x2="890.0" y2="548.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="548.0" x2="430.0" y2="553.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="566.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−20</text>
+<line x1="545.0" y1="548.0" x2="545.0" y2="553.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="545.0" y="566.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−10</text>
+<line x1="660.0" y1="548.0" x2="660.0" y2="553.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="566.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="775.0" y1="548.0" x2="775.0" y2="553.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="775.0" y="566.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="890.0" y1="548.0" x2="890.0" y2="553.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="566.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">20</text>
+<line x1="660.0" y1="510.0" x2="660.0" y2="548.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="693.9" y1="526.0" x2="823.9" y2="526.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="693.9" y1="521.5" x2="693.9" y2="530.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="823.9" y1="521.5" x2="823.9" y2="530.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="753.4" y="520.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="530.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">8.6（2.9 至 14.3） mmHg</text>
+<line x1="14" y1="578.0" x2="1106" y2="578.0" stroke="#d9d5cc" stroke-width="0.6"/>
+<text x="20.0" y="606.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">肛門收縮壓 Maximum squeeze pressure</text>
+<text x="20.0" y="623.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">單位：mmHg（越高越好）</text>
+<line x1="430.0" y1="634.0" x2="890.0" y2="634.0" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="430.0" y1="634.0" x2="430.0" y2="639.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="430.0" y="652.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−35.0</text>
+<line x1="545.0" y1="634.0" x2="545.0" y2="639.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="545.0" y="652.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">−17.5</text>
+<line x1="660.0" y1="634.0" x2="660.0" y2="639.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="660.0" y="652.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="775.0" y1="634.0" x2="775.0" y2="639.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="775.0" y="652.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">17.5</text>
+<line x1="890.0" y1="634.0" x2="890.0" y2="639.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="652.0" font-size="11" fill="#6b7079" text-anchor="middle" font-weight="400">35.0</text>
+<line x1="660.0" y1="596.0" x2="660.0" y2="634.0" stroke="#2e2b28" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="665.1" y1="612.0" x2="821.8" y2="612.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="665.1" y1="607.5" x2="665.1" y2="616.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="821.8" y1="607.5" x2="821.8" y2="616.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<rect x="738.0" y="606.5" width="11" height="11" fill="#8a4a3d"/>
+<text x="1106.0" y="616.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">12.7（0.8 至 24.6） mmHg</text>
+<text x="14.0" y="692.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">虛線 ＝ 無效線 0。方塊 ＝ 平均差點估計，橫線 ＝ 95% 信賴區間（常態近似，以原文所載平均 ± 標準差與各組人數推算）。</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：各組平均 ± 標準差與人數皆取自原文 Results／Discussion 文字；<b>平均差與 95% 信賴區間全部為本頁自行計算</b>（獨立樣本、常態近似、Welch 型標準誤）。<b>怎麼解讀</b>：每一列有自己的橫軸刻度與單位（標於左側第二行），這是因為七個終點的單位從「分」到「mmHg」相差兩個數量級，硬擠在同一條刻度上會讓小效果完全看不見。方塊在虛線左側代表重疊式的數值較低。<b>有何陷阱（很重要）</b>：本頁重算的常態近似信賴區間，<b>有四項與原文報告的 p 值方向不一致</b>——癒合天數（原文 p ＝ 0.08，本頁 CI −6.9 至 −0.3 天，未含 0）、Starck 分數（原文 p ＝ 0.09，本頁 CI −2.93 至 −0.25）、靜止壓（原文 p ＝ 0.12，本頁 CI ＋2.9 至 ＋14.3）、收縮壓（原文 p ＝ 0.11，本頁 CI ＋0.8 至 ＋24.6）。<b>最合理的解釋是：原文在 Methods 明講「非常態資料以 Mann–Whitney 檢定比較」，這四項很可能用了無母數檢定，而無母數檢定在小樣本下較保守</b>；但原文並未逐項標示各終點究竟用了哪一種檢定，讀者無從查核。<b>本頁的處理原則是：以原文報告的 p 值為準（即這四項「未達顯著」），本頁自行計算的信賴區間僅供了解效果幅度，不得拿來推翻原文的統計判定。</b></div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1240px">
+    <thead><tr><th style="width:200px">終點</th><th>時點</th><th>重疊式（n ＝ 18）</th><th>端對端（n ＝ 20）</th><th>效果值（95% CI）</th><th>原文 p 值</th><th>終點層級</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>Wexner 失禁分數</b><br><span class="na">主要終點，per-protocol</span></td><td class="num">12 個月</td><td class="num"><b>0.5 ± 0.2 分</b></td><td class="num"><b>2.2 ± 0.8 分</b></td>
+        <td class="num">平均差 −1.70 分<br>（−2.06 至 −1.34）<br><span class="na">本頁自行計算</span></td><td class="num"><b>&lt; 0.001</b></td><td><b>主要（有檢力）</b></td><td><span class="win">重疊式較佳</span></td></tr>
+      <tr><td>Wexner 失禁分數<br><span class="na">意向治療敏感度分析</span></td><td class="num">12 個月</td><td class="num">0.6 ± 0.3 分<br><span class="na">n ＝ 20</span></td><td class="num">2.2 ± 0.8 分<br><span class="na">n ＝ 20</span></td>
+        <td class="num">平均差 −1.60 分<br>（−1.97 至 −1.23）<br><span class="na">本頁自行計算</span></td><td class="num"><b>0.002</b></td><td>主要終點之敏感度分析</td><td><span class="win">結論一致</span></td></tr>
+      <tr><td><b>完全禁制率</b><br><span class="na">Wexner ≤ 5 分</span></td><td class="num">12 個月</td><td class="num"><b>18/18（100%）</b></td><td class="num"><b>17/20（85%）</b></td>
+        <td class="num">RR 0.16（殘餘失禁）<br>（0.01–2.86）<br><span class="na">本頁自行計算，含 0.5 校正</span></td><td class="num"><b>0.03</b><br><span class="sig">本頁重算 Fisher 精確檢定<br>p ≈ 0.23，與原文不符</span></td><td>次要（探索性）</td><td><span class="win caution">方向有利<br>但 p 值存疑</span></td></tr>
+      <tr><td>殘餘輕度失禁<br><span class="na">Wexner 6–9 分</span></td><td class="num">12 個月</td><td class="num">0（0%）</td><td class="num">3（15.0%）</td><td class="num">同上列</td><td class="num">同上列</td><td>次要（探索性）</td><td><span class="win caution">事件數 3 例</span></td></tr>
+      <tr><td><b>手術時間</b></td><td class="num">術中</td><td class="num"><b>121.3 ± 5.5 分鐘</b></td><td class="num"><b>102.8 ± 6.3 分鐘</b></td>
+        <td class="num">平均差 ＋18.5 分鐘<br>（＋14.7 至 ＋22.3）<br><span class="na">本頁自行計算</span></td><td class="num"><b>&lt; 0.001</b></td><td>次要</td><td><span class="win caution">重疊式較費時</span></td></tr>
+      <tr><td>完全癒合天數</td><td class="num">術後</td><td class="num">23.3 ± 4.8 天</td><td class="num">26.9 ± 5.5 天</td>
+        <td class="num">平均差 −3.6 天<br>（−6.9 至 −0.3）<br><span class="na">本頁自行計算</span></td><td class="num">0.08</td><td>次要（探索性）</td><td><span class="win neutral">未達顯著<br>（趨勢有利）</span></td></tr>
+      <tr><td><b>整體術後併發症</b></td><td class="num">追蹤全期</td><td class="num"><b>2/18（11.1%）</b></td><td class="num"><b>6/20（30.0%）</b></td>
+        <td class="num">RR 0.37<br>（0.09–1.61）<br><span class="na">本頁自行計算</span></td><td class="num"><span class="na">原文未列 p 值</span></td><td>次要（探索性）</td><td><span class="win caution">方向有利<br>CI 跨越 1</span></td></tr>
+      <tr><td>直腸陰道瘻管</td><td class="num">追蹤全期</td><td class="num">1/18（5.6%）</td><td class="num">3/20（15.0%）</td>
+        <td class="num">RR 0.37<br>（0.04–3.25）<br><span class="na">本頁自行計算</span></td><td class="num">0.34</td><td>次要（探索性）</td><td><span class="win neutral">未達顯著</span></td></tr>
+      <tr><td>需再次手術</td><td class="num">追蹤全期</td><td class="num">1/18（5.6%）<br><span class="na">瘻管手術修補</span></td><td class="num">2/20（10.0%）<br><span class="na">瘻管 1、復發性崩開再修補 1</span></td>
+        <td class="num">RR 0.56<br>（0.05–5.62）<br><span class="na">本頁自行計算</span></td><td class="num"><span class="na">原文未列 p 值</span></td><td>次要（本頁由文字整理）</td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td>需暫時性造口</td><td class="num">追蹤全期</td><td class="num">0/18</td><td class="num">0/20</td><td class="num"><span class="na">兩組皆零事件，無法估計</span></td><td class="num"><span class="na">—</span></td><td>次要</td><td><span class="win neutral">無事件</span></td></tr>
+      <tr><td>肛門內超音波<br>Starck 分數</td><td class="num">中位 12 個月</td><td class="num">1.16 ± 1.9 分</td><td class="num">2.75 ± 2.3 分</td>
+        <td class="num">平均差 −1.59 分<br>（−2.93 至 −0.25）<br><span class="na">本頁自行計算</span></td><td class="num">0.09</td><td>次要（探索性）</td><td><span class="win neutral">未達顯著<br>（趨勢有利）</span></td></tr>
+      <tr><td>肛門靜止壓</td><td class="num">中位 12 個月</td><td class="num">32.8 ± 9.2 mmHg</td><td class="num">24.2 ± 8.5 mmHg</td>
+        <td class="num">平均差 ＋8.6 mmHg<br>（＋2.9 至 ＋14.3）<br><span class="na">本頁自行計算</span></td><td class="num">0.12</td><td>次要（探索性）</td><td><span class="win neutral">未達顯著<br>（趨勢有利）</span></td></tr>
+      <tr><td>肛門收縮壓</td><td class="num">中位 12 個月</td><td class="num">98.7 ± 19.5 mmHg</td><td class="num">86.0 ± 17.8 mmHg</td>
+        <td class="num">平均差 ＋12.7 mmHg<br>（＋0.8 至 ＋24.6）<br><span class="na">本頁自行計算</span></td><td class="num">0.11</td><td>次要（探索性）</td><td><span class="win neutral">未達顯著<br>（趨勢有利）</span></td></tr>
+      <tr><td>SMIS 失禁分數</td><td class="num">12 個月</td><td class="num" colspan="2"><span class="na">原文僅稱「呈現有利於重疊式但未達顯著的趨勢」，<b>兩組實際數值原文未列</b></span></td>
+        <td class="num"><span class="na">原文未列數值</span></td><td class="num"><span class="na">原文未列數值</span></td><td>次要（探索性）</td><td><span class="win neutral">無法判定</span></td></tr>
+      <tr><td>增量最大收縮壓<br>Incremental max squeeze</td><td class="num">中位 12 個月</td><td class="num" colspan="2"><span class="na">Methods 明列為記錄項目，<b>Results 未報告數值</b></span></td>
+        <td class="num"><span class="na">原文未列數值</span></td><td class="num"><span class="na">原文未列數值</span></td><td>次要</td><td><span class="win neutral">未報告</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079">凡標示<b>「本頁自行計算」</b>者，皆由原文所載平均 ± 標準差、事件數與分母以標準公式推導（連續型：常態近似獨立樣本平均差；二元：Katz 對數法風險比，零事件格加 0.5）。<b>原文本身完全未提供任何效果值或信賴區間，只提供組別平均值與 p 值</b>——這在 2026 年發表的隨機試驗中是一個明顯的報告缺陷（CONSORT 要求報告效果量與精確度）。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw Data &amp; Redrawn Figures <span class="zh">／ 原始數據與本頁重繪圖</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="440" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">各項率的直接比較（原始分子／分母，本頁僅換算百分比）</text>
+<line x1="90" y1="78" x2="90" y2="344" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="90" y1="344.0" x2="1090" y2="344.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="348.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0%</text>
+<line x1="90" y1="290.8" x2="1090" y2="290.8" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="294.8" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">20%</text>
+<line x1="90" y1="237.6" x2="1090" y2="237.6" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="241.6" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">40%</text>
+<line x1="90" y1="184.4" x2="1090" y2="184.4" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="188.4" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">60%</text>
+<line x1="90" y1="131.2" x2="1090" y2="131.2" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="135.2" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">80%</text>
+<line x1="90" y1="78.0" x2="1090" y2="78.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="82.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">100%</text>
+<text x="20.0" y="62.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">百分比（%）</text>
+<rect x="144.0" y="78.0" width="41.0" height="266.0" fill="#2f6b62"/>
+<text x="164.5" y="71.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">100%</text>
+<rect x="190.0" y="117.9" width="41.0" height="226.1" fill="#8a4a3d"/>
+<text x="210.5" y="110.9" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">85%</text>
+<text x="190.0" y="366.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">完全禁制</text>
+<text x="190.0" y="381.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">Wexner ≤ 5 分</text>
+<text x="190.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">18/18 vs. 17/20</text>
+<rect x="344.0" y="344.0" width="41.0" height="0.0" fill="#2f6b62"/>
+<text x="364.5" y="337.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">0%</text>
+<rect x="390.0" y="304.1" width="41.0" height="39.9" fill="#8a4a3d"/>
+<text x="410.5" y="297.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">15%</text>
+<text x="390.0" y="366.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">殘餘失禁</text>
+<text x="390.0" y="381.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">Wexner 6–9 分</text>
+<text x="390.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0/18 vs. 3/20</text>
+<rect x="544.0" y="314.5" width="41.0" height="29.5" fill="#2f6b62"/>
+<text x="564.5" y="307.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">11.1%</text>
+<rect x="590.0" y="264.2" width="41.0" height="79.8" fill="#8a4a3d"/>
+<text x="610.5" y="257.2" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">30%</text>
+<text x="590.0" y="366.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">整體併發症</text>
+<text x="590.0" y="381.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">任一項</text>
+<text x="590.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">2/18 vs. 6/20</text>
+<rect x="744.0" y="329.1" width="41.0" height="14.9" fill="#2f6b62"/>
+<text x="764.5" y="322.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.6%</text>
+<rect x="790.0" y="304.1" width="41.0" height="39.9" fill="#8a4a3d"/>
+<text x="810.5" y="297.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">15%</text>
+<text x="790.0" y="366.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">直腸陰道瘻管</text>
+<text x="790.0" y="381.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">全為低位小瘻管</text>
+<text x="790.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1/18 vs. 3/20</text>
+<rect x="944.0" y="329.1" width="41.0" height="14.9" fill="#2f6b62"/>
+<text x="964.5" y="322.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">5.6%</text>
+<rect x="990.0" y="317.4" width="41.0" height="26.6" fill="#8a4a3d"/>
+<text x="1010.5" y="310.4" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">10%</text>
+<text x="990.0" y="366.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">需再次手術</text>
+<text x="990.0" y="381.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">再修補或瘻管手術</text>
+<text x="990.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1/18 vs. 2/20</text>
+<rect x="90.0" y="414.0" width="12" height="12" fill="#2f6b62"/>
+<text x="108.0" y="424.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">重疊式括約肌成形術（n ＝ 18）</text>
+<rect x="301.0" y="414.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="319.0" y="424.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">端對端縫合（n ＝ 20）</text>
+<text x="1106.0" y="432.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">百分比為本頁自行計算；分子／分母皆取自原文</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：所有分子／分母皆為原文文字所載；百分比由本頁換算（18/18 ＝ 100%、17/20 ＝ 85%、0/18 ＝ 0%、3/20 ＝ 15.0%、2/18 ＝ 11.1%、6/20 ＝ 30.0%、1/18 ＝ 5.6%、3/20 ＝ 15.0%、1/18 ＝ 5.6%、2/20 ＝ 10.0%）。<b>怎麼解讀</b>：每一組左邊青綠是重疊式、右邊赭紅是端對端。五組的方向完全一致，都對重疊式有利。<b>有何陷阱</b>：長條圖最容易讓人忘記分母。<b>這裡每一根長條背後只有 18 或 20 個人，一個病人就等於 5–5.6 個百分點</b>——「15% vs. 0%」實際上是「3 個人 vs. 0 個人」。請務必把 x 軸標籤下方的原始分數（如「0/18 vs. 3/20」）一起讀進去，否則百分比會給人遠超過實際的確定感。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="420" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">12 個月時的解剖與生理指標（原文所載平均值；誤差為 ± 1 個標準差）</text>
+<line x1="90" y1="78" x2="90" y2="324" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="90" y1="324.0" x2="1090" y2="324.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="328.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="90" y1="274.8" x2="1090" y2="274.8" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="278.8" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">22</text>
+<line x1="90" y1="225.6" x2="1090" y2="225.6" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="229.6" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">44</text>
+<line x1="90" y1="176.4" x2="1090" y2="176.4" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="180.4" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">66</text>
+<line x1="90" y1="127.2" x2="1090" y2="127.2" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="131.2" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">88</text>
+<line x1="90" y1="78.0" x2="1090" y2="78.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="82.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">110</text>
+<text x="20.0" y="62.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">數值（三個終點單位不同，僅供組間對照，勿跨終點比較高低）</text>
+<rect x="210.7" y="321.4" width="41.0" height="2.6" fill="#2f6b62"/>
+<text x="231.2" y="337.4" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">1.16</text>
+<rect x="256.7" y="317.9" width="41.0" height="6.2" fill="#8a4a3d"/>
+<text x="277.2" y="333.9" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">2.75</text>
+<text x="256.7" y="346.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">Starck 分數</text>
+<text x="256.7" y="361.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0–16 分（越低越好）</text>
+<rect x="544.0" y="250.6" width="41.0" height="73.4" fill="#2f6b62"/>
+<text x="564.5" y="266.6" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">32.8</text>
+<rect x="590.0" y="269.9" width="41.0" height="54.1" fill="#8a4a3d"/>
+<text x="610.5" y="285.9" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">24.2</text>
+<text x="590.0" y="346.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">肛門靜止壓</text>
+<text x="590.0" y="361.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">mmHg（越高越好）</text>
+<rect x="877.3" y="103.3" width="41.0" height="220.7" fill="#2f6b62"/>
+<text x="897.8" y="119.3" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">98.7</text>
+<rect x="923.3" y="131.7" width="41.0" height="192.3" fill="#8a4a3d"/>
+<text x="943.8" y="147.7" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="700">86</text>
+<text x="923.3" y="346.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">肛門收縮壓</text>
+<text x="923.3" y="361.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">mmHg（越高越好）</text>
+<rect x="90.0" y="394.0" width="12" height="12" fill="#2f6b62"/>
+<text x="108.0" y="404.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">重疊式（n ＝ 18）</text>
+<rect x="235.0" y="394.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="253.0" y="404.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">端對端（n ＝ 20）</text>
+<text x="1106.0" y="412.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">Starck 分數與壓力值單位不同，本圖僅供「同一終點兩組相比」之用</text>
+<line x1="231.2" y1="317.2" x2="231.2" y2="324.0" stroke="#2e2b28" stroke-width="1.2"/><line x1="226.2" y1="317.2" x2="236.2" y2="317.2" stroke="#2e2b28" stroke-width="1.2"/><line x1="226.2" y1="324.0" x2="236.2" y2="324.0" stroke="#2e2b28" stroke-width="1.2"/><line x1="277.2" y1="312.7" x2="277.2" y2="323.0" stroke="#2e2b28" stroke-width="1.2"/><line x1="272.2" y1="312.7" x2="282.2" y2="312.7" stroke="#2e2b28" stroke-width="1.2"/><line x1="272.2" y1="323.0" x2="282.2" y2="323.0" stroke="#2e2b28" stroke-width="1.2"/><line x1="564.5" y1="230.1" x2="564.5" y2="271.2" stroke="#2e2b28" stroke-width="1.2"/><line x1="559.5" y1="230.1" x2="569.5" y2="230.1" stroke="#2e2b28" stroke-width="1.2"/><line x1="559.5" y1="271.2" x2="569.5" y2="271.2" stroke="#2e2b28" stroke-width="1.2"/><line x1="610.5" y1="250.9" x2="610.5" y2="288.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="605.5" y1="250.9" x2="615.5" y2="250.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="605.5" y1="288.9" x2="615.5" y2="288.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="897.8" y1="78.0" x2="897.8" y2="146.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="892.8" y1="78.0" x2="902.8" y2="78.0" stroke="#2e2b28" stroke-width="1.2"/><line x1="892.8" y1="146.9" x2="902.8" y2="146.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="943.8" y1="91.9" x2="943.8" y2="171.5" stroke="#2e2b28" stroke-width="1.2"/><line x1="938.8" y1="91.9" x2="948.8" y2="91.9" stroke="#2e2b28" stroke-width="1.2"/><line x1="938.8" y1="171.5" x2="948.8" y2="171.5" stroke="#2e2b28" stroke-width="1.2"/></svg></div>
+    <div class="cap"><b>資料來源</b>：三組平均值與標準差皆取自原文 Results 文字（Starck 1.16 ± 1.9 vs. 2.75 ± 2.3；靜止壓 32.8 ± 9.2 vs. 24.2 ± 8.5 mmHg；收縮壓 98.7 ± 19.5 vs. 86.0 ± 17.8 mmHg）；誤差線為 ± 1 個標準差，由本頁繪製。<b>怎麼解讀</b>：三對長條的高低方向都支持重疊式——殘餘缺損較小、靜止壓與收縮壓較高。這與功能分數的方向一致，是本篇內部一致性最好的一段證據（<b>結構、生理、症狀三個層面互相佐證</b>）。<b>有何陷阱</b>：(1) <b>三個終點單位完全不同</b>（分 vs. mmHg），本圖為了同版面呈現而共用一條 y 軸，<b>只能比較「同一組內的兩根長條」，絕對不能跨組比較高低</b>；y 軸標籤已註明此點。(2) 誤差線是<b>標準差</b>（描述個體分散程度）而非標準誤（描述平均值的不確定性），兩者相差約 √n 倍，看起來會比信賴區間寬得多——請勿以「誤差線重疊」直接推論「沒有差異」。(3) Starck 分數的標準差（1.9 與 2.3）大於平均值本身，代表分佈嚴重右偏、多數人接近 0 而少數人分數很高，<b>用平均 ± 標準差描述此類資料本身就不理想</b>，這也解釋了原文為何可能改用無母數檢定。</div>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1000px">
+    <thead><tr><th style="width:230px">檢查項目</th><th style="width:250px">原文所載</th><th style="width:250px">本頁驗算</th><th>判定與說明</th></tr></thead>
+    <tbody>
+      <tr><td>隨機人數 vs. 分析人數</td><td>隨機 40（20/20）；分析 38（18/20）</td><td>20 ＋ 20 ＝ 40 ✓；18 ＋ 20 ＝ 38 ✓；失聯 2 人 ✓</td><td><b>相符</b></td></tr>
+      <tr><td>完全禁制率百分比</td><td>「100% vs. 85%」</td><td>18/18 ＝ 100% ✓；17/20 ＝ 85.0% ✓</td><td><b>相符</b></td></tr>
+      <tr><td class="sig"><b>完全禁制率的 p 值</b></td><td class="sig"><b>p ＝ 0.03</b></td><td class="sig"><b>0/18 vs. 3/20 的 Fisher 精確檢定<br>雙尾 p ≈ 0.23</b></td><td class="sig"><b>不相符。</b>以 2×2 表 [[18,0],[17,3]] 做 Fisher 精確檢定（雙尾）得 p ≈ 0.23，卡方檢定亦不顯著。要得到 p ＝ 0.03，需要遠大於 38 人的樣本或不同的統計方法。<b>原文未說明此處採用何種檢定</b>。在引用「完全禁制率顯著較高」時請特別保留。</td></tr>
+      <tr><td class="sig"><b>端對端組併發症率</b></td><td class="sig">Results 段：<b>30.0%</b>（6/20）<br>Discussion 段：<b>33.3%</b></td><td class="sig">6/20 ＝ 30.0% ✓<br>6/18 ＝ 33.3%（分母用錯）</td><td class="sig"><b>原文內部不一致。</b>Discussion 的 33.3% 應為誤用重疊式組的分母 18。正確值為 <b>30.0%</b>，本頁全篇採用 30.0%。</td></tr>
+      <tr><td>重疊式組併發症率</td><td>11.1%</td><td>2/18 ＝ 11.11% ✓</td><td><b>相符</b></td></tr>
+      <tr><td>瘻管例數與處置</td><td>共 4 例（1 vs. 3）；「3 例保守治療自行癒合、1 例需手術修補」</td><td>1 ＋ 3 ＝ 4 ✓；3 ＋ 1 ＝ 4 ✓</td><td><b>相符。</b>惟<b>原文未說明需手術的那一例落在哪一組</b>，本頁在森林圖中假設其為重疊式組的唯一瘻管（保守估計），已於圖說標明。</td></tr>
+      <tr><td class="sig">四項「趨勢性」終點的 p 值</td><td class="sig">癒合天數 p ＝ 0.08；Starck p ＝ 0.09；靜止壓 p ＝ 0.12；收縮壓 p ＝ 0.11</td><td class="sig">以所載平均 ± SD 與 n 做常態近似雙樣本檢定：<br>p ≈ 0.031／0.020／0.003／0.037</td><td class="sig"><b>方向不一致。</b>合理解釋：原文 Methods 明訂「非常態資料以 Mann–Whitney U 檢定比較」，這四項可能屬之，而無母數檢定在 n ＝ 38 時較保守。但<b>原文未逐項標示所用檢定</b>，讀者無法查核。<b>本頁一律以原文 p 值為準。</b></td></tr>
+      <tr><td>樣本數計算的自洽性</td><td>MCID 1.5 分、SD 1.5、power 80%、α 0.05 → 每組 17 人</td><td>以標準公式 n ＝ 2(z<sub>α/2</sub>＋z<sub>β</sub>)²σ²/δ² ＝ 2 × (1.96＋0.84)² × 1.5² / 1.5² ≈ 15.7 → 16–17 人</td><td><b>大致相符</b>（差異來自捨入與是否用 t 分佈校正）。</td></tr>
+      <tr><td class="sig">實際觀察到的變異 vs. 假設</td><td class="sig">假設 SD ＝ 1.5；實際觀察 SD 為 <b>0.2</b>（重疊式）與 <b>0.8</b>（端對端）</td><td class="sig">實際變異遠小於設計時的假設</td><td class="sig"><b>值得警覺。</b>Wexner 分數為 0–20 分的整數量表，18 人全部完全禁制卻能算出「平均 0.5、SD 0.2」，數學上要求分數幾乎全部落在 0 與 1 之間且分佈極窄。<b>如此小的變異在臨床量表上並不常見</b>，也是造成 p &lt; 0.001 這種極端 p 值的直接原因。若真實 SD 接近設計時假設的 1.5，同樣的平均差在 n ＝ 38 下 p 值會落在 0.001–0.01 之間——結論方向不變，但確定性應下修。</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、知情同意怎麼談</span></h2>
+  <div class="call amber">
+    <div class="h">一句話版本</div>
+    這是<b>目前唯一一篇</b>在「延遲二次修補」這個特定情境下直接比較重疊式與端對端的隨機試驗。它的方向很清楚、機轉也說得通（重疊式提供較大的肌肉接觸面與較少的張力性撕脫）。但它是<b>單中心、40 人、由一位個人經驗逾千例的術者操刀、且只有主要終點有檢力</b>——換句話說，它足以改變「在你自己的骨盆底門診怎麼做」的傾向，還不足以寫進指引。
+  </div>
+
+  <h3>誰適合</h3>
+  <ul class="clean">
+    <li><b>本篇的病人是一個相當狹窄的族群</b>：三度或四度 OASI、<b>初次修補後傷口崩開</b>、產後至少 3 個月、且<b>本次生產前沒有大便失禁病史</b>。作者刻意用嚴格排除條件（含排除多產婦）來降低干擾。</li>
+    <li><b>不適用</b>於：初次（產房內）修補的縫法選擇（那有另外 4 篇 RCT，且本篇作者明講不該互相外推）；僅外括約肌部分撕裂者；評估時已有活動性感染或已形成直腸陰道瘻管者（這兩類本篇直接排除）；已知發炎性腸道疾病或結核者。</li>
+    <li><b>也不適用</b>於「早期二次修補」（產後 21 天內）的時機決策——原文引述近期研究指出早期修補的長期功能結果可能與延遲修補相當，但瘻管等併發症仍是顧慮，<b>本篇沒有比較時機，只比較縫法</b>。</li>
+    <li><b>台灣情境的提醒</b>：本篇術後常規給「合併口服避孕藥做 2 個月月經抑制」，這在台灣並非普遍做法，且需個別評估血栓風險（年齡、抽菸、偏頭痛病史、產後時程）。這一項是整套流程的一部分，但<b>本篇無法告訴我們它單獨貢獻了多少</b>。</li>
+  </ul>
+
+  <h3>換來什麼</h3>
+  <div class="kv">
+    <div class="c teal"><div class="lab">12 個月 Wexner 分數</div><div class="big">−1.70</div><div class="sub">分（−2.06 至 −1.34）<br>唯一有檢力的終點</div></div>
+    <div class="c teal"><div class="lab">完全禁制率</div><div class="big">100%</div><div class="sub">vs. 85%（18/18 vs. 17/20）<br>但 p 值存疑，見一致性檢查</div></div>
+    <div class="c"><div class="lab">整體併發症</div><div class="big">11.1%</div><div class="sub">vs. 30.0%（2/18 vs. 6/20）<br>探索性，CI 跨越 1</div></div>
+    <div class="c"><div class="lab">直腸陰道瘻管</div><div class="big">5.6%</div><div class="sub">vs. 15.0%（1/18 vs. 3/20）<br>p ＝ 0.34</div></div>
+    <div class="c"><div class="lab">肛門靜止壓</div><div class="big">＋8.6</div><div class="sub">mmHg（未達顯著）<br>結構與生理方向一致</div></div>
+    <div class="c amber"><div class="lab">手術時間</div><div class="big">＋18.5</div><div class="sub">分鐘（＋14.7 至 ＋22.3）<br>唯一明確的代價</div></div>
+  </div>
+
+  <h3>代價是什麼</h3>
+  <ul class="clean">
+    <li><b>手術時間多約 18.5 分鐘（＋18%）。</b>這是本篇唯一一個「明確存在、統計上確定」的代價。對一台約兩小時的重建手術而言，臨床可接受度高，但排刀時應納入。</li>
+    <li><b>重疊需要更長的肌肉游離。</b>要把兩端疊起來，就必須向外側從坐骨肛門脂肪處多鬆解一段外括約肌。理論上這會增加去神經與缺血的風險——<b>本篇沒有觀察到此風險兌現（靜止壓與收縮壓反而較高），但 18 個人的資料不足以排除它</b>。</li>
+    <li><b>技術門檻。</b>本篇的術者個人做過逾千例括約肌修補。<b>重疊式的優勢有多少來自術式本身、有多少來自這位術者的手，本篇無法拆開</b>。在經驗較少的術者手中，端對端可能反而較不易做壞。</li>
+    <li><b>沒有量到的東西</b>：生活品質量表、性功能、排便急迫感、之後再次生產的處理建議、成本、住院天數，本篇一項都沒有報告。追蹤也只到 12 個月——而原文自己引述的文獻指出，<b>括約肌修補的成功率在術後兩年內約 62–85%，之後逐年下滑</b>。</li>
+  </ul>
+
+  <h3>把本篇放進既有證據裡</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:780px">
+    <thead><tr><th>情境</th><th>既有證據</th><th>本篇的貢獻</th></tr></thead>
+    <tbody>
+      <tr><td><b>初次（產房內）修補</b></td><td>已有 4 篇 RCT 比較 overlapping vs. end-to-end，整體結論偏向<b>兩者相當</b></td><td>本篇作者主張<b>不可外推</b>：延遲修補面對的是纖維化疤痕，需去疤與鬆解，是不同的手術問題</td></tr>
+      <tr><td><b>早期二次修補（產後 21 天內）</b></td><td>近期研究顯示長期功能可能與延遲修補相當，但<b>瘻管等併發症仍是顧慮</b></td><td>本篇未涉及時機，只在「延遲」這個框架內比較縫法</td></tr>
+      <tr><td><b>延遲二次修補的縫法</b></td><td>過去只有小型病例系列，併發症率報告 12.4–36.5%</td><td><b>本篇是第一篇 RCT。</b>其併發症率（11.1% vs. 30.0%）落在既有病例系列的區間內，外部效度尚可</td></tr>
+      <tr><td><b>術後評估策略</b></td><td>現行指引支持 OASI 後常規做肛門內超音波（EAUS）與肛門壓力測定（AM）</td><td>原文重申：<b>只測有症狀者會漏掉無症狀但高風險者</b>；且 AM 比 EAUS 多找出約三分之一的括約肌功能異常者，<b>兩者應併用</b>，以利下次生產方式的諮詢</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call teal">
+    <div class="h">建議說法（對病人）</div>
+    「你生產時肛門括約肌撕裂到第三度（或第四度），當時在產房縫合過，但傷口後來裂開了。現在距離生產已經超過三個月、發炎完全消退，是重建的好時機。<br><br>手術有兩種縫法：<b>一種是把撕斷的兩端「對接」起來縫，另一種是把兩端「重疊」起來縫</b>。重疊的做法需要多花時間把肌肉從旁邊游離出來，<b>手術時間大約多 20 分鐘</b>。<br><br>目前這個情境唯一的隨機試驗（40 位病人）發現：<b>重疊式在一年後的失禁分數明顯比較低</b>——重疊式那組平均 0.5 分、對接那組 2.2 分（分數 0 分是完全正常）。併發症的比率也比較低（11% vs. 30%），瘻管 6% vs. 15%。<b>但我要老實說：這後面幾項因為人數太少，統計上還不能算數，只能說方向一致。</b><br><br>所以我建議用<b>重疊式</b>。同時我要強調，這台刀成敗的關鍵不只在縫法，還在<b>把疤痕組織清乾淨、把肌肉游離到完全沒有張力</b>，以及術後這一整套配合：抗生素五天、軟便劑十天、<b>六週不能有性行為</b>，還有前兩個月我們會用藥把月經先壓下來，避免經血污染傷口。這幾件事只要漏掉一項，前面的努力都可能白費。<br><br>風險方面要先講清楚：<b>大約每 10 位裡面會有 1 位左右形成小的直腸陰道瘻管</b>，多數可以用軟便劑加抗生素保守處理自己癒合，少數需要再開一次；<b>也可能傷口再次裂開需要重做</b>。這次試驗裡沒有人需要做暫時性造口。<br><br>最後一件事：<b>括約肌修補的效果會隨時間慢慢下降</b>，文獻上大概前兩年成功率七到八成，之後逐年打折。所以我們會固定追蹤，也會安排肛門超音波和壓力檢查——這不只是看這次刀的結果，<b>更是為了將來如果你要再生一胎，能給你比較準確的生產方式建議</b>。」
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>單中心、40 人、一位術者。</b>所有手術由同一位個人經驗逾 1,000 例括約肌修補的資深主治領軍完成。<b>術式效果與術者效果在本篇中完全無法分離</b>，外推到一般醫學中心時應打折扣。</li>
+    <li><b>只有主要終點有檢力。</b>樣本數是為 Wexner 分數設計的。併發症、瘻管、再手術、Starck 分數、壓力測定<b>全部是探索性次要終點</b>，原文自己也這麼說（“should therefore be considered exploratory”）。摘要結論把「lower complication rates」與主要終點並列，是本篇最需要打折的一句話。</li>
+    <li class="sig"><b>完全禁制率的 p ＝ 0.03 無法以本頁重算複現。</b>0/18 vs. 3/20 的 Fisher 精確檢定雙尾 p ≈ 0.23。原文未說明此處採用何種檢定。這是本頁最強烈的保留意見。</li>
+    <li class="sig"><b>Discussion 把端對端組併發症寫成 33.3%，與 Results 的 30.0%（6/20）不符</b>，33.3% 顯然是誤用了分母 18。這類分母錯置雖不影響結論方向，但顯示校對強度不足。</li>
+    <li class="sig"><b>四項次要終點的 p 值與其所載平均 ± 標準差不相容。</b>癒合天數、Starck、靜止壓、收縮壓的常態近似 p 值都在 0.05 以下，原文卻報 0.08–0.12。最可能是改用了 Mann–Whitney 檢定，但<b>原文未逐項標示</b>，讀者無法查核。</li>
+    <li class="sig"><b>Wexner 分數的標準差小得不尋常（0.2 與 0.8）。</b>設計階段假設 SD ＝ 1.5，實際觀察不到七分之一。這直接造就了 p &lt; 0.001 的極端結果。若真實變異接近設計假設，效果方向不變但確定性應大幅下修。</li>
+    <li><b>失聯全部集中在勝出組（2/20 vs. 0/20）。</b>作者以基線值遞補做了意向治療敏感度分析，結論一致，這是加分；但若這兩人是因為結果差而不再回診，任何遞補都補不回來。</li>
+    <li><b>原文完全未報告任何效果值與信賴區間</b>，只給組別平均與 p 值。本頁全部的效果量都是自行計算的。這在 2026 年發表的 RCT 上是明確的 CONSORT 報告缺失。</li>
+    <li><b>Table 1–3 與 Fig. 1 的格內數值，PMC 純文字全文未收錄。</b>因此基線特徵（年齡、BMI、新生兒體重、原始撕裂度數分佈）、SMIS 的實際數值、CONSORT 各階段的篩選人數，本頁一律以「原文未列數值」標示，未做任何推估。</li>
+    <li><b>追蹤只到 12 個月。</b>原文自己引述文獻指出括約肌修補的成功率在術後兩年內約 62–85%、其後逐年下滑，並自承「continence tends to deteriorate over time」。<b>12 個月的優勢會不會在 5 年後消失，本篇答不出來。</b></li>
+    <li><b>單一術式、單一族群、單一國家。</b>埃及開羅的產科照護模式、產婦體型、會陰切開政策與台灣不同；本篇亦刻意排除多產婦以降低干擾，這提升了內部效度，卻降低了外部效度。</li>
+    <li><b>術前基線的失禁嚴重度以 SMIS 評估，但主要終點用 Wexner</b>，兩者非同一量表，因此無法直接呈現「術前 → 術後」的變化量，只能做組間的術後橫斷比較。</li>
+    <li><b>盲性在外科試驗中的實際強度有限。</b>作者已盡力（統一皮膚縫合、不告知手術時間差異、評估者獨立且全程盲性），但重疊式在肛門內超音波上的影像特徵與端對端不同，<b>執行 EAUS 的評估者理論上可能識破分組</b>——而 Starck 分數正是由 EAUS 判讀。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>產科肛門括約肌損傷 <span class="en">Obstetric anal sphincter injury, OASI</span></dt><dd>陰道生產時造成的三度（肛門括約肌複合體斷裂）或四度（合併直腸黏膜破裂）會陰撕裂傷。是大便失禁最主要的可預防原因。</dd></div>
+      <div class="gl-row"><dt>重疊式括約肌成形術 <span class="en">Overlapping sphincteroplasty</span></dt><dd>把外括約肌的兩個斷端向外游離後<b>重疊</b>縫合，以增加肌肉接觸面。需要較多的側向鬆解，手術時間較長。</dd></div>
+      <div class="gl-row"><dt>端對端縫合 <span class="en">End-to-end approximation</span></dt><dd>把外括約肌兩斷端<b>對接</b>後直接縫合，是產房內初次修補最常用的做法。</dd></div>
+      <div class="gl-row"><dt>延遲二次修補 <span class="en">Delayed secondary repair</span></dt><dd>初次修補失敗（傷口崩開）後，等待產後 3 個月以上、發炎完全消退、組織血流與癒合能力恢復後再做的重建手術。本篇的情境。</dd></div>
+      <div class="gl-row"><dt>早期二次修補 <span class="en">Early secondary repair</span></dt><dd>崩開後於產後短期內（文獻多指 21 天內）即重做的修補。長期功能可能與延遲修補相當，但瘻管風險是主要顧慮。本篇未比較。</dd></div>
+      <div class="gl-row"><dt>Wexner 失禁分數 <span class="en">Wexner (Cleveland Clinic Florida) incontinence score</span></dt><dd>0–20 分，分數越高失禁越嚴重，涵蓋固體便、液體便、氣體失禁、需用護墊、生活型態改變五個面向。本篇以 ≤ 5 分定義為「完全禁制」。</dd></div>
+      <div class="gl-row"><dt>SMIS 失禁分數 <span class="en">St. Mark's incontinence score</span></dt><dd>另一套常用的失禁量表，額外納入急迫感與止瀉藥使用。本篇用於術前評估。</dd></div>
+      <div class="gl-row"><dt>肛門內超音波 <span class="en">Endoanal ultrasound, EAUS</span></dt><dd>經肛門置入探頭評估內外括約肌的完整性。本篇以<b>全層不連續超過 1 小時鐘面（30°）</b>定義為殘餘缺損。</dd></div>
+      <div class="gl-row"><dt>改良 Starck 分數 <span class="en">Modified Starck score</span></dt><dd>以肛門內超音波量化括約肌缺損的評分（0–16 分），綜合缺損的深度、長度與角度。分數越低代表結構越完整。</dd></div>
+      <div class="gl-row"><dt>肛門直腸壓力測定 <span class="en">Anorectal manometry, AM</span></dt><dd>量測肛門靜止壓（主要反映內括約肌）與收縮壓（主要反映外括約肌）。本篇使用高解析固態導管系統，依 London Classification 判讀。</dd></div>
+      <div class="gl-row"><dt>肛門靜止壓 <span class="en">Maximum resting pressure</span></dt><dd>靜止狀態下的最大肛管壓力，約七至八成來自<b>內</b>括約肌的持續張力。</dd></div>
+      <div class="gl-row"><dt>肛門收縮壓 <span class="en">Maximum squeeze pressure</span></dt><dd>用力夾緊時的最大肛管壓力，主要反映<b>外</b>括約肌（橫紋肌）的自主收縮力。</dd></div>
+      <div class="gl-row"><dt>直腸陰道瘻管 <span class="en">Rectovaginal fistula, RVF</span></dt><dd>直腸與陰道之間的異常通道。本篇 4 例皆為低位小瘻管，3 例以軟便劑加抗生素保守處理自癒，1 例需手術修補。</dd></div>
+      <div class="gl-row"><dt>傷口崩開 <span class="en">Wound dehiscence</span></dt><dd>已縫合的傷口再度裂開。是本篇病人接受二次修補的原因。</dd></div>
+      <div class="gl-row"><dt>Martius 皮瓣 <span class="en">Martius flap</span></dt><dd>取大陰唇脂肪墊做為介入性組織填充，用於複雜或復發性直腸陰道瘻管。<b>本篇刻意完全不用</b>，以確保比較的是純粹的縫合技術。</dd></div>
+      <div class="gl-row"><dt>Per-protocol 分析 <span class="en">Per-protocol analysis</span></dt><dd>只分析實際完成試驗方案者。容易高估效果，因此需搭配意向治療分析佐證。本篇的主分析即為 per-protocol。</dd></div>
+      <div class="gl-row"><dt>意向治療分析 <span class="en">Intention-to-treat, ITT</span></dt><dd>不論實際接受何種治療、是否完成追蹤，一律按最初的隨機分組分析。本篇以基線值遞補的方式做為敏感度分析。</dd></div>
+      <div class="gl-row"><dt>最小臨床重要差異 <span class="en">Minimum clinically important difference, MCID</span></dt><dd>病人能感受到、且值得為之改變治療的最小差距。本篇設為 Wexner 1.5 分。</dd></div>
+      <div class="gl-row"><dt>Fisher 精確檢定 <span class="en">Fisher's exact test</span></dt><dd>用於小樣本 2×2 表的精確機率檢定，在期望次數 &lt; 5 時比卡方檢定可靠。本頁用它複核完全禁制率的 p 值。</dd></div>
+      <div class="gl-row"><dt>Mann–Whitney U 檢定 <span class="en">Mann–Whitney U test</span></dt><dd>比較兩組分佈位置的無母數檢定，用於不符常態假設的資料。在小樣本時較 t 檢定保守，可能是本篇四項終點 p 值偏大的原因。</dd></div>
+      <div class="gl-row"><dt>連續性校正 <span class="en">Continuity correction</span></dt><dd>計算比值時遇到零事件格，慣例在各格加 0.5 以便估算。本頁在「殘餘失禁 0/18」一項使用，並於圖說明確標示。</dd></div>
+      <div class="gl-row"><dt>CONSORT 聲明 <span class="en">CONSORT statement</span></dt><dd>隨機對照試驗的報告規範，要求報告效果量與其精確度（信賴區間），而非只報 p 值。本篇在此點上未達標。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redraw Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻</b>：<i>Delayed secondary repair of third- and fourth-degree obstetric anal sphincter injuries: a randomized controlled trial comparing overlapping versus end-to-end sphincter repair.</i>
+  Tech Coloproctol. 2026（線上先行 2026 年 8 月 6 日）。DOI：<a href="https://doi.org/10.1007/s10151-026-03362-0">10.1007/s10151-026-03362-0</a>　·　PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42562921/">PMID 42562921</a>　·　PubMed Central：PMC13447328。<span class="na">本頁擷取時，PubMed 書目紀錄的作者欄位未完整列出全部作者姓名，本頁因此不逐一列名，以免誤植；完整作者群請以出版社頁面為準。研究機構為埃及開羅 Ain Shams 大學醫學院附設醫院大腸直腸外科；倫理審查為該校醫學院研究倫理委員會（FWA No. IRB 00006379）。</span></p>
+  <p><b>資料取得方式</b>：本頁內容取自 PubMed 之書目與摘要紀錄，以及 PubMed Central 之全文（Introduction／Patients and methods／Results／Discussion／Conclusion 全文）。<b>原文 Table 1（基線與生產特徵）、Table 2（周術期與併發症）、Table 3（追蹤評估）以及 Fig. 1（CONSORT 流程圖）、Fig. 2–8（術中照片）皆為表格或圖檔，PMC 純文字全文未收錄其格內數值</b>；凡本頁未能取得之數值，一律以「原文未列數值」標示，<b>未做任何推估或補值</b>。</p>
+  <p><b>圖表重繪聲明</b>：本頁所有圖表<b>均為依原文文字所載數值重新繪製的 inline SVG 或 HTML／CSS 方塊，未使用、未嵌入、未連結出版社的任何圖檔</b>。凡由原文數字經加減乘除、對數轉換或機率分佈推導而得者，一律就地標註「<b>本頁自行計算</b>」。具體而言：<br>
+  · <b>取自原文</b>：所有平均 ± 標準差、事件數、分母、原文所報的 p 值、追蹤中位數與四分位距。<br>
+  · <b>本頁自行計算</b>：全部的風險比與其 95% 信賴區間（Katz 對數法，零事件格加 0.5 連續性校正）；全部的平均差與其 95% 信賴區間（獨立樣本常態近似）；全部的百分比換算；一致性檢查中的 Fisher 精確檢定 p 值、常態近似 p 值與樣本數公式複算。<br>
+  · <b>刻意不做的事</b>：不對「兩組皆零事件」的終點做連續性校正（無資訊）；不因本頁重算的 p 值與原文不符而改寫原文的統計判定（一律以原文 p 值為準，僅在「數值一致性檢查」一節明列差異）；不對 PMC 未收錄的表格數值做任何推估。</p>
+  <p class="note">本頁為個人閱讀筆記，非同儕審查內容，亦不構成醫療建議。所有臨床決策請回到原始文獻與病人的個別情境。</p>
+</section>
+
+</div>
+</body>
+</html>

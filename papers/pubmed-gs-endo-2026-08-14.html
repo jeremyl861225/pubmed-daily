@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-14</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 14 日 · 週五</span>
+    <span style="opacity:.4">/</span><span>Vol. 011</span>
+  </div>
+  <h1 class="title">續發性副甲狀腺機能亢進（SHPT）做完全副甲狀腺切除後，自體移植該放前臂還是胸鎖乳突肌？27 篇研究、6,979 人的貝氏網絡統合分析——兩個部位在復發與術後低血鈣皆無顯著差異；但本頁清點後發現，兩者之間<b>一篇直接比較的研究都沒有</b></h1>
+  <p class="title-en">Forearm vs sternocleidomastoid autotransplantation after total parathyroidectomy for secondary hyperparathyroidism: a network meta-analysis and global bibliometric study</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Frontiers in Endocrinology<br><span style="color:#6b7079;font-size:13px">2026;17:1855948（線上發表 2026 年 7 月 22 日）；Frontiers 發行，完全開放取用</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Wang Yanjun, Bao Ruochen, Zhang Fubo, Wang Jiangtao, Cheng Kai<br><span style="color:#6b7079;font-size:13px">中國山東：山東第二醫藥大學第二臨床醫學院（煙台）；濱州醫學院附屬煙台醫院甲狀腺乳腺外科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧 ＋ 貝氏網絡統合分析（Bayesian NMA）；另附 2006–2025 年文獻計量學分析</b><br><span style="color:#6b7079;font-size:13px">R 4.5.0 之 gemtc ＋ rjags；隨機效果模式、4 條馬可夫鏈、burn-in 5,000 次、取樣 10,000 次、thinning ＝ 1；以 node-splitting 檢驗一致性（P &gt; 0.05，採一致性模式）；效果值為勝算比 OR 與 95% 可信區間 CrI</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的不是「該不該開刀」，而是「決定做 TPTX＋自體移植之後，那一小塊副甲狀腺組織要種在哪裡」</b><br><span style="color:#6b7079;font-size:13px">四種術式同場競技：<b>SPTX</b>（次全切除，留 40–80 mg）、<b>TPTX</b>（全切除不移植）、<b>TPTX＋ATF</b>（全切除＋前臂移植）、<b>TPTX＋ATSCM</b>（全切除＋胸鎖乳突肌移植）；移植組織切成約 10–20 mm³ 的碎塊</span></div></div>
+    <div class="meta-item"><div class="k">納入規模</div><div class="v"><b>27 篇研究、6,979 人</b>（SPTX 2,493／TPTX 964／TPTX＋ATF 3,359／TPTX＋ATSCM 163）<br><span style="color:#6b7079;font-size:13px">設計組成：<b>回溯性世代 20 篇、前瞻性世代 5 篇、隨機對照試驗僅 2 篇</b>；22 篇兩臂 ＋ 5 篇三臂；發表年代橫跨 <b>1973–2022 年</b>；追蹤 6 個月至 8 年</span></div></div>
+    <div class="meta-item"><div class="k">兩個主要終點</div><div class="v"><b>(1) SHPT 復發</b>（27 篇、6,979 人）　<b>(2) 術後低血鈣</b>（僅 15 篇、1,217 人）<br><span style="color:#6b7079;font-size:13px">兩者的定義<b>皆依各原始研究自訂</b>，未統一；原文自承此為異質性來源。以 Rankogram 與 SUCRA 排序，<b>SUCRA 越高代表越可能是「最差」</b>（本篇的定義方向與多數論文相反，讀圖時務必留意）</span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">PROSPERO CRD420251236587<br><span style="color:#6b7079;font-size:13px">檢索至 2025 年 11 月 1 日；除 PubMed／Embase／Cochrane 外，<b>另檢索中國知網 CNKI、萬方、維普三個中文資料庫</b>（這是本篇少見的優點，能撈到大量未被英文資料庫索引的中文研究）</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.3389/fendo.2026.1855948">10.3389/fendo.2026.1855948</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42558382/">PMID 42558382 &#8594;</a>　·　PMC13437453（Open Access）</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">內分泌外科</span>
+    <span class="tag t2">副甲狀腺切除 Parathyroidectomy</span>
+    <span class="tag t2">續發性副甲狀腺機能亢進 SHPT</span>
+    <span class="tag t2">自體移植 Autotransplantation</span>
+    <span class="tag t3">證據等級：貝氏網絡統合分析（27 篇，僅 2 篇 RCT）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">PRISMA 流程</a>
+  <a href="#net">證據網絡</a><a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a>
+  <a href="#overview">全部結果總覽</a><a href="#raw">SUCRA 排序與重繪圖</a><a href="#checks">數值一致性檢查</a>
+  <a href="#clin">臨床意涵</a><a href="#limit">研究限制與警訊</a><a href="#gloss">名詞對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>這篇網絡統合分析想回答的是「TPTX＋自體移植要種前臂還是胸鎖乳突肌」，答案是<strong>兩者在復發（OR 0.66，95% CrI 0.13–3.05）與術後低血鈣（OR 1.18，95% CrI 0.18–6.23）上都看不出差別</strong>——但這個「看不出差別」的份量，遠比表面上輕。<strong>本頁逐篇清點原文 Table 1 的 27 篇研究、59 個治療組別後發現：前臂移植與胸鎖乳突肌移植之間，一篇直接比較的研究都沒有（0 篇）</strong>；也就是說，本篇最核心的那一條估計值 100% 來自繞道 SPTX 與 TPTX 的<strong>間接推論</strong>，而且 ATSCM 這一組全世界可用的資料只有 <strong>163 人</strong>、6 篇研究。真正有統計顯著性的其實是另外兩件事：<strong>(1) 復發風險——SPTX 是 TPTX 的 3.80 倍（1.67–10.78）、TPTX＋ATF 是 TPTX 的 2.66 倍（1.04–8.33），留組織就會復發，這符合直覺；(2) 術後低血鈣——SPTX 比 TPTX 少（OR 0.38，0.11–0.99），但區間上界剛好壓在 0.99，是最不穩健的那種臨界結果。</strong>本篇的實用價值不在「哪個部位比較好」，而在把「復發 ↔ 低血鈣」這組蹺蹺板量化了出來：<strong>切得越乾淨、復發越少、低血鈣越多</strong>。至於選前臂還是胸鎖乳突肌，作者最後也只能訴諸機轉層面的實務理由（前臂便於用兩手 iPTH 落差定位移植體來源的復發、可局部麻醉下切除），而非結果數據。<strong>本頁另發現原文有三處內部數字不一致（PRISMA 兩套數字、SUCRA 兩套數字、樣本數範圍的敘述與 Table 1 不符），詳見「數值一致性檢查」一節。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">／ 英文原文摘要（逐字引用）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Secondary hyperparathyroidism (SHPT) is a common complication in chronic kidney disease (CKD), and parathyroidectomy (PTX) remains the definitive treatment for refractory cases. However, the optimal surgical strategy, particularly regarding the implantation site for autotransplantation, remains uncertain. Total parathyroidectomy with autotransplantation (TPTX + AT) is widely performed, but it is unclear whether forearm autotransplantation (TPTX + ATF) offers advantages over autotransplantation into the sternocleidomastoid muscle (TPTX + ATSCM).</p>
+    <h4>Methods</h4>
+    <p>Using the Web of Science Core Collection (WOSCC), we performed a bibliometric analysis. We then systematically searched PubMed, Embase, the Cochrane Library, and major Chinese databases (CNKI, Wanfang Data, and VIP) from inception to 1 November 2025. We included randomized controlled trials and cohort studies comparing subtotal PTX (SPTX), TPTX, TPTX + ATF, and TPTX + ATSCM. The primary outcomes were SHPT recurrence and postoperative hypocalcemia. Bayesian network meta-analysis (NMA) was conducted to rank the treatments.</p>
+    <h4>Results</h4>
+    <p>Twenty-seven studies involving 6979 patients were included, comprising 2493 patients treated with SPTX, 964 with TPTX, 3359 with TPTX + ATF, and 163 with TPTX + ATSCM. Compared to TPTX, both SPTX and TPTX + ATF showed higher risks of recurrence (OR 3.80, 95% CrI 1.67&ndash;10.78; OR 2.66, 95% CrI 1.04&ndash;8.33). No significant differences were observed between TPTX + ATF and TPTX + ATSCM with respect to recurrence (OR 0.66, 95% CrI 0.13&ndash;3.05) or postoperative hypocalcemia (OR 1.18, 95% CrI 0.18&ndash;6.23). Bibliometric analysis revealed global research activity from the United States and China, with stable contributions over the past two decades.</p>
+    <h4>Conclusion</h4>
+    <p>Forearm and sternocleidomastoid autotransplantation showed no statistically significant differences in recurrence or postoperative hypocalcemia based on the available evidence. Current evidence does not support a definitive preference for either implantation site, although forearm implantation may remain a reasonable option in settings where graft monitoring and potential reintervention are important considerations. High-quality randomized trials are still needed to confirm these findings.</p>
+    <h4>Systematic Review Registration</h4>
+    <p>PROSPERO, identifier CRD420251236587.</p>
+    <p class="note">以上為 PubMed／PubMed Central 之作者原文摘要逐字引用（僅將原文的短破折號統一為 &ndash;）。<b>值得注意的措辭</b>：摘要把 “OR 0.66, 95% CrI 0.13–3.05” 標為「TPTX + ATF 與 TPTX + ATSCM 之間」，而正文 Results 則把同一個 0.66 寫成「<b>TPTX + ATSCM versus TPTX + ATF</b>」——<b>方向敘述不一致</b>。由於區間橫跨 1，兩種寫法都不影響「無顯著差異」的結論，但若要引用點估計值的方向，請務必回原文查核。原文自己也在 Discussion 加了一句很重要的但書：<b>“the absence of statistically significant differences should not be interpreted as evidence of equivalence”</b>——沒有差異 ≠ 兩者等效。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>PRISMA Flow <span class="zh">／ 檢索與納入流程（原文對同一流程給出兩套數字，本頁並列呈現）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">Identification 檢索（PubMed、Embase、Cochrane Library ＋ 中文資料庫 CNKI、萬方、維普；自各庫建置起至 2025 年 11 月 1 日）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">591</span> 筆（<b>原文 Results 內文</b>）　vs.　<span class="n">519</span> 筆（<b>原文 Fig. 2 圖說</b>）<br>
+        <span style="color:#6b7079;font-size:12.5px">兩位資深評讀者設計並執行檢索，MeSH 詞彙與自由文字併用；修稿階段以同一策略重跑檢索，並人工回查納入研究與相關綜論的參考文獻</span></div></div>
+      <div class="pr-ex"><b>兩套數字差 72 筆</b><br>內文：591 → 去重後 400<br>圖說：519 − 119 ＝ 400<br><span style="font-size:12px">兩條路徑<b>都收斂到 400</b>，且各自內部自洽，但起點數字不同。本頁不推測何者為正，兩者並列</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Screening 題名／摘要篩選</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">400</span> 篇進入篩選（兩套數字在此匯合）</div></div>
+      <div class="pr-ex">內文：<b>直接排除 373 篇 → 剩 27 篇</b>（無獨立的全文評讀階段）<br>
+        圖說：排除 107 篇 → <b>全文評讀 293 篇</b> → 再排除 266 篇 → 剩 27 篇<br>
+        <span style="font-size:12px"><b>兩套敘述對「全文評讀了幾篇」給出完全不同的答案（0 vs. 293）</b></span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">Included 最終納入</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">27</span> 篇研究、<b>6,979 人</b>（兩套數字在此再次一致）<br>
+        <span style="color:#6b7079;font-size:12.5px">本頁自行驗算：SPTX 2,493 ＋ TPTX 964 ＋ ATF 3,359 ＋ ATSCM 163 ＝ <b>6,979</b> ✓，與原文完全相符；且逐篇清點 Table 1 各組人數後，四組加總<b>每一組都與原文所載完全相同</b></span></div></div>
+      <div class="pr-ex"><b>原文明列的主要排除理由</b>：單臂手術系列；未比較至少兩種合格術式；<b>原發性或三發性副甲狀腺亢進</b>而無法單獨抽出腎因性 SHPT 資料；人數 &lt; 10；缺乏可抽取的復發或低血鈣資料；族群重疊而無新增結果</div>
+    </div>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079;margin-top:14px">圖說（<b>資料來源</b>）：兩套數字分別逐字取自原文 Results 3.2.1 段落與 Fig. 2 的圖說文字；納入篇數與人數取自 Results 與 Table 1。<b>本圖以 HTML／CSS 方塊重繪，未使用原文任何圖檔。</b><b>怎麼解讀</b>：左欄是流程主線，右欄是被擋掉的量。<b>有何陷阱</b>：(1) <b>原文對自己的檢索流程給了兩套互不相容的數字</b>，而且差異不只在起點（591 vs. 519），更在「有沒有全文評讀階段」這件方法學上很要緊的事（0 vs. 293 篇）。這類不一致通常來自「內文由一位作者寫、PRISMA 圖由另一位畫、最後沒有對過」，本身不必然使結論失效，但它是<b>校對強度的直接指標</b>——一份連自己流程圖都對不起來的回顧，其資料抽取的精確度也值得多問一句。(2) 有趣的是，<b>真正該擔心的地方反而查得過</b>：本頁把 Table 1 的 59 個治療組別逐格加總，四組人數與 6,979 的總數<b>全部與原文相符</b>，代表資料抽取本身是紮實的。(3) 本篇少見地檢索了三個中文資料庫，這讓 TPTX＋ATSCM 這個以華人與東亞中心為主的術式得以進入分析——但也因此，<b>ATSCM 組的 163 人裡有相當比例來自中國的回溯性世代研究</b>，外推時需考慮透析人口特性與手術指徵的差異。</p>
+</section>
+
+<section id="net">
+  <h2>Evidence Network <span class="zh">／ 證據網絡：本篇最關鍵的一張圖（本頁自行清點重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="560" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">證據網絡：四種術式之間有多少「直接比較」的研究（節點大小 ∝ 人數，連線粗細 ∝ 直接比較篇數）</text>
+<text x="14.0" y="48.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">本圖為本頁依原文 Table 1 逐篇清點各研究的組別後自行繪製；原文 Fig. 5 為圖檔，未列出各連線的篇數</text>
+<line x1="800" y1="200" x2="320" y2="200" stroke="#2f6b62" stroke-width="14.7" opacity="0.75"/>
+<rect x="529" y="186" width="62" height="28" fill="#faf9f6" rx="5"/>
+<text x="560.0" y="205.0" font-size="12.5" fill="#2f6b62" text-anchor="middle" font-weight="700">15 篇</text>
+<line x1="800" y1="200" x2="320" y2="420" stroke="#2f6b62" stroke-width="5.7" opacity="0.75"/>
+<rect x="625" y="252" width="62" height="28" fill="#faf9f6" rx="5"/>
+<text x="656.0" y="271.0" font-size="12.5" fill="#2f6b62" text-anchor="middle" font-weight="700">5 篇</text>
+<line x1="320" y1="200" x2="320" y2="420" stroke="#2f6b62" stroke-width="9.3" opacity="0.75"/>
+<rect x="289" y="296" width="62" height="28" fill="#faf9f6" rx="5"/>
+<text x="320.0" y="315.0" font-size="12.5" fill="#2f6b62" text-anchor="middle" font-weight="700">9 篇</text>
+<line x1="800" y1="420" x2="320" y2="200" stroke="#2f6b62" stroke-width="4.8" opacity="0.75"/>
+<rect x="433" y="252" width="62" height="28" fill="#faf9f6" rx="5"/>
+<text x="464.0" y="271.0" font-size="12.5" fill="#2f6b62" text-anchor="middle" font-weight="700">4 篇</text>
+<line x1="800" y1="420" x2="320" y2="420" stroke="#2f6b62" stroke-width="4.8" opacity="0.75"/>
+<rect x="529" y="406" width="62" height="28" fill="#faf9f6" rx="5"/>
+<text x="560.0" y="425.0" font-size="12.5" fill="#2f6b62" text-anchor="middle" font-weight="700">4 篇</text>
+<line x1="800" y1="200" x2="800" y2="420" stroke="#8a6a1f" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="684" y="293" width="232" height="34" fill="#faf9f6" stroke="#8a6a1f" stroke-width="1.2" rx="6"/>
+<text x="800.0" y="315.0" font-size="12.5" fill="#8a6a1f" text-anchor="middle" font-weight="700">0 篇：完全沒有直接比較</text>
+<circle cx="320" cy="200" r="61.9" fill="#f6ece8" stroke="#8a4a3d" stroke-width="2"/>
+<text x="320.0" y="205.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">n ＝ 2,493</text>
+<text x="320.0" y="126.1" font-size="13.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">SPTX</text>
+<circle cx="800" cy="200" r="67.7" fill="#f6ece8" stroke="#8a4a3d" stroke-width="2"/>
+<text x="800.0" y="205.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">n ＝ 3,359</text>
+<text x="800.0" y="120.3" font-size="13.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">TPTX+ATF</text>
+<circle cx="320" cy="420" r="48.4" fill="#f6ece8" stroke="#8a4a3d" stroke-width="2"/>
+<text x="320.0" y="425.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">n ＝ 964</text>
+<text x="320.0" y="359.6" font-size="13.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">TPTX</text>
+<circle cx="800" cy="420" r="35.2" fill="#f6ece8" stroke="#8a4a3d" stroke-width="2"/>
+<text x="800.0" y="425.0" font-size="12" fill="#8a4a3d" text-anchor="middle" font-weight="700">n ＝ 163</text>
+<text x="800.0" y="372.8" font-size="13.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">TPTX+ATSCM</text>
+<text x="14.0" y="530.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">● 節點半徑 ∝ √人數（僅為視覺呈現，非統計權重）　── 實線 ＝ 有直接比較的研究　┈ 虛線 ＝ 沒有任何直接比較</text>
+<text x="14.0" y="548.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">本頁自行清點：SPTX 出現於 23 篇、TPTX 13 篇、TPTX＋ATF 17 篇、TPTX＋ATSCM 6 篇；組別總數 59（22 篇兩臂 ＋ 5 篇三臂 ＝ 22×2 ＋ 5×3 ＝ 59 ✓）</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：四組人數（2,493／964／3,359／163）取自原文 Results 與摘要；<b>每一條連線的篇數，是本頁逐篇讀完原文 Table 1 的 27 列、清點每篇各有哪些治療組後自行計算的</b>（原文 Fig. 5 的網絡圖僅以線條粗細示意，未列數字）。<b>怎麼解讀</b>：圓圈越大代表該術式累積的人數越多，連線越粗代表有越多研究「在同一篇裡直接比較過」這兩種術式。網絡統合分析的可信度，取決於這張圖有多密。<b>有何陷阱（本篇最重要的一句話）</b>：<b>TPTX＋ATF 與 TPTX＋ATSCM 之間是一條虛線——27 篇研究裡，沒有任何一篇同時做過這兩種移植部位。</b>本篇標題所問的問題，在資料上完全沒有直接證據；OR 0.66 是靠「ATF vs. SPTX」與「ATSCM vs. SPTX」（以及經由 TPTX 的第二條路徑）拼出來的間接估計。間接估計的有效性建立在一個強假設上——<b>可轉移性（transitivity）</b>：做 ATF 的那 17 篇研究與做 ATSCM 的那 6 篇研究，其病人特性、透析年資、手術指徵、年代必須夠相似，比較才有意義。<b>而這兩群研究的年代跨度是 1973–2022 年，ATSCM 的研究幾乎全部集中在 2009 年以後的中國與羅馬尼亞</b>——這個假設能不能成立，原文並未檢驗，也未在限制中明說。此外，ATSCM 節點只有 163 人（占全部的 2.3%），<b>它的圓圈之所以畫得出來，靠的是 4 篇 SPTX 對照與 4 篇 TPTX 對照，其中人數最少的一篇只有 4 人</b>。</div>
+  </div>
+</section>
+
+<section id="tbl1">
+  <h2>Study Characteristics <span class="zh">／ 研究特徵表（原文 Table 1 完整內容，逐格照抄）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1240px">
+    <thead><tr><th style="width:150px">研究（年）</th><th style="width:70px">國家</th><th style="width:88px">設計</th><th style="width:92px">研究期間</th><th style="width:220px">各組人數</th><th style="width:64px">合計</th><th style="width:150px">平均年齡</th><th style="width:120px">追蹤</th><th style="width:76px">NOS</th></tr></thead>
+    <tbody>
+      <tr><td><b>Y. Liang 2015</b></td><td>中國</td><td>前瞻性世代</td><td>2010–2014</td><td><b>SPTX</b>：21<br><b>TPTX+ATF</b>：21<br><b>TPTX</b>：21</td><td class="num"><b>63</b></td><td>53.2 ± 12.7</td><td>6 個月</td><td class="num">9</td></tr>
+      <tr><td><b>R.M. Neagoe 2016</b></td><td>羅馬尼亞</td><td>前瞻性世代</td><td>2010–2015</td><td><b>SPTX</b>：26<br><b>TPTX+ATSCM</b>：19</td><td class="num"><b>45</b></td><td>50.0 ± 10.6 / 51.1 ± 11.1</td><td>18 個月</td><td class="num">8</td></tr>
+      <tr><td><b>G.M. Hargrove 1999</b></td><td>加拿大</td><td class="sig">隨機對照試驗</td><td>1992–1996</td><td><b>SPTX</b>：28<br><b>TPTX+ATF</b>：8</td><td class="num"><b>36</b></td><td>—</td><td>22–28 個月</td><td class="num">RCT（未評 NOS）</td></tr>
+      <tr><td><b>K. Anderson Jr 2017</b></td><td>美國</td><td>回溯性世代</td><td>2005–2013</td><td><b>SPTX</b>：765<br><b>TPTX+ATF</b>：365</td><td class="num"><b>1130</b></td><td>48 / 47</td><td>—</td><td class="num">8</td></tr>
+      <tr><td><b>G. Sakman 2014</b></td><td>土耳其</td><td>回溯性世代</td><td>2003–2011</td><td><b>SPTX</b>：25<br><b>TPTX+ATF</b>：25</td><td class="num"><b>50</b></td><td>42.6 ± 14.5 / 36.4 ± 11.7</td><td>65 個月</td><td class="num">9</td></tr>
+      <tr><td><b>T.-H. Low 2009</b></td><td>澳洲</td><td>回溯性世代</td><td>1988–2004</td><td><b>SPTX</b>：68<br><b>TPTX+ATSCM</b>：4<br><b>TPTX</b>：43</td><td class="num"><b>115</b></td><td>20.1–75.6</td><td>—</td><td class="num">7</td></tr>
+      <tr><td><b>P.V. Zmijewski 2019</b></td><td>美國</td><td>回溯性世代</td><td>2006–2017</td><td><b>SPTX</b>：23<br><b>TPTX+ATSCM</b>：23</td><td class="num"><b>46</b></td><td>51.7 / 48.4</td><td>> 6 個月</td><td class="num">7</td></tr>
+      <tr><td><b>R. Schneider 2011</b></td><td>德國</td><td>回溯性世代</td><td>1976–2009</td><td><b>SPTX</b>：21<br><b>TPTX+ATF</b>：504<br><b>TPTX</b>：32</td><td class="num"><b>557</b></td><td>48.5 ± 0.57</td><td>6 個月</td><td class="num">7</td></tr>
+      <tr><td><b>C. Casella 2023</b></td><td>義大利</td><td>回溯性世代</td><td>2007–2020</td><td><b>SPTX</b>：14<br><b>TPTX+ATF</b>：38</td><td class="num"><b>52</b></td><td>54 / 56.5</td><td>24 個月</td><td class="num">9</td></tr>
+      <tr><td><b>P. Rajeev 2016</b></td><td>新加坡</td><td>前瞻性世代</td><td>2006–2013</td><td><b>SPTX</b>：24<br><b>TPTX+ATF</b>：57</td><td class="num"><b>81</b></td><td>50 ± 7 / 54 ± 8</td><td>24.6–81.8 個月</td><td class="num">8</td></tr>
+      <tr><td><b>W. Qiu 2023</b></td><td>中國</td><td>回溯性世代</td><td>2014–2022</td><td><b>SPTX</b>：20<br><b>TPTX+ATF</b>：60</td><td class="num"><b>80</b></td><td>46.32 ± 11.81</td><td>—</td><td class="num">6</td></tr>
+      <tr><td><b>R.M. Neagoe 2021</b></td><td>羅馬尼亞</td><td>前瞻性世代</td><td>2010–2017</td><td><b>SPTX</b>：29<br><b>TPTX+ATSCM</b>：33<br><b>TPTX</b>：15</td><td class="num"><b>77</b></td><td>51.45 / 51.3 / 56.5</td><td>> 18 個月</td><td class="num">8</td></tr>
+      <tr><td><b>R. Sari 2019</b></td><td>土耳其</td><td>回溯性世代</td><td>2012–2018</td><td><b>SPTX</b>：37<br><b>TPTX+ATF</b>：25</td><td class="num"><b>62</b></td><td>43.1 ± 16.7 / 41.4 ± 15.8</td><td>37.5 / 41 個月</td><td class="num">5</td></tr>
+      <tr><td><b>M. Rothmund 1991</b></td><td>德國</td><td class="sig">隨機對照試驗</td><td>1984–1985</td><td><b>SPTX</b>：20<br><b>TPTX+ATF</b>：20</td><td class="num"><b>40</b></td><td>44.8 / 45</td><td>—</td><td class="num">RCT（未評 NOS）</td></tr>
+      <tr><td><b>Y. Tominaga 1992</b></td><td>日本</td><td>回溯性世代</td><td>1973–1991</td><td><b>SPTX</b>：19<br><b>TPTX+ATF</b>：229</td><td class="num"><b>248</b></td><td>44.6</td><td>6 個月</td><td class="num">5</td></tr>
+      <tr><td><b>S. Ockert 2002</b></td><td>德國</td><td>回溯性世代</td><td>1993–1999</td><td><b>TPTX+ATF</b>：11<br><b>TPTX</b>：11</td><td class="num"><b>22</b></td><td>—</td><td>23 個月</td><td class="num">6</td></tr>
+      <tr><td><b>P. Nichols 1990</b></td><td>加拿大</td><td>回溯性世代</td><td>1978–1987</td><td><b>SPTX</b>：34<br><b>TPTX+ATF</b>：39</td><td class="num"><b>73</b></td><td>41.2 / 41.6</td><td>—</td><td class="num">6</td></tr>
+      <tr><td><b>S. Matsuoka 2007</b></td><td>日本</td><td>回溯性世代</td><td>1973–2005</td><td><b>SPTX</b>：20<br><b>TPTX+ATF</b>：1837</td><td class="num"><b>1857</b></td><td>52.1</td><td>6–261 個月</td><td class="num">6</td></tr>
+      <tr><td><b>Q. He 2014</b></td><td>中國</td><td>回溯性世代</td><td>2008–2012</td><td><b>TPTX+ATSCM</b>：14<br><b>TPTX</b>：33</td><td class="num"><b>47</b></td><td>45.8 / 46.5</td><td>42 個月</td><td class="num">7</td></tr>
+      <tr><td><b>S. Zhang 2019</b></td><td>中國</td><td>回溯性世代</td><td>2016–2018</td><td><b>TPTX+ATSCM</b>：70<br><b>TPTX</b>：54</td><td class="num"><b>124</b></td><td>25–70</td><td>22 個月</td><td class="num">8</td></tr>
+      <tr><td><b>H. Gao 2017</b></td><td>中國</td><td>回溯性世代</td><td>2015–2016</td><td><b>SPTX</b>：56<br><b>TPTX</b>：54</td><td class="num"><b>110</b></td><td>50（25–70）</td><td>6–18 個月</td><td class="num">8</td></tr>
+      <tr><td><b>N. Rayes 2008</b></td><td>德國</td><td>回溯性世代</td><td>1997–2006</td><td><b>SPTX</b>：16<br><b>TPTX</b>：17</td><td class="num"><b>33</b></td><td>—</td><td>31 / 41 個月</td><td class="num">5</td></tr>
+      <tr><td><b>C. Dotzenrath 1995</b></td><td>德國</td><td>前瞻性世代</td><td>1985–1995</td><td><b>SPTX</b>：89<br><b>TPTX+ATF</b>：54</td><td class="num"><b>143</b></td><td>—</td><td>8 年</td><td class="num">6</td></tr>
+      <tr><td><b>C. Yu 2017</b></td><td>中國</td><td>回溯性世代</td><td>2014–2016</td><td><b>SPTX</b>：40<br><b>TPTX+ATF</b>：16<br><b>TPTX</b>：16</td><td class="num"><b>72</b></td><td>46.35 ± 11.97</td><td>6 個月</td><td class="num">7</td></tr>
+      <tr><td><b>L.E. Kuo 2014</b></td><td>美國</td><td>回溯性世代</td><td>2008–2011</td><td><b>SPTX</b>：662<br><b>TPTX</b>：236</td><td class="num"><b>898</b></td><td>49</td><td>—</td><td class="num">6</td></tr>
+      <tr><td><b>E. Isaksson 2019</b></td><td>瑞典</td><td>回溯性世代</td><td>1991–2013</td><td><b>SPTX</b>：436<br><b>TPTX</b>：388</td><td class="num"><b>824</b></td><td>60 / 61</td><td>6.0 / 6.9 個月</td><td class="num">6</td></tr>
+      <tr><td><b>M.-L. Shih 2008</b></td><td>中國</td><td>回溯性世代</td><td>1995–2006</td><td><b>TPTX</b>：44<br><b>TPTX+ATF</b>：50</td><td class="num"><b>94</b></td><td>—</td><td>41.3 個月</td><td class="num">6</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="4"><b>合計（本頁自行加總）</b></td>
+      <td><b>SPTX 2,493｜TPTX 964<br>TPTX+ATF 3,359｜TPTX+ATSCM 163</b></td>
+      <td class="num"><b>6,979</b></td><td colspan="3"><b>四組加總與總人數皆與原文完全相符 ✓</b></td></tr></tfoot>
+  </table>
+  </div>
+  <p class="note" style="font-size:12.5px;color:#6b7079"><b>本頁自行計算的加總與交叉驗算</b>：<br>
+  · 四組人數逐篇加總：SPTX 2,493 ✓、TPTX 964 ✓、TPTX＋ATF 3,359 ✓、TPTX＋ATSCM 163 ✓，<b>四組全部與原文所載相符</b>；總計 2,493＋964＋3,359＋163 ＝ <b>6,979</b> ✓。<br>
+  · 研究設計：回溯性世代 20 ＋ 前瞻性世代 5 ＋ 隨機對照試驗 2 ＝ <b>27</b> ✓，與原文相符。<br>
+  · 治療組別數：22 篇兩臂 × 2 ＋ 5 篇三臂 × 3 ＝ 44 ＋ 15 ＝ <b>59</b> 個組別；本頁在表中實際清點亦為 59 ✓。<br>
+  · 各術式出現篇數（本頁自行清點）：SPTX 23 篇、TPTX 13 篇、TPTX＋ATF 17 篇、TPTX＋ATSCM 6 篇；23＋13＋17＋6 ＝ <b>59</b> ✓。<br>
+  · <b class="sig">但有一項對不上</b>：原文稱「The sample sizes of the included studies ranged from <b>15 to 898</b> participants」，而本頁由 Table 1 逐篇加總得到的研究總人數範圍是 <b>22（Ockert 2002：11＋11）至 1,857（Matsuoka 2007：20＋1,837）</b>；另有 Anderson 2017 合計 1,130 人。<b>兩端都對不上，且有兩篇明顯超過 898 的上界</b>（Matsuoka 2007 的 1,857 人與 Anderson 2017 的 1,130 人）。<b>本頁能找到最接近的來源是</b>：898 恰好等於 Kuo 2014 的研究合計（662＋236），15 則恰好等於 Neagoe 2021 的 TPTX 組人數——<b>兩者一個是「研究層級」、一個是「組別層級」，混用了兩種尺度</b>。詳見下方「數值一致性檢查」。</p>
+  <div class="call amber">
+    <div class="h">看這張表最該注意的三件事</div>
+    <b>(1) 這是一份跨越半個世紀的證據。</b>最早的研究收案自 1973 年（Tominaga、Matsuoka），最晚到 2022 年。這半個世紀裡，透析技術、磷結合劑、活性維生素 D、擬鈣劑（cinacalcet）、以及「什麼樣的病人才會被送去開刀」全都變了。把 1973 年的復發率和 2022 年的放在同一個隨機效果模式裡合併，異質性不會只是統計問題。<br>
+    <b>(2) 只有 2 篇 RCT，且都很老很小。</b>Rothmund 1991（德國，40 人）與 Hargrove 1999（加拿大，36 人，且分組嚴重不均：SPTX 28 vs. ATF 8）。其餘 25 篇全是世代研究，<b>NOS 分數從 5 到 9 分都有</b>，原文以 ≥ 5 分即視為低偏誤風險——這個門檻相當寬鬆。<br>
+    <b>(3) 幾篇超大型研究會主宰整個結果。</b>Matsuoka 2007 的 ATF 組有 1,837 人（占 ATF 全部的 55%），Anderson 2017 的 SPTX 組有 765 人，Isaksson 2019 有 824 人，Kuo 2014 有 898 人。<b>光是這四篇就占了全部 6,979 人的六成以上</b>，而它們全部是回溯性世代研究。相對地，整個 ATSCM 組加起來只有 163 人。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary Outcomes <span class="zh">／ 兩個主要終點的網絡統合分析結果（本頁依原文所載數值重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 402" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="402" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">終點一：SHPT 復發——貝氏網絡統合分析的勝算比（對數刻度，無效線 ＝ 1；27 篇、6,979 人）</text>
+<line x1="470.0" y1="64.0" x2="470.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="470.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.05</text>
+<line x1="567.2" y1="64.0" x2="567.2" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="567.2" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.2</text>
+<line x1="680.0" y1="64.0" x2="680.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="680.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="792.8" y1="64.0" x2="792.8" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="792.8" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="890.0" y1="64.0" x2="890.0" y2="330.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="347.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">20</text>
+<line x1="680.0" y1="64.0" x2="680.0" y2="330.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點／比較</text>
+<text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">勝算比 OR（95% 可信區間 CrI）</text>
+<text x="20.0" y="83.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">SPTX 次全切除  vs.  TPTX 全切除（不移植）</text>
+<text x="20.0" y="100.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 9 篇｜勝算比 &gt; 1 ＝ 前者復發較多</text>
+<line x1="715.9" y1="90.0" x2="846.7" y2="90.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="715.9" y1="85.5" x2="715.9" y2="94.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="846.7" y1="85.5" x2="846.7" y2="94.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 773.6 81.0 L 782.6 90.0 L 773.6 99.0 L 764.6 90.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="94.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 3.80（1.67–10.78）原文所載</text>
+<text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATF 前臂移植  vs.  TPTX 全切除</text>
+<text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 5 篇</text>
+<line x1="682.7" y1="142.0" x2="828.6" y2="142.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="682.7" y1="137.5" x2="682.7" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="828.6" y1="137.5" x2="828.6" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 748.6 133.0 L 757.6 142.0 L 748.6 151.0 L 739.6 142.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="146.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 2.66（1.04–8.33）原文所載</text>
+<text x="20.0" y="187.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATF 前臂移植  vs.  SPTX 次全切除</text>
+<text x="20.0" y="204.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 15 篇（本網絡中證據最厚的一條）</text>
+<line x1="604.4" y1="194.0" x2="705.1" y2="194.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="604.4" y1="189.5" x2="604.4" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="705.1" y1="189.5" x2="705.1" y2="198.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 655.0 185.0 L 664.0 194.0 L 655.0 203.0 L 646.0 194.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="198.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.70（0.34–1.43）原文所載</text>
+<text x="20.0" y="239.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATSCM 胸鎖乳突肌移植  vs.  SPTX 次全切除</text>
+<text x="20.0" y="256.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 4 篇</text>
+<line x1="525.3" y1="246.0" x2="722.7" y2="246.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="525.3" y1="241.5" x2="525.3" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="722.7" y1="241.5" x2="722.7" y2="250.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 627.1 237.0 L 636.1 246.0 L 627.1 255.0 L 618.1 246.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="250.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.47（0.11–1.84）原文所載</text>
+<text x="20.0" y="291.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATSCM  vs.  TPTX＋ATF（本篇的標題問題）</text>
+<text x="20.0" y="308.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 0 篇——此估計值 100% 來自間接推論</text>
+<line x1="537.0" y1="298.0" x2="758.2" y2="298.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="537.0" y1="293.5" x2="537.0" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="758.2" y1="293.5" x2="758.2" y2="302.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 650.9 289.0 L 659.9 298.0 L 650.9 307.0 L 641.9 298.0 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="302.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.66（0.13–3.05）原文所載</text>
+<text x="668.0" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 前者復發較少</text>
+<text x="692.0" y="370.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">前者復發較多 ▶</text>
+<text x="14.0" y="392.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">◆ 網絡統合分析的合併估計值（貝氏隨機效果模式，95% 可信區間 CrI）　橘色 ＝ 無任何直接比較支撐的純間接估計</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：五個勝算比與其 95% 可信區間<b>全部逐字取自原文 Results 3.2.5 段落</b>（原文 Fig. 6A 為圖檔，但內文已把每一個數值以文字寫出，故本頁無需推估）；每條比較的「直接比較篇數」為本頁自 Table 1 清點。<b>怎麼解讀</b>：垂直虛線是無效線 1，菱形是網絡統合分析的合併估計值，橫線是 95% 可信區間（貝氏架構下稱 credible interval，不是信賴區間）。前兩列的菱形明顯落在右側且區間不含 1——<b>相對於「切乾淨、不移植」的 TPTX，留下組織的 SPTX 復發勝算是 3.80 倍、前臂移植是 2.66 倍</b>。這是本篇最紮實的發現，也符合外科直覺：留下的功能性副甲狀腺組織越多、越容易再度增生。<b>有何陷阱</b>：(1) <b>橘色那一列（ATSCM vs. ATF）的直接比較篇數是 0</b>，整個估計值來自間接推論，其可信區間寬達 23 倍（0.13 到 3.05），實務上等於「什麼都沒說」。(2) 第二列 TPTX＋ATF vs. TPTX 的區間下界是 <b>1.04</b>，<b>只差一點就跨過無效線</b>，這種臨界顯著在貝氏架構下對先驗設定與模式假設特別敏感，不宜當成穩固結論。(3) 復發的定義由各原始研究自訂，未統一（有的用 iPTH 閾值、有的用臨床症狀、有的用再手術），<b>27 篇研究的「復發」很可能不是同一件事</b>。(4) 本圖不呈現任何本頁自行計算的數值——原文未提供各研究的原始事件數，本頁<b>刻意不做任何推估</b>。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 350" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="350" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">終點二：術後低血鈣——貝氏網絡統合分析的勝算比（對數刻度，無效線 ＝ 1；15 篇、1,217 人）</text>
+<line x1="470.0" y1="64.0" x2="470.0" y2="278.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="470.0" y="295.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.05</text>
+<line x1="567.2" y1="64.0" x2="567.2" y2="278.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="567.2" y="295.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.2</text>
+<line x1="680.0" y1="64.0" x2="680.0" y2="278.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="680.0" y="295.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="792.8" y1="64.0" x2="792.8" y2="278.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="792.8" y="295.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="890.0" y1="64.0" x2="890.0" y2="278.0" stroke="#d9d5cc" stroke-width="1"/>
+<text x="890.0" y="295.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">20</text>
+<line x1="680.0" y1="64.0" x2="680.0" y2="278.0" stroke="#2e2b28" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="14.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="start" font-weight="700">終點／比較</text>
+<text x="1106.0" y="52.0" font-size="12" fill="#6b7079" text-anchor="end" font-weight="700">勝算比 OR（95% 可信區間 CrI）</text>
+<text x="20.0" y="83.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">SPTX 次全切除  vs.  TPTX 全切除（不移植）</text>
+<text x="20.0" y="100.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">勝算比 &lt; 1 ＝ SPTX 低血鈣較少｜唯一達統計顯著者</text>
+<line x1="525.3" y1="90.0" x2="679.3" y2="90.0" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="525.3" y1="85.5" x2="525.3" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<line x1="679.3" y1="85.5" x2="679.3" y2="94.5" stroke="#2f6b62" stroke-width="1.8"/>
+<path d="M 612.2 81.0 L 621.2 90.0 L 612.2 99.0 L 603.2 90.0 Z" fill="#2f6b62"/>
+<text x="1106.0" y="94.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 0.38（0.11–0.99）原文所載</text>
+<text x="20.0" y="135.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATF 前臂移植  vs.  SPTX 次全切除</text>
+<text x="20.0" y="152.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 15 篇</text>
+<line x1="651.9" y1="142.0" x2="762.2" y2="142.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="651.9" y1="137.5" x2="651.9" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="762.2" y1="137.5" x2="762.2" y2="146.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 702.6 133.0 L 711.6 142.0 L 702.6 151.0 L 693.6 142.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="146.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.38（0.67–3.23）原文所載</text>
+<text x="20.0" y="187.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATSCM 胸鎖乳突肌移植  vs.  SPTX 次全切除</text>
+<text x="20.0" y="204.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 4 篇</text>
+<line x1="600.1" y1="194.0" x2="822.6" y2="194.0" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="600.1" y1="189.5" x2="600.1" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<line x1="822.6" y1="189.5" x2="822.6" y2="198.5" stroke="#8a4a3d" stroke-width="1.8"/>
+<path d="M 714.7 185.0 L 723.7 194.0 L 714.7 203.0 L 705.7 194.0 Z" fill="#8a4a3d"/>
+<text x="1106.0" y="198.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.64（0.32–7.65）原文所載</text>
+<text x="20.0" y="239.0" font-size="12.5" fill="#2e2b28" text-anchor="start" font-weight="700">TPTX＋ATSCM  vs.  TPTX＋ATF（本篇的標題問題）</text>
+<text x="20.0" y="256.0" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">直接比較 0 篇——此估計值 100% 來自間接推論</text>
+<line x1="559.8" y1="246.0" x2="808.2" y2="246.0" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="559.8" y1="241.5" x2="559.8" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<line x1="808.2" y1="241.5" x2="808.2" y2="250.5" stroke="#8a6a1f" stroke-width="1.8"/>
+<path d="M 691.6 237.0 L 700.6 246.0 L 691.6 255.0 L 682.6 246.0 Z" fill="#8a6a1f"/>
+<text x="1106.0" y="250.0" font-size="12" fill="#2e2b28" text-anchor="end" font-weight="400">OR 1.18（0.18–6.23）原文所載</text>
+<text x="668.0" y="318.0" font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="600">◀ 前者低血鈣較少</text>
+<text x="692.0" y="318.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">前者低血鈣較多 ▶</text>
+<text x="14.0" y="340.0" font-size="11" fill="#6b7079" text-anchor="start" font-weight="400">◆ 網絡統合分析的合併估計值　注意 SPTX vs. TPTX 的區間上界 0.99「剛好」壓在 1 的邊緣，此類臨界結果最不穩健</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：四個勝算比與可信區間全部逐字取自原文 Results 3.2.5 段落；納入篇數（15 篇）與人數（1,217）取自同段。<b>怎麼解讀</b>：這張圖是上一張的鏡像——<b>切得越少（SPTX）低血鈣越少，切得越乾淨（TPTX）低血鈣越多</b>。唯一達統計顯著的是 SPTX vs. TPTX（OR 0.38，0.11–0.99）。把兩張圖疊在一起看，就是本篇真正的臨床訊息：<b>復發與低血鈣是一組蹺蹺板，你在手術檯上留多少組織，就決定了病人日後要面對哪一種麻煩。</b><b>有何陷阱</b>：(1) <b>0.99 這個上界必須特別點名</b>。95% 可信區間的上界壓在 0.99，意思是「勉強達標」；只要少一篇研究、或改一個先驗，它就會跨過 1。任何把這條寫成「SPTX 已證實低血鈣較少」的引用都過度自信。(2) <b>低血鈣只有 15 篇、1,217 人有資料，不到復發分析的六分之一</b>——27 篇裡有 12 篇根本沒報告這個終點，這本身就是選擇性報告偏誤的溫床。(3) 低血鈣的定義同樣各家自訂：<b>是暫時性還是永久性？術後幾天測？有沒有算入「需長期補鈣」？</b>原文明言這些定義未統一，且只在「可得時」記錄了時間點與判準。(4) 最關鍵的是——<b>本篇的低血鈣終點沒有區分「暫時性」與「永久性副甲狀腺功能低下」</b>，而這兩者對病人的意義天差地遠。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All Outcomes <span class="zh">／ 全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1200px">
+    <thead><tr><th style="width:210px">比較</th><th>直接比較篇數<br><span class="na">本頁清點</span></th><th>復發<br>OR（95% CrI）</th><th>判定</th><th>術後低血鈣<br>OR（95% CrI）</th><th>判定</th><th>本頁註記</th></tr></thead>
+    <tbody>
+      <tr><td><b>SPTX vs. TPTX</b></td><td class="num">9</td><td class="num"><b>3.80（1.67–10.78）</b></td><td><span class="win caution">SPTX 復發明顯較多</span></td><td class="num"><b>0.38（0.11–0.99）</b></td><td><span class="win caution">SPTX 低血鈣較少<br><span class="na">上界 0.99，臨界</span></span></td><td>本篇唯二達統計顯著的比較，且方向相反——<b>蹺蹺板的兩端</b></td></tr>
+      <tr><td><b>TPTX＋ATF vs. TPTX</b></td><td class="num">5</td><td class="num"><b>2.66（1.04–8.33）</b></td><td><span class="win caution">ATF 復發較多<br><span class="na">下界 1.04，臨界</span></span></td><td class="num"><span class="na">原文未列此配對</span></td><td><span class="win neutral">未報告</span></td><td>移植的組織自己也會增生 → 移植體依賴性復發</td></tr>
+      <tr><td>TPTX＋ATF vs. SPTX</td><td class="num">15</td><td class="num">0.70（0.34–1.43）</td><td><span class="win neutral">無顯著差異</span></td><td class="num">1.38（0.67–3.23）</td><td><span class="win neutral">無顯著差異</span></td><td>網絡中證據最厚的一條，卻兩個終點都看不出差別</td></tr>
+      <tr><td>TPTX＋ATSCM vs. SPTX</td><td class="num">4</td><td class="num">0.47（0.11–1.84）</td><td><span class="win neutral">無顯著差異</span></td><td class="num">1.64（0.32–7.65）</td><td><span class="win neutral">無顯著差異</span></td><td>區間寬達 17 倍與 24 倍，實務上無資訊量</td></tr>
+      <tr class="sig"><td class="sig"><b>TPTX＋ATSCM vs. TPTX＋ATF</b><br><span class="na">（本篇的標題問題）</span></td><td class="num sig"><b>0</b></td><td class="num">0.66（0.13–3.05）</td><td><span class="win neutral">無顯著差異<br><span class="na">100% 間接</span></span></td><td class="num">1.18（0.18–6.23）</td><td><span class="win neutral">無顯著差異<br><span class="na">100% 間接</span></span></td><td class="sig"><b>沒有任何一篇研究同時做過這兩種移植部位</b>；摘要與正文對此估計值的方向敘述亦不一致</td></tr>
+      <tr><td>TPTX＋ATSCM vs. TPTX</td><td class="num">4</td><td class="num"><span class="na">原文未列此配對</span></td><td><span class="win neutral">未報告</span></td><td class="num"><span class="na">原文未列此配對</span></td><td><span class="win neutral">未報告</span></td><td>有直接證據卻未報告合併值，是本篇報告完整性的缺口</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tbl-wrap" style="margin-top:18px">
+  <table style="min-width:900px">
+    <thead><tr><th style="width:180px">分析層面</th><th>復發</th><th>術後低血鈣</th></tr></thead>
+    <tbody>
+      <tr><td><b>納入研究數</b></td><td class="num">27 篇</td><td class="num">15 篇（<b>12 篇未報告此終點</b>）</td></tr>
+      <tr><td><b>納入人數</b></td><td class="num">6,979</td><td class="num">1,217（<b>僅為復發分析的 17.4%，本頁自行計算</b>）</td></tr>
+      <tr><td>網絡中 ATF 組人數</td><td class="num">3,359</td><td class="num">774（原文 Fig. 5B 圖說所載）</td></tr>
+      <tr><td>一致性檢驗</td><td colspan="2">node-splitting 法檢驗直接與間接證據的一致性，<b>所有終點皆 P &gt; 0.05</b>，故採一致性模式</td></tr>
+      <tr><td>發表偏誤</td><td colspan="2">以漏斗圖評估；原文稱「復發終點的多數研究平均分佈於漏斗圖兩側，發表偏誤可能性低」。<b>原文未做 Egger 或其他統計檢定，僅以目視判讀</b></td></tr>
+      <tr><td>模式設定</td><td colspan="2">R 4.5.0 gemtc ＋ rjags；隨機效果；4 條鏈；burn-in 5,000；取樣 10,000；thinning ＝ 1。<b>原文未報告收斂診斷（如 Gelman–Rubin R̂）、未報告異質性參數 τ 的估計值，亦未說明先驗分佈的設定</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="raw">
+  <h2>SUCRA Ranking <span class="zh">／ 排序機率與本頁重繪圖</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" width="100%" role="img" style="font-family:-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<rect x="0" y="0" width="1120" height="470" fill="#faf9f6"/>
+<text x="14.0" y="26.0" font-size="15" fill="#2e2b28" text-anchor="start" font-weight="700">SUCRA 排序值：數值越高 ＝ 越可能是該終點「最差」的術式（注意本篇內文與圖說給出兩套不同數字）</text>
+<line x1="90" y1="78" x2="90" y2="374" stroke="#d9d5cc" stroke-width="1"/>
+<line x1="90" y1="374.0" x2="1090" y2="374.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="378.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="90" y1="314.8" x2="1090" y2="314.8" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="318.8" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="90" y1="255.6" x2="1090" y2="255.6" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="259.6" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="90" y1="196.4" x2="1090" y2="196.4" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="200.4" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<line x1="90" y1="137.2" x2="1090" y2="137.2" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="141.2" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="90" y1="78.0" x2="1090" y2="78.0" stroke="#d9d5cc" stroke-width="0.7"/>
+<text x="80.0" y="82.0" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="20.0" y="62.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="600">SUCRA（%）——越高代表越可能排在「最差」</text>
+<rect x="123.0" y="106.8" width="41.0" height="267.2" fill="#8a4a3d"/>
+<text x="143.5" y="99.8" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">90.26</text>
+<rect x="169.0" y="106.7" width="41.0" height="267.3" fill="#c08b7e"/>
+<text x="189.5" y="99.7" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">90.32</text>
+<rect x="215.0" y="328.1" width="41.0" height="45.9" fill="#2f6b62"/>
+<text x="235.5" y="321.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">15.51</text>
+<rect x="261.0" y="328.1" width="41.0" height="45.9" fill="#7aa9a1"/>
+<text x="281.5" y="321.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">15.51</text>
+<text x="215.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">SPTX</text>
+<text x="215.0" y="411.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">次全切除</text>
+<rect x="373.0" y="351.1" width="41.0" height="22.9" fill="#8a4a3d"/>
+<text x="393.5" y="344.1" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">7.75</text>
+<rect x="419.0" y="350.9" width="41.0" height="23.1" fill="#c08b7e"/>
+<text x="439.5" y="343.9" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">7.81</text>
+<rect x="465.0" y="120.5" width="41.0" height="253.5" fill="#2f6b62"/>
+<text x="485.5" y="113.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">85.65</text>
+<rect x="511.0" y="121.3" width="41.0" height="252.7" fill="#7aa9a1"/>
+<text x="531.5" y="114.3" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">85.38</text>
+<text x="465.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">TPTX</text>
+<text x="465.0" y="411.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">全切除不移植</text>
+<rect x="623.0" y="192.3" width="41.0" height="181.7" fill="#8a4a3d"/>
+<text x="643.5" y="185.3" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">61.4</text>
+<rect x="669.0" y="191.5" width="41.0" height="182.5" fill="#c08b7e"/>
+<text x="689.5" y="184.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">61.65</text>
+<rect x="715.0" y="240.5" width="41.0" height="133.5" fill="#2f6b62"/>
+<text x="735.5" y="233.5" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">45.09</text>
+<rect x="761.0" y="240.7" width="41.0" height="133.3" fill="#7aa9a1"/>
+<text x="781.5" y="233.7" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">45.05</text>
+<text x="715.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">TPTX＋ATF</text>
+<text x="715.0" y="411.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">前臂移植</text>
+<rect x="873.0" y="253.9" width="41.0" height="120.1" fill="#8a4a3d"/>
+<text x="893.5" y="246.9" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">40.59</text>
+<rect x="919.0" y="254.9" width="41.0" height="119.1" fill="#c08b7e"/>
+<text x="939.5" y="247.9" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">40.22</text>
+<rect x="965.0" y="214.9" width="41.0" height="159.1" fill="#2f6b62"/>
+<text x="985.5" y="207.9" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">53.76</text>
+<rect x="1011.0" y="214.0" width="41.0" height="160.0" fill="#7aa9a1"/>
+<text x="1031.5" y="207.0" font-size="11.5" fill="#2e2b28" text-anchor="middle" font-weight="700">54.06</text>
+<text x="965.0" y="396.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="600">TPTX＋ATSCM</text>
+<text x="965.0" y="411.0" font-size="11.5" fill="#6b7079" text-anchor="middle" font-weight="400">胸鎖乳突肌移植</text>
+<rect x="90.0" y="442.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="108.0" y="452.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">復發（內文所載）</text>
+<rect x="202.0" y="442.0" width="12" height="12" fill="#c08b7e"/>
+<text x="220.0" y="452.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">復發（圖 8 圖說所載）</text>
+<rect x="358.0" y="442.0" width="12" height="12" fill="#2f6b62"/>
+<text x="376.0" y="452.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">低血鈣（內文所載）</text>
+<rect x="481.0" y="442.0" width="12" height="12" fill="#7aa9a1"/>
+<text x="499.0" y="452.0" font-size="11.5" fill="#6b7079" text-anchor="start" font-weight="400">低血鈣（圖 8 圖說所載）</text>
+<text x="1106.0" y="462.0" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">兩套數字皆逐字取自原文，本頁未做任何調整</text>
+</svg></div>
+    <div class="cap"><b>資料來源</b>：本圖四組長條分別逐字取自原文的兩個不同位置——<b>Results 內文</b>（3.2.5 段）與 <b>Fig. 8 的圖說文字</b>。<b>兩處數字不完全相同</b>，本頁並列呈現、未做任何調整或取平均。<b>怎麼解讀</b>：SUCRA（累積排序曲線下面積）把「這個術式最可能排第幾」壓縮成 0–100% 的一個數。<b>特別注意：本篇的方向與多數論文相反——原文明言「higher SUCRA values indicate a higher probability of being ranked as the worst treatment」，也就是數值越高越糟。</b>看復發（紅色系）：SPTX 高達 90%，是最可能復發的；TPTX 只有 8%，最不易復發。看低血鈣（綠色系）：完全顛倒過來，TPTX 高達 86%，SPTX 只有 16%。<b>兩組長條的形狀互為鏡像，這就是「復發 ↔ 低血鈣」蹺蹺板最直觀的一張圖。</b><b>有何陷阱（三個）</b>：(1) <b>SUCRA 是排名，不是效果量。</b>就算四種術式的真實差異微不足道，SUCRA 依然會排出一個看似分明的順序。ATF（61%）與 ATSCM（40%）在復發上看起來差了 21 個百分點，但它們的 OR 可信區間是 0.13–3.05——<b>排名的視覺對比遠遠超過證據本身的分辨力</b>，原文自己也連續兩次警告「should be interpreted as supportive ranking information rather than definitive evidence」。(2) <b>原文兩處數字不一致</b>（例如復發的 ATSCM：內文 40.59% vs. 圖說 40.22%；低血鈣的 ATSCM：內文 53.76% vs. 圖說 54.06%）。差距雖小、不影響排序，但顯示至少跑過兩次分析而未統一報告。(3) <b>ATSCM 的排序建立在 163 人之上</b>，與 ATF 的 3,359 人放在同一張圖上等高比較，容易讓人忘記兩者的證據厚度差了 20 倍。</div>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Internal Consistency Checks <span class="zh">／ 數值一致性檢查（本頁自行驗算）</span></h2>
+  <div class="tbl-wrap">
+  <table style="min-width:1000px">
+    <thead><tr><th style="width:210px">檢查項目</th><th style="width:250px">原文所載</th><th style="width:250px">本頁驗算</th><th>判定與說明</th></tr></thead>
+    <tbody>
+      <tr><td>四組人數加總</td><td>SPTX 2,493／TPTX 964／ATF 3,359／ATSCM 163；總計 6,979</td><td>逐篇加總 Table 1：2,493／964／3,359／163；合計 6,979 ✓</td><td><b>完全相符。</b>這是本篇資料抽取品質的最佳佐證</td></tr>
+      <tr><td>研究設計篇數</td><td>回溯性世代 20、前瞻性世代 5、RCT 2</td><td>20 ＋ 5 ＋ 2 ＝ 27 ✓；表中逐列清點亦為 20／5／2 ✓</td><td><b>相符</b></td></tr>
+      <tr><td>兩臂／三臂研究數</td><td>22 篇兩臂、5 篇三臂</td><td>22 ＋ 5 ＝ 27 ✓；組別總數 22×2 ＋ 5×3 ＝ 59，與表中清點一致 ✓</td><td><b>相符</b></td></tr>
+      <tr><td class="sig"><b>PRISMA 起點筆數</b></td><td class="sig">Results 內文：<b>591</b> 筆<br>Fig. 2 圖說：<b>519</b> 筆</td><td class="sig">內文：591 → 去重 400 → 排除 373 → <b>27</b> ✓（自洽）<br>圖說：519 − 119 ＝ 400 → −107 ＝ 293 → −266 ＝ <b>27</b> ✓（亦自洽）</td><td class="sig"><b>原文內部不一致。</b>兩條路徑各自算得通、都收斂到 400 與 27，但<b>起點差 72 筆</b>，且對「有沒有全文評讀階段」的敘述完全不同（內文暗示沒有，圖說寫評讀了 293 篇）。本頁並列呈現，不推測何者為正</td></tr>
+      <tr><td class="sig"><b>納入研究的人數範圍</b></td><td class="sig">「sample sizes ranged from <b>15 to 898</b> participants」</td><td class="sig">由 Table 1 逐篇加總：研究層級最小 <b>22</b>（Ockert 2002，11＋11）、最大 <b>1,857</b>（Matsuoka 2007，20＋1,837）；另 Anderson 2017 為 1,130。組別層級最小 <b>4</b>（Low 2009 的 ATSCM 組）、最大 <b>1,837</b></td><td class="sig"><b>不相符。</b><b>有兩篇研究明顯超過所稱的 898 上界。</b>本頁能追到的最接近來源是：<b>898 恰為 Kuo 2014 的研究合計</b>（662＋236），<b>15 恰為 Neagoe 2021 的 TPTX 組人數</b>——一個是研究層級、一個是組別層級，<b>兩種尺度混用</b>，且無論採哪一種尺度都無法同時成立</td></tr>
+      <tr><td class="sig">SUCRA 數值</td><td class="sig">內文：復發 SPTX 90.26／TPTX 7.75／ATF 61.40／ATSCM 40.59；低血鈣 TPTX 85.65／ATSCM 53.76／ATF 45.09／SPTX 15.51<br>Fig. 8 圖說：復發 90.32／7.81／61.65／40.22；低血鈣 15.51／85.38／45.05／54.06</td><td class="sig">兩套數字的<b>排序完全一致</b>，數值差距 0.02–0.34 個百分點</td><td class="sig"><b>輕微不一致。</b>不影響任何結論，最可能是兩次 MCMC 抽樣的蒙地卡羅誤差（貝氏模擬本來就有隨機性），但<b>正確做法是固定亂數種子並統一報告一套數字</b>。本頁兩套並列</td></tr>
+      <tr><td class="sig"><b>ATF vs. ATSCM 的方向敘述</b></td><td class="sig">摘要：「between TPTX + ATF and TPTX + ATSCM … OR 0.66」<br>Results：「TPTX + ATSCM versus TPTX + ATF (OR 0.66)」</td><td class="sig">同一個 0.66 被指為兩個相反方向的比較</td><td class="sig"><b>方向敘述不一致。</b>因區間橫跨 1，不影響「無顯著差異」的結論；但若要引用點估計值的方向，必須回原文查核</td></tr>
+      <tr><td class="sig"><b>直接比較篇數</b></td><td class="sig">原文僅稱「the limited number of direct comparisons between the two autotransplantation approaches」</td><td class="sig">本頁逐篇清點：ATF–ATSCM 之間為 <b>0 篇</b>（其餘：ATF–SPTX 15、SPTX–TPTX 9、ATF–TPTX 5、ATSCM–SPTX 4、ATSCM–TPTX 4）</td><td class="sig"><b>原文用語過於保守。</b>「limited」與「zero」在網絡統合分析中是本質不同的兩件事：前者是精確度問題，後者則使整條估計完全仰賴可轉移性假設。<b>本頁認為這是原文最應該明說而未明說的一點</b></td></tr>
+      <tr><td>低血鈣分析佔比</td><td>15 篇、1,217 人（復發為 27 篇、6,979 人）</td><td>1,217 / 6,979 ＝ <b>17.4%</b>（本頁自行計算）；未報告此終點者 27 − 15 ＝ <b>12 篇</b></td><td><b>相符。</b>但此比例本身即為一項警訊：近半數研究未報告低血鈣</td></tr>
+      <tr><td>組別出現篇數</td><td class="na">原文未列</td><td>SPTX 23 篇／TPTX 13 篇／ATF 17 篇／ATSCM 6 篇，合計 59 個組別 ✓</td><td><b>本頁自行清點</b>，與 59 個組別的推算相符</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="clin">
+  <h2>Clinical Implications <span class="zh">／ 臨床意涵：誰適合、換來什麼、代價是什麼、知情同意怎麼談</span></h2>
+  <div class="call amber">
+    <div class="h">一句話版本</div>
+    如果你打開這篇是想知道「該種前臂還是胸鎖乳突肌」，<b>本篇給不了答案，而且它給不了答案的原因不是「差異很小」，是「根本沒人比較過」</b>。但它仍然值得讀完，因為它把另一件更重要的事量化了：<b>SPTX、TPTX＋AT、TPTX 三者之間，是一條「復發風險」與「低血鈣風險」互相交換的連續光譜</b>，而你在手術檯上決定留多少組織，就等於替病人選了他日後要面對哪一種麻煩。
+  </div>
+
+  <h3>誰適合開刀（本篇的病人是誰）</h3>
+  <ul class="clean">
+    <li><b>本篇的族群是「腎因性」SHPT</b>——慢性腎病（尤其末期腎病透析）引起的續發性副甲狀腺機能亢進，盛行率在末期腎病病人達 30–50%。<b>原發性與三發性副甲狀腺亢進被明確排除</b>（除非能單獨抽出腎因性資料）。</li>
+    <li><b>手術時機</b>：飲食磷限制、磷結合劑、矯正低血鈣、維生素 D 補充為第一線；<b>藥物治療失敗或無法耐受時，指引強力建議副甲狀腺切除</b>。原文引述：每年約有 1–2% 的 SHPT 病人接受副甲狀腺切除。</li>
+    <li><b>擬鈣劑（calcimimetics）的出現改變了什麼</b>：原文明言，即使藥物治療進步，<b>仍有相當數量的難治性病人需要手術</b>，且即便初次手術成功，長期復發仍是重要臨床問題。</li>
+    <li><b>本篇無法回答的</b>：術中 iPTH 監測的角色、是否同時做胸腺切除（原文自承此資料未一致報告）、術後鈣與維生素 D 的補充方案（同樣未一致報告）、以及「異位副甲狀腺」的處理。</li>
+  </ul>
+
+  <h3>換來什麼、代價是什麼（把兩個終點放在一起看）</h3>
+  <div class="kv">
+    <div class="c"><div class="lab">SPTX 次全切除</div><div class="big">復發 ↑</div><div class="sub">vs. TPTX：OR 3.80<br>（1.67–10.78）</div></div>
+    <div class="c teal"><div class="lab">SPTX 次全切除</div><div class="big">低血鈣 ↓</div><div class="sub">vs. TPTX：OR 0.38<br>（0.11–0.99，臨界）</div></div>
+    <div class="c"><div class="lab">TPTX＋ATF</div><div class="big">復發 ↑</div><div class="sub">vs. TPTX：OR 2.66<br>（1.04–8.33，臨界）</div></div>
+    <div class="c teal"><div class="lab">TPTX 全切除</div><div class="big">復發最低</div><div class="sub">SUCRA 僅 8%<br>（越低越好）</div></div>
+    <div class="c amber"><div class="lab">TPTX 全切除</div><div class="big">低血鈣最高</div><div class="sub">SUCRA 86%<br>永久性副甲低下之虞</div></div>
+    <div class="c amber"><div class="lab">ATF vs. ATSCM</div><div class="big">0 篇</div><div class="sub">直接比較的研究數<br>（本頁自行清點）</div></div>
+  </div>
+
+  <h3>那麼在檯上到底怎麼選？（原文能支持與不能支持的部分，本頁分開列）</h3>
+  <div class="tbl-wrap">
+  <table style="min-width:820px">
+    <thead><tr><th style="width:170px">論點</th><th>內容</th><th style="width:140px">證據性質</th></tr></thead>
+    <tbody>
+      <tr><td><b>留組織 → 會復發</b></td><td>SPTX（OR 3.80）與 TPTX＋ATF（OR 2.66）的復發風險都顯著高於 TPTX。留下來的功能性組織本身就是復發的來源</td><td><span class="win">本篇數據支持</span></td></tr>
+      <tr><td><b>切乾淨 → 低血鈣</b></td><td>TPTX 的低血鈣風險最高（SUCRA 86%），SPTX 最低（15.5%）。SPTX vs. TPTX 的 OR 0.38（0.11–0.99）</td><td><span class="win caution">本篇數據支持<br>但上界臨界</span></td></tr>
+      <tr><td><b>前臂 vs. 胸鎖乳突肌<br>的結果差異</b></td><td>復發 OR 0.66（0.13–3.05）、低血鈣 OR 1.18（0.18–6.23），皆無顯著差異</td><td><span class="win neutral">無直接證據<br>純間接推論</span></td></tr>
+      <tr><td><b>前臂的實務優勢（一）<br>定位復發來源</b></td><td>移植體若增生導致復發，可<b>比較「有移植側」與「無移植側」兩手的 iPTH 濃度</b>，藉落差判斷復發是否源自移植體。胸鎖乳突肌位於頸部術野內，無法用這招</td><td><span class="win">機轉層面之論述<br>（非本篇數據）</span></td></tr>
+      <tr><td><b>前臂的實務優勢（二）<br>再手術容易</b></td><td>前臂的增生移植體<b>常可在局部麻醉下切除</b>；胸鎖乳突肌內的移植體則需全身麻醉。前臂移植位於肌膜下、與橈神經尺神經界線分明，易定位與完整切除</td><td><span class="win">機轉層面之論述<br>（非本篇數據）</span></td></tr>
+      <tr><td><b>胸鎖乳突肌的反駁</b></td><td>原文亦替 ATSCM 說了公道話：<b>針對移植體的切除與「深部頸部再探查」在解剖上是兩回事</b>——前者在肌肉植入處操作，通常<b>不需解剖到喉返神經的層次</b></td><td><span class="win">機轉層面之論述</span></td></tr>
+      <tr><td><b>手術時間</b></td><td>前臂移植需要<b>第二個手術野</b>，可能較費時；胸鎖乳突肌可在同一頸部切口內完成。但原文明言<b>各研究對手術時間的報告過於零散，無法做量化比較</b></td><td><span class="win neutral">原文未列數值</span></td></tr>
+      <tr><td><b>住院天數</b></td><td>有研究報告 ATSCM 的中位住院天數較短，但<b>原文駁斥「因為前臂要拆線」這個解釋</b>，指出住院天數受術後鈣監測、飢餓骨症候群、透析排程、出院標準、共病與醫療體系因素影響</td><td><span class="win neutral">無法歸因</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>知情同意怎麼談（可直接照唸的版本）</h3>
+  <div class="call teal">
+    <div class="h">建議說法（對透析病人）</div>
+    「你因為長期腎功能衰竭，副甲狀腺被『操』到整組變大、荷爾蒙一直分泌過多，藥物已經壓不住了，所以我們建議開刀。<br><br>人有四顆副甲狀腺。<b>手術的關鍵不在切不切，而在『要留多少』</b>——這是一個蹺蹺板：<br>· <b>留一小塊在原位（次全切除）</b>：術後比較不會低血鈣，但將來<b>復發的機會明顯比較高，大約是全切的三倍多</b>。<br>· <b>四顆全部切掉、什麼都不留</b>：復發機會最低，但<b>術後低血鈣最嚴重</b>，有可能變成長期的副甲狀腺功能低下，要一輩子補鈣和活性維生素 D。<br>· <b>四顆全部切掉，但把最正常的一顆切成小碎塊種回身體裡（自體移植）</b>：這是目前全世界最常做的折衷，介於兩者之間。<br><br>如果採用第三種，種在哪裡有兩個選擇：<b>前臂</b>或<b>頸部的胸鎖乳突肌</b>。<b>我要老實跟你說：全世界到目前為止，沒有任何一篇研究直接比較過這兩個位置</b>——最新的一篇彙整了 27 篇研究、將近 7,000 個病人，也只能用間接推算，結論是『看不出差別』。<br><br>所以我的建議會偏向<b>前臂</b>，理由不是數據，而是實務上的兩個好處：<b>第一，如果將來又復發，我可以抽你兩隻手的血比較荷爾蒙濃度，直接判斷是不是種下去那塊在作怪</b>；<b>第二，如果真的要再拿掉，在前臂常常打局部麻醉就能做，不必再進頸部、也不必全身麻醉。</b>代價是要多開一個小傷口，手術可能多花一點時間。<br><br>不論選哪一種，<b>術後頭幾天低血鈣是預期中的事</b>，會有手麻、嘴唇麻、抽筋，我們會密集抽血、積極補鈣和維生素 D，特別要注意所謂的『飢餓骨症候群』。而且要有心理準備：<b>這個病本來就會復發</b>，所以術後要長期追蹤副甲狀腺素。」
+  </div>
+</section>
+
+<section id="limit">
+  <h2>Limitations &amp; Red Flags <span class="zh">／ 研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li class="sig"><b>本篇的標題問題沒有任何直接證據。</b>本頁逐篇清點 27 篇研究的 59 個治療組後確認：<b>ATF 與 ATSCM 之間是 0 篇直接比較</b>。原文只寫「limited number of direct comparisons」，用語過於保守——「有限」與「沒有」在網絡統合分析中是本質不同的兩件事。</li>
+    <li class="sig"><b>可轉移性假設未被檢驗。</b>純間接估計的有效性建立在「做 ATF 的 17 篇研究與做 ATSCM 的 6 篇研究，其病人與情境夠相似」之上。但 ATF 的研究橫跨 1973–2022 年、遍及歐美日，ATSCM 的研究幾乎全在 2009 年後的中國與羅馬尼亞。<b>原文既未檢驗也未在限制中提及此點</b>。</li>
+    <li><b>ATSCM 組只有 163 人（占全體 2.3%），來自 6 篇研究，其中一篇的該組只有 4 人。</b>所有與 ATSCM 相關的可信區間都寬到失去實務意義（最寬者達 24 倍）。</li>
+    <li><b>27 篇中只有 2 篇 RCT，且都是 1991 與 1999 年的小型試驗</b>（40 人與 36 人），其中一篇分組嚴重不均（28 vs. 8）。其餘 25 篇全為世代研究，<b>20 篇是回溯性的</b>，選擇偏誤與殘餘干擾無法排除。</li>
+    <li><b>NOS ≥ 5 分即視為低偏誤風險，門檻寬鬆。</b>納入研究的 NOS 從 5 分到 9 分都有，全部被歸為「低風險」。5 分（滿分 9 分）在多數方法學文獻中不會被視為高品質。</li>
+    <li><b>證據橫跨 1973–2022 年，接近半個世紀。</b>這段期間磷結合劑、活性維生素 D、擬鈣劑、透析充分性與手術指徵全部改變。年代異質性無法以隨機效果模式消化。</li>
+    <li class="sig"><b>兩個終點的定義都由各原始研究自訂，未統一。</b>「復發」可能是 iPTH 超過某閾值、臨床症狀、或需再手術；「低血鈣」<b>完全沒有區分暫時性與永久性</b>——而這兩者對病人的意義天差地遠。原文自承此為異質性來源，但未做敏感度分析。</li>
+    <li><b>低血鈣分析只有 15 篇、1,217 人</b>（僅為復發分析人數的 17.4%，本頁自行計算），<b>有 12 篇研究完全未報告此終點</b>。選擇性報告偏誤的可能性很高。</li>
+    <li><b>幾篇超大型回溯研究主宰整個結果。</b>Matsuoka 2007 的 ATF 組獨占 1,837 人（該組總數的 55%），加上 Anderson 2017、Isaksson 2019、Kuo 2014，四篇即占全體六成以上，且全為回溯性。</li>
+    <li class="sig"><b>原文內部有三處數字不一致</b>：PRISMA 起點 591 vs. 519（且對「是否有全文評讀階段」的敘述完全不同）；SUCRA 內文與圖說兩套數字；納入研究人數範圍稱「15 to 898」但 Table 1 實為 22 至 1,857。詳見「數值一致性檢查」。</li>
+    <li><b>貝氏分析的關鍵細節未報告</b>：沒有收斂診斷（Gelman–Rubin R̂）、沒有異質性參數 τ 的估計、沒有先驗分佈的說明、沒有固定亂數種子（這正是 SUCRA 出現兩套數字的可能原因）。</li>
+    <li><b>發表偏誤僅以漏斗圖目視判讀</b>，未做 Egger 檢定或其他統計檢驗。在納入 27 篇、且刻意檢索中文資料庫的情況下，這項評估過於粗略。</li>
+    <li><b>多個臨床上要緊的變項無法合成</b>：手術指徵、術後鈣與維生素 D 補充需求、是否同時做胸腺切除、手術併發症、死亡率、症狀緩解、手術時間、移植體定位方法、再手術難度——原文全部列為「報告不一致而無法分析」。</li>
+    <li><b>文獻計量學那半篇與臨床問題無關。</b>「美國發表 679 篇、中國 221 篇、德國 161 篇」這類資訊對「該種在哪裡」毫無決策價值，卻占了論文相當篇幅與一整張圖。<b>讀者可以直接跳過 3.1 節</b>。</li>
+    <li><b>SUCRA 的方向與慣例相反。</b>本篇定義「數值越高＝越可能是最差」，與多數 NMA 論文相反。若不細讀 Methods 而直接看圖，極易得出完全顛倒的結論——<b>這是本篇最容易被誤讀的一個地方</b>。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">／ 醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>續發性副甲狀腺機能亢進 <span class="en">Secondary hyperparathyroidism, SHPT</span></dt><dd>慢性腎病導致低血鈣、高血磷與活性維生素 D 不足，長期刺激副甲狀腺增生並持續分泌 PTH。末期腎病病人盛行率 30–50%。</dd></div>
+      <div class="gl-row"><dt>三發性副甲狀腺機能亢進 <span class="en">Tertiary hyperparathyroidism</span></dt><dd>續發性亢進日久後，副甲狀腺變成自主分泌、不再受血鈣回饋抑制（常見於腎移植後）。<b>本篇明確排除</b>。</dd></div>
+      <div class="gl-row"><dt>副甲狀腺切除 <span class="en">Parathyroidectomy, PTX</span></dt><dd>SHPT 的根治性治療。本篇比較四種術式：SPTX、TPTX、TPTX＋ATF、TPTX＋ATSCM。</dd></div>
+      <div class="gl-row"><dt>次全副甲狀腺切除 <span class="en">Subtotal parathyroidectomy, SPTX</span></dt><dd>切除三個半腺體，<b>原位保留約 40–80 毫克</b>外觀最正常的組織。復發率較高，且一旦復發，頸部再手術相當困難。</dd></div>
+      <div class="gl-row"><dt>全副甲狀腺切除 <span class="en">Total parathyroidectomy, TPTX</span></dt><dd>找出並切除所有副甲狀腺組織、不做移植。復發最少，但<b>持續低血鈣、永久性副甲狀腺功能低下與骨代謝異常</b>限制了它的使用。</dd></div>
+      <div class="gl-row"><dt>全切除加自體移植 <span class="en">TPTX with autotransplantation, TPTX + AT</span></dt><dd>切除所有腺體後，把外觀最正常的一顆<b>切成約 10–20 mm³ 的碎塊</b>移植回體內。1968 年問世，現為全球多數中心最常用的術式。</dd></div>
+      <div class="gl-row"><dt>前臂自體移植 <span class="en">Forearm autotransplantation, ATF</span></dt><dd>把碎塊種入前臂肌肉（肌膜下）。優點是可比較兩手 iPTH 落差以判斷復發來源，且再切除常可局部麻醉完成。本篇 3,359 人。</dd></div>
+      <div class="gl-row"><dt>胸鎖乳突肌自體移植 <span class="en">Sternocleidomastoid autotransplantation, ATSCM</span></dt><dd>把碎塊種入頸部的胸鎖乳突肌，可在同一切口內完成。缺點是位於頸部術野、術後監測較不易。本篇僅 163 人。</dd></div>
+      <div class="gl-row"><dt>網絡統合分析 <span class="en">Network meta-analysis, NMA</span></dt><dd>同時比較三種以上治療，並結合<b>直接證據</b>（同一研究內的比較）與<b>間接證據</b>（經由共同對照的推論）。本篇的 ATF vs. ATSCM 為 100% 間接。</dd></div>
+      <div class="gl-row"><dt>直接 vs. 間接證據 <span class="en">Direct vs. indirect evidence</span></dt><dd>直接＝同一篇研究裡把 A 和 B 拿來比；間接＝A 比過 C、B 也比過 C，於是推論 A 與 B 的關係。<b>間接證據的可信度取決於「可轉移性」</b>。</dd></div>
+      <div class="gl-row"><dt>可轉移性 <span class="en">Transitivity</span></dt><dd>間接比較成立的核心假設：提供 A–C 與 B–C 證據的研究，其病人族群、情境與方法必須夠相似。<b>本篇未檢驗此假設</b>。</dd></div>
+      <div class="gl-row"><dt>一致性與節點分割法 <span class="en">Consistency; node-splitting</span></dt><dd>檢查直接證據與間接證據是否吻合的方法。本篇所有比較 P &gt; 0.05，故採一致性模式。<b>但沒有直接證據的那一條連線（ATF–ATSCM），此檢驗根本無從執行</b>。</dd></div>
+      <div class="gl-row"><dt>可信區間 <span class="en">Credible interval, CrI</span></dt><dd>貝氏統計的區間估計，意義是「參數有 95% 機率落在此範圍」。<b>與頻率學派的信賴區間（CI）概念不同，不可混用</b>。</dd></div>
+      <div class="gl-row"><dt>SUCRA <span class="en">Surface under the cumulative ranking curve</span></dt><dd>把「該治療最可能排第幾」濃縮為 0–100% 的單一數值。<b>本篇定義為「越高＝越可能是最差」</b>，與多數論文相反。SUCRA 是排名而非效果量，切勿據此推論差異大小。</dd></div>
+      <div class="gl-row"><dt>Rankogram 排序圖</dt><dd>呈現每種治療落在第 1、2、3、4 名的機率分佈。與 SUCRA 為同一資訊的兩種呈現方式。</dd></div>
+      <div class="gl-row"><dt>馬可夫鏈蒙地卡羅 <span class="en">Markov chain Monte Carlo, MCMC</span></dt><dd>貝氏模型的數值求解法。本篇用 4 條鏈、burn-in 5,000 次、取樣 10,000 次。<b>因為有隨機性，未固定亂數種子時重跑會得到略微不同的數值</b>（可能就是 SUCRA 出現兩套數字的原因）。</dd></div>
+      <div class="gl-row"><dt>Newcastle–Ottawa Scale, NOS</dt><dd>非隨機研究的品質評分（選擇、可比性、結果三面向，滿分 9 分）。本篇以 ≥ 5 分即視為低偏誤風險。</dd></div>
+      <div class="gl-row"><dt>擬鈣劑 <span class="en">Calcimimetics（如 cinacalcet）</span></dt><dd>作用於副甲狀腺鈣感受器、降低 PTH 分泌的藥物。改善了 SHPT 的內科治療，但難治性病人仍需手術。</dd></div>
+      <div class="gl-row"><dt>完整副甲狀腺素 <span class="en">Intact PTH, iPTH</span></dt><dd>臨床常用的副甲狀腺素檢測。<b>前臂移植的一大優勢即在於可比較兩手 iPTH 濃度，藉落差判斷復發是否源自移植體</b>。</dd></div>
+      <div class="gl-row"><dt>飢餓骨症候群 <span class="en">Hungry bone syndrome</span></dt><dd>副甲狀腺切除後，骨骼大量攝取鈣磷造成的嚴重且持續的低血鈣。是術後低血鈣的重要成因之一，本篇未單獨分析。</dd></div>
+      <div class="gl-row"><dt>喉返神經 <span class="en">Recurrent laryngeal nerve</span></dt><dd>支配聲帶的神經，頸部再手術時損傷風險最高的結構。原文強調：<b>切除胸鎖乳突肌內的移植體，與「深部頸部再探查」在解剖上不同，通常不需解剖到此神經的層次</b>。</dd></div>
+      <div class="gl-row"><dt>K/DOQI 指引</dt><dd>美國腎臟基金會針對慢性腎病骨礦物質代謝異常的臨床實務指引，<b>推薦 SPTX 與 TPTX＋AT 為優先術式</b>，但未指定移植部位。</dd></div>
+      <div class="gl-row"><dt>文獻計量學 <span class="en">Bibliometrics</span></dt><dd>以發表量、引用網絡、國家與機構分佈等量化描述某研究領域的樣貌。本篇前半部即為此，<b>與臨床決策無關，可略過</b>。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources &amp; Redraw Statement <span class="zh">／ 來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻</b>：Wang Y, Bao R, Zhang F, Wang J, Cheng K.
+  <i>Forearm vs sternocleidomastoid autotransplantation after total parathyroidectomy for secondary hyperparathyroidism: a network meta-analysis and global bibliometric study.</i>
+  Front Endocrinol (Lausanne). 2026;17:1855948（線上發表 2026 年 7 月 22 日）。DOI：<a href="https://doi.org/10.3389/fendo.2026.1855948">10.3389/fendo.2026.1855948</a>　·　PubMed：<a href="https://pubmed.ncbi.nlm.nih.gov/42558382/">PMID 42558382</a>　·　PubMed Central：PMC13437453（Open Access）。系統性回顧登錄：PROSPERO CRD420251236587。</p>
+  <p><b>本篇納入的 27 項研究</b>（依原文 Table 1 所載之第一作者與年份）：Liang 2015、Neagoe 2016、Hargrove 1999、Anderson 2017、Sakman 2014、Low 2009、Zmijewski 2019、Schneider 2011、Casella 2023、Rajeev 2016、Qiu 2023、Neagoe 2021、Sari 2019、Rothmund 1991、Tominaga 1992、Ockert 2002、Nichols 1990、Matsuoka 2007、He 2014、Zhang 2019、Gao 2017、Rayes 2008、Dotzenrath 1995、Yu 2017、Kuo 2014、Isaksson 2019、Shih 2008。<span class="na">原文 Table 1 僅列第一作者與年份（完整書目以內文引用編號標示），本頁不另行補充，以免誤植。</span></p>
+  <p><b>資料取得方式</b>：本頁內容取自 PubMed 之書目與摘要紀錄，以及 PubMed Central 之全文（Introduction／Materials and methods／Results／Discussion／Conclusion 全文，含 <b>Table 1 的完整格內數值</b>與 Fig. 1–8 的圖說文字）。<b>原文 Fig. 2（PRISMA 流程）、Fig. 5（網絡圖）、Fig. 6（森林圖）、Fig. 7（Rankogram）、Fig. 8（SUCRA 曲線）皆為圖檔</b>；所幸原文在 Results 內文與圖說中已把本頁所需的數值以文字寫出，故本頁未對任何數值做推估。凡原文未提供者（如各研究的原始事件數、各配對的直接比較效果值、τ 與收斂診斷），一律以「原文未列數值」標示。</p>
+  <p><b>圖表重繪聲明</b>：本頁所有圖表<b>均為依原文所載數值重新繪製的 inline SVG 或 HTML／CSS 方塊，未使用、未嵌入、未連結出版社的任何圖檔</b>。凡由原文數字經加總、換算或清點而得者，一律就地標註「<b>本頁自行計算</b>」或「<b>本頁自行清點</b>」。具體而言：<br>
+  · <b>逐字取自原文</b>：全部的勝算比與 95% 可信區間（0.38、0.47、0.66、0.70、1.18、1.38、1.64、2.66、3.80 及其區間）、兩套 SUCRA 數值、兩套 PRISMA 數字、四組人數、Table 1 全部格內資料、PROSPERO 登錄號、MCMC 設定。<br>
+  · <b>本頁自行計算／清點</b>：Table 1 各組人數的逐篇加總與交叉驗算；每一條網絡連線的直接比較篇數（含發現 ATF–ATSCM 為 0 篇）；各術式出現的研究篇數；治療組別總數 59；各研究的合計人數與其最小／最大值；低血鈣分析佔復發分析的人數比例（17.4%）；未報告低血鈣的研究篇數（12 篇）。<br>
+  · <b>刻意不做的事</b>：<b>不對任何原文未提供的數值做推估</b>（原文未給各研究的原始事件數，故本頁完全不繪製「各研究原始數據森林圖」，也不自行計算任何 RR 或 OR）；不對原文兩套互相衝突的數字取平均或擇一，一律並列；不因排序差異而宣稱兩種移植部位有優劣。</p>
+  <p class="note">本頁為個人閱讀筆記，非同儕審查內容，亦不構成醫療建議。所有臨床決策請回到原始文獻與病人的個別情境。</p>
+</section>
+
+</div>
+</body>
+</html>
