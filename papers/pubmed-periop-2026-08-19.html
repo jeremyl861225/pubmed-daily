@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-19</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 19 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 013</span>
+  </div>
+  <h1 class="title">術前兩週＋術後四週的「非監督式中強度運動」能不能減輕大腸直腸癌術後的疲憊？PHYSSURG-C 多中心隨機試驗（瑞典 6 家醫院、518 人）次級終點探索性分析——RAND-36 活力分數術後 4 週平均差 <b>3.75 分（95% CI 0.01–7.49，p = 0.05）</b>，但生活品質、疼痛、心理復原<b>全都沒有差別</b></h1>
+  <p class="title-en">Effects of Prehabilitation by Physical Activity on Fatigue After Surgery for Colorectal Cancer. Results From Secondary Analyses in the Randomized Controlled Trial PHYSSURG-C</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Cancer Medicine（Wiley）<br><span style="color:#6b7079;font-size:13px">2026;15(8):e72142（2026 年 8 月號）；完全開放取用 Open Access，PMC13451934</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Afshari Kevin, Onerup Aron, Li Ying, Angenete Eva, Ehrencrona Carolina, Wedin Anette, Haglind Eva<br><span style="color:#6b7079;font-size:13px">瑞典哥德堡：Sahlgrenska 學院外科部 Scandinavian Surgical Outcomes Research Group（SSORG）、Sahlgrenska 大學醫院外科部與小兒腫瘤科</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>多中心、開放標籤、優越性隨機對照試驗（PHYSSURG-C）之「次級終點探索性分析」</b><br><span style="color:#6b7079;font-size:13px">母試驗的主要終點是「自覺身體復原」，已發表且為<b>陰性</b>；本文分析的疲憊／生活品質／疼痛／心理復原<b>全部是次要終點</b>，樣本數未依此計算，<b>且未做多重比較校正</b>。統計採線性混合模式（連續變項）與序位迴歸（心理復原），校正基線值、時間點、時間×治療交互作用及三項分層因子；R 4.3.2</span></div></div>
+    <div class="meta-item"><div class="k">介入內容 Intervention</div><div class="v"><b>術前 14 天＋出院後 4 週的個人化運動處方</b><br><span style="color:#6b7079;font-size:13px">有氧運動：依 WHO 成人建議，<b>中等強度每天 30 分鐘</b>（走路／跑步／游泳／騎車，強度以「會喘但還能講話」為準）；術前另加<b>吸氣肌訓練 30 下 × 2 組、每天 2 次</b>（出院後只做有氧）。<b>全程非監督（unsupervised）、在家自行執行</b>，僅由物理治療師面談一次＋術前第 1 週與術後第 3 週各一通電話提醒</span></div></div>
+    <div class="meta-item"><div class="k">收案與族群</div><div class="v">瑞典 6 家醫院，2015 年 1 月 22 日–2020 年 5 月 28 日<br><span style="color:#6b7079;font-size:13px">納入：≥ 20 歲、<b>接受大腸或直腸癌「排程手術」</b>、能理解瑞典文。排除：急診手術、局部切除、CRS＋HIPEC、無法執行介入者。分層因子：術式（腹腔鏡／開腹）、腫瘤位置（結腸／直腸）、直腸癌是否接受術前放射（化學）治療</span></div></div>
+    <div class="meta-item"><div class="k">分析族群</div><div class="v"><b>n = 518</b>（運動組 250／常規照護組 268）<br><span style="color:#6b7079;font-size:13px">定義為「<b>在術後 12 個月回覆問卷者</b>」——注意這不是全體隨機分派者，本文<b>未列出隨機分派總人數</b>。缺失值採<b>逐列刪除（listwise deletion）</b>，未做多重插補</span></div></div>
+    <div class="meta-item"><div class="k">主要測量工具</div><div class="v"><b>疲憊＝RAND-36 活力（vitality）次量表</b>（4 題，0–100 分，<b>分數高＝有活力</b>）<br><span style="color:#6b7079;font-size:13px">生活品質＝EQ-5D-3L 的垂直 EQ-VAS（0–100）；疼痛＝BPI-SF 疼痛干擾維度（7 題平均，至少答 4 題才計分）；心理復原＝研究團隊自行擬定的單一題（<b>未經效度驗證</b>）。所有題目均問「過去 4 週」</span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">ClinicalTrials.gov <b>NCT02299596</b><br><span style="color:#6b7079;font-size:13px">倫理審查：Gothenburg 區域倫理委員會，2014-10-30，DNR 597-14</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1002/cam4.72142">10.1002/cam4.72142</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42568293/">PMID 42568293 &#8594;</a>　·　PMC13451934（Open Access）</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">周術期照護與併發症</span>
+    <span class="tag t2">預康復 Prehabilitation</span>
+    <span class="tag t2">術後疲憊 Postoperative fatigue</span>
+    <span class="tag t2">大腸直腸癌手術 Colorectal cancer surgery</span>
+    <span class="tag t3">證據等級：RCT 的次級終點探索性分析（hypothesis-generating）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">受試者流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">各時間點原始數據</a><a href="#clinic">臨床意涵</a><a href="#limits">限制與警訊</a>
+  <a href="#gloss">中英對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在瑞典 6 家醫院的 PHYSSURG-C 隨機試驗中，<strong>術前 2 週加術後 4 週的「非監督式、中等強度、每天 30 分鐘」有氧運動＋術前吸氣肌訓練</strong>，對 518 名大腸直腸癌手術病人而言，只在術後 4 週的 RAND-36 活力分數上看到<strong>平均高 3.75 分（95% CI 0.01–7.49，p = 0.05）</strong>的微弱訊號——恰好落在該量表 3–5 分的臨床有意義範圍下緣，但<strong>信賴區間下界幾乎貼著 0</strong>；生活品質、疼痛與心理復原則<strong>完全沒有差異</strong>，且這些全是母試驗（主要終點為陰性）的<strong>次要終點、未做多重比較校正</strong>，因此只能當成「值得再設計一個試驗去驗證」的假說，<strong>還不足以支持把這種強度的非監督居家運動當成大腸直腸癌術前的常規處方</strong>。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">英文原文摘要（逐字）</span></h2>
+  <div class="abs">
+    <h4>Objective</h4>
+    <p>The objective of this study is to explore effects on self-reported fatigue at 4&#8201;weeks and 12&#8201;months after surgery in patients with colorectal cancer undergoing a pre- and postoperative exercise intervention compared to standard care in a randomized trial.</p>
+    <h4>Background</h4>
+    <p>Fatigue after cancer surgery is common and evidence suggests it could be alleviated by physical activity. In this post hoc exploratory study, we analyzed fatigue and other secondary outcomes from a randomized trial aimed at exploring if prehabilitation by additional physical activity could improve postoperative recovery.</p>
+    <h4>Method</h4>
+    <p>PHYSSURG C was a multicenter, controlled, randomized trial. Patients diagnosed with colorectal cancer were randomized to additional unsupervised moderate physical exercise in accordance with WHO guidelines or usual care two weeks before and four weeks after surgery. Trial-specific questionnaires were used at baseline, at 4&#8201;weeks and 12&#8201;months. Outcomes were self-reported fatigue as well as quality of life, pain, and mental recovery at both postoperative follow-up times.</p>
+    <h4>Results</h4>
+    <p>A total of 518 patients were included in this analysis. At 4&#8201;weeks after surgery, the mean difference in fatigue was 3.75 ((CI 0.01;7.49), p&#8201;=&#8201;0.05) with intention to treat approach, and in a per protocol analysis at 4&#8201;weeks the mean difference was 4.04 ((CI 0.14;7.93), p&#8201;=&#8201;0.04), and at 12&#8201;months it was 4.29 ((CI 0.44; 8.14), p&#8201;=&#8201;0.03). There were no differences between the intervention and control groups regarding quality of life, pain, or mental recovery.</p>
+    <h4>Conclusion</h4>
+    <p>This exploratory study found a suggestion of less postoperative fatigue in the intervention group. Further studies are needed to define the role of unsupervised moderate exercise, if any, before and after surgery in regard to postoperative fatigue in patients with colorectal cancer.</p>
+    <h4>Trial Registration</h4>
+    <p>ClinicalTrials.gov identifier: NCT02299596.</p>
+    <p class="note">摘要為原文逐字引用（verbatim），僅段落標題依原文 Objective / Background / Method / Results / Conclusion / Trial Registration 排列。原文為 CC-BY 開放取用。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>Participant flow <span class="zh">受試者流程（本次次級分析）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">母試驗 PHYSSURG-C</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">瑞典 6 家醫院、2015-01-22 至 2020-05-28 期間收案，隨機分派至<b>運動組</b>或<b>常規照護組</b>（區塊大小 4，依術式／腫瘤位置／術前放化療分層）<br><span class="na">隨機分派總人數：原文未列數值（本文僅報告本次分析族群）</span></div></div>
+      <div class="pr-ex">母試驗主要終點「自覺身體復原」<b>已發表且為陰性</b>；本文所有終點皆為次要終點</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">本次分析族群（analysis population）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">518</span> 人：術後 12 個月<b>有回覆問卷者</b>　·　運動組 <b>250</b>／常規照護組 <b>268</b></div></div>
+      <div class="pr-ex">依計畫書（per protocol）判定標準：運動組須繳回運動日誌，且術前<b>至少 8 天</b>有記錄吸氣肌訓練及／或有氧運動；未繳回或不符者<b>排除於 PP 分析</b>，控制組則全數納入</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">各終點實際可分析人數（缺失值採逐列刪除）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">疲憊 RAND-36：4 週 <b>219 / 244</b>、12 個月 <b>242 / 261</b>　·　EQ-VAS：4 週 <b>211 / 246</b>、12 個月 <b>241 / 263</b>　·　BPI-SF 疼痛：4 週 <b>122 / 134</b>、12 個月 <b>113 / 111</b>（運動組／常規照護組）<br><span style="color:#6b7079;font-size:12.5px">↑ 本頁自行計算：以各組總人數（250／268）減去原文 Table 2 所列之各時間點缺失人數</span></div></div>
+      <div class="pr-ex"><b>疼痛的缺失率極高</b>（4 週約 49–50%、12 個月約 55–59%），是本文最脆弱的一段資料</div>
+    </div>
+  </div>
+  <div class="fig"><div class="cap"><b>數據來源｜</b>人數取自原文 Results 首段與 Table 2 之 missing 欄位；「各終點可分析人數」為<b>本頁自行計算</b>（250 或 268 減去該時間點缺失數）。<b>怎麼讀｜</b>本圖不是 CONSORT 流程圖——原文（作為次級分析）只呈現了「12 個月有回覆問卷」這個入口，未回溯列出隨機分派總數與各階段流失，因此上方第一格刻意留白標示「原文未列數值」。<b>陷阱｜</b>把「12 個月有回覆問卷者」當作分析族群，本身就是一種<b>倖存者選擇</b>：疲憊最嚴重、病況最差或已死亡的病人，正是最不可能回覆問卷的人。這會讓兩組的差異被系統性地壓平，也讓「運動組疲憊較輕」這個發現的方向性難以確定。</div></div>
+</section>
+
+<section id="tbl1">
+  <h2>Baseline characteristics <span class="zh">研究特徵與基線資料</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>項目</th><th>運動組（n = 250）</th><th>常規照護組（n = 268）</th><th>備註</th></tr></thead>
+    <tbody>
+      <tr><td>年齡（中位數，IQR）</td><td class="num">70（62, 75）</td><td class="num">70（62, 77）</td><td>兩組相當</td></tr>
+      <tr><td>女性</td><td class="num">98（39%）</td><td class="num">111（41%）</td><td>男性 152（61%）／157（59%）</td></tr>
+      <tr><td>BMI（中位數，IQR）</td><td class="num">25.4（23.1, 28.4）</td><td class="num">25.3（22.8, 27.5）</td><td>控制組缺失 1 人</td></tr>
+      <tr><td>大學以上學歷</td><td class="num">93（38%）</td><td class="num">87（33%）</td><td>各缺失 7 人</td></tr>
+      <tr><td>已退休</td><td class="num">158（66%）</td><td class="num">168（63%）</td><td>仍在工作 70（29%）／70（26%）</td></tr>
+      <tr><td>目前規律吸菸</td><td class="num">6（2.5%）</td><td class="num">7（2.7%）</td><td>比例極低（瑞典族群）</td></tr>
+      <tr><td><b>基線體能活動：久坐（sedentary）</b></td><td class="num">37（15%）</td><td class="num">44（17%）</td><td rowspan="2">「有些活動」占 68%／67%；<b>規律硬式訓練者僅 0.8%／1.5%</b></td></tr>
+      <tr><td>規律運動與訓練</td><td class="num">39（16%）</td><td class="num">38（15%）</td></tr>
+      <tr><td>心血管疾病</td><td class="num">101（40%）</td><td class="num">101（38%）</td><td>糖尿病 33（13%）／30（11%）</td></tr>
+      <tr><td>ASA 3–4 級</td><td class="num">41（17.8%）</td><td class="num">49（20%）</td><td>本頁自行計算（分母為非缺失 230／248）</td></tr>
+      <tr><td>腫瘤分期 III–IV 期</td><td class="num">102（44.3%）</td><td class="num">97（39.0%）</td><td>本頁自行計算（分母 230／249）；<b>運動組期別略偏晚</b></td></tr>
+      <tr><td>結腸切除</td><td class="num">116（52%）</td><td class="num">109（45%）</td><td rowspan="3">術式缺失 25／28 人；<b>約兩成為腹會陰聯合切除（APE）</b>，屬創傷較大的族群</td></tr>
+      <tr><td>前位切除（anterior resection）</td><td class="num">63（28%）</td><td class="num">80（33%）</td></tr>
+      <tr><td>腹會陰聯合切除（APE）</td><td class="num">46（20%）</td><td class="num">51（21%）</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:#6b7079;margin-top:12px">百分比之分母說明：原文各列百分比以「該列非缺失人數」為分母（本頁已逐列驗算，例如腫瘤分期運動組 0＋70＋58＋89＋13 = 230，加缺失 20 恰為 250；控制組 1＋74＋77＋78＋19 = 249，加缺失 19 恰為 268，皆吻合）。標示「本頁自行計算」者為原文未直接列出、由本頁合併原始數字後得出。</p>
+  <div class="call amber">
+    <div class="h">基線的一個關鍵不對稱</div>
+    RAND-36 活力分數在<b>基線</b>時：運動組中位數 65 分、常規照護組 70 分——<b>運動組一開始就比較累</b>。線性混合模式已把基線值放進校正項，理論上處理掉了；但這仍提醒我們，「4 週時運動組分數較高」有一部分可能是<b>基線較低者的回歸均值（regression to the mean）</b>，而非介入的功勞。
+  </div>
+</section>
+
+<section id="results">
+  <h2>Primary figures <span class="zh">主要結果森林圖</span></h2>
+  <h3>圖 1｜0–100 分量表的終點（疲憊與生活品質）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 404" width="100%" role="img" style="display:block">
+<rect width="880" height="404" fill="#fff"/>
+<rect x="485.8" y="66.0" width="66.1" height="286.0" fill="#2f6b62" opacity="0.13"/>
+<text x="518.8" y="42.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">淺綠帶＝RAND-36 活力的臨床有意義差 3–5 分</text>
+<line x1="248.0" y1="358.0" x2="684.0" y2="358.0" stroke="#6b7079" stroke-width="1"/>
+<line x1="254.6" y1="358.0" x2="254.6" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="254.6" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">−4</text>
+<line x1="320.7" y1="358.0" x2="320.7" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="320.7" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">−2</text>
+<line x1="386.7" y1="358.0" x2="386.7" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="386.7" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="452.8" y1="358.0" x2="452.8" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="452.8" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="518.8" y1="358.0" x2="518.8" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="518.8" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">4</text>
+<line x1="584.9" y1="358.0" x2="584.9" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="584.9" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">6</text>
+<line x1="651.0" y1="358.0" x2="651.0" y2="363.0" stroke="#6b7079" stroke-width="1"/>
+<text x="651.0" y="376.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">8</text>
+<line x1="386.7" y1="66.0" x2="386.7" y2="358.0" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="466.0" y="394.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">運動組 − 常規照護組的平均差（分，0–100 分量表；線性混合模式，已校正基線與分層因子）</text>
+<text x="378.7" y="60.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="600">← 運動組較差</text>
+<text x="394.7" y="60.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="600">運動組較好 →</text>
+<text x="6.0" y="60.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="700">分組／分析法</text>
+<text x="874.0" y="60.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="700">平均差（95% CI）</text>
+<rect x="0" y="79.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="96.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">疲憊 Fatigue — RAND-36 活力（vitality）次量表，0–100 分，分數越高＝越有活力（＝越不疲憊）</text>
+<text x="10.0" y="122.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="122.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="387.1" y1="118.7" x2="634.1" y2="118.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="387.1" y1="114.7" x2="387.1" y2="122.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="634.1" y1="114.7" x2="634.1" y2="122.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="506.0" y="114.1" width="9.2" height="9.2" fill="#2f6b62"/>
+<text x="874.0" y="122.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="700">3.75（0.01, 7.49）p = 0.05</text>
+<text x="10.0" y="149.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="149.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="354.7" y1="145.7" x2="592.2" y2="145.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="354.7" y1="141.7" x2="354.7" y2="149.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="592.2" y1="141.7" x2="592.2" y2="149.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="469.0" y="141.1" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="149.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">2.63（−0.97, 6.22）p = 0.15</text>
+<text x="10.0" y="176.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="176.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="391.4" y1="172.7" x2="648.7" y2="172.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="391.4" y1="168.7" x2="391.4" y2="176.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="648.7" y1="168.7" x2="648.7" y2="176.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="515.6" y="168.1" width="9.2" height="9.2" fill="#2f6b62"/>
+<text x="874.0" y="176.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="700">4.04（0.14, 7.93）p = 0.04</text>
+<text x="10.0" y="203.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="203.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="401.3" y1="199.7" x2="655.6" y2="199.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="401.3" y1="195.7" x2="401.3" y2="203.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="655.6" y1="195.7" x2="655.6" y2="203.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="523.8" y="195.1" width="9.2" height="9.2" fill="#2f6b62"/>
+<text x="874.0" y="203.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="700">4.29（0.44, 8.14）p = 0.03</text>
+<rect x="0" y="214.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="231.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">生活品質 Quality of life — EQ-5D-3L 視覺類比量表 EQ-VAS，0–100 分，分數越高＝自覺健康越好</text>
+<text x="10.0" y="257.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="257.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="315.1" y1="253.7" x2="549.2" y2="253.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="315.1" y1="249.7" x2="315.1" y2="257.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="549.2" y1="249.7" x2="549.2" y2="257.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="427.7" y="249.1" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="257.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">1.38（−2.17, 4.92）p = 0.45</text>
+<text x="10.0" y="284.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="284.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="279.4" y1="280.7" x2="503.7" y2="280.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="279.4" y1="276.7" x2="279.4" y2="284.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="503.7" y1="276.7" x2="503.7" y2="284.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="386.8" y="276.1" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="284.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">0.14（−3.25, 3.54）p = 0.93</text>
+<text x="10.0" y="311.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="311.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="304.5" y1="307.7" x2="551.5" y2="307.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="304.5" y1="303.7" x2="304.5" y2="311.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="551.5" y1="303.7" x2="551.5" y2="311.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="423.4" y="303.1" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="311.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">1.25（−2.49, 4.99）p = 0.51</text>
+<text x="10.0" y="338.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="338.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="334.9" y1="334.7" x2="576.7" y2="334.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="334.9" y1="330.7" x2="334.9" y2="338.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="576.7" y1="330.7" x2="576.7" y2="338.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="451.2" y="330.1" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="338.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">2.09（−1.57, 5.75）p = 0.26</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>全部取自原文 Table 3（線性混合模式的平均差、95% CI 與 p 值），逐字轉錄，未做任何換算。淺綠帶為 RAND-36 活力次量表<b>公認的臨床有意義差 3–5 分</b>（原文 Discussion 引述）。<b>怎麼讀｜</b>方塊是點估計、橫線是 95% CI、虛線是無效線（差值 0）。橫線只要碰到 0 就代表統計上不顯著。四條疲憊的線<b>全部落在 0 的右側方向</b>（運動組較有活力），但只有三條的下界勉強離開 0。生活品質四條線<b>全部橫跨 0</b>，且點估計都在 2 分以內——而 EQ-VAS 的臨床有意義差是 7–10 分，等於連「有可能有意義」的邊都沒沾到。<b>陷阱｜</b>(1) ITT 4 週的 CI 下界是 <b>0.01</b>——這是一條幾乎壓在無效線上的線，p = 0.05 是「剛好」而不是「顯著」；(2) 依計畫書（PP）分析看起來比 ITT 漂亮，但 PP 只留下「有繳回運動日誌且真的做滿 8 天」的人，這群人<b>依從性與自我照顧動機本來就比較強</b>，是典型的選擇偏差，原文自己也註明應視為 hypothesis-generating；(3) 本圖 8 條線<b>沒有做任何多重比較校正</b>，若以 Bonferroni 粗略校正（8 次比較），p 值門檻應降至 0.00625，則<b>全部不顯著</b>（此換算為本頁自行計算，僅供讀者感受尺度）。</div>
+  </div>
+
+  <h3>圖 2｜0–10 分量表的終點（疼痛干擾）——請注意本圖刻度與圖 1 不同</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 258" width="100%" role="img" style="display:block">
+<rect width="880" height="258" fill="#fff"/>
+<line x1="248.0" y1="212.0" x2="670.0" y2="212.0" stroke="#6b7079" stroke-width="1"/>
+<line x1="248.0" y1="212.0" x2="248.0" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="248.0" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="332.4" y1="212.0" x2="332.4" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="332.4" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">−1</text>
+<line x1="416.8" y1="212.0" x2="416.8" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="416.8" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="501.2" y1="212.0" x2="501.2" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="501.2" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0</text>
+<line x1="585.6" y1="212.0" x2="585.6" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="585.6" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="670.0" y1="212.0" x2="670.0" y2="217.0" stroke="#6b7079" stroke-width="1"/>
+<text x="670.0" y="230.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="501.2" y1="50.0" x2="501.2" y2="212.0" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="459.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">運動組 − 常規照護組的平均差（分，0–10 分量表；數值為負＝運動組疼痛干擾較低）</text>
+<text x="493.2" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="600">← 運動組疼痛較少</text>
+<text x="509.2" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="600">運動組疼痛較多 →</text>
+<text x="6.0" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="700">分組／分析法</text>
+<text x="874.0" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="700">平均差（95% CI）</text>
+<rect x="0" y="63.0" width="880" height="26.0" fill="#fbf7f5"/>
+<text x="6.0" y="81.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">疼痛干擾 Pain interference — BPI-SF，0–10 分，分數越高＝疼痛越干擾日常生活</text>
+<text x="10.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="361.1" y1="104.2" x2="582.2" y2="104.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="361.1" y1="100.2" x2="361.1" y2="108.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="582.2" y1="100.2" x2="582.2" y2="108.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="466.2" y="99.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">−0.18（−0.83, 0.48）p = 0.59</text>
+<text x="10.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">意向治療 ITT</text>
+<text x="236.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="379.7" y1="132.2" x2="599.1" y2="132.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="379.7" y1="128.2" x2="379.7" y2="136.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="599.1" y1="128.2" x2="599.1" y2="136.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="484.8" y="127.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">−0.07（−0.72, 0.58）p = 0.84</text>
+<text x="10.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 4 週</text>
+<line x1="322.3" y1="160.2" x2="563.7" y2="160.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="322.3" y1="156.2" x2="322.3" y2="164.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="563.7" y1="156.2" x2="563.7" y2="164.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="437.5" y="155.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">−0.35（−1.06, 0.37）p = 0.34</text>
+<text x="10.0" y="192.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">依計畫書 Per protocol</text>
+<text x="236.0" y="192.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">術後 12 個月</text>
+<line x1="281.8" y1="188.2" x2="536.6" y2="188.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="281.8" y1="184.2" x2="281.8" y2="192.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="536.6" y1="184.2" x2="536.6" y2="192.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="405.4" y="183.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="192.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">−0.54（−1.30, 0.21）p = 0.16</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Table 3 的 BPI-SF 疼痛干擾維度平均差與 95% CI。<b>單位提醒：本圖為 0–10 分量表，刻度範圍 </b>&#8722;1.5 至 &#43;1.0<b>，與圖 1 的 0–100 分量表不可互相比較。</b><b>怎麼讀｜</b>四條線的點估計都落在 0 的左側（運動組疼痛干擾略低），數值介於 &#8722;0.07 至 &#8722;0.54 分之間，但四條線全部橫跨 0。以 0–10 分量表而言，即使是最大的 &#8722;0.54 分，也遠低於一般公認約 1 分的最小重要差異。<b>陷阱｜</b>疼痛是本文<b>缺失最嚴重</b>的終點——4 週約有一半病人沒填、12 個月更超過一半（見受試者流程）。在這種缺失率下，逐列刪除等於默認「沒填的人跟有填的人疼痛狀況一樣」，這個假設幾乎肯定不成立；因此這四條看似乾淨的「無差異」，證據強度其實很低，<b>不宜拿來宣稱「運動不會影響術後疼痛」</b>。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All results <span class="zh">全部結果總覽表</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>終點（量表方向）</th><th>分析法</th><th>時間點</th><th>平均差（運動 − 對照）</th><th>95% CI</th><th>p</th><th>I²</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4"><b>疲憊</b><br>RAND-36 活力<br><span style="color:#6b7079;font-size:12.5px">0–100，高＝有活力</span></td><td>ITT</td><td>4 週</td><td class="num">&#43;3.75</td><td class="num">0.01, 7.49</td><td class="num sig">0.05</td><td class="num"><span class="na">不適用</span></td><td><span class="win caution">臨界，勿過度解讀</span></td></tr>
+      <tr><td>ITT</td><td>12 個月</td><td class="num">&#43;2.63</td><td class="num">&#8722;0.97, 6.22</td><td class="num ns">0.15</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>PP</td><td>4 週</td><td class="num">&#43;4.04</td><td class="num">0.14, 7.93</td><td class="num sig">0.04</td><td class="num"><span class="na">不適用</span></td><td><span class="win caution">有選擇偏差</span></td></tr>
+      <tr><td>PP</td><td>12 個月</td><td class="num">&#43;4.29</td><td class="num">0.44, 8.14</td><td class="num sig">0.03</td><td class="num"><span class="na">不適用</span></td><td><span class="win caution">有選擇偏差</span></td></tr>
+      <tr><td rowspan="4"><b>生活品質</b><br>EQ-VAS<br><span style="color:#6b7079;font-size:12.5px">0–100，高＝健康好</span></td><td>ITT</td><td>4 週</td><td class="num">&#43;1.38</td><td class="num">&#8722;2.17, 4.92</td><td class="num ns">0.45</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>ITT</td><td>12 個月</td><td class="num">&#43;0.14</td><td class="num">&#8722;3.25, 3.54</td><td class="num ns">0.93</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>PP</td><td>4 週</td><td class="num">&#43;1.25</td><td class="num">&#8722;2.49, 4.99</td><td class="num ns">0.51</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>PP</td><td>12 個月</td><td class="num">&#43;2.09</td><td class="num">&#8722;1.57, 5.75</td><td class="num ns">0.26</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td rowspan="4"><b>疼痛干擾</b><br>BPI-SF<br><span style="color:#6b7079;font-size:12.5px">0–10，高＝更干擾</span></td><td>ITT</td><td>4 週</td><td class="num">&#8722;0.18</td><td class="num">&#8722;0.83, 0.48</td><td class="num ns">0.59</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>ITT</td><td>12 個月</td><td class="num">&#8722;0.07</td><td class="num">&#8722;0.72, 0.58</td><td class="num ns">0.84</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>PP</td><td>4 週</td><td class="num">&#8722;0.35</td><td class="num">&#8722;1.06, 0.37</td><td class="num ns">0.34</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>PP</td><td>12 個月</td><td class="num">&#8722;0.54</td><td class="num">&#8722;1.30, 0.21</td><td class="num ns">0.16</td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td><b>心理復原</b><br>自擬單題</td><td>序位迴歸</td><td>4 週／12 個月</td><td colspan="3"><span class="na">原文未列數值（僅敘述「兩組隨時間都往『較復原』移動，但組間無顯著差異」）</span></td><td class="num"><span class="na">不適用</span></td><td><span class="win neutral">無差異</span></td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:#6b7079;margin-top:12px">I² 欄一律標示「不適用」：本文是<b>單一隨機試驗</b>，不是統合分析，沒有跨研究異質性可言。判定標籤為本頁依 CI 是否橫跨 0、點估計是否達該量表之臨床有意義差、以及分析法之偏差風險綜合給定，非原文用語。</p>
+</section>
+
+<section id="raw">
+  <h2>Raw data &amp; redrawn figures <span class="zh">各時間點原始數據與重繪圖</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>終點</th><th>時間點</th><th>運動組 中位數（IQR）</th><th>缺失</th><th>可分析 n</th><th>常規照護 中位數（IQR）</th><th>缺失</th><th>可分析 n</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3">RAND-36 活力<br>（0–100，高＝好）</td><td>基線</td><td class="num">65（50, 80）</td><td class="num">20</td><td class="num">230</td><td class="num">70（50, 80）</td><td class="num">13</td><td class="num">255</td></tr>
+      <tr><td>4 週</td><td class="num">60（40, 75）</td><td class="num">31</td><td class="num">219</td><td class="num">55（35, 75）</td><td class="num">24</td><td class="num">244</td></tr>
+      <tr><td>12 個月</td><td class="num">75（55, 85）</td><td class="num">8</td><td class="num">242</td><td class="num">70（55, 85）</td><td class="num">7</td><td class="num">261</td></tr>
+      <tr><td rowspan="3">EQ-VAS<br>（0–100，高＝好）</td><td>基線</td><td class="num">74（60, 80）</td><td class="num">30</td><td class="num">220</td><td class="num">75（60, 86）</td><td class="num">29</td><td class="num">239</td></tr>
+      <tr><td>4 週</td><td class="num">75（55, 85）</td><td class="num">39</td><td class="num">211</td><td class="num">70（50, 85）</td><td class="num">22</td><td class="num">246</td></tr>
+      <tr><td>12 個月</td><td class="num">80（70, 90）</td><td class="num">9</td><td class="num">241</td><td class="num">80（70, 90）</td><td class="num">5</td><td class="num">263</td></tr>
+      <tr><td rowspan="3">BPI-SF 疼痛干擾<br>（0–10，高＝差）</td><td>基線</td><td class="num">3（2, 4）</td><td class="num">145</td><td class="num">105</td><td class="num">3（2, 5）</td><td class="num">152</td><td class="num">116</td></tr>
+      <tr><td>4 週</td><td class="num">3（1, 4）</td><td class="num">128</td><td class="num">122</td><td class="num">3（2, 4）</td><td class="num">134</td><td class="num">134</td></tr>
+      <tr><td>12 個月</td><td class="num">3（2, 5）</td><td class="num">137</td><td class="num">113</td><td class="num">3（2, 5）</td><td class="num">157</td><td class="num">111</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:#6b7079;margin-top:12px">中位數、IQR 與缺失數皆為原文 Table 2 逐字轉錄；「可分析 n」欄為<b>本頁自行計算</b>（250 或 268 減缺失數）。</p>
+
+  <h3>圖 3｜活力與生活品質的中位數走勢（本頁依 Table 2 重繪）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" role="img" style="display:block">
+<rect width="880" height="340" fill="#fff"/>
+<line x1="58.0" y1="266.0" x2="862.0" y2="266.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="50.0" y="270.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="58.0" y1="221.2" x2="862.0" y2="221.2" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="225.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="58.0" y1="176.4" x2="862.0" y2="176.4" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="180.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="58.0" y1="131.6" x2="862.0" y2="131.6" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="135.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<line x1="58.0" y1="86.8" x2="862.0" y2="86.8" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="90.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="58.0" y1="42.0" x2="862.0" y2="42.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="46.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="16.0" y="154.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11" fill="#43464d" text-anchor="middle" font-weight="600" transform="rotate(-90 16.0 154.0)">RAND-36 活力分數（中位數，誤差線為四分位距）</text>
+<rect x="147.5" y="120.4" width="43.0" height="145.6" fill="#8a4a3d" opacity="0.92"/>
+<text x="169.0" y="78.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">65</text>
+<line x1="169.0" y1="154.0" x2="169.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="164.0" y1="154.0" x2="174.0" y2="154.0" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="164.0" y1="86.8" x2="174.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="193.5" y="109.2" width="43.0" height="156.8" fill="#2f6b62" opacity="0.92"/>
+<text x="215.0" y="78.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">70</text>
+<line x1="215.0" y1="154.0" x2="215.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="210.0" y1="154.0" x2="220.0" y2="154.0" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="210.0" y1="86.8" x2="220.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<text x="192.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">基線 Baseline</text>
+<rect x="415.5" y="131.6" width="43.0" height="134.4" fill="#8a4a3d" opacity="0.92"/>
+<text x="437.0" y="90.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">60</text>
+<line x1="437.0" y1="176.4" x2="437.0" y2="98.0" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="432.0" y1="176.4" x2="442.0" y2="176.4" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="432.0" y1="98.0" x2="442.0" y2="98.0" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="461.5" y="142.8" width="43.0" height="123.2" fill="#2f6b62" opacity="0.92"/>
+<text x="483.0" y="90.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">55</text>
+<line x1="483.0" y1="187.6" x2="483.0" y2="98.0" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="478.0" y1="187.6" x2="488.0" y2="187.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="478.0" y1="98.0" x2="488.0" y2="98.0" stroke="#6b7079" stroke-width="1.3"/>
+<text x="460.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">術後 4 週</text>
+<rect x="683.5" y="98.0" width="43.0" height="168.0" fill="#8a4a3d" opacity="0.92"/>
+<text x="705.0" y="67.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">75</text>
+<line x1="705.0" y1="142.8" x2="705.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="700.0" y1="142.8" x2="710.0" y2="142.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="700.0" y1="75.6" x2="710.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="729.5" y="109.2" width="43.0" height="156.8" fill="#2f6b62" opacity="0.92"/>
+<text x="751.0" y="67.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">70</text>
+<line x1="751.0" y1="142.8" x2="751.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="746.0" y1="142.8" x2="756.0" y2="142.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="746.0" y1="75.6" x2="756.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<text x="728.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">術後 12 個月</text>
+<line x1="58.0" y1="266.0" x2="862.0" y2="266.0" stroke="#6b7079"/>
+<rect x="58.0" y="308.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="75.0" y="318.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">運動組（n = 250）</text>
+<rect x="193.2" y="308.0" width="12" height="12" fill="#2f6b62"/>
+<text x="210.2" y="318.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">常規照護組（n = 268）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Table 2 的中位數與四分位距（IQR），本頁重繪為長條＋誤差線，未做任何統計換算。<b>怎麼讀｜</b>兩組的活力分數都在術後 4 週<b>掉到谷底</b>，12 個月才回升到高於基線的水準——這條「先掉再升」的曲線本身，比組間差異更值得拿去跟病人衛教。運動組（赭紅）在 4 週與 12 個月的中位數都比對照組高 5 分，但注意<b>基線時運動組反而低 5 分</b>。<b>陷阱｜</b>中位數的差距與 Table 3 校正後的平均差<b>不是同一件事</b>（中位數差 5 分 vs 校正平均差 3.75 分），且中位數沒有 95% CI，肉眼看到的「高一截」有很大一部分落在重疊的 IQR 裡——四分位距幾乎完全重疊，代表兩組個體分佈高度雷同。</div>
+  </div>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" role="img" style="display:block">
+<rect width="880" height="340" fill="#fff"/>
+<line x1="58.0" y1="266.0" x2="862.0" y2="266.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="50.0" y="270.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="58.0" y1="221.2" x2="862.0" y2="221.2" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="225.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="58.0" y1="176.4" x2="862.0" y2="176.4" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="180.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="58.0" y1="131.6" x2="862.0" y2="131.6" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="135.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<line x1="58.0" y1="86.8" x2="862.0" y2="86.8" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="90.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">80</text>
+<line x1="58.0" y1="42.0" x2="862.0" y2="42.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="46.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="16.0" y="154.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11" fill="#43464d" text-anchor="middle" font-weight="600" transform="rotate(-90 16.0 154.0)">EQ-VAS 生活品質（中位數，誤差線為四分位距）</text>
+<rect x="147.5" y="100.2" width="43.0" height="165.8" fill="#8a4a3d" opacity="0.92"/>
+<text x="169.0" y="78.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">74</text>
+<line x1="169.0" y1="131.6" x2="169.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="164.0" y1="131.6" x2="174.0" y2="131.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="164.0" y1="86.8" x2="174.0" y2="86.8" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="193.5" y="98.0" width="43.0" height="168.0" fill="#2f6b62" opacity="0.92"/>
+<text x="215.0" y="65.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">75</text>
+<line x1="215.0" y1="131.6" x2="215.0" y2="73.4" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="210.0" y1="131.6" x2="220.0" y2="131.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="210.0" y1="73.4" x2="220.0" y2="73.4" stroke="#6b7079" stroke-width="1.3"/>
+<text x="192.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">基線 Baseline</text>
+<rect x="415.5" y="98.0" width="43.0" height="168.0" fill="#8a4a3d" opacity="0.92"/>
+<text x="437.0" y="67.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">75</text>
+<line x1="437.0" y1="142.8" x2="437.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="432.0" y1="142.8" x2="442.0" y2="142.8" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="432.0" y1="75.6" x2="442.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="461.5" y="109.2" width="43.0" height="156.8" fill="#2f6b62" opacity="0.92"/>
+<text x="483.0" y="67.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">70</text>
+<line x1="483.0" y1="154.0" x2="483.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="478.0" y1="154.0" x2="488.0" y2="154.0" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="478.0" y1="75.6" x2="488.0" y2="75.6" stroke="#6b7079" stroke-width="1.3"/>
+<text x="460.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">術後 4 週</text>
+<rect x="683.5" y="86.8" width="43.0" height="179.2" fill="#8a4a3d" opacity="0.92"/>
+<text x="705.0" y="56.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">80</text>
+<line x1="705.0" y1="109.2" x2="705.0" y2="64.4" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="700.0" y1="109.2" x2="710.0" y2="109.2" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="700.0" y1="64.4" x2="710.0" y2="64.4" stroke="#6b7079" stroke-width="1.3"/>
+<rect x="729.5" y="86.8" width="43.0" height="179.2" fill="#2f6b62" opacity="0.92"/>
+<text x="751.0" y="56.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">80</text>
+<line x1="751.0" y1="109.2" x2="751.0" y2="64.4" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="746.0" y1="109.2" x2="756.0" y2="109.2" stroke="#6b7079" stroke-width="1.3"/>
+<line x1="746.0" y1="64.4" x2="756.0" y2="64.4" stroke="#6b7079" stroke-width="1.3"/>
+<text x="728.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">術後 12 個月</text>
+<line x1="58.0" y1="266.0" x2="862.0" y2="266.0" stroke="#6b7079"/>
+<rect x="58.0" y="308.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="75.0" y="318.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">運動組（n = 250）</text>
+<rect x="193.2" y="308.0" width="12" height="12" fill="#2f6b62"/>
+<text x="210.2" y="318.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">常規照護組（n = 268）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Table 2 的 EQ-VAS 中位數與 IQR。<b>怎麼讀｜</b>生活品質的圖形幾乎是兩組疊在一起：基線 74 vs 75、12 個月都是 80，只有 4 週差 5 分。<b>陷阱｜</b>EQ-VAS 的臨床有意義差被認為是 7–10 分（原文引述），本圖任何一根柱子的組間差都達不到；而且 4 週那一格運動組的缺失是 39 人、對照組只有 22 人，<b>缺失不對稱</b>本身就可能製造出這 5 分的假象。</div>
+  </div>
+
+  <h3>圖 4｜自覺心理復原程度的分佈（本頁依 Table 2 計算百分比）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 302" width="100%" role="img" style="display:block">
+<rect width="880" height="302" fill="#fff"/>
+<line x1="230.0" y1="44.0" x2="230.0" y2="232.0" stroke="#f0eeea"/>
+<text x="230.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0%</text>
+<line x1="388.0" y1="44.0" x2="388.0" y2="232.0" stroke="#f0eeea"/>
+<text x="388.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">25%</text>
+<line x1="546.0" y1="44.0" x2="546.0" y2="232.0" stroke="#f0eeea"/>
+<text x="546.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">50%</text>
+<line x1="704.0" y1="44.0" x2="704.0" y2="232.0" stroke="#f0eeea"/>
+<text x="704.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">75%</text>
+<line x1="862.0" y1="44.0" x2="862.0" y2="232.0" stroke="#f0eeea"/>
+<text x="862.0" y="248.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">100%</text>
+<text x="218.0" y="71.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="end" font-weight="600">4 週・運動組（n = 212）</text>
+<rect x="230.0" y="52.0" width="20.9" height="32.0" fill="#8a4a3d"/>
+<rect x="250.9" y="52.0" width="53.7" height="32.0" fill="#b07a6c"/>
+<text x="277.7" y="72.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">8%</text>
+<rect x="304.5" y="52.0" width="101.4" height="32.0" fill="#c9a99f"/>
+<text x="355.2" y="72.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">16%</text>
+<rect x="405.9" y="52.0" width="190.8" height="32.0" fill="#8fb3ac"/>
+<text x="501.3" y="72.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">30%</text>
+<rect x="596.7" y="52.0" width="265.3" height="32.0" fill="#2f6b62"/>
+<text x="729.3" y="72.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">42%</text>
+<text x="218.0" y="119.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="end" font-weight="600">4 週・常規照護（n = 247）</text>
+<rect x="230.0" y="100.0" width="35.8" height="32.0" fill="#8a4a3d"/>
+<text x="247.9" y="120.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">6%</text>
+<rect x="265.8" y="100.0" width="48.6" height="32.0" fill="#b07a6c"/>
+<text x="290.1" y="120.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">8%</text>
+<rect x="314.4" y="100.0" width="69.1" height="32.0" fill="#c9a99f"/>
+<text x="349.0" y="120.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">11%</text>
+<rect x="383.5" y="100.0" width="191.9" height="32.0" fill="#8fb3ac"/>
+<text x="479.5" y="120.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">30%</text>
+<rect x="575.4" y="100.0" width="286.6" height="32.0" fill="#2f6b62"/>
+<text x="718.7" y="120.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">45%</text>
+<text x="218.0" y="167.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="end" font-weight="600">12 個月・運動組（n = 243）</text>
+<rect x="230.0" y="148.0" width="7.8" height="32.0" fill="#8a4a3d"/>
+<rect x="237.8" y="148.0" width="15.6" height="32.0" fill="#b07a6c"/>
+<rect x="253.4" y="148.0" width="31.2" height="32.0" fill="#c9a99f"/>
+<rect x="284.6" y="148.0" width="195.1" height="32.0" fill="#8fb3ac"/>
+<text x="382.1" y="168.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">31%</text>
+<rect x="479.7" y="148.0" width="382.3" height="32.0" fill="#2f6b62"/>
+<text x="670.8" y="168.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">60%</text>
+<text x="218.0" y="215.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="end" font-weight="600">12 個月・常規照護（n = 261）</text>
+<rect x="230.0" y="196.0" width="9.7" height="32.0" fill="#8a4a3d"/>
+<rect x="239.7" y="196.0" width="12.1" height="32.0" fill="#b07a6c"/>
+<rect x="251.8" y="196.0" width="46.0" height="32.0" fill="#c9a99f"/>
+<text x="274.8" y="216.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">7%</text>
+<rect x="297.8" y="196.0" width="198.6" height="32.0" fill="#8fb3ac"/>
+<text x="397.1" y="216.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">31%</text>
+<rect x="496.4" y="196.0" width="365.6" height="32.0" fill="#2f6b62"/>
+<text x="679.2" y="216.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#fff" text-anchor="middle" font-weight="700">58%</text>
+<rect x="230.0" y="280.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="246.0" y="290.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#43464d" text-anchor="start" font-weight="400">完全沒有復原感</text>
+<rect x="316.4" y="280.0" width="12" height="12" fill="#b07a6c"/>
+<text x="332.4" y="290.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#43464d" text-anchor="start" font-weight="400">復原 25%</text>
+<rect x="393.6" y="280.0" width="12" height="12" fill="#c9a99f"/>
+<text x="409.6" y="290.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#43464d" text-anchor="start" font-weight="400">復原 50%</text>
+<rect x="470.8" y="280.0" width="12" height="12" fill="#8fb3ac"/>
+<text x="486.8" y="290.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#43464d" text-anchor="start" font-weight="400">復原 75%</text>
+<rect x="548.0" y="280.0" width="12" height="12" fill="#2f6b62"/>
+<text x="564.0" y="290.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#43464d" text-anchor="start" font-weight="400">完全復原</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Table 2 的心理復原各選項人數；<b>百分比為本頁自行計算</b>（分母＝該格<b>實際回答人數</b>，非隨機分派人數：4 週運動組 212 人、對照組 247 人；12 個月運動組 243 人、對照組 261 人）。<b>怎麼讀｜</b>兩組的顏色分佈幾乎重疊：4 週時「完全復原」占 42.0%（運動組）vs 45.3%（對照組）；12 個月時升至 60.5% vs 57.9%。序位迴歸的結論是「無顯著差異」，圖形也支持這個結論。<b>陷阱｜</b>(1) 此題是<b>研究團隊自擬的單一題目、未經效度驗證</b>，「復原 75%」對不同病人可能意義完全不同；(2) 4 週時運動組缺失 38 人、對照組只缺 21 人，若缺失者偏向未復原者，這張圖會同時低估兩組的「未復原」比例，而且低估程度不對等；(3) 值得注意的臨床事實是——即使到<b>術後 12 個月</b>，仍有約四成病人自認<b>沒有完全復原</b>。</div>
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Clinical implications <span class="zh">臨床意涵</span></h2>
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>這篇試驗涵蓋的是「一般的、可排程手術的大腸直腸癌病人」，不是特別衰弱者。</b>中位年齡 70 歲、ASA 多為 2 級（約 62%）、僅約 15–17% 為久坐族群。想把結果套用到<b>術前明顯衰弱（frail）、營養不良或 ASA 3–4 的高風險病人</b>，本文提供不了答案——那類族群通常需要的是<b>多模式（multimodal）預康復</b>：運動＋營養＋心理支持＋戒菸戒酒，而非單一運動處方。</li>
+    <li><b>不適用者：</b>急診手術、局部切除、CRS＋HIPEC 者一開始就被排除；等待手術時間過短（瑞典當時的癌症照護路徑規定診斷到治療 28 天內）也無法完成 2 週介入。台灣多數醫學中心的排程窗口與此相近，這是實務上最大的限制。</li>
+  </ul>
+  <h3>換來什麼？</h3>
+  <ul class="clean">
+    <li>最好的情況：<b>術後第 4 週的活力分數平均多 3.75 分（0–100 分制）</b>。這剛好碰到 RAND-36 活力次量表 3–5 分的臨床有意義門檻下緣，但 95% CI 下界 0.01 意味著<b>「幾乎沒有效果」這個可能性並未被排除</b>。</li>
+    <li>沒有換來的：生活品質沒有改善、疼痛沒有減輕、自覺心理復原沒有提前，<b>母試驗的主要終點「自覺身體復原」也是陰性</b>，且先前已報告<b>併發症沒有減少</b>。</li>
+    <li>值得注意的反向線索：原文引述自家的巢式世代研究發現，<b>「本來就有運動習慣」的病人術後併發症較少</b>——這暗示真正有保護力的可能是<b>長期體能狀態</b>，而不是術前臨時抱佛腳的 2 週。</li>
+  </ul>
+  <h3>代價是什麼？</h3>
+  <ul class="clean">
+    <li><b>對病人：</b>術前 2 週每天 30 分鐘有氧＋每天 2 次吸氣肌訓練，加上寫運動日誌。在剛被告知癌症診斷、正在等開刀的高壓期，這是實質的心理與時間負擔。本試驗運動組的<b>流失率高於對照組</b>（原文自承為限制），本身就是負擔的證據。</li>
+    <li><b>對系統：</b>此模式的優點是<b>幾乎零成本</b>——一次物理治療師面談、兩通電話、一支吸氣肌訓練器，不需要健身房或監督性課程。若要改成「監督式、高強度」以求更大效果，成本會急遽上升，而那樣的模式在本試驗中<b>並未被檢驗</b>。</li>
+  </ul>
+  <h3>知情同意怎麼談？</h3>
+  <div class="call teal">
+    <div class="h">可以這樣說</div>
+    「開刀前這兩週，如果你身體允許，我會鼓勵你每天走 30 分鐘走到會喘但還能講話的程度。目前最好的隨機試驗告訴我們：<b>這樣做不會減少併發症，也不會讓你更早覺得身體復原、生活品質更好或比較不痛</b>；唯一看到的一點點好處，是<b>開完刀第一個月可能比較不那麼疲倦</b>，而且這個好處小到連研究者自己都說要再做試驗才能確定。所以我建議你做，是因為它<b>幾乎沒有壞處、成本很低、對心血管和情緒也有好處</b>，而不是因為它能改變你的手術結果。真的做不到也不必自責——這不是決定你恢復好壞的關鍵。」
+  </div>
+  <div class="call amber">
+    <div class="h">不要這樣說</div>
+    「研究證明術前運動可以讓你恢復比較快、比較不累。」——本試驗的主要終點是陰性，疲憊是<b>未校正多重比較的次要終點</b>，而且 p 恰好等於 0.05。把它講成「證明」會製造不實期待，也會讓做不到的病人承受不必要的罪惡感。
+  </div>
+</section>
+
+<section id="limits">
+  <h2>Limitations <span class="zh">研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>次要終點 ＋ 未校正多重比較。</b>原文明講：樣本數是照母試驗的主要終點算的，次要終點<b>可能檢定力不足</b>；且因屬探索性質，<b>刻意不做多重性校正</b>。本文至少呈現 12 個效果估計，只憑其中 3 個 p &lt; 0.05 就下結論，型一錯誤風險很高。</li>
+    <li><b>ITT 4 週的 p 值是 0.05、CI 下界是 0.01。</b>這是全篇最關鍵的數字，也是最脆弱的數字。任何一位病人的資料稍有變動，這條線就會跨過無效線。</li>
+    <li><b>依計畫書（PP）分析的選擇偏差。</b>PP 組＝有繳回日誌且術前做滿 8 天者。原文辯稱「介入是個人化的，所以 PP 組未必體能較好」——但<b>能持續執行並記錄</b>本身就是一種難以測量的健康行為特質。PP 結果比 ITT 好看，是典型的依從者偏差樣貌，不能當成「有做就有效」的證據。</li>
+    <li><b>分析族群的定義本身帶有倖存者偏差。</b>納入條件是「12 個月時有回覆問卷」，而非全體隨機分派者。最疲憊、病情最重、或已死亡的病人被排除在外。</li>
+    <li><b>疼痛終點缺失率約 50%。</b>逐列刪除（listwise deletion）而非多重插補，等於假設資料為完全隨機缺失（MCAR），這在癌症術後族群幾乎不可能成立。</li>
+    <li><b>介入完全非監督、強度僅中等、時間僅 2＋4 週。</b>原文自己在討論中承認：與其把本文讀成「運動沒用」，不如讀成「<b>這個劑量與這種投遞方式可能不夠</b>」。與之對照的乳癌試驗用的是 16 週監督式高強度間歇＋阻力訓練，效果明顯較大。</li>
+    <li><b>外推性：瑞典 vs 台灣。</b>族群吸菸率僅約 2.5%、BMI 中位數約 25、以白人為主；原文亦提到瑞典大腸直腸癌病人中<b>只有少數達到 WHO 建議活動量</b>。台灣病人的基線體能、共病結構與家庭支持模式不同，效果是放大還是縮小都無法從本文推知。</li>
+    <li><b>心理復原量表未經效度驗證</b>（研究團隊自擬單題），這一項的「無差異」證據等級最低。</li>
+    <li><b>收案橫跨 2015–2020 年</b>，末段與 COVID-19 疫情重疊，可能影響病人的活動模式與問卷回覆行為，原文未針對此做敏感度分析。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>預康復 <span class="en">Prehabilitation</span></dt><dd>在手術前主動提升病人的生理與心理儲備，以承受手術壓力。可為單模式（僅運動）或多模式（運動＋營養＋心理＋戒菸酒）。本文屬單模式運動。</dd></div>
+      <div class="gl-row"><dt>術後疲憊 <span class="en">Postoperative fatigue</span></dt><dd>休息也無法緩解的倦怠狀態，是癌症治療後最常見且最持久的症狀之一，與生活品質高度相關。</dd></div>
+      <div class="gl-row"><dt>吸氣肌訓練 <span class="en">Inspiratory muscle training, IMT</span></dt><dd>以阻力裝置訓練橫膈與吸氣輔助肌，目的在減少術後肺部併發症。本試驗為術前每天 2 次、每次 30 下 × 2 組。</dd></div>
+      <div class="gl-row"><dt>RAND-36 活力次量表 <span class="en">RAND-36 vitality subscale</span></dt><dd>由 4 題組成的 0–100 分量表，分數高代表精力充沛、分數低代表筋疲力竭。臨床有意義差一般認為是 3–5 分。</dd></div>
+      <div class="gl-row"><dt>EQ-5D-3L／EQ-VAS</dt><dd>常用的通用型健康相關生活品質工具；EQ-VAS 為 0（想像中最差的健康）至 100（最好）的垂直視覺類比尺，臨床有意義差約 7–10 分。</dd></div>
+      <div class="gl-row"><dt>BPI-SF 疼痛干擾 <span class="en">Brief Pain Inventory–Short Form, interference</span></dt><dd>原為癌症疼痛評估工具；干擾維度由 7 題構成（0–10），評估疼痛對日常生活的妨礙程度，須至少作答 4 題才計分。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>意向治療分析 <span class="en">Intention-to-treat, ITT</span></dt><dd>不論實際是否完成介入，一律依隨機分派的組別分析。可保留隨機化帶來的可比性，是隨機試驗的首選分析法。</dd></div>
+      <div class="gl-row"><dt>依計畫書分析 <span class="en">Per-protocol, PP</span></dt><dd>只納入真正依規定完成介入者。可回答「做到底有沒有效」，但會破壞隨機化、引入依從者選擇偏差。</dd></div>
+      <div class="gl-row"><dt>逐列刪除 <span class="en">Listwise deletion</span></dt><dd>只要該筆資料有任一變項缺失就整筆排除。在缺失率高或缺失非隨機時，會造成偏差與檢定力損失。</dd></div>
+      <div class="gl-row"><dt>線性混合模式 <span class="en">Linear mixed model</span></dt><dd>可同時處理重複測量與個體間差異的迴歸模式，本文用來校正基線值、時間點與分層因子。</dd></div>
+      <div class="gl-row"><dt>最小臨床重要差異 <span class="en">Minimal clinically important difference, MCID</span></dt><dd>病人能實際感受到的最小分數變化。統計顯著但小於 MCID 的差異，臨床上通常沒有意義。</dd></div>
+      <div class="gl-row"><dt>腹會陰聯合切除 <span class="en">Abdominoperineal excision, APE</span></dt><dd>切除直腸、肛門與周圍組織並建立永久性結腸造口的術式，創傷與功能衝擊最大。本試驗約占兩成。</dd></div>
+      <div class="gl-row"><dt>回歸均值 <span class="en">Regression to the mean</span></dt><dd>極端測量值在重複測量時自然趨向平均的統計現象。當某組基線特別低時，其後續「進步」可能部分只是此現象。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; disclosure <span class="zh">來源引用與圖表重繪聲明</span></h2>
+  <ul class="clean">
+    <li><b>原始論文｜</b>Afshari K, Onerup A, Li Y, Angenete E, Ehrencrona C, Wedin A, Haglind E. <i>Effects of Prehabilitation by Physical Activity on Fatigue After Surgery for Colorectal Cancer. Results From Secondary Analyses in the Randomized Controlled Trial PHYSSURG-C.</i> Cancer Medicine. 2026;15(8):e72142. DOI：<a href="https://doi.org/10.1002/cam4.72142">10.1002/cam4.72142</a>　·　<a href="https://pubmed.ncbi.nlm.nih.gov/42568293/">PMID 42568293</a>　·　PMC13451934（Open Access）。</li>
+    <li><b>試驗登錄｜</b>ClinicalTrials.gov NCT02299596。倫理審查：Gothenburg 區域倫理委員會 DNR 597-14。</li>
+    <li><b>資料來源｜</b>本頁所有數字取自 PubMed Central 之開放取用全文（摘要、Results 內文、Table 1、Table 2、Table 3）。文獻檢索與全文取得透過 PubMed／PubMed Central。</li>
+    <li><b>圖表重繪聲明｜</b>本頁所有圖形均為<b>依原文數字重新繪製的 inline SVG</b>，未使用、未嵌入出版社任何圖片檔。凡由原文數字經加減乘除得出者（各終點可分析人數、心理復原百分比、ASA 3–4 與分期 III–IV 合併比例、Bonferroni 門檻換算）皆已就地標註「<b>本頁自行計算</b>」；原文未提供之數值（隨機分派總人數、心理復原之效果值與 CI）一律標示「<b>原文未列數值</b>」，未做任何推估。</li>
+    <li><b>驗算紀錄｜</b>已逐項核對：250 &#43; 268 = 518；各表分項人數加缺失數等於各組總人數（分期 230&#43;20 = 250、249&#43;19 = 268；ASA 230&#43;20、248&#43;20；術式 225&#43;25、240&#43;28；心理復原 212&#43;38、247&#43;21、243&#43;7、261&#43;7）；各效果值之點估計均等於其 95% CI 上下界之中點（例如 3.75 對應 0.01 與 7.49，中點 3.75，吻合）。</li>
+    <li><b>本頁性質｜</b>供外科臨床閱讀與教學討論使用之文獻導讀，非診療指引，亦不取代原文閱讀。判定標籤與臨床建議屬本頁作者之解讀。</li>
+  </ul>
+</section>
+
+<footer>
+  每日大腸直腸外科文獻 · Vol. 013 · 2026 年 8 月 19 日　|　主題分類：周術期照護與併發症　|　資料來源：PubMed／PubMed Central
+</footer>
+
+</div>
+</body>
+</html>

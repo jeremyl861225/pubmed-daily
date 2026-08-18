@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-19</title>
+<style>
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 19 日 · 週三</span>
+    <span style="opacity:.4">/</span><span>Vol. 012</span>
+  </div>
+  <h1 class="title">B 肝表面抗原（HBsAg）陽性的腎臟，能不能移植給 HBsAg 陰性的受贈者？16 篇研究、819 人的系統性回顧與統合分析——捐贈者來源 HBV 感染 <b>21/583（3.60%）</b>，10 年移植腎存活 82.7% vs 85.6%、病人存活 91.4% vs 93.9% <b>皆無顯著差異</b>；但<b>受贈者若 HBcAb 陰性，感染勝算高近 13 倍</b></h1>
+  <p class="title-en">Long-Term Clinical Outcomes of Kidney Transplantation from Hepatitis B Surface Antigen (HBsAg)-Positive Donors to HBsAg-Negative Recipients: A Systematic Review and Meta-Analysis of Real-World Studies</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Journal of Clinical Medicine（MDPI）<br><span style="color:#6b7079;font-size:13px">2026;15(15):6048（線上發表 2026 年 8 月 4 日）；完全開放取用 Open Access，PMC13467147</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Liang Chengze, Luo Yun, Yin Saifu, Song Turun, Lin Tao<br><span style="color:#6b7079;font-size:13px">中國成都：四川大學華西醫院泌尿外科／泌尿研究所、腎臟移植中心、器官移植中心；四川大學華西醫學院</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧 ＋ 統合分析（含單臂比例合併、風險因子合併與存活合併）</b><br><span style="color:#6b7079;font-size:13px">R 4.2.2 之 meta 套件；比例採<b>反變異加權＋Freeman–Tukey 雙反正弦轉換</b>；I² &gt; 50% 用隨機效果、否則固定效果。另做逐篇剔除的敏感度分析、統合迴歸（meta-regression）、輪廓增強漏斗圖與 Egger 檢定。品質評估採 Newcastle–Ottawa 量表（NOS）</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題定位</div><div class="v"><b>問的是「器官池能不能再撐大一格」</b>——當等待名單遠超過可用腎臟時，HBsAg 陽性的腎是否可以給沒有 B 肝的受贈者<br><span style="color:#6b7079;font-size:13px">現行 KDIGO 與英國移植學會指引只允許把 HBsAg＋ 腎給「HBsAg＋ 受贈者」或「有 HBV 免疫力的 HBsAg− 受贈者」；本文檢驗的是更進一步的做法。美國 HBsAg＋ 捐贈者僅占所有腎臟捐贈者的 0–0.2%，而全球 HBsAg 帶原者約 3.16 億人（4.1%，西太平洋區高達 7.1%）</span></div></div>
+    <div class="meta-item"><div class="k">納入規模</div><div class="v"><b>16 篇研究、819 名 HBsAg− 受贈者接受 HBsAg＋ 腎臟</b><br><span style="color:#6b7079;font-size:13px">14 篇為回溯性設計；7 篇為單臂、9 篇有對照組。地區：美國 2、土耳其 5、中國 5、泰國 2、法國 2。單篇樣本數 7–144 人；發表年代 <b>1993–2023 年</b>；追蹤中位／平均 <b>183 天至 137 個月</b>。有 2 篇族群重疊</span></div></div>
+    <div class="meta-item"><div class="k">主要終點</div><div class="v"><b>捐贈者來源 HBV 感染</b>＝血清轉為 <b>HBsAg、HBeAg 或 HBV DNA 陽性</b><br><span style="color:#6b7079;font-size:13px">關鍵定義：<b>單獨 HBcAb 轉陽而無 HBsAg／HBeAg／HBV DNA，不算活動性感染</b>，另列為次要終點；HBsAb 轉陽多半反映 HBIG 被動抗體或疫苗接種，亦另列。次要終點：風險因子、肝功能異常／肝炎／肝衰竭、肝腎功能、移植腎與病人存活</span></div></div>
+    <div class="meta-item"><div class="k">品質評估（NOS）</div><div class="v"><b>16 篇中有 6 篇僅得 5 分（高／中偏高偏誤風險）</b><br><span style="color:#6b7079;font-size:13px">分佈：9 分 2 篇、8 分 4 篇、7 分 3 篇、6 分 1 篇、<b>5 分 6 篇</b>。原文自承納入低品質研究會引入偏誤。受贈者 HBsAb 狀態有 5 篇未報告、<b>HBcAb 狀態有 11 篇未報告</b></span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">PROSPERO <b>CRD42022385379</b>；依 PRISMA 撰寫<br><span style="color:#6b7079;font-size:13px">檢索 PubMed／Embase／Cochrane Library／Scopus／Web of Science，自建庫至 <b>2023 年 8 月 20 日</b>，限英文</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.3390/jcm15156048">10.3390/jcm15156048</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42590149/">PMID 42590149 &#8594;</a>　·　PMC13467147（Open Access）</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">移植外科</span>
+    <span class="tag t2">腎臟移植 Kidney transplantation</span>
+    <span class="tag t2">捐贈者來源感染 Donor-derived infection</span>
+    <span class="tag t2">B 型肝炎 HBV</span>
+    <span class="tag t3">證據等級：統合分析（16 篇，14 篇回溯性、無 RCT）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始事件數與重繪圖</a><a href="#clinic">臨床意涵</a><a href="#limits">限制與警訊</a>
+  <a href="#gloss">中英對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 <strong>HBsAg 陽性的腎臟移植給 HBsAg 陰性的受贈者</strong>，在 16 篇（14 篇回溯性、無隨機試驗）共 819 人的統合分析中，捐贈者來源 HBV 感染只發生在 <strong>21/583（3.60%）</strong>，且 1–10 年的移植腎與病人存活率、肝腎功能與對照組<strong>沒有顯著差異</strong>（移植腎 HR 1.07，95% CI 0.82–1.40；病人 HR 1.19，95% CI 0.78–1.81）——但風險<strong>高度取決於受贈者的免疫狀態</strong>：<strong>HBsAb 陰性者感染勝算是陽性者的 6.67 倍（95% CI 1.08–41.10）、HBcAb 陰性者高達 12.96 倍（95% CI 2.06–81.69）</strong>，而 21 名感染者中仍有 <strong>2 人（9.52%）演變成肝衰竭</strong>。因此這是一條「<strong>可以走，但必須挑對受贈者、挑對捐贈者病毒量、並搭配抗病毒預防</strong>」的路，絕不是全面放行的通行證。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">英文原文摘要（逐字）</span></h2>
+  <div class="abs">
+    <h4>Background / Objectives</h4>
+    <p>The use of hepatitis B surface antigen-positive (HBsAg+) kidneys may expand the donor pool for transplantation. This study evaluated the incidence, risk factors, complications, organ function, and survival outcomes of transplants from HBsAg+ donors to HBsAg&#8722; recipients.</p>
+    <h4>Methods</h4>
+    <p>A systematic search of five databases was conducted through 20 August 2023. Incidence was expressed with 95% confidence intervals (CIs); odds ratios (ORs) and hazard ratios (HRs) assessed risk factors and survival.</p>
+    <h4>Results</h4>
+    <p>Sixteen studies were included. Donor-derived HBV infection occurred in 3.60% (21/583). Risk was higher in HBsAb-negative (OR: 6.67, 95% CI: 1.08&#8211;41.10) and HBcAb-negative recipients (OR: 12.96, 95% CI: 2.06&#8211;81.69). Abnormal liver function occurred in 35.18%, hepatitis in 3.07%, and hepatic failure in 0.84%. Liver and kidney function at 1&#8211;3 years were comparable between HBsAg+ and HBsAg&#8722; kidney recipients. Five- and ten-year graft survival (85.2%, 82.7%) and patient survival (93.0%, 91.4%) were similar to controls (&gt; 0.05).</p>
+    <h4>Conclusions</h4>
+    <p>HBsAg+ kidneys can achieve acceptable long-term outcomes with appropriate antiviral prophylaxis and cautious recipient selection, though infection risk requires careful assessment. These findings supports the cautious and selective use of HBsAg-positive kidneys in appropriately selected recipients use and standardized HBV prophylaxis.</p>
+    <p class="note">摘要為 PubMed 所載之原文逐字引用（verbatim），含原文之排版與文字瑕疵（例如結論段 &ldquo;recipients use&rdquo;、Results 段 &ldquo;(&gt; 0.05)&rdquo; 漏了 p），本頁未代為修改。原文為 MDPI CC-BY 開放取用。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>PRISMA flow <span class="zh">文獻篩選流程</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">檢索 Identification</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">五個資料庫（PubMed、Embase、Cochrane Library、Scopus、Web of Science），自建庫至 <b>2023 年 8 月 20 日</b>，限英文；另手動檢索納入文獻之參考文獻<br><span class="na">檢索初始筆數：原文未列數值</span></div></div>
+      <div class="pr-ex">關鍵字涵蓋 kidney/renal transplantation、graft、solid organ transplantation 與 HBV 全套血清標記（HBsAg／HBsAb／HBeAg／HBcAb／HBeAb）</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">去除重複後 After duplicates removed</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">3,467</span> 篇進入標題／摘要篩選<br><span class="na">摘要篩選後進入全文評讀之篇數：原文未列數值（排除理由列於補充表 S2）</span></div></div>
+      <div class="pr-ex">兩位審閱者獨立篩選，歧異由第三人仲裁</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">納入 Included</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final"><span class="n">16</span> 篇研究　·　<b>819</b> 名 HBsAg− 受贈者接受 HBsAg＋ 腎臟<br><span style="color:#6b7079;font-size:12.5px">其中 <b>15 篇</b>有通報 HBV 感染事件（共 <b>583</b> 人），故感染率的分母是 583 而非 819</span></div></div>
+      <div class="pr-ex">排除條件：HBsAg＋ 捐給 HBsAg＋ 受贈者、綜論、樣本數 &lt; 5；族群重疊者取較新／追蹤較久／樣本較大者</div>
+    </div>
+  </div>
+  <div class="fig"><div class="cap"><b>數據來源｜</b>3,467 與 16 兩個數字取自原文 Results 3.1；819、583 取自 Results 3.3。<b>怎麼讀｜</b>PRISMA 的價值在於讓讀者看見「從多少篇篩到多少篇」，落差越大越要問「中間被丟掉的是什麼」。<b>陷阱｜</b>本篇 PRISMA 的<b>中段是空的</b>——原文正文並未列出去重前筆數、摘要篩選後保留數、全文評讀數與各排除理由的篇數（僅指向補充資料）。這使讀者無法自行驗證篩選過程，本頁一律標示「原文未列數值」，<b>不做任何推估</b>。另一個容易被跳過的落差：分母從 819 掉到 <b>583</b>，等於有 <b>236 人（約 28.8%，本頁自行計算）</b>所在的研究根本沒通報感染事件——真正的分母不確定性，比 3.60% 這個數字看起來大得多。</div></div>
+</section>
+
+<section id="tbl1">
+  <h2>Study characteristics <span class="zh">研究特徵表</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>特徵</th><th>內容</th><th>本頁註記</th></tr></thead>
+    <tbody>
+      <tr><td>納入篇數</td><td class="num">16 篇</td><td>7 篇單臂、9 篇有對照組</td></tr>
+      <tr><td>研究設計</td><td><b>回溯性 14 篇</b></td><td>其餘 2 篇之設計原文未明確標示；<b>沒有任何隨機對照試驗</b></td></tr>
+      <tr><td>發表年代</td><td class="num">1993–2023 年</td><td>橫跨 30 年，血清學檢驗敏感度與抗病毒藥物世代皆已大幅改變</td></tr>
+      <tr><td>地區分佈</td><td>美國 2、土耳其 5、中國 5、泰國 2、法國 2</td><td>合計 16 篇；<b>亞洲研究占 512/583 人（87.8%，本頁自行計算）</b></td></tr>
+      <tr><td>單篇樣本數</td><td class="num">7–144 人</td><td>最大一篇（Delman 等）在敏感度分析中剔除後，I² 由 59% 降至 28%</td></tr>
+      <tr><td>追蹤時間</td><td class="num">183 天 – 137 個月</td><td>差距達 22 倍；部分研究追蹤過短，不足以觀察遲發感染</td></tr>
+      <tr><td>抗病毒預防方案</td><td>HBIG 與抗病毒藥物之組合、劑量、頻次、療程<b>差異極大</b></td><td>Entecavir 在近期文獻中已逐步取代 Lamivudine；原文指此為主要異質性來源</td></tr>
+      <tr><td>受贈者 HBsAb 狀態</td><td><b>5 篇未報告</b></td><td rowspan="2">這正是決定風險最重要的兩個變項，卻大量缺報——所有分層分析都建立在「有報告的那部分研究」上</td></tr>
+      <tr><td>受贈者 HBcAb 狀態</td><td><b>11 篇未報告</b></td></tr>
+      <tr><td>族群重疊</td><td>有 2 篇族群重疊</td><td>原文已註明，但未說明在合併時如何處理</td></tr>
+      <tr><td>偏誤風險（NOS）</td><td>9 分 2 篇／8 分 4 篇／7 分 3 篇／6 分 1 篇／<b>5 分 6 篇</b></td><td>依原文標準，&gt; 8 分為低風險、5–7 分為中風險、4 分為高風險；<b>逾三分之一僅 5 分</b></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="results">
+  <h2>Primary figures <span class="zh">主要結果森林圖</span></h2>
+  <h3>圖 1｜捐贈者來源 HBV 感染的發生率（依免疫狀態分層）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 490" width="100%" role="img" style="display:block">
+<rect width="880" height="490" fill="#fff"/>
+<line x1="300.0" y1="446.0" x2="690.0" y2="446.0" stroke="#6b7079"/>
+<line x1="300.0" y1="446.0" x2="300.0" y2="451.0" stroke="#6b7079"/>
+<text x="300.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0%</text>
+<line x1="378.0" y1="446.0" x2="378.0" y2="451.0" stroke="#6b7079"/>
+<text x="378.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">5%</text>
+<line x1="456.0" y1="446.0" x2="456.0" y2="451.0" stroke="#6b7079"/>
+<text x="456.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">10%</text>
+<line x1="534.0" y1="446.0" x2="534.0" y2="451.0" stroke="#6b7079"/>
+<text x="534.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">15%</text>
+<line x1="612.0" y1="446.0" x2="612.0" y2="451.0" stroke="#6b7079"/>
+<text x="612.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">20%</text>
+<line x1="690.0" y1="446.0" x2="690.0" y2="451.0" stroke="#6b7079"/>
+<text x="690.0" y="464.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">25%</text>
+<text x="495.0" y="482.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">捐贈者來源 B 型肝炎感染發生率（%）；方塊＝點估計，橫線＝本頁自行計算之 Wilson 95% CI</text>
+<text x="6.0" y="42.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="700">族群（原始事件數／人數）</text>
+<text x="874.0" y="42.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="700">發生率（95% CI）</text>
+<rect x="0" y="59.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="76.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">全體（15 篇有通報感染事件的研究）</text>
+<text x="10.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">全部 HBsAg− 受贈者</text>
+<text x="288.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">21／583</text>
+<line x1="336.9" y1="98.7" x2="384.9" y2="98.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="336.9" y1="94.7" x2="336.9" y2="102.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="384.9" y1="94.7" x2="384.9" y2="102.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="351.7" y="94.2" width="9" height="9" fill="#8a4a3d"/>
+<text x="874.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">3.60%（2.37–5.44%）</text>
+<rect x="0" y="113.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="130.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">依「捐贈者 HBV DNA」分層</text>
+<text x="10.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">捐贈者 HBV DNA 陰性</text>
+<text x="288.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2／248</text>
+<line x1="303.5" y1="152.7" x2="345.1" y2="152.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="303.5" y1="148.7" x2="303.5" y2="156.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="345.1" y1="148.7" x2="345.1" y2="156.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="308.1" y="148.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">0.81%（0.22–2.89%）</text>
+<text x="10.0" y="183.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">捐贈者 HBV DNA 陽性</text>
+<text x="288.0" y="183.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">17／239</text>
+<line x1="370.0" y1="179.7" x2="473.1" y2="179.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="370.0" y1="175.7" x2="370.0" y2="183.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="473.1" y1="175.7" x2="473.1" y2="183.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="406.5" y="175.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="183.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">7.11%（4.49–11.09%）</text>
+<rect x="0" y="194.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="211.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">依「受贈者 HBcAb（核心抗體）」分層</text>
+<text x="10.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBcAb 陽性（曾感染、已痊癒）</text>
+<text x="288.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">1／120</text>
+<line x1="302.3" y1="233.7" x2="371.3" y2="233.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="302.3" y1="229.7" x2="302.3" y2="237.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="371.3" y1="229.7" x2="371.3" y2="237.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="308.5" y="229.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">0.83%（0.15–4.57%）</text>
+<text x="10.0" y="264.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBcAb 陰性</text>
+<text x="288.0" y="264.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">5／68</text>
+<line x1="349.6" y1="260.7" x2="550.9" y2="260.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="349.6" y1="256.7" x2="349.6" y2="264.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="550.9" y1="256.7" x2="550.9" y2="264.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="410.2" y="256.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="264.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">7.35%（3.18–16.09%）</text>
+<rect x="0" y="275.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="292.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">依「受贈者 HBsAb（表面抗體＝保護力）」分層</text>
+<text x="10.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBsAb 陽性</text>
+<text x="288.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">5／442</text>
+<line x1="307.6" y1="314.7" x2="340.9" y2="314.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="307.6" y1="310.7" x2="307.6" y2="318.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="340.9" y1="310.7" x2="340.9" y2="318.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="313.1" y="310.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">1.13%（0.48–2.62%）</text>
+<text x="10.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBsAb 陰性</text>
+<text x="288.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">5／45</text>
+<line x1="375.5" y1="341.7" x2="666.6" y2="341.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="375.5" y1="337.7" x2="375.5" y2="345.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="666.6" y1="337.7" x2="666.6" y2="345.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="468.8" y="337.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">11.11%（4.84–23.50%）</text>
+<rect x="0" y="356.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="373.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">依地區分層</text>
+<text x="10.0" y="399.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">亞洲地區研究</text>
+<text x="288.0" y="399.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">12／512</text>
+<line x1="321.0" y1="395.7" x2="363.2" y2="395.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="321.0" y1="391.7" x2="321.0" y2="399.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="363.2" y1="391.7" x2="363.2" y2="399.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="332.1" y="391.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="399.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">2.34%（1.35–4.05%）</text>
+<text x="10.0" y="426.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">非亞洲地區研究</text>
+<text x="288.0" y="426.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">9／71</text>
+<line x1="406.3" y1="422.7" x2="649.0" y2="422.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="406.3" y1="418.7" x2="406.3" y2="426.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="649.0" y1="418.7" x2="649.0" y2="426.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="493.2" y="418.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="426.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">12.68%（6.81–22.37%）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>各列的<b>原始事件數與分母皆為原文 Results 3.3 逐字轉錄</b>（21/583、2/248、17/239、1/120、5/68、5/442、5/45、12/512、9/71）；<b>百分比與 95% CI 為本頁自行計算</b>（Wilson 法）。本圖<b>刻意不畫合併菱形</b>——原文的合併發生率 1.52%（95% CI 0.01–4.52%，I² = 59%）採用的是 Freeman–Tukey 雙反正弦轉換的加權合併，與本頁逐格計算的原始比例不是同一種估計量，混在同一張圖上會誤導。<b>怎麼讀｜</b>三組分層的訊息完全一致且方向相同：<b>捐贈者病毒量低、受贈者有免疫痕跡，感染率就掉到 1% 以下；反之則跳到 7–11%</b>。這是本篇最有臨床操作價值的一張圖——它把「能不能用」的問題，換成了「用在誰身上」。<b>陷阱｜</b>(1) 分母互不重疊也互不相加：HBV DNA 分層合計 487 人、19 起事件，HBcAb 分層僅 188 人、6 起事件，都<b>小於全體的 583 人 21 起事件</b>（本頁自行計算之差額分別為 96 人 2 起、395 人 15 起）——代表大量研究沒報告這些變項，分層結果只反映「有報告的那一小群」；(2) HBsAb 陰性組只有 <b>45 人、5 起事件</b>，HBcAb 陰性組只有 <b>68 人、5 起事件</b>，樣本極小，CI 極寬；(3) 唯一能整齊相加的是地區分層（512＋71 = 583，12＋9 = 21，本頁驗算吻合），而它顯示的「非亞洲 12.68% vs 亞洲 2.34%」很可能不是地理效應，而是<b>捐贈者病毒量與預防用藥策略的差異</b>被地區這個變項代理了。</div>
+  </div>
+
+  <h3>圖 2｜風險因子與長期存活（對數刻度）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 314" width="100%" role="img" style="display:block">
+<rect width="880" height="314" fill="#fff"/>
+<line x1="272.0" y1="268.0" x2="672.0" y2="268.0" stroke="#6b7079"/>
+<line x1="307.2" y1="268.0" x2="307.2" y2="273.0" stroke="#6b7079"/>
+<text x="307.2" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="354.9" y1="268.0" x2="354.9" y2="273.0" stroke="#6b7079"/>
+<text x="354.9" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="402.6" y1="268.0" x2="402.6" y2="273.0" stroke="#6b7079"/>
+<text x="402.6" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="465.7" y1="268.0" x2="465.7" y2="273.0" stroke="#6b7079"/>
+<text x="465.7" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">5</text>
+<line x1="513.5" y1="268.0" x2="513.5" y2="273.0" stroke="#6b7079"/>
+<text x="513.5" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">10</text>
+<line x1="576.5" y1="268.0" x2="576.5" y2="273.0" stroke="#6b7079"/>
+<text x="576.5" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">25</text>
+<line x1="624.3" y1="268.0" x2="624.3" y2="273.0" stroke="#6b7079"/>
+<text x="624.3" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">50</text>
+<line x1="672.0" y1="268.0" x2="672.0" y2="273.0" stroke="#6b7079"/>
+<text x="672.0" y="286.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">100</text>
+<line x1="354.9" y1="50.0" x2="354.9" y2="268.0" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="472.0" y="304.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">效果值（對數刻度）；虛線為無效線 1；箭頭代表信賴區間超出繪圖範圍</text>
+<text x="346.9" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="600">← 風險較低</text>
+<text x="362.9" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="600">風險較高 →</text>
+<text x="6.0" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="700">比較項目</text>
+<text x="874.0" y="44.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="700">效果值（95% CI）</text>
+<rect x="0" y="63.0" width="880" height="26.0" fill="#fbf7f5"/>
+<text x="6.0" y="81.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">感染的風險因子（勝算比 OR；原文 Figure 2B）</text>
+<text x="10.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">捐贈者 HBV DNA 陽性 vs 陰性</text>
+<text x="260.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">3 篇，I² = 0%</text>
+<line x1="295.2" y1="104.2" x2="538.2" y2="104.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="295.2" y1="100.2" x2="295.2" y2="108.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="538.2" y1="100.2" x2="538.2" y2="108.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="412.0" y="99.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="108.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">OR 2.45（0.42–14.32）p = 0.320</text>
+<text x="10.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBsAb 陰性 vs 陽性</text>
+<text x="260.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">2 篇，I² = 0%</text>
+<line x1="360.2" y1="132.2" x2="610.8" y2="132.2" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="360.2" y1="128.2" x2="360.2" y2="136.2" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="610.8" y1="128.2" x2="610.8" y2="136.2" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="481.0" y="127.6" width="9.2" height="9.2" fill="#2f6b62"/>
+<text x="874.0" y="136.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="700">OR 6.67（1.08–41.10）p = 0.006</text>
+<text x="10.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">受贈者 HBcAb 陰性 vs 陽性</text>
+<text x="260.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">2 篇，I² = 0%</text>
+<line x1="404.7" y1="160.2" x2="658.1" y2="160.2" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="404.7" y1="156.2" x2="404.7" y2="164.2" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="658.1" y1="156.2" x2="658.1" y2="164.2" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="526.7" y="155.6" width="9.2" height="9.2" fill="#2f6b62"/>
+<text x="874.0" y="164.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="700">OR 12.96（2.06–81.69）p = 0.041</text>
+<rect x="0" y="175.0" width="880" height="26.0" fill="#fbf7f5"/>
+<text x="6.0" y="193.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">長期存活（風險比 HR；HBsAg＋ 腎 vs HBsAg− 腎）</text>
+<text x="10.0" y="220.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">移植腎存活 Graft survival</text>
+<text x="260.0" y="220.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">I² = 0%</text>
+<line x1="341.2" y1="216.2" x2="378.1" y2="216.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="341.2" y1="212.2" x2="341.2" y2="220.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="378.1" y1="212.2" x2="378.1" y2="220.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="355.0" y="211.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="220.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">HR 1.07（0.82–1.40）p = 0.620</text>
+<text x="10.0" y="248.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">病人存活 Patient survival</text>
+<text x="260.0" y="248.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">I² = 0%</text>
+<line x1="337.8" y1="244.2" x2="395.8" y2="244.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="337.8" y1="240.2" x2="337.8" y2="248.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="395.8" y1="240.2" x2="395.8" y2="248.2" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="362.3" y="239.6" width="9.2" height="9.2" fill="#8a4a3d"/>
+<text x="874.0" y="248.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">HR 1.19（0.78–1.81）p = 0.425</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>OR 與 HR 及其 95% CI、p 值、I² 全部取自原文 Results 3.4 與 3.9／3.10，逐字轉錄，未做換算。<b>怎麼讀｜</b>上半段三條線都指向「風險較高」的右側，但只有 HBsAb 陰性與 HBcAb 陰性兩條的下界離開了無效線 1。<b>HBcAb 陰性者的勝算比高達 12.96</b>——臨床白話是：<b>一個從未接觸過 B 肝病毒、也沒有抗體的受贈者，是這條路上風險最高的人</b>。下半段兩條存活線都緊貼無效線且橫跨 1，代表<b>只要感染被控制住，長期移植腎與病人存活並未因為用了 HBsAg＋ 腎而變差</b>。<b>陷阱｜</b>(1) 三個 OR 分別只由 <b>3 篇、2 篇、2 篇</b>研究貢獻，CI 寬到 41 倍與 82 倍，這種區間幾乎無法用於個別病人的風險溝通；(2) <b>原文的 p 值與 CI 之間存在不一致</b>：HBsAb 陰性組的 CI 下界 1.08（剛好擦過 1）卻標 p = 0.006，HBcAb 陰性組 CI 下界 2.06（離 1 較遠）反而標 p = 0.041——兩者方向相反，至少有一個標示有誤，讀者<b>應以 CI 為準、不要引用這兩個 p 值</b>（此不一致為本頁比對後指出，原文未說明）；(3) 存活的「無差異」來自<b>回溯性、且已經過中心層層挑選的受贈者</b>，是「挑對人之後的結果」，不是「隨便用也一樣」的證據。</div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All results <span class="zh">全部結果總覽表</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>結果（貢獻研究數）</th><th>效果值 / 發生率</th><th>95% CI</th><th>p</th><th>I²</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>捐贈者來源 HBV 感染（合併發生率）</b><br><span style="font-size:12px;color:#6b7079">15 篇，583 人</span></td><td class="num">1.52%</td><td class="num">0.01–4.52%</td><td class="num"><span class="na">原文未列</span></td><td class="num">59%</td><td><span class="win caution">異質性高</span></td></tr>
+      <tr><td>　同上，未加權原始比例<br><span style="font-size:12px;color:#6b7079">本頁自行計算（Wilson）</span></td><td class="num">3.60%（21/583）</td><td class="num">2.37–5.44%</td><td class="num"><span class="na">—</span></td><td class="num"><span class="na">—</span></td><td><span class="win neutral">供對照</span></td></tr>
+      <tr><td>風險因子：捐贈者 HBV DNA 陽性<br><span style="font-size:12px;color:#6b7079">3 篇</span></td><td class="num">OR 2.45</td><td class="num">0.42–14.32</td><td class="num ns">0.320</td><td class="num">0%</td><td><span class="win neutral">趨勢，不顯著</span></td></tr>
+      <tr><td><b>風險因子：受贈者 HBsAb 陰性</b><br><span style="font-size:12px;color:#6b7079">2 篇</span></td><td class="num">OR 6.67</td><td class="num sig">1.08–41.10</td><td class="num">0.006<br><span class="na" style="font-size:11.5px">與 CI 不一致</span></td><td class="num">0%</td><td><span class="win caution">顯著但不精確</span></td></tr>
+      <tr><td><b>風險因子：受贈者 HBcAb 陰性</b><br><span style="font-size:12px;color:#6b7079">2 篇</span></td><td class="num">OR 12.96</td><td class="num sig">2.06–81.69</td><td class="num">0.041<br><span class="na" style="font-size:11.5px">與 CI 不一致</span></td><td class="num">0%</td><td><span class="win caution">顯著但不精確</span></td></tr>
+      <tr><td>肝功能異常<br><span style="font-size:12px;color:#6b7079">3 篇（89/253）</span></td><td class="num">35.18%</td><td class="num"><span class="na">原文未列</span></td><td class="num"><span class="na">—</span></td><td class="num">97%</td><td><span class="win caution">異質性極高</span></td></tr>
+      <tr><td>肝炎<br><span style="font-size:12px;color:#6b7079">9 篇（16/521）</span></td><td class="num">3.07%</td><td class="num"><span class="na">原文未列</span></td><td class="num"><span class="na">—</span></td><td class="num">68%</td><td><span class="win caution">異質性高</span></td></tr>
+      <tr><td><b>肝衰竭</b><br><span style="font-size:12px;color:#6b7079">7 篇（2/237）</span></td><td class="num">0.84%</td><td class="num"><span class="na">原文未列</span></td><td class="num"><span class="na">—</span></td><td class="num">0%</td><td><span class="win caution">罕見但致命</span></td></tr>
+      <tr><td>HBcAb 轉陽（合併）<br><span style="font-size:12px;color:#6b7079">3 篇（34/240）</span></td><td class="num">11.20%</td><td class="num">2.48–24.52%</td><td class="num"><span class="na">—</span></td><td class="num">87%</td><td><span class="win neutral">非活動性感染</span></td></tr>
+      <tr><td>HBsAb 轉陽（合併）<br><span style="font-size:12px;color:#6b7079">2 篇（29/188）</span></td><td class="num">15.42%</td><td class="num">10.54–21.01%</td><td class="num"><span class="na">—</span></td><td class="num">0%</td><td><span class="win neutral">多為 HBIG／疫苗</span></td></tr>
+      <tr><td><b>移植腎存活（HBsAg＋ vs −）</b><br><span style="font-size:12px;color:#6b7079">原文未列篇數</span></td><td class="num">HR 1.07</td><td class="num">0.82–1.40</td><td class="num ns">0.620</td><td class="num">0%</td><td><span class="win">無差異</span></td></tr>
+      <tr><td><b>病人存活（HBsAg＋ vs −）</b><br><span style="font-size:12px;color:#6b7079">原文未列篇數</span></td><td class="num">HR 1.19</td><td class="num">0.78–1.81</td><td class="num ns">0.425</td><td class="num">0%</td><td><span class="win">無差異</span></td></tr>
+      <tr><td>1 年 ALT</td><td colspan="2">HBsAg＋ 組<b>較高</b></td><td class="num sig">0.013</td><td class="num">47%</td><td><span class="win caution">唯一有差的肝指標</span></td></tr>
+      <tr><td>2、3 年 ALT；各年 AST、TBIL</td><td colspan="2">兩組相當</td><td class="num ns">0.451–0.906</td><td class="num">0–93%</td><td><span class="win neutral">無差異</span></td></tr>
+      <tr><td>1 年、3 年血清肌酸酐</td><td colspan="2">HBsAg＋ 組<b>反而較低</b></td><td class="num sig">&lt; 0.001／0.021</td><td class="num">0%／56%</td><td><span class="win caution">疑為適應症混淆</span></td></tr>
+      <tr><td>1、2、3 年 eGFR</td><td colspan="2">兩組相當</td><td class="num ns">0.356–0.606</td><td class="num">0–64%</td><td><span class="win neutral">無差異</span></td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:#6b7079;margin-top:12px">「判定」欄為本頁依 CI 是否跨越無效值、I² 大小、貢獻篇數與臨床後果嚴重度綜合給定，非原文用語。標示「原文未列數值」者，係全文中確實未提供該欄位，本頁不做推估。</p>
+  <div class="call amber">
+    <div class="h">一個必須警覺的「好結果」</div>
+    <b>HBsAg＋ 組的 1 年與 3 年血清肌酸酐反而「顯著較低」（p &lt; 0.001／0.021）</b>。抗原陽性的腎不太可能真的比較好用——比較合理的解釋是<b>適應症混淆（confounding by indication）</b>：願意接受 HBsAg＋ 腎的中心，通常也會挑選<b>器官品質較好、冷缺血時間較短、捐贈者較年輕</b>的腎，並配給狀況較佳的受贈者。當一篇觀察性統合分析出現「暴露組反而更好」的結果，通常是選擇偏差在說話，而不是生物學。
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Raw data &amp; redrawn figures <span class="zh">原始事件數與重繪圖</span></h2>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>項目</th><th>事件／人數</th><th>原文比例</th><th>本頁驗算</th><th>Wilson 95% CI（本頁自行計算）</th></tr></thead>
+    <tbody>
+      <tr><td>全體感染</td><td class="num">21／583</td><td class="num">3.60%</td><td class="num">3.60% ✓</td><td class="num">2.37–5.44%</td></tr>
+      <tr><td>捐贈者 HBV DNA 陰性</td><td class="num">2／248</td><td class="num">0.81%</td><td class="num">0.81% ✓</td><td class="num">0.22–2.89%</td></tr>
+      <tr><td>捐贈者 HBV DNA 陽性</td><td class="num">17／239</td><td class="num">7.11%</td><td class="num">7.11% ✓</td><td class="num">4.49–11.09%</td></tr>
+      <tr><td>受贈者 HBcAb 陽性</td><td class="num">1／120</td><td class="num">0.83%</td><td class="num">0.83% ✓</td><td class="num">0.15–4.57%</td></tr>
+      <tr><td>受贈者 HBcAb 陰性</td><td class="num">5／68</td><td class="num">7.35%</td><td class="num">7.35% ✓</td><td class="num">3.18–16.09%</td></tr>
+      <tr><td>受贈者 HBsAb 陽性</td><td class="num">5／442</td><td class="num">1.13%</td><td class="num">1.13% ✓</td><td class="num">0.48–2.62%</td></tr>
+      <tr><td>受贈者 HBsAb 陰性</td><td class="num">5／45</td><td class="num">11.11%</td><td class="num">11.11% ✓</td><td class="num">4.84–23.50%</td></tr>
+      <tr><td>亞洲地區</td><td class="num">12／512</td><td class="num">2.34%</td><td class="num">2.34% ✓</td><td class="num">1.35–4.05%</td></tr>
+      <tr><td>非亞洲地區</td><td class="num">9／71</td><td class="num">12.68%</td><td class="num">12.68% ✓</td><td class="num">6.81–22.37%</td></tr>
+      <tr><td>肝功能異常</td><td class="num">89／253</td><td class="num">35.18%</td><td class="num">35.18% ✓</td><td class="num">29.56–41.24%</td></tr>
+      <tr><td>肝炎</td><td class="num">16／521</td><td class="num">3.07%</td><td class="num">3.07% ✓</td><td class="num">1.90–4.93%</td></tr>
+      <tr><td>肝衰竭</td><td class="num">2／237</td><td class="num">0.84%</td><td class="num">0.84% ✓</td><td class="num">0.23–3.02%</td></tr>
+      <tr><td>感染後 HBsAg 清除</td><td class="num">14／21</td><td class="num">66.67%</td><td class="num">66.67% ✓</td><td class="num">45.37–82.81%</td></tr>
+      <tr><td>感染後演變肝衰竭</td><td class="num">2／21</td><td class="num">9.52%</td><td class="num">9.52% ✓</td><td class="num">2.65–28.91%</td></tr>
+      <tr><td><b>感染於第一年內發生</b></td><td class="num">16／21</td><td class="num sig">76.10%</td><td class="num sig">76.19% ✗</td><td class="num">54.91–89.37%</td></tr>
+    </tbody>
+  </table></div>
+  <div class="call amber">
+    <div class="h">驗算發現的一處原文誤植</div>
+    「21 例感染中有 16 例發生在第一年」原文寫成 <b>76.10%</b>，但 16 ÷ 21 = <b>76.19%</b>（本頁自行計算）。這是無關結論的排版級誤差，但它提醒讀者：本篇的數字校對並不完美，其餘每一格都值得自己按一次計算機。本頁已將表中所有其他比例逐格驗算，<b>皆與原文吻合</b>。
+  </div>
+
+  <h3>圖 3｜各族群發生率與 Wilson 95% CI（本頁依原始事件數重繪）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 409" width="100%" role="img" style="display:block">
+<rect width="880" height="409" fill="#fff"/>
+<line x1="330.0" y1="365.0" x2="690.0" y2="365.0" stroke="#6b7079"/>
+<line x1="330.0" y1="365.0" x2="330.0" y2="370.0" stroke="#6b7079"/>
+<text x="330.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">0%</text>
+<line x1="402.0" y1="365.0" x2="402.0" y2="370.0" stroke="#6b7079"/>
+<text x="402.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">20%</text>
+<line x1="474.0" y1="365.0" x2="474.0" y2="370.0" stroke="#6b7079"/>
+<text x="474.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">40%</text>
+<line x1="546.0" y1="365.0" x2="546.0" y2="370.0" stroke="#6b7079"/>
+<text x="546.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">60%</text>
+<line x1="618.0" y1="365.0" x2="618.0" y2="370.0" stroke="#6b7079"/>
+<text x="618.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">80%</text>
+<line x1="690.0" y1="365.0" x2="690.0" y2="370.0" stroke="#6b7079"/>
+<text x="690.0" y="383.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="middle" font-weight="400">100%</text>
+<text x="510.0" y="401.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">發生率（%）；橫線為本頁自行計算之 Wilson 95% CI（原文僅列合併點估計）</text>
+<text x="6.0" y="42.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="700">族群（原始事件數／人數）</text>
+<text x="874.0" y="42.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="700">發生率（95% CI）</text>
+<rect x="0" y="59.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="76.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">HBV 相關併發症（原文 Figure 5A）</text>
+<text x="10.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">肝功能異常 Abnormal liver function</text>
+<text x="318.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">89／253</text>
+<line x1="436.4" y1="98.7" x2="478.5" y2="98.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="436.4" y1="94.7" x2="436.4" y2="102.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="478.5" y1="94.7" x2="478.5" y2="102.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="452.1" y="94.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="102.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">35.18%（29.56–41.24%）</text>
+<text x="10.0" y="129.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">肝炎 Hepatitis</text>
+<text x="318.0" y="129.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">16／521</text>
+<line x1="336.8" y1="125.7" x2="347.7" y2="125.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="336.8" y1="121.7" x2="336.8" y2="129.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="347.7" y1="121.7" x2="347.7" y2="129.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="336.6" y="121.2" width="9" height="9" fill="#8a4a3d"/>
+<text x="874.0" y="129.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">3.07%（1.90–4.93%）</text>
+<text x="10.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">肝衰竭 Hepatic failure</text>
+<text x="318.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2／237</text>
+<line x1="330.8" y1="152.7" x2="340.9" y2="152.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="330.8" y1="148.7" x2="330.8" y2="156.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="340.9" y1="148.7" x2="340.9" y2="156.7" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="328.5" y="148.2" width="9" height="9" fill="#8a4a3d"/>
+<text x="874.0" y="156.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">0.84%（0.23–3.02%）</text>
+<rect x="0" y="167.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="184.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">血清學轉換（不等於活動性感染）</text>
+<text x="10.0" y="210.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">HBcAb 轉陽（曾暴露的痕跡）</text>
+<text x="318.0" y="210.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">34／240</text>
+<line x1="367.1" y1="206.7" x2="398.9" y2="206.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="367.1" y1="202.7" x2="367.1" y2="210.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="398.9" y1="202.7" x2="398.9" y2="210.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="376.5" y="202.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="210.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">14.17%（10.32–19.14%）</text>
+<text x="10.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">HBsAb 轉陽（多為 HBIG 被動抗體或疫苗）</text>
+<text x="318.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">29／188</text>
+<line x1="369.5" y1="233.7" x2="406.6" y2="233.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="369.5" y1="229.7" x2="369.5" y2="237.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="406.6" y1="229.7" x2="406.6" y2="237.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="381.0" y="229.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="237.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">15.43%（10.96–21.28%）</text>
+<rect x="0" y="248.0" width="880" height="25.0" fill="#fbf7f5"/>
+<text x="6.0" y="265.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#8a4a3d" text-anchor="start" font-weight="700">21 例感染者的後續（分母為感染者，非全體）</text>
+<text x="10.0" y="291.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">HBsAg 清除（治療後）</text>
+<text x="318.0" y="291.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">14／21</text>
+<line x1="493.3" y1="287.7" x2="628.1" y2="287.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="493.3" y1="283.7" x2="493.3" y2="291.7" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="628.1" y1="283.7" x2="628.1" y2="291.7" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="565.5" y="283.2" width="9" height="9" fill="#2f6b62"/>
+<text x="874.0" y="291.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">66.67%（45.37–82.81%）</text>
+<text x="10.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">一年內發生</text>
+<text x="318.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">16／21</text>
+<line x1="527.7" y1="314.7" x2="651.7" y2="314.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="527.7" y1="310.7" x2="527.7" y2="318.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="651.7" y1="310.7" x2="651.7" y2="318.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="599.8" y="310.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="318.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">76.19%（54.91–89.37%）</text>
+<text x="10.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="400">演變為肝衰竭</text>
+<text x="318.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#6b7079" text-anchor="end" font-weight="400">2／21</text>
+<line x1="339.5" y1="341.7" x2="434.1" y2="341.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="339.5" y1="337.7" x2="339.5" y2="345.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="434.1" y1="337.7" x2="434.1" y2="345.7" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="359.8" y="337.2" width="9" height="9" fill="#8a6a1f"/>
+<text x="874.0" y="345.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="end" font-weight="400">9.52%（2.65–28.91%）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>所有事件數／分母為原文逐字轉錄；比例與 95% CI 為<b>本頁自行計算</b>（Wilson 法）。原文只提供合併點估計，未提供多數項目的合併 CI，故此處<b>不畫合併菱形</b>。<b>怎麼讀｜</b>三段分別回答三個不同的問題：第一段是「會不會出事」（肝功能異常常見、肝炎少見、肝衰竭罕見）；第二段是「血清學會怎麼動」（HBcAb 與 HBsAb 轉陽相當常見，但<b>不等於活動性感染</b>）；第三段的分母是 21 名感染者，回答「萬一真的感染了會怎樣」。<b>陷阱｜</b>(1) 肝功能異常 35.18% 的 <b>I² 高達 97%</b>，且原文指出各研究對「異常」的 ALT 上限定義從 40 到 60 U/L 不等，還混雜藥物性肝損傷與 CMV 感染等競爭病因——這個數字幾乎不可解讀；(2) 第三段的三列<b>不可與前兩段混讀</b>：分母是 21 名已感染者，不是全體受贈者。全體受贈者發生肝衰竭的機率是 2/237（0.84%），而<b>一旦感染，肝衰竭機率跳到 2/21（9.52%）</b>——這正是知情同意時要講清楚的兩層機率；(3) 各列分母（253、521、237、240、188）互不相同，代表通報該項目的研究篇數不同，柱與柱之間<b>不是同一群病人</b>。</div>
+  </div>
+
+  <h3>圖 4｜移植腎與病人存活率（本頁依原文分年數字重繪）</h3>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 330" width="100%" role="img" style="display:block">
+<rect width="880" height="330" fill="#fff"/>
+<line x1="58.0" y1="256.0" x2="862.0" y2="256.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="50.0" y="260.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="58.0" y1="202.5" x2="862.0" y2="202.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="206.5" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<line x1="58.0" y1="149.0" x2="862.0" y2="149.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="153.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">50</text>
+<line x1="58.0" y1="95.5" x2="862.0" y2="95.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="99.5" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">75</text>
+<line x1="58.0" y1="42.0" x2="862.0" y2="42.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="46.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="16.0" y="149.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11" fill="#43464d" text-anchor="middle" font-weight="600" transform="rotate(-90 16.0 149.0)">移植腎存活率（%）</text>
+<rect x="114.0" y="49.3" width="43.0" height="206.7" fill="#8a4a3d" opacity="0.92"/>
+<text x="135.5" y="43.3" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">96.6%</text>
+<rect x="160.0" y="49.5" width="43.0" height="206.5" fill="#2f6b62" opacity="0.92"/>
+<text x="181.5" y="43.5" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">96.5%</text>
+<text x="158.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">1 年</text>
+<rect x="315.0" y="55.3" width="43.0" height="200.7" fill="#8a4a3d" opacity="0.92"/>
+<text x="336.5" y="49.3" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">93.8%</text>
+<rect x="361.0" y="58.9" width="43.0" height="197.1" fill="#2f6b62" opacity="0.92"/>
+<text x="382.5" y="52.9" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">92.1%</text>
+<text x="359.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">3 年</text>
+<rect x="516.0" y="73.7" width="43.0" height="182.3" fill="#8a4a3d" opacity="0.92"/>
+<text x="537.5" y="67.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">85.2%</text>
+<rect x="562.0" y="67.0" width="43.0" height="189.0" fill="#2f6b62" opacity="0.92"/>
+<text x="583.5" y="61.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">88.3%</text>
+<text x="560.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">5 年</text>
+<rect x="717.0" y="79.0" width="43.0" height="177.0" fill="#8a4a3d" opacity="0.92"/>
+<text x="738.5" y="73.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">82.7%</text>
+<rect x="763.0" y="72.8" width="43.0" height="183.2" fill="#2f6b62" opacity="0.92"/>
+<text x="784.5" y="66.8" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">85.6%</text>
+<text x="761.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">10 年</text>
+<line x1="58.0" y1="256.0" x2="862.0" y2="256.0" stroke="#6b7079"/>
+<rect x="58.0" y="298.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="75.0" y="308.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">HBsAg＋ 捐腎（移植腎存活）</text>
+<rect x="231.6" y="298.0" width="12" height="12" fill="#2f6b62"/>
+<text x="248.6" y="308.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">HBsAg− 捐腎（移植腎存活）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Results 3.9 之合併存活率（HBsAg＋：96.6%／93.8%／85.2%／82.7%；HBsAg−：96.5%／92.1%／88.3%／85.6%）。<b>怎麼讀｜</b>兩組曲線在 1 年與 3 年幾乎重合，5 年與 10 年才拉開約 3 個百分點，方向對 HBsAg＋ 組不利，但合併 HR 1.07（0.82–1.40）並不顯著。<b>陷阱｜</b>這些是<b>各研究存活率的合併值</b>，不是由個別病人資料重建的 Kaplan–Meier 曲線；追蹤時間從 183 天到 137 個月不等，因此「10 年存活率」實際上只由少數幾篇長追蹤研究支撐，原文未列出各時間點的貢獻篇數與 risk set，<b>本頁無從標示</b>。</div>
+  </div>
+  <div class="fig"><div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 330" width="100%" role="img" style="display:block">
+<rect width="880" height="330" fill="#fff"/>
+<line x1="58.0" y1="256.0" x2="862.0" y2="256.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="50.0" y="260.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="58.0" y1="202.5" x2="862.0" y2="202.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="206.5" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">25</text>
+<line x1="58.0" y1="149.0" x2="862.0" y2="149.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="153.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">50</text>
+<line x1="58.0" y1="95.5" x2="862.0" y2="95.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="99.5" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">75</text>
+<line x1="58.0" y1="42.0" x2="862.0" y2="42.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="50.0" y="46.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.0" fill="#6b7079" text-anchor="end" font-weight="400">100</text>
+<text x="16.0" y="149.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11" fill="#43464d" text-anchor="middle" font-weight="600" transform="rotate(-90 16.0 149.0)">病人存活率（%）</text>
+<rect x="114.0" y="46.7" width="43.0" height="209.3" fill="#8a4a3d" opacity="0.92"/>
+<text x="135.5" y="40.7" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">97.8%</text>
+<rect x="160.0" y="45.6" width="43.0" height="210.4" fill="#2f6b62" opacity="0.92"/>
+<text x="181.5" y="39.6" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">98.3%</text>
+<text x="158.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">1 年</text>
+<rect x="315.0" y="48.2" width="43.0" height="207.8" fill="#8a4a3d" opacity="0.92"/>
+<text x="336.5" y="42.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">97.1%</text>
+<rect x="361.0" y="48.2" width="43.0" height="207.8" fill="#2f6b62" opacity="0.92"/>
+<text x="382.5" y="42.2" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">97.1%</text>
+<text x="359.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">3 年</text>
+<rect x="516.0" y="57.0" width="43.0" height="199.0" fill="#8a4a3d" opacity="0.92"/>
+<text x="537.5" y="51.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">93.0%</text>
+<rect x="562.0" y="51.4" width="43.0" height="204.6" fill="#2f6b62" opacity="0.92"/>
+<text x="583.5" y="45.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">95.6%</text>
+<text x="560.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">5 年</text>
+<rect x="717.0" y="60.4" width="43.0" height="195.6" fill="#8a4a3d" opacity="0.92"/>
+<text x="738.5" y="54.4" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700">91.4%</text>
+<rect x="763.0" y="55.1" width="43.0" height="200.9" fill="#2f6b62" opacity="0.92"/>
+<text x="784.5" y="49.1" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700">93.9%</text>
+<text x="761.5" y="276.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="middle" font-weight="600">10 年</text>
+<line x1="58.0" y1="256.0" x2="862.0" y2="256.0" stroke="#6b7079"/>
+<rect x="58.0" y="298.0" width="12" height="12" fill="#8a4a3d"/>
+<text x="75.0" y="308.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">HBsAg＋ 捐腎（病人存活）</text>
+<rect x="222.0" y="298.0" width="12" height="12" fill="#2f6b62"/>
+<text x="239.0" y="308.0" font-family='-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif' font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">HBsAg− 捐腎（病人存活）</text>
+</svg></div>
+    <div class="cap"><b>數據來源｜</b>原文 Results 3.10 之合併病人存活率（HBsAg＋：97.8%／97.1%／93.0%／91.4%；HBsAg−：98.3%／97.1%／95.6%／93.9%）。<b>怎麼讀｜</b>3 年時兩組完全相同（97.1%），5 年與 10 年 HBsAg＋ 組低約 2.5 個百分點，合併 HR 1.19（0.78–1.81）不顯著。<b>陷阱｜</b>HR 的 CI 上界 1.81 意味著「病人死亡風險增加八成」這個可能性<b>並未被排除</b>——把這條線讀成「證明一樣安全」是過度解讀，正確的讀法是「<b>目前的證據量還不足以偵測中等程度的差異</b>」。要排除 1.8 倍這種幅度，需要的樣本量遠大於本篇的 819 人。</div>
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Clinical implications <span class="zh">臨床意涵</span></h2>
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>最適合的受贈者輪廓：HBsAb 陽性（理想上 &gt; 100 IU/L）、HBcAb 陽性、且捐贈者 HBV DNA 陰性。</b>在這個組合下，本篇的分層資料顯示感染率落在 <b>0.8–1.1%</b>，與一般腎移植的其他捐贈者來源感染風險同一量級。</li>
+    <li><b>最不適合的受贈者：HBcAb 陰性且 HBsAb 陰性者</b>（OR 分別為 12.96 與 6.67）。原文亦指出，<b>透析病人中有 30–70% 因免疫低下而 HBsAb 陰性</b>，即使加強疫苗劑量或加佐劑仍無反應——這群人在台灣的透析族群中占比不容忽視，是最需要被明確排除或極謹慎討論的一群。</li>
+    <li><b>值得考慮的情境：</b>等待時間極長、共病惡化（如嚴重心衰竭）、且 HBsAg＋ 捐贈者是唯一可及選項時。原文引述 Delman 等人的資料：接受 HBV NAT 陽性器官者的等待時間為 <b>283.4 天 vs 424.2 天（p &lt; 0.01）</b>，等於<b>省下約 4.6 個月的等待</b>（差值 140.8 天為本頁自行計算）。</li>
+    <li><b>對台灣的特殊意義：</b>西太平洋區 HBsAg 帶原率約 7.1%，遠高於歐洲的 1.1%。台灣屬 B 肝中高盛行區、同時有全面新生兒疫苗接種史，代表<b>潛在的 HBsAg＋ 捐贈者較多、而年輕受贈者具 HBsAb 保護力的比例也較高</b>——這兩個條件恰好都朝向「這條路較可行」的方向。本篇 16 篇中有 5 篇來自中國、2 篇來自泰國，族群相似度相對高。</li>
+  </ul>
+  <h3>換來什麼？</h3>
+  <ul class="clean">
+    <li><b>器官池擴大與等待時間縮短</b>——這是唯一、但也是最實質的獲益。對已在透析、心血管風險逐年累積的病人而言，早 4–5 個月移植的價值不容小覷。</li>
+    <li><b>不必付出的代價（就目前證據而言）：</b>移植腎功能（eGFR）與存活、病人存活、多數肝指標，在 1–3 年與長期追蹤中均與對照組相當。</li>
+  </ul>
+  <h3>代價是什麼？</h3>
+  <ul class="clean">
+    <li><b>約 3.6% 的捐贈者來源 HBV 感染機率</b>（若受贈者無免疫力則升至 7–11%），其中 <b>76%</b> 發生在第一年。</li>
+    <li><b>一旦感染，約 9.5%（2/21）演變為肝衰竭</b>——這是本篇最沉重的一個數字，也是最容易在「存活率沒有差異」的結論中被忽略的一個。</li>
+    <li><b>長期抗病毒藥物與 HBIG 的費用、藥物交互作用與監測負擔</b>；原文提出的分層預防方案為：HBsAb 陰性者給<b>單劑 2000 IU HBIG ＋ Entecavir 3 個月</b>；HBsAb 10–100 IU/L 者給<b>單劑 2000 IU HBIG ＋ Entecavir 1 個月</b>；HBsAb &gt; 100 IU/L 且捐贈者 HBV DNA 陰性者<b>不給預防用藥</b>。<b>此方案尚在多中心前瞻研究中驗證，非既定標準。</b></li>
+    <li><b>需要終身、規律的 HBV 血清學監測</b>，且免疫抑制下 HBcAb 陽性者本身就有再活化風險（原文引述另一篇統合分析：HBcAb 陽性腎移植受贈者再活化率 2.5%）。</li>
+  </ul>
+  <h3>知情同意怎麼談？</h3>
+  <div class="call teal">
+    <div class="h">建議的談法（分兩層機率）</div>
+    「有一顆腎臟可以配給你，但捐贈者是 B 肝帶原者。第一層要講的是<b>你會不會被感染</b>：整體大約 100 個人裡有 3–4 個會被傳染。以你的抗體狀況（此處帶入病人實際的 HBsAb／HBcAb 數值）來看，風險應該落在（1% 以下／7–11%）這個範圍。第二層要講的是<b>萬一真的被傳染了會怎樣</b>：大約三分之二的人靠藥物可以把病毒壓下去、表面抗原轉陰；但在目前累積到的 21 個感染案例中，<b>有 2 個人（約十分之一）發生了肝衰竭</b>。換來的是什麼？平均可以早大約 4 到 5 個月拿到腎臟，而且從目前的資料看，這顆腎能用多久、你能活多久，跟一般腎臟比起來<b>沒有看到差別</b>——但要注意，現有研究的規模還不足以排除「差一點點」的可能性。另外，你之後需要吃抗病毒藥、打免疫球蛋白，而且要終身定期抽血追蹤 B 肝指標。」
+  </div>
+  <div class="call amber">
+    <div class="h">不要這樣說</div>
+    「研究證實用 B 肝帶原者的腎臟一樣安全。」——本篇沒有任何隨機試驗，所有「無差異」都來自<b>回溯性資料與已被層層挑選過的受贈者</b>；且存活 HR 的信賴區間上界仍容許相當幅度的劣勢。也不要略過肝衰竭這個罕見但不可逆的結局。
+  </div>
+</section>
+
+<section id="limits">
+  <h2>Limitations <span class="zh">研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>沒有隨機對照試驗，14/16 為回溯性設計。</b>原文自承回溯性設計可能<b>低估</b>感染率（因缺乏常規 HBV 監測）。同時，7 篇為單臂研究、無對照組，以感染為終點估算的 OR／HR 準確度受限。</li>
+    <li><b>檢索截止於 2023 年 8 月 20 日，但分析在 2025 年初、發表在 2026 年 8 月。</b>原文明白承認這段<b>近 3 年的時間差</b>可能遺漏新證據（僅稱投稿前做過標的性重新篩選、未發現足以改變結論者）。讀者引用時應意識到這是一份「2023 年的證據快照」。</li>
+    <li><b>納入研究橫跨 1993–2023 年。</b>三十年間 HBV 血清學檢驗的敏感度大幅提升、抗病毒藥物由 Lamivudine 世代換到 Entecavir／Tenofovir 世代——<b>早期研究的低感染率有一部分可能只是「當年驗不出來」</b>。</li>
+    <li><b>異質性高且未被完全解釋。</b>整體 I² = 59%，剔除 Delman 一篇後降至 28%（代表結果對單篇高度敏感）；肝功能異常 I² = 97%、2 年 TBIL I² = 93%——這類數值下的合併估計實質上不具意義。原文亦指出統合迴歸<b>篇數太少、有過度配適風險，且未做多重性校正，其顯著結果應視為探索性</b>。</li>
+    <li><b>關鍵變項大量缺報：HBsAb 缺 5 篇、HBcAb 缺 11 篇。</b>而這兩項正是全篇最重要的風險分層依據——分層結論只建立在少數有報告的研究上，且各分層分母互不相加（見圖 1 說明）。</li>
+    <li><b>罕見事件的統計方法限制。</b>原文自承：21/583 屬罕見事件，Freeman–Tukey 轉換雖能穩定變異，但<b>結果仍對零事件研究的納入與加權方式敏感</b>；beta-binomial 或精確概似法等替代方法<b>並未實作</b>。合併發生率 1.52%（CI 下界 0.01%）與未加權的 3.60% 落差超過一倍，就是這個問題的直接表現。</li>
+    <li><b>p 值與信賴區間互相矛盾</b>（HBsAb 陰性 OR 6.67，CI 1.08–41.10 卻標 p = 0.006；HBcAb 陰性 OR 12.96，CI 2.06–81.69 卻標 p = 0.041）。本頁比對後認為至少有一處標示有誤，建議<b>只引用 CI</b>。</li>
+    <li><b>「暴露組反而更好」的訊號提示殘餘混淆。</b>HBsAg＋ 組 1 年、3 年肌酸酐顯著較低，最可能的解釋是器官品質與受贈者條件的選擇偏差；原文亦列出未被測量的混淆因子（抗病毒藥物順從性、捐贈者年齡、冷缺血時間）。</li>
+    <li><b>追蹤長度差異達 22 倍</b>（183 天至 137 個月），且未報告各時間點的 risk set，長期存活率的穩定度無法評估。</li>
+    <li><b>語言限制為英文</b>，可能遺漏中文、土耳其文等非英文文獻——考量到納入研究有 5 篇來自中國、5 篇來自土耳其，這個限制的影響可能不小。</li>
+    <li><b>2 篇族群重疊</b>，原文已註明但未說明合併時的處理方式，可能造成部分病人被重複計算。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>B 型肝炎表面抗原 <span class="en">Hepatitis B surface antigen, HBsAg</span></dt><dd>病毒外套膜蛋白，陽性代表<b>目前有 HBV 感染</b>（急性或慢性帶原）。本文中「HBsAg＋ 捐贈者」即帶原者捐腎。</dd></div>
+      <div class="gl-row"><dt>B 型肝炎表面抗體 <span class="en">Hepatitis B surface antibody, HBsAb / anti-HBs</span></dt><dd>中和抗體，來自疫苗接種或自然痊癒，代表<b>有保護力</b>。一般以 &gt; 10 IU/L 為陽性；本文顯示 &gt; 100 IU/L 風險最低。</dd></div>
+      <div class="gl-row"><dt>B 型肝炎核心抗體 <span class="en">Hepatitis B core antibody, HBcAb / anti-HBc</span></dt><dd>代表<b>曾經接觸過 HBV</b>（不論是否痊癒），疫苗不會產生此抗體。HBcAb 陽性但 HBsAg 陰性者肝內仍可能有病毒，免疫抑制下有再活化風險。</dd></div>
+      <div class="gl-row"><dt>捐贈者來源感染 <span class="en">Donor-derived infection</span></dt><dd>經由移植器官或體液自捐贈者傳染給受贈者的感染。本文定義為術後血清轉為 HBsAg、HBeAg 或 HBV DNA 陽性。</dd></div>
+      <div class="gl-row"><dt>B 型肝炎免疫球蛋白 <span class="en">Hepatitis B immune globulin, HBIG</span></dt><dd>被動免疫製劑，可立即提供中和抗體。本文提出的分層方案為單劑 2000 IU。</dd></div>
+      <div class="gl-row"><dt>核苷酸類似物 <span class="en">Entecavir / Tenofovir / Lamivudine</span></dt><dd>抗 HBV 藥物。Entecavir 與 Tenofovir 屬<b>高抗藥屏障</b>藥物，已在近期文獻中取代抗藥性較高的 Lamivudine。</dd></div>
+      <div class="gl-row"><dt>核酸檢測 <span class="en">Nucleic acid test, NAT</span></dt><dd>直接偵測病毒核酸（HBV DNA），較血清學更早、更靈敏地反映病毒複製活性，是判斷傳染力的關鍵。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>統合分析 <span class="en">Meta-analysis</span></dt><dd>將多篇研究的結果依權重合併，以提高樣本量與統計檢定力。合併觀察性研究時，無法消除各研究本身的偏差。</dd></div>
+      <div class="gl-row"><dt>Freeman–Tukey 雙反正弦轉換 <span class="en">double arcsine transformation</span></dt><dd>合併比例（尤其是接近 0 或 1）時用來穩定變異數的數學轉換。對零事件研究與加權方式仍敏感，是本文自承的限制。</dd></div>
+      <div class="gl-row"><dt>Newcastle–Ottawa 量表 <span class="en">NOS</span></dt><dd>評估觀察性研究偏誤風險的工具，涵蓋受試者選擇、組間可比性、結果確認三個面向。</dd></div>
+      <div class="gl-row"><dt>異質性 <span class="en">Heterogeneity, I²</span></dt><dd>衡量各研究結果差異中，有多少比例來自真實差異而非隨機誤差。I² &gt; 50% 一般視為顯著異質。</dd></div>
+      <div class="gl-row"><dt>適應症混淆 <span class="en">Confounding by indication</span></dt><dd>因醫師「挑選」而非隨機分配所產生的偏差。當觀察性研究出現「高風險暴露反而結果更好」時，最常見的解釋就是它。</dd></div>
+      <div class="gl-row"><dt>Wilson 信賴區間 <span class="en">Wilson score interval</span></dt><dd>計算比例 95% CI 的方法，在事件數少、比例接近 0 時，比傳統常態近似法更穩定。本頁所有自行計算之 CI 皆採此法。</dd></div>
+      <div class="gl-row"><dt>冷缺血時間 <span class="en">Cold ischemia time, CIT</span></dt><dd>器官自捐贈者取出、低溫保存到重新灌流之間的時間，是移植腎功能延遲與長期存活的重要決定因子。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; disclosure <span class="zh">來源引用與圖表重繪聲明</span></h2>
+  <ul class="clean">
+    <li><b>原始論文｜</b>Liang C, Luo Y, Yin S, Song T, Lin T. <i>Long-Term Clinical Outcomes of Kidney Transplantation from Hepatitis B Surface Antigen (HBsAg)-Positive Donors to HBsAg-Negative Recipients: A Systematic Review and Meta-Analysis of Real-World Studies.</i> Journal of Clinical Medicine. 2026;15(15):6048. DOI：<a href="https://doi.org/10.3390/jcm15156048">10.3390/jcm15156048</a>　·　<a href="https://pubmed.ncbi.nlm.nih.gov/42590149/">PMID 42590149</a>　·　PMC13467147（Open Access）。</li>
+    <li><b>研究登錄｜</b>PROSPERO CRD42022385379；依 PRISMA 聲明撰寫。</li>
+    <li><b>資料來源｜</b>本頁所有數字取自 PubMed Central 之開放取用全文（摘要與 Results 3.1–3.10、Discussion）。文獻檢索與全文取得透過 PubMed／PubMed Central。原文之 Table 1（各篇研究特徵逐列數據）與各圖之數值標籤<b>未能於可取得之全文文字版中取得</b>，因此本頁<b>不呈現逐篇研究的原始事件數表與逐篇森林圖</b>，改以原文正文中明載的分層原始事件數重繪；相關欄位一律標示「原文未列數值」，未做任何推估。</li>
+    <li><b>圖表重繪聲明｜</b>本頁所有圖形均為<b>依原文數字重新繪製的 inline SVG</b>，未使用、未嵌入出版社任何圖片檔。凡由原文數字經計算得出者（各族群百分比之複核、Wilson 95% CI、819 與 583 之差額 236 人與 28.8%、亞洲研究占比 87.8%、等待時間差 140.8 天、各分層分母與事件數之加總差額）皆已就地標註「<b>本頁自行計算</b>」。本頁<b>不呈現合併菱形</b>，因原文之合併估計採 Freeman–Tukey 轉換，與本頁逐格計算之原始比例並非同一估計量。</li>
+    <li><b>驗算紀錄｜</b>已逐格核對原文所列 15 組比例，其中 <b>14 組與本頁計算完全吻合</b>；唯一不符者為「感染於第一年內發生」，原文寫 76.10%、實際 16 ÷ 21 = 76.19%（已於文中標示）。另驗算：地區分層 512 &#43; 71 = 583、12 &#43; 9 = 21，與全體吻合；HBV DNA 分層 248 &#43; 239 = 487（少 96 人）、2 &#43; 17 = 19（少 2 起）；HBcAb 分層 120 &#43; 68 = 188（少 395 人）、1 &#43; 5 = 6（少 15 起）；HBsAb 分層 442 &#43; 45 = 487（少 96 人）、5 &#43; 5 = 10（少 11 起）——差額均源自未報告該變項的研究。</li>
+    <li><b>本頁性質｜</b>供外科臨床閱讀與教學討論使用之文獻導讀，非診療指引，亦不取代原文閱讀。器官接受與否之決策應依各中心政策、國家法規與病人個別狀況判斷。判定標籤與臨床建議屬本頁作者之解讀。</li>
+  </ul>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 012 · 2026 年 8 月 19 日　|　次專科分類：移植外科　|　資料來源：PubMed／PubMed Central
+</footer>
+
+</div>
+</body>
+</html>
