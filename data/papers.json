@@ -1,7 +1,59 @@
 {
- "count": 23,
- "latest": "2026-08-14",
+ "count": 25,
+ "latest": "2026-08-19",
  "papers": [
+  {
+   "id": "pubmed-periop-2026-08-19",
+   "file": "papers/pubmed-periop-2026-08-19.html",
+   "date": "2026-08-19",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 013",
+   "title": "術前兩週＋術後四週的「非監督式中強度運動」能不能減輕大腸直腸癌術後的疲憊？PHYSSURG-C 多中心隨機試驗（瑞典 6 家醫院、518 人）次級終點探索性分析——RAND-36 活力分數術後 4 週平均差 3.75 分（95% CI 0.01–7.49，p = 0.05），但生活品質、疼痛、心理復原全都沒有差別",
+   "title_en": "Effects of Prehabilitation by Physical Activity on Fatigue After Surgery for Colorectal Cancer. Results From Secondary Analyses in the Randomized Controlled Trial PHYSSURG-C",
+   "journal": "Cancer Medicine（Wiley） 2026;15(8):e72142（2026 年 8 月號）；完全開放取用 Open Access，PMC13451934",
+   "authors": "Afshari Kevin, Onerup Aron, Li Ying, Angenete Eva, Ehrencrona Carolina, Wedin Anette, Haglind Eva 瑞典哥德堡：Sahlgrenska 學院外科部 Scandinavian Surgical Outcomes Research Group（SSORG）、Sahlgrenska 大學醫院外科部與小兒腫瘤科",
+   "design": "多中心、開放標籤、優越性隨機對照試驗（PHYSSURG-C）之「次級終點探索性分析」 母試驗的主要終點是「自覺身體復原」，已發表且為陰性；本文分析的疲憊／生活品質／疼痛／心理復原全部是次要終點，樣本數未依此計算，且未做多重比較校正。統計採線性混合模式（連續變項）與序位迴歸（心理復原），校正基線值、時間點、時間×治療交互作用及三項分層因子；R 4.3.2",
+   "doi": "10.1002/cam4.72142",
+   "category": "周術期照護與併發症",
+   "tags": [
+    "周術期照護與併發症",
+    "預康復 Prehabilitation",
+    "術後疲憊 Postoperative fatigue",
+    "大腸直腸癌手術 Colorectal cancer surgery",
+    "證據等級：RCT 的次級終點探索性分析（hypothesis-generating）",
+    "Open Access"
+   ],
+   "tldr": "在瑞典 6 家醫院的 PHYSSURG-C 隨機試驗中，術前 2 週加術後 4 週的「非監督式、中等強度、每天 30 分鐘」有氧運動＋術前吸氣肌訓練，對 518 名大腸直腸癌手術病人而言，只在術後 4 週的 RAND-36 活力分數上看到平均高 3.75 分（95% CI 0.01–7.49，p = 0.05）的微弱訊號——恰好落在該量表 3–5 分的臨床有意義範圍下緣，但信賴區間下界幾乎貼著 0；生活品質、疼痛與心理復原則完全沒有差異，且這些全是母試驗（主要終點為陰性）的次要終點、未做多重比較校正，因此只能當成「值得再設計一個試驗去驗證」的假說，還不足以支持把這種強度的非監督居家運動當成大腸直腸癌術前的常規處方。",
+   "bytes": 92969
+  },
+  {
+   "id": "pubmed-gs-txp-2026-08-19",
+   "file": "papers/pubmed-gs-txp-2026-08-19.html",
+   "date": "2026-08-19",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 012",
+   "title": "B 肝表面抗原（HBsAg）陽性的腎臟，能不能移植給 HBsAg 陰性的受贈者？16 篇研究、819 人的系統性回顧與統合分析——捐贈者來源 HBV 感染 21/583（3.60%），10 年移植腎存活 82.7% vs 85.6%、病人存活 91.4% vs 93.9% 皆無顯著差異；但受贈者若 HBcAb 陰性，感染勝算高近 13 倍",
+   "title_en": "Long-Term Clinical Outcomes of Kidney Transplantation from Hepatitis B Surface Antigen (HBsAg)-Positive Donors to HBsAg-Negative Recipients: A Systematic Review and Meta-Analysis of Real-World Studies",
+   "journal": "Journal of Clinical Medicine（MDPI） 2026;15(15):6048（線上發表 2026 年 8 月 4 日）；完全開放取用 Open Access，PMC13467147",
+   "authors": "Liang Chengze, Luo Yun, Yin Saifu, Song Turun, Lin Tao 中國成都：四川大學華西醫院泌尿外科／泌尿研究所、腎臟移植中心、器官移植中心；四川大學華西醫學院",
+   "design": "系統性回顧 ＋ 統合分析（含單臂比例合併、風險因子合併與存活合併） R 4.2.2 之 meta 套件；比例採反變異加權＋Freeman–Tukey 雙反正弦轉換；I² > 50% 用隨機效果、否則固定效果。另做逐篇剔除的敏感度分析、統合迴歸（meta-regression）、輪廓增強漏斗圖與 Egger 檢定。品質評估採 Newcastle–Ottawa 量表（NOS）",
+   "doi": "10.3390/jcm15156048",
+   "category": "移植外科",
+   "tags": [
+    "移植外科",
+    "腎臟移植 Kidney transplantation",
+    "捐贈者來源感染 Donor-derived infection",
+    "B 型肝炎 HBV",
+    "證據等級：統合分析（16 篇，14 篇回溯性、無 RCT）",
+    "Open Access"
+   ],
+   "tldr": "把 HBsAg 陽性的腎臟移植給 HBsAg 陰性的受贈者，在 16 篇（14 篇回溯性、無隨機試驗）共 819 人的統合分析中，捐贈者來源 HBV 感染只發生在 21/583（3.60%），且 1–10 年的移植腎與病人存活率、肝腎功能與對照組沒有顯著差異（移植腎 HR 1.07，95% CI 0.82–1.40；病人 HR 1.19，95% CI 0.78–1.81）——但風險高度取決於受贈者的免疫狀態：HBsAb 陰性者感染勝算是陽性者的 6.67 倍（95% CI 1.08–41.10）、HBcAb 陰性者高達 12.96 倍（95% CI 2.06–81.69），而 21 名感染者中仍有 2 人（9.52%）演變成肝衰竭。因此這是一條「可以走，但必須挑對受贈者、挑對捐贈者病毒量、並搭配抗病毒預防」的路，絕不是全面放行的通行證。",
+   "bytes": 99623
+  },
   {
    "id": "pubmed-gs-endo-2026-08-14",
    "file": "papers/pubmed-gs-endo-2026-08-14.html",
