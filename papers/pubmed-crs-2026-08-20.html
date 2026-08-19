@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大腸直腸外科文獻 · 2026-08-20</title>
+<style>
+
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+
+
+  /* 本頁附加：寬表格的欄寬控制，避免首欄被壓成逐字換行 */
+  .tbl-wrap table.wide{min-width:640px;}
+  .tbl-wrap table.wide th:first-child,.tbl-wrap table.wide td:first-child{min-width:150px;}
+  .tbl-wrap table.wide th:nth-child(2),.tbl-wrap table.wide td:nth-child(2){min-width:92px;}
+  .tbl-wrap table.wide td{vertical-align:top;}
+  .tbl-wrap table.wide{font-size:13px;}
+  .tbl-wrap table.wide .win{white-space:normal;}
+  .tbl-wrap table.wide td.num{white-space:normal;}
+  .tbl-wrap table.wide th{white-space:normal;}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日大腸直腸外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 20 日 · 週四</span>
+    <span style="opacity:.4">/</span><span>Vol. 014</span>
+  </div>
+  <h1 class="title">直腸癌微創前位切除，下腸繫膜動脈（IMA）該<b>高位結紮</b>還是<b>低位結紮</b>？韓國多中心隨機對照試驗（314 人隨機分派、293 人分析）——症狀性吻合處滲漏 <b>4.9%（7/143）vs 6.0%（9/150），RR 0.82（95% CI 0.31–2.13，p = 0.68）</b>；12 個月 LARS 分數 15.8 vs 17.3（p = 0.32）、major LARS 19.8% vs 19.2%（p &gt; 0.99）<b>全都沒有差別</b></h1>
+  <p class="title-en">Inferior Mesenteric Artery Ligation Level and Anastomotic Leakage in Low Anterior Resection: A Randomized Clinical Trial</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">JAMA Surgery（美國醫學會）<br><span style="color:#6b7079;font-size:13px">2026;161(8):776&#8211;783（2026 年 8 月號）；PMC13294822</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Kim Chang Hyun, Park Soo Yeun, Lee Soo Young, Son Gyung Mo, Kim Hye Jin, Ha Gi Won, Lee Kyung-Ha, Kim Duck-Woo, Park Jun Seok, Bae Ki Beom 等<br><span style="color:#6b7079;font-size:13px">作者服務機構涵蓋韓國 <b>7 家醫學中心</b>（本頁依作者列表之服務機構清點）：全南大學和順醫院、慶北大學漆谷醫院、釜山大學梁山醫院、全北大學醫院、忠南大學醫院、首爾大學盆唐醫院、仁濟大學釜山白醫院。<b>原文摘要未列參與中心總數</b></span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>多中心、前瞻性、隨機對照試驗（RCT）</b><br><span style="color:#6b7079;font-size:13px">收案期間 <b>2019 年 7 月–2024 年 8 月</b>；臨床分期 I–III 期直腸癌、預計接受<b>腹腔鏡或機器人前位切除</b>者，隨機分派至 IMA <b>高位結紮</b>或<b>低位結紮</b>。主要分析族群為<b>修正型意圖治療（modified intention-to-treat, mITT）</b></span></div></div>
+    <div class="meta-item"><div class="k">介入內容 Intervention</div><div class="v"><b>高位結紮</b>＝在 IMA 根部結紮；<b>低位結紮</b>＝在<b>左結腸動脈（LCA）分支起點遠端</b>結紮（即保留 LCA）<br><span style="color:#6b7079;font-size:13px">原文摘要未描述兩組在淋巴結廓清範圍、脾曲游離比例、轉流性造口比例上的規範，<b>此類細節本頁未取得</b></span></div></div>
+    <div class="meta-item"><div class="k">主要終點</div><div class="v"><b>吻合處滲漏（anastomotic leakage）發生率</b><br><span style="color:#6b7079;font-size:13px">次要終點：手術併發症；<b>術後 12 個月</b>的腸道功能（LARS 分數）、排尿功能、性功能與生活品質</span></div></div>
+    <div class="meta-item"><div class="k">分析族群</div><div class="v"><b>隨機分派 314 人 &#8594; mITT 分析 293 人</b>（低位結紮 143／高位結紮 150）<br><span style="color:#6b7079;font-size:13px">中位（IQR）年齡 <b>64.0（55.3–73.0）歲</b>；女性 102 人（34.8%）、男性 191 人（65.2%）。<b>21 人未進入 mITT</b>（314 − 293，<b>本頁自行計算</b>；排除原因原文摘要未列）</span></div></div>
+    <div class="meta-item"><div class="k">試驗登錄</div><div class="v">韓國 Clinical Research Information Service（CRIS）<br><span style="color:#6b7079;font-size:13px">識別碼 <b>KCT0003523</b></span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1001/jamasurg.2026.2248">10.1001/jamasurg.2026.2248</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42340709/">PMID 42340709 &#8594;</a>　·　PMC13294822</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">大腸直腸癌手術與腫瘤學</span>
+    <span class="tag t2">吻合處滲漏 Anastomotic leakage</span>
+    <span class="tag t2">下腸繫膜動脈結紮 IMA ligation</span>
+    <span class="tag t2">低前位切除症候群 LARS</span>
+    <span class="tag t3">證據等級：多中心隨機對照試驗（RCT）</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">受試者流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#clinic">臨床意涵</a><a href="#limits">限制與警訊</a>
+  <a href="#gloss">中英對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>在這項韓國多中心隨機對照試驗中，直腸癌微創前位切除時<strong>保留左結腸動脈的「低位結紮」並沒有把吻合處滲漏率壓下來</strong>——症狀性滲漏 7/143（4.9%）vs 高位結紮 9/150（6.0%），<strong>RR 0.82（95% CI 0.31–2.13，p = 0.68）</strong>；30 天整體併發症 14.0% vs 22.0%（p = 0.08）雖然數字上偏向低位結紮但<strong>未達統計顯著</strong>，而 12 個月的 LARS 分數（15.8 vs 17.3，p = 0.32）與 major LARS 比例（19.8% vs 19.2%，p &gt; 0.99）<strong>幾乎完全重疊</strong>。實務意義是：<strong>在有經驗的術者手上，兩種結紮高度都安全可行</strong>，選哪一種應該回到個別病人的血流、張力與淋巴結廓清考量，而不是指望換個結紮高度就能少漏。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">英文原文摘要（逐字）</span></h2>
+  <div class="abs">
+    <h4>Importance</h4>
+    <p>The optimal level of inferior mesenteric artery (IMA) ligation during rectal cancer resection remains controversial because of potential trade-offs between anastomotic integrity and functional outcomes.</p>
+    <h4>Objective</h4>
+    <p>To determine whether low ligation of the IMA reduces the rate of anastomotic leakage compared with high ligation in patients undergoing minimally invasive anterior resection for rectal cancer.</p>
+    <h4>Design, Setting, and Participants</h4>
+    <p>This multicenter, prospective, randomized clinical trial enrolled patients with clinical stage I through III rectal cancer between July 2019 and August 2024. Patients scheduled for laparoscopic or robotic anterior resection were randomized to undergo either high or low ligation of the IMA.</p>
+    <h4>Interventions</h4>
+    <p>High ligation (ligation at the root of the IMA) or low ligation (ligation distal to the origin of the left colic artery).</p>
+    <h4>Main Outcomes and Measures</h4>
+    <p>The primary end point was the rate of anastomotic leakage. Secondary end points included surgical complications and functional outcomes (bowel, urinary, and sexual function) assessed at 12 months postoperatively.</p>
+    <h4>Results</h4>
+    <p>Of 314 randomized patients, 293 were included in the modified intention-to-treat analysis (143 who received low ligation and 150 high ligation). The median (IQR) age was 64.0 (55.3-73.0) years; there were 102 female patients (34.8%) and 191 male patients (65.2%). Symptomatic anastomotic leakage occurred in 7 of 143 patients (4.9%) in the low-ligation group and 9 of 150 (6.0%) in the high-ligation group (risk ratio, 0.82; 95% CI, 0.31-2.13; <i>P</i> = .68). Overall 30-day postoperative morbidity was 14.0% (20/143 patients) vs 22.0% (33/150 patients) (<i>P</i> = .08). At 12 months, bowel function (mean [SD] Low Anterior Resection Syndrome [LARS] score, 15.8 [12.8] in the low-ligation group vs 17.3 [11.8] in the high-ligation group; <i>P</i> = .32) and the proportion of patients with major LARS (24/121 [19.8%] in the low-ligation group vs 25/130 in the high-ligation group [19.2%]; <i>P</i> &gt; .99) were similar between groups; other functional and quality-of-life outcomes were also comparable.</p>
+    <h4>Conclusions and Relevance</h4>
+    <p>In this randomized clinical trial, low ligation of the IMA did not significantly reduce the rate of anastomotic leakage compared with high ligation. Both techniques appear to be safe and feasible for minimally invasive rectal cancer surgery, with comparable complication rates and long-term functional outcomes.</p>
+    <h4>Trial Registration</h4>
+    <p>Clinical Research Information Service identifier: KCT0003523</p>
+    <p class="note">摘要為原文逐字引用（verbatim），段落標題依 JAMA 結構式摘要原格式排列（Importance / Objective / Design, Setting, and Participants / Interventions / Main Outcomes and Measures / Results / Conclusions and Relevance / Trial Registration）。<b>本頁未能取得出版社全文之表格與圖片</b>（PMC 與 JAMA Network 於本次擷取時皆要求人機驗證），因此以下所有數據<b>僅來自上列摘要逐字內容</b>，凡摘要未列者一律標示「原文摘要未列數值」。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>Participant flow <span class="zh">受試者流程（CONSORT）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">隨機分派 Randomization</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">臨床分期 I–III 期直腸癌、預計接受腹腔鏡或機器人前位切除者，於 2019 年 7 月–2024 年 8 月間<b>隨機分派</b><br><span class="n">314</span> 人</div></div>
+      <div class="pr-ex">收案條件與各中心收案數<br><span class="n">原文摘要未列數值</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">分析族群 Modified intention-to-treat</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final">進入 mITT 分析<br><span class="n">293</span> 人</div></div>
+      <div class="pr-ex">未進入 mITT：<span class="n">21</span> 人<br>（314 − 293，<b>本頁自行計算</b>；<b>排除原因原文摘要未列</b>）</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">兩組人數 Allocation</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><b>低位結紮 Low ligation</b>（保留左結腸動脈）<br><span class="n">143</span> 人</div></div>
+      <div class="pr-main"><div class="pr-box"><b>高位結紮 High ligation</b>（IMA 根部結紮）<br><span class="n">150</span> 人</div></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">術後 12 個月功能評估（有 LARS 資料者）</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">低位結紮組<br><span class="n">121</span> 人（143 人中的 84.6%，<b>本頁自行計算</b>）</div></div>
+      <div class="pr-main"><div class="pr-box">高位結紮組<br><span class="n">130</span> 人（150 人中的 86.7%，<b>本頁自行計算</b>）</div></div>
+    </div>
+    <div class="pr-row" style="margin-top:14px">
+      <div class="pr-main"><div class="pr-box" style="background:#fff;border-style:dashed">兩組合計 <span class="n">251</span> 人有 12 個月 LARS 資料（121＋130，<b>本頁自行計算</b>）；相對於 mITT 的 293 人，<b>資料缺漏 42 人（14.3%，本頁自行計算）</b>。原文摘要<b>未說明</b>這些人是失聯、未回覆問卷、造口未回納，或是死亡</div></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.6"><b>怎麼看：</b>這是 CONSORT 流程而非 PRISMA——本文是單一隨機試驗，不是系統性回顧。<b>陷阱：</b>143 與 150 的分組人數是「實際接受該術式並納入 mITT」者；<b>mITT 不等於 ITT</b>，若被排除的 21 人當中有較多因術中發現無法完成吻合而改做 Hartmann 者，滲漏率會被系統性低估。原文摘要未提供排除原因，這一點無法從本頁資料判斷。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Trial characteristics <span class="zh">研究特徵表</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>項目</th><th>內容</th><th>資料來源</th></tr></thead>
+    <tbody>
+      <tr><td>研究類型</td><td>多中心、前瞻性、隨機對照試驗</td><td>原文摘要</td></tr>
+      <tr><td>收案期間</td><td>2019 年 7 月 – 2024 年 8 月（約 5 年 2 個月）</td><td>原文摘要</td></tr>
+      <tr><td>納入條件</td><td>臨床分期 <b>cStage I–III</b> 直腸癌；排定接受<b>腹腔鏡或機器人前位切除</b></td><td>原文摘要</td></tr>
+      <tr><td>排除條件</td><td class="na">原文摘要未列</td><td>&#8212;</td></tr>
+      <tr><td>隨機分派人數</td><td class="num">314</td><td>原文摘要</td></tr>
+      <tr><td>mITT 分析人數</td><td class="num">293（低位 143／高位 150）</td><td>原文摘要</td></tr>
+      <tr><td>年齡（中位數, IQR）</td><td class="num">64.0（55.3–73.0）歲，<b>全體</b></td><td>原文摘要</td></tr>
+      <tr><td>性別</td><td class="num">女 102（34.8%）／男 191（65.2%），<b>全體</b></td><td>原文摘要</td></tr>
+      <tr><td>分組性別／年齡分布</td><td class="na">原文摘要未列數值（僅提供全體）</td><td>&#8212;</td></tr>
+      <tr><td>腫瘤高度、術前放化療比例</td><td class="na">原文摘要未列數值</td><td>&#8212;</td></tr>
+      <tr><td>轉流性造口比例</td><td class="na">原文摘要未列數值</td><td>&#8212;</td></tr>
+      <tr><td>腹腔鏡 vs 機器人比例</td><td class="na">原文摘要未列數值</td><td>&#8212;</td></tr>
+      <tr><td>淋巴結收成、環周切緣、無病存活</td><td class="na">原文摘要未列數值（<b>本試驗主要終點為滲漏，非腫瘤學終點</b>）</td><td>&#8212;</td></tr>
+      <tr><td>主要終點</td><td>吻合處滲漏率</td><td>原文摘要</td></tr>
+      <tr><td>追蹤長度（功能評估）</td><td class="num">術後 12 個月</td><td>原文摘要</td></tr>
+      <tr><td>試驗登錄</td><td>KCT0003523（韓國 CRIS）</td><td>原文摘要</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.6">凡標示<span class="na">「原文摘要未列」</span>者，代表本次<b>未能取得出版社全文表格</b>，而非原文真的沒有——JAMA Surgery 全文與 PMC 版本在本次擷取時皆被人機驗證擋下。要看完整 Table 1–4 請直接開 <a href="https://doi.org/10.1001/jamasurg.2026.2248">DOI 連結</a>。</p>
+</section>
+
+<section id="results">
+  <h2>Primary &amp; key secondary outcomes <span class="zh">主要結果森林圖</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 218" width="100%" height="218" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="218" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">結果 OUTCOME</text>
+<text x="608" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">RR (95% CI)</text>
+<line x1="425.0" y1="56" x2="425.0" y2="170" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="250" y1="170" x2="600" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<line x1="250.0" y1="170" x2="250.0" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="250.0" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0.2</text>
+<line x1="304.5" y1="170" x2="304.5" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="304.5" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0.33</text>
+<line x1="349.6" y1="170" x2="349.6" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="349.6" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0.5</text>
+<line x1="425.0" y1="170" x2="425.0" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="425.0" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">1</text>
+<line x1="500.4" y1="170" x2="500.4" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="500.4" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">2</text>
+<line x1="544.5" y1="170" x2="544.5" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="544.5" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">3</text>
+<line x1="600.0" y1="170" x2="600.0" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="600.0" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">5</text>
+<text x="425.0" y="206" font-size="11" fill="#43464d" text-anchor="middle">風險比 RR（低位結紮 ÷ 高位結紮，對數刻度；無效線＝1）</text>
+<text x="417.0" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 低位結紮較好</text>
+<text x="433.0" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">高位結紮較好 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">症狀性吻合處滲漏</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">7/143 vs 9/150（原文報告 RR）</text>
+<line x1="297.7" y1="79.0" x2="507.2" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="297.7" y1="75.0" x2="297.7" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="507.2" y1="75.0" x2="507.2" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="398.9" y="74.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="608" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">0.82 (0.31, 2.13)</text>
+<text x="0" y="111.0" font-size="12.5" fill="#1b1c1e" font-weight="600">30 天整體術後併發症</text>
+<text x="0" y="125.0" font-size="10.5" fill="#6b7079">20/143 vs 33/150（本頁自行計算）</text>
+<line x1="320.7" y1="113.0" x2="430.8" y2="113.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="320.7" y1="109.0" x2="320.7" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="430.8" y1="109.0" x2="430.8" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="371.2" y="108.5" width="9" height="9" fill="#2f6b62"/>
+<text x="608" y="117.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">0.64 (0.38, 1.05)</text>
+<text x="0" y="145.0" font-size="12.5" fill="#1b1c1e" font-weight="600">12 個月 major LARS</text>
+<text x="0" y="159.0" font-size="10.5" fill="#6b7079">24/121 vs 25/130（本頁自行計算）</text>
+<line x1="373.7" y1="147.0" x2="483.0" y2="147.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="373.7" y1="143.0" x2="373.7" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="483.0" y1="143.0" x2="483.0" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="423.9" y="142.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="608" y="151.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">1.03 (0.62, 1.70)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>症狀性吻合處滲漏的 RR 0.82（95% CI 0.31–2.13）為<b>原文摘要逐字報告</b>；30 天整體術後併發症與 12 個月 major LARS 兩列的 RR 與 95% CI 為<b>本頁自行計算</b>——以原文提供的原始事件數（20/143 vs 33/150；24/121 vs 25/130）套用標準對數風險比法（log-RR 的標準誤 = &#8730;(1/a − 1/n&#8321; + 1/c − 1/n&#8322;)，常態近似 95% CI）。<b>交叉驗算：</b>以同一方法回推滲漏那一列得到 RR 0.816（0.312–2.133），與原文的 0.82（0.31–2.13）<b>吻合</b>，代表計算方法與原文一致。<br>
+      <b>如何解讀：</b>橫軸是對數刻度，虛線 1 為無效線；方塊是點估計、橫線是 95% CI。三條線<b>全都橫跨 1</b>，代表沒有任何一項達到統計顯著。滲漏那條線特別長（0.31 到 2.13，跨度近 7 倍），是因為兩組合計只有 16 件事件——<b>事件太少，區間就寬</b>。<br>
+      <b>有何陷阱：</b>(1) 這是<b>單一試驗的多個結果並列</b>，不是統合分析，所以<b>沒有合併菱形</b>，各列之間不可相加。(2) 30 天併發症那條線的上界 1.05 只差一點就排除 1（對應 p = 0.08），很容易被過度解讀成「低位結紮比較安全」——但這是<b>次要終點</b>，試驗樣本數並非為此設計，也未見多重比較校正。(3) major LARS 的分母是 121／130，<b>不是</b> 143／150，兩者不可混用。
+    </div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 152" width="100%" height="152" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="152" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">比較 COMPARISON</text>
+<text x="598" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">MD (95% CI)</text>
+<line x1="503.6" y1="56" x2="503.6" y2="102" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="290" y1="102" x2="590" y2="102" stroke="#e3e0da" stroke-width="1"/>
+<line x1="334.0" y1="102" x2="334.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="334.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">−4</text>
+<line x1="418.8" y1="102" x2="418.8" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="418.8" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">−2</text>
+<line x1="503.6" y1="102" x2="503.6" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="503.6" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<line x1="588.4" y1="102" x2="588.4" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="588.4" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">2</text>
+<text x="440.0" y="139" font-size="11" fill="#43464d" text-anchor="middle">平均差 MD（分；低位結紮 − 高位結紮）</text>
+<text x="495.6" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 低位結紮較好</text>
+<text x="511.6" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">高位結紮較好 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">LARS 總分（0–42 分，分數低較好）</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">15.8±12.8（n=121）vs 17.3±11.8（n=130）</text>
+<line x1="310.7" y1="79.0" x2="569.3" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="310.7" y1="75.0" x2="310.7" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="569.3" y1="75.0" x2="569.3" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="435.5" y="74.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="598" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−1.50 (−4.55, 1.55)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>原文報告 12 個月 LARS 平均（標準差）為低位結紮 15.8（12.8）、高位結紮 17.3（11.8），p = 0.32；<b>原文摘要未直接列出平均差與其 95% CI</b>，本圖之 MD −1.50（95% CI −4.55 至 1.55）為<b>本頁自行計算</b>（獨立樣本平均差，SE = &#8730;(s&#8321;²/n&#8321; + s&#8322;²/n&#8322;)，n 採 12 個月有功能資料者 121 與 130）。<br>
+      <b>如何解讀：</b>LARS 分數 0–42 分，<b>分數越高症狀越重</b>；一般以 &#8805; 30 分定義 major LARS。橫軸單位是「分」，虛線 0 為無差異。點估計 −1.50 分代表低位結紮組平均低 1.5 分。<br>
+      <b>有何陷阱：</b>(1) LARS 分數<b>約 5 分以上</b>才被多數文獻視為病人感受得到的差異，1.5 分在臨床上幾乎無感，而且 95% CI 兩端（−4.6 到 +1.6）<b>都在臨床無意義的範圍內</b>——這是一個「有資訊量的陰性結果」，不是「樣本不足所以看不出來」。(2) 用來算 SE 的 n 是本頁依 major LARS 分母推定，若原文 LARS 連續分數的實際分析人數不同，區間寬度會略有出入。(3) LARS 分數<b>不是常態分布</b>（呈雙峰），用平均差比較是慣例但並非最理想。
+    </div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All reported outcomes <span class="zh">全部結果總覽表</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>結果</th><th>低位結紮<br>（n = 143）</th><th>高位結紮<br>（n = 150）</th><th>效果值（95% CI）</th><th>p 值</th><th>異質性 I²</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>症狀性吻合處滲漏</b><br><span style="font-size:12px;color:#6b7079">主要終點</span></td>
+        <td class="num">7（4.9%）</td><td class="num">9（6.0%）</td>
+        <td class="num">RR 0.82（0.31–2.13）<br><span style="font-size:11.5px;color:#6b7079">原文報告</span></td>
+        <td class="num ns">0.68</td><td class="num na">不適用<br><span style="font-size:11px">（單一試驗）</span></td>
+        <td><span class="win neutral">無差異</span></td>
+      </tr>
+      <tr>
+        <td><b>30 天整體術後併發症</b><br><span style="font-size:12px;color:#6b7079">次要終點</span></td>
+        <td class="num">20（14.0%）</td><td class="num">33（22.0%）</td>
+        <td class="num">RR 0.64（0.38–1.05）<br><span style="font-size:11.5px;color:#6b7079">本頁自行計算</span></td>
+        <td class="num ns">0.08</td><td class="num na">不適用</td>
+        <td><span class="win caution">趨勢但未顯著</span></td>
+      </tr>
+      <tr>
+        <td><b>12 個月 LARS 總分</b>（平均 [SD]）<br><span style="font-size:12px;color:#6b7079">次要終點；分母 121／130</span></td>
+        <td class="num">15.8（12.8）</td><td class="num">17.3（11.8）</td>
+        <td class="num">MD −1.50（−4.55, 1.55）<br><span style="font-size:11.5px;color:#6b7079">本頁自行計算</span></td>
+        <td class="num ns">0.32</td><td class="num na">不適用</td>
+        <td><span class="win neutral">無差異</span></td>
+      </tr>
+      <tr>
+        <td><b>12 個月 major LARS</b>（比例）<br><span style="font-size:12px;color:#6b7079">次要終點；分母 121／130</span></td>
+        <td class="num">24／121（19.8%）</td><td class="num">25／130（19.2%）</td>
+        <td class="num">RR 1.03（0.62–1.70）<br><span style="font-size:11.5px;color:#6b7079">本頁自行計算</span></td>
+        <td class="num ns">&gt; 0.99</td><td class="num na">不適用</td>
+        <td><span class="win neutral">無差異</span></td>
+      </tr>
+      <tr>
+        <td><b>排尿功能</b></td>
+        <td class="num na" colspan="2">原文摘要未列數值</td>
+        <td class="num na">原文摘要未列數值</td>
+        <td class="num na">未列</td><td class="num na">不適用</td>
+        <td><span class="win neutral">原文稱相當</span></td>
+      </tr>
+      <tr>
+        <td><b>性功能</b></td>
+        <td class="num na" colspan="2">原文摘要未列數值</td>
+        <td class="num na">原文摘要未列數值</td>
+        <td class="num na">未列</td><td class="num na">不適用</td>
+        <td><span class="win neutral">原文稱相當</span></td>
+      </tr>
+      <tr>
+        <td><b>生活品質</b></td>
+        <td class="num na" colspan="2">原文摘要未列數值</td>
+        <td class="num na">原文摘要未列數值</td>
+        <td class="num na">未列</td><td class="num na">不適用</td>
+        <td><span class="win neutral">原文稱相當</span></td>
+      </tr>
+      <tr>
+        <td><b>腫瘤學終點</b>（淋巴結收成、環周切緣、無病存活）</td>
+        <td class="num na" colspan="2">原文摘要未列數值</td>
+        <td class="num na">原文摘要未列數值</td>
+        <td class="num na">未列</td><td class="num na">不適用</td>
+        <td><span class="win neutral">非本試驗終點</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">「I² 異質性」為什麼全部是「不適用」？</div>
+    I² 衡量的是<b>多篇研究之間</b>結果的不一致程度，只有統合分析才有。本文是<b>單一隨機試驗</b>，所有數據來自同一個研究母體，因此沒有 I² 可言。若你在其他頁面看到 I²，記得那是統合分析特有的指標。
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Raw event counts <span class="zh">各項原始數據與本頁重繪圖</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>結果</th><th>低位結紮<br>事件／人數</th><th>低位結紮<br>發生率</th><th>高位結紮<br>事件／人數</th><th>高位結紮<br>發生率</th><th>絕對風險差<br>（本頁自行計算）</th></tr></thead>
+    <tbody>
+      <tr><td>症狀性吻合處滲漏</td><td class="num">7 / 143</td><td class="num">4.90%</td><td class="num">9 / 150</td><td class="num">6.00%</td><td class="num">−1.10 個百分點</td></tr>
+      <tr><td>30 天整體術後併發症</td><td class="num">20 / 143</td><td class="num">13.99%</td><td class="num">33 / 150</td><td class="num">22.00%</td><td class="num">−8.01 個百分點</td></tr>
+      <tr><td>12 個月 major LARS</td><td class="num">24 / 121</td><td class="num">19.83%</td><td class="num">25 / 130</td><td class="num">19.23%</td><td class="num">＋0.60 個百分點</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.6"><b>算術交叉驗算（本頁自行計算）：</b>7 ÷ 143 = 4.895% → 原文寫 4.9% <b>✓</b>；9 ÷ 150 = 6.000% → 原文寫 6.0% <b>✓</b>；20 ÷ 143 = 13.986% → 原文寫 14.0% <b>✓</b>；33 ÷ 150 = 22.000% → 原文寫 22.0% <b>✓</b>；24 ÷ 121 = 19.835% → 原文寫 19.8% <b>✓</b>；25 ÷ 130 = 19.231% → 原文寫 19.2% <b>✓</b>；143 ＋ 150 = 293 → 與 mITT 人數 <b>✓</b>。所有原文百分比皆與原始事件數相符，未發現內部矛盾。</p>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="100%" height="320" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="320" fill="#ffffff"/>
+<line x1="56" y1="244.0" x2="744" y2="244.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="248.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text>
+<line x1="56" y1="194.0" x2="744" y2="194.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="198.0" font-size="10.5" fill="#6b7079" text-anchor="end">7</text>
+<line x1="56" y1="144.0" x2="744" y2="144.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="148.0" font-size="10.5" fill="#6b7079" text-anchor="end">14</text>
+<line x1="56" y1="94.0" x2="744" y2="94.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="98.0" font-size="10.5" fill="#6b7079" text-anchor="end">21</text>
+<line x1="56" y1="44.0" x2="744" y2="44.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="48.0" font-size="10.5" fill="#6b7079" text-anchor="end">28</text>
+<text x="4" y="30" font-size="10.5" fill="#6b7079">發生率（%）</text>
+<rect x="129.7" y="209.0" width="38.0" height="35.0" fill="#8a4a3d" opacity="0.88"/>
+<text x="148.7" y="204.0" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">4.90</text>
+<rect x="173.7" y="201.1" width="38.0" height="42.9" fill="#2f6b62" opacity="0.88"/>
+<text x="192.7" y="196.1" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">6.00</text>
+<text x="170.7" y="262.0" font-size="11" fill="#43464d" text-anchor="middle">症狀性吻合處滲漏</text>
+<text x="170.7" y="276.0" font-size="11" fill="#43464d" text-anchor="middle">(7/143 vs 9/150)</text>
+<rect x="359.0" y="144.1" width="38.0" height="99.9" fill="#8a4a3d" opacity="0.88"/>
+<text x="378.0" y="139.1" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">13.99</text>
+<rect x="403.0" y="86.9" width="38.0" height="157.1" fill="#2f6b62" opacity="0.88"/>
+<text x="422.0" y="81.9" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">22.00</text>
+<text x="400.0" y="262.0" font-size="11" fill="#43464d" text-anchor="middle">30 天術後併發症</text>
+<text x="400.0" y="276.0" font-size="11" fill="#43464d" text-anchor="middle">(20/143 vs 33/150)</text>
+<rect x="588.3" y="102.4" width="38.0" height="141.6" fill="#8a4a3d" opacity="0.88"/>
+<text x="607.3" y="97.4" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">19.83</text>
+<rect x="632.3" y="106.6" width="38.0" height="137.4" fill="#2f6b62" opacity="0.88"/>
+<text x="651.3" y="101.6" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">19.23</text>
+<text x="629.3" y="262.0" font-size="11" fill="#43464d" text-anchor="middle">12 個月 major LARS</text>
+<text x="629.3" y="276.0" font-size="11" fill="#43464d" text-anchor="middle">(24/121 vs 25/130)</text>
+<line x1="56" y1="244.0" x2="744" y2="244.0" stroke="#e3e0da" stroke-width="1"/>
+<rect x="56" y="295" width="11" height="11" fill="#8a4a3d" opacity="0.88"/>
+<text x="72" y="304" font-size="11.5" fill="#43464d">低位結紮 Low ligation</text>
+<rect x="217.39999999999998" y="295" width="11" height="11" fill="#2f6b62" opacity="0.88"/>
+<text x="233.39999999999998" y="304" font-size="11.5" fill="#43464d">高位結紮 High ligation</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>三組長條全部由上表的<b>原文原始事件數</b>直接換算為百分比（<b>本頁自行計算</b>，小數點後兩位），未經任何模型調整。<br>
+      <b>如何解讀：</b>同一組別內兩根長條並排＝低位（赭紅）與高位（青綠）結紮；縱軸為發生率百分比。可以一眼看出：<b>滲漏兩組幾乎等高</b>、<b>30 天併發症是唯一有明顯落差的一項</b>、<b>major LARS 兩組完全重疊</b>。<br>
+      <b>有何陷阱：</b>(1) 長條圖<b>不顯示不確定性</b>——22.0% 對 14.0% 看起來差很多，但把 95% CI 疊上去（見上方森林圖，RR 0.64，上界 1.05）就知道這個落差還在隨機波動可解釋的範圍內。看長條圖時務必同時看森林圖。(2) 第三組的分母（121／130）和前兩組（143／150）<b>不一樣</b>，圖上已在 x 軸標註，但比較時要留意。(3) 縱軸從 0 起算、未截斷，沒有視覺放大差異。
+    </div>
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Clinical implications <span class="zh">臨床意涵</span></h2>
+  <h3>誰適合套用這個結果？</h3>
+  <ul class="clean">
+    <li><b>臨床分期 I–III 期、排定接受腹腔鏡或機器人前位切除的直腸癌病人</b>——這正是試驗的納入族群。族群以韓國病人為主，體型、腸繫膜脂肪量與台灣病人相近，外推性相對好。</li>
+    <li><b>不適合直接套用的情況：</b>開腹手術、需要腹會陰聯合切除（APR）、局部晚期需側方淋巴結廓清、以及術中已發現近端結腸血流不佳者。這些族群不在試驗中，本文<b>無法回答</b>。</li>
+  </ul>
+  <h3>換來什麼？</h3>
+  <ul class="clean">
+    <li><b>換不到「更少滲漏」。</b>這是最重要的一句話：低位結紮的滲漏率 4.9% 相對高位結紮 6.0%，絕對差只有 1.1 個百分點，95% CI 涵蓋「低位少 69%」到「低位多 113%」——<b>連方向都不確定</b>。若你原本相信「保留 LCA 一定比較不會漏」，這篇試驗提供了直接的反證。</li>
+    <li><b>換不到「更好的排便功能」。</b>12 個月 LARS 平均差 1.5 分、major LARS 比例差 0.6 個百分點，兩者都遠低於病人感受得到的門檻。原本「高位結紮會傷到腸繫膜下神經叢、造成更嚴重 LARS」的擔憂，在這個樣本裡沒有被證實。</li>
+    <li><b>可能換到的：30 天整體併發症從 22.0% 降到 14.0%。</b>這是本文唯一數字上明顯的落差（p = 0.08）。但它是次要終點、未達顯著、也未做多重比較校正，<b>只能當成「值得下一個試驗去驗證的假說」</b>，不足以據此改變常規。</li>
+  </ul>
+  <h3>代價是什麼？</h3>
+  <ul class="clean">
+    <li><b>低位結紮的代價：</b>需要在 IMA 主幹上做更細的分支解剖以辨識並保留 LCA，<b>手術時間與技術難度通常增加</b>；此外若不另外清掃 IMA 根部（No. 253）淋巴結，可能影響分期完整度。<b>本試驗未報告手術時間、失血量或淋巴結收成</b>，所以這些代價的量化數字<b>本頁無法提供</b>。</li>
+    <li><b>高位結紮的代價：</b>近端結腸僅靠 marginal artery 供血，理論上血流較差；但本試驗顯示這個理論上的劣勢<b>並未轉換成更高的臨床滲漏率</b>。</li>
+    <li><b>共同的代價：</b>無論哪一種，直腸癌前位切除後<b>約 1/5 的病人在 12 個月時仍有 major LARS</b>（19.8% 與 19.2%）——這才是這篇試驗真正值得對病人強調的數字。</li>
+  </ul>
+  <div class="call teal">
+    <div class="h">知情同意可以怎麼談</div>
+    「這個手術把腫瘤和它的供血血管一起拿掉。血管要在<b>比較高的地方（根部）</b>還是<b>比較低的地方（保留一條分支）</b>切斷，過去一直有爭論——大家原本以為留著那條分支比較不會漏。但最近一個韓國的隨機試驗，把三百多位跟你情況類似的病人隨機分成兩種做法，結果<b>漏的機率差不多（大約 5% 對 6%）</b>，一年後的<b>排便控制也差不多</b>。所以我會依你手術當下的血流和張力狀況決定，兩種都是安全的做法。<br>比起這個，我更想讓你知道的是：這個位置的手術，<b>每 5 個人大約有 1 個</b>在一年後仍然有明顯的排便困擾——次數多、急迫、有時分次排不乾淨。這是可以處理的，我們會在術後追蹤時一起面對。」
+  </div>
+</section>
+
+<section id="limits">
+  <h2>Limitations &amp; caveats <span class="zh">研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>事件數太少，這是一個「無法排除中等差異」的陰性結果。</b>兩組合計只有 16 件症狀性滲漏，95% CI 從 0.31 到 2.13。要有把握排除「低位結紮能把滲漏減半」這種程度的效果，需要的樣本數遠大於 293 人。<b>「沒有統計顯著」不等於「兩者完全相同」</b>——但就 LARS 而言，因為 CI 兩端都落在臨床無意義區間內，那一項的陰性結論相對站得住腳。</li>
+    <li><b>mITT 而非 ITT，且 21 人的排除原因不明。</b>314 人隨機分派、293 人進入分析，<b>6.7% 的隨機分派者被排除在主要分析之外</b>（21/314，<b>本頁自行計算</b>）。若排除的人有系統性偏向某一組（例如術中因血流不佳臨時改變術式），<b>會直接影響主要終點的方向</b>。原文摘要未提供這些資訊。</li>
+    <li><b>「有經驗的術者」是結論的隱含前提。</b>作者自己在結論寫「when performed by experienced surgeons」。在學習曲線早期的團隊，低位結紮的細部血管解剖可能反而增加損傷風險，本試驗<b>無法外推</b>到這種情境。</li>
+    <li><b>次要終點的 p = 0.08 特別容易被誤讀。</b>30 天併發症的 8 個百分點落差很吸引人，但本試驗的樣本數是為「滲漏」設計的，次要終點沒有 power 保證，也沒有多重比較校正。把它當成結論會落入典型的<b>次要終點過度解讀</b>陷阱。</li>
+    <li><b>功能資料缺漏 14.3%（42/293，本頁自行計算）。</b>12 個月時只有 251 人有 LARS 資料。若功能特別差的人比較不願回覆問卷（很常見），兩組的 LARS 都會被低估。</li>
+    <li><b>沒有腫瘤學終點。</b>高位 vs 低位結紮最核心的爭議之一是<b>IMA 根部（No. 253）淋巴結的清掃是否影響分期與存活</b>，本試驗的終點設計完全不觸及這一塊，因此<b>不能用本文來論證「低位結紮的腫瘤學安全性」</b>。</li>
+    <li><b>本頁只取得摘要，未取得全文表格。</b>JAMA Network 與 PMC 在本次擷取時皆要求人機驗證，因此基線特徵、次群組分析、Clavien–Dindo 分級細目、排尿與性功能的實際分數<b>全部未取得</b>，本頁一律標示「原文摘要未列數值」而非以推估填補。要做完整判讀請直接閱讀原文。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>下腸繫膜動脈 <span class="en">inferior mesenteric artery, IMA</span></dt><dd>供應左半結腸與直腸上段的主要動脈，自腹主動脈發出。</dd></div>
+      <div class="gl-row"><dt>高位結紮 <span class="en">high ligation</span></dt><dd>在 IMA 自腹主動脈發出的根部結紮，同時清掃根部淋巴結。</dd></div>
+      <div class="gl-row"><dt>低位結紮 <span class="en">low ligation</span></dt><dd>在左結腸動脈分支起點<b>遠端</b>結紮，保留左結腸動脈以維持近端結腸血流。</dd></div>
+      <div class="gl-row"><dt>左結腸動脈 <span class="en">left colic artery, LCA</span></dt><dd>IMA 的第一個分支，供應降結腸與脾曲附近腸段。</dd></div>
+      <div class="gl-row"><dt>吻合處滲漏 <span class="en">anastomotic leakage</span></dt><dd>腸道吻合處癒合失敗、腸內容物外漏，是大腸直腸手術最重要的併發症。</dd></div>
+      <div class="gl-row"><dt>前位切除 <span class="en">anterior resection</span></dt><dd>經腹部切除直腸病灶並做結腸-直腸吻合的術式；位置越低稱低前位切除（LAR）。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>低前位切除症候群 <span class="en">low anterior resection syndrome, LARS</span></dt><dd>直腸切除後的排便功能障礙群，含頻繁排便、急迫、分次排便、失禁；LARS 分數 0–42，&#8805; 30 分為 major LARS。</dd></div>
+      <div class="gl-row"><dt>修正型意圖治療分析 <span class="en">modified intention-to-treat, mITT</span></dt><dd>從隨機分派者中依預設條件排除部分個案後再分析；比純 ITT 更容易受選擇偏差影響。</dd></div>
+      <div class="gl-row"><dt>風險比 <span class="en">risk ratio, RR</span></dt><dd>兩組發生率的比值；RR = 1 表示無差異，&lt; 1 表示介入組風險較低。</dd></div>
+      <div class="gl-row"><dt>95% 信賴區間 <span class="en">95% confidence interval, 95% CI</span></dt><dd>估計值的不確定範圍；RR 的 CI 若涵蓋 1，代表未達統計顯著。</dd></div>
+      <div class="gl-row"><dt>平均差 <span class="en">mean difference, MD</span></dt><dd>兩組連續型測量值的平均差距，單位與原量表相同。</dd></div>
+      <div class="gl-row"><dt>全直腸繫膜切除 <span class="en">total mesorectal excision, TME</span></dt><dd>沿直腸繫膜筋膜平面完整切除直腸與其繫膜，是直腸癌手術的標準。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; figure statement <span class="zh">來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻：</b>Kim CH, Park SY, Lee SY, Son GM, Kim HJ, Ha GW, Lee KH, Kim DW, Park JS, Bae KB, et al. <i>Inferior Mesenteric Artery Ligation Level and Anastomotic Leakage in Low Anterior Resection: A Randomized Clinical Trial.</i> JAMA Surgery. 2026;161(8):776&#8211;783. DOI: <a href="https://doi.org/10.1001/jamasurg.2026.2248">10.1001/jamasurg.2026.2248</a>；PMID <a href="https://pubmed.ncbi.nlm.nih.gov/42340709/">42340709</a>；PMC13294822。試驗登錄：KCT0003523（韓國 Clinical Research Information Service）。</p>
+  <p><b>資料來源說明：</b>本頁文獻資訊（含逐字摘要、書目、作者服務機構）擷取自 <b>PubMed</b>（According to PubMed）。本次擷取<b>未能取得</b>出版社全文與其表格／圖片：PubMed Central 與 JAMA Network 於擷取當下皆回傳人機驗證頁面。因此本頁所有數字<b>僅來自上方逐字摘要</b>，凡摘要未提供者一律以「原文摘要未列數值」標示，<b>絕無推估或補值</b>。</p>
+  <p><b>圖表重繪聲明：</b>本頁三張圖（森林圖、平均差圖、分組長條圖）皆為<b>依原文數字自行以 Python 產生的 inline SVG</b>，<b>未使用、未嵌入、未連結</b>任何出版社圖片。凡由原文數字經加減乘除或標準統計公式導出的數值（30 天併發症與 major LARS 的 RR 及其 95% CI、LARS 的平均差與 95% CI、各項百分比與絕對風險差、mITT 排除人數），一律就地標註「<b>本頁自行計算</b>」。計算方法：二元結果採對數風險比之常態近似（SE = &#8730;(1/a − 1/n&#8321; + 1/c − 1/n&#8322;)）；連續結果採獨立樣本平均差（SE = &#8730;(s&#8321;²/n&#8321; + s&#8322;²/n&#8322;)）。<b>驗算：</b>以相同方法重算原文已報告的滲漏 RR，得 0.816（0.312–2.133），與原文 0.82（0.31–2.13）一致。本試驗為單一 RCT，<b>因此不呈現合併菱形</b>，也無 I² 可計算。</p>
+  <footer>
+    每日大腸直腸外科文獻 · Vol. 014 · 2026 年 8 月 20 日　|　本頁為文獻閱讀輔助，<b>不構成醫療建議</b>；臨床決策請以原文全文與病人個別狀況為準。
+  </footer>
+</section>
+
+</div>
+</body>
+</html>

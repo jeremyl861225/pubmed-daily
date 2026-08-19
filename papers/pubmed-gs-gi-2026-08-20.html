@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一般外科文獻 · 2026-08-20</title>
+<style>
+
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+
+
+  /* 本頁附加：寬表格的欄寬控制，避免首欄被壓成逐字換行 */
+  .tbl-wrap table.wide{min-width:640px;}
+  .tbl-wrap table.wide th:first-child,.tbl-wrap table.wide td:first-child{min-width:150px;}
+  .tbl-wrap table.wide th:nth-child(2),.tbl-wrap table.wide td:nth-child(2){min-width:92px;}
+  .tbl-wrap table.wide td{vertical-align:top;}
+  .tbl-wrap table.wide{font-size:13px;}
+  .tbl-wrap table.wide .win{white-space:normal;}
+  .tbl-wrap table.wide td.num{white-space:normal;}
+  .tbl-wrap table.wide th{white-space:normal;}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 20 日 · 週四</span>
+    <span style="opacity:.4">/</span><span>Vol. 013</span>
+  </div>
+  <h1 class="title">肥胖合併第二型糖尿病，減重代謝手術到底哪一種最好？Cochrane 網絡統合分析（18 篇研究、15,282 人，其中 13 篇 RCT 僅 911 人）——<b>五年以上</b>體重變化 RYGB 比生活型態／藥物多降 <b>16.95%（95% CI −24.19 至 −9.71）</b>、HbA1c 多降 <b>1.44 個百分點（−2.26 至 −0.63）</b>；但<b>完全糖尿病緩解、嚴重不良事件與全因死亡的證據等級全部是「極不確定」</b></h1>
+  <p class="title-en">Metabolic and bariatric surgery in adults with obesity and diabetes mellitus: a network meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">Cochrane Database of Systematic Reviews（Cochrane／Wiley）<br><span style="color:#6b7079;font-size:13px">2026;8(8):CD015622（線上發表 2026 年 8 月 18 日）；完全開放取用 Open Access，PMC13482954</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Kiesswetter Eva, Gorenflo Lea, Schwarzer Guido, Stadelmaier Julia, Wallerer Sabina, Marjanovic Goran, Fink Jodok M, Lehane Cornelius, Metzendorf Maria-Inti, Meerpohl Joerg, Schwingshackl Lukas<br><span style="color:#6b7079;font-size:13px">德國弗萊堡大學醫學中心實證醫學研究所、Cochrane Germany、醫學生物統計研究所、肥胖與代謝手術中心（一般與內臟外科），及杜塞道夫海因里希海涅大學家庭醫學研究所</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>Cochrane 系統性回顧＋頻率學派隨機效果網絡統合分析（network meta-analysis, NMA）</b><br><span style="color:#6b7079;font-size:13px">同時納入<b>隨機對照試驗與世代研究</b>；以 P 分數（P score）排序治療。偏誤風險工具：RCT 用 <b>RoB 2</b>、非隨機研究用 <b>ROBINS-I</b>。證據等級以 <b>GRADE</b> 評定，<b>且只針對長期（&#8805; 5 年）結果評定</b></span></div></div>
+    <div class="meta-item"><div class="k">檢索範圍</div><div class="v">MEDLINE、Cochrane CENTRAL、CINAHL、LILACS、BASE，以及 WHO ICTRP 與 ClinicalTrials.gov<br><span style="color:#6b7079;font-size:13px">最後檢索日 <b>2024 年 6 月 25 日</b>；<b>未設語言限制</b>。注意：檢索日距離發表已超過兩年</span></div></div>
+    <div class="meta-item"><div class="k">納入條件 PICO</div><div class="v"><b>P：</b>&#8805; 18 歲、肥胖（BMI &#8805; 30 kg/m²，或依族群調整之切點）併第二型糖尿病；<b>追蹤至少 3 年</b><br><span style="color:#6b7079;font-size:13px"><b>I：</b>LAGB 可調式胃束帶、SG 袖狀胃切除、RYGB Roux-en-Y 胃繞道、OAGB 單吻合口胃繞道、GCP 胃摺疊術、BPD-DS 膽胰分流併十二指腸轉位及其變化型。<b>C：</b>生活型態介入／藥物治療（LI/MT）</span></div></div>
+    <div class="meta-item"><div class="k">關鍵與重要結果</div><div class="v"><b>關鍵：</b>中期（&#8805; 3 至 &lt; 5 年）與長期（&#8805; 5 年）體重變化（%）、腰圍（cm）、糖尿病緩解（完全／部分）、嚴重不良事件（SAE）<br><span style="color:#6b7079;font-size:13px"><b>重要：</b>全因死亡、糖尿病併發症、HbA1c（%）、健康相關生活品質（HRQoL）</span></div></div>
+    <div class="meta-item"><div class="k">納入研究量</div><div class="v"><b>18 篇研究（70 份報告）、15,282 人</b><br><span style="color:#6b7079;font-size:13px">13 篇 RCT（n = 911）＋ 5 篇世代研究（n = 14,371）。<b>驗算：</b>911 ＋ 14,371 = 15,282 <b>✓</b>（本頁自行計算）</span></div></div>
+    <div class="meta-item"><div class="k">研究登錄</div><div class="v">PROSPERO <b>CRD42023457363</b><br><span style="color:#6b7079;font-size:13px">計畫書（2024）已先行發表於 Cochrane Library；經費：德國聯邦教育及研究部（BMBF）計畫編號 01KG2201</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1002/14651858.CD015622.pub2">10.1002/14651858.CD015622.pub2</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42610488/">PMID 42610488 &#8594;</a>　·　PMC13482954（Open Access）</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">消化外科</span>
+    <span class="tag t2">代謝與減重手術 Metabolic and bariatric surgery</span>
+    <span class="tag t2">第二型糖尿病 Type 2 diabetes</span>
+    <span class="tag t2">網絡統合分析 Network meta-analysis</span>
+    <span class="tag t3">證據等級：Cochrane 系統性回顧／NMA（多數結果 GRADE 低至極低）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">納入研究流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果森林圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">證據基礎與重繪圖</a><a href="#clinic">臨床意涵</a><a href="#limits">限制與警訊</a>
+  <a href="#gloss">中英對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>這篇 Cochrane 網絡統合分析把「肥胖＋第二型糖尿病」的減重代謝手術證據攤開來看，結論是：<strong>Roux-en-Y 胃繞道（RYGB）在五年以上的體重（多降 16.95%，95% CI −24.19 至 −9.71）、腰圍（多降 12.34 cm，−17.88 至 −6.81）與 HbA1c（多降 1.44 個百分點，−2.26 至 −0.63）上，相對生活型態／藥物治療有一致且可信的優勢</strong>；單吻合口胃繞道（OAGB）與袖狀胃切除（SG）方向相同但<strong>證據等級極低</strong>。真正的重點在另一半：<strong>完全糖尿病緩解、嚴重不良事件與全因死亡的長期證據「極不確定」</strong>——因為 18 篇研究裡雖有 15,282 人，但<strong>可用於 GRADE 評級的隨機試驗只有 13 篇、合計 911 人</strong>，事件數少到無法回答「安不安全」這個問題。</p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">英文原文摘要（逐字）</span></h2>
+  <div class="abs">
+    <h4>Rationale</h4>
+    <p>Obesity and its associated comorbidities, particularly type 2 diabetes (T2D), have reached epidemic dimensions globally. Both conditions are related to an increased risk of serious health outcomes and impose a substantial burden on those affected. Metabolic and bariatric surgery (MBS) may offer a therapeutic option for achieving sustained weight loss, improving comorbidities and thereby enhancing long-term quality of life.</p>
+    <h4>Objectives</h4>
+    <p>To investigate the medium- and long-term benefits and harms of different MBS procedures compared with each other and to non-surgical treatment on outcomes relevant to adults with obesity and T2D, and to obtain a clinically meaningful ranking of these interventions by considering both randomised controlled trials (RCTs) and cohort studies.</p>
+    <h4>Search methods</h4>
+    <p>We searched MEDLINE, Cochrane CENTRAL, CINAHL, LILACS, BASE as well as the WHO ICTRP Search Portal and ClinicalTrials.gov. The date of the last search for all databases was 25 June 2024. We did not apply any language restrictions.</p>
+    <h4>Eligibility criteria</h4>
+    <p>We included RCTs and both prospective and retrospective cohort studies with a minimum follow-up of three years in adults (&#8805; 18 years) with obesity (body mass index &#8805; 30 kg/m&#178; or ethnic-specific cut-off values) and T2D. Eligible interventions include MBS procedures (i.e. laparoscopic adjustable gastric banding [LAGB], sleeve gastrectomy [SG], Roux-en-Y gastric bypass [RYGB], one-anastomosis gastric bypass [OAGB], gastric plication [GCP], biliopancreatic diversion with duodenal switch, and their variations) or non-surgical treatment (i.e. lifestyle intervention, medical treatment [LI/MT]).</p>
+    <h4>Outcomes</h4>
+    <p>Critical outcomes were medium- (&#8805; 3 to &lt; 5 years) and long-term (&#8805; 5 years) weight loss (%), waist circumference (cm), T2D remission (complete, partial), and serious adverse events (SAE). Important outcomes included all-cause mortality, T2D complications, glycaemic control (glycated haemoglobin (HbA1c) in %) and health-related quality of life (HRQoL).</p>
+    <h4>Risk of bias</h4>
+    <p>We used the Risk of Bias 2 (RoB 2) tool for RCTs and Risk Of Bias In Non-randomized Studies &#8211; of Interventions (ROBINS-I) for cohort studies.</p>
+    <h4>Synthesis methods</h4>
+    <p>We performed random-effects network meta-analyses based on the frequentist approach and ranked treatments by P scores. We rated the certainty of evidence according to the GRADE approach for long-term outcomes (&#8805; 5 years).</p>
+    <h4>Included studies</h4>
+    <p>We included 18 studies (with 70 reports) with 15,282 participants in this review. Of these, 13 studies were RCTs (n = 911) and five were cohort studies (n = 14,371). Two RCTs compared MBS with LI/MT, ten compared two or three different MBS procedures and one with a 3-arm design investigated two different MBS procedures as well as LI/MT. All cohort studies compared different MBS procedures. The networks were based on the following MBS procedures: RYGB, SG, OAGB, LAGB, GCP, and LI/MT.</p>
+    <h4>Synthesis of results</h4>
+    <p>NMA results (8 RCTs; n = 491) suggest greater long-term weight loss after RYGB compared to LI/MT (MD -16.95%; 95% CI -24.19 to -9.71). OAGB (MD -12.10%; 95% CI -22.85 to -1.34) and SG (MD -9.40 %; 95% CI -17.45 to -1.34) may also result in greater weight loss compared to LI/MT, but the evidence is very uncertain.</p>
+    <p>A reduction in waist circumference at long-term follow-up (6 RCTs; n = 348) is likely higher after RYGB compared to LI/MT (MD -12.34 cm; 95% CI -17.88 to -6.81). OAGB (MD: -13.28 cm; 95% CI -22.04 to -4.53) and SG (MD -9.08 cm; 95% CI -15.74 to -2.43) may also lead to a higher reduction in waist circumference compared to LI/MT, but the evidence is very uncertain.</p>
+    <p>The evidence is very uncertain about the effects of MBS procedures compared to LI/MT on long-term complete T2D remission (9 RCTs; n = 536). All MBS procedures (8 RCTs; n = 588) may result more often in partial T2D remissions than LI/MT, but the evidence is very uncertain.</p>
+    <p>The evidence is very uncertain about the effect of all MBS procedures compared to LI/MT on SAE (9 RCTs; n = 598) and all-cause mortality in the long term (7 RCTs; n = 520).</p>
+    <p>RYGB may reduce total long-term T2D complications compared to LI/MT (Rate ratio (RaR) 0.17; 95% CI 0.03 to 0.89; 5 RCTs; n = 356), but the evidence is very uncertain.</p>
+    <p>Based on NMA results (10 RCTs; n = 612), RYGB may reduce HbA1c compared to LI/MT (MD -1.44%; 95% CI -2.26 to -0.63). OAGB (MD -2.01%; 95%CI -3.42 to -0.60) and SG (MD -1.01%; 95%CI -1.94 to -0.08) may also reduce HbA1c compared to LI/MT, but the evidence is every uncertain.</p>
+    <p>Both RYGB and SG may increase mental and physical components of HRQoL compared to LI/MT (both 2 RCTs; n = 118), but evidence is very uncertain.</p>
+    <p>The inclusion of cohort studies in the analyses of percentage weight loss, partial type 2 diabetes remission, SAE, and all-cause mortality confirmed the main findings.</p>
+    <p>For most outcomes, the main reasons for downgrading certainty of evidence were related to risk of bias and imprecision.</p>
+    <h4>Authors' conclusions</h4>
+    <p>In people with obesity and T2D, RYGB, OAGB and, to a lesser extent, SG may lead to long-term improvements in body weight, waist circumference, partial T2D remission, and HbA1c compared with LI/MT. However, due to imprecise results, the magnitude of the effects often remains uncertain or very uncertain. For other outcomes, especially complete T2D remission, SAE, all-cause mortality and T2D complications, the evidence is mainly very uncertain, due to a low numbers of participants and events. When interpreting these findings, it should be noted that cohort studies were not, as originally planned, included in the certainty of evidence assessment, as these studies were judged to have a high or critical risk of bias. Larger and well-designed studies may contribute to diminishing the existing uncertainties and enhancing our confidence in the findings.</p>
+    <h4>Funding</h4>
+    <p>This Cochrane review was funded by the German Federal Ministry of Education and Research (BMBF) (grant number: 01KG2201).</p>
+    <h4>Registration</h4>
+    <p>PROSPERO ID: CRD42023457363</p>
+    <p class="note">摘要為原文逐字引用（verbatim），段落標題依 Cochrane 新式結構摘要原格式排列。原文為 Cochrane／Wiley 開放取用版本。第 6 段末的「the evidence is every uncertain」為<b>原文如此</b>（應為 very 之誤植），本頁不予更動。<b>本頁未能取得原文之 Summary of Findings 表格與納入研究清單</b>（Cochrane Library、PMC 與 Europe PMC 於本次擷取時分別回傳 412／人機驗證／速率限制），因此以下數據<b>僅來自上列摘要逐字內容</b>。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>Study flow <span class="zh">納入研究流程（PRISMA 風格）</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">辨識 Identification</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">檢索 MEDLINE、Cochrane CENTRAL、CINAHL、LILACS、BASE、WHO ICTRP、ClinicalTrials.gov；最後檢索日 2024-06-25；無語言限制<br><span class="n">原文摘要未列檢索筆數</span></div></div>
+      <div class="pr-ex">去重後筆數<br><span class="n">原文摘要未列數值</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">篩選 Screening</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">標題／摘要與全文篩選<br><span class="n">原文摘要未列數值</span></div></div>
+      <div class="pr-ex">排除筆數與排除原因<br><span class="n">原文摘要未列數值</span></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">納入 Included</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final">納入 <span class="n">18</span> 篇研究（<span class="n">70</span> 份報告），合計 <span class="n">15,282</span> 位參與者</div></div>
+      <div class="pr-ex">「70 份報告 / 18 篇研究」代表<br>平均每篇有 <span class="n">3.9</span> 份延伸報告<br>（<b>本頁自行計算</b>）</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">依研究設計拆分</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><b>隨機對照試驗 RCT</b><br><span class="n">13</span> 篇，n = <span class="n">911</span><br><span style="font-size:12px;color:#6b7079">佔全部參與者 <b>5.96%</b>（本頁自行計算）；<b>唯一納入 GRADE 評級的證據</b></span></div></div>
+      <div class="pr-main"><div class="pr-box"><b>世代研究 Cohort</b><br><span class="n">5</span> 篇，n = <span class="n">14,371</span><br><span style="font-size:12px;color:#6b7079">佔全部參與者 <b>94.04%</b>（本頁自行計算）；因偏誤風險「高／嚴重」<b>被排除於證據等級評定之外</b></span></div></div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">13 篇 RCT 的比較結構</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box"><span class="n">2</span> 篇：手術 vs 生活型態／藥物（LI/MT）</div></div>
+      <div class="pr-main"><div class="pr-box"><span class="n">10</span> 篇：兩種或三種手術互比</div></div>
+      <div class="pr-main"><div class="pr-box"><span class="n">1</span> 篇：三臂設計（兩種手術＋LI/MT）</div></div>
+    </div>
+    <div class="pr-row" style="margin-top:14px">
+      <div class="pr-main"><div class="pr-box" style="background:#fff;border-style:dashed"><b>算術驗算（本頁自行計算）：</b>2 ＋ 10 ＋ 1 = 13 篇 RCT <b>✓</b>；911 ＋ 14,371 = 15,282 人 <b>✓</b>。網絡節點為 RYGB、SG、OAGB、LAGB、GCP 與 LI/MT 共 <b>6 個</b>。</div></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:12px;line-height:1.6"><b>怎麼看：</b>這張流程圖刻意把「人數」與「證據力」拆開呈現。<b>陷阱：</b>「15,282 人」這個數字很有份量，但其中 <b>94%</b> 來自世代研究，而這些世代研究因偏誤風險過高<b>完全沒有進入 GRADE 評級</b>；真正撐起結論的是 <b>911 人</b>的隨機證據，各項分析實際可用的人數更少（491、348、612…，見下方長條圖）。看到「一萬五千人的 Cochrane 分析」就以為證據很強，是這篇最容易犯的誤讀。</p>
+</section>
+
+<section id="tbl1">
+  <h2>Review characteristics <span class="zh">研究特徵表</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>項目</th><th>內容</th><th>資料來源</th></tr></thead>
+    <tbody>
+      <tr><td>回顧類型</td><td>Cochrane 系統性回顧＋頻率學派隨機效果<b>網絡統合分析</b>，以 P 分數排序</td><td>原文摘要</td></tr>
+      <tr><td>資料庫</td><td>MEDLINE、Cochrane CENTRAL、CINAHL、LILACS、BASE、WHO ICTRP、ClinicalTrials.gov</td><td>原文摘要</td></tr>
+      <tr><td>最後檢索日</td><td>2024 年 6 月 25 日；<b>無語言限制</b></td><td>原文摘要</td></tr>
+      <tr><td>族群</td><td>&#8805; 18 歲、BMI &#8805; 30 kg/m²（或依族群調整切點）併第二型糖尿病</td><td>原文摘要</td></tr>
+      <tr><td>最短追蹤</td><td><b>3 年</b>；中期定義 &#8805; 3 至 &lt; 5 年、長期定義 &#8805; 5 年</td><td>原文摘要</td></tr>
+      <tr><td>納入術式</td><td>LAGB、SG、RYGB、OAGB、GCP、BPD-DS 及其變化型</td><td>原文摘要</td></tr>
+      <tr><td>網絡實際節點</td><td><b>RYGB、SG、OAGB、LAGB、GCP、LI/MT</b>（BPD-DS <b>未</b>出現在網絡中）</td><td>原文摘要</td></tr>
+      <tr><td>對照</td><td>生活型態介入／藥物治療（LI/MT）</td><td>原文摘要</td></tr>
+      <tr><td>納入研究數</td><td class="num">18 篇（70 份報告）；13 RCT ＋ 5 世代</td><td>原文摘要</td></tr>
+      <tr><td>參與者總數</td><td class="num">15,282（RCT 911；世代 14,371）</td><td>原文摘要</td></tr>
+      <tr><td>偏誤風險工具</td><td>RCT：<b>RoB 2</b>；非隨機研究：<b>ROBINS-I</b>（結果判為「高／嚴重」）</td><td>原文摘要</td></tr>
+      <tr><td>證據等級</td><td><b>GRADE</b>，<b>僅評定長期（&#8805; 5 年）結果</b>，且<b>僅根據 RCT</b></td><td>原文摘要</td></tr>
+      <tr><td>各研究名稱、國家、樣本數、追蹤年數</td><td class="na">本頁未取得（Cochrane 全文之「Characteristics of included studies」表未能擷取）</td><td>&#8212;</td></tr>
+      <tr><td>各結果的 I² 異質性數值</td><td class="na">原文摘要未列數值</td><td>&#8212;</td></tr>
+      <tr><td>不一致性檢定（inconsistency）結果</td><td class="na">原文摘要未列數值</td><td>&#8212;</td></tr>
+      <tr><td>P 分數排序表</td><td class="na">原文摘要未列數值（僅說明採用 P score 排序）</td><td>&#8212;</td></tr>
+      <tr><td>登錄／經費</td><td>PROSPERO CRD42023457363；德國 BMBF 01KG2201</td><td>原文摘要</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="results">
+  <h2>Long-term outcomes vs LI/MT <span class="zh">主要結果森林圖（長期 &#8805; 5 年，對照組皆為生活型態／藥物）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="100%" height="220" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="220" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">比較 COMPARISON</text>
+<text x="593" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">MD (95% CI)</text>
+<line x1="561.9" y1="56" x2="561.9" y2="170" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="250" y1="170" x2="585" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<line x1="263.4" y1="170" x2="263.4" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="263.4" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−25</text>
+<line x1="323.1" y1="170" x2="323.1" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="323.1" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−20</text>
+<line x1="382.8" y1="170" x2="382.8" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="382.8" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−15</text>
+<line x1="442.5" y1="170" x2="442.5" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="442.5" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−10</text>
+<line x1="502.2" y1="170" x2="502.2" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="502.2" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−5</text>
+<line x1="561.9" y1="170" x2="561.9" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="561.9" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<text x="417.5" y="207" font-size="11" fill="#43464d" text-anchor="middle">平均差 MD（% 體重變化；手術 − 生活型態／藥物）</text>
+<text x="553.9" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 手術減重較多</text>
+<text x="569.9" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">手術減重較少 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">RYGB Roux-en-Y 胃繞道</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">GRADE：中等（likely）</text>
+<line x1="273.1" y1="79.0" x2="446.0" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="273.1" y1="75.0" x2="273.1" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="446.0" y1="75.0" x2="446.0" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="355.0" y="74.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="593" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−16.95 (−24.19, −9.71)</text>
+<text x="0" y="111.0" font-size="12.5" fill="#1b1c1e" font-weight="600">OAGB 單吻合口胃繞道</text>
+<text x="0" y="125.0" font-size="10.5" fill="#6b7079">GRADE：極低（very uncertain）</text>
+<line x1="289.1" y1="113.0" x2="545.9" y2="113.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="289.1" y1="109.0" x2="289.1" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="545.9" y1="109.0" x2="545.9" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="412.9" y="108.5" width="9" height="9" fill="#2f6b62"/>
+<text x="593" y="117.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−12.10 (−22.85, −1.34)</text>
+<text x="0" y="145.0" font-size="12.5" fill="#1b1c1e" font-weight="600">SG 袖狀胃切除</text>
+<text x="0" y="159.0" font-size="10.5" fill="#6b7079">GRADE：極低（very uncertain）</text>
+<line x1="353.6" y1="147.0" x2="545.9" y2="147.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="353.6" y1="143.0" x2="353.6" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="545.9" y1="143.0" x2="545.9" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="445.2" y="142.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="593" y="151.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−9.40 (−17.45, −1.34)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>三個點估計與 95% CI <b>全部逐字取自原文摘要</b>（RYGB −16.95%，−24.19 至 −9.71；OAGB −12.10%，−22.85 至 −1.34；SG −9.40%，−17.45 至 −1.34），證據等級標註亦依原文用語（RYGB 為 suggest／未加 very uncertain；OAGB 與 SG 明列 very uncertain）。此分析基礎為 <b>8 篇 RCT、n = 491</b>。<br>
+      <b>如何解讀：</b>橫軸是體重變化百分比的平均差，虛線 0 為「與生活型態／藥物無異」。三條線<b>全部落在 0 的左側且不跨越 0</b>，代表三種手術在五年以上的減重幅度都優於非手術治療。RYGB 幅度最大（近 17%）。<br>
+      <b>有何陷阱：</b>(1) <b>不要把三條線互相比較</b>——這是「各自 vs LI/MT」的間接比較，CI 大幅重疊，本圖<b>不能</b>用來宣稱「RYGB 優於 SG」。(2) OAGB 與 SG 的 CI 上界都逼近 −1.34，非常靠近無效線；加上原文明講 very uncertain，<b>方向可信、幅度不可信</b>。(3) <b>本圖不呈現合併菱形</b>：NMA 的每一列本身就是網絡合併估計值，沒有「總合併值」可畫。(4) 只有 491 人——一個中型單一試驗的規模。
+    </div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="100%" height="220" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="220" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">比較 COMPARISON</text>
+<text x="593" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">MD (95% CI)</text>
+<line x1="561.9" y1="56" x2="561.9" y2="170" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="250" y1="170" x2="585" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<line x1="299.8" y1="170" x2="299.8" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="299.8" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−20</text>
+<line x1="365.3" y1="170" x2="365.3" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="365.3" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−15</text>
+<line x1="430.9" y1="170" x2="430.9" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="430.9" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−10</text>
+<line x1="496.4" y1="170" x2="496.4" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="496.4" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−5</text>
+<line x1="561.9" y1="170" x2="561.9" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="561.9" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<text x="417.5" y="207" font-size="11" fill="#43464d" text-anchor="middle">平均差 MD（公分 cm；手術 − 生活型態／藥物）</text>
+<text x="553.9" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 腰圍縮小較多</text>
+<text x="569.9" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">腰圍縮小較少 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">RYGB Roux-en-Y 胃繞道</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">6 篇 RCT、n = 348（全體）</text>
+<line x1="327.6" y1="79.0" x2="472.7" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="327.6" y1="75.0" x2="327.6" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="472.7" y1="75.0" x2="472.7" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="395.7" y="74.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="593" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−12.34 (−17.88, −6.81)</text>
+<text x="0" y="111.0" font-size="12.5" fill="#1b1c1e" font-weight="600">OAGB 單吻合口胃繞道</text>
+<text x="0" y="125.0" font-size="10.5" fill="#6b7079">GRADE：極低</text>
+<line x1="273.1" y1="113.0" x2="502.5" y2="113.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="273.1" y1="109.0" x2="273.1" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="502.5" y1="109.0" x2="502.5" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="383.4" y="108.5" width="9" height="9" fill="#2f6b62"/>
+<text x="593" y="117.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−13.28 (−22.04, −4.53)</text>
+<text x="0" y="145.0" font-size="12.5" fill="#1b1c1e" font-weight="600">SG 袖狀胃切除</text>
+<text x="0" y="159.0" font-size="10.5" fill="#6b7079">GRADE：極低</text>
+<line x1="355.7" y1="147.0" x2="530.1" y2="147.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="355.7" y1="143.0" x2="355.7" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="530.1" y1="143.0" x2="530.1" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="438.4" y="142.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="593" y="151.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−9.08 (−15.74, −2.43)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>逐字取自原文摘要（RYGB −12.34 cm，−17.88 至 −6.81；OAGB −13.28 cm，−22.04 至 −4.53；SG −9.08 cm，−15.74 至 −2.43），分析基礎 <b>6 篇 RCT、n = 348</b>。原文對 RYGB 用「is likely higher」（GRADE 中等），對 OAGB 與 SG 明列 very uncertain。<br>
+      <b>如何解讀：</b>橫軸單位是<b>公分</b>，與上一張圖的<b>百分比不同刻度、不可疊看</b>。腰圍是內臟脂肪與代謝風險的替代指標，臨床上比體重百分比更貼近心血管風險。<br>
+      <b>有何陷阱：</b>(1) 有趣的是 OAGB 的點估計（−13.28 cm）數字上比 RYGB（−12.34 cm）更大，但它的 CI 寬達 17.5 cm，<b>這個「贏」完全在雜訊範圍內</b>——典型的「小樣本讓極端估計看起來很吸引人」。(2) 腰圍測量方法（肋弓下緣／髂脊／臍高）各研究可能不同，原文摘要未說明是否統一，這會放大異質性。(3) 只有 348 人，是本篇所有結果中<b>樣本最小</b>的一項。
+    </div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="100%" height="220" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="220" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">比較 COMPARISON</text>
+<text x="593" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">MD (95% CI)</text>
+<line x1="561.9" y1="56" x2="561.9" y2="170" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="250" y1="170" x2="585" y2="170" stroke="#e3e0da" stroke-width="1"/>
+<line x1="308.6" y1="170" x2="308.6" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="308.6" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−3</text>
+<line x1="393.0" y1="170" x2="393.0" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="393.0" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−2</text>
+<line x1="477.5" y1="170" x2="477.5" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="477.5" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">−1</text>
+<line x1="561.9" y1="170" x2="561.9" y2="175" stroke="#e3e0da" stroke-width="1"/>
+<text x="561.9" y="188" font-size="10.5" fill="#6b7079" text-anchor="middle">0</text>
+<text x="417.5" y="207" font-size="11" fill="#43464d" text-anchor="middle">平均差 MD（HbA1c 百分點 %；手術 − 生活型態／藥物）</text>
+<text x="553.9" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 血糖控制較好</text>
+<text x="569.9" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">血糖控制較差 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">RYGB Roux-en-Y 胃繞道</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">10 篇 RCT、n = 612（全體）</text>
+<line x1="371.1" y1="79.0" x2="508.7" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="371.1" y1="75.0" x2="371.1" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="508.7" y1="75.0" x2="508.7" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="435.8" y="74.5" width="9" height="9" fill="#8a4a3d"/>
+<text x="593" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−1.44 (−2.26, −0.63)</text>
+<text x="0" y="111.0" font-size="12.5" fill="#1b1c1e" font-weight="600">OAGB 單吻合口胃繞道</text>
+<text x="0" y="125.0" font-size="10.5" fill="#6b7079">GRADE：極低</text>
+<line x1="273.1" y1="113.0" x2="511.2" y2="113.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="273.1" y1="109.0" x2="273.1" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="511.2" y1="109.0" x2="511.2" y2="117.0" stroke="#2f6b62" stroke-width="1.6"/>
+<rect x="387.7" y="108.5" width="9" height="9" fill="#2f6b62"/>
+<text x="593" y="117.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−2.01 (−3.42, −0.60)</text>
+<text x="0" y="145.0" font-size="12.5" fill="#1b1c1e" font-weight="600">SG 袖狀胃切除</text>
+<text x="0" y="159.0" font-size="10.5" fill="#6b7079">GRADE：極低</text>
+<line x1="398.1" y1="147.0" x2="555.1" y2="147.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="398.1" y1="143.0" x2="398.1" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="555.1" y1="143.0" x2="555.1" y2="151.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<rect x="472.1" y="142.5" width="9" height="9" fill="#8a6a1f"/>
+<text x="593" y="151.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">−1.01 (−1.94, −0.08)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>逐字取自原文摘要（RYGB −1.44%，−2.26 至 −0.63；OAGB −2.01%，−3.42 至 −0.60；SG −1.01%，−1.94 至 −0.08），分析基礎 <b>10 篇 RCT、n = 612</b>——這是本篇證據量最厚的一項。<br>
+      <b>如何解讀：</b>橫軸單位是 <b>HbA1c 百分點</b>（絕對值，不是相對變化）。降 1.44 個百分點是什麼概念？大約相當於加上一到兩線口服降血糖藥的效果，且<b>維持五年以上</b>。SG 的 CI 上界 −0.08 幾乎貼著無效線。<br>
+      <b>有何陷阱：</b>(1) HbA1c 下降不等於糖尿病緩解，也不等於<b>併發症減少</b>——後者在本篇的證據是「極不確定」。(2) 對照組（LI/MT）的用藥在五年間必然變動（新一代 GLP-1 受體促效劑陸續問世），而<b>最後檢索日是 2024 年 6 月</b>，多數納入試驗的對照組治療是更早年代的標準；用今天的內科治療重跑，差距很可能縮小。這是本篇<b>外推到 2026 年臨床</b>時最大的隱憂。(3) 三種術式之間仍是間接比較，不可互相排名。
+    </div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" width="100%" height="150" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="150" fill="#ffffff"/>
+<text x="0" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">結果 OUTCOME</text>
+<text x="603" y="48" font-size="10.5" font-weight="700" fill="#6b7079" letter-spacing="0.08em">RaR (95% CI)</text>
+<line x1="509.0" y1="56" x2="509.0" y2="102" stroke="#6b7079" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="300" y1="102" x2="595" y2="102" stroke="#e3e0da" stroke-width="1"/>
+<line x1="300.0" y1="102" x2="300.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="300.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0.02</text>
+<line x1="349.0" y1="102" x2="349.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="349.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0.05</text>
+<line x1="386.0" y1="102" x2="386.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="386.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0.1</text>
+<line x1="423.0" y1="102" x2="423.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="423.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0.2</text>
+<line x1="472.0" y1="102" x2="472.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="472.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">0.5</text>
+<line x1="509.0" y1="102" x2="509.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="509.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">1</text>
+<line x1="546.0" y1="102" x2="546.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="546.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">2</text>
+<line x1="595.0" y1="102" x2="595.0" y2="107" stroke="#e3e0da" stroke-width="1"/>
+<text x="595.0" y="120" font-size="10.5" fill="#6b7079" text-anchor="middle">5</text>
+<text x="447.5" y="138" font-size="11" fill="#43464d" text-anchor="middle">率比 RaR（對數刻度；無效線＝1）</text>
+<text x="501.0" y="32" font-size="10" fill="#2f6b62" text-anchor="end">&#8592; 手術較好</text>
+<text x="517.0" y="32" font-size="10" fill="#8a4a3d" text-anchor="start">非手術較好 &#8594;</text>
+<text x="0" y="77.0" font-size="12.5" fill="#1b1c1e" font-weight="600">第二型糖尿病總併發症（RYGB vs LI/MT）</text>
+<text x="0" y="91.0" font-size="10.5" fill="#6b7079">率比 Rate ratio；5 篇 RCT、n = 356</text>
+<line x1="321.7" y1="79.0" x2="502.8" y2="79.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="321.7" y1="75.0" x2="321.7" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<line x1="502.8" y1="75.0" x2="502.8" y2="83.0" stroke="#8a4a3d" stroke-width="1.6"/>
+<rect x="409.3" y="74.0" width="10" height="10" fill="#8a4a3d"/>
+<text x="603" y="83.0" font-size="11.5" fill="#43464d" font-variant-numeric="tabular-nums">0.17 (0.03, 0.89)</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>逐字取自原文摘要：RYGB 相對 LI/MT 的<b>長期糖尿病總併發症率比 RaR 0.17（95% CI 0.03–0.89）</b>，5 篇 RCT、n = 356；原文標註 very uncertain。<br>
+      <b>如何解讀：</b>對數刻度，虛線 1 為無效線。0.17 表示<b>併發症發生率降低約 83%</b>——這是本篇唯一觸及「硬終點」的結果，數字上非常吸睛。<br>
+      <b>有何陷阱：</b>(1) <b>CI 從 0.03 到 0.89，跨度將近 30 倍</b>，這種寬度幾乎必然來自<b>極少的事件數</b>（原文摘要未列原始事件數，本頁<b>不做推估</b>）。(2) 「總併發症」是<b>複合終點</b>，把視網膜病變、腎病變、神經病變、心血管事件等混在一起計次，權重完全不同。(3) 只有 RYGB 有此估計，其他術式<b>原文摘要未列數值</b>。(4) 原文自己把它評為 very uncertain 並在結論寫「evidence is mainly very uncertain」——<b>這條線不該被拿去做臨床宣稱</b>。
+    </div>
+  </div>
+</section>
+
+<section id="overview">
+  <h2>All reported outcomes <span class="zh">全部結果總覽表（長期 &#8805; 5 年，vs LI/MT）</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>結果</th><th>術式</th><th>效果值（95% CI）</th><th>證據基礎</th><th>p 值</th><th>異質性 I²</th><th>原文證據等級判定</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3"><b>長期體重變化（%）</b></td><td>RYGB</td><td class="num sig">MD −16.95（−24.19, −9.71）</td><td class="num" rowspan="3">8 篇 RCT<br>n = 491</td><td class="num na" rowspan="12">原文摘要<br>未列 p 值</td><td class="num na" rowspan="12">原文摘要<br>未列 I²</td><td><span class="win">方向可信</span></td></tr>
+      <tr><td>OAGB</td><td class="num sig">MD −12.10（−22.85, −1.34）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td>SG</td><td class="num sig">MD −9.40（−17.45, −1.34）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td rowspan="3"><b>長期腰圍（cm）</b></td><td>RYGB</td><td class="num sig">MD −12.34（−17.88, −6.81）</td><td class="num" rowspan="3">6 篇 RCT<br>n = 348</td><td><span class="win">GRADE 中等</span></td></tr>
+      <tr><td>OAGB</td><td class="num sig">MD −13.28（−22.04, −4.53）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td>SG</td><td class="num sig">MD −9.08（−15.74, −2.43）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td rowspan="3"><b>長期 HbA1c（百分點）</b></td><td>RYGB</td><td class="num sig">MD −1.44（−2.26, −0.63）</td><td class="num" rowspan="3">10 篇 RCT<br>n = 612</td><td><span class="win">可能有效</span></td></tr>
+      <tr><td>OAGB</td><td class="num sig">MD −2.01（−3.42, −0.60）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td>SG</td><td class="num sig">MD −1.01（−1.94, −0.08）</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>長期糖尿病總併發症</b></td><td>RYGB</td><td class="num sig">RaR 0.17（0.03, 0.89）</td><td class="num">5 篇 RCT<br>n = 356</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>長期完全糖尿病緩解</b></td><td>全部術式</td><td class="num na">原文摘要未列數值</td><td class="num">9 篇 RCT<br>n = 536</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>長期部分糖尿病緩解</b></td><td>全部術式</td><td class="num na">原文摘要未列數值<br><span style="font-size:11.5px">（原文僅敘述「may result more often」）</span></td><td class="num">8 篇 RCT<br>n = 588</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>嚴重不良事件 SAE</b></td><td>全部術式</td><td class="num na">原文摘要未列數值</td><td class="num">9 篇 RCT<br>n = 598</td><td class="num na">未列</td><td class="num na">未列</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>全因死亡</b></td><td>全部術式</td><td class="num na">原文摘要未列數值</td><td class="num">7 篇 RCT<br>n = 520</td><td class="num na">未列</td><td class="num na">未列</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>健康相關生活品質 HRQoL</b><br><span style="font-size:12px;color:#6b7079">身心兩構面</span></td><td>RYGB、SG</td><td class="num na">原文摘要未列數值<br><span style="font-size:11.5px">（原文僅敘述「may increase」）</span></td><td class="num">各 2 篇 RCT<br>n = 118</td><td class="num na">未列</td><td class="num na">未列</td><td><span class="win caution">極不確定</span></td></tr>
+      <tr><td><b>LAGB、GCP 的各項效果值</b></td><td>LAGB、GCP</td><td class="num na">原文摘要未列數值</td><td class="num na">未列</td><td class="num na">未列</td><td class="num na">未列</td><td><span class="win neutral">未報告</span></td></tr>
+      <tr><td><b>中期（&#8805; 3 至 &lt; 5 年）各項結果</b></td><td>全部</td><td class="num na">原文摘要未列數值</td><td class="num na">未列</td><td class="num na">未列</td><td class="num na">未列</td><td><span class="win neutral">僅評長期</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="call amber">
+    <div class="h">為什麼 p 值與 I² 欄位全是「原文摘要未列」？</div>
+    Cochrane 的結果報告以<b>效果值＋95% CI＋GRADE 證據等級</b>為主，摘要通常不列 p 值；異質性統計量則放在全文的森林圖與 Summary of Findings 表中。本次<b>未能取得原文全文</b>（Cochrane Library 回傳 412、PMC 要求人機驗證、Europe PMC 速率限制），因此這兩欄一律留白而<b>不以任何方式推估</b>。要看 I² 與不一致性檢定，請直接開 <a href="https://doi.org/10.1002/14651858.CD015622.pub2">DOI 連結</a>。
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Evidence base <span class="zh">各項分析的證據基礎與本頁重繪圖</span></h2>
+  <div class="tbl-wrap">
+  <table class="wide">
+    <thead><tr><th>結果</th><th>納入 RCT 篇數</th><th>納入人數 n</th><th>佔 13 篇 RCT 的比例<br>（本頁自行計算）</th><th>佔 911 位隨機受試者<br>（本頁自行計算）</th></tr></thead>
+    <tbody>
+      <tr><td>長期體重變化（%）</td><td class="num">8</td><td class="num">491</td><td class="num">61.5%</td><td class="num">53.9%</td></tr>
+      <tr><td>長期腰圍（cm）</td><td class="num">6</td><td class="num">348</td><td class="num">46.2%</td><td class="num">38.2%</td></tr>
+      <tr><td>長期 HbA1c（百分點）</td><td class="num">10</td><td class="num">612</td><td class="num">76.9%</td><td class="num">67.2%</td></tr>
+      <tr><td>長期完全糖尿病緩解</td><td class="num">9</td><td class="num">536</td><td class="num">69.2%</td><td class="num">58.8%</td></tr>
+      <tr><td>長期部分糖尿病緩解</td><td class="num">8</td><td class="num">588</td><td class="num">61.5%</td><td class="num">64.5%</td></tr>
+      <tr><td>嚴重不良事件 SAE</td><td class="num">9</td><td class="num">598</td><td class="num">69.2%</td><td class="num">65.6%</td></tr>
+      <tr><td>全因死亡</td><td class="num">7</td><td class="num">520</td><td class="num">53.8%</td><td class="num">57.1%</td></tr>
+      <tr><td>長期糖尿病總併發症</td><td class="num">5</td><td class="num">356</td><td class="num">38.5%</td><td class="num">39.1%</td></tr>
+      <tr><td>HRQoL（RYGB、SG 各）</td><td class="num">2</td><td class="num">118</td><td class="num">15.4%</td><td class="num">13.0%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;margin-top:10px;line-height:1.6"><b>算術說明（本頁自行計算）：</b>篇數比例＝該項篇數 ÷ 13；人數比例＝該項 n ÷ 911。<b>注意一個內部矛盾：</b>「部分糖尿病緩解」以 8 篇 RCT 納入 588 人，卻比「體重變化」的 8 篇 491 人多出 97 人——代表<b>各結果納入的並非同一組 8 篇研究</b>，這在網絡統合分析中很常見（每個結果各自組網絡）。因此上表的百分比只能理解為「該結果動用了多少比例的隨機證據」，<b>不可跨列相加</b>。原文摘要未列各研究的個別事件數與樣本數，本頁<b>不做任何推估或還原</b>。</p>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="100%" height="330" font-family='-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif' role="img">
+<rect width="760" height="330" fill="#ffffff"/>
+<line x1="56" y1="254.0" x2="744" y2="254.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="258.0" font-size="10.5" fill="#6b7079" text-anchor="end">0</text>
+<line x1="56" y1="201.5" x2="744" y2="201.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="205.5" font-size="10.5" fill="#6b7079" text-anchor="end">190</text>
+<line x1="56" y1="149.0" x2="744" y2="149.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="153.0" font-size="10.5" fill="#6b7079" text-anchor="end">380</text>
+<line x1="56" y1="96.5" x2="744" y2="96.5" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="100.5" font-size="10.5" fill="#6b7079" text-anchor="end">570</text>
+<line x1="56" y1="44.0" x2="744" y2="44.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="48" y="48.0" font-size="10.5" fill="#6b7079" text-anchor="end">760</text>
+<text x="4" y="30" font-size="10.5" fill="#6b7079">人數 n</text>
+<rect x="94.3" y="118.3" width="38.0" height="135.7" fill="#2f6b62" opacity="0.88"/>
+<text x="113.3" y="113.3" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">491</text>
+<text x="113.3" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">長期體重變化</text>
+<text x="113.3" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(8 篇 RCT, n=491)</text>
+<rect x="209.0" y="157.8" width="38.0" height="96.2" fill="#2f6b62" opacity="0.88"/>
+<text x="228.0" y="152.8" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">348</text>
+<text x="228.0" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">長期腰圍</text>
+<text x="228.0" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(6 篇 RCT, n=348)</text>
+<rect x="323.7" y="84.9" width="38.0" height="169.1" fill="#2f6b62" opacity="0.88"/>
+<text x="342.7" y="79.9" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">612</text>
+<text x="342.7" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">長期 HbA1c</text>
+<text x="342.7" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(10 篇 RCT, n=612)</text>
+<rect x="438.3" y="105.9" width="38.0" height="148.1" fill="#2f6b62" opacity="0.88"/>
+<text x="457.3" y="100.9" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">536</text>
+<text x="457.3" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">完全糖尿病緩解</text>
+<text x="457.3" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(9 篇 RCT, n=536)</text>
+<rect x="553.0" y="88.8" width="38.0" height="165.2" fill="#2f6b62" opacity="0.88"/>
+<text x="572.0" y="83.8" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">598</text>
+<text x="572.0" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">嚴重不良事件</text>
+<text x="572.0" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(9 篇 RCT, n=598)</text>
+<rect x="667.7" y="110.3" width="38.0" height="143.7" fill="#2f6b62" opacity="0.88"/>
+<text x="686.7" y="105.3" font-size="10.5" fill="#43464d" text-anchor="middle" font-variant-numeric="tabular-nums">520</text>
+<text x="686.7" y="272.0" font-size="11" fill="#43464d" text-anchor="middle">全因死亡</text>
+<text x="686.7" y="286.0" font-size="11" fill="#43464d" text-anchor="middle">(7 篇 RCT, n=520)</text>
+<line x1="56" y1="254.0" x2="744" y2="254.0" stroke="#e3e0da" stroke-width="1"/>
+<rect x="56" y="305" width="11" height="11" fill="#2f6b62" opacity="0.88"/>
+<text x="72" y="314" font-size="11.5" fill="#43464d">納入該項分析的隨機試驗人數（n）</text>
+</svg></div>
+    <div class="cap">
+      <b>數據來源：</b>長條高度全部為原文摘要逐字報告的「該項分析納入的隨機試驗人數」（491、348、612、536、598、520），<b>未經任何換算</b>。<br>
+      <b>如何解讀：</b>這張圖刻意不畫效果值，只畫<b>每個結論站在多少人身上</b>。可以看到即使是證據量最厚的 HbA1c（612 人），也不到本篇宣稱之 15,282 人的 <b>4.0%</b>（612 ÷ 15,282＝4.01%，<b>本頁自行計算</b>）。<br>
+      <b>有何陷阱：</b>(1) 人數多寡<b>不等於</b>證據品質——612 人若都來自高偏誤風險的小試驗，仍會被 GRADE 降級；本篇降級主因原文明講是「risk of bias 與 imprecision」。(2) 這些子集<b>互相重疊但不相同</b>（見上表說明），因此各長條<b>不可相加</b>。(3) 圖中不含世代研究的 14,371 人，因為那部分未進入 GRADE 評級；把它們畫進來反而會誤導。
+    </div>
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Clinical implications <span class="zh">臨床意涵</span></h2>
+  <h3>誰適合套用這個結果？</h3>
+  <ul class="clean">
+    <li><b>BMI &#8805; 30 kg/m²（亞洲族群可用調整後切點）、已診斷第二型糖尿病、且能接受五年以上長期追蹤的成人。</b>這正是本篇的納入族群。台灣與韓、日相同，臨床上常採 BMI &#8805; 27.5 kg/m² 作為亞洲人的手術考量門檻，本篇明列「或依族群調整之切點」，因此外推上沒有原則性障礙。</li>
+    <li><b>不適合套用的情況：</b>單純肥胖但無糖尿病者（本篇族群全部有 T2D）、青少年、以及需要 BPD-DS 的極重度肥胖者（<b>BPD-DS 雖在納入條件內，但實際未出現在網絡中</b>）。</li>
+    <li><b>特別注意時代落差：</b>最後檢索日為 2024 年 6 月，納入試驗的對照組多半在 GLP-1 受體促效劑與 GIP/GLP-1 雙重促效劑普及之前收案。今日與病人討論「手術 vs 藥物」時，<b>藥物那一側已經比本篇的對照組強</b>。</li>
+  </ul>
+  <h3>換來什麼？</h3>
+  <ul class="clean">
+    <li><b>五年以上維持的體重下降。</b>RYGB 比生活型態／藥物多降 16.95% 體重（95% CI −24.19 至 −9.71）——以 100 公斤的病人換算約多降 17 公斤，且是<b>五年後仍維持</b>的差距，這是藥物或生活型態治療極難達到的。</li>
+    <li><b>五年以上維持的血糖改善。</b>HbA1c 多降 1.44 個百分點（−2.26 至 −0.63）。要注意這是<b>絕對百分點</b>，例如從 8.5% 降到 7.1% 的量級。</li>
+    <li><b>腰圍縮小 12.34 cm（−17.88 至 −6.81），GRADE 中等。</b>這是本篇證據等級最好的一項，對心血管代謝風險的意義比體重數字更直接。</li>
+    <li><b>可能減少糖尿病併發症（RaR 0.17）——但這條線只能當希望，不能當承諾。</b>證據等級極不確定、CI 跨度近 30 倍。</li>
+  </ul>
+  <h3>代價是什麼？</h3>
+  <ul class="clean">
+    <li><b>最誠實的答案是：本篇無法告訴你代價有多大。</b>嚴重不良事件（9 篇 RCT、598 人）與全因死亡（7 篇 RCT、520 人）的長期證據，原文明列為 <b>very uncertain</b>，且摘要<b>連效果值都沒有給</b>。這不是「手術很安全」，而是「隨機證據不足以判斷」。</li>
+    <li><b>手術本身的已知代價（本篇未量化）：</b>吻合處滲漏、內疝、傾食症候群、營養素缺乏（鐵、維生素 B12、維生素 D、鈣）、體重復胖、以及術後需終身補充與追蹤。這些在本篇的 GRADE 表中都落在「證據極不確定」那一格。</li>
+    <li><b>「完全緩解」不是可承諾的目標。</b>本篇對長期完全糖尿病緩解的判定是 very uncertain；「部分緩解」雖然方向偏向手術，同樣是極不確定。與病人談時應以「血糖控制改善並減藥」為框架，而非「治好糖尿病」。</li>
+  </ul>
+  <div class="call teal">
+    <div class="h">知情同意可以怎麼談</div>
+    「我們今天談的手術，目標<b>不只是減重，而是把糖尿病控制住</b>。目前最完整的一份國際證據回顧告訴我們幾件事：<br>
+    第一，<b>胃繞道</b>這一類手術，在<b>五年以上</b>的追蹤裡，體重比只靠飲食運動加吃藥的人<b>多降大約一成七</b>，糖化血色素<b>多降約 1.4</b>，腰圍<b>多縮小約 12 公分</b>。這些數字是可信的。<br>
+    第二，同樣誠實地說：<b>手術能不能讓糖尿病「完全好」、能不能減少長期併發症、會不會降低死亡率——目前的隨機試驗證據還不足以回答</b>。不是說沒有好處，而是研究人數太少（真正的隨機試驗加起來只有九百多人），還無法下定論。<br>
+    第三，<b>手術是一輩子的決定</b>：之後要長期補充維生素與礦物質、定期抽血追蹤，也可能出現營養不良或體重回升。<br>
+    第四，這幾年<b>針劑型的新藥效果進步很多</b>，而這份回顧的資料收到 2024 年，對照組多半沒有用到最新的藥。所以我們可以先把兩條路的優缺點都攤開，再一起決定。」
+  </div>
+</section>
+
+<section id="limits">
+  <h2>Limitations &amp; caveats <span class="zh">研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>「15,282 人」是本篇最容易誤導人的數字。</b>其中 94.04%（14,371 人，<b>本頁自行計算</b>）來自世代研究，而這些世代研究因 ROBINS-I 判為「高／嚴重」偏誤風險，<b>被完全排除在 GRADE 評級之外</b>——這一點與原計畫不同，作者在結論中特別聲明。真正決定證據等級的只有 <b>911 位</b>隨機受試者。</li>
+    <li><b>幾乎所有結果的 GRADE 都是低或極低。</b>原文自述降級主因是「risk of bias 與 imprecision」。對外科醫師而言，最關鍵的兩個問題——<b>安全性（SAE）與死亡率</b>——恰恰都是 very uncertain。</li>
+    <li><b>網絡統合分析的間接比較不可當直接比較用。</b>本頁四張森林圖的每一列都是「該術式 vs LI/MT」，<b>不是術式互比</b>。原文雖以 P 分數排序，但摘要未提供排序表，任何「RYGB &gt; OAGB &gt; SG」的說法都<b>不能由本頁資料支持</b>。</li>
+    <li><b>檢索日與臨床現實有兩年以上落差。</b>最後檢索 2024 年 6 月，發表 2026 年 8 月。這段期間內科端的減重藥物治療進展快速，<b>對照組的「當代標準」已經移動</b>，會系統性地縮小手術的相對優勢。</li>
+    <li><b>複合終點與定義不一致。</b>「糖尿病總併發症」把不同嚴重度的事件混合計次；「完全／部分緩解」的定義在各試驗間可能不同（ADA 定義本身也曾多次修訂）。原文摘要未說明是否統一定義。</li>
+    <li><b>BPD-DS 列在納入條件卻不在網絡中。</b>代表符合條件（追蹤 &#8805; 3 年、族群為肥胖併 T2D）的 BPD-DS 研究實際上沒有被納入，因此本篇<b>對 BPD-DS 完全沒有結論</b>。同理，LAGB 與 GCP 雖是網絡節點，摘要中<b>未給出任何效果值</b>。</li>
+    <li><b>本頁只取得摘要，未取得 Summary of Findings 表與納入研究清單。</b>Cochrane Library 回傳 412、PMC 要求人機驗證、Europe PMC API 遭速率限制。因此各研究名稱、國家、樣本數、追蹤年數、各結果的 I² 與不一致性檢定<b>全部未取得</b>，本頁一律標示「原文摘要未列數值」或「本頁未取得」，<b>絕不推估、絕不補值</b>。要做完整判讀請直接閱讀原文（Open Access）。</li>
+  </ol>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>代謝與減重手術 <span class="en">metabolic and bariatric surgery, MBS</span></dt><dd>以改善肥胖及其代謝共病為目的的手術總稱。</dd></div>
+      <div class="gl-row"><dt>Roux-en-Y 胃繞道 <span class="en">Roux-en-Y gastric bypass, RYGB</span></dt><dd>建立小胃囊並以 Y 型腸道重建繞過大部分胃與近端小腸。</dd></div>
+      <div class="gl-row"><dt>單吻合口胃繞道 <span class="en">one-anastomosis gastric bypass, OAGB</span></dt><dd>又稱迷你胃繞道，僅做一個吻合口的胃繞道術式。</dd></div>
+      <div class="gl-row"><dt>袖狀胃切除 <span class="en">sleeve gastrectomy, SG</span></dt><dd>沿胃大彎縱向切除大部分胃體，保留管狀胃。</dd></div>
+      <div class="gl-row"><dt>可調式胃束帶 <span class="en">laparoscopic adjustable gastric banding, LAGB</span></dt><dd>於胃上部套環並可經皮下注水調整鬆緊。</dd></div>
+      <div class="gl-row"><dt>胃摺疊術 <span class="en">gastric plication, GCP</span></dt><dd>將胃大彎內摺縫合以縮小容積，不切除胃組織。</dd></div>
+      <div class="gl-row"><dt>膽胰分流併十二指腸轉位 <span class="en">biliopancreatic diversion with duodenal switch, BPD-DS</span></dt><dd>吸收不良為主的術式，減重效果最強但營養併發症最多。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>生活型態介入／藥物治療 <span class="en">lifestyle intervention / medical treatment, LI/MT</span></dt><dd>本篇的非手術對照組，包含營養、運動、行為治療與藥物。</dd></div>
+      <div class="gl-row"><dt>網絡統合分析 <span class="en">network meta-analysis, NMA</span></dt><dd>同時整合直接與間接比較，讓未曾頭對頭比較過的治療也能排序。</dd></div>
+      <div class="gl-row"><dt>P 分數 <span class="en">P score</span></dt><dd>頻率學派 NMA 的排序指標，介於 0–1，數值越高代表越可能是較佳治療。</dd></div>
+      <div class="gl-row"><dt>GRADE 證據等級 <span class="en">Grading of Recommendations, Assessment, Development and Evaluation</span></dt><dd>評定證據確定性的系統，分高、中、低、極低四級。</dd></div>
+      <div class="gl-row"><dt>RoB 2 / ROBINS-I</dt><dd>Cochrane 分別用於隨機試驗與非隨機介入研究的偏誤風險評估工具。</dd></div>
+      <div class="gl-row"><dt>率比 <span class="en">rate ratio, RaR</span></dt><dd>兩組事件「發生率（含人時）」的比值，適用於可重複發生的事件。</dd></div>
+      <div class="gl-row"><dt>糖化血色素 <span class="en">glycated haemoglobin, HbA1c</span></dt><dd>反映近 2–3 個月平均血糖的指標，以百分比表示。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Source &amp; figure statement <span class="zh">來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始文獻：</b>Kiesswetter E, Gorenflo L, Schwarzer G, Stadelmaier J, Wallerer S, Marjanovic G, Fink JM, Lehane C, Metzendorf MI, Meerpohl J, Schwingshackl L. <i>Metabolic and bariatric surgery in adults with obesity and diabetes mellitus: a network meta-analysis.</i> Cochrane Database of Systematic Reviews. 2026;8(8):CD015622. DOI: <a href="https://doi.org/10.1002/14651858.CD015622.pub2">10.1002/14651858.CD015622.pub2</a>；PMID <a href="https://pubmed.ncbi.nlm.nih.gov/42610488/">42610488</a>；PMC13482954（Open Access）。研究登錄：PROSPERO CRD42023457363。經費：德國聯邦教育及研究部（BMBF）01KG2201。</p>
+  <p><b>資料來源說明：</b>本頁文獻資訊（含逐字摘要、書目、作者服務機構）擷取自 <b>PubMed</b>（According to PubMed）。本次擷取<b>未能取得</b>原文之 Summary of Findings 表、Characteristics of included studies 表與各結果森林圖：Cochrane Library 回傳 HTTP 412、PubMed Central 要求人機驗證、Europe PMC REST API 遭速率限制。因此本頁所有數字<b>僅來自上方逐字摘要</b>，凡摘要未提供者一律以「原文摘要未列數值」或「本頁未取得」標示，<b>絕無推估或補值</b>。</p>
+  <p><b>圖表重繪聲明：</b>本頁五張圖（三張平均差森林圖、一張對數刻度率比森林圖、一張證據基礎長條圖）皆為<b>依原文數字自行以 Python 產生的 inline SVG</b>，<b>未使用、未嵌入、未連結</b>任何出版社圖片。所有效果值與 95% CI <b>逐字取自原文摘要，未經本頁重新計算</b>。凡由原文數字經加減乘除導出的數值（911＋14,371＝15,282 的驗算、RCT 與世代研究的人數佔比、各項分析佔 13 篇／911 人的比例、70÷18＝3.9 份報告、612÷15,282＝4.01%），一律就地標註「<b>本頁自行計算</b>」。<b>由於本篇為網絡統合分析，每一列本身即為網絡合併估計值，因此各圖皆不呈現額外的「合併菱形」</b>；亦因原文摘要未提供各研究的原始事件數，本頁<b>不繪製研究層級（study-level）森林圖，也不做任何連續性校正或效果值推估</b>。</p>
+  <footer>
+    每日一般外科文獻 · Vol. 013 · 2026 年 8 月 20 日　|　本頁為文獻閱讀輔助，<b>不構成醫療建議</b>；臨床決策請以原文全文與病人個別狀況為準。
+  </footer>
+</section>
+
+</div>
+</body>
+</html>
