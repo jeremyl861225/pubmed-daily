@@ -1,7 +1,58 @@
 {
- "count": 25,
- "latest": "2026-08-19",
+ "count": 27,
+ "latest": "2026-08-20",
  "papers": [
+  {
+   "id": "pubmed-gs-gi-2026-08-20",
+   "file": "papers/pubmed-gs-gi-2026-08-20.html",
+   "date": "2026-08-20",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 013",
+   "title": "肥胖合併第二型糖尿病，減重代謝手術到底哪一種最好？Cochrane 網絡統合分析（18 篇研究、15,282 人，其中 13 篇 RCT 僅 911 人）——五年以上體重變化 RYGB 比生活型態／藥物多降 16.95%（95% CI −24.19 至 −9.71）、HbA1c 多降 1.44 個百分點（−2.26 至 −0.63）；但完全糖尿病緩解、嚴重不良事件與全因死亡的證據等級全部是「極不確定」",
+   "title_en": "Metabolic and bariatric surgery in adults with obesity and diabetes mellitus: a network meta-analysis",
+   "journal": "Cochrane Database of Systematic Reviews（Cochrane／Wiley） 2026;8(8):CD015622（線上發表 2026 年 8 月 18 日）；完全開放取用 Open Access，PMC13482954",
+   "authors": "Kiesswetter Eva, Gorenflo Lea, Schwarzer Guido, Stadelmaier Julia, Wallerer Sabina, Marjanovic Goran, Fink Jodok M, Lehane Cornelius, Metzendorf Maria-Inti, Meerpohl Joerg, Schwingshackl Lukas 德國弗萊堡大學醫學中心實證醫學研究所、Cochrane Germany、醫學生物統計研究所、肥胖與代謝手術中心（一般與內臟外科），及杜塞道夫海因里希海涅大學家庭醫學研究所",
+   "design": "Cochrane 系統性回顧＋頻率學派隨機效果網絡統合分析（network meta-analysis, NMA） 同時納入隨機對照試驗與世代研究；以 P 分數（P score）排序治療。偏誤風險工具：RCT 用 RoB 2、非隨機研究用 ROBINS-I。證據等級以 GRADE 評定，且只針對長期（≥ 5 年）結果評定",
+   "doi": "10.1002/14651858.CD015622.pub2",
+   "category": "消化外科",
+   "tags": [
+    "消化外科",
+    "代謝與減重手術 Metabolic and bariatric surgery",
+    "第二型糖尿病 Type 2 diabetes",
+    "網絡統合分析 Network meta-analysis",
+    "證據等級：Cochrane 系統性回顧／NMA（多數結果 GRADE 低至極低）",
+    "Open Access"
+   ],
+   "tldr": "這篇 Cochrane 網絡統合分析把「肥胖＋第二型糖尿病」的減重代謝手術證據攤開來看，結論是：Roux-en-Y 胃繞道（RYGB）在五年以上的體重（多降 16.95%，95% CI −24.19 至 −9.71）、腰圍（多降 12.34 cm，−17.88 至 −6.81）與 HbA1c（多降 1.44 個百分點，−2.26 至 −0.63）上，相對生活型態／藥物治療有一致且可信的優勢；單吻合口胃繞道（OAGB）與袖狀胃切除（SG）方向相同但證據等級極低。真正的重點在另一半：完全糖尿病緩解、嚴重不良事件與全因死亡的長期證據「極不確定」——因為 18 篇研究裡雖有 15,282 人，但可用於 GRADE 評級的隨機試驗只有 13 篇、合計 911 人，事件數少到無法回答「安不安全」這個問題。",
+   "bytes": 76469
+  },
+  {
+   "id": "pubmed-crs-2026-08-20",
+   "file": "papers/pubmed-crs-2026-08-20.html",
+   "date": "2026-08-20",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 014",
+   "title": "直腸癌微創前位切除，下腸繫膜動脈（IMA）該高位結紮還是低位結紮？韓國多中心隨機對照試驗（314 人隨機分派、293 人分析）——症狀性吻合處滲漏 4.9%（7/143）vs 6.0%（9/150），RR 0.82（95% CI 0.31–2.13，p = 0.68）；12 個月 LARS 分數 15.8 vs 17.3（p = 0.32）、major LARS 19.8% vs 19.2%（p > 0.99）全都沒有差別",
+   "title_en": "Inferior Mesenteric Artery Ligation Level and Anastomotic Leakage in Low Anterior Resection: A Randomized Clinical Trial",
+   "journal": "JAMA Surgery（美國醫學會） 2026;161(8):776–783（2026 年 8 月號）；PMC13294822",
+   "authors": "Kim Chang Hyun, Park Soo Yeun, Lee Soo Young, Son Gyung Mo, Kim Hye Jin, Ha Gi Won, Lee Kyung-Ha, Kim Duck-Woo, Park Jun Seok, Bae Ki Beom 等 作者服務機構涵蓋韓國 7 家醫學中心（本頁依作者列表之服務機構清點）：全南大學和順醫院、慶北大學漆谷醫院、釜山大學梁山醫院、全北大學醫院、忠南大學醫院、首爾大學盆唐醫院、仁濟大學釜山白醫院。原文摘要未列參與中心總數",
+   "design": "多中心、前瞻性、隨機對照試驗（RCT） 收案期間 2019 年 7 月–2024 年 8 月；臨床分期 I–III 期直腸癌、預計接受腹腔鏡或機器人前位切除者，隨機分派至 IMA 高位結紮或低位結紮。主要分析族群為修正型意圖治療（modified intention-to-treat, mITT）",
+   "doi": "10.1001/jamasurg.2026.2248",
+   "category": "大腸直腸癌手術與腫瘤學",
+   "tags": [
+    "大腸直腸癌手術與腫瘤學",
+    "吻合處滲漏 Anastomotic leakage",
+    "下腸繫膜動脈結紮 IMA ligation",
+    "低前位切除症候群 LARS",
+    "證據等級：多中心隨機對照試驗（RCT）"
+   ],
+   "tldr": "在這項韓國多中心隨機對照試驗中，直腸癌微創前位切除時保留左結腸動脈的「低位結紮」並沒有把吻合處滲漏率壓下來——症狀性滲漏 7/143（4.9%）vs 高位結紮 9/150（6.0%），RR 0.82（95% CI 0.31–2.13，p = 0.68）；30 天整體併發症 14.0% vs 22.0%（p = 0.08）雖然數字上偏向低位結紮但未達統計顯著，而 12 個月的 LARS 分數（15.8 vs 17.3，p = 0.32）與 major LARS 比例（19.8% vs 19.2%，p > 0.99）幾乎完全重疊。實務意義是：在有經驗的術者手上，兩種結紮高度都安全可行，選哪一種應該回到個別病人的血流、張力與淋巴結廓清考量，而不是指望換個結紮高度就能少漏。",
+   "bytes": 58268
+  },
   {
    "id": "pubmed-periop-2026-08-19",
    "file": "papers/pubmed-periop-2026-08-19.html",
