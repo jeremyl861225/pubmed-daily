@@ -1,7 +1,57 @@
 {
- "count": 27,
- "latest": "2026-08-20",
+ "count": 29,
+ "latest": "2026-08-21",
  "papers": [
+  {
+   "id": "pubmed-mis-2026-08-21",
+   "file": "papers/pubmed-mis-2026-08-21.html",
+   "date": "2026-08-21",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 015",
+   "title": "直腸癌到底能不能放心做腹腔鏡？ALaCaRT ＋ ACOSOG Z6051 兩大隨機試驗的個別病人資料（IPD）統合分析（935 人、中位追蹤 60.2 個月）——病理上「成功切除」85.1% vs 89.9%（合併差 −4.6 個百分點，95% CI −8.6 至 −0.5）、3 年局部區域復發 5.4% vs 2.0%（差 ＋3.1 個百分點，95% CI 0.6–5.6）；3 年無病存活的非劣性未能證實（差 −1.5%，單側 95% CI 下限 −6.3% 跨過 −5% 界線）",
+   "title_en": "Laparoscopic versus open surgery for rectal cancer: individual patient data meta-analysis of the ALaCaRT and Z6051 randomized trials",
+   "journal": "BJS Open（British Journal of Surgery 開放取用姊妹刊） 2026;10(4)：文章號 zrag119；線上發表 2026 年 7 月 3 日；PMC13448722（Open Access）",
+   "authors": "Brown Kilian G M, Stevenson Andrew R L, Solomon Michael J, Murray James, Wilson Kate, Gebski Val, Fleshman James, Shi Qian, Read Thomas E, Simes John 服務機構橫跨澳洲（Royal Prince Alfred Hospital、Royal Brisbane and Women's Hospital、雪梨大學 NHMRC 臨床試驗中心）與北美（Baylor University Medical Center、Mayo Clinic、University of Hawaii）",
+   "design": "事前規劃（prospective）的個別病人資料統合分析（individual patient data meta-analysis, IPD-MA） 納入 2 個多中心第三期隨機非劣性試驗：ALaCaRT（ACTRN12609000663257，澳紐 24 中心）與 ACOSOG Z6051（美加 35 中心）。兩試驗設計階段即相互諮商並預先約定此 IPD 統合分析；依意圖治療（intention-to-treat）分析、依試驗別分層",
+   "doi": "10.1093/bjsopen/zrag119",
+   "category": "微創／機器人手術技術",
+   "tags": [
+    "微創／機器人手術技術",
+    "全直腸繫膜切除 TME",
+    "環周切緣 CRM",
+    "證據等級：兩篇第三期 RCT 的個別病人資料統合分析",
+    "Open Access"
+   ],
+   "tldr": "把 ALaCaRT 與 ACOSOG Z6051 兩個第三期隨機試驗的個別病人資料合併（935 人、中位追蹤 60.2 個月）後，腹腔鏡直腸切除在病理品質上明確輸給開腹——「成功切除」85.1% vs 89.9%（合併差 −4.6 個百分點，95% CI −8.6 至 −0.5），繫膜完全完整 79.7% vs 86.9%（p = 0.004）——而且3 年局部區域復發率高出約一倍半（5.4% vs 2.0%，差 ＋3.1 個百分點，95% CI 0.6–5.6）；主要終點 3 年無病存活雖然只差 −1.5 個百分點（95% CI −7.2 至 4.2），但單側 95% CI 下限 −6.3% 跨過了 −5% 的非劣性界線，因此「非劣性未能證實」。作者同時證明：在多變項模型裡，唯一同時預測 DFS 與 OS 的病理指標是「CRM 乾淨」（DFS HR 0.32、OS HR 0.26）。實務",
+   "bytes": 79525
+  },
+  {
+   "id": "pubmed-gs-breast-2026-08-21",
+   "file": "papers/pubmed-gs-breast-2026-08-21.html",
+   "date": "2026-08-21",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 014",
+   "title": "非可觸摸性乳癌要做乳房保留手術，術前影像量的大小到底準不準？瑞典 MagTotal 第三期隨機試驗的事後分析（414 人）——病理／影像大小比（PRR）中位數 1.25，代表影像系統性低估約 25%；獨立預測低估的是浸潤性小葉癌（β 0.288）、高分級（Grade 3 β 0.297）與腫瘤越小；再切除率只有 2.7%（11/414），而術前 MRI 既沒讓量測更準、也沒有降低再切除",
+   "title_en": "Factors associated with discordance between pathological and radiological tumor size and risk of re-excision in breast-conserving surgery: a post-hoc analysis within a randomized trial",
+   "journal": "Breast Cancer Research and Treatment（Springer） 2026;218(3)；線上發表 2026 年 8 月 13 日；PMC13473327（Open Access）",
+   "authors": "Kollatos Christos, Pantiora Eirini, Jazrawi Allan, Wärnberg Fredrik, Eriksson Staffan, Karakatsanis Andreas 服務機構：瑞典 Uppsala 大學外科學系與 Uppsala 大學醫院乳房外科、Västmanland 郡立醫院、Sahlgrenska 大學醫院、Karolinska 大學醫院重建整形外科",
+   "design": "第三期、開放標籤、實用性隨機對照試驗（MagTotal）之事後（post hoc）分析 母試驗登錄 ISRCTN11914537（登錄日 2018/05/01），收案期間 2018 年 5 月–2022 年 5 月，瑞典 3 家醫院。母試驗比較磁性種子（ferromagnetic seed）vs 導引鋼絲（guidewire）做病灶定位，已證實兩者在再切除率與切除體積比上等效。本篇為其資料的次級分析，依 STROBE 規範撰寫",
+   "doi": "10.1007/s10549-026-08052-x",
+   "category": "乳房外科",
+   "tags": [
+    "乳房外科",
+    "乳房保留手術 BCS",
+    "切緣與再切除 Margins & re-excision",
+    "證據等級：第三期 RCT 之事後分析（觀察性）",
+    "Open Access"
+   ],
+   "tldr": "在這 414 位非可觸摸性乳癌接受乳房保留手術的病人中，術前影像系統性低估腫瘤範圍約 25%（PRR 中位數 1.25，IQR 1–1.75，全距 0.24–7.17）；獨立預測「影像會低估」的是浸潤性小葉癌（ILC，β 0.288，95% CI 0.063–0.514）、分級較高（Grade 3 β 0.297，95% CI 0.080–0.514）、多發／多中心病灶（β 0.564，95% CI 0.115–1.014）與腫瘤越小（每大 1 mm，β −0.026）。但真正的臨床好消息是——因為母試驗強制在影像大小外加 1 cm 邊界（ORV），這 25% 的低估在中位 10.3 mm 的小病灶上只等於約 2–3 mm，被邊界吸收掉了，所以再切除率只有 2.7%（11/414）。反過來說，術前 MRI 在多變項模型裡既沒有讓量測變準（β −0.017，p = .829），也沒有降低再切",
+   "bytes": 86929
+  },
   {
    "id": "pubmed-gs-gi-2026-08-20",
    "file": "papers/pubmed-gs-gi-2026-08-20.html",
