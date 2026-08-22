@@ -1,7 +1,57 @@
 {
- "count": 29,
- "latest": "2026-08-21",
+ "count": 31,
+ "latest": "2026-08-23",
  "papers": [
+  {
+   "id": "pubmed-periop-2026-08-23",
+   "file": "papers/pubmed-periop-2026-08-23.html",
+   "date": "2026-08-23",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 016",
+   "title": "直腸吻合該用「單釘合」還是「雙釘合」？14 篇研究、3,046 人的系統性回顧與統合分析——吻合口滲漏 RR 0.61（95% CI 0.42–0.90，I² 44%，p = 0.012）；但拆開次群組後，好處幾乎全部來自經肛門橫斷單釘合（3 篇，RR 0.37，95% CI 0.25–0.57），體腔內荷包縫合組 RR 0.92（95% CI 0.57–1.47）並無差異；GRADE 證據確定性：低",
+   "title_en": "Single-stapling versus double-stapling technique for rectal anastomosis—meta-analysis",
+   "journal": "BJS Open（British Journal of Surgery 開放取用姊妹刊） 2026;10(4)：文章號 zrag078；線上發表 2026 年 7 月 3 日；PMC13331353（Open Access）",
+   "authors": "Kehagias Dimitrios、Lampropoulos Charalampos、Kehagias Ioannis、Jayne David、Tiernan Jim 英國里茲 John Goligher Colorectal Unit（Leeds Teaching Hospitals NHS Trust）與里茲大學 Leeds Institute of Medical Research；希臘 Patras 大學醫院外科、Patras 聖安德魯總醫院加護病房",
+   "design": "系統性回顧與隨機效應統合分析（systematic review and random-effects meta-analysis） 依 PRISMA 撰寫；PROSPERO 註冊 CRD420251249636；檢索 PubMed／MEDLINE、Google Scholar、Scopus 自建庫起至 2025 年 12 月，加上參考文獻滾雪球（snowballing）。隨機與非隨機比較性研究皆納入；單臂研究、病例報告、會議摘要、非英文文獻排除",
+   "doi": "10.1093/bjsopen/zrag078",
+   "category": "周術期照護與併發症",
+   "tags": [
+    "周術期照護與併發症",
+    "吻合口滲漏 Anastomotic leak",
+    "經肛門橫斷單釘合 TTSS",
+    "證據等級：系統性回顧與統合分析（2 RCT ＋ 12 觀察性）",
+    "Open Access"
+   ],
+   "tldr": "把 1991–2025 年 14 篇比較單釘合（SST）與雙釘合（DST）的研究合併後（3,046 人，其中只有 2 篇是 RCT），SST 的吻合口滲漏風險比 DST 低約四成（RR 0.61，95% CI 0.42–0.90，p = 0.012，I² 44%）；但這個好處不是均勻分布的——次群組拆開來看，只有「經肛門橫斷再單一環形吻合（TTSS／TaTME）」這 3 篇撐起了全部效果（RR 0.37，95% CI 0.25–0.57，I² 0%，p < 0.0001），而傳統體腔內打荷包縫合的 11 篇完全看不到差異（RR 0.92，95% CI 0.57–1.47），其中開腹次群組甚至數值上偏向 DST（RR 1.38，95% CI 0.87–2.18）。次要結果只有住院天數短 0.77 天（95% CI −1.35 至 −0.18）達顯著，手術時間反而傾向 DST 較短（MD 11",
+   "bytes": 106401
+  },
+  {
+   "id": "pubmed-gs-endo-2026-08-23",
+   "file": "papers/pubmed-gs-endo-2026-08-23.html",
+   "date": "2026-08-23",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 015",
+   "title": "胰島素瘤該直接開刀，還是做內視鏡超音波導引射頻燒灼（EUS-RFA）？20 篇病例系列、391 人的統合分析——RFA 併發症 23% vs 手術 59%、住院 2.4 天 vs 11 天，但復發 11% vs 4.8%；然而本頁逐格清點原始表格後發現：兩組平均年齡差了 20.6 歲（64.2 vs 43.6）、兩組從未被頭對頭比較（是兩個各自獨立的單臂合併分析），且原文至少有四處數字前後矛盾",
+   "title_en": "Endoscopic ultrasound-guided radiofrequency ablation of pancreatic insulinoma",
+   "journal": "ABCD — Arquivos Brasileiros de Cirurgia Digestiva（巴西消化外科學報） 2026;38：文章號 e1921；線上發表 2026 年 7 月 6 日；PMC13360299（Open Access）",
+   "authors": "Lozada-Calle Silvia Johanna、Funari Mateus Pereira、Veras Matheus de Oliveira、Campos Rayssa Kethlyn Alves de、Cruz Junior Jurandir Batista da、Bernardo Wanderley、Moura Eduardo Guimarães Hourneaux de 巴西聖保羅大學醫學院附設醫院（Hospital das Clínicas, Universidade de São Paulo）內視鏡科、腸胃科研究所；巴西醫學會臨床指引計畫",
+   "design": "系統性回顧與統合分析（依 PRISMA 撰寫；PROSPERO 註冊 CRD42024605755） 檢索 PubMed、Cochrane Library、Embase、Science Direct、Scopus，收錄至 2024 年 6 月 1 日，限英文。納入世代研究與病例系列（不含隨機試驗）。關鍵設計限制：RFA 與手術是兩組各自獨立進行的單臂比例合併分析，不是頭對頭比較；偏差風險以 ROBINS-I 評估",
+   "doi": "10.1590/0102-67202025000052e1921",
+   "category": "內分泌外科",
+   "tags": [
+    "內分泌外科",
+    "胰臟神經內分泌腫瘤 pNET",
+    "內視鏡超音波射頻燒灼 EUS-RFA",
+    "證據等級：病例系列與世代研究的單臂合併分析（無隨機、無配對）",
+    "Open Access"
+   ],
+   "tldr": "這篇統合分析把 10 篇 EUS-RFA 病例系列（142 人）與 10 篇手術病例系列（249 人）各自合併，得到 RFA 的併發症 23%（手術 59%）、住院 2.4 天（手術 11 天）、操作相關死亡 0%，但復發 11%（手術 4.8%）——數字看起來對 RFA 非常有利。但這兩組從頭到尾沒有被頭對頭比較過：它們是兩個獨立的單臂比例合併，而且接受 RFA 的病人平均比接受手術的病人老 20.6 歲（64.2 vs 43.6 歲，本頁自行計算）、腫瘤小 3.6 mm，手術系列又多來自 1990–2010 年代的中南美洲（住院天數最長達 18 天）。換句話說，「RFA 併發症少、住院短」很可能同時反映了術式差異＋病人選擇＋年代差異三件事，無法歸因於單一因素。此外本頁逐格清點原始表格後，發現原文至少四處數字自相矛盾（併發症表列 26 例 vs 內文 25 例；手術組「平均追蹤 16.6",
+   "bytes": 124664
+  },
   {
    "id": "pubmed-mis-2026-08-21",
    "file": "papers/pubmed-mis-2026-08-21.html",
