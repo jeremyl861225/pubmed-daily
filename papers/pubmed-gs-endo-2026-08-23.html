@@ -1,0 +1,811 @@
+<title>每日一般外科文獻 · 2026-08-23</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+
+
+  /* 本頁附加：寬表格的欄寬控制，避免首欄被壓成逐字換行 */
+  .tbl-wrap table.wide{min-width:640px;}
+  .tbl-wrap table.wide th:first-child,.tbl-wrap table.wide td:first-child{min-width:150px;}
+  .tbl-wrap table.wide th:nth-child(2),.tbl-wrap table.wide td:nth-child(2){min-width:92px;}
+  .tbl-wrap table.wide td{vertical-align:top;}
+  .tbl-wrap table.wide{font-size:13px;}
+  .tbl-wrap table.wide .win{white-space:normal;}
+  .tbl-wrap table.wide td.num{white-space:normal;}
+  .tbl-wrap table.wide th{white-space:normal;}
+
+
+  /* 本頁附加：15／17 欄的研究特徵表需要更多寬度 */
+  .tbl-wrap table.wide.t15{min-width:1560px;}
+  .tbl-wrap table.wide.t17{min-width:2000px;}
+  .tbl-wrap table.wide.t15 th,.tbl-wrap table.wide.t17 th{white-space:normal;}
+  .tbl-wrap table.wide.t15 td,.tbl-wrap table.wide.t17 td{white-space:normal;}
+  .tbl-wrap table.wide.t15 td:first-child,.tbl-wrap table.wide.t17 td:first-child{min-width:170px;}
+  .tbl-wrap table.wide.t17 td:last-child{min-width:280px;}
+</style>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 23 日 · 週日</span>
+    <span style="opacity:.4">/</span><span>Vol. 015</span>
+  </div>
+  <h1 class="title">胰島素瘤該直接開刀，還是做內視鏡超音波導引射頻燒灼（EUS-RFA）？20 篇病例系列、391 人的統合分析——RFA <b>併發症 23% vs 手術 59%、住院 2.4 天 vs 11 天</b>，但<b>復發 11% vs 4.8%</b>；然而本頁逐格清點原始表格後發現：<b>兩組平均年齡差了 20.6 歲（64.2 vs 43.6）</b>、兩組<b>從未被頭對頭比較</b>（是兩個各自獨立的單臂合併分析），且原文至少有<b>四處數字前後矛盾</b></h1>
+  <p class="title-en">Endoscopic ultrasound-guided radiofrequency ablation of pancreatic insulinoma</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">ABCD — Arquivos Brasileiros de Cirurgia Digestiva（巴西消化外科學報）<br><span style="color:#6b7079;font-size:13px">2026;38：文章號 <b>e1921</b>；線上發表 <b>2026 年 7 月 6 日</b>；PMC13360299（Open Access）</span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">Lozada-Calle Silvia Johanna、Funari Mateus Pereira、Veras Matheus de Oliveira、Campos Rayssa Kethlyn Alves de、Cruz Junior Jurandir Batista da、Bernardo Wanderley、Moura Eduardo Guimarães Hourneaux de<br><span style="color:#6b7079;font-size:13px">巴西聖保羅大學醫學院附設醫院（Hospital das Clínicas, Universidade de São Paulo）內視鏡科、腸胃科研究所；巴西醫學會臨床指引計畫</span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧與統合分析</b>（依 PRISMA 撰寫；PROSPERO 註冊 <b>CRD42024605755</b>）<br><span style="color:#6b7079;font-size:13px">檢索 PubMed、Cochrane Library、Embase、Science Direct、Scopus，收錄至 <b>2024 年 6 月 1 日</b>，限英文。納入<b>世代研究與病例系列</b>（不含隨機試驗）。<b>關鍵設計限制：RFA 與手術是兩組各自獨立進行的單臂比例合併分析，不是頭對頭比較</b>；偏差風險以 ROBINS-I 評估</span></div></div>
+    <div class="meta-item"><div class="k">主要終點</div><div class="v"><b>技術成功與臨床成功</b>——臨床成功定義為「胰島素瘤相關症狀緩解」，技術成功定義為「追蹤影像上未見胰島素瘤復發」<br><span style="color:#6b7079;font-size:13px">次要終點：不良事件（早期／晚期）、術中死亡、復發率、住院天數</span></div></div>
+    <div class="meta-item"><div class="k">納入研究與人數</div><div class="v"><b>20 篇／391 人</b>（EUS-RFA 142 人・手術 249 人）<br><span style="color:#6b7079;font-size:13px">RFA 10 篇、手術 10 篇。<b>本頁自行計算</b>：兩表人數逐列加總分別為 142 與 249 ✓。惟 <b>Crinò 等（義大利）以 89 人同時出現在兩張表</b>，很可能是同一篇文獻同時提供兩組資料，因此「20 篇」實際上可能只有 19 篇不同文獻</span></div></div>
+    <div class="meta-item"><div class="k">兩組基線落差（本頁自行計算）</div><div class="v"><b>平均年齡 64.2 歲（RFA） vs 43.57 歲（手術），相差 20.6 歲</b><br><span style="color:#6b7079;font-size:13px">平均腫瘤大小 13.1 mm vs 16.69 mm（相差 3.6 mm）。本頁核算後確認：原文所報的兩組「平均值」是<b>各研究平均數的未加權平均</b>（RFA 642/10 = 64.2、手術 435.7/10 = 43.57），不是以人數加權的病人層級平均</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1590/0102-67202025000052e1921">10.1590/0102-67202025000052e1921</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42417742/">PMID 42417742 &#8594;</a>　·　PMC13360299</div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">內分泌外科</span>
+    <span class="tag t2">胰臟神經內分泌腫瘤 pNET</span>
+    <span class="tag t2">內視鏡超音波射頻燒灼 EUS-RFA</span>
+    <span class="tag t3">證據等級：病例系列與世代研究的單臂合併分析（無隨機、無配對）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a><a href="#abs">英文原文摘要</a><a href="#flow">PRISMA 流程</a>
+  <a href="#tbl1">研究特徵表</a><a href="#results">主要結果圖</a><a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與重繪圖</a><a href="#audit">數字查核</a><a href="#clinic">臨床意涵</a>
+  <a href="#limits">限制與解讀警訊</a><a href="#gloss">中英對照</a><a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>這篇統合分析把 <strong>10 篇 EUS-RFA 病例系列（142 人）</strong>與 <strong>10 篇手術病例系列（249 人）</strong>各自合併，得到 RFA 的<strong>併發症 23%（手術 59%）、住院 2.4 天（手術 11 天）、操作相關死亡 0%，但復發 11%（手術 4.8%）</strong>——數字看起來對 RFA 非常有利。<strong>但這兩組從頭到尾沒有被頭對頭比較過</strong>：它們是兩個獨立的單臂比例合併，而且<strong>接受 RFA 的病人平均比接受手術的病人老 20.6 歲（64.2 vs 43.6 歲，本頁自行計算）、腫瘤小 3.6 mm</strong>，手術系列又多來自 1990–2010 年代的中南美洲（住院天數最長達 18 天）。換句話說，「RFA 併發症少、住院短」很可能同時反映了<strong>術式差異＋病人選擇＋年代差異</strong>三件事，無法歸因於單一因素。此外本頁逐格清點原始表格後，發現原文<strong>至少四處數字自相矛盾</strong>（併發症表列 26 例 vs 內文 25 例；手術組「平均追蹤 16.69 個月（13–25）」與「平均腫瘤 16.69 mm（13–25 mm）」完全相同、疑為複製貼上；手術組腫瘤位置加總對不上內文；摘要的手術組臨床成功率 88.9% 與表列平均 97.5% 相差近 9 個百分點）。<strong>實務結論仍與現行共識一致：可切除的胰島素瘤，手術（尤其腫瘤摘除術 enucleation）仍是首選；EUS-RFA 保留給高手術風險、多重共病、或拒絕手術的病人，並必須事先說明復發率較高、需要長期影像追蹤。</strong></p>
+</div>
+
+<section id="abs">
+  <h2>Original Abstract <span class="zh">英文原文摘要（逐字）</span></h2>
+  <div class="abs">
+    <h4>Background</h4>
+    <p>Insulinoma is a rare pancreatic neuroendocrine tumor (pNET) arising from beta cells, leading to excessive insulin secretion and life-threatening hypoglycemia. While surgical resection remains the gold standard, endoscopic ultrasound-guided radiofrequency ablation (EUS-RFA) has emerged as a minimally invasive alternative, particularly for patients unfit for surgery.</p>
+    <h4>Aims</h4>
+    <p>A meta-analysis was performed according to PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analysis) guidelines to compare the efficacy and safety of EUS-RFA and surgery for pancreatic insulinomas.</p>
+    <h4>Methods</h4>
+    <p>Systematic searches were conducted in PubMed, Cochrane Library, Embase, and Scopus, using MeSH terms related to insulinoma, RFA, and surgery. Eligible studies included cohort studies and case series reporting clinical outcomes, adverse events, recurrence rates, and hospitalization. Statistical analyses were performed with Comprehensive Meta-analysis Software and RevMan 5.</p>
+    <h4>Results</h4>
+    <p>A total of 20 studies were included, comprising 142 patients treated with EUS-RFA and 249 with surgery. Clinical success was higher in the EUS-RFA group (97.5%) compared with surgery (88.9%). Patients undergoing EUS-RFA experienced fewer complications (23 vs. 59%), shorter hospital stays (mean 2.4 vs. 11 days), and zero procedure-related mortality. However, recurrence rates were greater with EUS-RFA (11%) than with surgery (4.8%). No significant differences were found in overall survival during follow-up.</p>
+    <h4>Conclusions</h4>
+    <p>EUS-RFA is a safe, effective, and less invasive option for managing pancreatic insulinomas, ensuring rapid recovery and fewer complications. Nevertheless, its higher recurrence rate highlights the importance of patient selection and strict follow-up. Surgery remains the treatment of choice in resectable cases, while EUS-RFA represents a valuable alternative in high-risk or inoperable patients.</p>
+    <p class="note">以上為 PubMed／PMC 收錄之原始英文摘要逐字轉載，未增刪任何數字或字句。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <h2>PRISMA <span class="zh">文獻篩選流程</span></h2>
+  <div class="prisma">
+    <div class="pr-stage">辨識 Identification</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">檢索 PubMed、Cochrane Library、Embase、Science Direct、Scopus，收錄至 2024 年 6 月 1 日，限英文<br><span style="font-size:12.5px;color:#6b7079">MeSH 詞：insulinoma、endoscopic ultrasound、radiofrequency ablation、surgery</span></div></div>
+      <div class="pr-ex"><b>辨識筆數：原文未列數值。</b>原文 Figure 1（RFA 組）與 Figure 2（手術組）為兩張獨立的 PRISMA 流程圖，但正文完全沒有轉述任何一階段的數字</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">篩選 Screening／符合 Eligibility</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box">去重、標題／摘要篩選、全文評讀　<span class="n">原文未列數值</span></div></div>
+      <div class="pr-ex">原文亦未列出納入／排除條件的具體條列內容（正文寫「The study inclusion criteria are as follows:」之後即接排除條件，中間的清單在 PMC 版本中缺漏）</div>
+    </div>
+    <div class="pr-arrow"></div>
+    <div class="pr-stage">納入 Included</div>
+    <div class="pr-row">
+      <div class="pr-main"><div class="pr-box final">最終納入　<span class="n">20</span> 篇／<span class="n">391</span> 人<br><span style="font-size:12.5px;color:#6b7079">EUS-RFA 10 篇／142 人　·　手術 10 篇／249 人</span></div></div>
+      <div class="pr-ex">Crinò 等（義大利）以 89 人<b>同時出現在兩張表</b>，很可能是同一篇同時提供兩組資料 → 實際不同文獻數可能為 <b>19</b> 篇（<b>本頁自行計算之觀察</b>）</div>
+    </div>
+  </div>
+  <div class="fig"><div class="cap"><b>資料來源：</b>原文 Methods 與 Figure 1／Figure 2 的圖說。<b>如何解讀：</b>這張流程圖之所以幾乎全是「原文未列數值」，不是本頁偷懶——原文的兩張 PRISMA 圖只以圖檔呈現，正文一個階段性數字都沒有轉述，而本系列的原則是<b>絕不從圖片像素反推數字</b>。<b>陷阱：</b>PRISMA 流程無法用文字稽核，等於讀者無法判斷檢索的召回率與排除理由是否合理；再加上檢索只做到 2024 年 6 月、卻在 2026 年 7 月才發表，中間兩年多的新文獻（包括更大型的 RFA 系列）並未納入，這在一個發展速度很快的技術領域是很實質的缺口。</div></div>
+</section>
+
+<section id="tbl1">
+  <h2>Table 1 &amp; 2 <span class="zh">納入研究特徵（原文兩張表逐列轉錄）</span></h2>
+  <h3>EUS-RFA 組（原文表 1）</h3>
+  <div class="tbl-wrap">
+    <table class="wide t15">
+      <thead><tr><th>研究</th><th>國家</th><th>人數</th><th>平均年齡</th><th>女／男</th><th>病灶數</th><th>腫瘤大小（公釐）</th><th>位置（頭鉤／頸／體／尾）</th><th>分級 G1／G2</th><th>追蹤（月）</th><th>不良事件</th><th>死亡</th><th>臨床反應 %</th><th>住院天數</th><th>復發</th></tr></thead>
+      <tbody><tr><td>Lakhtakia 等</td><td>印度</td><td class="num">3</td><td class="num">45</td><td class="num">0／3</td><td class="num">3</td><td class="num">17.6</td><td class="num">2／0／1／0</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num">2</td><td class="num">0</td></tr><tr><td>Oleinikov 等</td><td>以色列</td><td class="num">7</td><td class="num">52</td><td class="num">4／3</td><td class="num">7</td><td class="num">15.04</td><td class="num">5／0／0／2</td><td class="num">7／0</td><td class="num">9.7</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num">3</td><td class="num">0</td></tr><tr><td>Furnica 等</td><td>比利時</td><td class="num">4</td><td class="num">62</td><td class="num">3／1</td><td class="num">3</td><td class="num">12.8</td><td class="num">2／1／0／1</td><td class="num">3／1</td><td class="num">22.5</td><td class="num">2</td><td class="num">0</td><td class="num">100</td><td class="num">2</td><td class="num">0</td></tr><tr><td>de Nucci 等</td><td>義大利</td><td class="num">5</td><td class="num">80</td><td class="num">3／2</td><td class="num">5</td><td class="num">12.8</td><td class="num">0／0／3／2</td><td class="num">5／0</td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num"><span class="na">原文表格欄位不全</span></td><td class="num">0</td></tr><tr><td>Marx 等</td><td>法國／瑞士</td><td class="num">7</td><td class="num">66</td><td class="num">6／1</td><td class="num">7</td><td class="num">13.3</td><td class="num">1／3／1／2</td><td class="num">4／1</td><td class="num">21</td><td class="num">4</td><td class="num">1</td><td class="num">100</td><td class="num">1.7</td><td class="num">0</td></tr><tr><td>Rossi 等</td><td>義大利</td><td class="num">3</td><td class="num">83</td><td class="num">1／2</td><td class="num">3</td><td class="num">11.6</td><td class="num">1／0／1／1</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">24</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">0</td></tr><tr><td>Crinò 等</td><td>義大利</td><td class="num">89</td><td class="num">55</td><td class="num">62／27</td><td class="num">89</td><td class="num">13</td><td class="num">34／0／39／16</td><td class="num">66／3</td><td class="num">23</td><td class="num">16</td><td class="num">0</td><td class="num">95</td><td class="num">3</td><td class="num">11</td></tr><tr><td>Borrelli de Andreis 等</td><td>義大利</td><td class="num">10</td><td class="num">67</td><td class="num">7／3</td><td class="num">10</td><td class="num">11</td><td class="num">3／0／3／4</td><td class="num">9／1</td><td class="num">19.5</td><td class="num">3</td><td class="num">0</td><td class="num">100</td><td class="num">2</td><td class="num">0</td></tr><tr><td>Debraine 等</td><td>比利時</td><td class="num">11</td><td class="num">65</td><td class="num">9／2</td><td class="num">11</td><td class="num">11.6</td><td class="num">5／1／3／2</td><td class="num">9／2</td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">80</td><td class="num">2</td><td class="num">2</td></tr><tr><td>Biermann 等</td><td>美國（亞特蘭大）</td><td class="num">3</td><td class="num">67</td><td class="num">2／1</td><td class="num">3</td><td class="num">13</td><td class="num">2／0／0／1</td><td class="num">3／0</td><td class="num">13</td><td class="num">1</td><td class="num">0</td><td class="num">100</td><td class="num">2</td><td class="num">0</td></tr></tbody>
+          </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;line-height:1.7;margin:10px 2px 0;"><b>本頁自行計算的加總查核：</b>人數 142 ✓（原文相符）；女 97／男 45 ✓；病灶 142 ✓；位置 頭鉤 55／頸 5／體 51／尾 31，合計 142 ✓（與原文 38.7%／3.5%／35.9%／21.8% 相符）；平均年齡 642/10 = <b>64.2 歲</b> ✓；平均腫瘤 131.74/10 = <b>13.17 mm</b>（原文寫 13.1 mm，四捨五入相符）；平均追蹤 168.7/10 = <b>16.87 個月</b> ✓。<b>不良事件逐列加總為 26 例，但原文內文列舉為 25 例（胰臟炎 11、腹痛 9、出血 2、脾臟血腫 1、腸穿孔 1、胃後方積液 1），相差 1 例</b>。de Nucci 等該列在 PMC 版表格中只剩單一個「0」，無法判定是住院天數還是復發，故標示欄位不全。</p>
+
+  <h3>手術組（原文表 2）</h3>
+  <div class="tbl-wrap">
+    <table class="wide t17">
+      <thead><tr><th>研究</th><th>國家</th><th>人數</th><th>平均年齡</th><th>女／男</th><th>實際手術人數</th><th>病灶數</th><th>腫瘤大小（公釐）</th><th>位置（頭鉤／頸／體／尾）</th><th>分級 G1／G2／惡性</th><th>追蹤（月）</th><th>不良事件</th><th>死亡</th><th>臨床反應 %</th><th>住院天數</th><th>復發</th><th>術式</th></tr></thead>
+      <tbody><tr><td>Machado 等</td><td>巴西</td><td class="num">59</td><td class="num">36.3</td><td class="num">36／23</td><td class="num">59</td><td class="num">79</td><td class="num">15</td><td class="num">0／27／23／29 <span class="na">（疑似錯位，見下方查核）</span></td><td class="num">55／4／0</td><td class="num">60</td><td class="num">31</td><td class="num">3</td><td class="num">98.10</td><td class="num">2</td><td class="num"><span class="na">原文未列數值</span></td><td>摘除術 22、體尾部胰臟切除 25、體尾部胰臟切除＋摘除術 7、胰十二指腸切除 1</td></tr><tr><td>Apodaca-Torres 等</td><td>巴西</td><td class="num">20</td><td class="num">37.8</td><td class="num">12／8</td><td class="num">20</td><td class="num">26</td><td class="num">25</td><td class="num">6／0／9／11</td><td class="num">19／0／1</td><td class="num">60</td><td class="num">16</td><td class="num">0</td><td class="num">100</td><td class="num">16</td><td class="num"><span class="na">原文未列數值</span></td><td>尾體部胰臟切除 2、尾體部胰臟切除＋脾切除 5、尾部胰臟切除＋脾切除 2、尾部胰臟切除＋脾切除＋摘除術 1、摘除術 10</td></tr><tr><td>Valente 等</td><td>巴西</td><td class="num">5</td><td class="num">37.2</td><td class="num">3／2</td><td class="num">5</td><td class="num">5</td><td class="num">15</td><td class="num">3／0／2／0</td><td class="num">5／0／0</td><td class="num">6</td><td class="num">1</td><td class="num">0</td><td class="num">100</td><td class="num">6</td><td class="num">0</td><td>局部切除（結節摘除）</td></tr><tr><td>Giraldo 等</td><td>哥倫比亞</td><td class="num">3</td><td class="num">53</td><td class="num">2／1</td><td class="num">3</td><td class="num">3</td><td class="num">13</td><td class="num">1／0／1／1</td><td class="num">3／1／0</td><td class="num"><span class="na">原文未指明</span></td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num">5</td><td class="num">0</td><td>局部切除 2、遠端胰十二指腸切除 1</td></tr><tr><td>España-Gomez 等</td><td>墨西哥</td><td class="num">34</td><td class="num">40</td><td class="num">20／14</td><td class="num">34</td><td class="num">34</td><td class="num">22</td><td class="num">12／2／10／10</td><td class="num">31／0／3</td><td class="num">44</td><td class="num">26</td><td class="num">1</td><td class="num">97</td><td class="num">10</td><td class="num">0</td><td>摘除術 9、遠端胰臟切除 5</td></tr><tr><td>Bonato 等</td><td>巴西</td><td class="num">16</td><td class="num">39</td><td class="num">11／5</td><td class="num">16</td><td class="num">16</td><td class="num">15</td><td class="num">7／0／6／3</td><td class="num">15／0／1</td><td class="num">5</td><td class="num">15</td><td class="num">0</td><td class="num">94</td><td class="num">18</td><td class="num">1</td><td>摘除術 7、遠端胰臟切除 5、次全胰臟切除 2、體尾部胰臟切除＋摘除術 2</td></tr><tr><td>Caldas 等</td><td>葡萄牙</td><td class="num">14</td><td class="num">60.9</td><td class="num">12／2</td><td class="num">7</td><td class="num">14</td><td class="num">14.2</td><td class="num">9／0／3／2</td><td class="num">6／1／0</td><td class="num">48</td><td class="num">4</td><td class="num">0</td><td class="num">85.7</td><td class="num">1</td><td class="num"><span class="na">原文未列數值</span></td><td>摘除術 3、體尾部胰臟切除 2、胰頭十二指腸切除 2</td></tr><tr><td>Chapa-Azuela 等</td><td>墨西哥</td><td class="num">7</td><td class="num">40</td><td class="num">5／2</td><td class="num">7</td><td class="num">7</td><td class="num">20</td><td class="num">2／1／1／3</td><td class="num">4／1／0（2 篇未列）</td><td class="num">32</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">0</td><td>Whipple 1、摘除術 2、遠端胰臟切除 3、胰臟切除＋摘除術 1</td></tr><tr><td>Torres 等</td><td>墨西哥</td><td class="num">2</td><td class="num">37.5</td><td class="num">2／0</td><td class="num">2</td><td class="num">2</td><td class="num">14</td><td class="num">0／0／2／0</td><td class="num">2／0／0</td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">100</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">0</td><td>遠端胰臟切除</td></tr><tr><td>Crinò 等</td><td>義大利</td><td class="num">89</td><td class="num">54</td><td class="num">61／28</td><td class="num">89</td><td class="num">89</td><td class="num">13.7</td><td class="num">35／0／27／27</td><td class="num">79／10／0</td><td class="num">37</td><td class="num">55</td><td class="num"><span class="na">原文未列數值</span></td><td class="num">100</td><td class="num">11</td><td class="num">0</td><td class="num"><span class="na">原文未報告</span></td></tr></tbody>
+          </table>
+  </div>
+  <p style="font-size:12.5px;color:#6b7079;line-height:1.7;margin:10px 2px 0;"><b>本頁自行計算的加總查核：</b>人數 249 ✓；女 164／男 85 ✓；實際手術 242 ✓；病灶 275 ✓；不良事件逐列加總 <b>148 例</b>，與原文內文「148 位病人有不良事件」完全相符 ✓（148/249 = <b>59.4%</b>，與合併值 59% 相符）；平均年齡 435.7/10 = <b>43.57 歲</b> ✓；平均腫瘤 166.9/10 = <b>16.69 mm</b> ✓。<b>但位置加總對不上：</b>表列頭鉤部 75、頸部 30，而內文寫 102（37.09%）與 3（1.09%）——若把 Machado 該列的「0／27」對調為「27／0」，加總恰為 102 與 3，<b>強烈提示該列頭鉤部與頸部的數字寫反了</b>。</p>
+</section>
+
+<section id="results">
+  <h2>Main results <span class="zh">主要結果（重繪）</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 358" width="100%" height="358" role="img">
+<rect x="0.0" y="0.0" width="860.0" height="358.0" fill="#ffffff" stroke="none" stroke-width="1" rx="0"/>
+<text x="0.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#6b7079" text-anchor="start" font-weight="700" font-style="normal">兩組主要結果（原文各自單臂合併值，非頭對頭比較）</text>
+<rect x="560.0" y="11.0" width="11.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="576.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400" font-style="normal">EUS-RFA（142 人）</text>
+<rect x="720.0" y="11.0" width="11.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="736.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400" font-style="normal">手術（249 人）</text>
+<line x1="0.0" y1="30.0" x2="860.0" y2="30.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="290.0" y1="50.0" x2="290.0" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="290.0" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">0%</text>
+<line x1="371.9" y1="50.0" x2="371.9" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="371.9" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">20%</text>
+<line x1="453.8" y1="50.0" x2="453.8" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="453.8" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">40%</text>
+<line x1="535.7" y1="50.0" x2="535.7" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="535.7" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">60%</text>
+<line x1="617.6" y1="50.0" x2="617.6" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="617.6" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">80%</text>
+<line x1="699.5" y1="50.0" x2="699.5" y2="314.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="699.5" y="44.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">100%</text>
+<text x="0.0" y="80.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="600" font-style="normal">併發症 Adverse events</text>
+<rect x="290.0" y="66.0" width="94.2" height="13.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<rect x="290.0" y="83.0" width="241.6" height="13.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="391.2" y="76.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">23%</text>
+<text x="538.6" y="93.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">59%</text>
+<text x="0.0" y="132.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="600" font-style="normal">臨床成功 Clinical success</text>
+<rect x="290.0" y="118.0" width="399.3" height="13.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<rect x="290.0" y="135.0" width="364.1" height="13.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="696.3" y="128.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">97.5%</text>
+<text x="661.1" y="145.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">88.9%</text>
+<text x="0.0" y="184.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="600" font-style="normal">追蹤期內復發 Recurrence</text>
+<rect x="290.0" y="170.0" width="45.0" height="13.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<rect x="290.0" y="187.0" width="19.7" height="13.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="342.0" y="180.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">11%</text>
+<text x="316.7" y="197.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">4.8%</text>
+<text x="0.0" y="236.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="600" font-style="normal">追蹤期內累積死亡 Cumulative mortality</text>
+<rect x="290.0" y="222.0" width="28.3" height="13.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<rect x="290.0" y="239.0" width="20.5" height="13.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="325.3" y="232.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">6.9%</text>
+<text x="317.5" y="249.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">5%</text>
+<text x="0.0" y="288.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="600" font-style="normal">操作／手術相關死亡</text>
+<rect x="290.0" y="274.0" width="1.5" height="13.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<rect x="290.0" y="291.0" width="1.5" height="13.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="298.5" y="284.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">0%</text>
+<text x="298.5" y="301.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">0%</text>
+<text x="505.0" y="340.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">比例（%）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文 Results 各段落的合併比例。<b>如何解讀：</b>這張圖<b>刻意畫成兩排並列的長條而不是森林圖</b>，因為原文根本沒有做頭對頭的效果值合併——兩組是各自跑一個單臂比例合併，再把兩個數字放在一起講。長條只能讀成「這兩群病人各自長什麼樣」，<b>不能讀成「RFA 讓併發症下降 36 個百分點」</b>。<b>陷阱：</b>「臨床成功 88.9%」這個手術組數字在原文的 Results 全文中<b>從未再出現過</b>，只出現在摘要；把原文表 2 的十篇臨床反應率取平均是 97.5%、以人數加權是 98.0%（皆為<b>本頁自行計算</b>），兩者都與 88.9% 差距近 9 個百分點。這個數字的來源不明，因此不應據以宣稱「RFA 的臨床成功率高於手術」。</div>
+  </div>
+  <div class="call amber">
+    <div class="h">兩組不是頭對頭比較——這是讀這篇時最重要的一件事</div>
+    原文的 Figure 3 至 Figure 8 是<b>兩組各自的單臂比例合併圖</b>（RFA 的不良事件率、死亡率、復發率；手術的不良事件率、死亡率、復發率），Figure 9 至 Figure 12 才做所謂的「比較」，但那也只是把兩個單臂合併比例相減（例如不良事件「相差 41%」、復發「相差 8%」、臨床反應「相差 8%」），<b>沒有任何配對、傾向分數配對或迴歸校正</b>。這種做法在方法學上稱為「間接、無錨定的比較（unanchored indirect comparison）」，其效度完全取決於兩群病人是否可比——而如下一節所示，這兩群病人差很多。
+  </div>
+</section>
+
+<section id="overview">
+  <h2>Results <span class="zh">全部結果總覽</span></h2>
+  <div class="tbl-wrap">
+    <table class="wide">
+      <thead><tr><th>結果指標</th><th>EUS-RFA（10 篇／142 人）</th><th>手術（10 篇／249 人）</th><th>原文所述差異</th><th>本頁的判定</th></tr></thead>
+      <tbody>
+        <tr><td><b>不良事件（合併比例）</b></td><td class="num"><b>23%</b></td><td class="num"><b>59%</b></td><td class="num">相差 41%，CI 原文寫為「(0.50–0.32)」，p &lt; 0.05</td><td><span class="win caution">RFA 明顯較少，但無法歸因於術式本身</span></td></tr>
+        <tr><td>不良事件（本頁以表列原始事件數粗算）</td><td class="num">26／142 = <b>18.3%</b>（本頁自行計算）</td><td class="num">148／249 = <b>59.4%</b>（本頁自行計算）</td><td class="num">—</td><td><span class="win neutral">手術組粗算與合併值相符；RFA 組合併值高於粗算 4.7 個百分點</span></td></tr>
+        <tr><td>臨床成功（症狀緩解）</td><td class="num">97.5%</td><td class="num">88.9%（僅見於摘要）</td><td class="num">相差 8%，p &lt; 0.05</td><td><span class="win caution">手術組數字與其表格不符，見左欄查核</span></td></tr>
+        <tr><td>技術成功（影像上無復發）</td><td class="num">90.84%</td><td class="num na">原文未列數值</td><td class="num">—</td><td><span class="win neutral">與 RFA 復發率 11% 不互補（100 − 11 = 89 ≠ 90.84）</span></td></tr>
+        <tr><td>復發率（合併比例）</td><td class="num"><b>11%</b>（平均追蹤 16.87 個月）</td><td class="num"><b>4.8%</b></td><td class="num">相差 8%（原文文字），p &lt; 0.05</td><td><span class="win">手術較低</span></td></tr>
+        <tr><td>復發（本頁以表列原始事件數粗算）</td><td class="num">13／142 = <b>9.2%</b>（本頁自行計算；Crinò 11 例＋Debraine 2 例）</td><td class="num">1 例（Bonato）；3 篇未列數值</td><td class="num">—</td><td><span class="win caution">兩組粗算與合併值皆對不上</span></td></tr>
+        <tr><td>操作／手術相關死亡</td><td class="num">0%</td><td class="num">0%</td><td class="num">—</td><td><span class="win neutral">兩組皆為零</span></td></tr>
+        <tr><td>追蹤期內累積死亡</td><td class="num">6.9%</td><td class="num">5%</td><td class="num">整體存活無顯著差異，p = 0.38</td><td><span class="win neutral">無差異</span></td></tr>
+        <tr><td>追蹤期累積死亡（本頁以表列粗算）</td><td class="num">1／142 = <b>0.7%</b>（本頁自行計算）</td><td class="num">4／249 = <b>1.6%</b>（本頁自行計算；Crinò 該格未列）</td><td class="num">—</td><td><span class="win caution">與合併值差距甚大</span></td></tr>
+        <tr><td><b>住院天數</b></td><td class="num">中位數 <b>2.4 ± 0.71 天</b>（95% CI 1.7–4）</td><td class="num">中位數 <b>11 ± 4.7 天</b>（95% CI 5–18）</td><td class="num">原文未做統計檢定</td><td><span class="win">RFA 明顯較短</span></td></tr>
+        <tr><td>平均年齡</td><td class="num">64.2 ± 11 歲（範圍 45–83）</td><td class="num">43.57 ± 8.8 歲（範圍 36–60）</td><td class="num">原文未比較</td><td><span class="win caution">相差 20.6 歲，重大干擾</span></td></tr>
+        <tr><td>平均腫瘤大小</td><td class="num">13.1 ± 1.8 mm</td><td class="num">16.69 ± 4.12 mm</td><td class="num">原文未比較</td><td><span class="win caution">RFA 組腫瘤較小，重大干擾</span></td></tr>
+        <tr><td>平均追蹤時間</td><td class="num">16.87 個月（9.7–24）</td><td class="num">原文寫 16.69 個月（13–25）<span class="na">，疑為誤植</span></td><td class="num">—</td><td><span class="win caution">本頁自行計算為 33.7 個月（9 篇有數值者）</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="raw">
+  <h2>Raw data <span class="zh">各研究原始數據重繪圖</span></h2>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 782" width="100%" height="782" role="img">
+<rect x="0.0" y="0.0" width="860.0" height="782.0" fill="#ffffff" stroke="none" stroke-width="1" rx="0"/>
+<text x="0.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#6b7079" text-anchor="start" font-weight="700" font-style="normal">各研究併發症比例（分子／分母為原文表列數字；95% CI 為本頁以 Wilson 法自行計算）</text>
+<line x1="0.0" y1="30.0" x2="860.0" y2="30.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="0.0" y="52.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">EUS-RFA 組（原文表 1）</text>
+<text x="0.0" y="71.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Lakhtakia 等（印度）</text>
+<text x="0.0" y="84.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／3</text>
+<line x1="290.0" y1="74.0" x2="514.6" y2="74.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="290.0" y1="70.0" x2="290.0" y2="78.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="514.6" y1="70.0" x2="514.6" y2="78.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="287.5" y="71.5" width="4.9" height="4.9" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="71.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="84.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–56.2%</text>
+<text x="0.0" y="101.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Oleinikov 等（以色列）</text>
+<text x="0.0" y="114.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／7</text>
+<line x1="290.0" y1="104.0" x2="431.7" y2="104.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="290.0" y1="100.0" x2="290.0" y2="108.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="431.7" y1="100.0" x2="431.7" y2="108.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="287.3" y="101.3" width="5.4" height="5.4" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="101.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="114.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–35.4%</text>
+<text x="0.0" y="131.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Furnica 等（比利時）</text>
+<text x="0.0" y="144.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">2／4</text>
+<line x1="350.0" y1="134.0" x2="630.0" y2="134.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="350.0" y1="130.0" x2="350.0" y2="138.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="630.0" y1="130.0" x2="630.0" y2="138.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="487.5" y="131.5" width="5.1" height="5.1" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="131.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">50.0%</text>
+<text x="860.0" y="144.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 15.0–85.0%</text>
+<text x="0.0" y="161.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">de Nucci 等（義大利）</text>
+<text x="0.0" y="174.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／5</text>
+<line x1="290.0" y1="164.0" x2="463.8" y2="164.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="290.0" y1="160.0" x2="290.0" y2="168.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="463.8" y1="160.0" x2="463.8" y2="168.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="287.4" y="161.4" width="5.2" height="5.2" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="161.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="174.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–43.4%</text>
+<text x="0.0" y="191.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Marx 等（法／瑞）</text>
+<text x="0.0" y="204.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">4／7</text>
+<line x1="390.2" y1="194.0" x2="626.7" y2="194.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="390.2" y1="190.0" x2="390.2" y2="198.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="626.7" y1="190.0" x2="626.7" y2="198.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="515.9" y="191.3" width="5.4" height="5.4" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="191.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">57.1%</text>
+<text x="860.0" y="204.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 25.0–84.2%</text>
+<text x="0.0" y="221.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Rossi 等（義大利）</text>
+<text x="0.0" y="234.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／3</text>
+<line x1="290.0" y1="224.0" x2="514.6" y2="224.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="290.0" y1="220.0" x2="290.0" y2="228.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="514.6" y1="220.0" x2="514.6" y2="228.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="287.5" y="221.5" width="4.9" height="4.9" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="221.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="234.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–56.2%</text>
+<text x="0.0" y="251.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Crinò 等（義大利）</text>
+<text x="0.0" y="264.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">16／89</text>
+<line x1="335.5" y1="254.0" x2="398.9" y2="254.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="335.5" y1="250.0" x2="335.5" y2="258.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="398.9" y1="250.0" x2="398.9" y2="258.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="357.4" y="249.5" width="9.0" height="9.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="251.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">18.0%</text>
+<text x="860.0" y="264.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 11.4–27.2%</text>
+<text x="0.0" y="281.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Borrelli de Andreis 等（義大利）</text>
+<text x="0.0" y="294.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">3／10</text>
+<line x1="333.1" y1="284.0" x2="531.3" y2="284.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="333.1" y1="280.0" x2="333.1" y2="288.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="531.3" y1="280.0" x2="531.3" y2="288.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="407.2" y="281.2" width="5.7" height="5.7" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="281.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">30.0%</text>
+<text x="860.0" y="294.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 10.8–60.3%</text>
+<text x="0.0" y="311.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Debraine 等（比利時）</text>
+<text x="0.0" y="324.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／11</text>
+<line x1="290.0" y1="314.0" x2="393.5" y2="314.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="290.0" y1="310.0" x2="290.0" y2="318.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="393.5" y1="310.0" x2="393.5" y2="318.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="287.1" y="311.1" width="5.8" height="5.8" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="311.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="324.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–25.9%</text>
+<text x="0.0" y="341.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Biermann 等（美國）</text>
+<text x="0.0" y="354.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">1／3</text>
+<line x1="314.6" y1="344.0" x2="606.9" y2="344.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="314.6" y1="340.0" x2="314.6" y2="348.0" stroke="#2f6b62" stroke-width="1.4"/>
+<line x1="606.9" y1="340.0" x2="606.9" y2="348.0" stroke="#2f6b62" stroke-width="1.4"/>
+<rect x="420.9" y="341.5" width="4.9" height="4.9" fill="#2f6b62" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="341.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">33.3%</text>
+<text x="860.0" y="354.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 6.1–79.2%</text>
+<line x1="382.0" y1="56.0" x2="382.0" y2="364.0" stroke="#2f6b62" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="382.0" y="377.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700" font-style="normal">原文合併值 23%</text>
+<text x="0.0" y="398.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">手術組（原文表 2）</text>
+<text x="0.0" y="417.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Machado 等（巴西）</text>
+<text x="0.0" y="430.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">31／59</text>
+<line x1="450.2" y1="420.0" x2="548.9" y2="420.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="450.2" y1="416.0" x2="450.2" y2="424.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="548.9" y1="416.0" x2="548.9" y2="424.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="496.1" y="416.0" width="8.1" height="8.1" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="417.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">52.5%</text>
+<text x="860.0" y="430.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 40.0–64.7%</text>
+<text x="0.0" y="447.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Apodaca-Torres 等（巴西）</text>
+<text x="0.0" y="460.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">16／20</text>
+<line x1="523.6" y1="450.0" x2="657.7" y2="450.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="523.6" y1="446.0" x2="523.6" y2="454.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="657.7" y1="446.0" x2="657.7" y2="454.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="606.8" y="446.8" width="6.4" height="6.4" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="447.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">80.0%</text>
+<text x="860.0" y="460.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 58.4–91.9%</text>
+<text x="0.0" y="477.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Valente 等（巴西）</text>
+<text x="0.0" y="490.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">1／5</text>
+<line x1="304.5" y1="480.0" x2="539.8" y2="480.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="304.5" y1="476.0" x2="304.5" y2="484.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="539.8" y1="476.0" x2="539.8" y2="484.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="367.4" y="477.4" width="5.2" height="5.2" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="477.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">20.0%</text>
+<text x="860.0" y="490.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 3.6–62.4%</text>
+<text x="0.0" y="507.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Giraldo 等（哥倫比亞）</text>
+<text x="0.0" y="520.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／3</text>
+<line x1="290.0" y1="510.0" x2="514.6" y2="510.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="290.0" y1="506.0" x2="290.0" y2="514.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="514.6" y1="506.0" x2="514.6" y2="514.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="287.5" y="507.5" width="4.9" height="4.9" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="507.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="520.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–56.2%</text>
+<text x="0.0" y="537.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">España-Gomez 等（墨西哥）</text>
+<text x="0.0" y="550.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">26／34</text>
+<line x1="530.0" y1="540.0" x2="640.3" y2="540.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="530.0" y1="536.0" x2="530.0" y2="544.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="640.3" y1="536.0" x2="640.3" y2="544.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="592.3" y="536.5" width="7.1" height="7.1" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="537.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">76.5%</text>
+<text x="860.0" y="550.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 60.0–87.6%</text>
+<text x="0.0" y="567.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Bonato 等（巴西）</text>
+<text x="0.0" y="580.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">15／16</text>
+<line x1="576.7" y1="570.0" x2="685.6" y2="570.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="576.7" y1="566.0" x2="576.7" y2="574.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="685.6" y1="566.0" x2="685.6" y2="574.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="661.9" y="566.9" width="6.1" height="6.1" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="567.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">93.8%</text>
+<text x="860.0" y="580.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 71.7–98.9%</text>
+<text x="0.0" y="597.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Caldas 等（葡萄牙）</text>
+<text x="0.0" y="610.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">4／14</text>
+<line x1="336.9" y1="600.0" x2="508.6" y2="600.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="336.9" y1="596.0" x2="336.9" y2="604.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="508.6" y1="596.0" x2="508.6" y2="604.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="401.3" y="597.0" width="6.0" height="6.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="597.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">28.6%</text>
+<text x="860.0" y="610.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 11.7–54.6%</text>
+<text x="0.0" y="627.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Chapa-Azuela 等（墨西哥）</text>
+<text x="0.0" y="640.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／7</text>
+<line x1="290.0" y1="630.0" x2="431.7" y2="630.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="290.0" y1="626.0" x2="290.0" y2="634.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="431.7" y1="626.0" x2="431.7" y2="634.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="287.3" y="627.3" width="5.4" height="5.4" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="627.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="640.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–35.4%</text>
+<text x="0.0" y="657.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Torres 等（墨西哥）</text>
+<text x="0.0" y="670.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">0／2</text>
+<line x1="290.0" y1="660.0" x2="553.1" y2="660.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="290.0" y1="656.0" x2="290.0" y2="664.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="553.1" y1="656.0" x2="553.1" y2="664.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="287.6" y="657.6" width="4.7" height="4.7" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="657.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">0.0%</text>
+<text x="860.0" y="670.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 0.0–65.8%</text>
+<text x="0.0" y="687.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Crinò 等（義大利）</text>
+<text x="0.0" y="700.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="normal">55／89</text>
+<line x1="495.7" y1="690.0" x2="574.8" y2="690.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="495.7" y1="686.0" x2="495.7" y2="694.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<line x1="574.8" y1="686.0" x2="574.8" y2="694.0" stroke="#8a4a3d" stroke-width="1.4"/>
+<rect x="532.7" y="685.5" width="9.0" height="9.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="0"/>
+<text x="860.0" y="687.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12" fill="#1b1c1e" text-anchor="end" font-weight="600" font-style="normal">61.8%</text>
+<text x="860.0" y="700.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400" font-style="normal">95% CI 51.4–71.2%</text>
+<line x1="526.0" y1="402.0" x2="526.0" y2="710.0" stroke="#8a4a3d" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="526.0" y="723.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700" font-style="normal">原文合併值 59%</text>
+<line x1="290.0" y1="738.0" x2="690.0" y2="738.0" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="290.0" y1="738.0" x2="290.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="290.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">0%</text>
+<line x1="370.0" y1="738.0" x2="370.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="370.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">20%</text>
+<line x1="450.0" y1="738.0" x2="450.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="450.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">40%</text>
+<line x1="530.0" y1="738.0" x2="530.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="530.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">60%</text>
+<line x1="610.0" y1="738.0" x2="610.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="610.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">80%</text>
+<line x1="690.0" y1="738.0" x2="690.0" y2="743.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="690.0" y="756.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">100%</text>
+<text x="490.0" y="772.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">併發症比例（%）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>分子與分母均為原文表 1、表 2 逐列的原始事件數與人數；<b>95% 信賴區間為本頁以 Wilson 分數區間法自行計算</b>（適用於小樣本與零事件，不需連續性校正）。虛線為原文各自報告的合併比例。<b>本頁不繪製自算的合併菱形</b>，以免與原文的隨機效應合併值混淆。<b>如何解讀：</b>看的是「每一條橫線有多長」。RFA 組有 6 篇的樣本數在 3 到 7 人之間，它們的 95% CI 幾乎橫跨整個圖面（例如 Furnica 2/4 = 50%，CI 15.0–85.0%）——這些研究其實提供不了任何資訊。RFA 的合併值 23% 落在多數研究的點估計右側，正是因為隨機效應模型在合併<b>比例</b>時會把小型研究的權重抬得很高。<b>陷阱：</b>Crinò 等以 89 人主導 RFA 組（占 62.7%，<b>本頁自行計算</b>），而該篇的併發症率只有 18.0%；把它與一堆 3–7 人的系列合併，得到的「23%」既不是大研究的答案、也不是小研究的答案。手術組則相反：Bonato 15/16 = 93.8%、Apodaca 16/20 = 80.0%，這些是 1990–2000 年代中南美洲的開腹系列，其併發症定義（凡有胰漏皆計，而胰漏本身有 A/B/C 三級）與今天的 ISGPS 標準並不相同。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" width="100%" height="330" role="img">
+<rect x="0.0" y="0.0" width="860.0" height="330.0" fill="#ffffff" stroke="none" stroke-width="1" rx="0"/>
+<text x="0.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#6b7079" text-anchor="start" font-weight="700" font-style="normal">兩組的基線並不可比：各研究平均年齡與平均腫瘤大小</text>
+<line x1="0.0" y1="30.0" x2="860.0" y2="30.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="40.0" y="54.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="700" font-style="normal">平均年齡（歲）</text>
+<line x1="40.0" y1="220.0" x2="370.0" y2="220.0" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="40.0" y1="220.0" x2="40.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="40.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">30</text>
+<line x1="106.0" y1="220.0" x2="106.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="106.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">42</text>
+<line x1="172.0" y1="220.0" x2="172.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="172.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">54</text>
+<line x1="238.0" y1="220.0" x2="238.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="238.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">66</text>
+<line x1="304.0" y1="220.0" x2="304.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="304.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">78</text>
+<line x1="370.0" y1="220.0" x2="370.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="370.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">90</text>
+<text x="205.0" y="255.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">單位：歲</text>
+<text x="40.0" y="82.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">EUS-RFA</text>
+<line x1="40.0" y1="110.0" x2="370.0" y2="110.0" stroke="#f0eeea" stroke-width="1"/>
+<circle cx="122.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="161.0" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="216.0" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="315.0" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="238.0" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="331.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="177.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="243.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="232.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="243.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<line x1="228.1" y1="94.0" x2="228.1" y2="126.0" stroke="#2f6b62" stroke-width="2"/>
+<text x="228.1" y="89.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700" font-style="normal">平均 64.2</text>
+<text x="40.0" y="147.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">手術</text>
+<line x1="40.0" y1="175.0" x2="370.0" y2="175.0" stroke="#f0eeea" stroke-width="1"/>
+<circle cx="74.6" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="82.9" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="79.6" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="166.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="95.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="89.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="210.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="95.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="81.2" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="172.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<line x1="114.6" y1="159.0" x2="114.6" y2="191.0" stroke="#8a4a3d" stroke-width="2"/>
+<text x="114.6" y="154.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700" font-style="normal">平均 43.57</text>
+<text x="470.0" y="54.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="12.5" fill="#1b1c1e" text-anchor="start" font-weight="700" font-style="normal">平均腫瘤大小（公釐 mm）</text>
+<line x1="470.0" y1="220.0" x2="800.0" y2="220.0" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="470.0" y1="220.0" x2="470.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="470.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">8</text>
+<line x1="536.0" y1="220.0" x2="536.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="536.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">12</text>
+<line x1="602.0" y1="220.0" x2="602.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="602.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">16</text>
+<line x1="668.0" y1="220.0" x2="668.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="668.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">20</text>
+<line x1="734.0" y1="220.0" x2="734.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="734.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">24</text>
+<line x1="800.0" y1="220.0" x2="800.0" y2="225.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="800.0" y="239.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">28</text>
+<text x="635.0" y="255.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">單位：mm</text>
+<text x="470.0" y="82.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">EUS-RFA</text>
+<line x1="470.0" y1="110.0" x2="800.0" y2="110.0" stroke="#f0eeea" stroke-width="1"/>
+<circle cx="628.4" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="586.2" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="549.2" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="549.2" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="557.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="529.4" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="552.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="519.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="529.4" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<circle cx="552.5" cy="110.0" r="5" fill="#2f6b62" fill-opacity="0.45" stroke="#2f6b62" stroke-width="1"/>
+<line x1="554.1" y1="94.0" x2="554.1" y2="126.0" stroke="#2f6b62" stroke-width="2"/>
+<text x="554.1" y="89.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="middle" font-weight="700" font-style="normal">平均 13.1</text>
+<text x="470.0" y="147.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">手術</text>
+<line x1="470.0" y1="175.0" x2="800.0" y2="175.0" stroke="#f0eeea" stroke-width="1"/>
+<circle cx="585.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="750.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="585.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="552.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="701.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="585.5" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="572.3" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="668.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="569.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<circle cx="564.0" cy="175.0" r="5" fill="#8a4a3d" fill-opacity="0.45" stroke="#8a4a3d" stroke-width="1"/>
+<line x1="613.4" y1="159.0" x2="613.4" y2="191.0" stroke="#8a4a3d" stroke-width="2"/>
+<text x="613.4" y="154.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="middle" font-weight="700" font-style="normal">平均 16.69</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文表 1、表 2 各研究的平均年齡與平均腫瘤大小；豎線為原文報告的組平均（本頁核算後確認其為「各研究平均數的未加權平均」）。<b>如何解讀：</b>左圖兩排圓點的重心明顯錯開——手術系列有 <b>7 篇</b>的平均年齡落在 36 到 40 歲之間，而 RFA 系列<b>沒有任何一篇低於 45 歲</b>（皆為<b>本頁自行清點</b>）。這不是統計上的細微差別，而是兩群相當不同的人。右圖顯示 RFA 組腫瘤平均小 3.6 mm，且手術組有兩篇的平均腫瘤達 22–25 mm。<b>陷阱：</b>這張圖解釋了本篇幾乎所有「有利於 RFA」的結果——年輕病人接受根治性切除、腫瘤較大者需要正式胰臟切除（因此胰漏率高、住院久）；年長多病者被轉去做 RFA、腫瘤較小者才適合燒灼（因此併發症少、住院短，但因為沒有病理確認邊緣，復發較多）。<b>把這叫做「RFA 比較安全」是把適應症當成療效。</b>順帶一提：年齡的方向其實對 RFA 組不利（愈老風險愈高），卻仍看到較少併發症，這一點確實支持「經內視鏡途徑本身侵襲性較低」；但腫瘤大小、年代與手術範圍的干擾方向都對 RFA 有利，無法分離。</div>
+  </div>
+  <div class="fig">
+    <div class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 618" width="100%" height="618" role="img">
+<rect x="0.0" y="0.0" width="860.0" height="618.0" fill="#ffffff" stroke="none" stroke-width="1" rx="0"/>
+<text x="0.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#6b7079" text-anchor="start" font-weight="700" font-style="normal">各研究住院天數（原文表 1、表 2 逐列數值）</text>
+<rect x="560.0" y="11.0" width="11.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="576.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400" font-style="normal">EUS-RFA</text>
+<rect x="660.0" y="11.0" width="11.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="676.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400" font-style="normal">手術</text>
+<line x1="0.0" y1="30.0" x2="860.0" y2="30.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="310.0" y1="46.0" x2="310.0" y2="572.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="310.0" y="40.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">0</text>
+<line x1="415.0" y1="46.0" x2="415.0" y2="572.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="415.0" y="40.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">5</text>
+<line x1="520.0" y1="46.0" x2="520.0" y2="572.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="520.0" y="40.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">10</text>
+<line x1="625.0" y1="46.0" x2="625.0" y2="572.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="625.0" y="40.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">15</text>
+<line x1="730.0" y1="46.0" x2="730.0" y2="572.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="730.0" y="40.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">20</text>
+<text x="0.0" y="73.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Lakhtakia 等（印度）</text>
+<rect x="310.0" y="64.0" width="42.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="73.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="99.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Oleinikov 等（以色列）</text>
+<rect x="310.0" y="90.0" width="63.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="380.0" y="99.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">3 天</text>
+<text x="0.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Furnica 等（比利時）</text>
+<rect x="310.0" y="116.0" width="42.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="125.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="151.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">de Nucci 等（義大利）</text>
+<text x="310.0" y="151.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="italic">原文未列數值</text>
+<text x="0.0" y="177.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Marx 等（法／瑞）</text>
+<rect x="310.0" y="168.0" width="35.7" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="352.7" y="177.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">1.7 天</text>
+<text x="0.0" y="203.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Rossi 等（義大利）</text>
+<text x="310.0" y="203.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="italic">原文未列數值</text>
+<text x="0.0" y="229.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Crinò 等（義大利）</text>
+<rect x="310.0" y="220.0" width="63.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="380.0" y="229.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">3 天</text>
+<text x="0.0" y="255.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Borrelli de Andreis 等（義大利）</text>
+<rect x="310.0" y="246.0" width="42.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="255.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="281.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Debraine 等（比利時）</text>
+<rect x="310.0" y="272.0" width="42.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="281.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="307.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Biermann 等（美國）</text>
+<rect x="310.0" y="298.0" width="42.0" height="11.0" fill="#2f6b62" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="307.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#2f6b62" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="333.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Machado 等（巴西）</text>
+<rect x="310.0" y="324.0" width="42.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="359.0" y="333.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">2 天</text>
+<text x="0.0" y="359.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Apodaca-Torres 等（巴西）</text>
+<rect x="310.0" y="350.0" width="336.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="653.0" y="359.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">16 天</text>
+<text x="0.0" y="385.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Valente 等（巴西）</text>
+<rect x="310.0" y="376.0" width="126.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="443.0" y="385.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">6 天</text>
+<text x="0.0" y="411.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Giraldo 等（哥倫比亞）</text>
+<rect x="310.0" y="402.0" width="105.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="422.0" y="411.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">5 天</text>
+<text x="0.0" y="437.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">España-Gomez 等（墨西哥）</text>
+<rect x="310.0" y="428.0" width="210.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="527.0" y="437.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">10 天</text>
+<text x="0.0" y="463.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Bonato 等（巴西）</text>
+<rect x="310.0" y="454.0" width="378.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="695.0" y="463.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">18 天</text>
+<text x="0.0" y="489.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Caldas 等（葡萄牙）</text>
+<rect x="310.0" y="480.0" width="21.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="338.0" y="489.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">1 天</text>
+<text x="0.0" y="515.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Chapa-Azuela 等（墨西哥）</text>
+<text x="310.0" y="515.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="italic">原文未列數值</text>
+<text x="0.0" y="541.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Torres 等（墨西哥）</text>
+<text x="310.0" y="541.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400" font-style="italic">原文未列數值</text>
+<text x="0.0" y="567.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="11" fill="#1b1c1e" text-anchor="start" font-weight="500" font-style="normal">Crinò 等（義大利）</text>
+<rect x="310.0" y="558.0" width="231.0" height="11.0" fill="#8a4a3d" stroke="none" stroke-width="1" rx="2"/>
+<text x="548.0" y="567.5" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#8a4a3d" text-anchor="start" font-weight="700" font-style="normal">11 天</text>
+<text x="520.0" y="600.0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400" font-style="normal">住院天數（天）</text>
+</svg></div>
+    <div class="cap"><b>資料來源：</b>原文表 1、表 2 的住院天數欄位逐列轉錄（原文未列者留白註記）。<b>如何解讀：</b>RFA 組全部落在 1.7 到 3 天之間、非常一致；手術組則從 1 天（Caldas，葡萄牙）一路拉到 18 天（Bonato，巴西），跨度極大。<b>陷阱：</b>住院天數是所有結果指標裡<b>最受「哪個國家、哪個年代、哪家醫院」影響</b>的一項。Caldas 的 1 天與 Bonato 的 18 天差 18 倍，這絕不是術式差異能解釋的。RFA 那條漂亮的 2.4 天，有相當部分只是反映「內視鏡處置在現代醫院本來就走短期住院或日間手術流程」。要用這個數字說服病人選 RFA，等於把醫療體系差異賣成療效差異。</div>
+  </div>
+</section>
+
+<section id="audit">
+  <h2>Audit <span class="zh">本頁對原文數字的逐格查核</span></h2>
+  <div class="tbl-wrap">
+    <table class="wide">
+      <thead><tr><th>#</th><th>原文所述</th><th>本頁依表列數字自行計算</th><th>判讀</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>RFA 組不良事件「25 位病人」（胰臟炎 11、腹痛 9、出血 2、脾臟血腫 1、腸穿孔 1、胃後方積液 1 ＝ 25）</td><td class="num">表 1 不良事件欄逐列加總 = <b>26</b></td><td><span class="win caution">相差 1 例，來源不明</span></td></tr>
+        <tr><td class="num">2</td><td>手術組「平均追蹤時間 16.69 個月（範圍 13 至 25 個月）」</td><td class="num">表 2 有數值的 9 篇加總 303 ÷ 9 = <b>33.7 個月</b>（範圍 5–60）</td><td><span class="win caution">原文此句與同段「平均腫瘤 16.69 mm（13–25 mm）」完全相同，<b>幾可確定是複製貼上誤植</b></span></td></tr>
+        <tr><td class="num">3</td><td>手術組腫瘤位置：頭鉤部 102 個（37.09%）、頸部 3 個（1.09%）、體部 84、尾部 86</td><td class="num">表 2 逐列加總：頭鉤部 <b>75</b>、頸部 <b>30</b>、體部 84 ✓、尾部 86 ✓</td><td><span class="win caution">若 Machado 該列的「0／27」對調為「27／0」，則加總恰為 102 與 3 → <b>表格欄位錯位</b></span></td></tr>
+        <tr><td class="num">4</td><td>摘要：手術組臨床成功率 <b>88.9%</b></td><td class="num">表 2 十篇臨床反應率簡單平均 = <b>97.48%</b>；以人數加權 = <b>97.95%</b></td><td><span class="win caution">88.9% 在正文從未出現，來源不明</span></td></tr>
+        <tr><td class="num">5</td><td>RFA 組不良事件合併值 <b>23%</b></td><td class="num">粗算 26／142 = <b>18.3%</b></td><td><span class="win neutral">可由「隨機效應合併比例抬高小研究權重」解釋，非錯誤</span></td></tr>
+        <tr><td class="num">6</td><td>RFA 追蹤期累積死亡 <b>6.9%</b>；手術 <b>5%</b></td><td class="num">RFA 粗算 1／142 = <b>0.7%</b>；手術粗算 4／249 = <b>1.6%</b>（Crinò 該格未列）</td><td><span class="win caution">差距過大，難以只用合併方法解釋</span></td></tr>
+        <tr><td class="num">7</td><td>RFA 復發 <b>11%</b>；手術 <b>4.8%</b></td><td class="num">RFA 粗算 13／142 = <b>9.2%</b>；手術表列僅 1 例、3 篇未列</td><td><span class="win caution">手術組的 4.8% 幾乎不可能由表列數字得出</span></td></tr>
+        <tr><td class="num">8</td><td>RFA 技術成功 <b>90.84%</b>，定義為「追蹤影像上未見復發」</td><td class="num">依此定義應等於 100% − 復發率 11% = <b>89%</b></td><td><span class="win caution">定義與數值不自洽</span></td></tr>
+        <tr><td class="num">9</td><td>「20 篇研究」</td><td class="num">Crinò 等（義大利，89 人）同時列於兩表 → 不同文獻數可能為 <b>19</b> 篇</td><td><span class="win caution">同一世代可能被計入兩組</span></td></tr>
+        <tr><td class="num">10</td><td>Methods 寫檢索「Science Direct」，摘要與 Results 只提 PubMed、Cochrane、Embase、Scopus</td><td class="num">—</td><td><span class="win neutral">資料庫清單前後不一致（不影響結果解讀）</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="call amber">
+    <div class="h">這一節的用意</div>
+    列出這些不一致<b>不是為了否定這篇論文的臨床訊息</b>——它的核心訊息（RFA 侵襲性低、復發較高、手術仍是可切除病灶的首選）與國際共識一致。列出來的用意是：<b>當你要把某個數字寫進病歷、寫進知情同意書、或引用到院內討論時，請用本頁「本頁自行計算」欄的粗算值，而不是摘要那幾個漂亮的百分比。</b>凡本頁無法從原文表格重建的數字，都應視為「來源不明」。
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Clinical implications <span class="zh">臨床意涵</span></h2>
+  <h3>誰適合？</h3>
+  <ul class="clean">
+    <li><b>手術（首選）：可切除、位置適合的散發性胰島素瘤，病人手術風險可接受。</b>優先考慮<b>腫瘤摘除術（enucleation）</b>——只要腫瘤小、界線清楚、且與主胰管有足夠距離（一般建議 ≥ 2–3 mm）。原文納入的手術系列中，摘除術是最常見的術式（Machado 22 例、Apodaca 10 例、España-Gomez 9 例、Bonato 7 例）。手術的優勢在原文中很明確：<b>復發率低（4.8% vs 11%）</b>、有完整病理分期、能同時處理淋巴結與多發病灶。</li>
+    <li><b>EUS-RFA：手術高風險或拒絕手術者。</b>典型情境是高齡、多重共病、ASA 分級高、或腫瘤位於胰頭深部而唯一的手術選項是胰十二指腸切除術（Whipple）——用一台 Whipple 去換一顆 1.3 公分的良性腫瘤，代價與收益顯然不成比例。RFA 組的病人平均 64.2 歲，正好反映這個臨床現實。</li>
+    <li><b>需要格外小心：MEN1 相關的胰島素瘤（約占 10%）、多發病灶、或影像懷疑惡性者。</b>RFA 沒有病理標本、無法評估分化程度與切緣，也無法處理淋巴結，這些族群仍應以手術為主。</li>
+    <li><b>不適用：本篇完全沒有轉移性胰島素瘤的資料。</b>約 10% 的胰島素瘤會轉移，這群病人的治療決策不在本篇範圍內。</li>
+  </ul>
+  <h3>換來什麼？代價是什麼？</h3>
+  <div class="tbl-wrap">
+    <table class="wide">
+      <thead><tr><th>面向</th><th>選 EUS-RFA</th><th>選手術</th></tr></thead>
+      <tbody>
+        <tr><td>症狀緩解</td><td>合併臨床成功 97.5%</td><td>表列各篇 85.7–100%（<b>本頁自行計算</b>簡單平均 97.5%）；摘要所寫的 88.9% 來源不明</td></tr>
+        <tr><td>併發症</td><td>合併 23%（粗算 18.3%）：以胰臟炎（11 例）與腹痛（9 例）為主，另有出血 2、脾臟血腫 1、腸穿孔 1、胃後方積液 1</td><td>合併 59%（粗算 59.4%）：<b>以胰漏（pancreatic fistula）63 例、占 42% 為最大宗</b>，另有傷口感染 9、腹腔內積液 9、膽道損傷／狹窄 2、膽漏 1</td></tr>
+        <tr><td>住院</td><td>約 2.4 天（各篇 1.7–3 天，非常一致）</td><td>約 11 天（各篇 1–18 天，落差極大，且多為較舊的中南美洲系列）</td></tr>
+        <tr><td>復發</td><td><b>11%</b>（平均追蹤僅 16.9 個月）</td><td><b>4.8%</b></td></tr>
+        <tr><td>病理資訊</td><td><span class="na">無標本、無法分期、無法評估切緣</span></td><td>完整病理，可確認分級與是否惡性</td></tr>
+        <tr><td>後續追蹤負擔</td><td>需長期影像追蹤；復發時可再次燒灼或轉手術</td><td>成功切除後追蹤強度較低</td></tr>
+        <tr><td>操作相關死亡</td><td>0%（142 人）</td><td>0%（249 人）</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="call teal">
+    <div class="h">知情同意可以這樣談</div>
+    「您的胰臟有一顆約 X 公分、會分泌胰島素的腫瘤，它就是造成您反覆低血糖的原因。標準治療是<b>開刀把它拿掉</b>——如果位置好、離主胰管夠遠，可以只做腫瘤摘除，不必切掉整段胰臟。開刀的最大好處是<b>復發機率低（文獻上約 5%）</b>，而且拿出來的組織可以送病理，確認它是良性還是少數的惡性。代價是有一定比例會發生<b>胰液滲漏</b>，文獻上的手術系列裡不良事件率可以到六成、其中四成是胰漏，住院天數也比較長。<br><br>另一個選項是<b>從胃鏡用超音波定位、把探針扎進腫瘤裡用射頻燒掉</b>。它的好處是住院大約兩三天、併發症比較少（主要是胰臟炎和腹痛）；代價是<b>沒有組織可以送病理，而且復發機率比較高，文獻上大約一成</b>，需要長期做影像追蹤，萬一復發還是可能要回頭開刀。<br><br>要提醒您的是：目前的文獻<b>沒有任何一個隨機試驗把這兩種方法直接比過</b>，現有的比較是把兩群不同的病人放在一起看——接受燒灼的病人平均年紀比開刀的病人大二十歲，所以那些數字不能直接當成『燒灼比較安全』。以您目前的年齡與身體狀況，我的建議是 ____，理由是 ____。」
+  </div>
+</section>
+
+<section id="limits">
+  <h2>Limitations <span class="zh">研究限制與解讀警訊</span></h2>
+  <ol class="num">
+    <li><b>沒有任何隨機分派，也沒有頭對頭比較。</b>納入的全是病例系列與世代研究；所謂「比較」只是把兩個獨立的單臂合併比例相減，沒有配對、沒有傾向分數校正、沒有迴歸調整。方法學上這是效度最低的一種比較。</li>
+    <li><b>兩組病人根本不可比。</b>平均年齡差 20.6 歲、腫瘤大小差 3.6 mm（皆為<b>本頁自行計算</b>）；手術系列有 <b>8／10 篇</b>來自巴西、墨西哥、哥倫比亞（<b>本頁自行清點</b>），RFA 系列則全數來自歐洲、印度、以色列與美國的內視鏡中心。適應症偏差（indication bias）與醫療體系／年代差異同時存在，且方向都對 RFA 有利。</li>
+    <li><b>追蹤時間太短，而復發正是 RFA 的罩門。</b>RFA 組平均追蹤僅 16.87 個月。胰島素瘤是生長緩慢的腫瘤，16 個月的復發率只能算「早期失敗率」；原文討論段自己引用的數字是 RFA 局部復發 15–17%、手術 1–3%，比表列的 11% vs 4.8% 更悲觀。</li>
+    <li><b>「復發」與「技術成功」的定義互相打架。</b>技術成功被定義為「追蹤影像上未見復發」（90.84%），但復發率報 11%，兩者不互補；究竟哪一個才是真正的影像失敗率無從得知。</li>
+    <li><b>不良事件的定義未標準化。</b>手術組的胰漏（63 例，占不良事件 42%）沒有依 ISGPS 分成生化漏（biochemical leak）、B 級、C 級；生化漏在現代定義下<b>根本不算併發症</b>。如果把生化漏剔除，手術組 59% 的併發症率會大幅下降。這一點單獨就足以動搖本篇最醒目的那個對比。</li>
+    <li><b>手術組有 63 例（42.5%）的不良事件「未指明種類」。</b>近半數併發症連是什麼都不知道，這使得嚴重度比較無法進行。</li>
+    <li><b>Crinò 等的世代可能被雙重計入。</b>該篇以 89 人同時出現在兩表，若確為同一世代，則此篇同時主導兩組結果（占 RFA 組 62.7%、手術組 35.7%，<b>本頁自行計算</b>），而合併時卻被當成兩篇獨立研究。</li>
+    <li><b>檢索截止於 2024 年 6 月，卻在 2026 年 7 月才發表。</b>兩年多的空窗期在一個技術快速演進的領域相當致命。</li>
+    <li><b>PRISMA 流程無法用文字稽核。</b>兩張流程圖的階段數字完全未在正文轉述，納入／排除條件的條列在 PMC 版本中缺漏。</li>
+    <li><b>原文至少有四處數字前後矛盾</b>（詳見「本頁對原文數字的逐格查核」一節）。這不必然代表結論錯誤，但確實降低了對其數據處理嚴謹度的信心，也提醒讀者不要直接引用摘要的數字。</li>
+    <li><b>ROBINS-I 的評估結果未被報告。</b>Methods 寫明由一位作者（AOA，此縮寫未出現在作者名單中）以 ROBINS-I 評估偏差風險，但 Results 完全沒有呈現任何一篇研究的評分結果，也沒有做 GRADE 證據等級評定。</li>
+  </ol>
+  <div class="call amber">
+    <div class="h">一句話的解讀警訊</div>
+    <b>本篇提供的是「兩種治療各自的粗略成績單」，不是「兩種治療的比較結果」。</b>它可以用來回答「做 RFA 大概會發生什麼」，不能用來回答「這個病人該做 RFA 還是開刀」。後者目前仍要靠腫瘤位置與主胰管距離、病人年齡與共病、以及病人自己對「復發風險 vs 手術風險」的偏好來決定。
+  </div>
+</section>
+
+<section id="gloss">
+  <h2>Glossary <span class="zh">醫學名詞中英對照</span></h2>
+  <div class="gloss">
+    <dl>
+      <div class="gl-row"><dt>胰島素瘤 <span class="en">insulinoma</span></dt><dd>源自胰島 β 細胞、會自主分泌胰島素的功能性神經內分泌腫瘤，發生率約每百萬人每年 1–4 例；多數為良性、單發、直徑小於 2 公分。</dd></div>
+      <div class="gl-row"><dt>胰臟神經內分泌腫瘤 <span class="en">pancreatic neuroendocrine tumor, pNET</span></dt><dd>源自胰臟內分泌細胞的腫瘤總稱，胰島素瘤是其中最常見的功能性型別。</dd></div>
+      <div class="gl-row"><dt>惠普三徵 <span class="en">Whipple&#39;s triad</span></dt><dd>低血糖症狀、發作當下血糖偏低、給糖後症狀緩解——診斷胰島素瘤的臨床三要件。（與胰十二指腸切除術的 Whipple 手術同名但無關。）</dd></div>
+      <div class="gl-row"><dt>神經低血糖症狀 <span class="en">neuroglycopenic symptoms</span></dt><dd>腦部葡萄糖不足造成的症狀：意識混亂、行為改變、視力模糊、癲癇、昏迷。</dd></div>
+      <div class="gl-row"><dt>內視鏡超音波導引射頻燒灼 <span class="en">endoscopic ultrasound-guided radiofrequency ablation, EUS-RFA</span></dt><dd>經胃或十二指腸以內視鏡超音波定位腫瘤後，將射頻針穿刺入腫瘤，以可控熱能破壞腫瘤組織。</dd></div>
+      <div class="gl-row"><dt>腫瘤摘除術 <span class="en">enucleation</span></dt><dd>只把腫瘤本身從胰臟實質剝離取出、不切除胰臟節段的術式，適用於小型、界線清楚且與主胰管有安全距離的病灶。</dd></div>
+    </dl>
+    <dl>
+      <div class="gl-row"><dt>遠端胰臟切除術 <span class="en">distal pancreatectomy</span></dt><dd>切除胰臟體部與尾部，視情況合併脾臟切除。</dd></div>
+      <div class="gl-row"><dt>胰十二指腸切除術 <span class="en">pancreaticoduodenectomy, Whipple procedure</span></dt><dd>切除胰頭、十二指腸、部分膽道與胃的大型手術，用於胰頭部深處病灶。</dd></div>
+      <div class="gl-row"><dt>術後胰漏 <span class="en">postoperative pancreatic fistula, POPF</span></dt><dd>胰臟手術後最常見的併發症。國際胰臟外科研究組（ISGPS）自 2016 年起將其分為生化漏（biochemical leak，不算併發症）、B 級（需改變處置）與 C 級（需再手術或危及生命）；本篇原文未依此分級。</dd></div>
+      <div class="gl-row"><dt>第一型多發性內分泌腫瘤 <span class="en">multiple endocrine neoplasia type 1, MEN1</span></dt><dd>體染色體顯性遺傳症候群，約 10% 的胰島素瘤與之相關，常為多發病灶。</dd></div>
+      <div class="gl-row"><dt>Wilson 分數區間 <span class="en">Wilson score interval</span></dt><dd>計算比例之信賴區間的方法，在樣本數小或事件數為零時的表現優於傳統常態近似法。本頁各研究併發症比例的 95% CI 即以此法計算。</dd></div>
+      <div class="gl-row"><dt>無錨定的間接比較 <span class="en">unanchored indirect comparison</span></dt><dd>把來自不同研究、沒有共同對照組的兩組結果直接相比。其效度完全取決於兩群人是否可比，一般被視為證據強度最低的比較方式。</dd></div>
+      <div class="gl-row"><dt>適應症偏差 <span class="en">indication bias</span></dt><dd>因為「什麼樣的病人被選去接受哪種治療」而產生的系統性偏差；本篇兩組相差 20.6 歲即為典型例子。</dd></div>
+      <div class="gl-row"><dt>ROBINS-I</dt><dd>用於非隨機介入性研究的偏差風險評估工具（Risk Of Bias In Non-randomized Studies of Interventions）。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="src">
+  <h2>Sources <span class="zh">來源引用與圖表重繪聲明</span></h2>
+  <p><b>原始論文｜</b>Lozada-Calle SJ, Funari MP, Veras MO, Campos RKA, Cruz Junior JB, Bernardo W, Moura EGH. <i>Endoscopic ultrasound-guided radiofrequency ablation of pancreatic insulinoma.</i> Arq Bras Cir Dig (ABCD). 2026;38:e1921. 線上發表 2026 年 7 月 6 日。DOI：<a href="https://doi.org/10.1590/0102-67202025000052e1921">10.1590/0102-67202025000052e1921</a>　·　<a href="https://pubmed.ncbi.nlm.nih.gov/42417742/">PMID 42417742</a>　·　PMC13360299（Open Access）</p>
+  <p><b>資料取得方式｜</b>本頁的英文摘要、表 1（RFA 組 10 篇）、表 2（手術組 10 篇）逐列數值、以及所有合併比例與敘述性統計，均取自 PubMed 與 PubMed Central 收錄之原始全文（Open Access）。原文的 PRISMA 流程圖（Figure 1、2）與所有森林圖（Figure 3–12）僅以圖檔呈現、正文未轉述其數字，本頁一律標示「原文未列數值」，<b>不以任何方式從圖片反推</b>。</p>
+  <p><b>圖表重繪聲明｜</b>本頁四張圖（主要結果分組長條圖、各研究併發症比例圖、基線年齡與腫瘤大小分布圖、各研究住院天數長條圖）皆為<b>依原文表格數值重新繪製的 inline SVG</b>，未嵌入、未連結、也未重製出版社的任何圖檔。各研究併發症比例的 95% 信賴區間為<b>本頁以 Wilson 分數區間法自行計算</b>，並刻意不呈現自算的合併菱形。凡由原文數字經加減乘除得出者，均於出現處標註「<b>本頁自行計算</b>」。</p>
+  <p><b>本頁完成的交叉驗算｜</b>RFA 組：人數 142 ✓、女 97／男 45 ✓、病灶位置 55／5／51／31 合計 142 ✓、平均年齡 64.2 ✓、平均腫瘤 13.17 mm ✓、平均追蹤 16.87 個月 ✓、不良事件加總 26（內文 25，<b>相差 1</b>）。手術組：人數 249 ✓、女 164／男 85 ✓、實際手術 242 ✓、病灶 275 ✓、不良事件加總 148 ✓、平均年齡 43.57 ✓、平均腫瘤 16.69 mm ✓、<b>腫瘤位置頭鉤部加總 75（內文 102）、頸部 30（內文 3）→ 疑似 Machado 該列欄位錯位</b>、<b>平均追蹤自算 33.7 個月（內文 16.69 個月，疑為誤植）</b>。詳見「本頁對原文數字的逐格查核」一節。</p>
+  <p style="margin-top:18px;color:#6b7079;font-size:12.5px">本頁內容為文獻閱讀整理，非臨床指引，不取代個別病人的臨床判斷與各院常規。</p>
+</section>
+
+<footer>
+  每日一般外科文獻 · Vol. 015 · 2026 年 8 月 23 日<br>
+  文獻檢索與資料來源：PubMed／PubMed Central。所有圖表均依原文數值自行重繪。
+</footer>
+
+</div>
