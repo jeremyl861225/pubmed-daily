@@ -1,7 +1,57 @@
 {
- "count": 31,
- "latest": "2026-08-23",
+ "count": 33,
+ "latest": "2026-08-24",
  "papers": [
+  {
+   "id": "pubmed-gs-peds-2026-08-24",
+   "file": "papers/pubmed-gs-peds-2026-08-24.html",
+   "date": "2026-08-24",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 016",
+   "title": "已經確診壞死性腸炎（NEC）的新生兒，再輸紅血球濃厚液會不會讓病情惡化？5 篇觀察性研究、971 名新生兒的系統性回顧與統合分析——惡化勝算比 OR 6.05（95% CI 3.02–12.14）；但 5 篇全部是觀察性研究、沒有任何一篇 RCT，GRADE 證據確定性「極低（very low）」，且適應症混淆與時序不明足以解釋大部分關聯",
+   "title_en": "Association between packed red blood cell transfusion and clinical deterioration in neonatal necrotizing enterocolitis: a systematic review and meta-analysis",
+   "journal": "Annals of Medicine（Taylor & Francis，開放取用） 2026;58(1)：文章號 2675123；線上發表 2026 年 5 月 24 日；PMC13202688（Open Access）",
+   "authors": "Huang Jinglan、Gao Qian、Xu Ziqing、Wang Hua 中國成都・四川大學華西第二醫院小兒科；四川大學出生缺陷與相關婦兒疾病教育部重點實驗室",
+   "design": "系統性回顧與隨機效應統合分析（systematic review and random-effects meta-analysis） 依 PRISMA 撰寫；PROSPERO 註冊 CRD420250655190。檢索 Cochrane Library、EBSCO、Embase、Web of Science、Google Scholar、PubMed 共 6 個資料庫，自建庫起至 2025 年 5 月 10 日，限英文。以 Stata 12.0 與 RevMan 5.3、反變異數加權隨機效應模型合併勝算比",
+   "doi": "10.1080/07853890.2026.2675123",
+   "category": "小兒外科",
+   "tags": [
+    "小兒外科",
+    "壞死性腸炎 NEC",
+    "紅血球輸血 pRBC transfusion",
+    "證據等級：統合分析（5 篇觀察性研究・GRADE 極低）",
+    "Open Access"
+   ],
+   "tldr": "把 5 篇（全部是觀察性研究，沒有任何一篇 RCT）、共 971 名已確診壞死性腸炎（NEC）的新生兒合併後，在 NEC 診斷後接受紅血球濃厚液（pRBC）輸血者，病情惡化的勝算是未輸血者的 6.05 倍（95% CI 3.02–12.14）；換成絕對值就是原文 GRADE 表的推估：未輸血者每 1,000 人約 174 人惡化，輸血者約 566 人（390–728）。方向在 5 篇中完全一致（逐篇 OR 由 2.25 到 58.82，本頁自行計算），逐一剔除任一篇後結論仍成立，發表偏差檢定也未達顯著。但這篇最重要的一句話寫在限制段落：作者自己認為「適應症混淆（confounding by indication）與時序不明」無法排除——病情本來就比較重、貧血比較嚴重的寶寶本來就比較容易被輸血，而且輸血很可能是在臨床開始惡化「之後」才給的，那麼因果方向就完全反過來。加上 5 篇對「惡化」的定",
+   "bytes": 68281
+  },
+  {
+   "id": "pubmed-benign-2026-08-24",
+   "file": "papers/pubmed-benign-2026-08-24.html",
+   "date": "2026-08-24",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 017",
+   "title": "迴腸造口關閉（loop ileostomy reversal）能不能「24 小時內就回家」？12 篇研究、30,040 人的系統性回顧與統合分析——吻合口滲漏 OR 1.31（95% CI 0.24–7.32）、腸阻塞 OR 0.49（0.16–1.55）、手術部位感染 OR 0.76（0.38–1.51）、30 天再入院 OR 0.97（0.78–1.19）全都沒有差別；唯一達顯著的是整體併發症 OR 0.70（0.50–0.98）——但作者自己直說，這多半是「挑病人挑得好」而不是「早點回家比較安全」",
+   "title_en": "Safety and feasibility of early discharge (≤ 23 h) following loop ileostomy reversal: a systematic review and meta-analysis",
+   "journal": "International Journal of Colorectal Disease（Springer） 2026;41(1)：文章號 126；線上發表 2026 年 5 月 30 日；PMC13433468（Open Access）",
+   "authors": "Mulhall Cormac B、O'Kelly Ronan、Temperley Hugo C、Mac Curtain Benjamin M、Dunne Michelle、Ng Zi Qin 澳洲伯斯 Royal Perth Hospital 一般外科；愛爾蘭 University of Galway 健康科學系；都柏林 St James's Hospital 放射科與 Trinity College Dublin St James's Cancer Institute；美國紐約 Northwell Health／Lenox Hill Hospital 泌尿科",
+   "design": "系統性回顧與隨機效應統合分析（systematic review and random-effects meta-analysis） 依 PRISMA 撰寫；PROSPERO 註冊 CRD420251252408（2025 年 12 月 12 日）。檢索 PubMed 與 Scopus 自建庫起至 2025 年 12 月 16 日，不設語言限制，另滾雪球檢索參考文獻與灰色文獻。以 Stata 18 用 REML 隨機效應合併 log-OR；證據以 GRADE 評定",
+   "doi": "10.1007/s00384-026-05150-6",
+   "category": "良性疾病與功能性疾患",
+   "tags": [
+    "良性疾病與功能性疾患",
+    "造口關閉 Stoma reversal",
+    "當日出院 Same-day discharge",
+    "證據等級：系統性回顧與統合分析（1 RCT ＋ 11 觀察性）",
+    "Open Access"
+   ],
+   "tldr": "把 2015–2025 年 12 篇（只有 1 篇是 RCT）、共 30,040 名成人迴腸造口關閉病人合併後，術後 ≤ 23 小時就出院的 2,611 人（8.7%），在最讓外科醫師擔心的三件事上都沒有比較糟——吻合口滲漏 OR 1.31（95% CI 0.24–7.32）、術後腸阻塞 OR 0.49（0.16–1.55）、手術部位感染 OR 0.76（0.38–1.51），連 30 天再入院也一樣（OR 0.97，95% CI 0.78–1.19）。唯一達到統計顯著的是「整體併發症」OR 0.70（95% CI 0.50–0.98），排除 3 篇大型登錄資料庫後效果反而更強、異質性歸零（OR 0.55，95% CI 0.37–0.83，I² 0%）。但作者自己在討論裡把話講得很白：這個「比較少併發症」極可能不是早出院帶來的療效，而是「本來就挑了 ASA I–II、BMI 較低、沒有重大",
+   "bytes": 74175
+  },
   {
    "id": "pubmed-periop-2026-08-23",
    "file": "papers/pubmed-periop-2026-08-23.html",
