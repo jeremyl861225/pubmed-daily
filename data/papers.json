@@ -1,7 +1,55 @@
 {
- "count": 33,
- "latest": "2026-08-24",
+ "count": 35,
+ "latest": "2026-08-27",
  "papers": [
+  {
+   "id": "pubmed-gs-txp-2026-08-27",
+   "file": "papers/pubmed-gs-txp-2026-08-27.html",
+   "date": "2026-08-27",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 017",
+   "title": "腎臟移植失敗後，到底該不該把移植腎拿掉（allograft nephrectomy）？法國多科學會系統性回顧（29 篇研究）——真正驅動 HLA 致敏的是「停掉免疫抑制劑」而不是那台手術本身；維持免疫抑制 > 3 個月（≥2 種藥）可讓需切除／栓塞的勝算降到 OR 0.41（95% CI 0.27–0.64），而在持續用藥下執行切除，對再移植結果的獨立影響有限",
+   "title_en": "Allograft nephrectomy: a systematic review of immunological consequences and management of immunosuppressants",
+   "journal": "Transplant International（歐洲器官移植學會 ESOT 官方期刊） 2026;39：文章號 16661；線上發表 2026 年 7 月 3 日；PMC13375601（Open Access）。本頁已取得全文，含 Table 1、Table 2 與 PRISMA 圖說",
+   "authors": "Del Bello Arnaud、Goujon Anna、Kassab Diana、Prudhomme Thomas、Frontczak Alexandre、Culty Thibault 法國：土魯斯大學醫院（CHU de Toulouse）腎臟與器官移植科／泌尿科；雷恩、貝桑松、亞眠大學醫院泌尿科；法國泌尿科學會（Association Française d'Urologie）方法學部門",
+   "design": "系統性回顧（systematic review），依 PRISMA 撰寫；未執行統合分析，採敘述性綜合與表格彙整 PROSPERO 前瞻註冊 CRD420251040524。檢索 PubMed/MEDLINE®，2000 年 1 月 – 2026 年 3 月，限法文或英文；另輔以文獻監測（至 2024 年 6 月）、國際學會網站（EAU、AUA、BTS、UK Kidney Association、AST）、Cochrane Library 與工作小組推薦。品質評估合併採用法國 HAS 評讀框架、STARD 與 QUADAS-2，並給予證據等級 LoE 1–4。本文為2025 年法國移植腎切除指引的實證基礎之一",
+   "doi": "10.3389/ti.2026.16661",
+   "category": "移植外科",
+   "tags": [
+    "移植外科",
+    "系統性回顧（無統合分析）",
+    "Open Access",
+    "納入研究全為觀察性"
+   ],
+   "tldr": "移植腎失敗後的 HLA 致敏（allosensitization），主要是「停掉免疫抑制劑」造成的，而不是「把移植腎切掉」這台手術本身——若切除時仍維持免疫抑制，其對致敏與再移植結果的獨立影響有限；相對地，維持免疫抑制超過 3 個月（至少 2 種藥）可把「需要切除或栓塞」的勝算壓到 OR 0.41（95% CI 0.27–0.64）。但代價是感染與住院風險上升，因此決策必須個別化：有再移植機會、感染風險低的人才值得續用。",
+   "bytes": 142513
+  },
+  {
+   "id": "pubmed-crs-2026-08-27",
+   "file": "papers/pubmed-crs-2026-08-27.html",
+   "date": "2026-08-27",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 018",
+   "title": "早期至中期直腸癌想「保住直腸」，該用長程化放療（LCCRT）還是短程放療（SCRT）？STAR-TREC 歐洲五國 37 中心 phase 2/3 隨機試驗（409 人 mITT）12 個月結果——免於全直腸繫膜切除（TME-free survival）78.5%（95% CI 72.4–85.1）vs 60.6%（53.6–68.4），HR 1.90（95% CI 1.29–2.81）；但這是提前解盲的 12 個月「實作」結果，真正的 30 個月主要終點尚未報告",
+   "title_en": "Chemoradiotherapy versus short-course radiotherapy for response-adapted organ preservation in early-stage and intermediate-stage rectal cancer (STAR-TREC): 12-month results of an international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial",
+   "journal": "The Lancet Oncology 2026;27(9)：1120–1132；線上發表 2026 年 8 月 23 日；紙本 2026 年 9 月號。非 Open Access（本頁未取得全文，數據全部來自 PubMed 收錄之官方結構式摘要）",
+   "authors": "Bach SP、Sebag-Montefiore D、Homer V、Gilbert A、Appelt A、Geh I、Beets GL、Burger J、Angenete E、Baatrup G、Spindler KG、Haustermans K、Holman F、Kerkhof EM、Lam E、Korsgen S、Martling A、Wolthuis A、Al-Najami I、Lind P、Peters FP、Teo M、West NP、Gates S、Marijnen CAM、de Wilt JHW（等，共同主持人 Bach 與 de Wilt） 英國 University College London／University of Birmingham／University of Leeds；荷蘭 Maastricht UMC、Netherlands Cancer Institute、Leiden UMC、Radboudumc、Catharina Hospital；瑞典 Karolinska Institutet、Sahlgrenska；丹麥 Odense、Aarhus；比利時 KU Leuven。含 1 位病人代表（Emily Lam）",
+   "design": "國際多中心、開放標籤、平行分組、隨機分派之 phase 2/3 試驗（international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial） Phase 2：1:1:1 隨機分派三組（LCCRT-OP／SCRT-OP／primary TME）。Phase 3：改為「部分隨機之病人偏好設計」（partially randomised patient-preference design）——病人先自選「器官保留」或「TME」，選器官保留者再 1:1 隨機分派 LCCRT-OP 或 SCRT-OP；以中央電腦產生分派序列，並以最小化法（minimisation）依國別與 MRI T 分期（≤T3a vs T3b）分層。試驗註冊 ISRCTN 14240288，現已結案（closed）",
+   "doi": "10.1016/S1470-2045(26)00228-7",
+   "category": "大腸直腸癌手術與腫瘤學",
+   "tags": [
+    "大腸直腸癌手術與腫瘤學",
+    "隨機對照試驗（phase 2/3 RCT）",
+    "非 Open Access · 僅取得官方摘要",
+    "主要終點尚未報告"
+   ],
+   "tldr": "早期至中期直腸癌（mrT1–T3bN0、腫瘤 ≤40 mm）若走「反應導向器官保留」路線，長程化放療（LCCRT，50 Gy／25 次＋capecitabine）在 12 個月時有 78.5% 的人免於全直腸繫膜切除（TME），優於短程放療（SCRT，25 Gy／5 次）的 60.6%，HR 1.90（95% CI 1.29–2.81）；但這是期中分析後提前釋出的 12 個月「實作」結果，真正的主要終點（30 個月器官保留率）與長期腫瘤學安全性都還沒有答案。",
+   "bytes": 78618
+  },
   {
    "id": "pubmed-gs-peds-2026-08-24",
    "file": "papers/pubmed-gs-peds-2026-08-24.html",

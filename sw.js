@@ -11,7 +11,7 @@
  */
 const CACHE_PREFIX = 'pubmed-daily-';
 const CACHE_VERSION = CACHE_PREFIX + 'v1';
-const BUILD = '674ba440ac15';
+const BUILD = 'e9ce2006d51a';
 
 const PRECACHE_URLS = [
   './',
@@ -36,6 +36,7 @@ const PRECACHE_URLS = [
   './papers/pubmed-crs-2026-08-02.html',
   './papers/pubmed-crs-2026-08-07.html',
   './papers/pubmed-crs-2026-08-20.html',
+  './papers/pubmed-crs-2026-08-27.html',
   './papers/pubmed-gs-breast-2026-08-01.html',
   './papers/pubmed-gs-breast-2026-08-07.html',
   './papers/pubmed-gs-breast-2026-08-21.html',
@@ -52,6 +53,7 @@ const PRECACHE_URLS = [
   './papers/pubmed-gs-txp-2026-08-02.html',
   './papers/pubmed-gs-txp-2026-08-05.html',
   './papers/pubmed-gs-txp-2026-08-19.html',
+  './papers/pubmed-gs-txp-2026-08-27.html',
   './papers/pubmed-mis-2026-07-31.html',
   './papers/pubmed-mis-2026-08-04.html',
   './papers/pubmed-mis-2026-08-12.html',
