@@ -1,7 +1,58 @@
 {
- "count": 35,
- "latest": "2026-08-27",
+ "count": 37,
+ "latest": "2026-08-28",
  "papers": [
+  {
+   "id": "pubmed-mis-2026-08-28",
+   "file": "papers/pubmed-mis-2026-08-28.html",
+   "date": "2026-08-28",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 019",
+   "title": "機器人手術真的讓身體「比較不痛苦」嗎？義大利 7 中心 ESSIMIC 隨機試驗（314 人）直接量發炎反應：術後 24 小時 IL-6 上升幅度 478% vs 730%（p = 0.003），肥胖者與直腸切除者差距最大——但這是把所有發生併發症的病人（206 人，39.6%）先剔除之後才得到的數字",
+   "title_en": "Evaluation of surgical stress after colorectal interventions: a multicenter randomized clinical trial of robotic versus laparoscopic surgery",
+   "journal": "Scientific Reports（Nature Portfolio） 2026;16(1)；線上發表 2026 年 5 月 11 日。Open Access（CC BY），本頁已取得 PMC 全文（PMC13351040），Table 1、Table 2 之數值為全文逐格抄錄",
+   "authors": "Milone M, Vertaldi S, Anoldo P, Borin S, Calcaterra I, Campitelli M, Ceccarelli G, D'Amore A, Degiuli M, Delrio P, De Palma FDE, Di Minno MND, Fumagalli UR, Guerrieri M, Manigrasso M, Ortenzi M, Pace U, Pirozzi F, Puca L, Petz W, Reddavid R, Rega D, Raciti GA, Rondelli F, Sciuto A, Desiderio A, De Palma GD 通訊作者 Marco Milone（拿波里 Federico II 大學臨床醫學暨外科學系）。共 27 位作者，涵蓋拿波里 Federico II、米蘭歐洲腫瘤研究所（IEO）、杜林 San Luigi、拿波里 Pascale 國家癌症研究院、Ancona Marche 理工大學、Perugia San Giovanni Battista、拿波里 Cardarelli 等中心",
+   "design": "介入性、多中心、開放標籤、平行分組之隨機對照試驗（RCT）；試驗名稱 ESSIMIC（Evaluation of Surgical Stress and Immune response after Minimally Invasive Colorectal surgery） 1:1 電腦隨機分派，並就性別、年齡、BMI、Charlson 共病指數、切除型態、腫瘤分期做平衡。倫理審查編號 108/16/ES01（2016 年 11 月 27 日首次註冊），參考號 1901/16。意向治療（ITT）分析。參與外科醫師須有 ≥100 例大腸直腸癌手術經驗（其中機器人 ≥30 例、腹腔鏡 ≥30 例），並以 GOALS 影片評分做中央獨立技術評核",
+   "doi": "10.1038/s41598-026-51855-7",
+   "category": "微創／機器人手術技術",
+   "tags": [
+    "微創／機器人手術技術",
+    "手術壓力反應 Surgical stress response",
+    "IL-6 / TNF-α / IL-10",
+    "證據等級：多中心隨機對照試驗（替代終點）",
+    "Open Access"
+   ],
+   "tldr": "在 7 個義大利中心、314 位術後完全沒有併發症的大腸直腸癌病人身上，機器人手術造成的全身發炎反應確實比腹腔鏡低（術後 24 小時 IL-6 上升 478% vs 730%，p = 0.003；72 小時 137% vs 276%，p = 0.032；TNF-α 與 IL-10 亦同向），肥胖者與直腸切除者的差距最大；但主要終點是抽血指標而非臨床結果，而且研究刻意把 206 位（39.6%）發生任何併發症或轉開腹的病人整組剔除，因此這個結果只能說「在一切順利的手術裡，機器人的組織創傷比較小」，不能拿來宣稱機器人可以減少併發症、縮短住院或改善腫瘤學結果。",
+   "bytes": 91831
+  },
+  {
+   "id": "pubmed-gs-gi-2026-08-28",
+   "file": "papers/pubmed-gs-gi-2026-08-28.html",
+   "date": "2026-08-28",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 018",
+   "title": "晚期肝癌合併大血管侵犯，先打 atezolizumab＋bevacizumab 打到有反應之後，該不該再開刀？中國 24 家醫院 TALENTOP 第三期隨機試驗：中位治療失敗時間 20.4 vs 11.8 個月（HR 0.60，95% CI 0.39–0.91，p = 0.015）——但 489 人裡只有 201 人（41%）走得到隨機化，總存活資料尚未成熟，Grade 3–4 治療相關不良事件 39% vs 21%，手術組有 2 例治療相關死亡",
+   "title_en": "Liver resection after atezolizumab and bevacizumab versus maintenance therapy for locally advanced hepatocellular carcinoma (TALENTOP): a multicentre, open-label, randomised, phase 3 trial",
+   "journal": "The Lancet 2026;408(10556)：699–710；線上發表 2026 年 8 月 22 日。非 Open Access——本頁對 thelancet.com 之全文請求遭伺服器以 HTTP 403 拒絕，未取得全文；主要數據全部來自 PubMed 收錄之官方結構式摘要",
+   "authors": "Sun HC, Zhu XD, Shen F, Song TQ, Bai XL, Zeng YY, Chen MS, Huang ZY, Cai JQ, Gao J, Kuang M, Li DY, Xing BC, Li XC, Wen TF, Peng T, Wang YD, Liu LX, Huang C, Shi YH, Huang XW, Wang K, Gao Q, Zhou J, Fan J 通訊作者 Jia Fan（樊嘉），復旦大學附屬中山醫院。第一作者 Hui-Chuan Sun（孫惠川），同院。共 25 位作者，涵蓋上海中山醫院、上海東方肝膽外科醫院、天津腫瘤醫院、浙大一院、福建醫大孟超肝膽醫院、中山大學腫瘤防治中心、武漢同濟、中國醫科院腫瘤醫院、北大人民醫院、中山一院、河南省人民醫院、北大腫瘤醫院、江蘇省人民醫院、四川大學華西醫院、廣西醫大一附院、福州大學附屬省立醫院、中科大附一院等",
+   "design": "多中心、開放標籤、隨機分派之第三期試驗（phase 3 RCT）；試驗名稱 TALENTOP 中國 24 家醫院。誘導期：所有人先接受 3 個週期的靜脈 atezolizumab 1200 mg（每 3 週）＋ bevacizumab 15 mg/kg（每 3 週），再加 1 個週期的 atezolizumab 單藥。完成誘導期、依 RECIST 1.1 達部分緩解（PR）或疾病穩定（SD）、且經評估「可切除」者，才 1:1 隨機分派。以中央互動式網路系統（IWRS）之電腦產生序列、置換區集（permuted blocks）分派，依腫瘤反應與 ECOG 體能狀態分層。未設盲。試驗註冊 ClinicalTrials.gov NCT04649489，目前仍進行中",
+   "doi": "10.1016/S0140-6736(26)01252-3",
+   "category": "消化外科",
+   "tags": [
+    "消化外科",
+    "肝細胞癌 Hepatocellular carcinoma",
+    "轉化／降期手術 Conversion surgery",
+    "大血管侵犯 Macrovascular invasion",
+    "證據等級：多中心第三期隨機對照試驗",
+    "非 Open Access · 僅取得官方摘要"
+   ],
+   "tldr": "對合併大血管侵犯、無肝外轉移的肝細胞癌，先用 atezolizumab＋bevacizumab 誘導、有反應且評估可切除之後再加上手術切除，可把中位治療失敗時間從 11.8 個月延長到 20.4 個月（HR 0.60，95% CI 0.39–0.91，p = 0.015）——這是第一個以隨機試驗證明「轉化性肝切除」有價值的證據；但代價是 Grade 3–4 治療相關不良事件由 21% 升到 39%、手術組出現 2 例治療相關死亡，而且總存活資料尚未成熟，加上誘導期 489 人中只有 201 人（41%）走得到隨機化，這個獲益只適用於「治療有效、體況與肝功能都撐得住手術」的高度篩選族群。",
+   "bytes": 97348
+  },
   {
    "id": "pubmed-gs-txp-2026-08-27",
    "file": "papers/pubmed-gs-txp-2026-08-27.html",
