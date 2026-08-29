@@ -1,0 +1,826 @@
+<title>每日一般外科文獻 · 2026-08-30</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+  :root{
+    --ink:#1b1c1e; --ink-2:#43464d; --ink-3:#6b7079;
+    --line:#e3e0da; --line-2:#f0eeea;
+    --paper:#faf9f6; --card:#ffffff;
+    --accent:#8a4a3d; --accent-soft:#f6ece8;
+    --teal:#2f6b62; --teal-soft:#e8f2ef;
+    --amber:#8a6a1f; --amber-soft:#faf1dc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:16.5px; line-height:1.75; letter-spacing:.01em;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 90px;}
+  header.mast{border-bottom:1px solid var(--line); padding:44px 0 22px; margin-bottom:36px;}
+  .kicker{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600; margin-bottom:18px;}
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+  h1.title{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti TC","Noto Serif TC",serif;
+    font-size:31px; line-height:1.32; font-weight:600; margin:0 0 8px; letter-spacing:0;}
+  .title-en{font-family:"Iowan Old Style",Georgia,serif; font-size:16px; line-height:1.5;
+    color:var(--ink-2); font-style:italic; margin:0 0 22px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:14px 26px; margin-top:22px;}
+  .meta-item .k{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600;}
+  .meta-item .v{font-size:14.5px; color:var(--ink); margin-top:2px;}
+  .meta-item .v a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft);}
+  .meta-item .v a:hover{border-bottom-color:var(--accent);}
+  .tags{margin-top:22px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{font-size:12px; padding:3px 11px; border-radius:20px; background:var(--accent-soft); color:var(--accent); font-weight:600;}
+  .tag.t2{background:var(--teal-soft); color:var(--teal);}
+  .tag.t3{background:var(--amber-soft); color:var(--amber);}
+  nav.toc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:38px;
+    font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;}
+  nav.toc a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid transparent;}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent-soft);}
+  section{margin:0 0 46px; scroll-margin-top:16px;}
+  h2{font-size:13px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent);
+    margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  h2 .zh{letter-spacing:.04em; font-size:15px; text-transform:none; color:var(--ink);}
+  h3{font-size:16px; font-weight:700; margin:28px 0 9px; color:var(--ink);}
+  p{margin:0 0 14px;}
+  .tldr{background:linear-gradient(180deg,#fff 0%, #fdfcfa 100%); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:6px; padding:22px 24px; margin-bottom:40px;}
+  .tldr .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;}
+  .tldr p{font-size:17px; line-height:1.72; margin:0; color:var(--ink);}
+  .tldr strong{background:linear-gradient(transparent 62%, #f7dfd6 62%);}
+  .abs{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:8px 26px 20px;
+    font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; font-size:15.5px; line-height:1.72; color:var(--ink-2);}
+  .abs h4{font-family:-apple-system,"PingFang TC",sans-serif; font-size:11.5px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); font-weight:700; margin:22px 0 6px;}
+  .abs p{margin:0;}
+  .abs .note{font-family:-apple-system,"PingFang TC",sans-serif;font-size:12.5px;color:var(--ink-3);
+    margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);}
+  .fig{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px 14px;margin:22px 0;}
+  .fig .cap{font-size:12.5px;color:var(--ink-3);line-height:1.6;margin-top:12px;padding-top:10px;border-top:1px solid var(--line-2);}
+  .fig .cap b{color:var(--ink-2);}
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.fig-grid{grid-template-columns:1fr;}}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:6px; background:#fff;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:520px;}
+  th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:10px 12px; border-bottom:1.5px solid var(--line); white-space:nowrap; background:#fdfcfa;}
+  td{padding:10px 12px; border-bottom:1px solid var(--line-2); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .sig{color:var(--teal); font-weight:700;}
+  .ns{color:var(--ink-3);}
+  .win{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal-soft);color:var(--teal);white-space:nowrap;}
+  .win.neutral{background:var(--line-2);color:var(--ink-3);}
+  .win.caution{background:var(--amber-soft);color:var(--amber);}
+  ul.clean{list-style:none; padding:0; margin:0;}
+  ul.clean li{position:relative; padding-left:22px; margin-bottom:11px;}
+  ul.clean li::before{content:""; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.55;}
+  ol.num{padding-left:22px; margin:0;}
+  ol.num li{margin-bottom:11px; padding-left:4px;}
+  .call{border-radius:6px; padding:16px 20px; margin:18px 0; font-size:15px; line-height:1.7;}
+  .call.teal{background:var(--teal-soft); border-left:3px solid var(--teal);}
+  .call.amber{background:var(--amber-soft); border-left:3px solid var(--amber);}
+  .call .h{font-weight:700; margin-bottom:5px; font-size:13.5px; letter-spacing:.03em;}
+  .call.teal .h{color:var(--teal);} .call.amber .h{color:var(--amber);}
+  .gloss{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:0 30px;}
+  .gloss dl{margin:0;}
+  .gl-row{padding:10px 0; border-bottom:1px solid var(--line-2);}
+  .gl-row dt{font-weight:700; font-size:14.5px;}
+  .gl-row dt .en{font-weight:500; color:var(--ink-3); font-size:13px; font-style:italic;}
+  .gl-row dd{margin:2px 0 0; font-size:13.5px; color:var(--ink-2); line-height:1.6;}
+  /* PRISMA */
+  .prisma{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px 20px;}
+  .pr-row{display:flex;align-items:stretch;gap:14px;margin-bottom:0;}
+  .pr-main{flex:1;}
+  .pr-box{border:1px solid var(--line);border-radius:5px;padding:11px 15px;background:#fdfcfa;font-size:13.5px;line-height:1.55;}
+  .pr-box .n{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);font-size:16px;}
+  .pr-box.final{background:var(--accent-soft);border-color:#e3cec6;}
+  .pr-box.final .n{font-size:19px;}
+  .pr-ex{width:230px;flex-shrink:0;border:1px dashed var(--line);border-radius:5px;padding:9px 13px;
+    background:#fff;font-size:12.5px;color:var(--ink-3);line-height:1.5;align-self:center;}
+  .pr-ex .n{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .pr-arrow{width:1.5px;background:var(--line);height:18px;margin:0 0 0 26px;}
+  .pr-stage{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:16px 0 7px;}
+  .pr-stage:first-child{margin-top:0;}
+  @media(max-width:700px){.pr-row{flex-direction:column;gap:8px;} .pr-ex{width:auto;}}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-3); line-height:1.75;}
+  footer a{color:var(--accent); text-decoration:none;}
+  @media (max-width:620px){ body{font-size:16px;} .wrap{padding:0 16px 70px;} h1.title{font-size:24px;} .abs{padding:6px 18px 16px;} }
+  @media print{ body{background:#fff;} .wrap{max-width:none;} nav.toc{display:none;} }
+
+
+  .svgbox{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .svgbox > svg{min-width:640px;}
+  .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0 4px;}
+  .kv .c{border:1px solid var(--line);border-radius:6px;background:#fff;padding:12px 14px;}
+  .kv .c .lab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;}
+  .kv .c .big{font-size:21px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;margin-top:3px;line-height:1.2;}
+  .kv .c .sub{font-size:11.5px;color:var(--ink-3);margin-top:2px;line-height:1.45;}
+  .kv .c.teal .big{color:var(--teal);}
+  .kv .c.amber .big{color:var(--amber);}
+  .na{color:var(--ink-3);font-size:12.5px;font-style:italic;}
+  .grade{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:4px;
+    background:var(--amber-soft);color:var(--amber);}
+
+
+
+  /* 本頁附加：寬表格的欄寬控制，避免首欄被壓成逐字換行 */
+  .tbl-wrap table.wide{min-width:640px;}
+  .tbl-wrap table.wide th:first-child,.tbl-wrap table.wide td:first-child{min-width:150px;}
+  .tbl-wrap table.wide th:nth-child(2),.tbl-wrap table.wide td:nth-child(2){min-width:92px;}
+  .tbl-wrap table.wide td{vertical-align:top;}
+  .tbl-wrap table.wide{font-size:13px;}
+  .tbl-wrap table.wide .win{white-space:normal;}
+  .tbl-wrap table.wide td.num{white-space:normal;}
+  .tbl-wrap table.wide th{white-space:normal;}
+
+
+  /* 本頁附加：10 欄的研究特徵表需要更多寬度，避免中文欄位被壓成逐字換行 */
+  .tbl-wrap table.wide.t10{min-width:1120px;}
+  .tbl-wrap table.wide.t10 th,.tbl-wrap table.wide.t10 td{white-space:normal;}
+  .tbl-wrap table.wide.t10 td:nth-child(4),.tbl-wrap table.wide.t10 td:nth-child(5),
+  .tbl-wrap table.wide.t10 td:nth-child(9),.tbl-wrap table.wide.t10 td:nth-child(10){min-width:112px;}
+  .tbl-wrap table.wide.t10 td:nth-child(7){min-width:104px;}
+
+  /* 本頁附加：7 欄總覽表需要更多寬度，避免 95% CI 被折成兩行 */
+  .tbl-wrap table.wide.t7{min-width:868px;font-size:12.5px;}
+  .tbl-wrap table.wide.t7 th,.tbl-wrap table.wide.t7 td{white-space:normal;}
+  .tbl-wrap table.wide.t7 td:first-child,.tbl-wrap table.wide.t7 th:first-child{min-width:186px;}
+  .tbl-wrap table.wide.t7 td.num{min-width:98px;white-space:nowrap;}
+  .tbl-wrap table.wide.t7 td:last-child,.tbl-wrap table.wide.t7 th:last-child{min-width:78px;}
+  .tbl-wrap table.wide.t7 td.num span{white-space:nowrap;}
+
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="kicker">
+    <span class="dot"></span><span>每日一般外科文獻</span>
+    <span style="opacity:.4">/</span><span>2026 年 8 月 30 日 · 週日</span>
+    <span style="opacity:.4">/</span><span>Vol. 019</span>
+  </div>
+  <h1 class="title">乳癌手術的區域阻斷：<b>豎脊肌平面阻斷（ESPB）</b>能不能取代被視為金標準的<b>胸椎旁阻斷（PVB）</b>？19 篇隨機試驗、1,527 人的統合分析——<b>嗎啡用量、疼痛分數、鎮痛時間、PONV 全部沒有差別</b>，唯一達統計顯著的是「手術時間短 <b>2.4 分鐘</b>」，而四項主要鎮痛指標的異質性 <b>I² 高達 82−96%</b></h1>
+  <p class="title-en">Erector spinae plane block (ESPB) versus paravertebral plane block (PVB) in managing post-operative pain in breast cancer patients: a systematic review and meta-analysis</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="k">期刊 Journal</div><div class="v">World Journal of Surgical Oncology（BMC）<br><span style="color:#6b7079;font-size:13px">2026;<b>24(1)</b>，<b>文章編號 344</b>；線上發表 <b>2026 年 8 月 22 日</b>。<b>Open Access</b>，本頁已取得 PMC 全文（<b>PMC13499295</b>），Table 1、Table 2 之內容為<b>全文逐格抄錄</b></span></div></div>
+    <div class="meta-item"><div class="k">作者 Authors</div><div class="v">El-Khalifa BM, Khelifa H, Gad MM, Elfakharany B, Ahmed MSA, Soliman A, Nada EA, Ahmed J, Mazy HM, Qutob IA<br><span style="color:#6b7079;font-size:13px">通訊作者 <b>Basma M. El-Khalifa</b>（Mansoura 大學醫學院臨床腫瘤暨核醫科，埃及）與 <b>Jamal Ahmad</b>（巴勒斯坦理工大學醫學暨健康科學院）。多數作者隸屬 <b>Medical Research Group of Egypt（MRGE）／Negida Academy</b></span></div></div>
+    <div class="meta-item"><div class="k">研究設計</div><div class="v"><b>系統性回顧與統合分析（僅納入隨機對照試驗）</b><br><span style="color:#6b7079;font-size:13px">依 <b>PRISMA</b> 與 Cochrane Handbook 進行；前瞻註冊 <b>PROSPERO CRD420251253203</b>。檢索 PubMed、SCOPUS、Web of Science（原文摘要寫「四個資料庫」，正文只列出三個 — 見「解讀警訊」）＋前後向引文追蹤。品質評估用 <b>Cochrane RoB 2</b>，證據等級用 <b>GRADE</b>。統計軟體 <b>R 4.4.2</b>；異質性以 I² 判定（&lt; 25% 低、25−75% 中、&gt; 75% 高），並做 leave-one-out 敏感性分析與漏斗圖</span></div></div>
+    <div class="meta-item"><div class="k">臨床問題（PICO）</div><div class="v"><b>P</b>：18 歲以上、接受乳癌手術（多數為改良型根除性乳房切除 MRM）的成人／<b>I</b>：豎脊肌平面阻斷 ESPB／<b>C</b>：胸椎旁阻斷 PVB／<b>O</b>：術後嗎啡用量、鎮痛持續時間、休息與活動時疼痛分數<br><span style="color:#6b7079;font-size:13px">次要結果：術中 fentanyl 用量、手術時間、術後噁心嘔吐（PONV）、需要救援止痛的人數</span></div></div>
+    <div class="meta-item"><div class="k">納入研究與人數</div><div class="v">檢索 <b>978</b> 筆 → 最終納入 <b>19 篇 RCT</b>、原文稱 <b>1,527</b> 人<br><span style="color:#6b7079;font-size:13px"><b>本頁自行計算</b>：ESPB 組合計 <b>659</b> 人、PVB 組合計 <b>664</b> 人，兩者相加 <b>1,323</b> 人；1,527 這個數字另外包含了 <b>204</b> 位對照組／PECS／SAPB 等其他組別的病人（1,323 + 204 = 1,527 ✓）</span></div></div>
+    <div class="meta-item"><div class="k">研究來源國</div><div class="v"><b>埃及 8 篇</b>、印度 4 篇、土耳其 3 篇、中國 1 篇、義大利 1 篇、泰國 1 篇、美國 1 篇<br><span style="color:#6b7079;font-size:13px"><b>本頁自行計算</b>（依原文 Table 1 的 Country 欄逐篇歸類）：8+4+3+1+1+1+1 = 19 ✓。原文限制段落亦自承「大多數研究來自埃及，難以推及其他族群」</span></div></div>
+    <div class="meta-item"><div class="k">DOI</div><div class="v"><a href="https://doi.org/10.1186/s12957-026-04535-9">10.1186/s12957-026-04535-9</a></div></div>
+    <div class="meta-item"><div class="k">PubMed</div><div class="v"><a href="https://pubmed.ncbi.nlm.nih.gov/42632896/">PMID 42632896 &#8594;</a>　·　PMC13499295<br><span style="color:#6b7079;font-size:13px">PROSPERO 註冊號 CRD420251253203</span></div></div>
+  </div>
+  <div class="tags">
+    <span class="tag">乳房外科</span>
+    <span class="tag t2">區域麻醉 Regional anaesthesia</span>
+    <span class="tag t2">ESPB vs. PVB</span>
+    <span class="tag t3">證據等級：19 篇 RCT 之統合分析（但異質性高、RoB 多數非低風險）</span>
+    <span class="tag t3">Open Access</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">一句話結論</a>
+  <a href="#abs">Original Abstract</a>
+  <a href="#flow">PRISMA 流程圖</a>
+  <a href="#tbl1">研究特徵表</a>
+  <a href="#forest">主要結果森林圖</a>
+  <a href="#overview">全部結果總覽</a>
+  <a href="#raw">原始數據與自行重繪</a>
+  <a href="#clinic">臨床意涵</a>
+  <a href="#limits">限制與解讀警訊</a>
+  <a href="#gloss">中英對照</a>
+  <a href="#src">來源引用</a>
+</nav>
+
+<div class="tldr" id="tldr">
+  <div class="lab">一句話結論</div>
+  <p>把 19 篇隨機試驗合起來看，<strong>豎脊肌平面阻斷（ESPB）與胸椎旁阻斷（PVB）在乳癌手術後的鎮痛效果沒有可測得的差別</strong>——24 小時嗎啡用量、休息與活動時的 NRS／VAS 疼痛分數、鎮痛持續時間、救援止痛需求、術後噁心嘔吐，<strong>全部的 95% 信賴區間都跨過無效線</strong>；唯一達統計顯著的是手術時間短 <strong>2.4 分鐘</strong>（原文自己說「臨床上可忽略」）。但四項主要鎮痛指標的異質性 <strong>I² 高達 82−96%</strong>，且僅 7 篇為低偏誤風險，因此「沒有差別」應解讀為「<strong>證據不足以分辨</strong>」而非「兩者等效」。</p>
+</div>
+
+<section id="abs">
+<h2>Original Abstract <span class="zh">英文摘要逐字原文</span></h2>
+<div class="abs">
+  <h4>Background</h4>
+  <p>Breast cancer surgeries remain the cornerstone of treatment for early-stage disease. Nonetheless, a substantial proportion of patients experience moderate-to-severe acute or chronic postoperative pain, adversely affecting quality of life and functional recovery. Regional anesthetic techniques have emerged as effective strategies for perioperative pain control. This study compares the erector spinae plane block (ESPB) and the thoracic paravertebral block (PVB) in breast cancer surgeries.</p>
+  <h4>Methods</h4>
+  <p>Four databases were systematically searched for randomized controlled trials (RCTs) using ESPB and PVB in breast cancer surgeries. Primary extracted outcomes include post-operative morphine consumption, analgesia duration, resting and dynamic pain scores. Methodological quality was assessed using the ROB-2 tool, while data were pooled using the R software, Version 4.4.2.</p>
+  <h4>Results</h4>
+  <p>Nineteen RCTs reporting on 1527 patients were included. Postoperative morphine consumption, PONV incidence, and intraoperative fentanyl use were comparable in both groups. Similarly, pain scores at rest and movement reported no significant differences. The two techniques also demonstrated similar results regarding the number of patients requiring rescue analgesia and analgesia duration. ESPB was associated with a significant, however clinically negligent, shorter surgery duration compared to PVB [MD -0.04, 95% CI; -0.07 to 0.00, P = 0.023].</p>
+  <h4>Conclusion</h4>
+  <p>ESPB and PVB provide comparable analgesic efficacy and perioperative outcomes in breast cancer surgeries. ESPB may offer a shorter surgical duration, supporting its use as a simpler yet equally effective alternative to PVB, however this must be taken cautiously.</p>
+  <div class="note">上列為原文摘要之逐字英文原文（World J Surg Oncol 2026;24(1):344，Open Access）。原文正文結論另有一句：<i>&ldquo;ESPB and PVB were comparable in almost all measurable facets, with similar efficacy and safety.&rdquo;</i>　·　注意摘要說 &ldquo;Four databases&rdquo;，但正文 Methods 只列出 PubMed、SCOPUS、Web of Science 三個資料庫（第四個推測為引文追蹤，但原文未寫明）——本頁照錄，不代為補齊。</div>
+</div>
+</section>
+<section id="flow">
+<h2>PRISMA 流程圖 <span class="zh">本頁依原文 Figure 1 說明與 Results 文字重繪</span></h2>
+<div class="prisma">
+  <div class="pr-stage">辨識 Identification</div>
+  <div class="pr-row"><div class="pr-main"><div class="pr-box">資料庫檢索所得紀錄（PubMed、SCOPUS、Web of Science）＋前後向引文追蹤<br><span class="n">978</span> 筆</div></div>
+    <div class="pr-ex">移除重複 <span class="n">93</span> 筆</div></div>
+  <div class="pr-arrow"></div>
+  <div class="pr-stage">篩選 Screening（標題與摘要）</div>
+  <div class="pr-row"><div class="pr-main"><div class="pr-box">進入標題／摘要篩選<br><span class="n">885</span> 筆<br><span style="font-size:12px;color:#6b7079">本頁自行計算：978 &minus; 93 = 885 ✓</span></div></div>
+    <div class="pr-ex">標題／摘要階段排除 <span class="n">865</span> 筆</div></div>
+  <div class="pr-arrow"></div>
+  <div class="pr-stage">合格性評估 Eligibility（全文）</div>
+  <div class="pr-row"><div class="pr-main"><div class="pr-box">進入全文審閱<br><span class="n">20</span> 篇<br><span style="font-size:12px;color:#6b7079">本頁自行計算：885 &minus; 865 = 20 ✓</span></div></div>
+    <div class="pr-ex">全文階段排除 <span class="n">1</span> 篇<br><span style="font-size:11.5px">排除理由：<b>未進行隨機分派</b>（原文僅列此一篇、一項理由）</span></div></div>
+  <div class="pr-arrow"></div>
+  <div class="pr-stage">納入 Included</div>
+  <div class="pr-row"><div class="pr-main"><div class="pr-box final">納入系統性回顧與統合分析<br><span class="n">19</span> 篇 RCT　·　原文稱 <span class="n">1,527</span> 位病人</div></div>
+    <div class="pr-ex"><b>本頁自行計算</b>：ESPB 組 <span class="n">659</span> ＋ PVB 組 <span class="n">664</span> ＝ <span class="n">1,323</span>；再加其他組別 <span class="n">204</span> ＝ <span class="n">1,527</span> ✓</div></div>
+</div>
+<div class="fig" style="border:0;padding:0;background:none"><div class="cap" style="border-top:0;padding-top:0">
+  <b>數據來源</b>：978 / 93 / 865 / 20 / 1 / 19 六個數字皆抄自原文 Results「Literature search results」段落；各方框之間的減法為<b>本頁自行計算</b>並已驗證前後一致。<br>
+  <b>怎麼看</b>：這是一條「非常窄」的漏斗——978 筆進來、只有 20 篇進到全文，最後 19 篇。這種形狀通常代表<b>檢索策略相當專一</b>（ESPB vs PVB 這個組合本來就少），而不是篩選太嚴。<br>
+  <b>陷阱</b>：全文階段<b>只排除了 1 篇、只給了 1 個理由</b>。PRISMA 2020 期待的是「列出所有被排除的全文及其理由」；20 進 19 的數字雖然自洽，卻也意味著<b>幾乎沒有做全文層級的品質把關</b>——凡是宣稱 ESPB 對 PVB 的隨機試驗，基本上都被收進來了，包括後面會看到的 4 篇高偏誤風險研究。
+</div></div>
+</section>
+
+<section id="tbl1">
+<h2>研究特徵表 <span class="zh">19 篇納入試驗的設計與族群（原文 Table 1、Table 2 逐格抄錄）</span></h2>
+<div class="tbl-wrap"><table class="wide t10">
+<thead><tr><th>研究</th><th>國家</th><th>族群</th><th>ESPB 局麻藥</th><th>劑量</th><th>對照組</th><th>主要終點</th><th>作者結論</th><th>ESPB n</th><th>PVB n</th></tr></thead>
+<tbody>
+<tr><td>Adlan 2023</td><td>埃及</td><td>20&ndash;70 歲女性，MRM</td><td>Bupivacaine 0.25%</td><td>20 mL bolus ＋ 0.1 mL/kg/h 持續輸注</td><td>PVB</td><td>48 小時嗎啡用量（維持 VAS &le; 4）</td><td>兩者鎮痛效果相當，但 ESPB 好做很多</td><td class="num">35</td><td class="num">35</td></tr>
+<tr><td>Agarwal 2021</td><td>印度</td><td>20&ndash;70 歲女性，ASA I&ndash;II，MRM</td><td>Ropivacaine 0.5%</td><td>20 mL</td><td>PVB</td><td>鎮痛持續時間</td><td>ESPB 鎮痛時間較長，其他面向相當</td><td class="num">40</td><td class="num">40</td></tr>
+<tr><td>Amr 2024</td><td>埃及</td><td>135 位女性，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB＋無阻斷對照</td><td>術後 24 小時嗎啡總用量</td><td><b>PVB 嗎啡用量較低</b>；兩者對慢性疼痛效果相同</td><td class="num">35</td><td class="num">35</td></tr>
+<tr><td>But 2024</td><td>土耳其</td><td>臨床 I&ndash;II 期乳癌，18&ndash;85 歲</td><td>Bupivacaine 0.25%</td><td>10 mL</td><td>PVB、SAPB</td><td>術中 fentanyl 與術後嗎啡用量</td><td><b>ESPB 嗎啡用量高於兩者</b>；術中 fentanyl 相當</td><td class="num">24</td><td class="num">30</td></tr>
+<tr><td>El Ghamry 2019</td><td>埃及</td><td>20&ndash;60 歲女性，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB</td><td>術後 24 小時嗎啡總用量</td><td>兩者相當</td><td class="num">35</td><td class="num">35</td></tr>
+<tr><td>Elewa 2022</td><td>埃及</td><td>20&ndash;60 歲女性，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>30 mL</td><td>PVB＋對照</td><td>24 小時嗎啡用量</td><td><b>ESPB 嗎啡用量低於 PVB</b>；兩阻斷組疼痛分數皆低於對照</td><td class="num">30</td><td class="num">30</td></tr>
+<tr><td>Eskandr 2022</td><td>埃及</td><td>18&ndash;60 歲女性，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>25 mL</td><td>PVB、PECS、對照</td><td>鎮痛持續時間</td><td><b>ESPB 鎮痛時間短於 PVB 與 PECS</b></td><td class="num">20</td><td class="num">20</td></tr>
+<tr><td>Gurkan 2020</td><td>土耳其</td><td>18&ndash;65 歲女性，ASA I&ndash;II，擇期乳癌手術</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB、對照</td><td>術後 24 小時嗎啡總用量</td><td>兩者相當，皆提供足夠鎮痛</td><td class="num">25</td><td class="num">25</td></tr>
+<tr><td>Hu 2021</td><td>中國</td><td>病理確診、接受根除性乳房切除，ASA I&ndash;II</td><td>Ropivacaine 0.25%</td><td>30 mL</td><td>PVB</td><td>術後疼痛分數與免疫功能標記</td><td><b>ESPB 疼痛分數較低</b>；免疫標記相當</td><td class="num">52</td><td class="num">52</td></tr>
+<tr><td>Jayakrishnan 2023</td><td>印度</td><td>&gt; 18 歲，單側 MRM（含前導化療後）</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB</td><td>VAS 疼痛評估</td><td>VAS 相當，但 <b>ESPB 術後嗎啡用量較高</b></td><td class="num">30</td><td class="num">30</td></tr>
+<tr><td>Kumar 2025</td><td>印度</td><td>18&ndash;60 歲男女，ASA I&ndash;II，乳癌手術</td><td>Ropivacaine 0.125%</td><td class="na">原文未列</td><td>PVB</td><td>鎮痛品質與作用時間</td><td><b>ESPB 優於 PVB</b>，止痛較穩定、分數較低</td><td class="num">30</td><td class="num">30</td></tr>
+<tr><td>Moustafa 2020</td><td>埃及</td><td>40&ndash;65 歲女性，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB</td><td>阻斷成功率</td><td>鎮痛相當；<b>ESPB 操作時間較短</b></td><td class="num">45</td><td class="num">45</td></tr>
+<tr><td>Nawar 2024</td><td>埃及</td><td>30&ndash;70 歲女性，BMI &lt; 35，ASA I&ndash;II，MRM</td><td>Bupivacaine 0.25%</td><td>20 mL</td><td>PVB、PECS II</td><td>三種術式的 VAS 比較</td><td><b>PECS II 的 VAS 最低</b>；ESPB 與 PVB 相當</td><td class="num">50</td><td class="num">50</td></tr>
+<tr><td>Santonastaso 2024</td><td>義大利</td><td>18&ndash;90 歲女性，ASA I&ndash;IV，MRM &plusmn; 腋下廓清</td><td>Ropivacaine 0.5%</td><td>120 mg</td><td>PVB</td><td>術後疼痛評估</td><td>多數時間點相當；<b>部分時間點 PVB 較佳</b></td><td class="num">41</td><td class="num">41</td></tr>
+<tr><td>Sayed 2024</td><td>埃及</td><td>18&ndash;50 歲女性，ASA II&ndash;III，MRM</td><td>Bupivacaine 0.5%</td><td>20 mL</td><td>PVB</td><td>肺功能（尤其 FVC）</td><td><b>PVB 肺功能較佳</b>；鎮痛時間與用藥量相當</td><td class="num">20</td><td class="num">20</td></tr>
+<tr><td>Sharma 2023</td><td>印度</td><td>25&ndash;85 歲女性，ASA I&ndash;II，MRM</td><td>Ropivacaine 0.5%</td><td>20 mL</td><td>PVB</td><td>以 VAS 比較鎮痛效果</td><td>各方面皆相當</td><td class="num">33</td><td class="num">33</td></tr>
+<tr><td>Sivrikoz 2022</td><td>土耳其</td><td>18&ndash;75 歲，ASA I&ndash;III，MRM</td><td>Bupivacaine 0.375%</td><td>20 mL</td><td>PVB</td><td>術後 24 小時嗎啡用量</td><td><b>PVB 嗎啡用量與疼痛分數較低</b>；併發症相當</td><td class="num">42</td><td class="num">41</td></tr>
+<tr><td>Swisher 2020</td><td>美國</td><td>&ge; 18 歲成人，乳癌手術</td><td>Ropivacaine 0.5%</td><td>單側 20 mL；雙側每側 16 mL</td><td>PVB</td><td>疼痛分數與鴉片類用量</td><td><b>PVB 優於 ESPB</b>，疼痛分數與鴉片用量皆較低</td><td class="num">50</td><td class="num">50</td></tr>
+<tr><td>Wittayapairoj 2022</td><td>泰國</td><td>18&ndash;75 歲，乳房切除，ASA I&ndash;III</td><td>Levobupivacaine 0.5%</td><td>20 mL</td><td>PVB</td><td>術後 24 小時嗎啡用量</td><td><b>PVB 疼痛分數與嗎啡用量較低</b></td><td class="num">22</td><td class="num">22</td></tr>
+</tbody></table></div>
+<div class="fig" style="border:0;padding:0;background:none"><div class="cap" style="border-top:0;padding-top:0">
+  <b>數據來源</b>：原文 Table 1 全表逐格抄錄（國家、族群、藥物、劑量、對照、主要終點、作者結論），人數取自原文 Table 2。Kumar 2025 的劑量原文以「-」呈現，本頁標為<b>原文未列數值</b>。<br>
+  <b>怎麼看</b>：把最右邊「作者結論」那一欄從上讀到下，會看到<b>結論本身互相矛盾</b>：4 篇說 PVB 較好（Amr、Sivrikoz、Swisher、Wittayapairoj）、4 篇說 ESPB 較好（Agarwal、Elewa、Hu、Kumar）、其餘說相當，甚至有一篇（Eskandr）說 ESPB 鎮痛時間<b>比較短</b>。這正是後面 I² = 82&ndash;96% 的來源。<br>
+  <b>陷阱</b>：注意<b>劑量與濃度不一致</b>——bupivacaine 0.25% 到 0.5%、ropivacaine 0.125% 到 0.5%、容積 10 mL 到 30 mL，還有一篇用持續輸注（Adlan）。把「10 mL bupivacaine 0.25%」與「30 mL ropivacaine 0.25%」的結果合併成一個平均差，本身就是很強的假設。原文有做藥物與濃度的次群組分析，但異質性仍未消除。<br>
+  另外請注意 <b>But 2024 的 ESPB 組只有 24 人、PVB 組 30 人</b>——同一試驗兩組人數不等，且原文 Table 2 該列的年齡、BMI、ASA 全部是「-」（原文未列數值）。
+</div></div>
+</section>
+<section id="forest">
+<h2>主要結果森林圖 <span class="zh">連續型與二分類結果的合併估計</span></h2>
+<div class="kv"><div class="c"><div class="lab">納入試驗</div><div class="big">19</div><div class="sub">全部為 RCT<br>ESPB 659 人 / PVB 664 人</div></div><div class="c teal"><div class="lab">達統計顯著的結果</div><div class="big">1 / 10</div><div class="sub">只有「手術時間」<br>MD −2.4 分鐘</div></div><div class="c amber"><div class="lab">最高異質性</div><div class="big">96%</div><div class="sub">VAS 活動時 24 小時<br>（原文判定為「高」）</div></div><div class="c amber"><div class="lab">低偏誤風險研究</div><div class="big">7 / 19</div><div class="sub">另 8 篇「有疑慮」<br>4 篇「高風險」</div></div></div>
+<div class="fig"><div class="svgbox">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 498" width="100%" role="img" style="display:block;background:#fff">
+<text x="0.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="13.5" fill="#1b1c1e" text-anchor="start" font-weight="700">圖 B-2　連續型結果的合併平均差（ESPB 減 PVB）——每列各自刻度</text>
+<text x="894.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">每列各自刻度（單位見左欄）</text>
+<text x="0.0" y="61.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">鎮痛持續時間</text>
+<text x="0.0" y="75.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（小時；ESPB 減 PVB）</text>
+<line x1="268" y1="68.0" x2="666" y2="68.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="280.4" y1="68.0" x2="280.4" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="280.4" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="342.6" y1="68.0" x2="342.6" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="342.6" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="404.8" y1="68.0" x2="404.8" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="404.8" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="467.0" y1="68.0" x2="467.0" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="529.2" y1="68.0" x2="529.2" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="529.2" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="591.4" y1="68.0" x2="591.4" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="591.4" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="653.6" y1="68.0" x2="653.6" y2="72.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="653.6" y="83.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.5</text>
+<line x1="467.0" y1="53.0" x2="467.0" y2="68.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="314.0" y1="60.0" x2="483.2" y2="60.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="314.0" y1="56.0" x2="314.0" y2="64.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="483.2" y1="56.0" x2="483.2" y2="64.0" stroke="#6b7079" stroke-width="1.6"/>
+<path d="M 392.6 60.0 L 398.6 55.0 L 404.6 60.0 L 398.6 65.0 z" fill="#6b7079"/>
+<text x="894.0" y="61.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD −0.55 h（−1.23 到 0.13）</text>
+<text x="894.0" y="75.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.111　I² = 82.4%</text>
+<text x="0.0" y="109.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">術後 24 小時嗎啡總用量</text>
+<text x="0.0" y="123.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（毫克；ESPB 減 PVB）</text>
+<line x1="268" y1="116.0" x2="666" y2="116.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="307.8" y1="116.0" x2="307.8" y2="120.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="307.8" y="131.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−2.0</text>
+<line x1="387.4" y1="116.0" x2="387.4" y2="120.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="387.4" y="131.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="467.0" y1="116.0" x2="467.0" y2="120.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="131.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="546.6" y1="116.0" x2="546.6" y2="120.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="546.6" y="131.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="626.2" y1="116.0" x2="626.2" y2="120.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="626.2" y="131.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">2.0</text>
+<line x1="467.0" y1="101.0" x2="467.0" y2="116.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="452.7" y1="108.0" x2="644.5" y2="108.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="452.7" y1="104.0" x2="452.7" y2="112.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="644.5" y1="104.0" x2="644.5" y2="112.0" stroke="#6b7079" stroke-width="1.6"/>
+<path d="M 543.0 108.0 L 549.0 103.0 L 555.0 108.0 L 549.0 113.0 z" fill="#6b7079"/>
+<text x="894.0" y="109.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD +1.03 mg（−0.18 到 2.23）</text>
+<text x="894.0" y="123.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.094　I² = 90.6%</text>
+<text x="0.0" y="157.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">手術時間</text>
+<text x="0.0" y="171.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（小時；ESPB 減 PVB）</text>
+<line x1="268" y1="164.0" x2="666" y2="164.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="268.0" y1="164.0" x2="268.0" y2="168.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="268.0" y="179.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.10</text>
+<line x1="367.5" y1="164.0" x2="367.5" y2="168.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="367.5" y="179.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.05</text>
+<line x1="467.0" y1="164.0" x2="467.0" y2="168.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="179.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.00</text>
+<line x1="566.5" y1="164.0" x2="566.5" y2="168.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="566.5" y="179.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.05</text>
+<line x1="666.0" y1="164.0" x2="666.0" y2="168.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="666.0" y="179.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.10</text>
+<line x1="467.0" y1="149.0" x2="467.0" y2="164.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="327.7" y1="156.0" x2="467.0" y2="156.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="327.7" y1="152.0" x2="327.7" y2="160.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<line x1="467.0" y1="152.0" x2="467.0" y2="160.0" stroke="#8a6a1f" stroke-width="1.6"/>
+<path d="M 381.4 156.0 L 387.4 151.0 L 393.4 156.0 L 387.4 161.0 z" fill="#8a6a1f"/>
+<text x="894.0" y="157.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD −0.04 h ＝ −2.4 分鐘（−0.07 到 0.00）</text>
+<text x="894.0" y="171.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.023　I² = 0%（本頁換算分鐘）</text>
+<text x="0.0" y="205.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">術中 fentanyl 用量</text>
+<text x="0.0" y="219.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（微克；ESPB 減 PVB）★數值互相矛盾</text>
+<line x1="268" y1="212.0" x2="666" y2="212.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="268.0" y1="212.0" x2="268.0" y2="216.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="268.0" y="227.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−10.0</text>
+<line x1="367.5" y1="212.0" x2="367.5" y2="216.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="367.5" y="227.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−5.0</text>
+<line x1="467.0" y1="212.0" x2="467.0" y2="216.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="227.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="566.5" y1="212.0" x2="566.5" y2="216.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="566.5" y="227.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">5.0</text>
+<line x1="666.0" y1="212.0" x2="666.0" y2="216.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="666.0" y="227.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">10.0</text>
+<line x1="467.0" y1="197.0" x2="467.0" y2="212.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="314.4" y1="204.0" x2="487.7" y2="204.0" stroke="#c9a86a" stroke-width="1.6"/>
+<line x1="314.4" y1="200.0" x2="314.4" y2="208.0" stroke="#c9a86a" stroke-width="1.6"/>
+<line x1="487.7" y1="200.0" x2="487.7" y2="208.0" stroke="#c9a86a" stroke-width="1.6"/>
+<path d="M 395.1 204.0 L 401.1 199.0 L 407.1 204.0 L 401.1 209.0 z" fill="#c9a86a"/>
+<text x="894.0" y="205.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">原文寫 MD 3.31（−7.67 到 1.04）</text>
+<text x="894.0" y="219.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.136　I² = 7.6%</text>
+<text x="0.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">NRS 疼痛分數・活動時 24 小時</text>
+<text x="0.0" y="267.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（0−10 分）</text>
+<line x1="268" y1="260.0" x2="666" y2="260.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="324.9" y1="260.0" x2="324.9" y2="264.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="324.9" y="275.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="395.9" y1="260.0" x2="395.9" y2="264.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="395.9" y="275.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="467.0" y1="260.0" x2="467.0" y2="264.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="275.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="538.1" y1="260.0" x2="538.1" y2="264.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="538.1" y="275.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="609.1" y1="260.0" x2="609.1" y2="264.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="609.1" y="275.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="467.0" y1="245.0" x2="467.0" y2="260.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="430.0" y1="252.0" x2="596.4" y2="252.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="430.0" y1="248.0" x2="430.0" y2="256.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="596.4" y1="248.0" x2="596.4" y2="256.0" stroke="#6b7079" stroke-width="1.6"/>
+<path d="M 507.9 252.0 L 513.9 247.0 L 519.9 252.0 L 513.9 257.0 z" fill="#6b7079"/>
+<text x="894.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD +0.33（−0.26 到 0.91）</text>
+<text x="894.0" y="267.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">原文標 p = 0.923　I² = 73.1%</text>
+<text x="0.0" y="301.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">NRS 疼痛分數・休息時 24 小時</text>
+<text x="0.0" y="315.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（0−10 分）</text>
+<line x1="268" y1="308.0" x2="666" y2="308.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="324.9" y1="308.0" x2="324.9" y2="312.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="324.9" y="323.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="395.9" y1="308.0" x2="395.9" y2="312.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="395.9" y="323.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="467.0" y1="308.0" x2="467.0" y2="312.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="323.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="538.1" y1="308.0" x2="538.1" y2="312.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="538.1" y="323.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="609.1" y1="308.0" x2="609.1" y2="312.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="609.1" y="323.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="467.0" y1="293.0" x2="467.0" y2="308.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="427.2" y1="300.0" x2="502.5" y2="300.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="427.2" y1="296.0" x2="427.2" y2="304.0" stroke="#2f6b62" stroke-width="1.6"/>
+<line x1="502.5" y1="296.0" x2="502.5" y2="304.0" stroke="#2f6b62" stroke-width="1.6"/>
+<path d="M 459.6 300.0 L 465.6 295.0 L 471.6 300.0 L 465.6 305.0 z" fill="#2f6b62"/>
+<text x="894.0" y="301.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD −0.01（−0.28 到 0.25）</text>
+<text x="894.0" y="315.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.923　I² = 0%</text>
+<text x="0.0" y="349.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">VAS 疼痛分數・活動時 24 小時</text>
+<text x="0.0" y="363.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（0−10 分）</text>
+<line x1="268" y1="356.0" x2="666" y2="356.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="280.4" y1="356.0" x2="280.4" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="280.4" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="342.6" y1="356.0" x2="342.6" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="342.6" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="404.8" y1="356.0" x2="404.8" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="404.8" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="467.0" y1="356.0" x2="467.0" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="529.2" y1="356.0" x2="529.2" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="529.2" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="591.4" y1="356.0" x2="591.4" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="591.4" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="653.6" y1="356.0" x2="653.6" y2="360.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="653.6" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.5</text>
+<line x1="467.0" y1="341.0" x2="467.0" y2="356.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="365.0" y1="348.0" x2="629.9" y2="348.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="365.0" y1="344.0" x2="365.0" y2="352.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="629.9" y1="344.0" x2="629.9" y2="352.0" stroke="#6b7079" stroke-width="1.6"/>
+<path d="M 492.1 348.0 L 498.1 343.0 L 504.1 348.0 L 498.1 353.0 z" fill="#6b7079"/>
+<text x="894.0" y="349.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD +0.25（−0.82 到 1.31）</text>
+<text x="894.0" y="363.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.652　I² = 96.0%</text>
+<text x="0.0" y="397.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#1b1c1e" text-anchor="start" font-weight="600">VAS 疼痛分數・休息時 24 小時</text>
+<text x="0.0" y="411.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">（0−10 分）</text>
+<line x1="268" y1="404.0" x2="666" y2="404.0" stroke="#e3e0da" stroke-width="1"/>
+<line x1="280.4" y1="404.0" x2="280.4" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="280.4" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.5</text>
+<line x1="342.6" y1="404.0" x2="342.6" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="342.6" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−1.0</text>
+<line x1="404.8" y1="404.0" x2="404.8" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="404.8" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">−0.5</text>
+<line x1="467.0" y1="404.0" x2="467.0" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="467.0" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.0</text>
+<line x1="529.2" y1="404.0" x2="529.2" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="529.2" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="591.4" y1="404.0" x2="591.4" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="591.4" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.0</text>
+<line x1="653.6" y1="404.0" x2="653.6" y2="408.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="653.6" y="419.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="9.5" fill="#6b7079" text-anchor="middle" font-weight="400">1.5</text>
+<line x1="467.0" y1="389.0" x2="467.0" y2="404.0" stroke="#6b7079" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="387.4" y1="396.0" x2="532.9" y2="396.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="387.4" y1="392.0" x2="387.4" y2="400.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="532.9" y1="392.0" x2="532.9" y2="400.0" stroke="#6b7079" stroke-width="1.6"/>
+<path d="M 454.8 396.0 L 460.8 391.0 L 466.8 396.0 L 460.8 401.0 z" fill="#6b7079"/>
+<text x="894.0" y="397.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="end" font-weight="400">MD −0.05（−0.64 到 0.53）</text>
+<text x="894.0" y="411.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">p = 0.858　I² = 93.2%</text>
+<text x="0.0" y="452.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">菱形＝合併平均差（原文以 R metafor 隨機／固定效應模型合併），橫線＝95% 信賴區間，虛線＝無差異（MD = 0）。負值＝ESPB 較低。</text>
+<text x="0.0" y="466.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">★ 術中 fentanyl 一列：原文正文寫「MD 3.31; 95% CI −7.67 to 1.04」，點估計落在信賴區間之外，兩者互相矛盾。本頁依區間中心推定原意應為 −3.31，圖上以此位置繪製，並保留原文字樣。</text>
+<text x="0.0" y="480.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">★ NRS 活動時 24 小時一列：原文標 p = 0.9233，與其信賴區間（−0.26 到 0.91）不相容，且與 NRS 休息時的 p 值完全相同，疑為謄寫錯誤。本頁照錄不改。</text>
+<text x="0.0" y="494.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">原文未提供任何一項結果的「各研究個別效果值」（僅以森林圖影像呈現），故本頁不重繪個別研究、也不推估。</text>
+</svg>
+</div><div class="cap"><b>數據來源</b>：原文 Results 各段落所報之合併平均差、95% 信賴區間、p 值與 I²，逐項抄錄（對應原文 Fig. 3a、4a、5a、6、7、8、9、10）。手術時間的「2.4 分鐘」為原文自行換算，本頁照錄；本頁另自行驗算：0.04 小時 &times; 60 = 2.4 分鐘 ✓。<br><b>怎麼看</b>：八列全部都有一個共同特徵——<b>菱形貼著虛線、信賴區間橫跨無效線</b>。唯一的例外是第三列「手術時間」，而它的區間上界正好落在 0.00，等於剛好擦邊。第二列的嗎啡用量（ESPB 多 1.03 mg）與第五列的 NRS 活動時分數（ESPB 高 0.33 分）雖然不顯著，但<b>方向都偏向 PVB</b>，值得留意。<br><b>陷阱（三個）</b>：<br>① <b>術中 fentanyl 那一列，原文的數字自相矛盾</b>：正文寫「MD 3.31; 95% CI −7.67 to 1.04」——點估計 3.31 根本不在區間 (−7.67, 1.04) 之內。本頁依區間中心推定原意為 −3.31 並據以繪圖，但同時保留原文字樣，讓讀者自行判斷。<br>② <b>NRS 活動時 24 小時的 p 值可疑</b>：原文標 p = 0.9233，卻與 NRS 休息時那列的 p 值一字不差；而其信賴區間 (−0.26, 0.91) 幾乎要達到顯著，p 值不可能是 0.92。極可能是謄寫時複製錯誤。<br>③ <b>「MD = 0.33 分」這種效果量本身沒有臨床意義</b>：0−10 分疼痛量表的最小臨床重要差異一般認為是 1.0−1.3 分。本篇所有疼痛分數的信賴區間上下界都在 &plusmn;1.3 分之內，換句話說<b>即使真有差別，也小到病人感覺不出來</b>。</div></div>
+<div class="fig"><div class="svgbox">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 203" width="100%" role="img" style="display:block;background:#fff">
+<text x="0.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="13.5" fill="#1b1c1e" text-anchor="start" font-weight="700">圖 B-3　二分類結果的合併風險比</text>
+<line x1="427.0" y1="58" x2="427.0" y2="139" stroke="#6b7079" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="228.0" y1="56" x2="228.0" y2="61" stroke="#e3e0da" stroke-width="1"/>
+<text x="228.0" y="46.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.25</text>
+<line x1="327.5" y1="56" x2="327.5" y2="61" stroke="#e3e0da" stroke-width="1"/>
+<text x="327.5" y="46.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="427.0" y1="56" x2="427.0" y2="61" stroke="#e3e0da" stroke-width="1"/>
+<text x="427.0" y="46.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400">1</text>
+<line x1="526.5" y1="56" x2="526.5" y2="61" stroke="#e3e0da" stroke-width="1"/>
+<text x="526.5" y="46.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400">2</text>
+<line x1="626.0" y1="56" x2="626.0" y2="61" stroke="#e3e0da" stroke-width="1"/>
+<text x="626.0" y="46.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="middle" font-weight="400">4</text>
+<line x1="228" y1="56" x2="626" y2="56" stroke="#e3e0da" stroke-width="1"/>
+<text x="626.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#6b7079" text-anchor="end" font-weight="400">風險比 Risk ratio（對數刻度）</text>
+<text x="0.0" y="79.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#8a4a3d" text-anchor="start" font-weight="700">ESPB 相對於 PVB</text>
+<text x="0.0" y="107.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">需要救援性止痛的人數</text>
+<line x1="407.0" y1="103.0" x2="489.0" y2="103.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="407.0" y1="99.0" x2="407.0" y2="107.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="489.0" y1="99.0" x2="489.0" y2="107.0" stroke="#6b7079" stroke-width="1.6"/>
+<rect x="443.3" y="98.0" width="10.0" height="10.0" fill="#6b7079"/>
+<text x="894.0" y="107.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#43464d" text-anchor="end" font-weight="400">RR 1.16（0.87−1.54）p = 0.314　I² = 51.3%</text>
+<text x="0.0" y="134.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">術後噁心嘔吐 PONV</text>
+<line x1="299.0" y1="130.0" x2="485.2" y2="130.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="299.0" y1="126.0" x2="299.0" y2="134.0" stroke="#6b7079" stroke-width="1.6"/>
+<line x1="485.2" y1="126.0" x2="485.2" y2="134.0" stroke="#6b7079" stroke-width="1.6"/>
+<rect x="388.2" y="125.0" width="10.0" height="10.0" fill="#6b7079"/>
+<text x="894.0" y="134.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#43464d" text-anchor="end" font-weight="400">RR 0.79（0.41−1.50）p = 0.472　I² = 0%</text>
+<text x="0.0" y="169.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">方塊＝合併點估計，橫線＝95% 信賴區間，虛線＝無效線（RR = 1）。兩項結果的信賴區間都跨過 1，代表未觀察到差異。</text>
+<text x="0.0" y="183.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">注意「未觀察到差異」不等於「兩者相同」：救援止痛的區間上界 1.54，仍容許 ESPB 多出五成的救援需求。</text>
+<text x="0.0" y="197.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">數值抄錄自原文 Results（對應原文補充圖 S23、S24）；原文未列各研究的事件數，本頁不重繪個別研究。</text>
+</svg>
+</div><div class="cap"><b>數據來源</b>：原文 Results「Number of patients requiring rescue analgesia」與「PONV rates」段落（對應原文補充圖 S23、S24）。<br><b>怎麼看</b>：兩項都無差異。PONV 的 I² = 0%，代表 19 篇（實際納入此分析者較少）在這一點上高度一致——這是全篇最可信的一個「沒有差別」。<br><b>陷阱</b>：救援止痛的 I² = 51.3%，屬中度異質；且原文<b>未列出各研究的事件數</b>，因此無法自行驗算，也無法判斷這個 RR 1.16 是被哪一兩篇研究主導。本頁不重繪個別研究、不推估任何事件數。</div></div>
+</section>
+<section id="overview">
+<h2>全部結果總覽 <span class="zh">10 項合併結果</span></h2>
+<div class="tbl-wrap"><table class="wide t7">
+<thead><tr><th>結果（單位）</th><th>效果量</th><th>95% CI</th><th>p</th><th>I²</th><th>異質性處理與次群組</th><th>判定</th></tr></thead>
+<tbody>
+<tr><td>鎮痛持續時間（小時）</td><td class="num">MD −0.55</td><td class="num">−1.23 到 0.13</td><td class="num">0.111</td><td class="num">82.4%</td><td>leave-one-out：排除 Amr 2024 後降至 <b>48.7%</b>；漏斗圖不對稱，疑有發表偏差；依給藥方式的次群組有顯著差異（單次注射最短）</td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td>術後 24 小時嗎啡總用量（mg）</td><td class="num">MD +1.03</td><td class="num">−0.18 到 2.23</td><td class="num">0.094</td><td class="num">90.6%</td><td>leave-one-out <b>無法消除</b>異質性；漏斗圖不對稱；bupivacaine、0.25% 濃度、單點單次注射之次群組用量較低</td><td><span class="win neutral">無差異（方向偏 PVB）</span></td></tr>
+<tr><td><b>手術時間（小時）</b></td><td class="num">MD −0.04<br><span style="font-size:11px">＝ −2.4 分鐘</span></td><td class="num">−0.07 到 0.00</td><td class="num"><span class="sig">0.023</span></td><td class="num">0%</td><td>次群組（藥物、濃度、給藥方式）皆無差異；漏斗圖不對稱</td><td><span class="win caution">顯著但臨床無意義</span></td></tr>
+<tr><td>術中 fentanyl 用量（&micro;g）★</td><td class="num">原文寫 MD 3.31<br><span style="font-size:11px;color:#8a6a1f">與區間不符</span></td><td class="num">−7.67 到 1.04</td><td class="num">0.136</td><td class="num">7.6%</td><td class="na">原文未做次群組分析</td><td><span class="win caution">原文數值矛盾</span></td></tr>
+<tr><td>NRS・活動時 24 小時（0−10）★</td><td class="num">MD +0.33</td><td class="num">−0.26 到 0.91</td><td class="num"><span style="color:#8a6a1f">原文標 0.923</span></td><td class="num">73.1%</td><td>6、12 小時亦無差異（12 小時有顯著異質性）</td><td><span class="win caution">p 值疑為謄寫錯誤</span></td></tr>
+<tr><td>NRS・休息時 24 小時（0−10）</td><td class="num">MD −0.01</td><td class="num">−0.28 到 0.25</td><td class="num">0.923</td><td class="num">0%</td><td>6、12 小時亦無差異（12 小時有顯著異質性）</td><td><span class="win neutral">無差異（一致性高）</span></td></tr>
+<tr><td>VAS・活動時 24 小時（0−10）</td><td class="num">MD +0.25</td><td class="num">−0.82 到 1.31</td><td class="num">0.652</td><td class="num">96.0%</td><td>bupivacaine 次群組分數顯著較低；單點單次注射分數較低</td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td>VAS・休息時 24 小時（0−10）</td><td class="num">MD −0.05</td><td class="num">−0.64 到 0.53</td><td class="num">0.858</td><td class="num">93.2%</td><td>bupivacaine 次群組分數顯著較低；濃度與給藥方式無差異</td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td>需要救援止痛的人數</td><td class="num">RR 1.16</td><td class="num">0.87 到 1.54</td><td class="num">0.314</td><td class="num">51.3%</td><td class="na">原文未報告次群組</td><td><span class="win neutral">無差異</span></td></tr>
+<tr><td>術後噁心嘔吐 PONV</td><td class="num">RR 0.79</td><td class="num">0.41 到 1.50</td><td class="num">0.472</td><td class="num">0%</td><td class="na">原文未報告次群組</td><td><span class="win neutral">無差異（一致性高）</span></td></tr>
+</tbody></table></div>
+<div class="fig" style="border:0;padding:0;background:none"><div class="cap" style="border-top:0;padding-top:0">
+  <b>數據來源</b>：全表逐項抄錄自原文 Results；「異質性處理與次群組」一欄濃縮自原文各段落與補充圖 S1−S22 的文字描述。<b>原文未列各研究的個別效果值</b>，故本頁無法、也不會自行重繪任何一項的個別研究森林圖。<br>
+  <b>怎麼看</b>：10 項結果、9 項無差異，唯一顯著的那一項是 2.4 分鐘的手術時間——這幾乎就是全篇的全部內容。作者由此推論「ESPB 比較好做」，但這是<b>從手術時間反推操作難易度</b>的間接論證：手術時間包含了阻斷以外的一切，2.4 分鐘的差別可以來自任何原因。<br>
+  <b>陷阱</b>：<b>四個 I² &gt; 82% 的結果，都不應該只看合併值</b>。當 I² = 96% 時，合併平均差是在把「說 ESPB 好」和「說 PVB 好」的研究硬平均起來，得到的 0.25 分是統計產物，不是臨床答案。真正該問的是「在什麼條件下 ESPB 不遜於 PVB」——原文的次群組分析提供了一個線索：<b>bupivacaine、0.25% 濃度、單點單次注射</b>這幾個次群組表現一致較好。
+</div></div>
+</section>
+<section id="raw">
+<h2>各研究原始數據 <span class="zh">族群基線逐格抄錄＋本頁自行重繪</span></h2>
+<div class="tbl-wrap"><table class="wide t10">
+<thead><tr><th>研究</th><th>組別</th><th>n</th><th>年齡（歲）<br>平均（SD）</th><th>身高（cm）<br>平均（SD）</th><th>體重（kg）<br>平均（SD）</th><th>BMI（kg/m²）<br>平均（SD）</th><th>ASA I</th><th>ASA II</th><th>手術時間（分）<br>平均（SD）</th></tr></thead>
+<tbody>
+<tr><td>Adlan 2023</td><td>ESPB / PVB</td><td class="num">35 / 35</td><td class="num">46.49 (12) / 49.17 (9.69)</td><td class="num">169 (5) / 169 (6)</td><td class="num">85.49 (12.7) / 83.2 (14.36)</td><td class="num">30.15 (5.11) / 29.21 (5.75)</td><td class="num">0 / 0</td><td class="num">16 / 18</td><td class="num">147 (18.16) / 149.86 (19.5)</td></tr>
+<tr><td>Agarwal 2021</td><td>ESPB / PVB</td><td class="num">40 / 40</td><td class="num">48 (11.89) / 51.32 (10.12)</td><td class="num">151.0 (7.72) / 152.8 (4.18)</td><td class="num">61.3 (10.92) / 62.0 (7.77)</td><td class="num">27.41 (4.25) / 26.93 (3.23)</td><td class="num">25 / 24</td><td class="num">15 / 16</td><td class="num">120.87 (27.50) / 113 (24.30)</td></tr>
+<tr><td>Amr 2024</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有對照組 35 人</span></td><td class="num">35 / 35</td><td class="num">43.63 (9.89) / 42 (8.71)</td><td class="num">165.27 (5.13) / 164.53 (5.23)</td><td class="num">72.13 (7.65) / 72.67 (7.59)</td><td class="num">26.56 (3.93) / 27.00 (3.97)</td><td class="num">24 / 21</td><td class="num">11 / 14</td><td class="num">96.09 (10.65) / 98.54 (11.28)</td></tr>
+<tr><td>But 2024 ★</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有對照組 24 人</span></td><td class="num">24 / 30</td><td class="num" colspan="1"><span class="na">原文未列數值</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td></tr>
+<tr><td>El Ghamry 2019</td><td>ESPB / PVB</td><td class="num">35 / 35</td><td class="num">37.7 (12.9) / 41 (11.8)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">28.4 (5.4) / 27.7 (5.4)</td><td class="num">22 / 20</td><td class="num">13 / 15</td><td class="num">170 (8.2) / 173.2 (8.7)</td></tr>
+<tr><td>Elewa 2022</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有對照組 30 人</span></td><td class="num">30 / 30</td><td class="num">44.9 (8.1) / 46.6 (7.9)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">29.3 (3.3) / 28.7 (3.5)</td><td class="num">23 / 24</td><td class="num">7 / 6</td><td class="num">138 (18) / 138 (24)</td></tr>
+<tr><td>Eskandr 2022</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有 PECS 20、對照 20</span></td><td class="num">20 / 20</td><td class="num">46.00 (8.68) / 45.95 (10.70)</td><td class="num">166 (5) / 166 (5)</td><td class="num">78.65 (6.88) / 78.20 (9.06)</td><td class="num">29.34 (3.15) / 28.20 (2.76)</td><td class="num">10 / 6</td><td class="num">10 / 14</td><td class="num">95.50 (17.61) / 94.00 (14.92)</td></tr>
+<tr><td>Gurkan 2020</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有對照組 25 人</span></td><td class="num">25 / 25</td><td class="num">49.08 (10.56) / 49.4 (7.25)</td><td class="num">160.8 (4.64) / 159.92 (4.18)</td><td class="num">68.2 (8.76) / 71.24 (8.61)</td><td class="num">26.4 (3.39) / 27.82 (2.85)</td><td class="num">10 / 15</td><td class="num">15 / 10</td><td class="num">89.4 (22.83) / 82.2 (22.54)</td></tr>
+<tr><td>Hu 2021</td><td>ESPB / PVB</td><td class="num">52 / 52</td><td class="num">48.36 (5.23) / 48.58 (5.10)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">28 / 30</td><td class="num">24 / 22</td><td class="num"><span class="na">未列</span></td></tr>
+<tr><td>Jayakrishnan 2023</td><td>ESPB / PVB</td><td class="num">30 / 30</td><td class="num">49.93 (13.45) / 52.94 (13.45)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">26.89 (3.80) / 26.01 (2.82)</td><td class="num">13 / 10</td><td class="num">12 / 13<br><span style="font-size:11px">ASA III：5 / 7</span></td><td class="num">146.5 (22.17) / 149.33 (24.98)</td></tr>
+<tr><td>Kumar 2025 ★</td><td>ESPB / PVB</td><td class="num">30 / 30</td><td class="num"><span class="na">原文未列數值</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td></tr>
+<tr><td>Moustafa 2020 ★</td><td>ESPB / PVB</td><td class="num">45 / 45</td><td class="num"><span class="na">原文未列數值</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td></tr>
+<tr><td>Nawar 2024</td><td>ESPB / PVB<br><span style="font-size:11px;color:#6b7079">另有 PECS II 50 人</span></td><td class="num">50 / 50</td><td class="num">50.9 (7.9) / 52.1 (8.4)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">29.6 (1.9) / 29.5 (1.8)</td><td class="num">8 / 8</td><td class="num">42 / 42</td><td class="num">141.0 (13.4) / 141.3 (12.6)</td></tr>
+<tr><td>Santonastaso 2024</td><td>ESPB / PVB</td><td class="num">41 / 41</td><td class="num">68 (11.1) / 68.1 (14.6)</td><td class="num"><span class="na">未列</span></td><td class="num"><span class="na">未列</span></td><td class="num">25.9 (6.4) / 24.5 (5.3)</td><td class="num">3 / 8</td><td class="num">25 / 18<br><span style="font-size:11px">ASA III：12 / 15</span></td><td class="num"><span class="na">未列</span></td></tr>
+<tr><td>Sayed 2024</td><td>ESPB / PVB</td><td class="num">20 / 20</td><td class="num">49.95 (13.15) / 45.35 (11.03)</td><td class="num">161.70 (6.33) / 166.15 (8.44)</td><td class="num">75.15 (12.24) / 75.85 (10.16)</td><td class="num">28.86 (5.24) / 27.69 (4.63)</td><td class="num">0 / 0</td><td class="num">13 / 15<br><span style="font-size:11px">ASA III：7 / 5</span></td><td class="num">73.30 (10.15) / 77.65 (10.20)</td></tr>
+<tr><td>Sharma 2023</td><td>ESPB / PVB</td><td class="num">33 / 33</td><td class="num">49.09 (11.90) / 50.76 (10.24)</td><td class="num">152.68 (5.64) / 152.14 (4.78)</td><td class="num">59.94 (10.76) / 61.89 (12.22)</td><td class="num">25.71 (4.37) / 26.19 (6.58)</td><td class="num">23 / 25</td><td class="num">10 / 8</td><td class="num">155.06 (38.26) / 161.45 (33.97)</td></tr>
+<tr><td>Sivrikoz 2022</td><td>ESPB / PVB</td><td class="num">42 / 41</td><td class="num">50.3 (7.8) / 52.4 (8.6)</td><td class="num">161.4 (5.3) / 163.2 (4.3)</td><td class="num">77.3 (10.1) / 76.1 (10)</td><td class="num">29.8 (4.5) / 28.6 (3.9)</td><td class="num">15 / 17</td><td class="num">19 / 15<br><span style="font-size:11px">ASA III：17 / 9</span></td><td class="num">97 (13) / 94 (12)</td></tr>
+<tr><td>Swisher 2020</td><td>ESPB / PVB</td><td class="num">50 / 50</td><td class="num">55.43 (12.06) / 55.43 (18.17)</td><td class="num">161 (6.11) / 163.33 (6.87)</td><td class="num">70.93 (17.17) / 67.90 (10.69)</td><td class="num">27.23 (5.80) / 25.7 (3.97)</td><td class="num">0 / 0</td><td class="num">0 / 0</td><td class="num">74.93 (32.21) / 75.73 (48.70)</td></tr>
+<tr><td>Wittayapairoj 2022</td><td>ESPB / PVB</td><td class="num">22 / 22</td><td class="num">56.1 (9.1) / 54.2 (9.8)</td><td class="num"><span class="na">未列</span></td><td class="num">61.1 (10.5) / 59.7 (8.9)</td><td class="num">24.3 (3.8) / 24.5 (3.4)</td><td class="num">4 / 5</td><td class="num">18 / 17</td><td class="num">156.6 (56.0) / 181.6 (78.1)</td></tr>
+</tbody></table></div>
+<div class="fig" style="border:0;padding:0;background:none"><div class="cap" style="border-top:0;padding-top:0">
+  <b>數據來源</b>：原文 Table 2 全表逐格抄錄；原文以「-」表示者，本頁一律標為「<b>原文未列數值</b>」，<b>不做任何推估</b>。<br>
+  <b>怎麼看</b>：★ 三篇（But 2024、Kumar 2025、Moustafa 2020）<b>整列基線都是空的</b>，也就是這三篇的 60 + 90 + 54 = 204 位病人，在這份統合分析裡連年齡、BMI、ASA 都無從得知。<br>
+  <b>陷阱（兩個）</b>：<br>
+  ① <b>身高欄的數值與族群描述不太相稱</b>——Adlan 2023、Amr 2024、Eskandr 2022 的族群都明訂為「接受 MRM 的女性」，兩組平均身高卻同為 169 / 169、165 / 165、166 / 166 cm，且兩組數值一模一樣。同一列的其他變項（年齡、體重、BMI）兩組明顯不同，唯獨身高完全相同，較可能是原始論文的表格填寫或本篇資料萃取有誤。本頁照錄，但提醒不宜直接引用這幾格。<br>
+  ② <b>Swisher 2020 的 ASA 欄全部是 0</b>（I、II、III 都是 0），與「50 位接受乳癌手術的成人」不相容——這是原文表格中的空白被填成 0，而非真的沒有任何一位病人有 ASA 分級。閱讀時不可把它當成有效數值。<br>
+  這兩點都不是本頁的推測，而是<b>把表格逐格讀完後必然會發現的內部矛盾</b>，也說明這份統合分析的資料萃取品質有限。
+</div></div>
+
+<div class="fig"><div class="svgbox">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 388" width="100%" role="img" style="display:block;background:#fff">
+<text x="0.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="13.5" fill="#1b1c1e" text-anchor="start" font-weight="700">圖 B-4　19 篇納入試驗的各組人數（逐格抄自原文 Table 2）</text>
+<line x1="52" y1="246.0" x2="886" y2="246.0" stroke="#e3e0da" stroke-width="1"/>
+<text x="44.0" y="249.5" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">0</text>
+<line x1="52" y1="217.7" x2="886" y2="217.7" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="221.2" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">10</text>
+<line x1="52" y1="189.3" x2="886" y2="189.3" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="192.8" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">20</text>
+<line x1="52" y1="161.0" x2="886" y2="161.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="164.5" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">30</text>
+<line x1="52" y1="132.7" x2="886" y2="132.7" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="136.2" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">40</text>
+<line x1="52" y1="104.3" x2="886" y2="104.3" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="107.8" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">50</text>
+<line x1="52" y1="76.0" x2="886" y2="76.0" stroke="#f0eeea" stroke-width="1"/>
+<text x="44.0" y="79.5" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="end" font-weight="400">60</text>
+<text x="0.0" y="64.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">人數</text>
+<rect x="52" y="30" width="11" height="11" fill="#8a4a3d"/>
+<text x="68.0" y="40.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400">ESPB 組</text>
+<rect x="237" y="30" width="11" height="11" fill="#2f6b62"/>
+<text x="253.0" y="40.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400">PVB 組</text>
+<rect x="422" y="30" width="11" height="11" fill="#c9b8a8"/>
+<text x="438.0" y="40.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11" fill="#43464d" text-anchor="start" font-weight="400">其他組別（對照／PECS／SAPB）</text>
+<rect x="58.9" y="146.8" width="13.0" height="99.2" fill="#8a4a3d"/>
+<rect x="75.9" y="146.8" width="13.0" height="99.2" fill="#2f6b62"/>
+<g transform="translate(76.9,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Adlan 2023</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="102.8" y="132.7" width="13.0" height="113.3" fill="#8a4a3d"/>
+<rect x="119.8" y="132.7" width="13.0" height="113.3" fill="#2f6b62"/>
+<g transform="translate(120.8,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Agarwal 2021</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">India</text></g>
+<rect x="146.7" y="146.8" width="13.0" height="99.2" fill="#8a4a3d"/>
+<rect x="163.7" y="146.8" width="13.0" height="99.2" fill="#2f6b62"/>
+<rect x="146.7" y="137.8" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="161.7" y="133.8" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+35</text>
+<g transform="translate(164.7,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Amr 2024</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="190.6" y="178.0" width="13.0" height="68.0" fill="#8a4a3d"/>
+<rect x="207.6" y="161.0" width="13.0" height="85.0" fill="#2f6b62"/>
+<rect x="190.6" y="169.0" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="205.6" y="165.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+24</text>
+<g transform="translate(208.6,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">But 2024</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Türkiye</text></g>
+<rect x="234.5" y="146.8" width="13.0" height="99.2" fill="#8a4a3d"/>
+<rect x="251.5" y="146.8" width="13.0" height="99.2" fill="#2f6b62"/>
+<g transform="translate(252.5,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">El Ghamry 2019</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="278.4" y="161.0" width="13.0" height="85.0" fill="#8a4a3d"/>
+<rect x="295.4" y="161.0" width="13.0" height="85.0" fill="#2f6b62"/>
+<rect x="278.4" y="152.0" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="293.4" y="148.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+30</text>
+<g transform="translate(296.4,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Elewa 2022</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="322.3" y="189.3" width="13.0" height="56.7" fill="#8a4a3d"/>
+<rect x="339.3" y="189.3" width="13.0" height="56.7" fill="#2f6b62"/>
+<rect x="322.3" y="180.3" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="337.3" y="176.3" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+40</text>
+<g transform="translate(340.3,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Eskandr 2022</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="366.2" y="175.2" width="13.0" height="70.8" fill="#8a4a3d"/>
+<rect x="383.2" y="175.2" width="13.0" height="70.8" fill="#2f6b62"/>
+<rect x="366.2" y="166.2" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="381.2" y="162.2" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+25</text>
+<g transform="translate(384.2,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Gurkan 2020</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Türkiye</text></g>
+<rect x="410.1" y="98.7" width="13.0" height="147.3" fill="#8a4a3d"/>
+<rect x="427.1" y="98.7" width="13.0" height="147.3" fill="#2f6b62"/>
+<g transform="translate(428.1,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Hu 2021</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">China</text></g>
+<rect x="454.0" y="161.0" width="13.0" height="85.0" fill="#8a4a3d"/>
+<rect x="471.0" y="161.0" width="13.0" height="85.0" fill="#2f6b62"/>
+<g transform="translate(472.0,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Jayakrishnan 2023</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">India</text></g>
+<rect x="497.9" y="161.0" width="13.0" height="85.0" fill="#8a4a3d"/>
+<rect x="514.9" y="161.0" width="13.0" height="85.0" fill="#2f6b62"/>
+<g transform="translate(515.9,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Kumar 2025</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">India</text></g>
+<rect x="541.8" y="118.5" width="13.0" height="127.5" fill="#8a4a3d"/>
+<rect x="558.8" y="118.5" width="13.0" height="127.5" fill="#2f6b62"/>
+<g transform="translate(559.8,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Moustafa 2020</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="585.7" y="104.3" width="13.0" height="141.7" fill="#8a4a3d"/>
+<rect x="602.7" y="104.3" width="13.0" height="141.7" fill="#2f6b62"/>
+<rect x="585.7" y="95.3" width="30.0" height="4" fill="#c9b8a8"/>
+<text x="600.7" y="91.3" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="middle" font-weight="400">+50</text>
+<g transform="translate(603.7,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Nawar 2024</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="629.6" y="129.8" width="13.0" height="116.2" fill="#8a4a3d"/>
+<rect x="646.6" y="129.8" width="13.0" height="116.2" fill="#2f6b62"/>
+<g transform="translate(647.6,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Santonastaso 2024</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Italy</text></g>
+<rect x="673.5" y="189.3" width="13.0" height="56.7" fill="#8a4a3d"/>
+<rect x="690.5" y="189.3" width="13.0" height="56.7" fill="#2f6b62"/>
+<g transform="translate(691.5,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Sayed 2024</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Egypt</text></g>
+<rect x="717.4" y="152.5" width="13.0" height="93.5" fill="#8a4a3d"/>
+<rect x="734.4" y="152.5" width="13.0" height="93.5" fill="#2f6b62"/>
+<g transform="translate(735.4,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Sharma 2023</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">India</text></g>
+<rect x="761.3" y="127.0" width="13.0" height="119.0" fill="#8a4a3d"/>
+<rect x="778.3" y="129.8" width="13.0" height="116.2" fill="#2f6b62"/>
+<g transform="translate(779.3,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Sivrikoz 2022</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Türkiye</text></g>
+<rect x="805.2" y="104.3" width="13.0" height="141.7" fill="#8a4a3d"/>
+<rect x="822.2" y="104.3" width="13.0" height="141.7" fill="#2f6b62"/>
+<g transform="translate(823.2,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Swisher 2020</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">USA</text></g>
+<rect x="849.1" y="183.7" width="13.0" height="62.3" fill="#8a4a3d"/>
+<rect x="866.1" y="183.7" width="13.0" height="62.3" fill="#2f6b62"/>
+<g transform="translate(867.1,255) rotate(-55)"><text x="0" y="0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#43464d" text-anchor="end">Wittayapairoj 2022</text><text x="0" y="10" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="8.5" fill="#6b7079" text-anchor="end">Thailand</text></g>
+<text x="0.0" y="358.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">最大的單一試驗只有 52 人／組（Hu 2021），最小的只有 20 人／組；沒有任何一篇是多中心大型試驗。</text>
+<text x="0.0" y="371.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">本頁自行計算：ESPB 組合計 659 人、PVB 組合計 664 人，兩者相加 1,323 人；再加上對照組／PECS／SAPB 等其他組別 204 人，才是原文所稱的 1,527 人。</text>
+<text x="0.0" y="384.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">也就是說，真正進入 ESPB vs PVB 比較的只有 1,323 人（占 86.6%），閱讀「1,527 位病人」這個數字時要留意。</text>
+</svg>
+</div><div class="cap">
+  <b>數據來源</b>：各組人數逐格抄自原文 Table 2；ESPB 659、PVB 664、其他組別 204 之加總為<b>本頁自行計算</b>。<br>
+  <b>怎麼看</b>：這張圖一眼就能看出本篇的體量問題——<b>19 篇裡沒有一篇超過 52 人／組</b>，中位數大約 33 人／組。以「24 小時嗎啡用量差 3 mg」這種常見的效果量來說，30 人／組的試驗其實檢定力相當有限。<br>
+  <b>陷阱</b>：淺褐色的橫條與「+n」代表該試驗另有第三、第四組（無阻斷對照、PECS、SAPB）。<b>原文所稱的「1,527 位病人」把這些人也算進去了</b>，但他們並未參與 ESPB vs PVB 的任何一項比較。真正進入比較的是 1,323 人（86.6%）。這種算法在統合分析中相當常見，卻會讓讀者高估證據的規模。
+</div></div>
+
+<div class="fig"><div class="svgbox">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="100%" role="img" style="display:block;background:#fff">
+<text x="0.0" y="20.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="13.5" fill="#1b1c1e" text-anchor="start" font-weight="700">圖 B-5　各項結果的異質性 I²（橘色虛線＝原文採用的 25% 與 75% 分界）</text>
+<line x1="264.0" y1="46" x2="264.0" y2="304" stroke="#f0eeea" stroke-width="1"/>
+<text x="264.0" y="42.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">0%</text>
+<line x1="400.0" y1="46" x2="400.0" y2="304" stroke="#f0eeea" stroke-width="1"/>
+<text x="400.0" y="42.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">25%</text>
+<line x1="536.0" y1="46" x2="536.0" y2="304" stroke="#f0eeea" stroke-width="1"/>
+<text x="536.0" y="42.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">50%</text>
+<line x1="672.0" y1="46" x2="672.0" y2="304" stroke="#f0eeea" stroke-width="1"/>
+<text x="672.0" y="42.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">75%</text>
+<line x1="808.0" y1="46" x2="808.0" y2="304" stroke="#f0eeea" stroke-width="1"/>
+<text x="808.0" y="42.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10" fill="#6b7079" text-anchor="middle" font-weight="400">100%</text>
+<text x="0.0" y="66.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">VAS 活動時 24 小時</text>
+<rect x="264" y="56.0" width="522.2" height="13" fill="#8a4a3d"/>
+<text x="816.0" y="66.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">96.0%</text>
+<text x="0.0" y="92.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">術後 24 小時嗎啡用量</text>
+<rect x="264" y="82.0" width="492.9" height="13" fill="#8a4a3d"/>
+<text x="816.0" y="92.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">90.6%</text>
+<text x="0.0" y="118.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">VAS 休息時 24 小時</text>
+<rect x="264" y="108.0" width="507.0" height="13" fill="#8a4a3d"/>
+<text x="816.0" y="118.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">93.2%</text>
+<text x="0.0" y="144.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">鎮痛持續時間</text>
+<rect x="264" y="134.0" width="448.3" height="13" fill="#8a4a3d"/>
+<text x="816.0" y="144.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">82.4%</text>
+<text x="0.0" y="170.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">NRS 活動時 24 小時</text>
+<rect x="264" y="160.0" width="397.7" height="13" fill="#c08a80"/>
+<text x="816.0" y="170.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">73.1%</text>
+<text x="0.0" y="196.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">需要救援止痛的人數</text>
+<rect x="264" y="186.0" width="279.1" height="13" fill="#c08a80"/>
+<text x="816.0" y="196.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">51.3%</text>
+<text x="0.0" y="222.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">術中 fentanyl 用量</text>
+<rect x="264" y="212.0" width="41.3" height="13" fill="#2f6b62"/>
+<text x="816.0" y="222.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">7.6%</text>
+<text x="0.0" y="248.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">NRS 休息時 24 小時</text>
+<rect x="264" y="238.0" width="1.0" height="13" fill="#2f6b62"/>
+<text x="816.0" y="248.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">0.0%</text>
+<text x="0.0" y="274.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">PONV</text>
+<rect x="264" y="264.0" width="1.0" height="13" fill="#2f6b62"/>
+<text x="816.0" y="274.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">0.0%</text>
+<text x="0.0" y="300.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="11.5" fill="#43464d" text-anchor="start" font-weight="400">手術時間</text>
+<rect x="264" y="290.0" width="1.0" height="13" fill="#2f6b62"/>
+<text x="816.0" y="300.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#43464d" text-anchor="start" font-weight="400">0.0%</text>
+<line x1="400.0" y1="46" x2="400.0" y2="304" stroke="#8a6a1f" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="672.0" y1="46" x2="672.0" y2="304" stroke="#8a6a1f" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="0.0" y="338.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">I² 代表研究間差異中「不是抽樣誤差可以解釋」的比例。四項最受關注的鎮痛指標 I² 都在 82−96%，屬原文自訂的「高異質性」。</text>
+<text x="0.0" y="351.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">原文做了 leave-one-out 敏感性分析與次群組分析（藥物種類、濃度、給藥方式），除了鎮痛時間（排除 Amr 2024 後降至 48.7%）之外，異質性都未能消除。</text>
+<text x="0.0" y="364.0" font-family="-apple-system,BlinkMacSystemFont,&quot;PingFang TC&quot;,&quot;Noto Sans TC&quot;,sans-serif" font-size="10.5" fill="#6b7079" text-anchor="start" font-weight="400">解讀陷阱：I² 這麼高時，「合併平均差」本身的意義有限——它是在把彼此不一致的研究硬平均起來。</text>
+</svg>
+</div><div class="cap">
+  <b>數據來源</b>：各項 I² 逐項抄自原文 Results；分界線 25% 與 75% 為原文自訂之判定標準。<br>
+  <b>怎麼看</b>：圖的上半（赭紅）全部是「疼痛與用藥」這類主觀、受照護流程影響大的指標；下半（青綠）則是相對客觀或機械性的指標（手術時間、PONV、術中 fentanyl）。<b>異質性剛好沿著「主觀 vs 客觀」這條線分開</b>。<br>
+  <b>陷阱</b>：原文用 leave-one-out 與次群組分析試圖解釋異質性，只有「鎮痛持續時間」在排除 Amr 2024 後降到 48.7%，其餘都失敗。原文也<b>沒有做統合迴歸（meta-regression）</b>，理由是「多項結果的研究數太少、研究層級共變數報告不足」——這個理由是誠實的，但也等於承認：<b>異質性的來源始終沒有被找出來</b>。
+</div></div>
+
+<div class="fig" style="border:0;padding:0;background:none"><div class="cap" style="border-top:0;padding-top:0">
+  <b>關於偏誤風險（RoB 2）的一處原文前後矛盾</b>：原文 Results「Quality assessment results」寫「<b>7 篇低風險、8 篇有疑慮、4 篇高風險</b>」（7 + 8 + 4 = 19 ✓，<b>本頁自行驗算</b>）；但 Discussion 的限制段落卻寫「<b>only four studies were deemed to be of low risk of bias</b>」。兩處數字不一致，本頁兩者並陳、不代為選擇。無論採哪一個版本，結論都一樣：<b>低偏誤風險的研究是少數</b>。
+</div></div>
+</section>
+<section id="clinic">
+<h2>臨床意涵 <span class="zh">誰適合、換來什麼、代價是什麼、知情同意怎麼談</span></h2>
+
+<h3>一、這篇涵蓋的病人是誰</h3>
+<ul class="clean">
+<li><b>適用</b>：成人、單側乳癌手術、<b>絕大多數是改良型根除性乳房切除（MRM）</b>，ASA I&ndash;III 為主，多數為全身麻醉下加做單次區域阻斷。19 篇中僅 Kumar 2025 明確納入男性。</li>
+<li><b>不適用（本篇無法回答）</b>：乳房保留手術（BCS）單獨施行、乳房重建（自體皮瓣或義乳）、雙側手術（僅 Swisher 2020 提及雙側劑量）、日間手術／不住院模式、以及<b>慢性術後疼痛</b>（無任何一項長期追蹤結果被合併）。原文限制段落也明白寫「no long-term follow-up was performed」。</li>
+</ul>
+
+<h3>二、換用 ESPB 換來什麼</h3>
+<div class="call teal">
+  <div class="h">誠實版本的收穫清單</div>
+  <b>可以說的</b>：在這 19 篇試驗的範圍內，把 PVB 換成 ESPB，<b>沒有付出可測得的鎮痛代價</b>——嗎啡用量、疼痛分數、鎮痛時間、救援止痛需求、PONV 都在誤差範圍內。這對於「不熟 PVB、或不願承擔氣胸風險」的團隊而言，是一個可以接受的替代方案。<br>
+  <b>不能說的</b>：本篇<b>沒有任何一項安全性結果達到可合併的品質</b>。ESPB 最常被引用的優點是「離胸膜與大血管較遠，理論上較安全」，但原文限制段落自己承認「<b>不良事件報告不良，難以準確評估安全性</b>」。也就是說，<b>本篇並未證實 ESPB 比較安全</b>；那個優點目前仍停留在解剖學推理與病例系列的層次。<br>
+  <b>那 2.4 分鐘呢</b>：原文自己用了「clinically negligent」（臨床上可忽略）這個字。把它當成「ESPB 比較好做」的佐證是間接推論；真正該測量的是<b>執行阻斷本身的時間、穿刺次數與失敗率</b>，而本篇沒有合併這些。
+</div>
+
+<h3>三、代價是什麼</h3>
+<ul class="clean">
+<li><b>證據品質的代價</b>：接受「兩者相當」等於接受一份 I² 高達 82&ndash;96%、僅 7/19 篇低偏誤風險、8 篇來自埃及同一研究網絡、且<b>作者結論彼此矛盾</b>（4 篇說 PVB 較好、4 篇說 ESPB 較好）的證據。</li>
+<li><b>方向性的代價</b>：兩項與鴉片類用量最相關的指標——24 小時嗎啡用量（ESPB 多 1.03 mg）與 NRS 活動時分數（ESPB 高 0.33 分）——<b>方向都偏向 PVB</b>。雖未達顯著，但嗎啡那一項的 p = 0.094 已經很接近。若未來累積更多試驗，這個差距有可能變成顯著。</li>
+<li><b>技術參數的代價</b>：原文次群組分析顯示，<b>bupivacaine、0.25% 濃度、單點單次注射</b>這三個條件下的結果一致較好。若你的做法是連續導管或高濃度 ropivacaine，本篇的「相當」結論未必套用得上。</li>
+</ul>
+
+<h3>四、知情同意怎麼談</h3>
+<div class="call amber">
+  <div class="h">建議的說法</div>
+  「乳房手術後的疼痛控制，我們可以在麻醉時加做一個神經阻斷。目前有兩種常用做法：一種是比較傳統的胸椎旁阻斷，另一種是位置比較淺、離肺比較遠的豎脊肌平面阻斷。<b>最近一份把 19 個隨機試驗合起來看的分析顯示，這兩種做法在術後止痛藥用量、疼痛分數、噁心嘔吐上都看不出差別</b>。至於哪一種比較安全，目前的研究<b>並沒有足夠的併發症資料可以下結論</b>，所以我們會依照麻醉科團隊最熟練的方式來選。」<br>
+  <b>不要說</b>：「新的這種比較安全」——這句話目前沒有統合分析等級的證據支持。
+</div>
+
+<h3>五、對乳房外科團隊的三個可行動作</h3>
+<ol class="num">
+<li><b>把選擇權交給麻醉科的熟練度</b>。既然效果分不出高下，決定因素就應該是<b>執行者的經驗</b>與<b>院內流程</b>，而不是文獻上的優劣。</li>
+<li><b>如果院內要導入 ESPB，就照著次群組的條件做</b>：bupivacaine 0.25%、單點單次注射、20 mL 左右——這是本篇資料裡表現最一致的組合。</li>
+<li><b>自己登錄併發症</b>。本篇最大的空白就是安全性。氣胸、血腫、局麻藥全身毒性、阻斷失敗率，這些如果院內有系統性登錄，價值會高過再讀十篇同類型的統合分析。</li>
+</ol>
+</section>
+
+<section id="limits">
+<h2>研究限制與解讀警訊 <span class="zh">讀這篇之前一定要知道的九件事</span></h2>
+<ol class="num">
+<li><b>「沒有差別」不等於「兩者等效」。</b>本篇並非非劣性設計，沒有預設等效界限（equivalence margin）。10 項結果中 9 項的信賴區間都跨過無效線，正確的說法是「<b>現有證據不足以分辨</b>」。</li>
+<li><b>異質性極高且無法解釋。</b>四項主要鎮痛指標 I² 為 82.4%、90.6%、93.2%、96.0%。leave-one-out 只救回一項；次群組分析找到方向但沒消除異質性；<b>原文明確表示不做統合迴歸</b>。在這種情況下，合併平均差的解釋力非常有限。</li>
+<li><b>偏誤風險的敘述前後矛盾。</b>Results 寫「7 篇低風險」，Discussion 寫「僅 4 篇低風險」。無論何者，低偏誤風險研究都是少數。</li>
+<li><b>術中 fentanyl 的數字自相矛盾。</b>原文寫「MD 3.31; 95% CI −7.67 to 1.04」，點估計不在區間內。這種錯誤沒有在同儕審查中被攔下，本身就是品管警訊。</li>
+<li><b>NRS 活動時 24 小時的 p 值與其信賴區間不相容</b>（p = 0.9233 vs CI −0.26 到 0.91），且與另一列的 p 值完全相同，疑為複製貼上錯誤。</li>
+<li><b>「1,527 位病人」是被灌水的分母。</b><b>本頁自行計算</b>：真正參與 ESPB vs PVB 比較的只有 1,323 人；另外 204 人來自無阻斷對照組、PECS、SAPB 等第三、第四組。</li>
+<li><b>三篇研究（But 2024、Kumar 2025、Moustafa 2020）的基線資料整列空白</b>，占 204 人。無法判斷其族群是否可比。</li>
+<li><b>發表偏差的證據明顯。</b>原文對鎮痛時間、嗎啡用量、手術時間三項都做了漏斗圖，<b>三張都報告不對稱</b>，並自行下註「應謹慎解讀」。加上小樣本試驗佔絕大多數，正向結果被選擇性發表的可能性不低。</li>
+<li><b>地理與族群集中。</b>19 篇中 8 篇來自埃及，且多數作者群隸屬同一研究網絡（MRGE / Negida Academy）——這既是本篇作者群的所在，也是被納入研究的主要來源地。<b>幾乎全為女性</b>（僅 1 篇納入男性），原文亦自承難以外推至其他族群。</li>
+</ol>
+<div class="call amber">
+  <div class="h">一句話的解讀立場</div>
+  這篇的價值在於「<b>整理現況</b>」而不是「<b>解決爭議</b>」：它清楚呈現了目前 ESPB vs PVB 的隨機試驗都太小、太雜、結論太分歧，因此<b>誰也證明不了誰比較好</b>。臨床上可以據此放心地依團隊熟練度選擇，但不應據此宣稱 ESPB 「同樣有效且更安全」——後半句在本篇裡完全沒有被檢驗。
+</div>
+</section>
+<section id="gloss">
+<h2>醫學名詞中英對照 <span class="zh">Glossary</span></h2>
+<div class="gloss"><dl>
+<div class="gl-row"><dt>豎脊肌平面阻斷 <span class="en">Erector spinae plane block, ESPB</span></dt><dd>把局部麻醉藥注射到豎脊肌深面、橫突淺面的筋膜平面，藥液沿頭尾方向擴散，阻斷胸脊神經之背側支與腹側支。因注射點遠離胸膜與大血管，操作門檻與理論風險較低。</dd></div>
+<div class="gl-row"><dt>胸椎旁阻斷 <span class="en">Thoracic paravertebral block, PVB</span></dt><dd>把局部麻醉藥注入椎旁腔，直接阻斷自椎間孔穿出的脊神經，效果類似「單側硬脊膜外」。長期被視為乳房手術區域麻醉的金標準，但鄰近壁層胸膜，有氣胸、硬脊膜外擴散甚至全脊髓麻醉之風險。</dd></div>
+<div class="gl-row"><dt>胸肌神經阻斷 <span class="en">Pectoral nerve block, PECS / PECS II</span></dt><dd>阻斷胸內、外側神經與肋間臂神經的筋膜平面阻斷，本篇中作為部分試驗的第三組比較對象（非本篇的合併對象）。</dd></div>
+<div class="gl-row"><dt>前鋸肌平面阻斷 <span class="en">Serratus anterior plane block, SAPB</span></dt><dd>另一種胸壁筋膜平面阻斷，本篇中僅 But 2024 有此組別。</dd></div>
+<div class="gl-row"><dt>改良型根除性乳房切除 <span class="en">Modified radical mastectomy, MRM</span></dt><dd>切除全乳房並廓清腋下淋巴結、保留胸大肌。本篇 19 篇試驗的主要術式。</dd></div>
+<div class="gl-row"><dt>乳房保留手術 <span class="en">Breast-conserving surgery, BCS</span></dt><dd>局部廣泛切除加上術後放射治療。本篇僅在背景敘述提及，未單獨分析。</dd></div>
+<div class="gl-row"><dt>腋下淋巴結廓清 <span class="en">Axillary lymph node dissection, ALND</span></dt><dd>清除腋下淋巴結。本篇引用文獻指出接受 ALND 者的慢性術後疼痛盛行率更高。</dd></div>
+<div class="gl-row"><dt>平均差 <span class="en">Mean difference, MD</span></dt><dd>兩組連續型結果的平均值相減，單位與原始變項相同（如毫克、小時、分數）。</dd></div>
+<div class="gl-row"><dt>風險比 <span class="en">Risk ratio, RR</span></dt><dd>兩組事件發生機率之比值。RR = 1 代表無差異。</dd></div>
+<div class="gl-row"><dt>異質性 I² <span class="en">I-squared, I²</span></dt><dd>研究間變異中「不能以抽樣誤差解釋」的比例。本篇採 &lt; 25% 為低、25−75% 為中、&gt; 75% 為高。</dd></div>
+<div class="gl-row"><dt>留一法敏感性分析 <span class="en">Leave-one-out sensitivity analysis</span></dt><dd>每次排除一篇研究後重新合併，用來找出主導結果或造成異質性的個別研究。</dd></div>
+<div class="gl-row"><dt>次群組分析 <span class="en">Subgroup analysis</span></dt><dd>依研究層級特徵（本篇為藥物種類、濃度、給藥方式）分組後分別合併，用以探索異質性來源。</dd></div>
+<div class="gl-row"><dt>統合迴歸 <span class="en">Meta-regression</span></dt><dd>以研究層級共變數解釋效果量差異的迴歸方法。<b>本篇未做</b>，原文理由為研究數不足、共變數報告不全。</dd></div>
+<div class="gl-row"><dt>漏斗圖 <span class="en">Funnel plot</span></dt><dd>以效果量對精確度作圖，用來目視評估發表偏差。不對稱提示可能存在小型研究效應或發表偏差。</dd></div>
+<div class="gl-row"><dt>偏誤風險工具 RoB 2 <span class="en">Cochrane Risk of Bias 2 tool</span></dt><dd>評估隨機試驗偏誤風險的標準工具，分「低風險／有疑慮／高風險」三級。</dd></div>
+<div class="gl-row"><dt>GRADE <span class="en">Grading of Recommendations, Assessment, Development and Evaluations</span></dt><dd>評定證據確定性的架構，分高、中、低、極低四級。本篇有做，結果列於補充圖 S25。</dd></div>
+<div class="gl-row"><dt>數值評分量表 <span class="en">Numerical Rating Scale, NRS</span></dt><dd>請病人以 0−10 的整數評估疼痛強度。</dd></div>
+<div class="gl-row"><dt>視覺類比量表 <span class="en">Visual Analogue Scale, VAS</span></dt><dd>請病人在一條連續線段上標記疼痛強度，再換算為 0−10 分。本篇將 NRS 與 VAS <b>分開合併</b>，以避免量表差異造成的偏誤。</dd></div>
+<div class="gl-row"><dt>最小臨床重要差異 <span class="en">Minimal clinically important difference, MCID</span></dt><dd>病人能感受到、且認為有意義的最小改變量。0−10 疼痛量表一般約 1.0−1.3 分。</dd></div>
+<div class="gl-row"><dt>術後噁心嘔吐 <span class="en">Postoperative nausea and vomiting, PONV</span></dt><dd>麻醉與手術後常見副作用，是評估鴉片類節省效益的重要指標。</dd></div>
+<div class="gl-row"><dt>術後加速康復 <span class="en">Enhanced Recovery After Surgery, ERAS</span></dt><dd>以多模式鎮痛、減少鴉片類用量為核心的周術期照護組合。區域阻斷是其中的關鍵環節。</dd></div>
+<div class="gl-row"><dt>多模式鎮痛 <span class="en">Multimodal analgesia</span></dt><dd>合併多種機轉不同的止痛方式，以降低單一藥物（尤其鴉片類）的劑量與副作用。</dd></div>
+</dl></div>
+</section>
+<section id="src">
+<h2>來源引用與圖表重繪聲明 <span class="zh">Sources &amp; figure provenance</span></h2>
+<h3>原始文獻</h3>
+<p>El-Khalifa BM, Khelifa H, Gad MM, Elfakharany B, Ahmed MSA, Soliman A, Nada EA, Ahmed J, Mazy HM, Qutob IA.
+<b>Erector spinae plane block (ESPB) versus paravertebral plane block (PVB) in managing post-operative pain in breast cancer patients: a systematic review and meta-analysis.</b>
+<i>World Journal of Surgical Oncology</i>. 2026;24(1):344. DOI: <a href="https://doi.org/10.1186/s12957-026-04535-9">10.1186/s12957-026-04535-9</a>　·　
+<a href="https://pubmed.ncbi.nlm.nih.gov/42632896/">PMID 42632896</a>　·　PMC13499295（Open Access）。線上發表 2026 年 8 月 22 日。
+PROSPERO 註冊號 CRD420251253203。</p>
+<p style="font-size:13.5px;color:#6b7079">文獻檢索與後設資料取得自 <b>PubMed</b>；全文取自 <b>PubMed Central</b>（PMC13499295）；卷期與文章編號經出版社頁面核對。</p>
+
+<h3>圖表重繪聲明</h3>
+<ul class="clean">
+<li><b>本頁所有圖表皆為重新繪製</b>，未嵌入、未連結任何出版社圖檔。全部圖形以 inline SVG 或 HTML/CSS 方塊產生，整份文件不含外部資源、不含 <code>&lt;script&gt;</code>、不含 <code>&lt;img&gt;</code>。</li>
+<li><b>逐格抄錄</b>（未做任何再計算）：PRISMA 各階段數字、研究特徵表（原文 Table 1）、族群基線表（原文 Table 2）、全部合併結果之效果量／95% CI／p／I²（原文 Results 各段）、偏誤風險分布。</li>
+<li><b>本頁自行計算</b>（已於各處就地標註）：ESPB 組 659 人＋PVB 組 664 人＝1,323 人、其他組別 204 人、合計 1,527 人之驗算；PRISMA 各階段減法（978 &minus; 93 = 885、885 &minus; 865 = 20）；RoB 2 之 7 + 8 + 4 = 19；研究來源國統計；0.04 小時 &times; 60 = 2.4 分鐘之換算。</li>
+<li><b>原文未列數值者</b>：<b>本篇最重要的一項缺漏是「各研究的個別效果值」——原文所有結果都只以森林圖影像呈現，正文與表格皆未列出各研究的平均值、標準差或事件數。</b>因此本頁<b>無法、也不會</b>重繪任何一項結果的個別研究森林圖，更不會由影像推估數值。此外，But 2024、Kumar 2025、Moustafa 2020 三篇的基線資料、Kumar 2025 的局麻藥劑量，原文皆以「-」呈現，本頁一律標示「原文未列數值」。</li>
+<li><b>森林圖的呈現方式</b>：因無個別研究數據，圖 B-2 與 B-3 呈現的是<b>各項結果的合併值</b>（每列一項結果），而非傳統的「每列一篇研究」。合併值以菱形（連續型）或方塊（二分類）標示，係<b>原文自行合併之結果</b>，非本頁計算。</li>
+<li><b>本頁標示的原文內部矛盾</b>（三處，皆已就地標註，本頁不代為更正）：術中 fentanyl 之點估計落在信賴區間之外；NRS 活動時 24 小時之 p 值與其信賴區間不相容且與另一列完全相同；偏誤風險低風險研究數在 Results（7 篇）與 Discussion（4 篇）不一致。</li>
+</ul>
+
+<h3>本頁性質</h3>
+<p style="font-size:13.5px;color:#6b7079">本頁為個人閱讀筆記，非同儕審查內容，亦非診療指引。所有臨床決策請回到原始文獻與當地治療常規。摘要之英文原文著作權屬原作者與期刊（Open Access 授權）；中文翻譯、註解、圖表重繪與所有評註為本頁自行製作。</p>
+</section>
+
+<footer>
+每日一般外科文獻 · Vol. 019 · 2026 年 8 月 30 日　|　次專科分類：乳房外科　|　
+本頁資料來源：<a href="https://pubmed.ncbi.nlm.nih.gov/42632896/">PubMed 42632896</a>　·　<a href="https://doi.org/10.1186/s12957-026-04535-9">DOI 10.1186/s12957-026-04535-9</a>
+</footer>
+</div>
