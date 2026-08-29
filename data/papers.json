@@ -1,7 +1,57 @@
 {
- "count": 37,
- "latest": "2026-08-28",
+ "count": 39,
+ "latest": "2026-08-30",
  "papers": [
+  {
+   "id": "pubmed-periop-2026-08-30",
+   "file": "papers/pubmed-periop-2026-08-30.html",
+   "date": "2026-08-30",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 020",
+   "title": "同樣做左側大腸切除，換一個廠牌的環狀吻合器，吻合口滲漏的風險就差兩倍？義大利 iCral 2–4 三項前瞻研究併池 3,653 人：以 3 排釘 Covidien 平台為基準，Ethicon 2 排釘與 2 排釘電動平台加權後的整體滲漏 OR 2.34（1.16−4.71）與 2.81（1.16−6.80）——但重大滲漏、整體併發症與 60 天死亡率都沒有差別",
+   "title_en": "Circular stapler platform and the risk of anastomotic leakage after elective left colectomy and high anterior resection",
+   "journal": "Colorectal Disease（ACPGBI 官方期刊） 2026;28(8)，文章號 e70564。Open Access，本頁已取得 PMC 全文（PMC13434361），Table 1、Table 2、Table 3 之數值為全文逐格抄錄",
+   "authors": "Guadagni S, Catarci M, Masedu F；代表 Italian ColoRectal Anastomotic Leakage（iCral）study group Stefano Guadagni（L'Aquila 大學一般外科暨生物科技與應用臨床科學系）、Marco Catarci（羅馬 Sandro Pertini 醫院一般外科）、Francesco Masedu（L'Aquila 大學，統計）。收案橫跨義大利 87 家外科中心",
+   "design": "三項前瞻性多中心世代研究（iCral-2、iCral-3、iCral-4）個別病人層級資料併池之「預先規劃事後分析」（pre-planned post hoc analysis） 非隨機分派。以廣義提升模型（Generalized Boosted Model, GBM）估計傾向分數，做成對加權，估計量為 ATT（average treatment effect on the treated），再套用雙重穩健（doubly robust）結果模型。共納入 21 個病人／術式／中心層級共變數。以 E-value 評估對未測量干擾的穩健度。R 4.5.0",
+   "doi": "10.1111/codi.70564",
+   "category": "周術期照護與併發症",
+   "tags": [
+    "周術期照護與併發症",
+    "吻合口滲漏 Anastomotic leakage",
+    "環狀吻合器 Circular stapler",
+    "證據等級：多中心前瞻世代之事後比較效益分析（非隨機）",
+    "Open Access"
+   ],
+   "tldr": "在 3,653 位擇期左側大腸切除或高位前位切除、且刻意排除高風險族群（急診、ASA IV–V、有保護性造口、吻合口 < 5 cm、接受前導治療）的病人中，市售環狀吻合器平台之間並非可以互換：以 3 排釘平台（Covidien Tri-Staple，滲漏率 2.7%）為基準，經傾向分數加權後 Ethicon 2 排釘平台 OR 2.34（95% CI 1.16−4.71）、Ethicon 2 排釘電動平台 OR 2.81（95% CI 1.16−6.80）；但這個差別只出現在「整體滲漏」，重大滲漏、整體併發症與 60 天死亡率都沒有差異，且本研究非隨機分派，只能當作假說產生。",
+   "bytes": 115556
+  },
+  {
+   "id": "pubmed-gs-breast-2026-08-30",
+   "file": "papers/pubmed-gs-breast-2026-08-30.html",
+   "date": "2026-08-30",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 019",
+   "title": "乳癌手術的區域阻斷：豎脊肌平面阻斷（ESPB）能不能取代被視為金標準的胸椎旁阻斷（PVB）？19 篇隨機試驗、1,527 人的統合分析——嗎啡用量、疼痛分數、鎮痛時間、PONV 全部沒有差別，唯一達統計顯著的是「手術時間短 2.4 分鐘」，而四項主要鎮痛指標的異質性 I² 高達 82−96%",
+   "title_en": "Erector spinae plane block (ESPB) versus paravertebral plane block (PVB) in managing post-operative pain in breast cancer patients: a systematic review and meta-analysis",
+   "journal": "World Journal of Surgical Oncology（BMC） 2026;24(1)，文章編號 344；線上發表 2026 年 8 月 22 日。Open Access，本頁已取得 PMC 全文（PMC13499295），Table 1、Table 2 之內容為全文逐格抄錄",
+   "authors": "El-Khalifa BM, Khelifa H, Gad MM, Elfakharany B, Ahmed MSA, Soliman A, Nada EA, Ahmed J, Mazy HM, Qutob IA 通訊作者 Basma M. El-Khalifa（Mansoura 大學醫學院臨床腫瘤暨核醫科，埃及）與 Jamal Ahmad（巴勒斯坦理工大學醫學暨健康科學院）。多數作者隸屬 Medical Research Group of Egypt（MRGE）／Negida Academy",
+   "design": "系統性回顧與統合分析（僅納入隨機對照試驗） 依 PRISMA 與 Cochrane Handbook 進行；前瞻註冊 PROSPERO CRD420251253203。檢索 PubMed、SCOPUS、Web of Science（原文摘要寫「四個資料庫」，正文只列出三個 — 見「解讀警訊」）＋前後向引文追蹤。品質評估用 Cochrane RoB 2，證據等級用 GRADE。統計軟體 R 4.4.2；異質性以 I² 判定（< 25% 低、25−75% 中、> 75% 高），並做 leave-one-out 敏感性分析與漏斗圖",
+   "doi": "10.1186/s12957-026-04535-9",
+   "category": "乳房外科",
+   "tags": [
+    "乳房外科",
+    "區域麻醉 Regional anaesthesia",
+    "ESPB vs. PVB",
+    "證據等級：19 篇 RCT 之統合分析（但異質性高、RoB 多數非低風險）",
+    "Open Access"
+   ],
+   "tldr": "把 19 篇隨機試驗合起來看，豎脊肌平面阻斷（ESPB）與胸椎旁阻斷（PVB）在乳癌手術後的鎮痛效果沒有可測得的差別——24 小時嗎啡用量、休息與活動時的 NRS／VAS 疼痛分數、鎮痛持續時間、救援止痛需求、術後噁心嘔吐，全部的 95% 信賴區間都跨過無效線；唯一達統計顯著的是手術時間短 2.4 分鐘（原文自己說「臨床上可忽略」）。但四項主要鎮痛指標的異質性 I² 高達 82−96%，且僅 7 篇為低偏誤風險，因此「沒有差別」應解讀為「證據不足以分辨」而非「兩者等效」。",
+   "bytes": 125469
+  },
   {
    "id": "pubmed-mis-2026-08-28",
    "file": "papers/pubmed-mis-2026-08-28.html",
