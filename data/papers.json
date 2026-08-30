@@ -1,7 +1,57 @@
 {
- "count": 39,
- "latest": "2026-08-30",
+ "count": 41,
+ "latest": "2026-08-31",
  "papers": [
+  {
+   "id": "pubmed-gs-endo-2026-08-31",
+   "file": "papers/pubmed-gs-endo-2026-08-31.html",
+   "date": "2026-08-31",
+   "stream": "gs",
+   "stream_label": "一般外科",
+   "series": "每日一般外科文獻",
+   "vol": "Vol. 020",
+   "title": "甲狀腺結節該「顆顆都穿刺」，還是照 EU-TIRADS 挑著穿？瑞典西部 4 家醫院、195 人的首個多中心隨機對照試驗——挑著穿讓每人平均穿刺次數從 1.54 降到 0.94 次、細胞學抓到腫瘤性病變（Bethesda IV−VI）的比率從 13% 升到 26%（P = 0.039）、癌症檢出率沒有變差；但真正「因為 EU-TIRADS 而免於穿刺」的病人只有 7 位",
+   "title_en": "A randomized controlled trial comparing non-selective versus selective TIRADS-based cytology in thyroid cancer diagnostics",
+   "journal": "British Journal of Surgery（BJS，Oxford University Press） 2026;113(7)，文章編號 znag076；線上發表 2026 年 7 月 2 日。Open Access，本頁已取得 PMC 全文（PMC13367576），Table 1、Table 2 之內容為全文逐格抄錄",
+   "authors": "Dahlberg J, Carlqvist J, Örtoft A, Hammarstedt L, Aula E, Hellström M, Elias E, Muth A 第一作者 Jakob Dahlberg 與資深作者 Andreas Muth 皆隸屬哥德堡大學 Sahlgrenska 學院外科暨 Sahlgrenska 大學醫院外科部；放射科團隊來自 Sahlgrenska、Northern Älvsborg、Kungälv 與 Southern Älvsborg 四家醫院",
+   "design": "區域性、多中心（4 家醫院）、非盲、介入性隨機對照試驗 1:1 隨機、電腦產生排列區組；線上工具分派。收案 2022 年 2 月至 2023 年 12 月。瑞典倫理審查核准 2021-01490。試驗註冊 ClinicalTrials.gov NCT05583097。統計以 chi-square、Wilcoxon rank sum 與 Student's t 檢定，軟體 R 4.3.2。細胞學一律採 2017 年版 Bethesda 系統，由兩位認證細胞病理醫師判讀",
+   "doi": "10.1093/bjs/znag076",
+   "category": "內分泌外科",
+   "tags": [
+    "內分泌外科",
+    "甲狀腺結節 Thyroid nodule",
+    "EU-TIRADS · Bethesda",
+    "證據等級：多中心隨機對照試驗（首個同類 RCT，但次要結果功效不足）",
+    "Open Access"
+   ],
+   "tldr": "這是全世界第一個把「超音波風險分級系統該不該用來決定要不要穿刺」拿去隨機分派的試驗：把 195 位疑似甲狀腺癌的病人隨機分成「照 EU-TIRADS 挑著穿」與「符合大小條件就顆顆都穿」，結果挑著穿的那組，細胞學抓到腫瘤性病變（Bethesda IV−VI）的比率從 13% 提高到 26%（P = 0.039，主要結果達標）、每人平均穿刺次數從 1.54 降到 0.94 次（P = 0.002，減少 38.8%）、術後確診癌症的比率 8% vs. 5% 沒有變差。但作者自己在標題與結論裡就先潑了冷水：真正「因為 EU-TIRADS 判定低風險而省下穿刺」的病人只有 7 位（占選擇性組實質結節病人的 9%）——因為這個族群六成的結節都大於 2 cm，早就超過 EU-TIRADS 需要「判斷要不要穿」的區間。臨床上的意思是：EU-TIRADS 值得用、也安全，但它在「以可觸摸腫塊為主」的轉診族",
+   "bytes": 83388
+  },
+  {
+   "id": "pubmed-benign-2026-08-31",
+   "file": "papers/pubmed-benign-2026-08-31.html",
+   "date": "2026-08-31",
+   "stream": "crs",
+   "stream_label": "大腸直腸",
+   "series": "每日大腸直腸外科文獻",
+   "vol": "Vol. 021",
+   "title": "造口關閉的那道傷口，值得貼上負壓傷口治療（NPWT）嗎？7 篇隨機試驗、429 人的 GRADE 統合分析——主要結果切口感染 RR 0.42（95% CI 0.14−1.30），未達統計顯著；只有在「一期線性縫合」次群組才看到 RR 0.20（0.06−0.67），而且要移除其中一篇試驗，主要結果才會翻成顯著",
+   "title_en": "Negative-pressure wound therapy versus conventional dressings following stoma reversal: a GRADE-based systematic review and meta-analysis of randomized controlled trials with predefined subgroup analyses by closure technique",
+   "journal": "BMC Surgery（BioMed Central／Springer Nature） 2026;26(1)；線上發表 2026 年 6 月 19 日。Open Access（CC BY 4.0），本頁已取得 PMC13281424 全文，Table 1、Table 2、Table 3、Table 4 之內容為全文逐格抄錄",
+   "authors": "Mirza W, Khan ME, Iqbal H, Khan A, Khan HM, Moeen-Ud-Din MB, Hadhoud AM 通訊作者 Wajahat Mirza（Shifa College of Medicine, Shifa Tameer-e-Millat University，巴基斯坦伊斯蘭瑪巴德）。其餘作者分屬 Shifa International Hospital 一般外科與 University of Cincinnati 外科部",
+   "design": "系統性回顧與統合分析（僅納入隨機對照試驗） 依 PRISMA 執行，統計分析計畫前瞻註冊於 PROSPERO CRD420251182767。檢索 MEDLINE／PubMed、Embase、Scopus、Web of Science、Cochrane CENTRAL、ClinicalTrials.gov、WHO ICTRP，不限語言與年代，截止 2025 年 11 月 1 日。偏差風險用 Cochrane RoB 2，證據等級用 GRADE。統計軟體 RevMan 5.4，全部採隨機效應模型；二分類用 Mantel–Haenszel RR、連續型用 inverse variance MD；零事件格採 0.5 連續性校正",
+   "doi": "10.1186/s12893-026-03957-2",
+   "category": "良性疾病與功能性疾患",
+   "tags": [
+    "良性疾病與功能性疾患",
+    "造口關閉 Stoma reversal",
+    "手術部位感染 SSI",
+    "證據等級：7 篇 RCT 之統合分析（GRADE 低／極低）",
+    "Open Access"
+   ],
+   "tldr": "把 7 篇隨機試驗合起來看，造口關閉後預防性貼負壓傷口治療（NPWT），並沒有顯著降低切口手術部位感染——主要結果 RR 0.42（95% CI 0.14−1.30、I² = 46%、P = 0.13），信賴區間橫跨無效線；換算成絕對效果是「每 1,000 人少 88 例，但可能少 131 例、也可能多 45 例」，GRADE 證據等級只有低。唯一亮眼的訊號來自只有 2 篇試驗的「一期線性縫合」次群組（RR 0.20、95% CI 0.06−0.67、I² = 0%），但交互作用檢定 P = 0.23 並不顯著；而主要結果之所以「差一點就顯著」，關鍵在 Uchino 2016 這篇——把它拿掉後 RR 變成 0.31（0.11−0.89、P = 0.03），作者自己也再三強調這是探索性的影響力診斷，不能取代主要分析。臨床上的合理位置是：做荷包縫合時沒有證據支持常規使用；若你採一期線性縫合、",
+   "bytes": 84214
+  },
   {
    "id": "pubmed-periop-2026-08-30",
    "file": "papers/pubmed-periop-2026-08-30.html",
